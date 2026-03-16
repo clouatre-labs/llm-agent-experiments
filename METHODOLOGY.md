@@ -2,7 +2,7 @@
 
 ## Experiment Setup
 
-These experiments use default Goose sessions -- no recipe, no multi-agent pipeline. The goal was to test alternate models for the `coder-scout` agent role in isolation, outside of any orchestrated workflow.
+These experiments use default Goose sessions: no recipe, no multi-agent pipeline. The goal was to test alternate models for the `coder-scout` agent role in isolation, outside of any orchestrated workflow.
 
 ```mermaid
 graph TD
@@ -53,7 +53,7 @@ Baseline reused (exp3 runs 1-5) and three new candidates, each n=5 (DeepSeek n=3
 ## Blinding Procedure
 
 1. **Label-map creation:** Before any SCOUT delegate is spawned, a label-map.json file is written: `{run_id: model_name}` (e.g., `{"001": "claude-haiku-4-5", "002": "qwen3-coder"}`). This file is sealed (version controlled but not revealed until after scoring).
-2. **Scorer receives numeric labels only:** Scorer subagent receives run data with `run_id` (numeric), scores, timestamps, and error messages—but NO model names.
+2. **Scorer receives numeric labels only:** Scorer subagent receives run data with `run_id` (numeric), scores, timestamps, and error messages, but NO model names.
 3. **Post-scoring reveal:** After all scoring is complete and recorded, label-map.json is published in data/{exp}/label-map.json. Scorer then reconciles their independent annotations with actual models.
 
 ## Session Configuration
@@ -103,7 +103,7 @@ A candidate passes if ALL four gates are satisfied:
 
 2. **No raw conversation logs:** Goose session records (full conversational trace, token counts per turn, model-specific generation parameters) are not included. Only scored outputs and summary handoff metadata are available. Reproducibility is limited to session-level replay; model-level debugging is not possible without logs.
 
-3. **Qwen3 Coder exclusion (exp3):** Seven session attempts produced zero output files -- the model consistently exhausted the delegate action limit before writing its handoff JSON. Reproduced with the same prompt on 2026-03-16, confirming this is a persistent model behavior failure, not a transient infrastructure or routing issue. Excluded from quantitative comparison; classified as "0/7 valid runs."
+3. **Qwen3 Coder exclusion (exp3):** Seven session attempts produced zero output files: the model consistently exhausted the delegate action limit before writing its handoff JSON. Reproduced with the same prompt on 2026-03-16, confirming this is a persistent model behavior failure, not a transient infrastructure or routing issue. Excluded from quantitative comparison; classified as "0/7 valid runs."
 
 4. **DeepSeek V3.2 partial sample (exp4):** Two of five runs (27, 30) failed with infrastructure errors. Only n=3 valid runs for DeepSeek. This increases uncertainty in the mean and p-value. Reported with explicit caveat.
 
