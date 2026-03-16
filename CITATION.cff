@@ -9,7 +9,7 @@ authors:
 repository-code: https://github.com/clouatre-labs/llm-agent-experiments
 url: https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/
 license: Apache-2.0
-date-released: "2026-03-16"
+date-released: "2025-12-24"
 version: "1.0.0"
 abstract: >
   Benchmarking open-weight LLM coding agents as SCOUT delegates in the
