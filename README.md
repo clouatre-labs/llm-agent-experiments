@@ -7,24 +7,13 @@
 [![Sessions](https://img.shields.io/badge/sessions-28-green)](experiments/)
 [![Runs](https://img.shields.io/badge/runs-28-blue)](experiments/)
 
-Mid-tier open-weight models can replace Claude Haiku 4.5 as SCOUT delegates at lower cost without quality loss. Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8) pass all gates; DeepSeek V3.2 and all exp3 candidates fail.
+Mid-tier open-weight models can replace Claude Haiku 4.5 as SCOUT delegates at lower cost without quality loss. Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8) pass all gates. Qwen3 Coder produced zero valid outputs (0/7 runs); DeepSeek V3.2 fails with a 40% error rate.
 
 </div>
-
-## Summary
-
-**Finding:** Exp3: all cheap models fail synthesis criteria. Exp4: MiniMax M2.5 and Kimi K2.5 pass; DeepSeek V3.2 fails with a 40% run error rate.
 
 ## The Question
 
 Can open-weight models replace Claude Haiku 4.5 as SCOUT delegates in the goose-coder recipe at lower cost without degrading research quality?
-
-## Experiment Setup
-
-```
-Goose + coder recipe v4.2.1 | Orchestrator: Claude Sonnet 4.6 | 
-Scorer: blind subagent | Rubric: 8-criterion binary (0-8)
-```
 
 ## Scoring Rubric
 
@@ -39,38 +28,21 @@ Scorer: blind subagent | Rubric: 8-criterion binary (0-8)
 | C7 | Architecture matches specification |
 | C8 | Code usability and clarity |
 
-## Results: Experiment 3
+*Table 1: Eight-criterion binary scoring rubric (0-8 total). Applied identically across exp3 and exp4; rubric locked before any delegates were spawned.*
 
-All candidate models failed one or more gates against baseline (Claude Haiku 4.5).
+## Results
 
-| Model | n | Scores | Mean | Verdict |
-|-------|---|--------|------|---------|
-| Claude Haiku 4.5 (baseline) | 5 | 5,5,8,6,5 | 5.8 | baseline |
-| Qwen3 Coder | 0 | n/a | n/a | excluded (0/7 valid runs) |
-| Gemini 3 Flash | 5 | 4,4,3,5,5 | 4.2 | fail |
-| Devstral 2512 | 5 | 4,3,3,3,2 | 3.0 | fail |
+| Model | Exp | n | Mean | Error rate | Verdict |
+|-------|-----|---|------|------------|---------|
+| Claude Haiku 4.5 | 3 | 5 | 5.8 | 0.0 | baseline |
+| Qwen3 Coder | 3 | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
+| Gemini 3 Flash | 3 | 5 | 4.2 | 0.0 | fail |
+| Devstral 2512 | 3 | 5 | 3.0 | 0.0 | fail |
+| MiniMax M2.5 | 4 | 5 | 6.0 | 0.0 | pass |
+| DeepSeek V3.2 | 4 | 3 | 1.0 | 0.4 | fail |
+| Kimi K2.5 | 4 | 5 | 7.0 | 0.0 | pass |
 
-**Verdict:** All cheap candidates excluded or failed synthesis gates.
-
-## Results: Experiment 4
-
-Two models cleared all gates; one failed with high error rate.
-
-| Model | n | Mean | Error rate | p (vs Haiku) | Verdict |
-|-------|---|------|-------------|--------------|---------|
-| Claude Haiku 4.5 (baseline) | 5 | 5.8 | 0.0 | -- | baseline |
-| MiniMax M2.5 | 5 | 6.0 | 0.0 | 0.492 | pass |
-| DeepSeek V3.2 | 3 | 1.0 | 0.4 | 0.018 | fail |
-| Kimi K2.5 | 5 | 7.0 | 0.0 | 0.183 | pass |
-
-**Verdict:** MiniMax and Kimi qualify as cost-effective delegates; DeepSeek unsuitable.
-
-## Cross-Experiment Summary
-
-| Experiment | Phase | Baseline Mean | Candidates Tested | Passed | Failed/Excluded | Key Finding |
-|------------|-------|----------------|------------------|--------|-----------------|-------------|
-| Exp 3 | Discovery | 5.8 | 3 | 0 | 3 | Cheap tier models too weak |
-| Exp 4 | Validation | 5.8 | 3 | 2 | 1 | Mid-tier models viable; DeepSeek unstable |
+*Table 2: Per-model results across exp3 (discovery) and exp4 (validation). Error rate = fraction of runs that failed to produce valid output. Exp4 candidates compared against the exp3 baseline; Mann-Whitney U p-values are in analysis.json.*
 
 ![Mean score bar chart](figures/mean-score-bar.png)
 
@@ -131,6 +103,8 @@ llm-agent-experiments/
       sessions/           # 13 SCOUT handoff JSONs (runs 21-35, minus 27/30)
 ```
 
+*Code Snippet 1: Repository directory tree.*
+
 ## Inspecting the Data
 
 ```bash
@@ -153,6 +127,8 @@ ls experiments/exp4-model-comparison-r2/sessions/ | wc -l
 jq '{lens, recommendation, approaches: [.approaches[].name]}' \
   experiments/exp3-model-comparison/sessions/scout-run-03.json
 ```
+
+*Code Snippet 2: Example jq queries for exploring the dataset.*
 
 ## Data Files
 
@@ -202,6 +178,8 @@ All experiments used the Goose agent framework with the public coder recipe (v4.
 | goose-coder recipe | 4.2.1 | At git d4ac9e8, dotfiles repo |
 | Orchestrator model | Claude Sonnet 4.6 | GCP Vertex AI, temp 0.3 |
 | SCOUT delegate models | See exp3/exp4 protocol | Variable per experiment |
+
+*Table 3: Software versions used across all experiments.*
 
 ## Limitations
 
