@@ -3,7 +3,7 @@
   "description": "Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight LLM coding agents as SCOUT delegates in the goose-coder recipe. Blind scoring with Mann-Whitney U statistical test.",
   "upload_type": "dataset",
   "access_right": "open",
-  "license": "apache-2.0",
+  "license": "Apache-2.0",
   "version": "1.0.0",
   "creators": [
     {
@@ -15,8 +15,9 @@
     {
       "identifier": "https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/",
       "relation": "isSupplementTo",
-      "resource_type": "other"
+      "resource_type": "publication-other"
     }
   ],
-  "keywords": ["ai-agents", "llm-evaluation", "benchmarking", "open-weight-models", "supplementary-materials"]
+  "keywords": ["ai-agents", "llm-evaluation", "benchmarking", "open-weight-models", "supplementary-materials"],
+  "publication_date": "2026-03-16"
 }
