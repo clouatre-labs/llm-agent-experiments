@@ -13,7 +13,7 @@ Mid-tier open-weight models can replace Claude Haiku 4.5 as SCOUT delegates at l
 
 ## The Question
 
-Can open-weight models replace Claude Haiku 4.5 as SCOUT delegates in the goose-coder recipe at lower cost without degrading research quality?
+Can open-weight models replace Claude Haiku 4.5 as SCOUT delegates in the Goose coder recipe at lower cost without degrading research quality?
 
 ## Scoring Rubric
 
@@ -162,24 +162,27 @@ Raw JSONL conversation logs (goose session records) are not included in this rep
 
 ## Reproducibility
 
-All experiments used the Goose agent framework with the public coder recipe (v4.2.1, committed at d4ac9e8 in the dotfiles repo). The recipe and orchestrator model are deterministic at temperature 0.3. To reproduce:
+All experiments used Goose 1.27.2 as the agent orchestrator. To reproduce:
 
-1. Install Goose (version pinned in Software Versions section below)
-2. Load the `recipe/goose-coder.yaml` recipe into your local Goose config
-3. Set orchestrator to Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3
-4. Follow the protocol in `METHODOLOGY.md` for delegate spawning and blind scoring
-5. Use the label-map.json to reveal model identities only after scoring is complete
+1. Install Goose 1.27.2
+2. Set orchestrator to Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3
+3. Follow the protocol in `METHODOLOGY.md` for delegate spawning and blind scoring
+4. Use the label-map.json to reveal model identities only after scoring is complete
 
 ## Software Versions
 
 | Component | Version | Notes |
 |-----------|---------|-------|
 | Goose | 1.27.2 | Agent orchestrator |
-| goose-coder recipe | 4.2.1 | At git d4ac9e8, dotfiles repo |
+| Python | 3.13.12 | Analysis scripts, runner machine |
 | Orchestrator model | Claude Sonnet 4.6 | GCP Vertex AI, temp 0.3 |
 | SCOUT delegate models | See exp3/exp4 protocol | Variable per experiment |
 
 *Table 3: Software versions used across all experiments.*
+
+## Impact
+
+These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6; the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was rewritten to define each agent role as a named subagent file, achieving cross-compatibility between Goose and Claude Code (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.0/8, error rate 0.0) was adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
 
 ## Limitations
 
@@ -195,7 +198,7 @@ This repository documents a research experiment conducted using commercial and o
 
 ## Data Availability
 
-This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials (goose recipe, METHODOLOGY.md) are included. The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; raw model outputs are in the experiments/*/sessions/ directories.
+This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials include METHODOLOGY.md and the `recipe/goose-coder.yaml` file (the Goose coder recipe used as the target multi-agent workflow). The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; SCOUT handoff JSONs are in the experiments/*/sessions/ directories.
 
 ## Funding and Conflict of Interest
 
@@ -213,7 +216,7 @@ If you use this dataset or methodology, please cite:
   month={March},
   day={16},
   howpublished={\url{https://github.com/clouatre-labs/llm-agent-experiments}},
-  note={Pre-registered model comparison experiments (exp3, exp4) in the goose-coder recipe. Blind scoring with Mann-Whitney U statistical test.}
+  note={Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight models as delegate agents. Blind scoring with Mann-Whitney U statistical test.}
 }
 ```
 
