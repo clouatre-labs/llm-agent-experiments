@@ -1,0 +1,253 @@
+{
+  "source": "goose sessions.db, correlated by run timestamp to session created_at",
+  "pricing_date": "2026-02-25",
+  "pricing": {
+    "haiku-4.5": {
+      "input_per_mtok": 1.00,
+      "output_per_mtok": 5.00,
+      "provider": "gcp_vertex_ai"
+    },
+    "qwen3-coder": {
+      "input_per_mtok": 0.30,
+      "output_per_mtok": 0.60,
+      "provider": "openrouter"
+    },
+    "gemini-3-flash": {
+      "input_per_mtok": 0.15,
+      "output_per_mtok": 0.60,
+      "provider": "gcp_vertex_ai"
+    },
+    "devstral-2512": {
+      "input_per_mtok": 0.20,
+      "output_per_mtok": 0.60,
+      "provider": "openrouter"
+    }
+  },
+  "runs": [
+    {
+      "run_id": "run-01",
+      "model": "haiku-4.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.4,
+      "session_input_tokens": 18099,
+      "session_output_tokens": 680,
+      "accumulated_input_tokens": 612417,
+      "accumulated_output_tokens": 7263
+    },
+    {
+      "run_id": "run-02",
+      "model": "haiku-4.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.9,
+      "session_input_tokens": 18674,
+      "session_output_tokens": 933,
+      "accumulated_input_tokens": 751942,
+      "accumulated_output_tokens": 8026
+    },
+    {
+      "run_id": "run-03",
+      "model": "haiku-4.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 3.1,
+      "session_input_tokens": 16420,
+      "session_output_tokens": 859,
+      "accumulated_input_tokens": 970030,
+      "accumulated_output_tokens": 9571
+    },
+    {
+      "run_id": "run-04",
+      "model": "haiku-4.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.9,
+      "session_input_tokens": 17620,
+      "session_output_tokens": 949,
+      "accumulated_input_tokens": 931928,
+      "accumulated_output_tokens": 9179
+    },
+    {
+      "run_id": "run-05",
+      "model": "haiku-4.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.8,
+      "session_input_tokens": 18080,
+      "session_output_tokens": 1003,
+      "accumulated_input_tokens": 883044,
+      "accumulated_output_tokens": 8987
+    },
+    {
+      "run_id": "run-06",
+      "model": "qwen3-coder",
+      "valid": false,
+      "attempt": 3,
+      "note": "exhausted",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-07",
+      "model": "qwen3-coder",
+      "valid": false,
+      "attempt": 4,
+      "note": "exhausted, stopped per protocol",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-08",
+      "model": "qwen3-coder",
+      "valid": false,
+      "attempt": null,
+      "note": "grouped with runs 06-07",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-09",
+      "model": "qwen3-coder",
+      "valid": false,
+      "attempt": null,
+      "note": "grouped with runs 06-07",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-10",
+      "model": "qwen3-coder",
+      "valid": false,
+      "attempt": null,
+      "note": "grouped with runs 06-07",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-11",
+      "model": "gemini-3-flash",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.4,
+      "session_input_tokens": 11976,
+      "session_output_tokens": 568,
+      "accumulated_input_tokens": 479411,
+      "accumulated_output_tokens": 3766
+    },
+    {
+      "run_id": "run-12",
+      "model": "gemini-3-flash",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 6.8,
+      "session_input_tokens": 9019,
+      "session_output_tokens": 486,
+      "accumulated_input_tokens": 983283,
+      "accumulated_output_tokens": 5513
+    },
+    {
+      "run_id": "run-13",
+      "model": "gemini-3-flash",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 1.6,
+      "session_input_tokens": 13357,
+      "session_output_tokens": 468,
+      "accumulated_input_tokens": 117624,
+      "accumulated_output_tokens": 2370
+    },
+    {
+      "run_id": "run-14",
+      "model": "gemini-3-flash",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 1.0,
+      "session_input_tokens": 13507,
+      "session_output_tokens": 441,
+      "accumulated_input_tokens": 124477,
+      "accumulated_output_tokens": 2427
+    },
+    {
+      "run_id": "run-15",
+      "model": "gemini-3-flash",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 1.5,
+      "session_input_tokens": 13507,
+      "session_output_tokens": 441,
+      "accumulated_input_tokens": 124477,
+      "accumulated_output_tokens": 2427
+    },
+    {
+      "run_id": "run-16",
+      "model": "devstral-2512",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.4,
+      "session_input_tokens": 11559,
+      "session_output_tokens": 280,
+      "accumulated_input_tokens": 549435,
+      "accumulated_output_tokens": 3256
+    },
+    {
+      "run_id": "run-17",
+      "model": "devstral-2512",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.6,
+      "session_input_tokens": 10030,
+      "session_output_tokens": 193,
+      "accumulated_input_tokens": 584095,
+      "accumulated_output_tokens": 4047
+    },
+    {
+      "run_id": "run-18",
+      "model": "devstral-2512",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.2,
+      "session_input_tokens": 14092,
+      "session_output_tokens": 319,
+      "accumulated_input_tokens": 629241,
+      "accumulated_output_tokens": 5144
+    },
+    {
+      "run_id": "run-19",
+      "model": "devstral-2512",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 3.1,
+      "session_input_tokens": 10263,
+      "session_output_tokens": 387,
+      "accumulated_input_tokens": 537316,
+      "accumulated_output_tokens": 4632
+    },
+    {
+      "run_id": "run-20",
+      "model": "devstral-2512",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.7,
+      "session_input_tokens": 11242,
+      "session_output_tokens": 366,
+      "accumulated_input_tokens": 448930,
+      "accumulated_output_tokens": 4764
+    }
+  ]
+}

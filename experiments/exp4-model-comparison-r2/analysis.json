@@ -1,0 +1,361 @@
+{
+  "experiment": "exp4-model-comparison-r2",
+  "timestamp": "2026-02-25T06:19:00Z",
+  "method": {
+    "test": "Mann-Whitney U (two-tailed)",
+    "alpha": 0.05,
+    "p_value_method": "exact (exhaustive permutation)",
+    "effect_size": "rank-biserial correlation (r_rb)",
+    "bonferroni_correction": false,
+    "bonferroni_note": "Three pairwise comparisons; no correction applied (exploratory, noted as limitation)"
+  },
+  "baseline": {
+    "model": "claude-haiku-4.5",
+    "source": "experiments/exp3-model-comparison/scores.json",
+    "runs": [
+      "run-01",
+      "run-02",
+      "run-03",
+      "run-04",
+      "run-05"
+    ],
+    "scores": [
+      5,
+      5,
+      8,
+      6,
+      5
+    ],
+    "mean": 5.8,
+    "median": 5,
+    "min": 5,
+    "max": 8
+  },
+  "candidates": {
+    "minimax-m2.5": {
+      "runs": {
+        "valid": [
+          "run-21",
+          "run-22",
+          "run-23",
+          "run-24",
+          "run-25"
+        ],
+        "missing": [],
+        "invalid": []
+      },
+      "scores": [
+        6,
+        7,
+        6,
+        5,
+        6
+      ],
+      "summary": {
+        "mean": 6.0,
+        "median": 6,
+        "min": 5,
+        "max": 7,
+        "n_valid": 5,
+        "n_missing": 0,
+        "error_rate": 0.0
+      },
+      "criterion_pass_rates": {
+        "C1": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C2": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C3": {
+          "passed": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "C4": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C5": {
+          "passed": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "C6": {
+          "passed": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "C7": {
+          "passed": 4,
+          "total": 5,
+          "rate": 0.8
+        },
+        "C8": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        }
+      },
+      "mann_whitney_vs_haiku": {
+        "U1": 16.0,
+        "U2": 9.0,
+        "U_statistic": 9.0,
+        "p_exact_two_tailed": 0.492063,
+        "rank_biserial_r": 0.28,
+        "n_x": 5,
+        "n_y": 5,
+        "total_permutations": 252
+      },
+      "gates": {
+        "gate1_mean_threshold": {
+          "threshold": 5.3,
+          "value": 6.0,
+          "pass": true
+        },
+        "gate2_floor": {
+          "threshold": 5,
+          "value": 5,
+          "pass": true
+        },
+        "gate3_completeness": {
+          "threshold": 0.2,
+          "value": 0.0,
+          "pass": true
+        },
+        "gate4_non_inferiority": {
+          "p_value": 0.492063,
+          "rank_biserial_r": 0.28,
+          "significant_at_005": false,
+          "candidate_degraded": false,
+          "pass": true
+        }
+      },
+      "verdict": "pass",
+      "failed_gates": []
+    },
+    "deepseek-v3.2": {
+      "runs": {
+        "valid": [
+          "run-26",
+          "run-28",
+          "run-29"
+        ],
+        "missing": [
+          "run-27",
+          "run-30"
+        ],
+        "invalid": []
+      },
+      "scores": [
+        1,
+        1,
+        1
+      ],
+      "summary": {
+        "mean": 1.0,
+        "median": 1,
+        "min": 1,
+        "max": 1,
+        "n_valid": 3,
+        "n_missing": 2,
+        "error_rate": 0.4
+      },
+      "criterion_pass_rates": {
+        "C1": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C2": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C3": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C4": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C5": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C6": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C7": {
+          "passed": 0,
+          "total": 3,
+          "rate": 0.0
+        },
+        "C8": {
+          "passed": 3,
+          "total": 3,
+          "rate": 1.0
+        }
+      },
+      "mann_whitney_vs_haiku": {
+        "U1": 0.0,
+        "U2": 15.0,
+        "U_statistic": 0.0,
+        "p_exact_two_tailed": 0.017857,
+        "rank_biserial_r": -1.0,
+        "n_x": 3,
+        "n_y": 5,
+        "total_permutations": 56
+      },
+      "gates": {
+        "gate1_mean_threshold": {
+          "threshold": 5.3,
+          "value": 1.0,
+          "pass": false
+        },
+        "gate2_floor": {
+          "threshold": 5,
+          "value": 1,
+          "pass": false
+        },
+        "gate3_completeness": {
+          "threshold": 0.2,
+          "value": 0.4,
+          "pass": false
+        },
+        "gate4_non_inferiority": {
+          "p_value": 0.017857,
+          "rank_biserial_r": -1.0,
+          "significant_at_005": true,
+          "candidate_degraded": true,
+          "pass": false
+        }
+      },
+      "verdict": "fail",
+      "failed_gates": [
+        "gate1_mean_threshold",
+        "gate2_floor",
+        "gate3_completeness",
+        "gate4_non_inferiority"
+      ]
+    },
+    "kimi-k2.5": {
+      "runs": {
+        "valid": [
+          "run-31",
+          "run-32",
+          "run-33",
+          "run-34",
+          "run-35"
+        ],
+        "missing": [],
+        "invalid": []
+      },
+      "scores": [
+        7,
+        7,
+        6,
+        7,
+        8
+      ],
+      "summary": {
+        "mean": 7.0,
+        "median": 7,
+        "min": 6,
+        "max": 8,
+        "n_valid": 5,
+        "n_missing": 0,
+        "error_rate": 0.0
+      },
+      "criterion_pass_rates": {
+        "C1": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C2": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C3": {
+          "passed": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "C4": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C5": {
+          "passed": 2,
+          "total": 5,
+          "rate": 0.4
+        },
+        "C6": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C7": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C8": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        }
+      },
+      "mann_whitney_vs_haiku": {
+        "U1": 20.0,
+        "U2": 5.0,
+        "U_statistic": 5.0,
+        "p_exact_two_tailed": 0.18254,
+        "rank_biserial_r": 0.6,
+        "n_x": 5,
+        "n_y": 5,
+        "total_permutations": 252
+      },
+      "gates": {
+        "gate1_mean_threshold": {
+          "threshold": 5.3,
+          "value": 7.0,
+          "pass": true
+        },
+        "gate2_floor": {
+          "threshold": 5,
+          "value": 6,
+          "pass": true
+        },
+        "gate3_completeness": {
+          "threshold": 0.2,
+          "value": 0.0,
+          "pass": true
+        },
+        "gate4_non_inferiority": {
+          "p_value": 0.18254,
+          "rank_biserial_r": 0.6,
+          "significant_at_005": false,
+          "candidate_degraded": false,
+          "pass": true
+        }
+      },
+      "verdict": "pass",
+      "failed_gates": []
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "session_id": "run-31",
+  "lens": "scout",
+  "relevant_files": [
+    {
+      "path": "crates/aptu-core/src/security/scanner.rs",
+      "role": "Main SecurityScanner implementation using regex-based line-by-line scanning"
+    },
+    {
+      "path": "crates/aptu-core/src/security/patterns.rs",
+      "role": "PatternEngine with compiled regex patterns from embedded JSON"
+    },
+    {
+      "path": "crates/aptu-core/src/security/patterns.json",
+      "role": "14 regex pattern definitions for vulnerability detection"
+    },
+    {
+      "path": "crates/aptu-core/src/security/types.rs",
+      "role": "Core types: Finding, PatternDefinition, Severity, Confidence, ValidatedFinding"
+    },
+    {
+      "path": "crates/aptu-core/src/security/mod.rs",
+      "role": "Security module exports and submodule organization"
+    },
+    {
+      "path": "crates/aptu-core/tests/security_integration.rs",
+      "role": "Integration tests including multi-line limitation test from PR #736"
+    },
+    {
+      "path": "crates/aptu-core/Cargo.toml",
+      "role": "Crate dependencies - currently no tree-sitter deps"
+    },
+    {
+      "path": "crates/aptu-core/src/security/validator.rs",
+      "role": "LLM-based validation of findings (post-processing)"
+    },
+    {
+      "path": "crates/aptu-core/src/security/detection.rs",
+      "role": "Detection utilities and helpers"
+    }
+  ],
+  "conventions": {
+    "code_style": "Rust with SPDX license headers, comprehensive doc comments",
+    "error_handling": "thiserror for libraries, anyhow for applications",
+    "testing": "Unit tests in source files, integration tests in tests/ directory",
+    "patterns": "LazyLock for global singletons, builder pattern with bon",
+    "serialization": "serde with rename_all lowercase for enums",
+    "architecture": "Modular security subsystem with clear separation of concerns",
+    "commits": "Conventional Commits format, GPG signed, DCO sign-off required"
+  },
+  "patterns": [
+    {
+      "pattern": "Regex-based line-by-line scanning",
+      "context": "Current implementation in PatternEngine::scan()",
+      "impact": "Cannot detect multi-line vulnerabilities where source and sink are separated"
+    },
+    {
+      "pattern": "Embedded JSON pattern database",
+      "context": "patterns.json included at compile time via include_str!",
+      "impact": "Patterns are static; runtime customization requires code changes"
+    },
+    {
+      "pattern": "File extension filtering",
+      "context": "Patterns can specify applicable file extensions",
+      "impact": "Reduces false positives but requires per-language patterns"
+    },
+    {
+      "pattern": "Global singleton PatternEngine",
+      "context": "LazyLock<PatternEngine> for efficient reuse",
+      "impact": "Pattern compilation happens once at first use"
+    },
+    {
+      "pattern": "Diff-aware scanning",
+      "context": "scan_diff() parses unified diff format, only scans added lines",
+      "impact": "Focuses on new code changes, ignores removed vulnerabilities"
+    }
+  ],
+  "anti_patterns": [
+    {
+      "pattern": "Line-by-line regex matching",
+      "issue": "Misses vulnerabilities spanning multiple lines",
+      "example": "SQL injection where user_input is assigned on line 1, used in query on line 3"
+    },
+    {
+      "pattern": "Static pattern definitions",
+      "issue": "No runtime pattern loading or customization without recompilation",
+      "alternative": "Consider external pattern files or database"
+    }
+  ],
+  "related_issues": [
+    {
+      "number": 737,
+      "summary": "feat(security): evaluate tree-sitter for AST-based vulnerability detection - Main feature request to enable multi-line vulnerability detection via AST parsing"
+    },
+    {
+      "number": 735,
+      "summary": "test(security): add negative test documenting multi-line detection limitation - Documents known regex scanner limitation with explicit test case"
+    },
+    {
+      "number": 736,
+      "summary": "PR: test(security): add negative test documenting multi-line detection limitation - Merged PR adding test_multi_line_vulnerability_not_detected"
+    }
+  ],
+  "constraints": [
+    "No breaking changes to existing SecurityScanner API",
+    "14 existing regex patterns must be migrated or supported",
+    "Must support Rust, Python, JavaScript, TypeScript, Java, PHP based on existing patterns",
+    "Binary size concerns from adding grammar crates",
+    "Performance: incremental parsing for large files",
+    "Hybrid approach preferred per issue #737 - keep regex for simple patterns"
+  ],
+  "test_coverage": "Strong test coverage with unit tests in scanner.rs and patterns.rs, integration tests in security_integration.rs. Tests cover: pattern detection, file extension filtering, diff parsing, line number accuracy, ignored paths. Notable test: test_multi_line_vulnerability_not_detected explicitly documents current limitation.",
+  "library_findings": [
+    {
+      "name": "tree-sitter",
+      "role": "Core AST parsing library - creates parse trees from source code",
+      "notes": "Version 0.24 recommended. Provides incremental parsing, language-agnostic core."
+    },
+    {
+      "name": "tree-sitter-rust",
+      "role": "Rust grammar for tree-sitter - enables Rust AST parsing",
+      "notes": "Version 0.23 recommended. Required for scanning Rust files with AST."
+    },
+    {
+      "name": "tree-sitter-python",
+      "role": "Python grammar - enables Python AST parsing",
+      "notes": "Required for SQL injection detection in Python code."
+    },
+    {
+      "name": "tree-sitter-javascript",
+      "role": "JavaScript/TypeScript grammar",
+      "notes": "Required for XSS detection in JS/TS files."
+    },
+    {
+      "name": "tree-sitter-java",
+      "role": "Java grammar",
+      "notes": "Required for SQL injection and XXE detection in Java."
+    },
+    {
+      "name": "tree-sitter-php",
+      "role": "PHP grammar",
+      "notes": "Required for PHP security patterns."
+    },
+    {
+      "name": "regex",
+      "role": "Current pattern matching engine - will remain for simple patterns",
+      "notes": "Keep for simple line-based patterns to avoid overhead of full AST parsing."
+    }
+  ],
+  "approaches": [
+    {
+      "title": "Approach 1: AST-Only Migration (Full Replacement)",
+      "summary": "Replace regex-based PatternEngine entirely with tree-sitter AST parsing. All 14 patterns rewritten as tree-sitter queries. Single AST-based scanner handles all detection.",
+      "pros": [
+        "Maximum detection capability for multi-line vulnerabilities",
+        "Language-aware parsing eliminates many false positives",
+        "Unified detection approach - no hybrid complexity",
+        "Tree-sitter queries are more expressive than regex for code patterns"
+      ],
+      "cons": [
+        "Major breaking change - full rewrite of PatternEngine",
+        "All 14 patterns need complete rewrite in Scheme-like query syntax",
+        "Binary size increase from 5-10 grammar crates (~2-5MB estimated)",
+        "Performance overhead for simple patterns that regex handled efficiently",
+        "Longer implementation time (~2-3 weeks estimated)"
+      ],
+      "complexity": "High",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/patterns.rs - Complete rewrite to use tree-sitter",
+        "crates/aptu-core/src/security/scanner.rs - Minor updates for AST context",
+        "crates/aptu-core/src/security/patterns.json - Replace with tree-sitter query files",
+        "crates/aptu-core/Cargo.toml - Add tree-sitter + grammar dependencies",
+        "crates/aptu-core/src/security/types.rs - Add AST-specific types",
+        "crates/aptu-core/tests/security_integration.rs - Update tests for new detection behavior"
+      ]
+    },
+    {
+      "title": "Approach 2: Hybrid Architecture (Recommended by Issue #737)",
+      "summary": "Keep regex PatternEngine for simple line-based patterns, add new AstPatternEngine for multi-line detection. Scanner uses both engines, merges results. Tree-sitter only for patterns needing AST context.",
+      "pros": [
+        "Incremental adoption - no breaking changes to existing patterns",
+        "Performance: regex for simple patterns, AST only when needed",
+        "Lower risk - can validate tree-sitter approach before full commitment",
+        "Aligns with suggested approach in issue #737",
+        "Smaller binary size - only include grammars for languages needing AST"
+      ],
+      "cons": [
+        "Two code paths to maintain",
+        "Pattern classification needed (regex vs AST)",
+        "Potential duplicate findings from both engines (requires deduplication)",
+        "Slightly more complex architecture"
+      ],
+      "complexity": "Medium",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/ast_engine.rs - NEW: Tree-sitter based engine",
+        "crates/aptu-core/src/security/patterns.rs - Add pattern classification",
+        "crates/aptu-core/src/security/scanner.rs - Integrate both engines, merge findings",
+        "crates/aptu-core/src/security/ast_patterns/ - NEW: Directory for tree-sitter queries",
+        "crates/aptu-core/src/security/mod.rs - Export new AstEngine",
+        "crates/aptu-core/Cargo.toml - Add tree-sitter + grammar deps (optional features)",
+        "crates/aptu-core/src/security/types.rs - Add AstPatternDefinition type"
+      ]
+    },
+    {
+      "title": "Approach 3: Data-Flow Analysis Layer on Top of AST",
+      "summary": "Build a higher-level data-flow/taint analysis engine that uses tree-sitter AST as foundation. Tracks variables from source (user input) to sink (dangerous function). Most sophisticated but also most complex.",
+      "pros": [
+        "Detects complex vulnerabilities: SQL injection, command injection, XSS with flow analysis",
+        "Can track user input through multiple assignments and function calls",
+        "Industry-standard approach used by commercial SAST tools (Semgrep, CodeQL)",
+        "Future-proof foundation for advanced security features"
+      ],
+      "cons": [
+        "Very high complexity - requires building taint tracking system",
+        "Significant development time (~1-2 months estimated)",
+        "Requires deep understanding of each language's semantics",
+        "May need custom logic beyond tree-sitter (control flow analysis)",
+        "Overkill for current 14 pattern use case"
+      ],
+      "complexity": "Very High",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/ast_engine.rs - NEW: Tree-sitter integration",
+        "crates/aptu-core/src/security/dataflow.rs - NEW: Taint analysis engine",
+        "crates/aptu-core/src/security/taint_rules.rs - NEW: Source/sink definitions",
+        "crates/aptu-core/src/security/scanner.rs - Integrate data-flow analysis",
+        "crates/aptu-core/Cargo.toml - Add tree-sitter + complex deps",
+        "Multiple new modules for control flow, call graph analysis"
+      ]
+    }
+  ],
+  "recommendation": "Recommend Approach 2: Hybrid Architecture. This aligns with the suggested approach in issue #737 and balances multiple concerns:\n\n1. **Risk Mitigation**: Keeps existing regex engine working, no breaking changes\n2. **Incremental Value**: Can implement tree-sitter for just SQL injection first (the most impactful multi-line pattern), then expand\n3. **Performance**: Simple patterns (hardcoded secrets, weak crypto) stay fast with regex; only complex multi-line patterns use AST\n4. **Maintainability**: Pattern authors can choose appropriate engine per pattern\n5. **Binary Size**: Use Cargo features to make grammars optional (e.g., feature = \"ast-rust\", \"ast-python\")\n\nImplementation roadmap:\n- Phase 1: Add tree-sitter-rust, implement SQL injection pattern as proof of concept\n- Phase 2: Evaluate detection quality vs regex on real-world code\n- Phase 3: Add remaining language grammars and migrate patterns that benefit from AST\n\nKey files to create/modify:\n- `ast_engine.rs` - New tree-sitter integration\n- Update `scanner.rs` to use both engines\n- Add feature-gated grammar dependencies in Cargo.toml"
+}

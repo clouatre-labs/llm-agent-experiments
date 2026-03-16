@@ -1,0 +1,246 @@
+{
+  "session_id": "run-34",
+  "lens": "scout",
+  "relevant_files": [
+    {
+      "path": "crates/aptu-core/src/security/scanner.rs",
+      "role": "Core SecurityScanner implementation with regex-based detection"
+    },
+    {
+      "path": "crates/aptu-core/src/security/patterns.rs",
+      "role": "PatternEngine with 14 regex patterns for vulnerability detection"
+    },
+    {
+      "path": "crates/aptu-core/src/security/patterns.json",
+      "role": "JSON pattern definitions for security rules"
+    },
+    {
+      "path": "crates/aptu-core/src/security/types.rs",
+      "role": "Data structures: Severity, Confidence, Finding, PatternDefinition"
+    },
+    {
+      "path": "crates/aptu-core/src/security/detection.rs",
+      "role": "Smart detection logic for when to trigger security scans"
+    },
+    {
+      "path": "crates/aptu-core/src/security/validator.rs",
+      "role": "LLM-based validation to reduce false positives"
+    },
+    {
+      "path": "crates/aptu-core/tests/security_integration.rs",
+      "role": "Integration tests including multi-line limitation test"
+    },
+    {
+      "path": "tests/security_fixtures/vulnerable/sql_injection.rs",
+      "role": "Test fixture demonstrating detected vulnerabilities"
+    },
+    {
+      "path": "tests/security_fixtures/safe/safe_patterns.rs",
+      "role": "Test fixture with safe patterns (should produce no findings)"
+    },
+    {
+      "path": "Cargo.toml",
+      "role": "Workspace configuration, dependency management"
+    }
+  ],
+  "conventions": {
+    "code_style": "Rust 2024 edition, strict clippy pedantic lints",
+    "error_handling": "thiserror for libraries, anyhow for applications",
+    "testing": "Unit tests in src files, integration tests in tests/ directory",
+    "documentation": "SPDX license headers, rustdoc comments for public APIs",
+    "commits": "Conventional Commits format required",
+    "architecture": "Multi-crate workspace: aptu-core (lib), aptu-cli (bin), aptu-mcp, aptu-ffi",
+    "pattern_storage": "JSON file for pattern definitions, loaded at runtime",
+    "async_patterns": "tokio for async runtime, async-trait for trait bounds",
+    "ai_integration": "Provider trait pattern for multiple AI backends (Groq, Cerebras, Gemini)"
+  },
+  "patterns": [
+    {
+      "pattern": "Regex-based line-by-line scanning",
+      "context": "Current SecurityScanner operates on individual lines",
+      "impact": "Cannot detect multi-line vulnerabilities where source and sink span lines"
+    },
+    {
+      "pattern": "Lazy static initialization",
+      "context": "PatternEngine uses OnceLock for global pattern compilation",
+      "impact": "Thread-safe singleton pattern for regex compilation"
+    },
+    {
+      "pattern": "Hybrid detection approach",
+      "context": "Regex for initial detection + LLM for validation",
+      "impact": "Reduces false positives but adds latency"
+    },
+    {
+      "pattern": "File extension filtering",
+      "context": "Patterns specify applicable file extensions",
+      "impact": "Reduces false positives for language-specific patterns"
+    },
+    {
+      "pattern": "CWE mapping",
+      "context": "Each pattern maps to a CWE identifier",
+      "impact": "Standardized vulnerability classification"
+    }
+  ],
+  "anti_patterns": [
+    {
+      "anti_pattern": "Line-by-line regex matching",
+      "context": "Current scanner splits input by lines and matches individually",
+      "impact": "Cannot detect multi-line SQL injection or data flow patterns",
+      "example": "format!(\"SELECT * FROM {}\", table) + user_input spans lines"
+    },
+    {
+      "anti_pattern": "Pattern duplication across languages",
+      "context": "Same regex patterns repeated for .rs, .py, .js, .java",
+      "impact": "Maintenance burden, potential for inconsistent detection"
+    }
+  ],
+  "related_issues": [
+    {
+      "number": 737,
+      "summary": "Evaluate tree-sitter for AST-based vulnerability detection - multi-line detection capability"
+    },
+    {
+      "number": 735,
+      "summary": "Add negative test documenting multi-line detection limitation (CLOSED)"
+    },
+    {
+      "number": 736,
+      "summary": "PR adding test_multi_line_vulnerability_not_detected (MERGED)"
+    }
+  ],
+  "constraints": [
+    "Rust 1.92.0 minimum version (edition 2024)",
+    "Binary size optimization in release profile (opt-level=z, LTO)",
+    "No unsafe code preferred (warn on unsafe_code)",
+    "Must maintain backward compatibility with existing pattern.json",
+    "Tree-sitter grammar crates add significant binary size (~1-2MB per language)",
+    "14 existing patterns need migration path consideration",
+    "LLM validation already reduces false positives - AST adds complexity trade-off"
+  ],
+  "test_coverage": [
+    "Unit tests for PatternEngine pattern compilation and matching",
+    "Integration tests for SQL injection, hardcoded secrets detection",
+    "Negative test explicitly documenting multi-line limitation (test_multi_line_vulnerability_not_detected)",
+    "Safe pattern fixture tests for false positive prevention",
+    "Validator tests for LLM-based validation fallback logic",
+    "Detection trigger tests for security scan heuristics"
+  ],
+  "library_findings": [
+    {
+      "name": "tree-sitter",
+      "version": "0.26.5",
+      "role": "Core AST parsing library",
+      "notes": "Incremental parsing, fast re-parsing on edits. Query syntax uses Scheme-like expressions."
+    },
+    {
+      "name": "tree-sitter-rust",
+      "version": "0.24.0",
+      "role": "Rust grammar for tree-sitter",
+      "notes": "Required for parsing .rs files. Native Rust bindings available."
+    },
+    {
+      "name": "tree-sitter-python",
+      "version": "0.25.0",
+      "role": "Python grammar for tree-sitter",
+      "notes": "Required for parsing .py files"
+    },
+    {
+      "name": "tree-sitter-javascript",
+      "version": "0.25.0",
+      "role": "JavaScript/TypeScript grammar",
+      "notes": "Handles .js, .ts, .jsx, .tsx files"
+    },
+    {
+      "name": "tree-sitter-java",
+      "version": "0.23.5",
+      "role": "Java grammar (inferred from search)",
+      "notes": "Required for .java files if supported"
+    },
+    {
+      "name": "tree-sitter-go",
+      "version": "0.23.0",
+      "role": "Go grammar (inferred from search)",
+      "notes": "Required for .go files if supported"
+    }
+  ],
+  "approaches": [
+    {
+      "title": "Hybrid Approach: Regex + Tree-sitter",
+      "summary": "Keep regex for simple single-line patterns, add tree-sitter module for multi-line/data-flow detection. Add new AST-based scanner alongside existing SecurityScanner.",
+      "pros": [
+        "Minimal disruption to existing 14 patterns",
+        "Regex patterns are fast for simple cases (hardcoded secrets)",
+        "Tree-sitter only loaded when needed for complex patterns",
+        "Gradual migration path - add tree-sitter patterns incrementally",
+        "Can compare detection quality between regex and AST approaches"
+      ],
+      "cons": [
+        "Two code paths to maintain",
+        "More complex architecture",
+        "Binary size increases from grammar crates",
+        "Developers need to know which patterns use which engine"
+      ],
+      "complexity": "Medium - requires new AstScanner module, pattern routing logic",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/ast_scanner.rs (new)",
+        "crates/aptu-core/src/security/mod.rs (add module)",
+        "crates/aptu-core/src/security/scanner.rs (add routing logic)",
+        "crates/aptu-core/Cargo.toml (add tree-sitter deps)",
+        "crates/aptu-core/src/security/patterns.json (add 'engine' field)"
+      ]
+    },
+    {
+      "title": "Full Migration to Tree-sitter",
+      "summary": "Replace regex-based PatternEngine with tree-sitter query-based detection. Convert all 14 patterns to tree-sitter query syntax.",
+      "pros": [
+        "Unified AST-based detection architecture",
+        "True multi-line vulnerability detection",
+        "Language-aware parsing (knows difference between string and variable)",
+        "Future-proof for advanced features (data-flow analysis, taint tracking)",
+        "Can detect context-sensitive vulnerabilities (e.g., string interpolation inside SQL)",
+        "Incremental parsing benefit for IDE-like features later"
+      ],
+      "cons": [
+        "Major refactoring - all 14 patterns need rewriting",
+        "Tree-sitter query syntax learning curve",
+        "Binary size increase (~5-10MB with 5-10 grammar crates)",
+        "Potential performance regression for simple patterns",
+        "Breaking change for external pattern.json consumers"
+      ],
+      "complexity": "High - full pattern rewrite, new query syntax, extensive testing",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/patterns.rs (major rewrite)",
+        "crates/aptu-core/src/security/patterns.json (replace with queries)",
+        "crates/aptu-core/src/security/scanner.rs (simplify - remove line-by-line)",
+        "crates/aptu-core/Cargo.toml (add all grammar deps)",
+        "crates/aptu-core/src/security/query_engine.rs (new)"
+      ]
+    },
+    {
+      "title": "Spike: Tree-sitter for Multi-line Only",
+      "summary": "Minimal viable integration - add tree-sitter-rust only, implement ONE multi-line pattern (SQL injection) as proof of concept. Keep everything else unchanged.",
+      "pros": [
+        "Lowest risk - can evaluate before committing",
+        "Validates tree-sitter integration complexity",
+        "Tests actual detection quality improvement",
+        "Easy to revert if approach doesn't work",
+        "Matches issue #737 suggested approach",
+        "Small scope - ~200-300 lines of code"
+      ],
+      "cons": [
+        "Limited immediate value (only one pattern)",
+        "Still requires follow-up work to expand",
+        "Temporary technical debt (hybrid state during spike)"
+      ],
+      "complexity": "Low - minimal integration, single pattern proof-of-concept",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/tree_sitter_spike.rs (new, temporary)",
+        "crates/aptu-core/tests/tree_sitter_spike_test.rs (new)",
+        "crates/aptu-core/Cargo.toml (add tree-sitter, tree-sitter-rust)",
+        "crates/aptu-core/src/security/mod.rs (add behind feature flag)"
+      ],
+      "spike_query_example": "; Tree-sitter query for multi-line SQL injection\n(call_expression\n  function: (identifier) @fn_name (#match? @fn_name \"^(execute|query|exec)$\")\n  arguments: (arguments\n    (binary_expression\n      left: (string_literal) @sql_prefix (#match? @sql_prefix \"SELECT|INSERT|UPDATE|DELETE\")\n      right: (_) @user_input)))"
+    }
+  ],
+  "recommendation": "Approach 3 (Spike) is recommended as the starting point. It directly addresses the issue's suggested approach ('Spike: Add tree-sitter-rust, detect one multi-line pattern') with lowest risk. The spike should:\n\n1. Add tree-sitter = \"0.26\" and tree-sitter-rust = \"0.24\" to aptu-core/Cargo.toml\n2. Create a focused test case for the multi-line SQL injection pattern from issue #735\n3. Implement a minimal TreeSitterScanner that can parse Rust code and run a hardcoded query\n4. Compare detection results between regex (current, fails) and tree-sitter (target, succeeds)\n5. Document: performance impact, binary size increase, developer experience\n\nAfter the spike, the team can make an informed decision between Approach 1 (hybrid) or Approach 2 (full migration). The spike output should include a concrete query pattern that could be extended to other languages.\n\nKey technical notes:\n- Tree-sitter queries use S-expressions with predicates like (#match? @capture \"regex\")\n- Multi-line detection requires matching AST nodes that span multiple source lines\n- The existing test_multi_line_vulnerability_not_detected test should flip from pass to fail once tree-sitter is integrated\n- Consider feature-flagging the tree-sitter code during spike to avoid impacting release builds"
+}

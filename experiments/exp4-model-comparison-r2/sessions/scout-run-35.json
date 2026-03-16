@@ -1,0 +1,152 @@
+{
+  "session_id": "run-35",
+  "lens": "scout",
+  "relevant_files": [
+    {"path": "crates/aptu-core/src/security/scanner.rs", "role": "Main SecurityScanner implementation with regex-based line-by-line scanning"},
+    {"path": "crates/aptu-core/src/security/patterns.rs", "role": "PatternEngine with compiled regex patterns from embedded JSON"},
+    {"path": "crates/aptu-core/src/security/types.rs", "role": "Core types: Finding, PatternDefinition, Severity, Confidence"},
+    {"path": "crates/aptu-core/src/security/patterns.json", "role": "Embedded regex pattern database (14 patterns)"},
+    {"path": "crates/aptu-core/src/security/detection.rs", "role": "Smart detection logic for when to trigger security scans"},
+    {"path": "crates/aptu-core/src/security/ignore.rs", "role": "SecurityConfig for ignore rules and path filtering"},
+    {"path": "crates/aptu-core/src/security/validator.rs", "role": "LLM-based validation of findings"},
+    {"path": "crates/aptu-core/src/security/sarif.rs", "role": "SARIF report generation"},
+    {"path": "crates/aptu-core/tests/security_integration.rs", "role": "Integration tests including multi-line limitation test"},
+    {"path": "tests/security_fixtures/vulnerable/sql_injection.rs", "role": "Test fixture with intentional vulnerabilities"},
+    {"path": "crates/aptu-core/Cargo.toml", "role": "Crate dependencies - currently uses regex = \"1\""},
+    {"path": "Cargo.toml", "role": "Workspace configuration"}
+  ],
+  "conventions": {
+    "license_headers": "SPDX-License-Identifier: Apache-2.0 on all files",
+    "documentation": "Comprehensive rustdoc with # Arguments, # Returns, # Errors sections",
+    "error_handling": "thiserror for libraries, anyhow for applications",
+    "testing": "Unit tests in #[cfg(test)] modules, integration tests in tests/",
+    "code_style": "must_use attributes on constructors, bon for builders",
+    "async": "tokio runtime, async-trait for traits",
+    "logging": "tracing for observability",
+    "serialization": "serde for JSON/TOML handling",
+    "git_workflow": "Conventional commits, DCO sign-off, GPG signing required",
+    "pattern_storage": "JSON embedded via include_str! with compile-time loading",
+    "pattern_compilation": "LazyLock for global singleton PatternEngine"
+  },
+  "patterns": [
+    {"id": "hardcoded-api-key", "cwe": "CWE-798", "severity": "critical"},
+    {"id": "hardcoded-password", "cwe": "CWE-798", "severity": "critical"},
+    {"id": "sql-injection-concat", "cwe": "CWE-89", "severity": "high"},
+    {"id": "sql-injection-format", "cwe": "CWE-89", "severity": "high"},
+    {"id": "path-traversal", "cwe": "CWE-22", "severity": "high"},
+    {"id": "command-injection", "cwe": "CWE-78", "severity": "critical"},
+    {"id": "xss-innerhtml", "cwe": "CWE-79", "severity": "high"},
+    {"id": "insecure-random", "cwe": "CWE-338", "severity": "medium"},
+    {"id": "weak-crypto-md5", "cwe": "CWE-327", "severity": "medium"},
+    {"id": "weak-crypto-sha1", "cwe": "CWE-327", "severity": "medium"},
+    {"id": "unsafe-deserialization", "cwe": "CWE-502", "severity": "critical"}
+  ],
+  "anti_patterns_found": [
+    "Line-by-line regex scanning cannot detect multi-line vulnerabilities",
+    "No AST awareness - purely textual pattern matching",
+    "No data-flow analysis between source and sink",
+    "Fixed pattern set at compile time via include_str!"
+  ],
+  "related_issues": [
+    {"number": 737, "summary": "Evaluate tree-sitter for AST-based vulnerability detection - main feature request"},
+    {"number": 735, "summary": "Add negative test documenting multi-line detection limitation - CLOSED"},
+    {"number": 736, "summary": "PR adding multi-line limitation test - MERGED"}
+  ],
+  "constraints": [
+    "READ-ONLY evaluation - no code changes permitted",
+    "Must maintain backward compatibility with existing PatternEngine",
+    "Binary size increase from grammar crates is a concern",
+    "Tree-sitter queries use Scheme-like syntax (learning curve)",
+    "Each language needs its own grammar crate (~5-10 languages)",
+    "Data-flow/taint tracking still requires custom logic on top of AST"
+  ],
+  "test_coverage": "Comprehensive test suite with unit tests in each module, integration tests in security_integration.rs, fixture-based testing with vulnerable/safe code samples, benchmark for security scanning performance. Test explicitly documents multi-line limitation via test_multi_line_vulnerability_not_detected.",
+  "library_findings": [
+    {"name": "tree-sitter", "version": "0.26.5", "role": "Core tree-sitter library for parsing", "notes": "Stable, widely used, incremental parsing support"},
+    {"name": "tree-sitter-rust", "version": "0.24.0", "role": "Rust grammar for tree-sitter", "notes": "Official grammar, actively maintained"},
+    {"name": "tree-sitter-python", "version": "available", "role": "Python grammar", "notes": "Needed for Python file scanning"},
+    {"name": "tree-sitter-javascript", "version": "available", "role": "JavaScript/TypeScript grammar", "notes": "Needed for JS/TS file scanning"},
+    {"name": "regex", "version": "1", "role": "Current pattern matching engine", "notes": "Fast for line-by-line, no AST awareness"}
+  ],
+  "approaches": [
+    {
+      "title": "Approach 1: Hybrid Scanner (Recommended)",
+      "summary": "Keep regex PatternEngine for simple line-based patterns, add new AstScanner using tree-sitter for multi-line and language-aware detection. Both scanners implement a common SecurityScanner trait. The hybrid orchestrator runs both and deduplicates findings.",
+      "pros": [
+        "Incremental adoption - no breaking changes to existing patterns",
+        "Regex remains fast for simple patterns (secrets, weak crypto)",
+        "Tree-sitter handles complex multi-line cases (SQL injection data-flow)",
+        "Can A/B test detection quality between engines",
+        "Falls back gracefully if tree-sitter fails to parse"
+      ],
+      "cons": [
+        "More complex architecture with two scanning engines",
+        "Need to deduplicate findings from both engines",
+        "Still need to maintain both pattern formats (regex + tree-sitter queries)",
+        "Slightly higher memory footprint"
+      ],
+      "complexity": "Medium - requires new trait abstraction and orchestrator, but existing code largely unchanged",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/scanner.rs - refactor to trait-based design",
+        "crates/aptu-core/src/security/ast_scanner.rs - NEW: tree-sitter based scanner",
+        "crates/aptu-core/src/security/hybrid_scanner.rs - NEW: orchestrates both engines",
+        "crates/aptu-core/src/security/tree_sitter_queries/ - NEW: directory for .scm query files",
+        "crates/aptu-core/Cargo.toml - add tree-sitter dependencies",
+        "crates/aptu-core/src/security/mod.rs - export new types"
+      ],
+      "estimated_loc": "~600 lines new code"
+    },
+    {
+      "title": "Approach 2: Full Migration to Tree-Sitter",
+      "summary": "Replace PatternEngine entirely with tree-sitter based scanning. Convert all 14 existing regex patterns to tree-sitter queries. Remove regex dependency from security scanning.",
+      "pros": [
+        "Single unified scanning approach",
+        "Maximum detection capability for multi-line vulnerabilities",
+        "Language-aware parsing reduces false positives",
+        "Query patterns are more readable than complex regex",
+        "Incremental parsing enables efficient re-scanning on edits"
+      ],
+      "cons": [
+        "Breaking change - all patterns need rewriting",
+        "Higher binary size from grammar crates",
+        "Tree-sitter queries have learning curve",
+        "Some simple patterns may be slower than regex",
+        "Risk of parse errors on malformed code"
+      ],
+      "complexity": "High - requires complete pattern rewrite and extensive testing",
+      "files_to_touch": [
+        "crates/aptu-core/src/security/patterns.rs - complete rewrite for tree-sitter",
+        "crates/aptu-core/src/security/patterns.json - convert to .scm query files",
+        "crates/aptu-core/src/security/scanner.rs - simplify to use only AST scanning",
+        "crates/aptu-core/Cargo.toml - replace regex with tree-sitter deps",
+        "All test files - update to use new pattern format"
+      ],
+      "estimated_loc": "~400 lines changed, ~300 lines new"
+    },
+    {
+      "title": "Approach 3: Tree-Sitter as Optional Feature",
+      "summary": "Add tree-sitter as a Cargo feature flag (ast-scanning). When enabled, use AST-based detection; when disabled, use current regex engine. Allows gradual opt-in.",
+      "pros": [
+        "Zero breaking changes - purely additive",
+        "Users can opt-in to AST scanning when ready",
+        "Smaller binary size for users who don't need AST",
+        "Can stabilize tree-sitter integration before making default"
+      ],
+      "cons": [
+        "Conditional compilation complexity",
+        "Two code paths to maintain and test",
+        "Feature flags can complicate debugging",
+        "Slower adoption of improved detection"
+      ],
+      "complexity": "Medium - requires feature-gated code paths",
+      "files_to_touch": [
+        "crates/aptu-core/Cargo.toml - add ast-scanning feature",
+        "crates/aptu-core/src/security/scanner.rs - add cfg gates",
+        "crates/aptu-core/src/security/ - conditional modules",
+        "CI configuration - test both feature combinations"
+      ],
+      "estimated_loc": "~500 lines with heavy use of #[cfg]"
+    }
+  ],
+  "recommendation": "Approach 1 (Hybrid Scanner) is recommended. It provides the best balance of capability and risk: (1) Preserves existing regex investment for simple patterns that work well, (2) Adds tree-sitter specifically for multi-line detection where regex fails, (3) Enables A/B testing and gradual migration, (4) No breaking changes to public API, (5) Can be implemented incrementally starting with just tree-sitter-rust for the spike. The key insight from #735/#736 is that the limitation is specifically multi-line detection - a hybrid approach targets this precisely without over-engineering. Start with implementing SecurityScanner as a trait, then add AstScanner for tree-sitter, finally create HybridScanner that orchestrates both with deduplication."
+}

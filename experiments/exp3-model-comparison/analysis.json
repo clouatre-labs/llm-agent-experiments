@@ -1,0 +1,212 @@
+{
+  "experiment": "exp3-model-comparison",
+  "protocol_version": "pre-registered, locked",
+  "analysis_timestamp": "2026-02-25T02:35:29Z",
+  "baseline": {
+    "model": "haiku-4.5",
+    "runs": [
+      "run-01",
+      "run-02",
+      "run-03",
+      "run-04",
+      "run-05"
+    ],
+    "scores": [
+      5,
+      5,
+      8,
+      6,
+      5
+    ],
+    "mean": 5.8,
+    "median": 5,
+    "min": 5,
+    "max": 8,
+    "sd": 1.17
+  },
+  "comparisons": [
+    {
+      "candidate": "qwen3-coder",
+      "runs": [
+        "run-06",
+        "run-07",
+        "run-08",
+        "run-09",
+        "run-10"
+      ],
+      "scores": [
+
+      ],
+      "valid_runs": 0,
+      "total_attempts": 7,
+      "mean": null,
+      "median": null,
+      "note": "Model group failed to produce valid output after 7 attempts. No scores available. Mann-Whitney U not computed.",
+      "mann_whitney_u": null,
+      "gates": {
+        "gate_1_mean_threshold": {
+          "passed": false,
+          "candidate_mean": null,
+          "threshold": 5.3,
+          "haiku_mean": 5.8,
+          "reason": "No valid runs to compute mean"
+        },
+        "gate_2_min_score": {
+          "passed": false,
+          "min_score": null,
+          "threshold": 5,
+          "reason": "No valid runs"
+        },
+        "gate_3_valid_runs": {
+          "passed": false,
+          "valid_runs": 0,
+          "required": 5
+        },
+        "gate_4_error_rate": {
+          "passed": false,
+          "error_rate": 1.0,
+          "threshold": 0.2,
+          "failed_attempts": 7,
+          "total_attempts": 7
+        }
+      },
+      "all_gates_passed": false,
+      "verdict": {
+        "verdict": "fail",
+        "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score, gate_3_valid_runs, gate_4_error_rate"
+      }
+    },
+    {
+      "candidate": "gemini-3-flash",
+      "runs": [
+        "run-11",
+        "run-12",
+        "run-13",
+        "run-14",
+        "run-15"
+      ],
+      "scores": [
+        4,
+        4,
+        3,
+        5,
+        5
+      ],
+      "valid_runs": 5,
+      "total_attempts": 5,
+      "mean": 4.2,
+      "median": 4,
+      "mann_whitney_u": {
+        "U": 3.0,
+        "U1_haiku": 22.0,
+        "U2_candidate": 3.0,
+        "p_value": 0.0794,
+        "p_value_method": "exact (exhaustive permutation, 252 permutations)",
+        "alpha": 0.05,
+        "two_tailed": true,
+        "rank_biserial_r": 0.76,
+        "n_haiku": 5,
+        "n_candidate": 5
+      },
+      "gates": {
+        "gate_1_mean_threshold": {
+          "passed": false,
+          "candidate_mean": 4.2,
+          "threshold": 5.3,
+          "haiku_mean": 5.8
+        },
+        "gate_2_min_score": {
+          "passed": false,
+          "min_score": 3,
+          "threshold": 5
+        },
+        "gate_3_valid_runs": {
+          "passed": true,
+          "valid_runs": 5,
+          "required": 5
+        },
+        "gate_4_error_rate": {
+          "passed": true,
+          "error_rate": 0.0,
+          "threshold": 0.2,
+          "failed_attempts": 0,
+          "total_attempts": 5
+        }
+      },
+      "all_gates_passed": false,
+      "verdict": {
+        "verdict": "fail",
+        "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
+      }
+    },
+    {
+      "candidate": "devstral-2512",
+      "runs": [
+        "run-16",
+        "run-17",
+        "run-18",
+        "run-19",
+        "run-20"
+      ],
+      "scores": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "valid_runs": 5,
+      "total_attempts": 5,
+      "mean": 3.0,
+      "median": 3,
+      "mann_whitney_u": {
+        "U": 0.0,
+        "U1_haiku": 25.0,
+        "U2_candidate": 0.0,
+        "p_value": 0.0079,
+        "p_value_method": "exact (exhaustive permutation, 252 permutations)",
+        "alpha": 0.05,
+        "two_tailed": true,
+        "rank_biserial_r": 1.0,
+        "n_haiku": 5,
+        "n_candidate": 5
+      },
+      "gates": {
+        "gate_1_mean_threshold": {
+          "passed": false,
+          "candidate_mean": 3.0,
+          "threshold": 5.3,
+          "haiku_mean": 5.8
+        },
+        "gate_2_min_score": {
+          "passed": false,
+          "min_score": 2,
+          "threshold": 5
+        },
+        "gate_3_valid_runs": {
+          "passed": true,
+          "valid_runs": 5,
+          "required": 5
+        },
+        "gate_4_error_rate": {
+          "passed": true,
+          "error_rate": 0.0,
+          "threshold": 0.2,
+          "failed_attempts": 0,
+          "total_attempts": 5
+        }
+      },
+      "all_gates_passed": false,
+      "verdict": {
+        "verdict": "fail",
+        "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
+      }
+    }
+  ],
+  "limitations": [
+    "n=5 per group is underpowered; Mann-Whitney U at this n has low power for effect sizes below ~1.5 points",
+    "Three pairwise comparisons without Bonferroni correction; family-wise error rate is elevated",
+    "Scoring delegate is an LLM judge; inter-rater reliability is not measured",
+    "Single issue, single temperature, single task class; results do not generalize"
+  ]
+}

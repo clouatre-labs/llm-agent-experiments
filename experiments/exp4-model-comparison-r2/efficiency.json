@@ -1,0 +1,190 @@
+{
+  "source": "goose sessions.db, correlated by run timestamp to session created_at",
+  "pricing_date": "2026-02-25",
+  "pricing": {
+    "minimax-m2.5": {
+      "input_per_mtok": 0.30,
+      "output_per_mtok": 1.10,
+      "provider": "openrouter"
+    },
+    "deepseek-v3.2": {
+      "input_per_mtok": 0.14,
+      "output_per_mtok": 0.28,
+      "provider": "openrouter"
+    },
+    "kimi-k2.5": {
+      "input_per_mtok": 0.60,
+      "output_per_mtok": 2.50,
+      "provider": "openrouter"
+    }
+  },
+  "runs": [
+    {
+      "run_id": "run-21",
+      "model": "minimax-m2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 6.0,
+      "session_input_tokens": 10984,
+      "session_output_tokens": 382,
+      "accumulated_input_tokens": 381747,
+      "accumulated_output_tokens": 5995
+    },
+    {
+      "run_id": "run-22",
+      "model": "minimax-m2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 6.1,
+      "session_input_tokens": 16658,
+      "session_output_tokens": 412,
+      "accumulated_input_tokens": 393324,
+      "accumulated_output_tokens": 4766
+    },
+    {
+      "run_id": "run-23",
+      "model": "minimax-m2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 4.3,
+      "session_input_tokens": 11520,
+      "session_output_tokens": 411,
+      "accumulated_input_tokens": 399527,
+      "accumulated_output_tokens": 7234
+    },
+    {
+      "run_id": "run-24",
+      "model": "minimax-m2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 3.0,
+      "session_input_tokens": 12381,
+      "session_output_tokens": 401,
+      "accumulated_input_tokens": 262032,
+      "accumulated_output_tokens": 3290
+    },
+    {
+      "run_id": "run-25",
+      "model": "minimax-m2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 6.1,
+      "session_input_tokens": 12343,
+      "session_output_tokens": 573,
+      "accumulated_input_tokens": 376183,
+      "accumulated_output_tokens": 5324
+    },
+    {
+      "run_id": "run-26",
+      "model": "deepseek-v3.2",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.8,
+      "session_input_tokens": 9012,
+      "session_output_tokens": 100,
+      "accumulated_input_tokens": 69898,
+      "accumulated_output_tokens": 3648
+    },
+    {
+      "run_id": "run-27",
+      "model": "deepseek-v3.2",
+      "valid": false,
+      "attempt": 3,
+      "note": "file not written by delegate",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-28",
+      "model": "deepseek-v3.2",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.0,
+      "session_input_tokens": 8051,
+      "session_output_tokens": 94,
+      "accumulated_input_tokens": 37764,
+      "accumulated_output_tokens": 1588
+    },
+    {
+      "run_id": "run-29",
+      "model": "deepseek-v3.2",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 1.6,
+      "session_input_tokens": 5529,
+      "session_output_tokens": 666,
+      "accumulated_input_tokens": 28769,
+      "accumulated_output_tokens": 1907
+    },
+    {
+      "run_id": "run-30",
+      "model": "deepseek-v3.2",
+      "valid": false,
+      "attempt": 3,
+      "note": "file not written by delegate",
+      "wall_time_minutes": null,
+      "session_input_tokens": null,
+      "session_output_tokens": null,
+      "accumulated_input_tokens": null,
+      "accumulated_output_tokens": null
+    },
+    {
+      "run_id": "run-31",
+      "model": "kimi-k2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 9.1,
+      "session_input_tokens": 18879,
+      "session_output_tokens": 650,
+      "accumulated_input_tokens": 332648,
+      "accumulated_output_tokens": 5591
+    },
+    {
+      "run_id": "run-32",
+      "model": "kimi-k2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 5.9,
+      "session_input_tokens": 13372,
+      "session_output_tokens": 757,
+      "accumulated_input_tokens": 378157,
+      "accumulated_output_tokens": 5450
+    },
+    {
+      "run_id": "run-33",
+      "model": "kimi-k2.5",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 11.5,
+      "session_input_tokens": 15906,
+      "session_output_tokens": 374,
+      "accumulated_input_tokens": 326046,
+      "accumulated_output_tokens": 4748
+    },
+    {
+      "run_id": "run-34",
+      "model": "kimi-k2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 26.6,
+      "session_input_tokens": 21921,
+      "session_output_tokens": 409,
+      "accumulated_input_tokens": 398049,
+      "accumulated_output_tokens": 5451
+    },
+    {
+      "run_id": "run-35",
+      "model": "kimi-k2.5",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 5.1,
+      "session_input_tokens": 19842,
+      "session_output_tokens": 644,
+      "accumulated_input_tokens": 292923,
+      "accumulated_output_tokens": 5283
+    }
+  ]
+}
