@@ -16,7 +16,7 @@ bar_colors = [colors_map[v] for v in verdicts_s]
 fig, ax = plt.subplots(figsize=(8, 4))
 bars = ax.barh(models_s, eff_cpqp_s, color=bar_colors, height=0.6)
 
-ax.set_xlabel("Effective cost per quality point (USD)", fontsize=11)
+ax.set_xlabel("Effective cost per quality point (USD) -- lower is better", fontsize=11)
 ax.set_title("Efficiency metric: eff_cost_per_qp -- exp3 & exp4 candidates", fontsize=12)
 ax.set_xlim(0, 0.17)
 
@@ -25,11 +25,7 @@ for bar, val in zip(bars, eff_cpqp_s):
     ax.text(val + 0.002, bar.get_y() + bar.get_height() / 2,
             f"${val:.4f}", va="center", fontsize=9)
 
-# Note about DeepSeek
-ax.text(0.98, 0.02,
-        "deepseek-v3.2 fails all gates;\neff_cost_per_qp not a valid ranking signal",
-        transform=ax.transAxes, fontsize=7.5, ha="right", va="bottom",
-        color="#d62728", style="italic")
+# Note about DeepSeek moved to README; removed from figure
 
 from matplotlib.lines import Line2D
 legend_elements = [
@@ -37,7 +33,7 @@ legend_elements = [
     Line2D([0], [0], marker="s", color="w", markerfacecolor="#2ca02c", markersize=9, label="Pass"),
     Line2D([0], [0], marker="s", color="w", markerfacecolor="#d62728", markersize=9, label="Fail"),
 ]
-ax.legend(handles=legend_elements, loc="upper right", fontsize=9)
+ax.legend(handles=legend_elements, loc="lower right", fontsize=9)
 
 plt.tight_layout()
 plt.savefig("figures/eff-cost-bar.png", dpi=150, bbox_inches="tight")
