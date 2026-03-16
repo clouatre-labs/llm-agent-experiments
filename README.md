@@ -73,6 +73,8 @@ xychart-beta
     bar [5.8, 6.0, 7.0, 1.0]
 ```
 
+*Figure 1: Total score per run (0-8) for exp4 models and the Haiku-4.5 baseline. Bars show mean total score. Dashed line at 5.3 marks the gate 1 mean threshold. Scores from experiments/exp3-model-comparison/analysis.json (baseline) and experiments/exp4-model-comparison-r2/analysis.json (candidates).*
+
 ## Cross-Experiment Summary
 
 | Experiment | Phase | Baseline Mean | Candidates Tested | Passed | Failed/Excluded | Key Finding |
@@ -96,19 +98,21 @@ xychart-beta
     bar [5.8, 6.0, 7.0, 1.0]
 ```
 
+*Figure 2: Mean total score per model across exp3 (discovery) and exp4 (validation). Haiku-4.5 baseline shown in both phases. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2 note: n=3 valid runs, 40% error rate.*
+
 Cost and token efficiency data are in `efficiency.json` within each experiment directory. Costs are computed from session token counts at 2026-02-25 pricing; see `DATA_DICTIONARY.md` for schema details.
 
 ### Criterion Pass Rates
 
 ![Criterion pass rate heatmap](figures/criterion-heatmap.png)
 
-*Figure 1: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
+*Figure 3: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
 
 ### Cost vs. Quality
 
 ![Cost vs quality scatter](figures/cost-quality-scatter.png)
 
-*Figure 2: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
+*Figure 4: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
 
 ## Repository Structure
 
