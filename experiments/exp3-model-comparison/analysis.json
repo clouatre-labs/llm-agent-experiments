@@ -1,5 +1,18 @@
 {
   "experiment": "exp3-model-comparison",
+  "method": {
+    "type": "gate_threshold",
+    "threshold": 5.3,
+    "comparison": "candidate_mean >= threshold",
+    "statistical_test": "Mann-Whitney U (two-tailed, exact permutation)",
+    "alpha": 0.05,
+    "p_value_method": "exact (exhaustive permutation, 252 permutations)",
+    "effect_size": "rank-biserial correlation (r_rb)",
+    "bonferroni_correction": false,
+    "bonferroni_note": "Three pairwise comparisons; no correction applied (exploratory, noted as limitation)",
+    "pre_registered": true
+  },
+  "timestamp": "2026-02-25T02:35:29Z",
   "baseline": {
     "model": "haiku-4.5",
     "runs": [
@@ -22,15 +35,8 @@
     "max": 8,
     "sd": 1.17
   },
-  "limitations": [
-    "n=5 per group is underpowered; Mann-Whitney U at this n has low power for effect sizes below ~1.5 points",
-    "Three pairwise comparisons without Bonferroni correction; family-wise error rate is elevated",
-    "Scoring delegate is an LLM judge; inter-rater reliability is not measured",
-    "Single issue, single temperature, single task class; results do not generalize"
-  ],
-  "candidates": [
-    {
-      "candidate": "qwen3-coder",
+  "candidates": {
+    "qwen3-coder": {
       "runs": [
         "run-06",
         "run-07",
@@ -78,8 +84,7 @@
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score, gate_3_valid_runs, gate_4_error_rate"
       }
     },
-    {
-      "candidate": "gemini-3-flash",
+    "gemini-3-flash": {
       "runs": [
         "run-11",
         "run-12",
@@ -141,8 +146,7 @@
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
       }
     },
-    {
-      "candidate": "devstral-2512",
+    "devstral-2512": {
       "runs": [
         "run-16",
         "run-17",
@@ -204,7 +208,11 @@
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
       }
     }
-  ],
-  "timestamp": "2026-02-25T02:35:29Z",
-  "method": "pre-registered, locked"
+  },
+  "limitations": [
+    "n=5 per group is underpowered; Mann-Whitney U at this n has low power for effect sizes below ~1.5 points",
+    "Three pairwise comparisons without Bonferroni correction; family-wise error rate is elevated",
+    "Scoring delegate is an LLM judge; inter-rater reliability is not measured",
+    "Single issue, single temperature, single task class; results do not generalize"
+  ]
 }
