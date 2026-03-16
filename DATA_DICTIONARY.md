@@ -5,24 +5,29 @@ This document describes the schema and format of all data files in the `data/` d
 ## Directory Structure
 
 ```
-data/
-  exp3/
+experiments/
+  exp3-model-comparison/
     analysis.json
     scores.json
     efficiency.json
     label-map.json
     latency-log.jsonl
-  exp4/
+    sessions/
+      scout-run-01.json
+      scout-run-02.json
+      ...
+      scout-run-20.json
+  exp4-model-comparison-r2/
     analysis.json
     scores.json
     efficiency.json
     label-map.json
     latency-log.jsonl
-  sessions/
-    scout-run-001.json
-    scout-run-002.json
-    ...
-    scout-run-013.json
+    sessions/
+      scout-run-21.json
+      scout-run-22.json
+      ...
+      scout-run-35.json
 ```
 
 ## File Schemas
@@ -221,9 +226,15 @@ One JSON object per line. Captures start and end timestamps for each run (for la
 
 **Computation:** Duration = `(end_timestamp - start_timestamp).total_seconds()`
 
-### sessions/scout-run-N.json
+### sessions/scout-run-NN.json
 
-Goose SCOUT delegate handoff file for run N. Follows goose-coder recipe v4.2.1 handoff format.
+Goose SCOUT delegate handoff file for run N. Files are located in:
+- `experiments/exp3-model-comparison/sessions/scout-run-01.json` through `scout-run-20.json` (runs 01-05, 11-15, 16-20 present; 06-10 absent)
+- `experiments/exp4-model-comparison-r2/sessions/scout-run-21.json` through `scout-run-35.json` (runs 21-29, 31-35 present; 27, 30 absent)
+
+Total: 28 files (15 from exp3 + 13 from exp4)
+
+Follows goose-coder recipe v4.2.1 handoff format.
 
 ```json
 {

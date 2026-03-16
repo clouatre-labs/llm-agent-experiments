@@ -36,15 +36,15 @@ Runs 06-10 are absent from the session directory. Qwen3 Coder failed to produce 
 
 ## Documentation
 
-- **Protocol**: `protocol.md` — test setup, run configuration, gate criteria, and invalid-run policy
-- **Rubric**: `rubric.md` — 8-criterion evaluation framework used by all scorers
-- **Runner Prompt**: `runner-prompt.md` — prompt template for delegate agent execution
-- **Scorer Prompt**: `scorer-prompt.md` — prompt template for rubric-based evaluation
-- **Analysis**: `analysis.json` — parsed scores with statistical summaries
-- **Scores**: `scores.json` — raw run-level scores per criterion
-- **Efficiency**: `efficiency.json` — latency and token usage per run
-- **Label Map**: `label-map.json` — criterion short-codes to full descriptions
-- **Latency Log**: `latency-log.jsonl` — per-line timing data for all runs
+- **Protocol**: [protocol.md](protocol.md) — test setup, run configuration, gate criteria, and invalid-run policy
+- **Rubric**: [rubric.md](rubric.md) — 8-criterion evaluation framework used by all scorers
+- **Runner Prompt**: [runner-prompt.md](runner-prompt.md) — prompt template for delegate agent execution
+- **Scorer Prompt**: [scorer-prompt.md](scorer-prompt.md) — prompt template for rubric-based evaluation
+- **Analysis**: [analysis.json](analysis.json) — parsed scores with statistical summaries
+- **Scores**: [scores.json](scores.json) — raw run-level scores per criterion
+- **Efficiency**: [efficiency.json](efficiency.json) — latency and token usage per run
+- **Label Map**: [label-map.json](label-map.json) — run_id to model name mapping (sealed before scoring; revealed after)
+- **Latency Log**: [latency-log.jsonl](latency-log.jsonl) — per-line timing data for all runs
 
 ## Session Files
 
@@ -56,4 +56,4 @@ Runs 06-10 are absent from the session directory. Qwen3 Coder failed to produce 
 
 ## Methodology
 
-See parent repository README for full methodology and architectural overview of SCOUT.
+See [parent repository README](../../README.md) for full methodology and architectural overview of SCOUT.
