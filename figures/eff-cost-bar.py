@@ -37,7 +37,7 @@ legend_elements = [
     Line2D([0], [0], marker="s", color="w", markerfacecolor="#2ca02c", markersize=9, label="Pass"),
     Line2D([0], [0], marker="s", color="w", markerfacecolor="#d62728", markersize=9, label="Fail"),
 ]
-ax.legend(handles=legend_elements, loc="lower right", fontsize=9)
+ax.legend(handles=legend_elements, loc="upper right", fontsize=9)
 
 plt.tight_layout()
 plt.savefig("figures/eff-cost-bar.png", dpi=150, bbox_inches="tight")
