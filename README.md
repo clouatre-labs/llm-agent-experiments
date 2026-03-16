@@ -73,6 +73,8 @@ xychart-beta
     bar [5.8, 6.0, 7.0, 1.0]
 ```
 
+*Figure 4: Total score per run (0-8) for exp4 models and the Haiku-4.5 baseline. Bars show mean total score. Dashed line at 5.3 marks the gate 1 mean threshold. Scores from experiments/exp3-model-comparison/analysis.json (baseline) and experiments/exp4-model-comparison-r2/analysis.json (candidates).*
+
 ## Cross-Experiment Summary
 
 | Experiment | Phase | Baseline Mean | Candidates Tested | Passed | Failed/Excluded | Key Finding |
@@ -95,6 +97,8 @@ xychart-beta
     y-axis "Mean total score (0-8)" 0 --> 8
     bar [5.8, 6.0, 7.0, 1.0]
 ```
+
+*Figure 5: Mean total score per model across exp3 (discovery) and exp4 (validation). Haiku-4.5 baseline shown in both phases. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2 note: n=3 valid runs, 40% error rate.*
 
 Cost and token efficiency data are in `efficiency.json` within each experiment directory. Costs are computed from session token counts at 2026-02-25 pricing; see `DATA_DICTIONARY.md` for schema details.
 
