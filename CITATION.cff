@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+type: dataset
+title: "LLM Agent Experiments: Model Comparison for SCOUT Delegates"
+authors:
+  - family-names: Clouatre
+    given-names: Hugues
+repository-code: https://github.com/clouatre-labs/llm-agent-experiments
+license: Apache-2.0
+date-released: "2026-03-16"
+version: "1.0.0"
+abstract: >
+  Benchmarking open-weight LLM coding agents as SCOUT delegates in the
+  goose-coder recipe. Contains pre-registered protocols, blind scoring data,
+  and full session files for two model comparison experiments (exp3, exp4).
+keywords:
+  - ai-agents
+  - llm-evaluation
+  - benchmarking
+  - open-weight-models
+  - supplementary-materials
