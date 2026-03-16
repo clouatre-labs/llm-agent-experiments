@@ -103,7 +103,7 @@ A candidate passes if ALL four gates are satisfied:
 
 2. **No raw conversation logs:** Goose session records (full conversational trace, token counts per turn, model-specific generation parameters) are not included. Only scored outputs and summary handoff metadata are available. Reproducibility is limited to session-level replay; model-level debugging is not possible without logs.
 
-3. **Qwen3 Coder exclusion (exp3):** Seven session attempts produced zero parseable outputs. Cause unclear: could be infrastructure (API timeouts), model capability (instruction-following), or prompt incompatibility. Excluded from quantitative comparison; classified as "0/7 valid runs."
+3. **Qwen3 Coder exclusion (exp3):** Seven session attempts produced zero output files -- the model consistently exhausted the delegate action limit before writing its handoff JSON. Reproduced with the same prompt on 2026-03-16, confirming this is a persistent model behavior failure, not a transient infrastructure or routing issue. Excluded from quantitative comparison; classified as "0/7 valid runs."
 
 4. **DeepSeek V3.2 partial sample (exp4):** Two of five runs (27, 30) failed with infrastructure errors. Only n=3 valid runs for DeepSeek. This increases uncertainty in the mean and p-value. Reported with explicit caveat.
 

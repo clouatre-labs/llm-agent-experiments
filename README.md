@@ -176,7 +176,7 @@ SCOUT handoff schema (goose-coder v4.2.1): `session_id`, `lens`, `relevant_files
 
 ## Session Gaps
 
-**Exp 3 runs 06-10:** Qwen3 Coder produced zero valid outputs after 7 infrastructure and instruction-following attempts. Marked as excluded (0/7 valid runs).
+**Exp 3 runs 06-10:** Qwen3 Coder produced zero valid outputs after 7 attempts. The model consistently exhausted its action budget before writing the handoff JSON. Reproduced on 2026-03-16 with the same prompt -- this is a persistent model behavior failure, not a transient infrastructure issue. Marked as excluded (0/7 valid runs).
 
 **Exp 4 runs 27 and 30:** DeepSeek V3.2 failed to produce parseable JSON on those two attempts (infrastructure timeouts). Counted as errors in error_rate calculation (2 / 5 = 0.4).
 
@@ -207,7 +207,7 @@ All experiments used the Goose agent framework with the public coder recipe (v4.
 
 1. **Underpowered study design:** n=5 per model is insufficient for strong statistical power. Results are indicative, not definitive.
 2. **No raw logs:** Conversation records (goose session JSONL) are absent; only scored outputs and handoff metadata are available.
-3. **Qwen3 Coder exclusion:** Zero valid runs after 7 attempts; excluded from analysis. Cause unclear (infrastructure vs. model capability).
+3. **Qwen3 Coder exclusion:** Zero valid runs after 7 attempts; excluded from analysis. The model consistently exhausted its action budget before writing output -- reproduced on 2026-03-16, confirming a persistent model behavior failure.
 4. **DeepSeek V3.2 partial sample:** n=3 valid (2 of 5 runs failed); increases variance in comparison. p-value should be interpreted conservatively.
 5. **Single orchestrator:** All runs used Claude Sonnet 4.6; generalization to other orchestrators unknown.
 
