@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this data, please cite it as below."
-type: dataset
-title: "LLM Agent Experiments: Model Comparison for SCOUT Delegates"
+type: software
+title: "Orchestrating AI Agents: A Subagent Architecture"
 authors:
   - family-names: Clouatre
     given-names: Hugues
 repository-code: https://github.com/clouatre-labs/llm-agent-experiments
-url: https://github.com/clouatre-labs/llm-agent-experiments
+url: https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/
 license: Apache-2.0
 date-released: "2026-03-16"
 version: "1.0.0"
