@@ -1,21 +1,20 @@
 # Methodology
 
-## Agent Architecture
+## Experiment Setup
 
-All experiments use the Goose agent framework with the `goose-coder` recipe (v4.2.1, dotfiles commit d4ac9e8). The architecture consists of:
+These experiments use default Goose sessions -- no recipe, no multi-agent pipeline. The goal was to test alternate models for the `coder-scout` agent role in isolation, outside of any orchestrated workflow.
 
 ```mermaid
 graph TD
     subgraph Setup
-        O[Orchestrator<br/>Claude Sonnet 4.6] -->|writes| LM[label-map.json<br/>sealed]
+        O[Orchestrator session<br/>Claude Sonnet 4.6] -->|writes| LM[label-map.json<br/>sealed]
     end
     subgraph Per-Run Execution
-        O -->|spawns| S[SCOUT Delegate<br/>model under test]
-        S -->|writes| HF[handoff JSON<br/>scout-run-N.json]
+        O -->|spawns| S[coder-scout session<br/>model under test]
+        S -->|writes| HF[scout-run-N.json]
     end
     subgraph Scoring Phase
-        O -->|spawns| SC[Scorer Subagent<br/>blind - no model labels]
-        HF -->|read by| SC
+        SC[Scorer session<br/>blind - no model labels] -->|reads| HF
         SC -->|writes| SR[scores.json]
     end
     subgraph Post-Scoring Reveal
@@ -25,12 +24,11 @@ graph TD
     end
 ```
 
-*Figure 1: Goose-coder recipe agent architecture used in exp3 and exp4. The label-map.json file is sealed before any SCOUT delegate is spawned, ensuring the scorer subagent operates without knowledge of model identities. Model identity is revealed only after all scores are recorded.*
+*Figure 1: Session layout for exp3 and exp4. Each run is a standalone Goose session using the coder-scout prompt with the model under test. The label-map.json file is sealed before any session is spawned, ensuring the scorer session operates without knowledge of model identities. Model identity is revealed only after all scores are recorded.*
 
-- **Orchestrator:** Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3. Manages task decomposition, delegate spawning, and result aggregation.
-- **SCOUT delegate:** Model under test (varies by experiment). Receives lens (isolated coding task), produces synthesis artifact (code, docs, tests).
-- **Guard delegate:** Claude Haiku 4.5 (fixed baseline). Validates SCOUT output against rubric (C1-C8 criteria).
-- **Scorer subagent:** Blind subagent (no model labels until after scoring). Applies 8-criterion rubric independently.
+- **Orchestrator session:** Claude Sonnet 4.6 via GCP Vertex AI. Manages the experiment loop: writes label-map.json, spawns coder-scout sessions sequentially, records latency, and computes results after scoring.
+- **coder-scout session:** Model under test. Receives the coder-scout prompt (adapted from `~/.claude/agents/coder-scout.md`) and a fixed target issue. Produces a research handoff JSON.
+- **Scorer session:** Separate blind Goose session. Receives run files with numeric labels only (no model names). Applies the 8-criterion rubric and writes scores.json.
 
 ## Delegate Models
 
@@ -58,12 +56,11 @@ Baseline reused (exp3 runs 1-5) and three new candidates, each n=5 (DeepSeek n=3
 2. **Scorer receives numeric labels only:** Scorer subagent receives run data with `run_id` (numeric), scores, timestamps, and error messages—but NO model names.
 3. **Post-scoring reveal:** After all scoring is complete and recorded, label-map.json is published in data/{exp}/label-map.json. Scorer then reconciles their independent annotations with actual models.
 
-## Orchestrator Configuration
+## Session Configuration
 
-- **Model:** Claude Sonnet 4.6 (GCP Vertex AI)
-- **Temperature:** 0.3 (low entropy for reproducibility)
-- **Extensions:** Goose recipe v4.2.1 includes think, delegate, and guard extensions
-- **Session timeout:** 15 minutes per run
+- **Orchestrator session:** Claude Sonnet 4.6 (GCP Vertex AI), temperature 0.3
+- **coder-scout sessions:** Model under test, temperature 0.5, extensions: developer, context7, brave_search
+- **Scorer session:** Claude Sonnet 4.6 (GCP Vertex AI), temperature 0.3
 
 ## Scoring Rubric (C1-C8, Binary 0-1 per Criterion)
 
@@ -104,13 +101,13 @@ A candidate passes if ALL four gates are satisfied:
 
 1. **Sample size (n=5):** Underpowered for strong statistical inference. Power analysis indicates ~40% power to detect a 0.5 SD effect size at alpha=0.05. Results are indicative, not definitive; confidence intervals are wide.
 
-2. **No raw conversation logs:** Goose session records (full conversational trace, token counts per turn, model-specific generation parameters) are not included. Only scored outputs and summary handoff metadata are available. Reproducibility is limited to recipe-level replay; model-level debugging is not possible without logs.
+2. **No raw conversation logs:** Goose session records (full conversational trace, token counts per turn, model-specific generation parameters) are not included. Only scored outputs and summary handoff metadata are available. Reproducibility is limited to session-level replay; model-level debugging is not possible without logs.
 
-3. **Qwen3 Coder exclusion (exp3):** Seven spawn attempts produced zero parseable outputs. Cause unclear: could be infrastructure (API timeouts), model capability (instruction-following), or recipe incompatibility. Excluded from quantitative comparison; classified as "0/7 valid runs."
+3. **Qwen3 Coder exclusion (exp3):** Seven session attempts produced zero parseable outputs. Cause unclear: could be infrastructure (API timeouts), model capability (instruction-following), or prompt incompatibility. Excluded from quantitative comparison; classified as "0/7 valid runs."
 
 4. **DeepSeek V3.2 partial sample (exp4):** Two of five runs (27, 30) failed with infrastructure errors. Only n=3 valid runs for DeepSeek. This increases uncertainty in the mean and p-value. Reported with explicit caveat.
 
-5. **Single orchestrator:** All runs used Claude Sonnet 4.6. Generalization to other orchestrators (Haiku, Opus, open-weight) is unknown.
+5. **Single orchestrator session:** All runs used Claude Sonnet 4.6. Generalization to other orchestrator models is unknown.
 
 6. **Baseline reuse in exp4:** Exp4 reuses exp3's baseline scores (runs 1-5) rather than collecting new exp4 runs. This preserves baseline reproducibility but introduces potential confounding (exp3 and exp4 context may differ).
 
@@ -121,17 +118,15 @@ A candidate passes if ALL four gates are satisfied:
 To reproduce these experiments:
 
 1. **Install Goose** with the version noted in [Software Versions](../README.md#software-versions) (README.md).
-2. **Load the recipe:** Copy `recipe/goose-coder.yaml` into your local Goose config directory (`~/.config/goose/recipes/`).
-3. **Set orchestrator:** Configure Claude Sonnet 4.6 via GCP Vertex AI as the primary orchestrator; temperature 0.3.
-4. **Prepare label-map:** Write a `label-map.json` file with run IDs and model assignments before spawning any delegates.
-5. **Run SCOUT delegates:** Use the goose coder recipe to spawn SCOUT delegates for each task, recording session IDs and handoff outputs.
-6. **Run scorer:** Spawn a blind scorer subagent that receives run data WITHOUT model labels. Scorer applies C1-C8 rubric and records scores.
-7. **Post-scoring reveal:** Publish label-map.json; reconcile scores with model identities.
-8. **Statistical analysis:** Compute means, error rates, Mann-Whitney U p-values, and apply gate criteria (see gate section above).
+2. **Copy the coder-scout prompt** from `~/.claude/agents/coder-scout.md` into your session instructions.
+3. **Prepare label-map:** Write a `label-map.json` file with run IDs and model assignments before starting any sessions.
+4. **Run coder-scout sessions:** Start a new default Goose session per run, using the coder-scout prompt and the model under test (developer, context7, brave_search extensions). Record session IDs and handoff outputs.
+5. **Run scorer:** Start a separate blind Goose session that receives run files with numeric labels only (no model names). Scorer applies C1-C8 rubric and writes scores.json.
+6. **Post-scoring reveal:** Publish label-map.json; reconcile scores with model identities.
+7. **Statistical analysis:** Compute means, error rates, Mann-Whitney U p-values, and apply gate criteria (see gate section above).
 
 ## References
 
 - Mann-Whitney U test: https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
 - Rank-biserial correlation: https://en.wikipedia.org/wiki/Rank_correlation#Rank-biserial_correlation
 - Goose agent framework: https://github.com/block/goose
-- goose-coder recipe: https://github.com/clouatre-labs/dotfiles/blob/d4ac9e8/config/goose/recipes/goose-coder.yaml
