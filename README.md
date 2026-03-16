@@ -164,7 +164,7 @@ Raw JSONL conversation logs (goose session records) are not included in this rep
 
 All experiments used the Goose agent framework with the public coder recipe (v4.2.1, committed at d4ac9e8 in the dotfiles repo). The recipe and orchestrator model are deterministic at temperature 0.3. To reproduce:
 
-1. Install Goose (version pinned in Software Versions section below)
+1. Install Goose (the agent orchestrator; version not pinned)
 2. Load the `recipe/goose-coder.yaml` recipe into your local Goose config
 3. Set orchestrator to Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3
 4. Follow the protocol in `METHODOLOGY.md` for delegate spawning and blind scoring
@@ -174,7 +174,7 @@ All experiments used the Goose agent framework with the public coder recipe (v4.
 
 | Component | Version | Notes |
 |-----------|---------|-------|
-| Goose | 1.27.2 | Agent orchestrator |
+| Python | 3.13.12 | Analysis scripts, runner machine |
 | goose-coder recipe | 4.2.1 | At git d4ac9e8, dotfiles repo |
 | Orchestrator model | Claude Sonnet 4.6 | GCP Vertex AI, temp 0.3 |
 | SCOUT delegate models | See exp3/exp4 protocol | Variable per experiment |
