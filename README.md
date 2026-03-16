@@ -162,7 +162,7 @@ Raw JSONL conversation logs (goose session records) are not included in this rep
 
 ## Reproducibility
 
-All experiments used Goose 1.27.2 as the agent orchestrator. The orchestrator model is deterministic at temperature 0.3. To reproduce:
+All experiments used Goose 1.27.2 as the agent orchestrator. To reproduce:
 
 1. Install Goose 1.27.2
 2. Set orchestrator to Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3
@@ -182,7 +182,7 @@ All experiments used Goose 1.27.2 as the agent orchestrator. The orchestrator mo
 
 ## Impact
 
-These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6 -- the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was also rewritten to define each agent role (SCOUT, GUARD, BUILD, CHECK) as a named subagent file, achieving cross-compatibility between Goose and Claude Code without duplicating logic (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.0/8, error rate 0.0, p=0.492 vs baseline) was subsequently adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
+These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6; the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was rewritten to define each agent role as a named subagent file, achieving cross-compatibility between Goose and Claude Code (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.0/8, error rate 0.0) was adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
 
 ## Limitations
 
@@ -198,7 +198,7 @@ This repository documents a research experiment conducted using commercial and o
 
 ## Data Availability
 
-This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials include METHODOLOGY.md and the `recipe/goose-coder.yaml` file (the Goose coder recipe used as the target multi-agent workflow). The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; raw model outputs are in the experiments/*/sessions/ directories.
+This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials include METHODOLOGY.md and the `recipe/goose-coder.yaml` file (the Goose coder recipe used as the target multi-agent workflow). The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; SCOUT handoff JSONs are in the experiments/*/sessions/ directories.
 
 ## Funding and Conflict of Interest
 
@@ -216,7 +216,7 @@ If you use this dataset or methodology, please cite:
   month={March},
   day={16},
   howpublished={\url{https://github.com/clouatre-labs/llm-agent-experiments}},
-  note={Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight models as SCOUT delegates in the Goose coder recipe. Blind scoring with Mann-Whitney U statistical test.}
+  note={Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight models as delegate agents. Blind scoring with Mann-Whitney U statistical test.}
 }
 ```
 
