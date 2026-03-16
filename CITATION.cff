@@ -1,14 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this data, please cite it as below."
+message: "If you use this dataset, please cite the article from preferred-citation and the dataset itself."
 type: dataset
-title: "LLM Agent Experiments: Model Comparison for SCOUT Delegates"
+title: "Orchestrating AI Agents: A Subagent Architecture"
 authors:
   - family-names: Clouatre
     given-names: Hugues
+    orcid: "https://orcid.org/0009-0002-4291-1999"
 repository-code: https://github.com/clouatre-labs/llm-agent-experiments
-url: https://github.com/clouatre-labs/llm-agent-experiments
+url: https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/
 license: Apache-2.0
-date-released: "2026-03-16"
+date-released: "2025-12-24"
 version: "1.0.0"
 abstract: >
   Benchmarking open-weight LLM coding agents as SCOUT delegates in the
@@ -20,3 +21,12 @@ keywords:
   - benchmarking
   - open-weight-models
   - supplementary-materials
+preferred-citation:
+  authors:
+    - family-names: Clouatre
+      given-names: Hugues
+      orcid: "https://orcid.org/0009-0002-4291-1999"
+  title: "Orchestrating AI Agents: A Subagent Architecture"
+  type: blog
+  url: "https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/"
+  year: 2026

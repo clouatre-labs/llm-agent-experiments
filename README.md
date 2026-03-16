@@ -232,14 +232,13 @@ This research was funded internally. The researchers have no competing financial
 If you use this dataset or methodology, please cite:
 
 ```bibtex
-@dataset{clouatre2026llmagent,
-  title={LLM Agent Experiments: Model Comparison for SCOUT Delegates},
-  author={Clouatre, Hugues},
-  year={2026},
-  month={March},
-  day={16},
-  howpublished={\url{https://github.com/clouatre-labs/llm-agent-experiments}},
-  note={Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight models as delegate agents. Blind scoring with Mann-Whitney U statistical test.}
+@misc{clouatre2026orchestrating,
+  title   = {Orchestrating AI Agents: A Subagent Architecture},
+  author  = {Clouatre, Hugues},
+  year    = {2026},
+  howpublished = {\url{https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/}},
+  urldate = {2026-03-16},
+  note    = {Supplementary materials: https://github.com/clouatre-labs/llm-agent-experiments}
 }
 ```
 

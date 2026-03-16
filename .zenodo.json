@@ -1,0 +1,23 @@
+{
+  "title": "Orchestrating AI Agents: A Subagent Architecture -- Supplementary Data",
+  "description": "Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight LLM coding agents as SCOUT delegates in the goose-coder recipe. Blind scoring with Mann-Whitney U statistical test.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Clouatre, Hugues",
+      "orcid": "0009-0002-4291-1999"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-other"
+    }
+  ],
+  "keywords": ["ai-agents", "llm-evaluation", "benchmarking", "open-weight-models", "supplementary-materials"],
+  "publication_date": "2025-12-24"
+}
