@@ -25,7 +25,7 @@ graph TD
     end
 ```
 
-*Figure 3: Goose-coder recipe agent architecture used in exp3 and exp4. The label-map.json file is sealed before any SCOUT delegate is spawned, ensuring the scorer subagent operates without knowledge of model identities. Model identity is revealed only after all scores are recorded.*
+*Figure 1: Goose-coder recipe agent architecture used in exp3 and exp4. The label-map.json file is sealed before any SCOUT delegate is spawned, ensuring the scorer subagent operates without knowledge of model identities. Model identity is revealed only after all scores are recorded.*
 
 - **Orchestrator:** Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3. Manages task decomposition, delegate spawning, and result aggregation.
 - **SCOUT delegate:** Model under test (varies by experiment). Receives lens (isolated coding task), produces synthesis artifact (code, docs, tests).
