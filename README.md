@@ -180,6 +180,10 @@ All experiments used Goose 1.27.2 as the agent orchestrator. The orchestrator mo
 
 *Table 3: Software versions used across all experiments.*
 
+## Impact
+
+These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6 -- the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was also rewritten to define each agent role (SCOUT, GUARD, BUILD, CHECK) as a named subagent file, achieving cross-compatibility between Goose and Claude Code without duplicating logic (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.0/8, error rate 0.0, p=0.492 vs baseline) was subsequently adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
+
 ## Limitations
 
 1. **Underpowered study design:** n=5 per model is insufficient for strong statistical power. Results are indicative, not definitive.
