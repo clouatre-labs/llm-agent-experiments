@@ -1,25 +1,26 @@
 {
   "source": "goose sessions.db, correlated by run timestamp to session created_at",
+  "composite_metric_formula": "eff_cost_per_qp = cost_per_run / (mean_score * reliability); reliability = n_valid / sum_of_attempt_numbers_per_run; cost_per_run uses accumulated_input_tokens and accumulated_output_tokens",
   "pricing_date": "2026-02-25",
   "pricing": {
     "haiku-4.5": {
-      "input_per_mtok": 1.00,
-      "output_per_mtok": 5.00,
+      "input_per_mtok": 1.0,
+      "output_per_mtok": 5.0,
       "provider": "gcp_vertex_ai"
     },
     "qwen3-coder": {
-      "input_per_mtok": 0.30,
-      "output_per_mtok": 0.60,
+      "input_per_mtok": 0.3,
+      "output_per_mtok": 0.6,
       "provider": "openrouter"
     },
     "gemini-3-flash": {
       "input_per_mtok": 0.15,
-      "output_per_mtok": 0.60,
+      "output_per_mtok": 0.6,
       "provider": "gcp_vertex_ai"
     },
     "devstral-2512": {
-      "input_per_mtok": 0.20,
-      "output_per_mtok": 0.60,
+      "input_per_mtok": 0.2,
+      "output_per_mtok": 0.6,
       "provider": "openrouter"
     }
   },
@@ -249,5 +250,47 @@
       "accumulated_input_tokens": 448930,
       "accumulated_output_tokens": 4764
     }
-  ]
+  ],
+  "model_summaries": {
+    "haiku-4.5": {
+      "n_valid": 5,
+      "n_total_attempts": 5,
+      "reliability": 1.0,
+      "mean_score": 5.8,
+      "cost_per_run_usd": 0.8729,
+      "eff_cost_per_qp_usd": 0.1505,
+      "mean_wall_time_minutes": 2.82,
+      "cost_token_basis": "accumulated"
+    },
+    "qwen3-coder": {
+      "n_valid": 0,
+      "n_total_attempts": 7,
+      "reliability": 0.0,
+      "mean_score": null,
+      "cost_per_run_usd": null,
+      "eff_cost_per_qp_usd": null,
+      "mean_wall_time_minutes": null,
+      "cost_token_basis": "accumulated"
+    },
+    "gemini-3-flash": {
+      "n_valid": 5,
+      "n_total_attempts": 8,
+      "reliability": 0.625,
+      "mean_score": 4.2,
+      "cost_per_run_usd": 0.0569,
+      "eff_cost_per_qp_usd": 0.0217,
+      "mean_wall_time_minutes": 2.66,
+      "cost_token_basis": "accumulated"
+    },
+    "devstral-2512": {
+      "n_valid": 5,
+      "n_total_attempts": 6,
+      "reliability": 0.8333,
+      "mean_score": 3.0,
+      "cost_per_run_usd": 0.1126,
+      "eff_cost_per_qp_usd": 0.045,
+      "mean_wall_time_minutes": 2.6,
+      "cost_token_basis": "accumulated"
+    }
+  }
 }

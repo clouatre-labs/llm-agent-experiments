@@ -29,7 +29,13 @@
     "mean": 5.8,
     "median": 5,
     "min": 5,
-    "max": 8
+    "max": 8,
+    "efficiency": {
+      "cost_per_run_usd": 0.8729,
+      "reliability": 1.0,
+      "eff_cost_per_qp_usd": 0.1505,
+      "mean_wall_time_minutes": 2.82
+    }
   },
   "candidates": {
     "minimax-m2.5": {
@@ -137,7 +143,13 @@
         }
       },
       "verdict": "pass",
-      "failed_gates": []
+      "failed_gates": [],
+      "efficiency": {
+        "cost_per_run_usd": 0.1146,
+        "reliability": 1.0,
+        "eff_cost_per_qp_usd": 0.0191,
+        "mean_wall_time_minutes": 5.1
+      }
     },
     "deepseek-v3.2": {
       "runs": {
@@ -248,7 +260,13 @@
         "gate2_floor",
         "gate3_completeness",
         "gate4_non_inferiority"
-      ]
+      ],
+      "efficiency": {
+        "cost_per_run_usd": 0.007,
+        "reliability": 0.3333,
+        "eff_cost_per_qp_usd": 0.0211,
+        "mean_wall_time_minutes": 2.14
+      }
     },
     "kimi-k2.5": {
       "runs": {
@@ -355,7 +373,13 @@
         }
       },
       "verdict": "pass",
-      "failed_gates": []
+      "failed_gates": [],
+      "efficiency": {
+        "cost_per_run_usd": 0.2206,
+        "reliability": 0.8333,
+        "eff_cost_per_qp_usd": 0.0378,
+        "mean_wall_time_minutes": 11.64
+      }
     }
   }
 }

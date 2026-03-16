@@ -174,6 +174,37 @@ Pricing and token data per model and run.
 - `input_tokens`, `output_tokens` (integer): Tokens consumed in run (from goose session handoff)
 - `total_cost_usd` (number): `(input_tokens * input_rate) + (output_tokens * output_rate)`
 
+#### model_summaries (new in exp3/exp4)
+
+Top-level key added after `runs`. Contains pre-computed aggregate metrics per model.
+
+```json
+"composite_metric_formula": "eff_cost_per_qp = cost_per_run / (mean_score * reliability); reliability = n_valid / sum_of_attempt_numbers_per_run; cost_per_run uses accumulated_input_tokens and accumulated_output_tokens",
+"model_summaries": {
+  "<model>": {
+    "n_valid": 5,
+    "n_total_attempts": 6,
+    "reliability": 0.8333,
+    "mean_score": 7.0,
+    "cost_per_run_usd": 0.2206,
+    "eff_cost_per_qp_usd": 0.0378,
+    "mean_wall_time_minutes": 11.64,
+    "cost_token_basis": "accumulated"
+  }
+}
+```
+
+**Field descriptions:**
+
+- `n_valid` (integer): Number of runs that produced valid output
+- `n_total_attempts` (integer): Sum of `attempt` values across all protocol slots for this model (reliability denominator); not the number of protocol slots
+- `reliability` (number): `n_valid / n_total_attempts` (0.0-1.0)
+- `mean_score` (number|null): Mean total score from scores.json; null if no valid runs
+- `cost_per_run_usd` (number|null): Mean cost per valid run using accumulated tokens; null if no valid runs
+- `eff_cost_per_qp_usd` (number|null): `cost_per_run_usd / (mean_score * reliability)`; null if mean_score is null or reliability is 0
+- `mean_wall_time_minutes` (number|null): Mean wall-clock duration of valid runs from efficiency.json; null if no valid runs
+- `cost_token_basis` (string): Always `"accumulated"` -- costs use `accumulated_input_tokens`/`accumulated_output_tokens`, not session-level tokens
+
 ### label-map.json
 
 Blind scoring label mapping. Written and sealed BEFORE any SCOUT spawning. Revealed AFTER scoring.
