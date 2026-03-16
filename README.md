@@ -39,7 +39,7 @@ Scorer: blind subagent | Rubric: 8-criterion binary (0-8)
 | C7 | Architecture matches specification |
 | C8 | Code usability and clarity |
 
-## Results -- Experiment 3
+## Results: Experiment 3
 
 All candidate models failed one or more gates against baseline (Claude Haiku 4.5).
 
@@ -52,7 +52,7 @@ All candidate models failed one or more gates against baseline (Claude Haiku 4.5
 
 **Verdict:** All cheap candidates excluded or failed synthesis gates.
 
-## Results -- Experiment 4
+## Results: Experiment 4
 
 Two models cleared all gates; one failed with high error rate.
 
@@ -65,16 +65,6 @@ Two models cleared all gates; one failed with high error rate.
 
 **Verdict:** MiniMax and Kimi qualify as cost-effective delegates; DeepSeek unsuitable.
 
-```mermaid
-xychart-beta
-    title "Mean score per model -- Experiment 4 (gate threshold: 5.3)"
-    x-axis ["haiku-4.5 (baseline)", "minimax-m2.5", "kimi-k2.5", "deepseek-v3.2"]
-    y-axis "Mean total score (0-8)" 0 --> 8
-    bar [5.8, 6.0, 7.0, 1.0]
-```
-
-*Figure 1: Total score per run (0-8) for exp4 models and the Haiku-4.5 baseline. Bars show mean total score. Dashed line at 5.3 marks the gate 1 mean threshold. Scores from experiments/exp3-model-comparison/analysis.json (baseline) and experiments/exp4-model-comparison-r2/analysis.json (candidates).*
-
 ## Cross-Experiment Summary
 
 | Experiment | Phase | Baseline Mean | Candidates Tested | Passed | Failed/Excluded | Key Finding |
@@ -82,23 +72,9 @@ xychart-beta
 | Exp 3 | Discovery | 5.8 | 3 | 0 | 3 | Cheap tier models too weak |
 | Exp 4 | Validation | 5.8 | 3 | 2 | 1 | Mid-tier models viable; DeepSeek unstable |
 
-```mermaid
-xychart-beta
-    title "Mean score per model -- Experiment 3 (all fail)"
-    x-axis ["haiku-4.5 (baseline)", "gemini-3-flash", "devstral-2512"]
-    y-axis "Mean total score (0-8)" 0 --> 8
-    bar [5.8, 4.2, 3.0]
-```
+![Mean score bar chart](figures/mean-score-bar.png)
 
-```mermaid
-xychart-beta
-    title "Mean score per model -- Experiment 4 (split outcome)"
-    x-axis ["haiku-4.5 (baseline)", "minimax-m2.5", "kimi-k2.5", "deepseek-v3.2"]
-    y-axis "Mean total score (0-8)" 0 --> 8
-    bar [5.8, 6.0, 7.0, 1.0]
-```
-
-*Figure 2: Mean total score per model across exp3 (discovery) and exp4 (validation). Haiku-4.5 baseline shown in both phases. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2 note: n=3 valid runs, 40% error rate.*
+*Figure 1: Mean total score per model across exp3 (discovery) and exp4 (validation). Blue = baseline, red = fail, green = pass. Gate threshold (5.3) and baseline mean (5.8) shown as dashed lines. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2: n=3 valid runs, 40% error rate.*
 
 Cost and token efficiency data are in `efficiency.json` within each experiment directory. Costs are computed from session token counts at 2026-02-25 pricing; see `DATA_DICTIONARY.md` for schema details.
 
@@ -106,13 +82,13 @@ Cost and token efficiency data are in `efficiency.json` within each experiment d
 
 ![Criterion pass rate heatmap](figures/criterion-heatmap.png)
 
-*Figure 3: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
+*Figure 2: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
 
 ### Cost vs. Quality
 
 ![Cost vs quality scatter](figures/cost-quality-scatter.png)
 
-*Figure 4: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
+*Figure 3: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
 
 ## Repository Structure
 
@@ -200,7 +176,7 @@ SCOUT handoff schema (goose-coder v4.2.1): `session_id`, `lens`, `relevant_files
 
 ## Session Gaps
 
-**Exp 3 runs 06-10:** Qwen3 Coder produced zero valid outputs after 7 infrastructure and instruction-following attempts. Marked as excluded (0/7 valid runs).
+**Exp 3 runs 06-10:** Qwen3 Coder produced zero valid outputs after 7 attempts. The model consistently exhausted its action budget before writing the handoff JSON. Reproduced on 2026-03-16 with the same prompt, confirming this is a persistent model behavior failure, not a transient infrastructure issue. Marked as excluded (0/7 valid runs).
 
 **Exp 4 runs 27 and 30:** DeepSeek V3.2 failed to produce parseable JSON on those two attempts (infrastructure timeouts). Counted as errors in error_rate calculation (2 / 5 = 0.4).
 
@@ -231,7 +207,7 @@ All experiments used the Goose agent framework with the public coder recipe (v4.
 
 1. **Underpowered study design:** n=5 per model is insufficient for strong statistical power. Results are indicative, not definitive.
 2. **No raw logs:** Conversation records (goose session JSONL) are absent; only scored outputs and handoff metadata are available.
-3. **Qwen3 Coder exclusion:** Zero valid runs after 7 attempts; excluded from analysis. Cause unclear (infrastructure vs. model capability).
+3. **Qwen3 Coder exclusion:** Zero valid runs after 7 attempts; excluded from analysis. The model consistently exhausted its action budget before writing output; reproduced on 2026-03-16, confirming a persistent model behavior failure.
 4. **DeepSeek V3.2 partial sample:** n=3 valid (2 of 5 runs failed); increases variance in comparison. p-value should be interpreted conservatively.
 5. **Single orchestrator:** All runs used Claude Sonnet 4.6; generalization to other orchestrators unknown.
 
