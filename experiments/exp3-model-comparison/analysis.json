@@ -33,7 +33,13 @@
     "median": 5,
     "min": 5,
     "max": 8,
-    "sd": 1.17
+    "sd": 1.17,
+    "efficiency": {
+      "cost_per_run_usd": 0.8729,
+      "reliability": 1.0,
+      "eff_cost_per_qp_usd": 0.1505,
+      "mean_wall_time_minutes": 2.82
+    }
   },
   "candidates": {
     "qwen3-coder": {
@@ -82,6 +88,12 @@
       "verdict": {
         "verdict": "fail",
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score, gate_3_valid_runs, gate_4_error_rate"
+      },
+      "efficiency": {
+        "cost_per_run_usd": null,
+        "reliability": 0.0,
+        "eff_cost_per_qp_usd": null,
+        "mean_wall_time_minutes": null
       }
     },
     "gemini-3-flash": {
@@ -144,6 +156,12 @@
       "verdict": {
         "verdict": "fail",
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
+      },
+      "efficiency": {
+        "cost_per_run_usd": 0.0569,
+        "reliability": 0.625,
+        "eff_cost_per_qp_usd": 0.0217,
+        "mean_wall_time_minutes": 2.66
       }
     },
     "devstral-2512": {
@@ -206,6 +224,12 @@
       "verdict": {
         "verdict": "fail",
         "reason": "Failed gate(s): gate_1_mean_threshold, gate_2_min_score"
+      },
+      "efficiency": {
+        "cost_per_run_usd": 0.1126,
+        "reliability": 0.8333,
+        "eff_cost_per_qp_usd": 0.045,
+        "mean_wall_time_minutes": 2.6
       }
     }
   },

@@ -62,6 +62,29 @@ Cost and token efficiency data are in `efficiency.json` within each experiment d
 
 *Figure 3: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
 
+### Efficiency Metrics
+
+Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`. Lower is better. Penalizes models that are expensive, unreliable, or low-scoring. `cost_per_run` uses accumulated session tokens. `reliability = n_valid / sum_of_attempt_numbers_per_run`.
+
+| Model | Score | Cost/Run | Reliability | Eff. $/QP | Wall Time | Verdict |
+|-------|-------|----------|-------------|-----------|-----------|---------|
+| MiniMax M2.5 | 6.0 | $0.115 | 1.000 | **$0.019** | 5.1m | pass |
+| DeepSeek V3.2 | 1.0 | $0.007 | 0.333 | $0.021 | 2.1m | fail |
+| Gemini 3 Flash | 4.2 | $0.057 | 0.625 | $0.022 | 2.7m | fail |
+| Kimi K2.5 | 7.0 | $0.221 | 0.833 | $0.038 | 11.6m | pass |
+| Devstral 2512 | 3.0 | $0.113 | 0.833 | $0.045 | 2.6m | fail |
+| Haiku 4.5 | 5.8 | $0.873 | 1.000 | $0.150 | 2.8m | baseline |
+
+*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all quality gates.*
+
+DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.019/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.038/QP). Wall time is reported separately and is not folded into the composite.
+
+Qwen3 Coder is omitted (0 valid runs; metric is undefined).
+
+![Effective cost per quality point bar chart](figures/eff-cost-bar.png)
+
+*Figure 4: Effective cost per quality point (eff_cost_per_qp) for all models with valid scores. Lower is better. Green = pass, red = fail, blue = baseline. Sort order: ascending eff_cost_per_qp. DeepSeek V3.2 ranks deceptively well due to near-zero cost and score=1; it fails all quality gates.*
+
 ## Repository Structure
 
 ```

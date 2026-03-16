@@ -1,10 +1,11 @@
 {
   "source": "goose sessions.db, correlated by run timestamp to session created_at",
+  "composite_metric_formula": "eff_cost_per_qp = cost_per_run / (mean_score * reliability); reliability = n_valid / sum_of_attempt_numbers_per_run; cost_per_run uses accumulated_input_tokens and accumulated_output_tokens",
   "pricing_date": "2026-02-25",
   "pricing": {
     "minimax-m2.5": {
-      "input_per_mtok": 0.30,
-      "output_per_mtok": 1.10,
+      "input_per_mtok": 0.3,
+      "output_per_mtok": 1.1,
       "provider": "openrouter"
     },
     "deepseek-v3.2": {
@@ -13,8 +14,8 @@
       "provider": "openrouter"
     },
     "kimi-k2.5": {
-      "input_per_mtok": 0.60,
-      "output_per_mtok": 2.50,
+      "input_per_mtok": 0.6,
+      "output_per_mtok": 2.5,
       "provider": "openrouter"
     }
   },
@@ -186,5 +187,37 @@
       "accumulated_input_tokens": 292923,
       "accumulated_output_tokens": 5283
     }
-  ]
+  ],
+  "model_summaries": {
+    "minimax-m2.5": {
+      "n_valid": 5,
+      "n_total_attempts": 5,
+      "reliability": 1.0,
+      "mean_score": 6.0,
+      "cost_per_run_usd": 0.1146,
+      "eff_cost_per_qp_usd": 0.0191,
+      "mean_wall_time_minutes": 5.1,
+      "cost_token_basis": "accumulated"
+    },
+    "deepseek-v3.2": {
+      "n_valid": 3,
+      "n_total_attempts": 9,
+      "reliability": 0.3333,
+      "mean_score": 1.0,
+      "cost_per_run_usd": 0.007,
+      "eff_cost_per_qp_usd": 0.0211,
+      "mean_wall_time_minutes": 2.14,
+      "cost_token_basis": "accumulated"
+    },
+    "kimi-k2.5": {
+      "n_valid": 5,
+      "n_total_attempts": 6,
+      "reliability": 0.8333,
+      "mean_score": 7.0,
+      "cost_per_run_usd": 0.2206,
+      "eff_cost_per_qp_usd": 0.0378,
+      "mean_wall_time_minutes": 11.64,
+      "cost_token_basis": "accumulated"
+    }
+  }
 }
