@@ -1,7 +1,5 @@
 {
   "experiment": "exp3-model-comparison",
-  "protocol_version": "pre-registered, locked",
-  "analysis_timestamp": "2026-02-25T02:35:29Z",
   "baseline": {
     "model": "haiku-4.5",
     "runs": [
@@ -24,7 +22,13 @@
     "max": 8,
     "sd": 1.17
   },
-  "comparisons": [
+  "limitations": [
+    "n=5 per group is underpowered; Mann-Whitney U at this n has low power for effect sizes below ~1.5 points",
+    "Three pairwise comparisons without Bonferroni correction; family-wise error rate is elevated",
+    "Scoring delegate is an LLM judge; inter-rater reliability is not measured",
+    "Single issue, single temperature, single task class; results do not generalize"
+  ],
+  "candidates": [
     {
       "candidate": "qwen3-coder",
       "runs": [
@@ -34,9 +38,7 @@
         "run-09",
         "run-10"
       ],
-      "scores": [
-
-      ],
+      "scores": [],
       "valid_runs": 0,
       "total_attempts": 7,
       "mean": null,
@@ -203,10 +205,6 @@
       }
     }
   ],
-  "limitations": [
-    "n=5 per group is underpowered; Mann-Whitney U at this n has low power for effect sizes below ~1.5 points",
-    "Three pairwise comparisons without Bonferroni correction; family-wise error rate is elevated",
-    "Scoring delegate is an LLM judge; inter-rater reliability is not measured",
-    "Single issue, single temperature, single task class; results do not generalize"
-  ]
+  "timestamp": "2026-02-25T02:35:29Z",
+  "method": "pre-registered, locked"
 }
