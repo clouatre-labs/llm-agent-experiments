@@ -10,6 +10,10 @@ repository-code: https://github.com/clouatre-labs/llm-agent-experiments
 url: https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/
 license: Apache-2.0
 date-released: "2025-12-24"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19056877
+    description: Zenodo DOI
 version: "1.0.0"
 abstract: >
   Benchmarking open-weight LLM coding agents as SCOUT delegates in the
