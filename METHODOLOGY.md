@@ -4,6 +4,29 @@
 
 All experiments use the Goose agent framework with the `goose-coder` recipe (v4.2.1, dotfiles commit d4ac9e8). The architecture consists of:
 
+```mermaid
+graph TD
+    subgraph Setup
+        O[Orchestrator<br/>Claude Sonnet 4.6] -->|writes| LM[label-map.json<br/>sealed]
+    end
+    subgraph Per-Run Execution
+        O -->|spawns| S[SCOUT Delegate<br/>model under test]
+        S -->|writes| HF[handoff JSON<br/>scout-run-N.json]
+    end
+    subgraph Scoring Phase
+        O -->|spawns| SC[Scorer Subagent<br/>blind - no model labels]
+        HF -->|read by| SC
+        SC -->|writes| SR[scores.json]
+    end
+    subgraph Post-Scoring Reveal
+        O -->|reads| LM
+        O -->|reads| SR
+        O -->|computes| AN[analysis.json<br/>gate verdicts]
+    end
+```
+
+*Figure 3: Goose-coder recipe agent architecture used in exp3 and exp4. The label-map.json file is sealed before any SCOUT delegate is spawned, ensuring the scorer subagent operates without knowledge of model identities. Model identity is revealed only after all scores are recorded.*
+
 - **Orchestrator:** Claude Sonnet 4.6 via GCP Vertex AI, temperature 0.3. Manages task decomposition, delegate spawning, and result aggregation.
 - **SCOUT delegate:** Model under test (varies by experiment). Receives lens (isolated coding task), produces synthesis artifact (code, docs, tests).
 - **Guard delegate:** Claude Haiku 4.5 (fixed baseline). Validates SCOUT output against rubric (C1-C8 criteria).
@@ -97,7 +120,7 @@ A candidate passes if ALL four gates are satisfied:
 
 To reproduce these experiments:
 
-1. **Install Goose** with the version noted in Software Versions (README.md).
+1. **Install Goose** with the version noted in [Software Versions](../README.md#software-versions) (README.md).
 2. **Load the recipe:** Copy `recipe/goose-coder.yaml` into your local Goose config directory (`~/.config/goose/recipes/`).
 3. **Set orchestrator:** Configure Claude Sonnet 4.6 via GCP Vertex AI as the primary orchestrator; temperature 0.3.
 4. **Prepare label-map:** Write a `label-map.json` file with run IDs and model assignments before spawning any delegates.

@@ -1,7 +1,15 @@
+<div align="center">
+
 # llm-agent-experiments
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/clouatre-labs/llm-agent-experiments/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/clouatre-labs/llm-agent-experiments.svg?style=social)](https://github.com/clouatre-labs/llm-agent-experiments)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/clouatre-labs/llm-agent-experiments.svg?style=flat)](https://github.com/clouatre-labs/llm-agent-experiments)
+[![Sessions](https://img.shields.io/badge/sessions-28-green)](experiments/)
+[![Runs](https://img.shields.io/badge/runs-28-blue)](experiments/)
+
+Mid-tier open-weight models can replace Claude Haiku 4.5 as SCOUT delegates at lower cost without quality loss. Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8) pass all gates; DeepSeek V3.2 and all exp3 candidates fail.
+
+</div>
 
 ## Summary
 
@@ -57,6 +65,14 @@ Two models cleared all gates; one failed with high error rate.
 
 **Verdict:** MiniMax and Kimi qualify as cost-effective delegates; DeepSeek unsuitable.
 
+```mermaid
+xychart-beta
+    title "Mean score per model -- Experiment 4 (gate threshold: 5.3)"
+    x-axis ["haiku-4.5 (baseline)", "minimax-m2.5", "kimi-k2.5", "deepseek-v3.2"]
+    y-axis "Mean total score (0-8)" 0 --> 8
+    bar [5.8, 6.0, 7.0, 1.0]
+```
+
 ## Cross-Experiment Summary
 
 | Experiment | Phase | Baseline Mean | Candidates Tested | Passed | Failed/Excluded | Key Finding |
@@ -64,33 +80,98 @@ Two models cleared all gates; one failed with high error rate.
 | Exp 3 | Discovery | 5.8 | 3 | 0 | 3 | Cheap tier models too weak |
 | Exp 4 | Validation | 5.8 | 3 | 2 | 1 | Mid-tier models viable; DeepSeek unstable |
 
+```mermaid
+xychart-beta
+    title "Mean score per model -- Experiment 3 (all fail)"
+    x-axis ["haiku-4.5 (baseline)", "gemini-3-flash", "devstral-2512"]
+    y-axis "Mean total score (0-8)" 0 --> 8
+    bar [5.8, 4.2, 3.0]
+```
+
+```mermaid
+xychart-beta
+    title "Mean score per model -- Experiment 4 (split outcome)"
+    x-axis ["haiku-4.5 (baseline)", "minimax-m2.5", "kimi-k2.5", "deepseek-v3.2"]
+    y-axis "Mean total score (0-8)" 0 --> 8
+    bar [5.8, 6.0, 7.0, 1.0]
+```
+
+Cost and token efficiency data are in `efficiency.json` within each experiment directory. Costs are computed from session token counts at 2026-02-25 pricing; see `DATA_DICTIONARY.md` for schema details.
+
+### Criterion Pass Rates
+
+![Criterion pass rate heatmap](figures/criterion-heatmap.png)
+
+*Figure 1: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
+
+### Cost vs. Quality
+
+![Cost vs quality scatter](figures/cost-quality-scatter.png)
+
+*Figure 2: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
+
 ## Repository Structure
 
 ```
 llm-agent-experiments/
-  README.md                          This file
-  METHODOLOGY.md                     Shared methodology and statistical protocol
-  DATA_DICTIONARY.md                 Schema definitions for all data files
-  CITATION.cff                       Dataset citation metadata
-  LICENSE                            Apache License 2.0
+  README.md
+  METHODOLOGY.md
+  DATA_DICTIONARY.md
+  CITATION.cff
+  LICENSE
   recipe/
-    goose-coder.yaml                 Goose recipe v4.2.1 (from dotfiles d4ac9e8)
-  data/                              Data files (managed by shard B)
-    exp3/
-      analysis.json                  Experiment 3 metadata and per-candidate scores
-      scores.json                    Per-run criterion scores (C1-C8)
-      efficiency.json                Pricing and token data
-      label-map.json                 Blind scoring: run_id -> model mapping
-      latency-log.jsonl              Per-run timestamps (ISO 8601)
-    exp4/
+    goose-coder.yaml
+  figures/
+    criterion-heatmap.png
+    cost-quality-scatter.png
+  experiments/
+    exp3-model-comparison/
+      README.md
+      protocol.md         # pre-registered, locked before run 1
+      rubric.md           # 8-criterion binary scoring guide
+      runner-prompt.md
+      scorer-prompt.md
+      analysis.json       # gate results, Mann-Whitney stats
+      scores.json         # per-run criterion scores (blinded)
+      efficiency.json     # token counts, costs, latency
+      label-map.json      # run_id -> model name (revealed post-scoring)
+      latency-log.jsonl   # wall-clock timestamps per run
+      sessions/           # 15 SCOUT handoff JSONs (runs 01-05, 11-20)
+    exp4-model-comparison-r2/
+      README.md
+      protocol.md
+      rubric.md           # identical to exp3/rubric.md
+      runner-prompt.md
+      scorer-prompt.md
       analysis.json
       scores.json
       efficiency.json
       label-map.json
       latency-log.jsonl
-    sessions/                        SCOUT and Guard handoff files
-      scout-run-001.json             ... through scout-run-013.json
-      ...
+      sessions/           # 13 SCOUT handoff JSONs (runs 21-35, minus 27/30)
+```
+
+## Inspecting the Data
+
+```bash
+# View scores for all runs in exp4
+jq '.runs | to_entries[] | {run: .key, total: .value.total}' \
+  experiments/exp4-model-comparison-r2/scores.json
+
+# Reveal model assignments after scoring
+jq . experiments/exp4-model-comparison-r2/label-map.json
+
+# Compare mean scores across models
+jq '.candidates | to_entries[] | {model: .key, mean: .value.summary.mean, verdict: .value.verdict}' \
+  experiments/exp4-model-comparison-r2/analysis.json
+
+# Count sessions per experiment
+ls experiments/exp3-model-comparison/sessions/ | wc -l
+ls experiments/exp4-model-comparison-r2/sessions/ | wc -l
+
+# Read a SCOUT handoff (session file)
+jq '{lens, recommendation, approaches: [.approaches[].name]}' \
+  experiments/exp3-model-comparison/sessions/scout-run-03.json
 ```
 
 ## Data Files
@@ -137,7 +218,7 @@ All experiments used the Goose agent framework with the public coder recipe (v4.
 
 | Component | Version | Notes |
 |-----------|---------|-------|
-| Goose | [pinned version] | Agent orchestrator |
+| Goose | 1.27.2 | Agent orchestrator |
 | goose-coder recipe | 4.2.1 | At git d4ac9e8, dotfiles repo |
 | Orchestrator model | Claude Sonnet 4.6 | GCP Vertex AI, temp 0.3 |
 | SCOUT delegate models | See exp3/exp4 protocol | Variable per experiment |
@@ -156,7 +237,7 @@ This repository documents a research experiment conducted using commercial and o
 
 ## Data Availability
 
-This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials (goose recipe, METHODOLOGY.md) are included. The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; raw model outputs are in the sessions/ directory.
+This repository contains the complete dataset, methodology, and analysis code. All files are public under the Apache License 2.0. Supplementary materials (goose recipe, METHODOLOGY.md) are included. The source orchestrator (Claude Sonnet 4.6, GCP Vertex AI) and SCOUT delegate models are noted for reference; raw model outputs are in the experiments/*/sessions/ directories.
 
 ## Funding and Conflict of Interest
 
@@ -178,8 +259,8 @@ If you use this dataset or methodology, please cite:
 }
 ```
 
-See CITATION.cff for additional metadata.
+See [CITATION.cff](CITATION.cff) for additional metadata.
 
 ## License
 
-This repository is licensed under the Apache License 2.0. See LICENSE for full text.
+[Apache License 2.0](LICENSE)
