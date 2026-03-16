@@ -236,6 +236,7 @@ If you use this dataset or methodology, please cite:
   title   = {Orchestrating AI Agents: A Subagent Architecture},
   author  = {Clouatre, Hugues},
   year    = {2026},
+  doi     = {10.5281/zenodo.19056877},
   howpublished = {\url{https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/}},
   urldate = {2026-03-16},
   note    = {Supplementary materials: https://github.com/clouatre-labs/llm-agent-experiments}
