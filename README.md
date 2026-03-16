@@ -79,9 +79,9 @@ config:
     xyChart:
       plotColorPalette: "#4a90d9, #e05c5c, #50b86c"
 ---
-xychart horizontal
+xychart-beta
     title "Mean score per model -- exp3 and exp4 (gate threshold: 5.3)"
-    x-axis ["haiku-4.5 (baseline)", "gemini-3-flash", "devstral-2512", "minimax-m2.5", "kimi-k2.5", "deepseek-v3.2"]
+    x-axis ["haiku (base)", "gemini (e3)", "devstral (e3)", "minimax (e4)", "kimi (e4)", "deepseek (e4)"]
     y-axis "Mean total score (0-8)" 0 --> 8
     bar "baseline" [5.8, 0, 0, 0, 0, 0]
     bar "exp3" [0, 4.2, 3.0, 0, 0, 0]
