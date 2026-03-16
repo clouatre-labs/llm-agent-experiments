@@ -2,8 +2,8 @@
 
 # llm-agent-experiments
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19056876.svg)](https://doi.org/10.5281/zenodo.19056876)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/clouatre-labs/llm-agent-experiments.svg?style=flat)](https://github.com/clouatre-labs/llm-agent-experiments)
 [![Sessions](https://img.shields.io/badge/sessions-28-green)](experiments/)
 [![Runs](https://img.shields.io/badge/runs-28-blue)](experiments/)
 
@@ -236,7 +236,7 @@ If you use this dataset or methodology, please cite:
   title   = {Orchestrating AI Agents: A Subagent Architecture},
   author  = {Clouatre, Hugues},
   year    = {2026},
-  doi     = {10.5281/zenodo.19056877},
+  doi     = {10.5281/zenodo.19056876},
   howpublished = {\url{https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/}},
   urldate = {2026-03-16},
   note    = {Supplementary materials: https://github.com/clouatre-labs/llm-agent-experiments}
