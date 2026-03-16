@@ -232,7 +232,7 @@ This research was funded internally. The researchers have no competing financial
 If you use this dataset or methodology, please cite:
 
 ```bibtex
-@misc{clouatre2026llmagent,
+@misc{clouatre2026orchestrating,
   title   = {Orchestrating AI Agents: A Subagent Architecture},
   author  = {Clouatre, Hugues},
   year    = {2026},
