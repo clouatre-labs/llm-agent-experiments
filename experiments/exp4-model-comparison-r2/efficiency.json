@@ -17,6 +17,11 @@
       "input_per_mtok": 0.6,
       "output_per_mtok": 2.5,
       "provider": "openrouter"
+    },
+    "mistral-small-2603": {
+      "input_per_mtok": 0.15,
+      "output_per_mtok": 0.6,
+      "provider": "openrouter"
     }
   },
   "runs": [
@@ -186,6 +191,61 @@
       "session_output_tokens": 644,
       "accumulated_input_tokens": 292923,
       "accumulated_output_tokens": 5283
+    },
+    {
+      "run_id": "run-36",
+      "model": "mistral-small-2603",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 2.0,
+      "session_input_tokens": 34287,
+      "session_output_tokens": 4,
+      "accumulated_input_tokens": 34287,
+      "accumulated_output_tokens": 4
+    },
+    {
+      "run_id": "run-37",
+      "model": "mistral-small-2603",
+      "valid": true,
+      "attempt": 2,
+      "wall_time_minutes": 2.3,
+      "session_input_tokens": 36992,
+      "session_output_tokens": 381,
+      "accumulated_input_tokens": 71485,
+      "accumulated_output_tokens": 521
+    },
+    {
+      "run_id": "run-38",
+      "model": "mistral-small-2603",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 1.5,
+      "session_input_tokens": 34357,
+      "session_output_tokens": 4,
+      "accumulated_input_tokens": 34357,
+      "accumulated_output_tokens": 4
+    },
+    {
+      "run_id": "run-39",
+      "model": "mistral-small-2603",
+      "valid": true,
+      "attempt": 1,
+      "wall_time_minutes": 1.0,
+      "session_input_tokens": 47049,
+      "session_output_tokens": 171,
+      "accumulated_input_tokens": 47049,
+      "accumulated_output_tokens": 171
+    },
+    {
+      "run_id": "run-40",
+      "model": "mistral-small-2603",
+      "valid": true,
+      "attempt": 3,
+      "wall_time_minutes": 2.4,
+      "session_input_tokens": 32860,
+      "session_output_tokens": 291,
+      "accumulated_input_tokens": 69875,
+      "accumulated_output_tokens": 424
     }
   ],
   "model_summaries": {
@@ -217,6 +277,16 @@
       "cost_per_run_usd": 0.2206,
       "eff_cost_per_qp_usd": 0.0378,
       "mean_wall_time_minutes": 11.64,
+      "cost_token_basis": "accumulated"
+    },
+    "mistral-small-2603": {
+      "n_valid": 5,
+      "n_total_attempts": 8,
+      "reliability": 0.625,
+      "mean_score": 5.4,
+      "cost_per_run_usd": 0.0078,
+      "eff_cost_per_qp_usd": 0.0023,
+      "mean_wall_time_minutes": 1.84,
       "cost_token_basis": "accumulated"
     }
   }
