@@ -7,13 +7,13 @@
 [![Sessions](https://img.shields.io/badge/sessions-28-green)](experiments/)
 [![Runs](https://img.shields.io/badge/runs-28-blue)](experiments/)
 
-Mid-tier open-weight models can replace Claude Haiku 4.5 as SCOUT delegates at lower cost without quality loss. Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8) pass all gates. Qwen3 Coder produced zero valid outputs (0/7 runs); DeepSeek V3.2 fails with a 40% error rate.
+Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (6 models, 28 runs; approximately 4-5 runs per model). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash and Devstral 2512 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
 
 </div>
 
 ## The Question
 
-Can open-weight models replace Claude Haiku 4.5 as SCOUT delegates in the Goose coder recipe at lower cost without degrading research quality?
+Can open-weight models serve as drop-in replacements for a proprietary LLM baseline in a specialized research synthesis role within a multi-agent pipeline, at lower API cost, without degrading output quality as measured by a pre-registered, blinded rubric under non-inferiority criteria?
 
 ## Scoring Rubric
 
