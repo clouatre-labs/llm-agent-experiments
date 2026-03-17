@@ -121,7 +121,7 @@
       "gates": {
         "gate1_mean_threshold": {
           "threshold": 5.3,
-          "value": 6.0,
+          "value": 6.4,
           "pass": true
         },
         "gate2_floor": {
@@ -135,8 +135,8 @@
           "pass": true
         },
         "gate4_non_inferiority": {
-          "p_value": 0.492063,
-          "rank_biserial_r": 0.28,
+          "p_value": 0.52381,
+          "rank_biserial_r": -0.32,
           "significant_at_005": false,
           "candidate_degraded": false,
           "pass": true
@@ -247,8 +247,8 @@
           "pass": false
         },
         "gate4_non_inferiority": {
-          "p_value": 0.017857,
-          "rank_biserial_r": -1.0,
+          "p_value": 0.035714,
+          "rank_biserial_r": 1.0,
           "significant_at_005": true,
           "candidate_degraded": true,
           "pass": false
@@ -351,7 +351,7 @@
       "gates": {
         "gate1_mean_threshold": {
           "threshold": 5.3,
-          "value": 7.0,
+          "value": 6.6,
           "pass": true
         },
         "gate2_floor": {
@@ -365,8 +365,8 @@
           "pass": true
         },
         "gate4_non_inferiority": {
-          "p_value": 0.18254,
-          "rank_biserial_r": 0.6,
+          "p_value": 0.238095,
+          "rank_biserial_r": -0.48,
           "significant_at_005": false,
           "candidate_degraded": false,
           "pass": true

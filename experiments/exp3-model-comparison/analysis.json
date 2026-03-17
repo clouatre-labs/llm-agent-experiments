@@ -116,14 +116,14 @@
       "mean": 4.2,
       "median": 4,
       "mann_whitney_u": {
-        "U": 3.0,
-        "U1_haiku": 22.0,
-        "U2_candidate": 3.0,
-        "p_value": 0.0794,
+        "U": 0.0,
+        "U1_haiku": 21.0,
+        "U2_candidate": 0.0,
+        "p_value": 0.047619,
         "p_value_method": "exact (exhaustive permutation, 252 permutations)",
         "alpha": 0.05,
         "two_tailed": true,
-        "rank_biserial_r": 0.76,
+        "rank_biserial_r": 0.84,
         "n_haiku": 5,
         "n_candidate": 5
       },
@@ -162,13 +162,6 @@
         "reliability": 0.625,
         "eff_cost_per_qp_usd": 0.0217,
         "mean_wall_time_minutes": 2.66
-      },
-      "mann_whitney_vs_haiku": {
-        "U": 0.0,
-        "U1_haiku": 21.0,
-        "U2_candidate": 0.0,
-        "p_value": 0.047619,
-        "rank_biserial_r": 0.84
       }
     },
     "devstral-2512": {
