@@ -34,15 +34,15 @@ Total score: 0-8 points.
 
 ---
 
-### C3: tree-sitter-rust version verified
+### C3: Cargo.toml absence explicitly noted
 
-**Criterion:** Delegate identifies the correct version of tree-sitter-rust and verifies it against Cargo.toml or external documentation.
+**Criterion:** Delegate explicitly states that tree-sitter is not present in the aptu Cargo.toml and must be added as a new dependency.
 
-**Ground truth:** tree-sitter-rust 0.23 or later (as of experiment date). Must be verified against actual Cargo.toml in the aptu repo or Context7 documentation, not assumed from issue text.
+**Ground truth:** tree-sitter is absent from the aptu Cargo.toml as of the experiment date.
 
-**Scoring:** 1 if delegate names a specific version number and cites Cargo.toml or Context7 as the source. 0 if version is not named, is assumed, or is incorrect.
+**Scoring:** 1 if delegate explicitly states that tree-sitter is not present in Cargo.toml or the dependency list and must be added. 0 if absence is not stated explicitly, if it is only inferred from the issue title, or if the delegate only cites a version number without noting absence.
 
-**Rationale:** Demonstrates that delegate researched actual dependencies rather than relying on stale parametric knowledge. tree-sitter versions change frequently.
+**Rationale:** A model that read Cargo.toml will note the absence directly. This criterion can only be satisfied by a model that inspected the file, making it a reliable proxy for tool use and anti-hallucination.
 
 ---
 
