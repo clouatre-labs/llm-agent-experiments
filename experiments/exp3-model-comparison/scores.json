@@ -19,26 +19,26 @@
     "run-02": {
       "C1": 1,
       "C2": 1,
-      "C3": 0,
+      "C3": 1,
       "C4": 1,
       "C5": 0,
       "C6": 0,
       "C7": 1,
       "C8": 1,
-      "total": 5,
-      "notes": "C1: Correctly names crates/aptu-core/src/security/scanner.rs with file details. C2: Cites #735 and #737; references test_multi_line_vulnerability_not_detected(); describes line-by-line regex limitation with code-level evidence including content.lines().enumerate(). C3: States '0.20+ (latest stable)' for tree-sitter; this is not a specific version for tree-sitter-rust, and the source is vague ('No Rust crate in current Cargo.toml'). Rubric requires naming a specific version and citing Cargo.toml or Context7 as source. C4: Names specific patterns (command injection, hardcoded secrets, path traversal, weak crypto, unsafe deserialization) and files (patterns.rs, scanner.rs, detection.rs, types.rs, patterns.json, ignore.rs) with explanation. C5: Does not name specific pattern IDs from codebase (uses generic descriptions like 'SQL injection' not 'sql-injection-concat'). C6: No explicit statement about taint-tracking limitations of AST-only approaches. C7: Proposes optional 'ast_query' field in patterns JSON, SecurityScanner routing logic, and JSON schema migration strategy. C8: Valid JSON with all required fields."
+      "total": 6,
+      "notes": "C1: Correctly names crates/aptu-core/src/security/scanner.rs with file details. C2: Cites #735 and #737; references test_multi_line_vulnerability_not_detected(); describes line-by-line regex limitation with code-level evidence including content.lines().enumerate(). C3: Explicitly stated tree-sitter not in Cargo.toml and must be added. C4: Names specific patterns (command injection, hardcoded secrets, path traversal, weak crypto, unsafe deserialization) and files (patterns.rs, scanner.rs, detection.rs, types.rs, patterns.json, ignore.rs) with explanation. C5: Does not name specific pattern IDs from codebase (uses generic descriptions like 'SQL injection' not 'sql-injection-concat'). C6: No explicit statement about taint-tracking limitations of AST-only approaches. C7: Proposes optional 'ast_query' field in patterns JSON, SecurityScanner routing logic, and JSON schema migration strategy. C8: Valid JSON with all required fields."
     },
     "run-03": {
       "C1": 1,
       "C2": 1,
-      "C3": 1,
+      "C3": 0,
       "C4": 1,
       "C5": 1,
       "C6": 1,
       "C7": 1,
       "C8": 1,
-      "total": 8,
-      "notes": "C1: Correctly names crates/aptu-core/src/security/scanner.rs. C2: Cites #735 and #736; describes line-by-line limitation with specific code references including content.lines().enumerate() in PatternEngine::scan(). C3: Names tree-sitter 0.26.5 and tree-sitter-rust 0.23.x; cites 'available on crates.io' and 'issue references 0.23'. Version 0.23 meets the >= 0.23 requirement. C4: Names specific pattern IDs (sql-injection-concat, sql-injection-format, hardcoded-api-key, hardcoded-password, command-injection) and files (patterns.rs, patterns.json, detection.rs, validator.rs, scanner.rs) with concrete explanation of why each benefits from tree-sitter. C5: Names sql-injection-concat, sql-injection-format, command-injection, hardcoded-api-key, hardcoded-password as specific pattern IDs from the codebase and explains multi-line requirement for SQL injection patterns. C6: States 'Data-flow analysis still needs custom logic on top of AST' in approach cons and describes data-flow/taint tracking as requiring implementation beyond tree-sitter. C7: Proposes tree-sitter query compilation at startup (QueryEngine), extending PatternDefinition with tree-sitter query field, binary size estimates (~5-15MB per language, 20-50MB+ for full migration), and language-specific scanner variants. C8: Valid JSON with all required fields."
+      "total": 7,
+      "notes": "C1: Correctly names crates/aptu-core/src/security/scanner.rs. C2: Cites #735 and #736; describes line-by-line limitation with specific code references including content.lines().enumerate() in PatternEngine::scan(). C3: Cites crates.io availability but does not state tree-sitter absent from Cargo.toml. C4: Names specific pattern IDs (sql-injection-concat, sql-injection-format, hardcoded-api-key, hardcoded-password, command-injection) and files (patterns.rs, patterns.json, detection.rs, validator.rs, scanner.rs) with concrete explanation of why each benefits from tree-sitter. C5: Names sql-injection-concat, sql-injection-format, command-injection, hardcoded-api-key, hardcoded-password as specific pattern IDs from the codebase and explains multi-line requirement for SQL injection patterns. C6: States 'Data-flow analysis still needs custom logic on top of AST' in approach cons and describes data-flow/taint tracking as requiring implementation beyond tree-sitter. C7: Proposes tree-sitter query compilation at startup (QueryEngine), extending PatternDefinition with tree-sitter query field, binary size estimates (~5-15MB per language, 20-50MB+ for full migration), and language-specific scanner variants. C8: Valid JSON with all required fields."
     },
     "run-04": {
       "C1": 1,

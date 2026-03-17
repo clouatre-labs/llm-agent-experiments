@@ -21,15 +21,15 @@
     ],
     "scores": [
       5,
-      5,
-      8,
+      6,
+      7,
       6,
       5
     ],
     "mean": 5.8,
-    "median": 5,
+    "median": 6,
     "min": 5,
-    "max": 8,
+    "max": 7,
     "efficiency": {
       "cost_per_run_usd": 0.8729,
       "reliability": 1.0,
@@ -52,16 +52,16 @@
       },
       "scores": [
         6,
-        7,
+        8,
         6,
         5,
-        6
+        7
       ],
       "summary": {
-        "mean": 6.0,
+        "mean": 6.4,
         "median": 6,
         "min": 5,
-        "max": 7,
+        "max": 8,
         "n_valid": 5,
         "n_missing": 0,
         "error_rate": 0.0
@@ -78,9 +78,9 @@
           "rate": 1.0
         },
         "C3": {
-          "passed": 0,
+          "passed": 2,
           "total": 5,
-          "rate": 0.0
+          "rate": 0.4
         },
         "C4": {
           "passed": 5,
@@ -109,11 +109,11 @@
         }
       },
       "mann_whitney_vs_haiku": {
-        "U1": 16.0,
-        "U2": 9.0,
-        "U_statistic": 9.0,
-        "p_exact_two_tailed": 0.492063,
-        "rank_biserial_r": 0.28,
+        "U1": 5,
+        "U2": 13,
+        "U_statistic": 5,
+        "p_exact_two_tailed": 0.52381,
+        "rank_biserial_r": -0.32,
         "n_x": 5,
         "n_y": 5,
         "total_permutations": 252
@@ -221,11 +221,11 @@
         }
       },
       "mann_whitney_vs_haiku": {
-        "U1": 0.0,
-        "U2": 15.0,
-        "U_statistic": 0.0,
-        "p_exact_two_tailed": 0.017857,
-        "rank_biserial_r": -1.0,
+        "U1": 15,
+        "U2": 0,
+        "U_statistic": 0,
+        "p_exact_two_tailed": 0.035714,
+        "rank_biserial_r": 1.0,
         "n_x": 3,
         "n_y": 5,
         "total_permutations": 56
@@ -281,15 +281,15 @@
         "invalid": []
       },
       "scores": [
-        7,
-        7,
+        8,
         6,
-        7,
-        8
+        6,
+        6,
+        7
       ],
       "summary": {
-        "mean": 7.0,
-        "median": 7,
+        "mean": 6.6,
+        "median": 6,
         "min": 6,
         "max": 8,
         "n_valid": 5,
@@ -308,9 +308,9 @@
           "rate": 1.0
         },
         "C3": {
-          "passed": 3,
+          "passed": 1,
           "total": 5,
-          "rate": 0.6
+          "rate": 0.2
         },
         "C4": {
           "passed": 5,
@@ -339,11 +339,11 @@
         }
       },
       "mann_whitney_vs_haiku": {
-        "U1": 20.0,
-        "U2": 5.0,
-        "U_statistic": 5.0,
-        "p_exact_two_tailed": 0.18254,
-        "rank_biserial_r": 0.6,
+        "U1": 3,
+        "U2": 15,
+        "U_statistic": 3,
+        "p_exact_two_tailed": 0.238095,
+        "rank_biserial_r": -0.48,
         "n_x": 5,
         "n_y": 5,
         "total_permutations": 252

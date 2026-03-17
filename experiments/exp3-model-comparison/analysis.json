@@ -24,16 +24,16 @@
     ],
     "scores": [
       5,
-      5,
-      8,
+      6,
+      7,
       6,
       5
     ],
     "mean": 5.8,
-    "median": 5,
+    "median": 6,
     "min": 5,
-    "max": 8,
-    "sd": 1.17,
+    "max": 7,
+    "sd": 0.75,
     "efficiency": {
       "cost_per_run_usd": 0.8729,
       "reliability": 1.0,
@@ -162,6 +162,13 @@
         "reliability": 0.625,
         "eff_cost_per_qp_usd": 0.0217,
         "mean_wall_time_minutes": 2.66
+      },
+      "mann_whitney_vs_haiku": {
+        "U": 0.0,
+        "U1_haiku": 21.0,
+        "U2_candidate": 0.0,
+        "p_value": 0.047619,
+        "rank_biserial_r": 0.84
       }
     },
     "devstral-2512": {

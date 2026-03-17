@@ -25,8 +25,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs with detailed role description.",
     "C2": 1,
     "C2_note": "States 'Regex-based line-by-line scanning in scanner.rs', identifies patterns.rs with line range, and references 'line-by-line scanning' pattern explicitly.",
-    "C3": 0,
-    "C3_note": "Claims tree-sitter 0.26.5 (plausible for core) but tree-sitter-rust 'latest' without specific version. Does not verify from Cargo.toml.",
+    "C3": 1,
+    "C3_note": "Explicitly stated no tree-sitter dependency currently and would add new dependency",
     "C4": 1,
     "C4_note": "Three approaches with codebase evidence: references PatternEngine, patterns.json, scanner.rs, detection.rs, benchmarks. Names specific files touched per approach.",
     "C5": 1,
@@ -37,7 +37,7 @@
     "C7_note": "Identifies SARIF output integration, benchmark targets (<10ms), context window for LLM validation, and detection.rs trigger logic as architectural considerations requiring synthesis beyond issue text.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 7
+    "total": 8
   },
   {
     "run_id": "run-23",
@@ -85,8 +85,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs with 'Main SecurityScanner implementation with scan_diff and scan_file methods'.",
     "C2": 1,
     "C2_note": "States 'Regex-based line-by-line vulnerability scanning' and 'Current architecture processes files line by line'. References patterns.rs and scanner.rs with unit tests.",
-    "C3": 0,
-    "C3_note": "Claims tree-sitter and tree-sitter-rust both as 'latest' without specific versions. Notes 'tree-sitter not yet integrated' but doesn't verify version.",
+    "C3": 1,
+    "C3_note": "Explicitly stated tree-sitter not yet integrated and would require new dependency",
     "C4": 1,
     "C4_note": "Three approaches with codebase evidence. References scan_diff, scan_file methods, fixture-based testing, benchmark in benches/. Names specific files per approach.",
     "C5": 1,
@@ -97,7 +97,7 @@
     "C7_note": "Identifies benchmark infrastructure at benches/security_scan.rs, criterion for benchmarks, cargo deny for advisories. Notes performance benchmarking as architectural concern. Synthesizes beyond issue.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 6
+    "total": 7
   },
   {
     "run_id": "run-26",
@@ -165,8 +165,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs in approaches file list.",
     "C2": 1,
     "C2_note": "States 'Regex-based line-by-line scanning' as pattern, references patterns.rs and scanner.rs. Explains multi-line limitation with source/sink context.",
-    "C3": 0,
-    "C3_note": "No specific tree-sitter-rust version provided in library findings. Only lists grammar crates without versions.",
+    "C3": 1,
+    "C3_note": "Explicitly stated currently no tree-sitter deps",
     "C4": 1,
     "C4_note": "Three approaches with codebase evidence. Names specific files (patterns.rs, scanner.rs, types.rs, patterns.json). References 14 patterns, binary size from grammar crates, detection.rs, validator.rs.",
     "C5": 1,
@@ -177,7 +177,7 @@
     "C7_note": "Identifies pattern JSON schema extension need, scanner dispatch logic for routing patterns to engines, validator.rs implications, and detection.rs trigger logic. Multiple non-obvious synthesis points.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 7
+    "total": 8
   },
   {
     "run_id": "run-32",
@@ -185,8 +185,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs with role description.",
     "C2": 1,
     "C2_note": "States 'Line-by-line regex scanning' as pattern and references patterns.rs. Explains limitation that led to PR #736.",
-    "C3": 1,
-    "C3_note": "States tree-sitter-rust version 0.24.0 which matches crates.io latest. Also notes tree-sitter 0.26.5.",
+    "C3": 0,
+    "C3_note": "Stated correct version but did not explicitly note absence from Cargo.toml",
     "C4": 1,
     "C4_note": "Three approaches with codebase evidence. References PatternEngine, patterns.json, scanner.rs, detection.rs, SARIF output. Names specific files per approach.",
     "C5": 0,
@@ -197,7 +197,7 @@
     "C7_note": "Identifies SARIF output integration, benchmark infrastructure, detection.rs heuristics, and feature flag CI matrix as architectural concerns requiring synthesis.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 7
+    "total": 6
   },
   {
     "run_id": "run-33",
@@ -225,8 +225,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs in relevant files.",
     "C2": 1,
     "C2_note": "States line-by-line regex scanning limitation. References patterns.rs and scanner.rs with role descriptions.",
-    "C3": 1,
-    "C3_note": "States tree-sitter-rust version 0.24.0 which matches crates.io latest.",
+    "C3": 0,
+    "C3_note": "Stated correct version but did not explicitly note absence from Cargo.toml",
     "C4": 1,
     "C4_note": "Three approaches with codebase evidence. References PatternEngine, patterns.json, scanner.rs, detection.rs, types.rs, validator.rs. Names specific files per approach.",
     "C5": 0,
@@ -237,7 +237,7 @@
     "C7_note": "Identifies detection.rs trigger logic, validator.rs implications, FFI/uniffi compatibility, and pattern dispatch routing as non-obvious architectural concerns.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 7
+    "total": 6
   },
   {
     "run_id": "run-35",
@@ -245,8 +245,8 @@
     "C1_note": "Correctly identifies crates/aptu-core/src/security/scanner.rs in relevant files and approach file lists.",
     "C2": 1,
     "C2_note": "States 'Line-by-line regex scanning' as pattern. References patterns.rs, scanner.rs. Explains multi-line limitation with test documentation.",
-    "C3": 1,
-    "C3_note": "States tree-sitter-rust version 0.24.0 which matches crates.io latest. Also notes tree-sitter 0.26.5.",
+    "C3": 0,
+    "C3_note": "Stated correct version but did not explicitly note absence from Cargo.toml",
     "C4": 1,
     "C4_note": "Three approaches with extensive codebase evidence. Lists all 14 pattern IDs. References scanner.rs, patterns.rs, types.rs, detection.rs, SARIF, benchmarks, mod.rs. Most detailed tradeoff analysis.",
     "C5": 1,
@@ -257,6 +257,6 @@
     "C7_note": "Identifies SARIF output integration, FFI/uniffi compatibility, detection.rs heuristics, validator.rs, benchmark infrastructure, SecurityScanner trait abstraction, query caching at startup, and deduplication logic. Most comprehensive architectural synthesis.",
     "C8": 1,
     "C8_note": "Valid JSON with all 11 required schema fields present.",
-    "total": 8
+    "total": 7
   }
 ]
