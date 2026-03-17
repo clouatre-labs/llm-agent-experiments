@@ -1,0 +1,126 @@
+{
+  "session_id": "run-38",
+  "lens": "scout",
+  "relevant_files": [
+    {"path": "crates/aptu-core/src/security/scanner.rs", "line_range": "1-250", "role": "Main security scanner implementation using PatternEngine"},
+    {"path": "crates/aptu-core/src/security/patterns.rs", "line_range": "1-250", "role": "PatternEngine for regex-based vulnerability detection"},
+    {"path": "crates/aptu-core/src/security/patterns.json", "line_range": "1-300", "role": "Embedded pattern database for security rules"},
+    {"path": "crates/aptu-core/src/security/types.rs", "line_range": "1-100", "role": "Security finding types and definitions"},
+    {"path": "crates/aptu-core/benches/security_scan.rs", "line_range": "1-100", "role": "Performance benchmarks for current regex-based scanner"},
+    {"path": "crates/aptu-core/tests/security_integration.rs", "line_range": "1-200", "role": "Integration tests including multi-line limitation test"},
+    {"path": "Cargo.toml", "line_range": "1-100", "role": "Workspace configuration and dependencies"},
+    {"path": "README.md", "line_range": "1-100", "role": "Project overview and security scanning features"}
+  ],
+  "conventions": {
+    "commits": "Conventional commits with signed commits and DCO sign-off",
+    "testing": "Unit tests in same file as implementation, integration tests in tests/ directory, negative tests for known limitations",
+    "linting": "Clippy pedantic lints with some allowances (module_name_repetitions, missing_errors_doc, missing_panics_doc), rustfmt for formatting",
+    "error_handling": "thiserror and anyhow for error handling, tracing for logging",
+    "import/module_organization": "Clear module separation with security/ submodule containing scanner, patterns, types, etc."
+  },
+  "patterns": [
+    "Regex-based pattern matching with file extension filtering",
+    "Lazy static initialization for global PatternEngine",
+    "Hybrid diff/file scanning with ignore rules",
+    "Negative testing for known limitations (multi-line detection)",
+    "Performance optimization via regex pre-compilation"
+  ],
+  "related_issues": [
+    {"number": 735, "title": "test(security): add negative test documenting multi-line detection limitation", "relevance": "Documents the architectural limitation that tree-sitter aims to solve"},
+    {"number": 736, "title": "test(security): add negative test documenting multi-line detection limitation", "relevance": "Implements the negative test for multi-line limitation"},
+    {"number": 737, "title": "feat(security): evaluate tree-sitter for AST-based vulnerability detection", "relevance": "The issue being researched"}
+  ],
+  "constraints": [
+    "Current scanner operates line-by-line, cannot detect multi-line vulnerabilities where source and sink are on different lines",
+    "Performance critical: benchmarks show <10ms for 500-line scans",
+    "No external service scanning: all processing must be local",
+    "Must support multiple languages (Rust, Python, JavaScript, etc.)"
+  ],
+  "test_coverage": "High for regex-based patterns: includes integration tests with vulnerable and safe fixtures, negative test for multi-line limitation, and benchmarks. Security scanner has 14+ unit tests covering various scenarios including file scanning, diff scanning, multiple files, line numbers, and ignore rules.",
+  "library_findings": [
+    {
+      "library": "tree-sitter",
+      "version": "Latest stable (0.24+)",
+      "relevant_api": "Parser setup with language grammars, parse() method, query API with S-expression queries, incremental parsing, syntax tree navigation",
+      "notes": "Core incremental parsing library. Requires language-specific grammars. Rust API is mature with good documentation and examples. Query system uses S-expressions for pattern matching."
+    },
+    {
+      "library": "tree-sitter-rust",
+      "version": "0.23+",
+      "relevant_api": "LANGUAGE constant for parser configuration, query files for syntax highlighting, node type information",
+      "notes": "Rust grammar for tree-sitter. Provides LANGUAGE constant for Rust parsing. Includes query files that can be adapted for security scanning. Well-maintained and widely used."
+    },
+    {
+      "library": "tree-sitter-query",
+      "version": "Tree-sitter built-in",
+      "relevant_api": "Query::new(), QueryCursor::exec(), capture system for pattern matching",
+      "notes": "Tree-sitter's query language (S-expressions) for AST pattern matching. Enables language-aware pattern matching beyond simple regex. Can capture specific nodes like function calls, assignments, etc."
+    }
+  ],
+  "approaches": [
+    {
+      "name": "Hybrid Regex + Tree-Sitter Scanner",
+      "description": "Maintain existing regex patterns for simple single-line detections while adding tree-sitter-based scanning for multi-line and complex patterns. Use tree-sitter queries to detect data-flow patterns like taint tracking from source to sink across multiple lines.",
+      "pros": [
+        "Minimal disruption to existing architecture",
+        "Preserves performance for simple patterns",
+        "Gradual migration path",
+        "Backward compatible with existing findings",
+        "Can leverage existing ignore rules and configuration",
+        "Incremental parsing for fast re-scans on edits"
+      ],
+      "cons": [
+        "Introduces new dependencies (tree-sitter + grammars)",
+        "Learning curve for tree-sitter query syntax",
+        "Binary size increases from grammar crates",
+        "Maintenance overhead for multiple language grammars",
+        "More complex codebase"
+      ],
+      "complexity": "medium",
+      "files_touched": 15
+    },
+    {
+      "name": "Full Tree-Sitter Migration",
+      "description": "Replace regex-based PatternEngine entirely with tree-sitter-based scanning. Rewrite all patterns as tree-sitter queries. Implement taint tracking and data-flow analysis using AST traversal and query results.",
+      "pros": [
+        "More accurate detection (language-aware parsing)",
+        "Can detect multi-line vulnerabilities",
+        "Better context for findings (exact variable names, function calls)",
+        "Supports complex vulnerability patterns (taint tracking, control flow)",
+        "Future-proof architecture",
+        "Enables advanced features like call graph analysis"
+      ],
+      "cons": [
+        "Major architecture change (500-800 new lines estimated)",
+        "High risk and complexity",
+        "Performance impact from AST parsing (though incremental helps)",
+        "All existing patterns need rewriting as queries",
+        "Requires testing all existing patterns",
+        "Larger binary size",
+        "Longer initial implementation time"
+      ],
+      "complexity": "complex",
+      "files_touched": 25
+    },
+    {
+      "name": "Tree-Sitter Spike for Multi-Line Detection Only",
+      "description": "Implement a minimal spike: add tree-sitter-rust to the project, create a proof-of-concept that can detect multi-line SQL injection (source variable on one line, query execution on another), then evaluate complexity, performance, and detection quality before deciding on full implementation.",
+      "pros": [
+        "Low risk and minimal commitment",
+        "Validates tree-sitter approach before full implementation",
+        "Provides concrete data for decision making",
+        "Can reuse spike code if approach is approved",
+        "Educates team on tree-sitter capabilities"
+      ],
+      "cons": [
+        "Spike code may need to be thrown away",
+        "Doesn't solve the full problem immediately",
+        "Requires additional research after spike",
+        "Time spent may not lead to adoption"
+      ],
+      "complexity": "simple",
+      "files_touched": 5
+    }
+  ],
+  "recommendation": "Start with Approach 3 (Tree-Sitter Spike) to validate the approach with minimal risk. The spike should focus on detecting multi-line SQL injection in Rust code using tree-sitter-rust. This will provide concrete performance metrics, detection accuracy data, and team learning to make an informed decision about Approach 1 (Hybrid) vs Approach 2 (Full Migration). The spike can be done in a separate branch and the findings used to drive the architectural decision for issue #737."
+}
