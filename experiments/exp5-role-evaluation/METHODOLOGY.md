@@ -13,6 +13,10 @@ Quality differences between correct outputs are captured via verbosity and turn 
 This design is appropriate for a first-pass feasibility screen. Any model that passes all roles
 with n=1 is a candidate for follow-up with n=5 and statistical gates (see exp3/exp4 protocol).
 
+## Inference mode
+
+All delegates ran in default (non-reasoning) inference mode. No `thinking` budget parameter was set on any call. `mistralai/mistral-small-2603` supports an optional reasoning mode via the `thinking` budget token parameter on OpenRouter; it was deliberately not used to establish a baseline for the cheapest, fastest operating point. Enabling reasoning is an independent variable for exp6: it may improve GUARD and BUILD quality at the cost of higher latency and token spend.
+
 ## What "Notes" means
 
 The `notes` field in handoff JSON is a free-text array populated at the delegate's discretion.

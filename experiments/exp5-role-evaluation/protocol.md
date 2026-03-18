@@ -24,6 +24,10 @@ The worktree was already patched when delegates ran. SCOUT delegates therefore s
 | Mistral Small 2603 | `mistralai/mistral-small-2603` | Candidate; failed SCOUT in exp4 |
 | MiniMax M2.5 | `minimax/minimax-m2.5` | Passed exp4 SCOUT; included for comparison |
 
+## Inference mode
+
+All delegates used default inference mode. No reasoning/thinking budget was set on any model or any role. `mistralai/mistral-small-2603` supports an optional reasoning mode via the `thinking` budget parameter on OpenRouter; it was not enabled. Results therefore reflect standard (non-reasoning) inference for all three models.
+
 ## Temperature by role
 
 | Role | Temp |
