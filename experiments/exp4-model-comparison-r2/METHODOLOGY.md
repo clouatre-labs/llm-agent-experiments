@@ -2,7 +2,7 @@
 
 ## Experimental Design
 
-Four candidates tested against Claude Haiku 4.5 baseline (reused from exp3). 8 rounds of 5 runs each (40 total). Blind scoring protocol applied uniformly across all candidates.
+Four candidates tested against Claude Haiku 4.5 baseline (reused from exp3). 5 runs per candidate (DeepSeek V3.2: 3 valid from 9 total attempts; Mistral Small 2603: 5 valid from 8 total attempts). Blind scoring protocol applied uniformly across all candidates.
 
 ## Blinding Procedure
 
@@ -63,7 +63,7 @@ Costs based on OpenRouter pricing (as of experiment run date). Token counts accu
 
 ### DeepSeek V3.2
 
-Runs 27 and 30 produced no parseable JSON output. Both attempts logged in latency-log.jsonl. Reliability = 3/8 = 0.33 (6 of 8 attempts successful).
+Runs 27 and 30 produced no parseable JSON output after 3 attempts each. Both logged in latency-log.jsonl. n_total_attempts=9 (run-26: 1, run-27: 3, run-28: 1, run-29: 1, run-30: 3). Reliability = 3/9 = 0.33.
 
 ### Mistral Small 2603
 

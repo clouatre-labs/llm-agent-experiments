@@ -28,7 +28,7 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 | C7 | Non-obvious architectural implication requiring code synthesis |
 | C8 | Valid JSON output per handoff schema |
 
-*Table 1: Eight-criterion binary scoring rubric (0-8 total). Applied identically across exp3 and exp4; rubric locked before any delegates were spawned.*
+*Table 1: Eight-criterion binary scoring rubric (0-8 total). Rubric locked before any delegates were spawned. C3 definition was refined between exp3 and exp4 (exp3 C3: "Tree-sitter dependency absent from Cargo.toml"; exp4 C3: "Cargo.toml absence explicitly noted by the delegate"). Exp3 scores were not rescored under the updated definition; reported means reflect the rubric version in effect at time of scoring.*
 
 ## Results
 

@@ -25,10 +25,10 @@ The baseline (Claude Haiku 4.5, mean=5.8) is reused from exp3 to enable cross-ro
 | Model | n valid | Mean | Error rate | p vs Haiku | r | Verdict |
 |-------|---------|------|------------|-----------|---|---------|
 | Claude Haiku 4.5 (baseline) | 5 | 5.8 | 0.0 | -- | -- | baseline |
-| MiniMax M2.5 | 5 | 6.4 | 0.0 | 0.492 | 0.28 | pass |
-| DeepSeek V3.2 | 3 | 1.0 | 0.4 | 0.018 | -1.0 | fail |
-| Kimi K2.5 | 5 | 6.6 | 0.0 | 0.183 | 0.60 | pass |
-| Mistral Small 2603 | 5 | 5.4 | 0.375 | 1.000 | -0.04 | fail |
+| MiniMax M2.5 | 5 | 6.4 | 0.0 | 0.524 | -0.32 | pass |
+| DeepSeek V3.2 | 3 | 1.0 | 0.4 | 0.036 | 1.0 | fail |
+| Kimi K2.5 | 5 | 6.6 | 0.0 | 0.238 | -0.48 | pass |
+| Mistral Small 2603 | 5 | 5.4 | 0.375 | 1.000 | 0.04 | fail |
 
 ## Key Finding
 
