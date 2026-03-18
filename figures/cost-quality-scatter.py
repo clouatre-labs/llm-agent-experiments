@@ -3,10 +3,10 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-models     = ["haiku-4.5", "kimi-k2.5", "minimax-m2.5", "gemini-3-flash", "devstral-2512", "deepseek-v3.2"]
-cost_usd   = [0.0222, 0.0122, 0.0043, 0.0021, 0.0025, 0.0011]
-mean_score = [5.8, 7.0, 6.0, 4.2, 3.0, 1.0]
-verdicts   = ["baseline", "pass", "pass", "fail", "fail", "fail"]
+models     = ["haiku-4.5", "kimi-k2.5", "minimax-m2.5", "gemini-3-flash", "devstral-2512", "deepseek-v3.2", "mistral-small-2603"]
+cost_usd   = [0.0222, 0.0122, 0.0043, 0.0021, 0.0025, 0.0011, 0.0078]
+mean_score = [5.8, 6.6, 6.4, 4.2, 3.0, 1.0, 5.4]
+verdicts   = ["baseline", "pass", "pass", "fail", "fail", "fail", "fail"]
 
 colors  = {"baseline": "#1f77b4", "pass": "#2ca02c", "fail": "#d62728"}
 markers = {"baseline": "D", "pass": "o", "fail": "x"}
@@ -17,6 +17,7 @@ offsets = {
     "gemini-3-flash": (8,   4),
     "devstral-2512":  (8, -12),
     "deepseek-v3.2":  (8,   4),
+    "mistral-small-2603": (8, -12),
 }
 
 fig, ax = plt.subplots(figsize=(8, 5))

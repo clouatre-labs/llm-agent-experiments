@@ -43,12 +43,13 @@ Baseline and three candidate models, each tested n=5:
 
 ### Experiment 4 (Validation Phase)
 
-Baseline reused (exp3 runs 1-5) and three new candidates, each n=5 (DeepSeek n=3 due to failures):
+Baseline reused (exp3 runs 1-5) and four new candidates, each n=5 (DeepSeek n=3 due to failures; Mistral n=5 valid from 8 attempts):
 
 - **Claude Haiku 4.5 (baseline):** Reused from exp3 (mean=5.8)
 - **MiniMax M2.5:** Chinese Minimax, open-weight via OpenRouter
 - **DeepSeek V3.2:** Chinese DeepSeek, commercial API
 - **Kimi K2.5:** Chinese Moonshot, commercial API
+- **Mistral Small 2603:** Mistral AI, commercial API via OpenRouter
 
 ## Blinding Procedure
 

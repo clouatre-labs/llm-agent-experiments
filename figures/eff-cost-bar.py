@@ -2,9 +2,9 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-models    = ["minimax-m2.5", "gemini-3-flash", "deepseek-v3.2", "kimi-k2.5", "devstral-2512", "haiku-4.5"]
-eff_cpqp  = [0.0191,         0.0217,           0.0211,          0.0378,       0.045,           0.1505]
-verdicts  = ["pass",         "fail",           "fail",          "pass",       "fail",          "baseline"]
+models    = ["minimax-m2.5", "gemini-3-flash", "deepseek-v3.2", "mistral-small-2603", "kimi-k2.5", "devstral-2512", "haiku-4.5"]
+eff_cpqp  = [0.0179,         0.0217,           0.0210,          0.0023,               0.0401,       0.045,           0.1505]
+verdicts  = ["pass",         "fail",           "fail",          "fail",               "pass",       "fail",          "baseline"]
 
 # Sort by eff_cpqp ascending
 sorted_data = sorted(zip(eff_cpqp, models, verdicts))

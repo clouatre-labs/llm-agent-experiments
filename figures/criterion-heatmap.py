@@ -10,6 +10,7 @@ models = [
     'gemini-3-flash\n(fail)',
     'devstral-2512\n(fail)',
     'deepseek-v3.2\n(fail)',
+    'mistral-small-2603\n(fail)',
 ]
 criteria = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8']
 data = np.array([
@@ -19,9 +20,10 @@ data = np.array([
     [1.0, 1.0, 0.0, 0.8, 0.2, 0.0, 0.2, 1.0],  # gemini
     [1.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.2, 1.0],  # devstral
     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  # deepseek
+    [1.0, 1.0, 0.0, 1.0, 0.0, 0.6, 0.6, 1.0],  # mistral
 ])
 
-fig, ax = plt.subplots(figsize=(10, 5))
+fig, ax = plt.subplots(figsize=(10, 6))
 cmap = plt.get_cmap('RdYlGn')
 im = ax.imshow(data, cmap=cmap, vmin=0, vmax=1, aspect='auto')
 

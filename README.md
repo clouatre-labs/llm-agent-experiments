@@ -4,10 +4,10 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19056876.svg)](https://doi.org/10.5281/zenodo.19056876)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Sessions](https://img.shields.io/badge/sessions-28-green)](experiments/)
-[![Runs](https://img.shields.io/badge/runs-28-blue)](experiments/)
+[![Sessions](https://img.shields.io/badge/sessions-33-green)](experiments/)
+[![Runs](https://img.shields.io/badge/runs-33-blue)](experiments/)
 
-Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (6 models, 28 runs; approximately 4-5 runs per model). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 7.0/8) and MiniMax M2.5 (mean 6.0/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash and Devstral 2512 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
+Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (7 models, 33 runs; approximately 4-5 runs per model (except DeepSeek V3.2: 3 valid due to infrastructure failures)). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 6.6/8) and MiniMax M2.5 (mean 6.4/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash, Devstral 2512, and Mistral Small 2603 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
 
 </div>
 
@@ -21,28 +21,31 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 |-----------|-------------|
 | C1 | Correct problem decomposition |
 | C2 | Appropriate tool selection |
-| C3 | Valid syntax across all artifacts |
-| C4 | Handles edge cases |
-| C5 | Error handling present |
-| C6 | No redundant or circular logic |
-| C7 | Architecture matches specification |
-| C8 | Code usability and clarity |
+| C3 | Cargo.toml absence explicitly noted |
+| C4 | Hybrid vs. full-migration tradeoff articulated with codebase evidence |
+| C5 | At least 2 specific patterns identified as requiring multi-line detection |
+| C6 | Data-flow/taint tracking gap noted as unsolved by tree-sitter alone |
+| C7 | Non-obvious architectural implication requiring code synthesis |
+| C8 | Valid JSON output per handoff schema |
 
-*Table 1: Eight-criterion binary scoring rubric (0-8 total). Applied identically across exp3 and exp4; rubric locked before any delegates were spawned.*
+*Table 1: Eight-criterion binary scoring rubric (0-8 total). Rubric locked before any delegates were spawned. C3 definition was refined between exp3 and exp4 (exp3 C3: "Tree-sitter dependency absent from Cargo.toml"; exp4 C3: "Cargo.toml absence explicitly noted by the delegate"). Exp3 scores were not rescored under the updated definition; reported means reflect the rubric version in effect at time of scoring.*
 
 ## Results
 
-| Model | Exp | n | Mean | Error rate | Verdict |
-|-------|-----|---|------|------------|---------|
-| Claude Haiku 4.5 | 3 | 5 | 5.8 | 0.0 | baseline |
-| Qwen3 Coder | 3 | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
-| Gemini 3 Flash | 3 | 5 | 4.2 | 0.0 | fail |
-| Devstral 2512 | 3 | 5 | 3.0 | 0.0 | fail |
-| MiniMax M2.5 | 4 | 5 | 6.0 | 0.0 | pass |
-| DeepSeek V3.2 | 4 | 3 | 1.0 | 0.4 | fail |
-| Kimi K2.5 | 4 | 5 | 7.0 | 0.0 | pass |
+| Model | n | Mean | Error rate | Verdict |
+|-------|---|------|------------|---------|
+| Claude Haiku 4.5 | 5 | 5.8 | 0.0 | baseline |
+| Kimi K2.5 | 5 | 6.6 | 0.0 | pass |
+| MiniMax M2.5 | 5 | 6.4 | 0.0 | pass |
+| Mistral Small 2603 | 5 | 5.4 | 0.375 | fail |
+| Gemini 3 Flash | 5 | 4.2 | 0.0 | fail |
+| Devstral 2512 | 5 | 3.0 | 0.0 | fail |
+| DeepSeek V3.2 | 3 | 1.0 | 0.4 | fail |
+| Qwen3 Coder | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
 
-*Table 2: Per-model results across exp3 (discovery) and exp4 (validation). Error rate = fraction of runs that failed to produce valid output. Exp4 candidates compared against the exp3 baseline; Mann-Whitney U p-values are in analysis.json.*
+*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 2603). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 2603: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
+
+### Mean Score
 
 ![Mean score bar chart](figures/mean-score-bar.png)
 
@@ -54,7 +57,7 @@ Cost and token efficiency data are in `efficiency.json` within each experiment d
 
 ![Criterion pass rate heatmap](figures/criterion-heatmap.png)
 
-*Figure 2: Pass rate per criterion (C1-C8) for all six evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
+*Figure 2: Pass rate per criterion (C1-C8) for all seven evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
 
 ### Cost vs. Quality
 
@@ -68,16 +71,17 @@ Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`.
 
 | Model | Score | Cost/Run | Reliability | Eff. $/QP | Wall Time | Verdict |
 |-------|-------|----------|-------------|-----------|-----------|---------|
-| MiniMax M2.5 | 6.0 | $0.115 | 1.000 | **$0.019** | 5.1m | pass |
+| Mistral Small 2603 | 5.4 | $0.008 | 0.625 | **$0.002** | 1.8m | fail |
+| MiniMax M2.5 | 6.4 | $0.115 | 1.000 | $0.018 | 5.1m | pass |
 | DeepSeek V3.2 | 1.0 | $0.007 | 0.333 | $0.021 | 2.1m | fail |
 | Gemini 3 Flash | 4.2 | $0.057 | 0.625 | $0.022 | 2.7m | fail |
-| Kimi K2.5 | 7.0 | $0.221 | 0.833 | $0.038 | 11.6m | pass |
+| Kimi K2.5 | 6.6 | $0.221 | 0.833 | $0.040 | 11.6m | pass |
 | Devstral 2512 | 3.0 | $0.113 | 0.833 | $0.045 | 2.6m | fail |
 | Haiku 4.5 | 5.8 | $0.873 | 1.000 | $0.150 | 2.8m | baseline |
 
 *Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all quality gates.*
 
-DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.019/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.038/QP). Wall time is reported separately and is not folded into the composite.
+DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.018/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.040/QP). Wall time is reported separately and is not folded into the composite.
 
 Qwen3 Coder is omitted (0 valid runs; metric is undefined).
 
@@ -205,7 +209,7 @@ All experiments used Goose 1.27.2 as the agent orchestrator. To reproduce:
 
 ## Impact
 
-These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6; the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was rewritten to define each agent role as a named subagent file, achieving cross-compatibility between Goose and Claude Code (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.0/8, error rate 0.0) was adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
+These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6; the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was rewritten to define each agent role as a named subagent file, achieving cross-compatibility between Goose and Claude Code (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.4/8, error rate 0.0) was adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
 
 ## Limitations
 
