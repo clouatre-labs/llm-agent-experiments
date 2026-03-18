@@ -380,6 +380,111 @@
         "eff_cost_per_qp_usd": 0.0378,
         "mean_wall_time_minutes": 11.64
       }
+    },
+    "mistral-small-2603": {
+      "model": "mistral-small-2603",
+      "runs": {
+        "valid": [
+          "run-36",
+          "run-37",
+          "run-38",
+          "run-39",
+          "run-40"
+        ],
+        "missing": [],
+        "invalid": []
+      },
+      "scores": [
+        5,
+        6,
+        4,
+        6,
+        6
+      ],
+      "summary": {
+        "n": 5,
+        "mean": 5.4,
+        "median": 6,
+        "stdev": 0.8944,
+        "min": 4,
+        "max": 6
+      },
+      "criterion_pass_rates": {
+        "C1": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C2": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C3": {
+          "passed": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "C4": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        },
+        "C5": {
+          "passed": 0,
+          "total": 5,
+          "rate": 0.0
+        },
+        "C6": {
+          "passed": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "C7": {
+          "passed": 3,
+          "total": 5,
+          "rate": 0.6
+        },
+        "C8": {
+          "passed": 5,
+          "total": 5,
+          "rate": 1.0
+        }
+      },
+      "mann_whitney": {
+        "U": 12.0,
+        "U1_candidate": 12.0,
+        "U2_haiku": 13.0,
+        "p_value": 1.0,
+        "p_value_method": "exact (exhaustive permutation, 252 permutations)",
+        "effect_size_r_rb": 0.04
+      },
+      "gates": {
+        "gate_1_mean_threshold": {
+          "passed": true,
+          "candidate_mean": 5.4,
+          "threshold": 5.3,
+          "haiku_mean": 5.8
+        },
+        "gate_2_min_score": {
+          "passed": false,
+          "min_score": 4,
+          "threshold": 5
+        },
+        "gate_3_valid_runs": {
+          "passed": true,
+          "n_valid": 5,
+          "threshold": 5
+        },
+        "gate_4_non_inferior": {
+          "passed": true,
+          "p_value": 1.0,
+          "alpha": 0.05,
+          "candidate_degraded": true
+        }
+      },
+      "verdict": "fail",
+      "verdict_reason": "Failed gate(s): gate_2_min_score"
     }
   }
 }
