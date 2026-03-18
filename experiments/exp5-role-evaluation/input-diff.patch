@@ -1,0 +1,52 @@
+From 982531392de66b4352a3e63cbca5d3f98adb36e0 Mon Sep 17 00:00:00 2001
+From: Hugues Clouatre <hugues@linux.com>
+Date: Thu Mar 12 17:09:08 2026 -0400
+Subject: fix(agents): add code-analyze MCP tools to scout and guard frontmatter
+
+Add mcp__code-analyze__analyze_directory, mcp__code-analyze__analyze_file,
+and mcp__code-analyze__analyze_symbol to the tools frontmatter in
+goose-coder-scout.md and goose-coder-guard.md. Both agents reference
+these tools in their instructions but were missing the frontmatter
+declarations needed for Claude subagent access.
+
+Remove mcp__aptu__review_pr from goose-coder-check.md tools frontmatter.
+The CHECK agent never calls this tool; it is invoked by the orchestrator
+in Phase 5 after PR creation, not by CHECK.
+
+Fixes #349
+
+diff --git a/config/claude/agents/goose-coder-check.md b/config/claude/agents/goose-coder-check.md
+index 93b8372..f1d1c8f 100644
+--- a/config/claude/agents/goose-coder-check.md
++++ b/config/claude/agents/goose-coder-check.md
+@@ -2,7 +2,7 @@
+ name: goose-coder-check
+ description: Validates implementation matches plan requirements. Security gate and compliance checker. Receives SESSION_ID and WORKTREE via task context.
+ model: haiku
+-tools: ["Read", "Bash", "Glob", "Grep", "mcp__aptu__scan_security", "mcp__aptu__review_pr"]
++tools: ["Read", "Bash", "Glob", "Grep", "mcp__aptu__scan_security"]
+ ---
+ 
+diff --git a/config/claude/agents/goose-coder-guard.md b/config/claude/agents/goose-coder-guard.md
+index 31d97a0..359e195 100644
+--- a/config/claude/agents/goose-coder-guard.md
++++ b/config/claude/agents/goose-coder-guard.md
+@@ -2,7 +2,7 @@
+ name: goose-coder-guard
+ description: Adversarial reviewer focusing on risk, safety, and minimalism. Stress-tests Scout's proposals and re-ranks by safety. Receives SESSION_ID and WORKTREE via task context.
+ model: haiku
+-tools: ["Read", "Grep", "Glob", "Bash", "mcp__context7__resolve-library-id", "mcp__context7__query-docs", "mcp__brave_search__brave_web_search"]
++tools: ["Read", "Grep", "Glob", "Bash", "mcp__context7__resolve-library-id", "mcp__context7__query-docs", "mcp__brave_search__brave_web_search", "mcp__code-analyze__analyze_directory", "mcp__code-analyze__analyze_file", "mcp__code-analyze__analyze_symbol"]
+ ---
+ 
+diff --git a/config/claude/agents/goose-coder-scout.md b/config/claude/agents/goose-coder-scout.md
+index 171bbb6..f212ddd 100644
+--- a/config/claude/agents/goose-coder-scout.md
++++ b/config/claude/agents/goose-coder-scout.md
+@@ -2,7 +2,7 @@
+ name: goose-coder-scout
+ description: Creative exploration agent for codebase research. Deeply analyzes code structure, conventions, ecosystem, and proposes 2-3 solution approaches. Receives SESSION_ID and WORKTREE via task context.
+ model: haiku
+-tools: ["Read", "Grep", "Glob", "Bash", "mcp__context7__resolve-library-id", "mcp__context7__query-docs", "mcp__brave_search__brave_web_search"]
++tools: ["Read", "Grep", "Glob", "Bash", "mcp__context7__resolve-library-id", "mcp__context7__query-docs", "mcp__brave_search__brave_web_search", "mcp__code-analyze__analyze_directory", "mcp__code-analyze__analyze_file", "mcp__code-analyze__analyze_symbol"]
+ ---

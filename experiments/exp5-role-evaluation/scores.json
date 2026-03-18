@@ -1,0 +1,41 @@
+{
+  "experiment": "exp5-role-evaluation",
+  "date": "2026-03-18",
+  "scorer": "Claude Sonnet 4.6 (orchestrator, non-blind)",
+  "scoring_method": "binary correct/incorrect; ground truth is dotfiles commit 9825313 (before) and 982531392de (after)",
+  "ground_truth": {
+    "repo": "clouatre-labs/dotfiles (private)",
+    "commit_before": "b120a55f2b872aee431991ab87f8f01ef885c63a",
+    "commit_after": "982531392de66b4352a3e63cbca5d3f98adb36e0",
+    "pr": "clouatre-labs/dotfiles#350",
+    "changes": [
+      "goose-coder-scout.md: add mcp__code-analyze__analyze_directory, mcp__code-analyze__analyze_file, mcp__code-analyze__analyze_symbol to tools frontmatter",
+      "goose-coder-guard.md: same three tools added",
+      "goose-coder-check.md: remove mcp__aptu__review_pr from tools frontmatter"
+    ]
+  },
+  "note": "Scoring is non-blind. The orchestrator (Claude Sonnet 4.6) both spawned delegates and assessed correctness. This is a limitation for exp5 as pilot data; exp6 should use a separate scorer.",
+  "scores": [
+    {"role": "scout", "model": "anthropic/claude-haiku-4.5",       "session": "20260318_95",  "correct": false, "rationale": "Concluded no changes needed; read patched state as correct rather than inferring the original gap. Artifact of pre-patched worktree, not model failure."},
+    {"role": "scout", "model": "mistralai/mistral-small-2603",     "session": "20260318_96",  "correct": false, "rationale": "Hallucinated a naming inconsistency in goose-coder-check.md body (mcp-aptu-scan-security vs mcp__aptu__scan_security) that does not exist in the file."},
+    {"role": "scout", "model": "minimax/minimax-m2.5",             "session": "20260318_97",  "correct": false, "rationale": "Went off-task; proposed adding CLI tools (gh, jq, git) to frontmatter, which is not part of the task and incorrect."},
+    {"role": "guard", "model": "anthropic/claude-haiku-4.5",       "session": "20260318_98",  "correct": true,  "rationale": "Correctly verified all three files against scout output; flagged 2 minor gaps (MCP registry availability, downstream deps); recommended proceed."},
+    {"role": "guard", "model": "mistralai/mistral-small-2603",     "session": "20260318_99",  "correct": true,  "rationale": "Correctly verified all three files; most detailed output, enumerated all proposed tools per file with rationale; recommended proceed."},
+    {"role": "guard", "model": "minimax/minimax-m2.5",             "session": "20260318_100", "correct": true,  "rationale": "Correctly verified all three files; flagged 2 minor gaps (no fallback docs, no MCP pinning); recommended proceed."},
+    {"role": "build", "model": "anthropic/claude-haiku-4.5",       "session": "20260318_101", "correct": true,  "rationale": "Confirmed all three files match plan; status success; no deviations."},
+    {"role": "build", "model": "mistralai/mistral-small-2603",     "session": "20260318_102", "correct": true,  "rationale": "Confirmed plan compliance; terse but accurate; status success."},
+    {"role": "build", "model": "minimax/minimax-m2.5",             "session": "20260318_103", "correct": true,  "rationale": "Confirmed all three files match plan with per-file table; status success."},
+    {"role": "fixer", "model": "anthropic/claude-haiku-4.5",       "session": "20260318_104", "correct": true,  "rationale": "Correctly identified no fixes required; enumerated all 11 constraints as notes."},
+    {"role": "fixer", "model": "mistralai/mistral-small-2603",     "session": "20260318_105", "correct": true,  "rationale": "Correctly identified no fixes required; concise 6-item notes."},
+    {"role": "fixer", "model": "minimax/minimax-m2.5",             "session": "20260318_106", "correct": true,  "rationale": "Correctly identified no fixes required; 5-item notes."},
+    {"role": "check", "model": "anthropic/claude-haiku-4.5",       "session": "20260318_89",  "correct": true,  "rationale": "PASS verdict; all files accounted for; no scope creep; 6 detailed notes."},
+    {"role": "check", "model": "mistralai/mistral-small-2603",     "session": "20260318_63",  "correct": true,  "rationale": "PASS verdict; all files accounted for; no scope creep; silent pass (0 notes)."},
+    {"role": "check", "model": "minimax/minimax-m2.5",             "session": "20260318_92",  "correct": true,  "rationale": "PASS verdict; all files accounted for; no scope creep; 4 notes."},
+    {"role": "review", "model": "anthropic/claude-haiku-4.5",      "session": "20260318_90",  "correct": true,  "rationale": "PASS verdict; spec_alignment=aligned; no findings."},
+    {"role": "review", "model": "mistralai/mistral-small-2603",    "session": "20260318_64",  "correct": true,  "rationale": "PASS verdict; spec_alignment=aligned; no findings."},
+    {"role": "review", "model": "minimax/minimax-m2.5",            "session": "20260318_93",  "correct": true,  "rationale": "PASS verdict; spec_alignment=aligned; no findings."},
+    {"role": "qa",     "model": "anthropic/claude-haiku-4.5",      "session": "20260318_91",  "correct": true,  "rationale": "PASS verdict; frontmatter valid in all three files; 3 informative notes."},
+    {"role": "qa",     "model": "mistralai/mistral-small-2603",    "session": "20260318_65",  "correct": true,  "rationale": "PASS verdict; frontmatter valid in all three files; 4 informative notes including tool counts."},
+    {"role": "qa",     "model": "minimax/minimax-m2.5",            "session": "20260318_94",  "correct": true,  "rationale": "PASS verdict; frontmatter valid in all three files; 4 notes."}
+  ]
+}
