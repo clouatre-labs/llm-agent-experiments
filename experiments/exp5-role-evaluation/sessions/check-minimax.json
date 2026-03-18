@@ -1,0 +1,1 @@
+{"verdict":"PASS","plan_compliance":{"all_files_changed":true,"no_scope_creep":true},"notes":["All 3 plan files changed","scout and guard have code-analyze tools added","check has mcp__aptu__review_pr removed","Build status is success"],"blockers":[]}

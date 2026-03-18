@@ -4,8 +4,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19056876.svg)](https://doi.org/10.5281/zenodo.19056876)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Sessions](https://img.shields.io/badge/sessions-33-green)](experiments/)
-[![Runs](https://img.shields.io/badge/runs-33-blue)](experiments/)
+[![Sessions](https://img.shields.io/badge/sessions-54-green)](experiments/)
+[![Runs](https://img.shields.io/badge/runs-54-blue)](experiments/)
 
 Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (7 models, 33 runs; approximately 4-5 runs per model (except DeepSeek V3.2: 3 valid due to infrastructure failures)). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 6.6/8) and MiniMax M2.5 (mean 6.4/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash, Devstral 2512, and Mistral Small 2603 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
 
@@ -130,6 +130,12 @@ llm-agent-experiments/
       label-map.json
       latency-log.jsonl
       sessions/           # 13 SCOUT handoff JSONs (runs 21-35, minus 27/30)
+    exp5-role-evaluation/
+      README.md
+      protocol.md         # task description, model/temperature specs, scoring method
+      METHODOLOGY.md      # n=1 design rationale, notes semantics, SCOUT caveat
+      sessions/           # 21 delegate handoff JSONs (7 roles x 3 models)
+        label-map.json    # run_id -> model name
 ```
 
 *Code Snippet 1: Repository directory tree.*
@@ -151,6 +157,7 @@ jq '.candidates | to_entries[] | {model: .key, mean: .value.summary.mean, verdic
 # Count sessions per experiment
 ls experiments/exp3-model-comparison/sessions/ | wc -l
 ls experiments/exp4-model-comparison-r2/sessions/ | wc -l
+ls experiments/exp5-role-evaluation/sessions/ | wc -l
 
 # Read a SCOUT handoff (session file)
 jq '{lens, recommendation, approaches: [.approaches[].name]}' \
