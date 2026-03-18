@@ -32,18 +32,18 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 
 ## Results
 
-| Model | Exp | n | Mean | Error rate | Verdict |
-|-------|-----|---|------|------------|---------|
-| Claude Haiku 4.5 | 3 | 5 | 5.8 | 0.0 | baseline |
-| Qwen3 Coder | 3 | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
-| Gemini 3 Flash | 3 | 5 | 4.2 | 0.0 | fail |
-| Devstral 2512 | 3 | 5 | 3.0 | 0.0 | fail |
-| MiniMax M2.5 | 4 | 5 | 6.4 | 0.0 | pass |
-| DeepSeek V3.2 | 4 | 3 | 1.0 | 0.4 | fail |
-| Kimi K2.5 | 4 | 5 | 6.6 | 0.0 | pass |
-| Mistral Small 2603 | 4 | 5 | 5.4 | 0.375 | fail |
+| Model | n | Mean | Error rate | Verdict |
+|-------|---|------|------------|---------|
+| Claude Haiku 4.5 | 5 | 5.8 | 0.0 | baseline |
+| Kimi K2.5 | 5 | 6.6 | 0.0 | pass |
+| MiniMax M2.5 | 5 | 6.4 | 0.0 | pass |
+| Mistral Small 2603 | 5 | 5.4 | 0.375 | fail |
+| Gemini 3 Flash | 5 | 4.2 | 0.0 | fail |
+| Devstral 2512 | 5 | 3.0 | 0.0 | fail |
+| DeepSeek V3.2 | 3 | 1.0 | 0.4 | fail |
+| Qwen3 Coder | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
 
-*Table 2: Per-model results across exp3 (discovery) and exp4 (validation). Error rate = fraction of runs that failed to produce valid output. Exp4 candidates compared against the exp3 baseline; Mann-Whitney U p-values are in analysis.json.*
+*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 2603). Full data in experiments/. Mann-Whitney U p-values in analysis.json.*
 
 ![Mean score bar chart](figures/mean-score-bar.png)
 
