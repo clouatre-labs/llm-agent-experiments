@@ -1,0 +1,9 @@
+{
+  "session_id": "eval-build-mistral",
+  "status": "success",
+  "files_changed": [],
+  "diff_summary": "No changes needed; files already match the plan",
+  "verification": "passed",
+  "errors": [],
+  "deviations_from_plan": []
+}

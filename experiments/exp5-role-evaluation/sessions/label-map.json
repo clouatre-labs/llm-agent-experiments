@@ -1,0 +1,23 @@
+{
+  "scout-haiku": "anthropic/claude-haiku-4.5",
+  "scout-mistral": "mistralai/mistral-small-2603",
+  "scout-minimax": "minimax/minimax-m2.5",
+  "guard-haiku": "anthropic/claude-haiku-4.5",
+  "guard-mistral": "mistralai/mistral-small-2603",
+  "guard-minimax": "minimax/minimax-m2.5",
+  "build-haiku": "anthropic/claude-haiku-4.5",
+  "build-mistral": "mistralai/mistral-small-2603",
+  "build-minimax": "minimax/minimax-m2.5",
+  "fixer-haiku": "anthropic/claude-haiku-4.5",
+  "fixer-mistral": "mistralai/mistral-small-2603",
+  "fixer-minimax": "minimax/minimax-m2.5",
+  "check-haiku": "anthropic/claude-haiku-4.5",
+  "check-mistral": "mistralai/mistral-small-2603",
+  "check-minimax": "minimax/minimax-m2.5",
+  "review-haiku": "anthropic/claude-haiku-4.5",
+  "review-mistral": "mistralai/mistral-small-2603",
+  "review-minimax": "minimax/minimax-m2.5",
+  "qa-haiku": "anthropic/claude-haiku-4.5",
+  "qa-mistral": "mistralai/mistral-small-2603",
+  "qa-minimax": "minimax/minimax-m2.5"
+}
