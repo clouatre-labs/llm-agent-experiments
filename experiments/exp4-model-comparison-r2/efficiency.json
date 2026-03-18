@@ -273,9 +273,9 @@
       "n_valid": 5,
       "n_total_attempts": 6,
       "reliability": 0.8333,
-      "mean_score": 7.0,
+      "mean_score": 6.6,
       "cost_per_run_usd": 0.2206,
-      "eff_cost_per_qp_usd": 0.0378,
+      "eff_cost_per_qp_usd": 0.0401,
       "mean_wall_time_minutes": 11.64,
       "cost_token_basis": "accumulated"
     },
