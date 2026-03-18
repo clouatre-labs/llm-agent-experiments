@@ -2,9 +2,9 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-models   = ["haiku-4.5\n(baseline)", "gemini-3-flash\n(exp3)", "devstral-2512\n(exp3)", "minimax-m2.5\n(exp4)", "kimi-k2.5\n(exp4)", "deepseek-v3.2\n(exp4)"]
-scores   = [5.8, 4.2, 3.0, 6.0, 7.0, 1.0]
-verdicts = ["baseline", "fail", "fail", "pass", "pass", "fail"]
+models   = ["haiku-4.5\n(baseline)", "gemini-3-flash\n(exp3)", "devstral-2512\n(exp3)", "minimax-m2.5\n(exp4)", "kimi-k2.5\n(exp4)", "deepseek-v3.2\n(exp4)", "mistral-small-2603\n(exp4)"]
+scores   = [5.8, 4.2, 3.0, 6.4, 6.6, 1.0, 5.4]
+verdicts = ["baseline", "fail", "fail", "pass", "pass", "fail", "fail"]
 
 colors = {"baseline": "#1f77b4", "pass": "#2ca02c", "fail": "#d62728"}
 bar_colors = [colors[v] for v in verdicts]
