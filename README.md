@@ -207,7 +207,7 @@ All experiments used Goose 1.27.2 as the agent orchestrator. To reproduce:
 | Orchestrator model | Claude Sonnet 4.6 | GCP Vertex AI, temp 0.3 |
 | SCOUT delegate models | See exp3/exp4 protocol | Variable per experiment |
 
-*Table 3: Software versions used across all experiments.*
+*Table 4: Software versions used across all experiments.*
 
 ## Impact
 

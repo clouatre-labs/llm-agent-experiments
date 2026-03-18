@@ -21,7 +21,7 @@ This experiment addresses cost reduction objectives outlined in [dotfiles issue 
 
 | Model | n valid | Scores | Mean | Verdict |
 |-------|---------|--------|------|---------|
-| Claude Haiku 4.5 (baseline) | 5 | 5, 5, 8, 6, 5 | 5.8 | baseline |
+| Claude Haiku 4.5 (baseline) | 5 | 5, 6, 7, 6, 5 | 5.8 | baseline |
 | Qwen3 Coder | 0 | n/a | n/a | excluded |
 | Gemini 3 Flash | 5 | 4, 4, 3, 5, 5 | 4.2 | fail (all gates) |
 | Devstral 2512 | 5 | 4, 3, 3, 3, 2 | 3.0 | fail (all gates) |
