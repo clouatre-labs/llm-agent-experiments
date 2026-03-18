@@ -33,31 +33,31 @@ capability signal. See METHODOLOGY.md.
 
 ## Results
 
-| Role | Model | Verdict | Correct | Turns | Wall time | Notes | Blockers |
-|------|-------|---------|---------|------:|-----------|------:|--------:|
-| SCOUT | Haiku 4.5 | n/a | No | 249 | ~1m | 0 | 0 |
-| SCOUT | Mistral 2603 | n/a | No | 74 | ~0s* | 0 | 0 |
-| SCOUT | MiniMax M2.5 | n/a | No | 63 | ~1m | 0 | 0 |
-| GUARD | Haiku 4.5 | proceed | Yes | 301 | ~30s | 0 | 0 |
-| GUARD | Mistral 2603 | proceed | Yes | 43 | ~20s | 0 | 0 |
-| GUARD | MiniMax M2.5 | proceed | Yes | 255 | ~1m | 0 | 0 |
-| BUILD | Haiku 4.5 | success | Yes | 213 | ~40s | 0 | 0 |
-| BUILD | Mistral 2603 | success | Yes | 34 | ~20s | 0 | 0 |
-| BUILD | MiniMax M2.5 | success | Yes | 339 | ~1m | 0 | 0 |
-| FIXER | Haiku 4.5 | n/a | Yes | 141 | ~40s | 11 | 0 |
-| FIXER | Mistral 2603 | n/a | Yes | 33 | ~10s | 6 | 0 |
-| FIXER | MiniMax M2.5 | n/a | Yes | 113 | ~1m | 5 | 0 |
-| CHECK | Haiku 4.5 | PASS | Yes | 12 | ~10s | 6 | 0 |
-| CHECK | Mistral 2603 | PASS | Yes | 54 | ~20s | 0 | 0 |
-| CHECK | MiniMax M2.5 | PASS | Yes | 219 | ~1m | 4 | 0 |
-| REVIEW | Haiku 4.5 | PASS | Yes | 12 | ~20s | 0 | 0 |
-| REVIEW | Mistral 2603 | PASS | Yes | 23 | ~10s | 0 | 0 |
-| REVIEW | MiniMax M2.5 | PASS | Yes | 112 | ~1m | 0 | 0 |
-| QA | Haiku 4.5 | PASS | Yes | 12 | ~20s | 3 | 0 |
-| QA | Mistral 2603 | PASS | Yes | 44 | ~20s | 4 | 0 |
-| QA | MiniMax M2.5 | PASS | Yes | 166 | ~1m | 4 | 0 |
+| Role | Model | Verdict | Correct | Turns | Wall time (s) | Notes | Blockers |
+|------|-------|---------|---------|------:|-------------:|------:|--------:|
+| SCOUT | Haiku 4.5 | n/a | No | 249 | 61 | 0 | 0 |
+| SCOUT | Mistral 2603 | n/a | No | 74 | 9 | 0 | 0 |
+| SCOUT | MiniMax M2.5 | n/a | No | 63 | 58 | 0 | 0 |
+| GUARD | Haiku 4.5 | proceed | Yes | 301 | 28 | 0 | 0 |
+| GUARD | Mistral 2603 | proceed | Yes | 43 | 18 | 0 | 0 |
+| GUARD | MiniMax M2.5 | proceed | Yes | 255 | 143 | 0 | 0 |
+| BUILD | Haiku 4.5 | success | Yes | 213 | 24 | 0 | 0 |
+| BUILD | Mistral 2603 | success | Yes | 34 | 14 | 0 | 0 |
+| BUILD | MiniMax M2.5 | success | Yes | 339 | 29 | 0 | 0 |
+| FIXER | Haiku 4.5 | n/a | Yes | 141 | 29 | 11 | 0 |
+| FIXER | Mistral 2603 | n/a | Yes | 33 | 9 | 6 | 0 |
+| FIXER | MiniMax M2.5 | n/a | Yes | 113 | 46 | 5 | 0 |
+| CHECK | Haiku 4.5 | PASS | Yes | 12 | 11 | 6 | 0 |
+| CHECK | Mistral 2603 | PASS | Yes | 54 | 16 | 0 | 0 |
+| CHECK | MiniMax M2.5 | PASS | Yes | 219 | 67 | 4 | 0 |
+| REVIEW | Haiku 4.5 | PASS | Yes | 12 | 13 | 0 | 0 |
+| REVIEW | Mistral 2603 | PASS | Yes | 23 | 8 | 0 | 0 |
+| REVIEW | MiniMax M2.5 | PASS | Yes | 112 | 73 | 0 | 0 |
+| QA | Haiku 4.5 | PASS | Yes | 12 | 18 | 3 | 0 |
+| QA | Mistral 2603 | PASS | Yes | 44 | 12 | 4 | 0 |
+| QA | MiniMax M2.5 | PASS | Yes | 166 | 52 | 4 | 0 |
 
-*Mistral SCOUT 0s wall time is unreliable (likely instant response from cached or trivial output).
+Wall time measured as elapsed seconds between first and last message timestamp in the goose sessions DB (`~/.local/share/goose/sessions/sessions.db`). Raw data in `latency-log.jsonl`. Mistral SCOUT 9s reflects a trivially short run (the worktree was pre-patched; the model responded immediately with no changes needed).
 
 **Notes** = count of items in the `notes` array of the handoff JSON. Reflects output verbosity,
 not quality. See METHODOLOGY.md.
