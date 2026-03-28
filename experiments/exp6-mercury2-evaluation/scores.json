@@ -1,0 +1,150 @@
+{
+  "experiment": "exp6-mercury2-evaluation",
+  "date": "2026-03-28",
+  "scorer": "Claude Sonnet 4.6 (orchestrator, non-blind)",
+  "scoring_method": "SCOUT: binary C1-C8 rubric per rubric.md. All other roles: binary correct/incorrect per exp5 methodology.",
+  "ground_truth": {
+    "repo": "clouatre-labs/dotfiles (private)",
+    "commit_before": "b120a55f2b872aee431991ab87f8f01ef885c63a",
+    "commit_after": "982531392de66b4352a3e63cbca5d3f98adb36e0",
+    "pr": "clouatre-labs/dotfiles#350",
+    "changes": [
+      "goose-coder-scout.md: add mcp__code-analyze__analyze_directory, mcp__code-analyze__analyze_file, mcp__code-analyze__analyze_symbol to tools frontmatter",
+      "goose-coder-guard.md: same three tools added",
+      "goose-coder-check.md: remove mcp__aptu__review_pr from tools frontmatter"
+    ]
+  },
+  "note": "Scoring is non-blind. Same scorer limitation as exp5. SCOUT caveat: worktree is already patched; C4 and C6 are structurally 0 because mcp__aptu__review_pr is already absent and all proposed==current. This is a task design constraint, not solely a Mercury 2 failure. Same caveat applied to Haiku and Mistral in exp5 (all scored incorrect on SCOUT). C7 is 0/5 due to Mercury 2 consistently leaving conventions_observed empty.",
+  "scout_scores": [
+    {
+      "run": 1,
+      "session_id": "20260328_89",
+      "C1": 1, "C2": 1, "C3": 1, "C4": 0, "C5": 1, "C6": 0, "C7": 0, "C8": 1,
+      "total": 5,
+      "rationale": {
+        "C1": "All 3 files identified in files_found.",
+        "C2": "scout.md proposed_tools contains all 3 code-analyze tools (current==proposed, post-patch state).",
+        "C3": "guard.md proposed_tools contains all 3 code-analyze tools.",
+        "C4": "mcp__aptu__review_pr absent from both current and proposed for check.md (already removed in worktree). Cannot credit removal detection from post-patch state.",
+        "C5": "No hallucinated tools across all three files.",
+        "C6": "Proposed == current for all files (post-patch worktree: no changes needed). Change direction not represented.",
+        "C7": "conventions_observed is empty.",
+        "C8": "Valid JSON with all required fields including per-file path/current_tools/proposed_tools."
+      }
+    },
+    {
+      "run": 2,
+      "session_id": "20260328_91",
+      "C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 1, "C6": 0, "C7": 0, "C8": 1,
+      "total": 3,
+      "rationale": {
+        "C1": "All 3 files identified.",
+        "C2": "scout.md proposed_tools = ['gh'] only. Does not include the 3 code-analyze tools. Hallucinated gh as sole proposed tool.",
+        "C3": "guard.md proposed_tools = ['gh'] only. Same issue.",
+        "C4": "check.md proposed_tools = []. Cannot determine if removal was intentional or an error.",
+        "C5": "gh is not a hallucinated MCP tool (it is a CLI tool referenced in agent body). No unknown mcp__ tools invented. C5 = 1.",
+        "C6": "Change direction wrong: dropped all 10 current tools, proposed only gh.",
+        "C7": "conventions_observed is empty.",
+        "C8": "Valid JSON with all required fields."
+      }
+    },
+    {
+      "run": 3,
+      "session_id": "20260328_92",
+      "C1": 1, "C2": 1, "C3": 1, "C4": 0, "C5": 1, "C6": 0, "C7": 0, "C8": 1,
+      "total": 5,
+      "rationale": {
+        "C1": "All 3 files identified.",
+        "C2": "scout.md proposed_tools contains all 3 code-analyze tools.",
+        "C3": "guard.md proposed_tools contains all 3 code-analyze tools.",
+        "C4": "mcp__aptu__review_pr absent; pre-patch state not detectable.",
+        "C5": "No hallucinated tools.",
+        "C6": "Proposed == current for all files.",
+        "C7": "conventions_observed is empty.",
+        "C8": "Valid JSON."
+      }
+    },
+    {
+      "run": 4,
+      "session_id": "20260328_93",
+      "C1": 1, "C2": 1, "C3": 1, "C4": 0, "C5": 1, "C6": 0, "C7": 0, "C8": 1,
+      "total": 5,
+      "rationale": {
+        "C1": "All 3 files identified.",
+        "C2": "scout.md proposed_tools contains all 3 code-analyze tools (plus hallucinated gh, rg).",
+        "C3": "guard.md proposed_tools contains all 3 code-analyze tools (plus hallucinated gh, rg).",
+        "C4": "mcp__aptu__review_pr absent; check.md proposed_tools adds git and jq.",
+        "C5": "gh, rg, git, jq are CLI tools referenced in body (not MCP hallucinations). C5 = 1.",
+        "C6": "Proposed != current (adds gh/rg/git/jq) but not in the correct direction (the actual change was adding code-analyze, not CLI tools).",
+        "C7": "conventions_observed is empty.",
+        "C8": "Valid JSON."
+      }
+    },
+    {
+      "run": 5,
+      "session_id": "20260328_94",
+      "C1": 1, "C2": 1, "C3": 1, "C4": 0, "C5": 1, "C6": 0, "C7": 0, "C8": 1,
+      "total": 5,
+      "rationale": {
+        "C1": "All 3 files identified.",
+        "C2": "scout.md proposed_tools contains all 3 code-analyze tools.",
+        "C3": "guard.md proposed_tools contains all 3 code-analyze tools.",
+        "C4": "mcp__aptu__review_pr absent; cannot credit.",
+        "C5": "No hallucinated tools.",
+        "C6": "Proposed == current for all files.",
+        "C7": "conventions_observed is empty.",
+        "C8": "Valid JSON."
+      }
+    }
+  ],
+  "scout_summary": {
+    "scores": [5, 3, 5, 5, 5],
+    "mean": 4.6,
+    "min": 3,
+    "max": 5,
+    "error_rate": 0.0,
+    "c4_failure_note": "C4=0 across all 5 runs is a task design constraint (worktree pre-patched), not a Mercury 2 SCOUT capability failure. Same applies to exp5 Haiku/Mistral.",
+    "c6_failure_note": "C6=0 because proposed==current in 4/5 runs (correct behavior for pre-patched worktree). Run 2 and 4 showed wrong change direction.",
+    "c7_failure_note": "C7=0 across all 5 runs. Mercury 2 never populated conventions_observed. Consistent gap vs Haiku (conventions_observed populated in exp5)."
+  },
+  "other_roles": [
+    {"role": "guard", "run": 1, "correct": true, "rationale": "Valid JSON, recommendation=proceed, scout_findings_accurate=true."},
+    {"role": "guard", "run": 2, "correct": true, "rationale": "Valid JSON, recommendation=proceed, scout_findings_accurate=true."},
+    {"role": "guard", "run": 3, "correct": true, "rationale": "Valid JSON, recommendation=proceed, scout_findings_accurate=true."},
+    {"role": "guard", "run": 4, "correct": false, "rationale": "recommendation=revise based on speculative risks (web search untrusted data, resource intensity). No actual blockers. Correct files and tools verified. Revise verdict is incorrect for this task."},
+    {"role": "guard", "run": 5, "correct": true, "rationale": "Valid JSON, recommendation=proceed, scout_findings_accurate=true."},
+    {"role": "build", "run": 1, "correct": true, "rationale": "status=success, verification=passed, files_changed correct, no errors."},
+    {"role": "build", "run": 2, "correct": true, "rationale": "status=success, verification=passed."},
+    {"role": "build", "run": 3, "correct": true, "rationale": "status=success, verification=passed."},
+    {"role": "build", "run": 4, "correct": true, "rationale": "status=success, verification=passed."},
+    {"role": "build", "run": 5, "correct": true, "rationale": "status=success, verification=passed."},
+    {"role": "fixer", "run": 1, "correct": true, "rationale": "fixes_required=false, no remaining issues."},
+    {"role": "fixer", "run": 2, "correct": true, "rationale": "fixes_required=false."},
+    {"role": "fixer", "run": 3, "correct": true, "rationale": "fixes_required=false."},
+    {"role": "fixer", "run": 4, "correct": true, "rationale": "fixes_required=false."},
+    {"role": "fixer", "run": 5, "correct": true, "rationale": "fixes_required=false."},
+    {"role": "check", "run": 1, "correct": true, "rationale": "verdict=PASS, plan_compliance correct, no blockers."},
+    {"role": "check", "run": 2, "correct": true, "rationale": "verdict=PASS, plan_compliance correct."},
+    {"role": "check", "run": 3, "correct": true, "rationale": "verdict=PASS, plan_compliance correct."},
+    {"role": "check", "run": 4, "correct": true, "rationale": "verdict=PASS, plan_compliance correct."},
+    {"role": "check", "run": 5, "correct": true, "rationale": "verdict=PASS, plan_compliance correct."},
+    {"role": "review", "run": 1, "correct": true, "rationale": "verdict=PASS, spec_alignment=aligned, diff correctly verified."},
+    {"role": "review", "run": 2, "correct": true, "rationale": "verdict=PASS, spec_alignment=aligned."},
+    {"role": "review", "run": 3, "correct": true, "rationale": "verdict=PASS, spec_alignment=aligned."},
+    {"role": "review", "run": 4, "correct": true, "rationale": "verdict=PASS, spec_alignment=aligned."},
+    {"role": "review", "run": 5, "correct": true, "rationale": "verdict=PASS, spec_alignment=aligned."},
+    {"role": "qa", "run": 1, "correct": true, "rationale": "verdict=PASS, frontmatter syntax verified, no blockers."},
+    {"role": "qa", "run": 2, "correct": true, "rationale": "verdict=PASS."},
+    {"role": "qa", "run": 3, "correct": true, "rationale": "verdict=PASS."},
+    {"role": "qa", "run": 4, "correct": true, "rationale": "verdict=PASS."},
+    {"role": "qa", "run": 5, "correct": true, "rationale": "verdict=PASS."}
+  ],
+  "other_roles_summary": {
+    "guard": {"correct": 4, "incorrect": 1, "pass_rate": 0.8, "note": "Run 4 false revise verdict based on speculative risks"},
+    "build": {"correct": 5, "incorrect": 0, "pass_rate": 1.0},
+    "fixer": {"correct": 5, "incorrect": 0, "pass_rate": 1.0},
+    "check": {"correct": 5, "incorrect": 0, "pass_rate": 1.0},
+    "review": {"correct": 5, "incorrect": 0, "pass_rate": 1.0},
+    "qa": {"correct": 5, "incorrect": 0, "pass_rate": 1.0}
+  }
+}
