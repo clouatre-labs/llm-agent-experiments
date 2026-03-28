@@ -3,21 +3,22 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-models     = ["haiku-4.5", "kimi-k2.5", "minimax-m2.5", "gemini-3-flash", "devstral-2512", "deepseek-v3.2", "mistral-small-2603"]
-cost_usd   = [0.0222, 0.0122, 0.0043, 0.0021, 0.0025, 0.0011, 0.0078]
-mean_score = [5.8, 6.6, 6.4, 4.2, 3.0, 1.0, 5.4]
-verdicts   = ["baseline", "pass", "pass", "fail", "fail", "fail", "fail"]
+models     = ["haiku-4.5", "kimi-k2.5", "minimax-m2.5", "gemini-3-flash", "devstral-2512", "deepseek-v3.2", "mistral-small-2603", "mercury-2"]
+cost_usd   = [0.0222, 0.0122, 0.0043, 0.0021, 0.0025, 0.0011, 0.0078, 0.0029]
+mean_score = [5.8, 6.6, 6.4, 4.2, 3.0, 1.0, 5.4, 4.6]
+verdicts   = ["baseline", "pass", "pass", "fail", "fail", "fail", "fail", "fail"]
 
 colors  = {"baseline": "#1f77b4", "pass": "#2ca02c", "fail": "#d62728"}
 markers = {"baseline": "D", "pass": "o", "fail": "x"}
 offsets = {
-    "haiku-4.5":      (8, -12),
-    "kimi-k2.5":      (8,   4),
-    "minimax-m2.5":   (8, -12),
-    "gemini-3-flash": (8,   4),
-    "devstral-2512":  (8, -12),
-    "deepseek-v3.2":  (8,   4),
+    "haiku-4.5":          (8, -12),
+    "kimi-k2.5":          (8,   4),
+    "minimax-m2.5":       (8, -12),
+    "gemini-3-flash":     (8,   4),
+    "devstral-2512":      (8, -12),
+    "deepseek-v3.2":      (8,   4),
     "mistral-small-2603": (8, -12),
+    "mercury-2":          (8,   4),
 }
 
 fig, ax = plt.subplots(figsize=(8, 5))
@@ -35,7 +36,7 @@ ax.set_xlim(0.0005, 0.1)
 ax.set_ylim(0, 8.5)
 ax.set_xlabel("Estimated cost per run (USD, log scale)", fontsize=11)
 ax.set_ylabel("Mean total score (0-8)", fontsize=11)
-ax.set_title("Quality vs. Cost -- exp3 & exp4 candidates", fontsize=12)
+ax.set_title("Quality vs. Cost -- exp3, exp4, and exp6 candidates", fontsize=12)
 
 legend_elements = [
     Line2D([0], [0], marker="D", color="w", markerfacecolor="#1f77b4", markersize=9, label="Baseline"),

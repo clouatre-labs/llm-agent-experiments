@@ -7,6 +7,7 @@ models = [
     'haiku-4.5\n(baseline)',
     'kimi-k2.5\n(pass)',
     'minimax-m2.5\n(pass)',
+    'mercury-2\n(exp6)',
     'gemini-3-flash\n(fail)',
     'devstral-2512\n(fail)',
     'deepseek-v3.2\n(fail)',
@@ -17,6 +18,7 @@ data = np.array([
     [1.0, 1.0, 0.2, 1.0, 0.2, 0.4, 1.0, 1.0],  # haiku
     [1.0, 1.0, 0.6, 1.0, 0.4, 1.0, 1.0, 1.0],  # kimi
     [1.0, 1.0, 0.0, 1.0, 0.8, 0.4, 0.8, 1.0],  # minimax
+    [1.0, 0.8, 0.8, 0.0, 1.0, 0.0, 0.0, 1.0],  # mercury-2
     [1.0, 1.0, 0.0, 0.8, 0.2, 0.0, 0.2, 1.0],  # gemini
     [1.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.2, 1.0],  # devstral
     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  # deepseek
@@ -40,9 +42,10 @@ for i in range(len(models)):
 
 ax.axhline(y=0.5, color='#444', linewidth=1.5, linestyle='--')
 ax.axhline(y=2.5, color='#444', linewidth=1.5, linestyle='--')
+ax.axhline(y=3.5, color='#444', linewidth=1.5, linestyle='--')
 
 plt.colorbar(im, ax=ax, label='Pass rate (0.0 = never, 1.0 = always)')
-ax.set_title('Criterion pass rates across all evaluated models (exp3 + exp4)', fontsize=12, pad=12)
+ax.set_title('Criterion pass rates across all evaluated models (exp3 + exp4 + exp6)', fontsize=12, pad=12)
 
 plt.tight_layout()
 plt.savefig('figures/criterion-heatmap.png', dpi=150, bbox_inches='tight')
