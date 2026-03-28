@@ -9,6 +9,8 @@
 
 Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (7 models, 33 runs; approximately 4-5 runs per model (except DeepSeek V3.2: 3 valid due to infrastructure failures)). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 6.6/8) and MiniMax M2.5 (mean 6.4/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash, Devstral 2512, and Mistral Small 2603 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
 
+Exp5 and exp6 extend coverage to all 7 pipeline roles. Exp6 evaluates `inception/mercury-2` (n=5 per role, 35 runs) and finds 100% correctness on BUILD, FIXER, CHECK, REVIEW, and QA, with a full pipeline wall time of 23s and $0.0124/pipeline cost.
+
 Supplementary materials for [Orchestrating AI Agents: Sub-Agent Architecture](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/).
 
 </div>
@@ -44,8 +46,9 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 | Devstral 2512 | 5 | 3.0 | 0.0 | fail |
 | DeepSeek V3.2 | 3 | 1.0 | 0.4 | fail |
 | Qwen3 Coder | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
+| Mercury 2 | 5 | 4.6 | 0.0 | exp6 (different task, see note) |
 
-*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 2603). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 2603: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
+*Table 2: Per-model results. Baseline first, then sorted by mean score descending within each experiment. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 2603). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 2603: mean=5.4 passes gate 1 but min score=4 fails gate 2). Mercury 2 SCOUT used the exp6 frontmatter task (rubric adapted; C4 and C6 structurally 0 due to pre-patched worktree); not directly comparable to exp3/exp4 scores.*
 
 ### Mean Score
 
@@ -80,8 +83,9 @@ Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`.
 | Kimi K2.5 | 6.6 | $0.221 | 0.833 | $0.040 | 11.6m | pass |
 | Devstral 2512 | 3.0 | $0.113 | 0.833 | $0.045 | 2.6m | fail |
 | Haiku 4.5 | 5.8 | $0.873 | 1.000 | $0.150 | 2.8m | baseline |
+| Mercury 2 (SCOUT) | 4.6 | $0.003 | 1.000 | $0.001 | 0.1m | exp6 (different task) |
 
-*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all quality gates.*
+*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all gates. Mercury 2 cost and wall time reflect SCOUT role only (exp6 frontmatter task; not directly comparable to exp3/exp4); eff_cost_per_qp shown for reference.*
 
 DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.018/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.040/QP). Wall time is reported separately and is not folded into the composite.
 
