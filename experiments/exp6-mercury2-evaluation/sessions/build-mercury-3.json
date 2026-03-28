@@ -1,0 +1,1 @@
+{"session_id":"eval-build-mercury-3","status":"success","files_changed":["config/claude/agents/goose-coder-scout.md","config/claude/agents/goose-coder-guard.md","config/claude/agents/goose-coder-check.md"],"diff_summary":"one sentence","verification":"passed","errors":[],"deviations_from_plan":[]}
