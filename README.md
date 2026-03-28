@@ -83,8 +83,9 @@ Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`.
 | Kimi K2.5 | 6.6 | $0.221 | 0.833 | $0.040 | 11.6m | pass |
 | Devstral 2512 | 3.0 | $0.113 | 0.833 | $0.045 | 2.6m | fail |
 | Haiku 4.5 | 5.8 | $0.873 | 1.000 | $0.150 | 2.8m | baseline |
+| Mercury 2 | 4.6 | $0.003 | 1.000 | $0.001 | 0.1m | fail |
 
-*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all gates.*
+*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all gates. Mercury 2 cost and wall time reflect exp6.*
 
 DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.018/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.040/QP). Wall time is reported separately and is not folded into the composite.
 
