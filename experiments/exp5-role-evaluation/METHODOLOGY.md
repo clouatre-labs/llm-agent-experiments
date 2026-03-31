@@ -59,5 +59,5 @@ task (frontmatter patch confirmation). The two experiment series are complementa
 - exp3/exp4: which models can synthesize architectural proposals from a real codebase? (SCOUT)
 - exp5: which models can execute structured validation tasks reliably? (all other roles)
 
-Mistral Small 2603 fails the exp4 SCOUT bar and passes the exp5 validation bar. These findings
+Mistral Small 4 fails the exp4 SCOUT bar and passes the exp5 validation bar. These findings
 are consistent: the model is capable of structured read-and-verify tasks but not deep synthesis.

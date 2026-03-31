@@ -49,7 +49,7 @@ Baseline reused (exp3 runs 1-5) and four new candidates, each n=5 (DeepSeek n=3 
 - **MiniMax M2.5:** Chinese Minimax, open-weight via OpenRouter
 - **DeepSeek V3.2:** Chinese DeepSeek, commercial API
 - **Kimi K2.5:** Chinese Moonshot, commercial API
-- **Mistral Small 2603:** Mistral AI, commercial API via OpenRouter
+- **Mistral Small 4 (`mistral-small-2603`):** Mistral AI, commercial API via OpenRouter
 
 ## Blinding Procedure
 

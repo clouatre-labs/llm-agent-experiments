@@ -7,7 +7,7 @@
 [![Sessions](https://img.shields.io/badge/sessions-89-green)](experiments/)
 [![Runs](https://img.shields.io/badge/runs-89-blue)](experiments/)
 
-Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (7 models, 33 runs; approximately 4-5 runs per model (except DeepSeek V3.2: 3 valid due to infrastructure failures)). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 6.6/8) and MiniMax M2.5 (mean 6.4/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash, Devstral 2512, and Mistral Small 2603 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
+Deploying LLM agents at scale demands cost-effective model selection for each role in a multi-agent pipeline. We investigate whether open-weight models can serve as drop-in replacements for a proprietary baseline (Claude Haiku 4.5) in a specialized research synthesis agent role, using a pre-registered, blinded 8-criterion binary rubric across two sequential experiments (7 models, 33 runs; approximately 4-5 runs per model (except DeepSeek V3.2: 3 valid due to infrastructure failures)). Candidate quality was evaluated against a Mann-Whitney U non-inferiority criterion (alpha=0.05). Two candidates meet all non-inferiority thresholds: Kimi K2.5 (mean 6.6/8) and MiniMax M2.5 (mean 6.4/8; API cost 87% lower than the baseline per run). Two candidates fail on reliability: Qwen3 Coder (0 of 7 valid runs) and DeepSeek V3.2 (40% error rate); Gemini 3 Flash, Devstral 2512, and Mistral Small 4 also fail to meet quality thresholds. Results are limited to a single task type and pipeline configuration; generalizability to other agent roles requires further study. The evaluation protocol is released as a reusable template for role-level model substitution assessments in multi-agent systems.
 
 Exp5 and exp6 extend coverage to all 7 pipeline roles. Exp6 evaluates `inception/mercury-2` (n=5 per role, 35 runs) and finds 100% correctness on BUILD, FIXER, CHECK, REVIEW, and QA, with a full pipeline wall time of 23s and $0.0124/pipeline cost.
 
@@ -41,14 +41,14 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 | Claude Haiku 4.5 | 5 | 5.8 | 0.0 | baseline |
 | Kimi K2.5 | 5 | 6.6 | 0.0 | pass |
 | MiniMax M2.5 | 5 | 6.4 | 0.0 | pass |
-| Mistral Small 2603 | 5 | 5.4 | 0.375 | fail |
+| Mistral Small 4 | 5 | 5.4 | 0.375 | fail |
 | Gemini 3 Flash | 5 | 4.2 | 0.0 | fail |
 | Devstral 2512 | 5 | 3.0 | 0.0 | fail |
 | DeepSeek V3.2 | 3 | 1.0 | 0.4 | fail |
 | Qwen3 Coder | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
 | Mercury 2 | 5 | 4.6 | 0.0 | fail |
 
-*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 2603); exp6 = Mercury 2 (frontmatter patch task, same 8-criterion rubric). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 2603: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
+*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 4); exp6 = Mercury 2 (frontmatter patch task, same 8-criterion rubric). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 4: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
 
 ### Mean Score
 
@@ -76,7 +76,7 @@ Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`.
 
 | Model | Score | Cost/Run | Reliability | Eff. $/QP | Wall Time | Verdict |
 |-------|-------|----------|-------------|-----------|-----------|---------|
-| Mistral Small 2603 | 5.4 | $0.008 | 0.625 | **$0.002** | 1.8m | fail |
+| Mistral Small 4 | 5.4 | $0.008 | 0.625 | **$0.002** | 1.8m | fail |
 | MiniMax M2.5 | 6.4 | $0.115 | 1.000 | $0.018 | 5.1m | pass |
 | DeepSeek V3.2 | 1.0 | $0.007 | 0.333 | $0.021 | 2.1m | fail |
 | Gemini 3 Flash | 4.2 | $0.057 | 0.625 | $0.022 | 2.7m | fail |
@@ -233,7 +233,7 @@ All experiments used Goose 1.27.2 as the agent orchestrator. To reproduce:
 
 These experiments directly informed changes to the coder recipe. Following exp4 results and a parallel refactor of the `code-analyze` MCP server to reduce token overhead ([clouatre-labs/code-analyze-mcp#264](https://github.com/clouatre-labs/code-analyze-mcp/issues/264)), SCOUT was upgraded from Claude Haiku 4.5 to Claude Sonnet 4.6; the lower per-token cost of the compact MCP format made Sonnet viable at SCOUT's session length. The recipe was rewritten to define each agent role as a named subagent file, achieving cross-compatibility between Goose and Claude Code (see [blog post](https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/)). MiniMax M2.5 (exp4: mean 6.4/8, error rate 0.0) was adopted for GUARD with a reduced adversarial scope, replacing Haiku at lower cost.
 
-Exp5 and exp6 extend the evaluation to all 7 pipeline roles. Exp5 (n=1, three models: Haiku 4.5, Mistral Small 2603, MiniMax M2.5) established that Mistral Small 2603 is turn-efficient on execution roles (GUARD, BUILD, FIXER, REVIEW, QA). Exp6 (n=5, Mercury 2) finds that Mercury 2 (a diffusion LLM) achieves 100% correctness on BUILD, FIXER, CHECK, REVIEW, and QA roles with 1.8-3.6s wall time per role and $0.0124/pipeline total cost, making it the fastest model evaluated. Mercury 2 GUARD shows an 80% pass rate (one false revise verdict in 5 runs). SCOUT remains on Claude Sonnet 4.6.
+Exp5 and exp6 extend the evaluation to all 7 pipeline roles. Exp5 (n=1, three models: Haiku 4.5, Mistral Small 4, MiniMax M2.5) established that Mistral Small 4 is turn-efficient on execution roles (GUARD, BUILD, FIXER, REVIEW, QA). Exp6 (n=5, Mercury 2) finds that Mercury 2 (a diffusion LLM) achieves 100% correctness on BUILD, FIXER, CHECK, REVIEW, and QA roles with 1.8-3.6s wall time per role and $0.0124/pipeline total cost, making it the fastest model evaluated. Mercury 2 GUARD shows an 80% pass rate (one false revise verdict in 5 runs). SCOUT remains on Claude Sonnet 4.6.
 
 ## Limitations
 

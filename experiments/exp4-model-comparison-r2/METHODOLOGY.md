@@ -2,7 +2,7 @@
 
 ## Experimental Design
 
-Four candidates tested against Claude Haiku 4.5 baseline (reused from exp3). 5 runs per candidate (DeepSeek V3.2: 3 valid from 9 total attempts; Mistral Small 2603: 5 valid from 8 total attempts). Blind scoring protocol applied uniformly across all candidates.
+Four candidates tested against Claude Haiku 4.5 baseline (reused from exp3). 5 runs per candidate (DeepSeek V3.2: 3 valid from 9 total attempts; Mistral Small 4: 5 valid from 8 total attempts). Blind scoring protocol applied uniformly across all candidates.
 
 ## Blinding Procedure
 
@@ -10,7 +10,7 @@ Four candidates tested against Claude Haiku 4.5 baseline (reused from exp3). 5 r
 - Scorer receives run IDs only (no model names or identifying information)
 - Scores recorded in scores.json with per-criterion justifications
 - Label map revealed only after all scoring complete
-- Mistral Small 2603 (runs 36-40) scored in a separate session using identical blinding protocol
+- Mistral Small 4 (runs 36-40) scored in a separate session using identical blinding protocol
 
 ## Rubric
 
@@ -31,7 +31,7 @@ Note: C3 criterion was refined from exp3 (now requires explicit acknowledgment o
 
 - Scorer: mistral-large (blind to run identity)
 - Scores recorded in scores.json with per-criterion justification notes
-- Mistral Small 2603 blind scores with justifications in scores-mistral.json
+- Mistral Small 4 blind scores with justifications in scores-mistral.json
 - All criterion scores are binary (0 or 1)
 
 ## Gate Criteria
@@ -65,7 +65,7 @@ Costs based on OpenRouter pricing (as of experiment run date). Token counts accu
 
 Runs 27 and 30 produced no parseable JSON output after 3 attempts each. Both logged in latency-log.jsonl. n_total_attempts=9 (run-26: 1, run-27: 3, run-28: 1, run-29: 1, run-30: 3). Reliability = 3/9 = 0.33.
 
-### Mistral Small 2603
+### Mistral Small 4
 
 8 total attempts across 5 run slots. Reliability = 5/8 = 0.625. Passes mean gate (5.4 > 5.3) but fails gate_2 (min score 4 < threshold 5). Criterion pass rates: C1=1.0, C2=1.0, C3=0.0, C4=1.0, C5=0.0, C6=0.6, C7=0.6, C8=1.0. Mann-Whitney p=1.0 (no significant difference vs baseline).
 

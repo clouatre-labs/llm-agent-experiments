@@ -11,10 +11,10 @@ delegate roles without degrading output quality, and can it succeed as SCOUT whe
 Exp3 and exp4 evaluated SCOUT replacements using a tree-sitter synthesis task (n=5, C1-C8 rubric,
 blinded). Exp5 extended coverage to all 7 roles using a simpler frontmatter verification task
 (n=1 per role, binary correct/incorrect). This experiment applies exp4-style n=5 runs to the
-exp5 task, enabling statistical comparison with Mistral Small 2603's exp4 SCOUT score.
+exp5 task, enabling statistical comparison with Mistral Small 4's exp4 SCOUT score.
 
 Haiku 4.5 baseline: exp3/exp4 mean=5.8/8 (SCOUT, tree-sitter task).
-Mistral Small 2603: exp4 mean=5.4/8 (SCOUT, tree-sitter task, verdict=fail).
+Mistral Small 4: exp4 mean=5.4/8 (SCOUT, tree-sitter task, verdict=fail).
 Mercury 2: exp6 mean=4.6/8 (SCOUT, frontmatter task, this experiment).
 
 **Direct comparison caveat:** The exp6 SCOUT task differs from exp3/exp4. The rubric was adapted
@@ -91,7 +91,7 @@ not a model failure. Mercury 2 correctly reported FAIL when diff was empty.
 
 Pricing: $0.25/M input, $0.75/M output (OpenRouter, 2026-03-28).
 
-### Comparison with Haiku 4.5 and Mistral Small 2603 (exp5 data, n=1)
+### Comparison with Haiku 4.5 and Mistral Small 4 (exp5 data, n=1)
 
 | Model | SCOUT wall (s) | Pipeline wall (s) | Pipeline cost ($) | GUARD pass | BUILD pass |
 |-------|---------------|-------------------|-------------------|------------|------------|
