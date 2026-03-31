@@ -21,7 +21,7 @@ The worktree was already patched when delegates ran. SCOUT delegates therefore s
 | Model | OpenRouter string | Notes |
 |-------|-------------------|-------|
 | Claude Haiku 4.5 | `anthropic/claude-haiku-4.5` | Baseline; also used in exp3/exp4 |
-| Mistral Small 2603 | `mistralai/mistral-small-2603` | Candidate; failed SCOUT in exp4 |
+| Mistral Small 4 | `mistralai/mistral-small-2603` | Candidate; failed SCOUT in exp4 |
 | MiniMax M2.5 | `minimax/minimax-m2.5` | Passed exp4 SCOUT; included for comparison |
 
 ## Inference mode

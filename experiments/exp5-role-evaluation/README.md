@@ -13,7 +13,7 @@ exp3 and exp4 evaluated SCOUT delegate replacements only. This experiment extend
 and is not a replacement candidate; it is included here for completeness and as a methodological
 control.
 
-Exp4 result for Mistral Small 2603 on SCOUT: fail (mean=5.4, min=4, C3=0%, C5=0%, 37.5%
+Exp4 result for Mistral Small 4 on SCOUT: fail (mean=5.4, min=4, C3=0%, C5=0%, 37.5%
 hard-failure rate). That verdict is not revisited here.
 
 ## Method
