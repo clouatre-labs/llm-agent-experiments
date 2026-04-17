@@ -2,7 +2,7 @@
 
 # llm-agent-experiments
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19056876.svg)](https://doi.org/10.5281/zenodo.19056876)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19056877.svg)](https://doi.org/10.5281/zenodo.19056877)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Sessions](https://img.shields.io/badge/sessions-89-green)](experiments/)
 [![Runs](https://img.shields.io/badge/runs-89-blue)](experiments/)
