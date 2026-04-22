@@ -1,13 +1,15 @@
 {
-  "title": "Orchestrating AI Agents: A Subagent Architecture -- Supplementary Data",
-  "description": "Pre-registered model comparison experiments (exp3, exp4) evaluating open-weight LLM coding agents as SCOUT delegates in the goose-coder recipe. Blind scoring with Mann-Whitney U statistical test.",
+  "title": "LLM Coding Agent Experiments",
+  "description": "Session logs, scoring rubrics, and analysis outputs from pre-registered model comparison experiments (exp3, exp4) evaluating open-weight LLM coding agents as SCOUT delegates in the goose-coder recipe. Data include per-run structured delegate outputs (JSON), blind scorer justifications, group assignment maps, and token/timing metadata.",
   "upload_type": "dataset",
   "access_right": "open",
   "license": "Apache-2.0",
   "version": "1.0.0",
+  "publication_date": "2025-12-24",
   "creators": [
     {
-      "name": "Clouatre, Hugues",
+      "name": "Clouâtre, Hugues",
+      "affiliation": "HEC Montréal",
       "orcid": "0009-0002-4291-1999"
     }
   ],
@@ -19,7 +21,6 @@
     }
   ],
   "keywords": ["ai-agents", "llm-evaluation", "benchmarking", "open-weight-models", "supplementary-materials"],
-  "publication_date": "2025-12-24",
   "custom": {
     "code:codeRepository": "https://github.com/clouatre-labs/llm-agent-experiments"
   }
