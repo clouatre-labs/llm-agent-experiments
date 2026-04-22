@@ -261,8 +261,8 @@ If you use this dataset or methodology, please cite:
 
 ```bibtex
 @misc{clouatre2026orchestrating,
-  title   = {Orchestrating AI Agents: A Subagent Architecture},
-  author  = {Clouatre, Hugues},
+  title   = {LLM Coding Agent Experiments},
+  author  = {Clouâtre, Hugues},
   year    = {2026},
   doi     = {10.5281/zenodo.19056876},
   howpublished = {\url{https://clouatre.ca/posts/orchestrating-ai-agents-subagent-architecture/}},

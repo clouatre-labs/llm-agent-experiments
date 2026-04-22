@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite the article from preferred-citation and the dataset itself."
 type: dataset
-title: "Orchestrating AI Agents: A Subagent Architecture"
+title: "LLM Coding Agent Experiments"
 authors:
-  - family-names: Clouatre
+  - family-names: Clouâtre
     given-names: Hugues
     orcid: "https://orcid.org/0009-0002-4291-1999"
 repository-code: https://github.com/clouatre-labs/llm-agent-experiments
@@ -12,13 +12,15 @@ license: Apache-2.0
 date-released: "2025-12-24"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.19056877
+    value: 10.5281/zenodo.19056876
     description: Zenodo DOI
 version: "1.0.0"
 abstract: >
-  Benchmarking open-weight LLM coding agents as SCOUT delegates in the
-  goose-coder recipe. Contains pre-registered protocols, blind scoring data,
-  and full session files for two model comparison experiments (exp3, exp4).
+  Session logs, scoring rubrics, and analysis outputs from pre-registered model
+  comparison experiments (exp3, exp4) evaluating open-weight LLM coding agents
+  as SCOUT delegates in the goose-coder recipe. Data include per-run structured
+  delegate outputs (JSON), blind scorer justifications, group assignment maps,
+  and token/timing metadata.
 keywords:
   - ai-agents
   - llm-evaluation
@@ -27,7 +29,7 @@ keywords:
   - supplementary-materials
 preferred-citation:
   authors:
-    - family-names: Clouatre
+    - family-names: Clouâtre
       given-names: Hugues
       orcid: "https://orcid.org/0009-0002-4291-1999"
   title: "Orchestrating AI Agents: A Subagent Architecture"
