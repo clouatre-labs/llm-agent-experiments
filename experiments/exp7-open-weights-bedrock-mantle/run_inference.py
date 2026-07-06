@@ -125,6 +125,8 @@ def build_sigv4_client(model_key: str):
             # Transfer signed headers back onto the httpx request
             for key, value in aws_request.headers.items():
                 request.headers[key] = value
+            # Restore the request body for the underlying transport
+            request._content = body
             return self._transport.handle_request(request)
 
         def close(self) -> None:
