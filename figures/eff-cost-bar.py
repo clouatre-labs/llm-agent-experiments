@@ -2,9 +2,9 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-models    = ["minimax-m2.5", "gemini-3-flash", "deepseek-v3.2", "mistral-small-2603", "kimi-k2.5", "devstral-2512", "haiku-4.5", "mercury-2"]
-eff_cpqp  = [0.0179,         0.0217,           0.0210,          0.0023,               0.0401,       0.045,           0.1505,      0.0007]
-verdicts  = ["pass",         "fail",           "fail",          "fail",               "pass",       "fail",          "baseline",  "fail"]
+models    = ["minimax-m2.5", "gemini-3-flash", "deepseek-v3.2", "mistral-small-2603", "kimi-k2.5", "devstral-2512", "haiku-4.5", "mercury-2", "gemma-4-26b-a4b"]
+eff_cpqp  = [0.0179,         0.0217,           0.0210,          0.0023,               0.0401,       0.045,           0.1505,      0.0007,      0.0000468]
+verdicts  = ["pass",         "fail",           "fail",          "fail",               "pass",       "fail",          "baseline",  "fail",      "fail"]
 
 # Sort by eff_cpqp ascending
 sorted_data = sorted(zip(eff_cpqp, models, verdicts))
@@ -16,14 +16,17 @@ bar_colors = [colors_map[v] for v in verdicts_s]
 fig, ax = plt.subplots(figsize=(8, 5))
 bars = ax.barh(models_s, eff_cpqp_s, color=bar_colors, height=0.6)
 
-ax.set_xlabel("Effective cost per quality point (USD) -- lower is better", fontsize=11)
-ax.set_title("Efficiency metric: eff_cost_per_qp -- exp3, exp4, and exp6 candidates", fontsize=12)
-ax.set_xlim(0, 0.17)
+ax.set_xlabel("Effective cost per quality point (USD, log scale) -- lower is better", fontsize=11)
+ax.set_title("Efficiency metric: eff_cost_per_qp -- exp3, exp4, exp6, and exp7 candidates", fontsize=12)
+ax.set_xscale("log")
+ax.set_xlim(0.00003, 0.3)
+
+# Note: exp7 (Gemma 4) costs are from actual Bedrock Mantle API pricing, not accumulated session tokens
 
 # Annotate bars with values
 for bar, val in zip(bars, eff_cpqp_s):
-    ax.text(val + 0.002, bar.get_y() + bar.get_height() / 2,
-            f"${val:.4f}", va="center", fontsize=9)
+    ax.text(val * 1.15, bar.get_y() + bar.get_height() / 2,
+            f"${val:.5f}", va="center", fontsize=9)
 
 from matplotlib.lines import Line2D
 legend_elements = [
@@ -34,5 +37,5 @@ legend_elements = [
 ax.legend(handles=legend_elements, loc="lower right", fontsize=9)
 
 plt.tight_layout()
-plt.savefig("figures/eff-cost-bar.png", dpi=150, bbox_inches="tight")
-print("Saved figures/eff-cost-bar.png")
+plt.savefig("eff-cost-bar.png", dpi=150, bbox_inches="tight")
+print("Saved eff-cost-bar.png")

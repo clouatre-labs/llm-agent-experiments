@@ -47,14 +47,15 @@ Can open-weight models serve as drop-in replacements for a proprietary LLM basel
 | DeepSeek V3.2 | 3 | 1.0 | 0.4 | fail |
 | Qwen3 Coder | 0 | n/a | 1.0 | excluded (0/7 valid runs) |
 | Mercury 2 | 5 | 4.6 | 0.0 | fail |
+| Gemma 4 26B-A4B | 5 | 5.0 | 0.0 | fail |
 
-*Table 2: Per-model results. Baseline first, then sorted by mean score descending. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 4); exp6 = Mercury 2 (frontmatter patch task, same 8-criterion rubric). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 4: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
+*Table 2: Per-model results grouped by experiment. Baseline first (exp3), then exp3 discovery models, exp4 validation models, exp6 Mercury 2, and exp7 Gemma 4. Error rate = fraction of runs that failed to produce valid output. Exp3 = discovery round (Haiku 4.5, Qwen3 Coder, Gemini 3 Flash, Devstral 2512); exp4 = validation round (MiniMax M2.5, DeepSeek V3.2, Kimi K2.5, Mistral Small 4); exp6 = Mercury 2 (frontmatter patch task, same 8-criterion rubric); exp7 = Gemma 4 26B-A4B (Bedrock Mantle, same 8-criterion rubric). Full data in experiments/. Mann-Whitney U p-values in analysis.json. Verdict requires passing all four gates: mean > 5.3, min score >= 5, n_valid >= 5, and Mann-Whitney non-inferiority (p >= 0.05 vs baseline). A model can fail despite a mean above the threshold if any other gate fails (e.g., Mistral Small 4: mean=5.4 passes gate 1 but min score=4 fails gate 2).*
 
 ### Mean Score
 
 ![Mean score bar chart](figures/mean-score-bar.png)
 
-*Figure 1: Mean total score per model across exp3 (discovery) and exp4 (validation). Blue = baseline, red = fail, green = pass. Gate threshold (5.3) and baseline mean (5.8) shown as dashed lines. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2: n=3 valid runs, 40% error rate.*
+*Figure 1: Mean total score per model across exp3 (discovery), exp4 (validation), exp6 (Mercury 2), and exp7 (Gemma 4). Blue = baseline, red = fail, green = pass. Gate threshold (5.3) and baseline mean (5.8) shown as dashed lines. Qwen3 Coder excluded (0 valid runs after 7 attempts). DeepSeek V3.2: n=3 valid runs, 40% error rate.*
 
 Cost and token efficiency data are in `efficiency.json` within each experiment directory. Costs are computed from session token counts at 2026-02-25 pricing; see `DATA_DICTIONARY.md` for schema details.
 
@@ -62,13 +63,13 @@ Cost and token efficiency data are in `efficiency.json` within each experiment d
 
 ![Criterion pass rate heatmap](figures/criterion-heatmap.png)
 
-*Figure 2: Pass rate per criterion (C1-C8) for all seven evaluated models across exp3 and exp4. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
+*Figure 2: Pass rate per criterion (C1-C8) for all evaluated models across exp3, exp4, exp6, and exp7. Values are the fraction of valid runs satisfying each binary criterion (0.0-1.0). Row order: baseline, passing candidates, failing candidates.*
 
 ### Cost vs. Quality
 
 ![Cost vs quality scatter](figures/cost-quality-scatter.png)
 
-*Figure 3: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline.*
+*Figure 3: Quality score (mean total, 0-8) vs. estimated cost per valid run (USD, log scale). Horizontal dashed lines mark the gate threshold (5.3) and Haiku-4.5 baseline mean (5.8). Green circles = passing candidates; red crosses = failing candidates; blue diamond = baseline. Note: exp7 (Gemma 4) costs are from actual Bedrock Mantle API pricing and are not directly comparable to accumulated-session-token costs for other models.*
 
 ### Efficiency Metrics
 
@@ -84,8 +85,9 @@ Composite metric: `eff_cost_per_qp = cost_per_run / (mean_score * reliability)`.
 | Devstral 2512 | 3.0 | $0.113 | 0.833 | $0.045 | 2.6m | fail |
 | Haiku 4.5 | 5.8 | $0.873 | 1.000 | $0.150 | 2.8m | baseline |
 | Mercury 2 | 4.6 | $0.003 | 1.000 | $0.001 | 0.1m | fail |
+| Gemma 4 26B-A4B | 5.0 | $0.000234† | 1.000 | $0.000047† | n/a‡ | fail |
 
-*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all gates. Mercury 2 cost and wall time reflect exp6.*
+*Table 3: Composite efficiency metric (eff_cost_per_qp) per model. Sort order: ascending eff_cost_per_qp. Qwen3 Coder omitted (0 valid runs; metric undefined). DeepSeek V3.2 included for completeness but fails all gates. Mercury 2 cost and wall time reflect exp6. † exp7 (Gemma 4) costs are from actual Bedrock Mantle API pricing and are not directly comparable to accumulated-session-token costs for other models. ‡ Wall time for Gemma 4 is not reported: exp7 ran each task as a single Bedrock Converse API call (latency.jsonl records 4.3s API response time), not as a full multi-turn Goose agent session; the two measurements are not comparable.*
 
 DeepSeek V3.2 ranks 2nd by this metric but fails all gates; eff_cost_per_qp is not a valid ranking signal for models that do not pass. Among passing candidates, MiniMax M2.5 ($0.018/QP) is 2x more cost-effective per quality point than Kimi K2.5 ($0.040/QP). Wall time is reported separately and is not folded into the composite.
 
@@ -93,7 +95,7 @@ Qwen3 Coder is omitted (0 valid runs; metric is undefined).
 
 ![Effective cost per quality point bar chart](figures/eff-cost-bar.png)
 
-*Figure 4: Effective cost per quality point (eff_cost_per_qp) for all models with valid scores. Lower is better. Green = pass, red = fail, blue = baseline. Sort order: ascending eff_cost_per_qp. DeepSeek V3.2 ranks deceptively well due to near-zero cost and score=1; it fails all quality gates.*
+*Figure 4: Effective cost per quality point (eff_cost_per_qp) for all models with valid scores, log scale. Lower is better. Green = pass, red = fail, blue = baseline. Sort order: ascending eff_cost_per_qp. DeepSeek V3.2 ranks deceptively well due to near-zero cost and score=1; it fails all quality gates. Log scale used because exp7 (Gemma 4) eff_cost_per_qp ($0.000047) is ~15x lower than the next cheapest model; a linear axis renders Gemma 4 as a zero-width bar. Note: exp7 (Gemma 4) costs are from actual Bedrock Mantle API pricing and are not directly comparable to accumulated-session-token costs for other models.*
 
 ## Repository Structure
 
@@ -235,6 +237,8 @@ These experiments directly informed changes to the coder recipe. Following exp4 
 
 Exp5 and exp6 extend the evaluation to all 7 pipeline roles. Exp5 (n=1, three models: Haiku 4.5, Mistral Small 4, MiniMax M2.5) established that Mistral Small 4 is turn-efficient on execution roles (GUARD, BUILD, FIXER, REVIEW, QA). Exp6 (n=5, Mercury 2) finds that Mercury 2 (a diffusion LLM) achieves 100% correctness on BUILD, FIXER, CHECK, REVIEW, and QA roles with 1.8-3.6s wall time per role and $0.0124/pipeline total cost, making it the fastest model evaluated. Mercury 2 GUARD shows an 80% pass rate (one false revise verdict in 5 runs). SCOUT remains on Claude Sonnet 4.6.
 
+Exp7 (n=5, Gemma 4 26B-A4B via AWS Bedrock Mantle) evaluates an open-weight model on the same 8-criterion rubric. Gemma 4 achieves a mean score of 5.0 (failing the 5.3 gate) with zero error rate and exceptional cost efficiency ($0.000234 per run via Bedrock Mantle API pricing). The cost finding demonstrates the potential of open-weight models on managed inference platforms, though the cost basis differs from accumulated-session-token pricing used for other models and should not be directly compared without the dagger footnote in Table 3.
+
 ## Limitations
 
 1. **Underpowered study design:** n=5 per model is insufficient for strong statistical power. Results are indicative, not definitive.
@@ -242,6 +246,7 @@ Exp5 and exp6 extend the evaluation to all 7 pipeline roles. Exp5 (n=1, three mo
 3. **Qwen3 Coder exclusion:** Zero valid runs after 7 attempts; excluded from analysis. The model consistently exhausted its action budget before writing output; reproduced on 2026-03-16, confirming a persistent model behavior failure.
 4. **DeepSeek V3.2 partial sample:** n=3 valid (2 of 5 runs failed); increases variance in comparison. p-value should be interpreted conservatively.
 5. **Single orchestrator:** All runs used Claude Sonnet 4.6; generalization to other orchestrators unknown.
+6. **Bedrock Mantle preview status, cost-basis incompatibility, and wall-time incomparability:** Exp7 (Gemma 4) was evaluated on AWS Bedrock Mantle, a preview service with API pricing that differs from accumulated-session-token costs used for other models. Costs in Table 3 and Figures 3-4 for Gemma 4 are marked with a dagger (†) to flag this incompatibility; direct cost comparison with exp3/exp4/exp6 models is not valid without accounting for the different pricing basis. Additionally, exp7 ran each task as a single Bedrock Converse API call rather than a full multi-turn Goose agent session; the latency.jsonl P50 of 4.3s measures API response time only and is not a wall-time measurement comparable to agent session durations reported for other models. Wall time for Gemma 4 is therefore not reported in Table 3.
 
 ## Ethics Statement
 
