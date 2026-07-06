@@ -108,7 +108,7 @@ def score_run(run_id: str, data: dict, rubric_text: str) -> dict:
     # C5: Check for specific pattern IDs (T001, D001, etc.)
     import re
 
-    has_pattern_id = bool(re.search(r"[TD]\d{3}", output))
+    has_pattern_id = bool(re.search(r"[TD]\d{3}\b", output))
     score["C5"] = 1 if has_pattern_id else 0
 
     # C6: Check for taint / data-flow / AST limitation references

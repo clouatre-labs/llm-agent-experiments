@@ -95,52 +95,45 @@ def build_sigv4_client(model_key: str):
 
     region = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
 
-    # Build a custom httpx transport that signs each request with SigV4
-    from aws_requests_auth.boto_utils import BotoAWSRequestsAuth
+    # Build a custom httpx transport that signs each request with SigV4.
+    # Uses botocore directly (stdlib-stable, no third-party aws_requests_auth
+    # dependency on the signing hot path).
+    import botocore.auth
+    import botocore.awsrequest
+    import botocore.credentials
+    import botocore.session as bc_session
 
-    auth = BotoAWSRequestsAuth(
-        aws_host="bedrock-mantle.us-east-1.api.aws",
-        aws_region=region,
-        aws_service="bedrock",
-    )
+    bc = bc_session.get_session()
+    credentials = bc.get_credentials().get_frozen_credentials()
+    signer = botocore.auth.SigV4Auth(credentials, "bedrock", region)
 
     class SigV4Transport(httpx.BaseTransport):
-        """httpx transport that wraps requests with AWS SigV4 auth."""
+        """httpx transport that signs each request with botocore SigV4."""
 
-        def __init__(self, inner_auth):
-            self._inner_auth = inner_auth
+        def __init__(self):
             self._transport = httpx.HTTPTransport()
 
-        def handle_request(self, request):
-            # The BotoAWSRequestsAuth expects a requests.PreparedRequest
-            # Build one from the httpx Request
-
-            import requests as req_lib
-
-            url = str(request.url)
-            method = request.method
+        def handle_request(self, request: httpx.Request) -> httpx.Response:
             body = request.read()
-
-            prepared = req_lib.Request(
-                method=method, url=url, data=body, headers=dict(request.headers)
-            ).prepare()
-
-            # Sign with SigV4
-            self._inner_auth(prepared)
-
-            # Transfer signed headers back to httpx request
-            for key, value in prepared.headers.items():
+            aws_request = botocore.awsrequest.AWSRequest(
+                method=request.method,
+                url=str(request.url),
+                data=body,
+                headers=dict(request.headers),
+            )
+            signer.add_auth(aws_request)
+            # Transfer signed headers back onto the httpx request
+            for key, value in aws_request.headers.items():
                 request.headers[key] = value
-
             return self._transport.handle_request(request)
 
-        def close(self):
+        def close(self) -> None:
             self._transport.close()
 
     client = openai.OpenAI(
         base_url=MANTLE_BASE_URL,
-        api_key="placeholder",  # SigV4 auth replaces the API key via headers
-        http_client=httpx.Client(transport=SigV4Transport(auth)),
+        api_key="placeholder",  # replaced by SigV4 Authorization header
+        http_client=httpx.Client(transport=SigV4Transport()),
     )
     return client
 
