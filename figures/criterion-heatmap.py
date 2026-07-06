@@ -12,8 +12,11 @@ models = [
     'devstral-2512\n(fail)',
     'deepseek-v3.2\n(fail)',
     'mistral-small-2603\n(fail)',
+    'gemma-4-26b\n(exp7)',
 ]
 criteria = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8']
+# Pass rates per criterion per model (fraction of valid runs satisfying each criterion)
+# gemma4 actual: C1=0,C2=0,C3=0,C4=1,C5=0,C6=0,C7=0,C8=1 across all 5 runs -> all identical
 data = np.array([
     [1.0, 1.0, 0.2, 1.0, 0.2, 0.4, 1.0, 1.0],  # haiku
     [1.0, 1.0, 0.6, 1.0, 0.4, 1.0, 1.0, 1.0],  # kimi
@@ -23,9 +26,10 @@ data = np.array([
     [1.0, 0.8, 0.0, 0.0, 0.0, 0.0, 0.2, 1.0],  # devstral
     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  # deepseek
     [1.0, 1.0, 0.0, 1.0, 0.0, 0.6, 0.6, 1.0],  # mistral
+    [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0],  # gemma4 (exp7)
 ])
 
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(10, 7))
 cmap = plt.get_cmap('RdYlGn')
 im = ax.imshow(data, cmap=cmap, vmin=0, vmax=1, aspect='auto')
 
@@ -43,9 +47,10 @@ for i in range(len(models)):
 ax.axhline(y=0.5, color='#444', linewidth=1.5, linestyle='--')
 ax.axhline(y=2.5, color='#444', linewidth=1.5, linestyle='--')
 ax.axhline(y=3.5, color='#444', linewidth=1.5, linestyle='--')
+ax.axhline(y=7.5, color='#444', linewidth=1.5, linestyle='--')
 
 plt.colorbar(im, ax=ax, label='Pass rate (0.0 = never, 1.0 = always)')
-ax.set_title('Criterion pass rates across all evaluated models (exp3 + exp4 + exp6)', fontsize=12, pad=12)
+ax.set_title('Criterion pass rates across all evaluated models (exp3 + exp4 + exp6 + exp7)', fontsize=12, pad=12)
 
 plt.tight_layout()
 plt.savefig('figures/criterion-heatmap.png', dpi=150, bbox_inches='tight')
