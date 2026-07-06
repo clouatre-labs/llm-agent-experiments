@@ -59,14 +59,14 @@ MODEL_CONFIGS = {
         "output_price_per_mtok": 0.40,
     },
     "haiku45": {
-        "model_id": "anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
         "endpoint": "bedrock-runtime",
         "run_ids": ["run-46", "run-47", "run-48", "run-49", "run-50"],
         "input_price_per_mtok": 1.00,
         "output_price_per_mtok": 5.00,
     },
     "sonnet46": {
-        "model_id": "anthropic.claude-sonnet-4-6",
+        "model_id": "global.anthropic.claude-sonnet-4-6",
         "endpoint": "bedrock-runtime",
         "run_ids": ["run-51", "run-52", "run-53", "run-54", "run-55"],
         "input_price_per_mtok": 3.00,

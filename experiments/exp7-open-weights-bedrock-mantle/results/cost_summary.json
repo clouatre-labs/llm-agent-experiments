@@ -1,36 +1,40 @@
 {
-  "pricing_date": "2026-06-25",
+  "pricing_date": "2026-07-06",
+  "run_date": "2026-07-06",
   "projection_basis": "2B tokens/month: 1B input + 1B output (50/50 split)",
   "models": {
     "google.gemma-4-26b-a4b": {
       "model_key": "gemma4",
       "input_per_mtok": 0.13,
       "output_per_mtok": 0.40,
-      "per_1k_tokens_usd": 0.000265,
-      "per_run_usd_mean": 0.000234,
+      "mean_input_tokens": 2359,
+      "mean_output_tokens": 551,
+      "per_run_usd_mean": 0.000527,
       "projected_monthly_usd": 530
     },
-    "anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
       "model_key": "haiku45",
       "input_per_mtok": 1.00,
       "output_per_mtok": 5.00,
-      "per_1k_tokens_usd": 0.003,
-      "per_run_usd_mean": 0.000915,
+      "mean_input_tokens": 2472,
+      "mean_output_tokens": 526,
+      "per_run_usd_mean": 0.005103,
       "projected_monthly_usd": 6000
     },
-    "anthropic.claude-sonnet-4-6": {
+    "global.anthropic.claude-sonnet-4-6": {
       "model_key": "sonnet46",
       "input_per_mtok": 3.00,
       "output_per_mtok": 15.00,
-      "per_1k_tokens_usd": 0.009,
-      "per_run_usd_mean": 0.003473,
+      "mean_input_tokens": 2472,
+      "mean_output_tokens": 3871,
+      "per_run_usd_mean": 0.065190,
       "projected_monthly_usd": 18000
     }
   },
   "cost_per_quality_point": {
-    "gemma4": 0.000047,
-    "haiku45": 0.000158,
-    "sonnet46": 0.000526
+    "gemma4": 0.000264,
+    "haiku45": 0.001963,
+    "sonnet46": 0.012072
   },
-  "notes": "Gemma 4 projected at $530/month vs $6,000 (Haiku) and $18,000 (Sonnet) at 2B tokens/month 50/50 split using confirmed Bedrock Mantle us-east-1 pricing ($0.13/$0.40). Issue #7 cost table uses $0.06/$0.30 pricing (different tier)."
+  "notes": "Costs computed from actual token counts (run_inference.py, 2026-07-06). Gemma 4 routed via Bedrock Mantle endpoint at confirmed us-east-1 pricing ($0.13/$0.40 per M tokens). Claude models routed via Bedrock Runtime using global inference profiles. Sonnet 4.6 output tokens hit 4096 max on 4 of 5 runs (truncated responses); scores reflect truncated output."
 }
