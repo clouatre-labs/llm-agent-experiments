@@ -4,7 +4,7 @@ Replicates Experiment 8 on a new task (aptu#1205: multi-forge support) with thre
 
 ## Research Question
 
-When routing all three models through a single OpenRouter endpoint, does the ranking (Gemma 4 vs Haiku 4.5 vs Sonnet 4.6) replicate across tasks, or are the exp8 results task-specific?
+When routing all three models through a single OpenRouter endpoint, does the ranking (Gemma 4 vs Haiku 4.5 vs Sonnet 5) replicate across tasks, or are the exp8 results task-specific?
 
 ## Models
 
@@ -12,14 +12,14 @@ When routing all three models through a single OpenRouter endpoint, does the ran
 |-------|-----|---------|---------------|----------------|
 | Google Gemma 4 26B-A4B | OpenRouter | run-86 to run-95 | $0.06 | $0.33 |
 | Claude Haiku 4.5 | OpenRouter | run-96 to run-105 | $1.00 | $5.00 |
-| Claude Sonnet 4.6 | OpenRouter | run-106 to run-115 | $3.00 | $15.00 |
+| Claude Sonnet 5 | OpenRouter | run-106 to run-115 | $2.00 | $10.00 |
 
 ## Run Configuration
 
 | Config | Value |
 |--------|-------|
 | Total runs | 30 (10 per model) |
-| Pilot runs | run-86 (gemma4), run-96 (haiku45), run-106 (sonnet46) |
+| Pilot runs | run-86 (gemma4), run-96 (haiku45), run-106 (sonnet5) |
 | Endpoint | OpenRouter (https://openrouter.ai/api/v1) |
 | Task | SCOUT research on clouatre-labs/aptu#1205 |
 | Max tokens | 4096 |
