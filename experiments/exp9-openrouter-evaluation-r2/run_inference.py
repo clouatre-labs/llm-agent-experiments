@@ -210,16 +210,14 @@ def run_single(
 
     latency_ms = int((time.monotonic() - start) * 1000)
     raw_text = response.choices[0].message.content or ""
-    # Strip markdown fences that some models emit despite response_format=json_object.
-    # Handles ```json\n...\n``` and ``` ... ``` variants.
-    output_text = raw_text.strip()
-    if output_text.startswith("```"):
-        # Drop the opening fence line and closing fence
-        lines = output_text.splitlines()
-        # Find first line that is pure fence (```...) and skip it
-        output_text = "\n".join(lines[1:])
-        if output_text.rstrip().endswith("```"):
-            output_text = output_text.rstrip()[:-3].rstrip()
+    # Extract JSON by finding the first '{' and last '}', discarding any
+    # markdown fences or prose that some models emit around the object.
+    start_idx = raw_text.find("{")
+    end_idx = raw_text.rfind("}")
+    if start_idx != -1 and end_idx != -1 and end_idx >= start_idx:
+        output_text = raw_text[start_idx : end_idx + 1]
+    else:
+        output_text = raw_text
     input_tokens = response.usage.prompt_tokens if response.usage else 0
     output_tokens = response.usage.completion_tokens if response.usage else 0
     cost_usd = compute_cost_usd(input_tokens, output_tokens, config)
