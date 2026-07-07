@@ -1,3 +1,0 @@
-{"model_id":"google.gemma-4-26b-a4b","model_key":"gemma4","n_runs":5,"p50_ms":4320,"p95_ms":5120,"mean_ms":4416,"pricing_date":"2026-06-25"}
-{"model_id":"anthropic.claude-haiku-4-5-20251001-v1:0","model_key":"haiku45","n_runs":5,"p50_ms":2100,"p95_ms":2340,"mean_ms":2136,"pricing_date":"2026-06-25"}
-{"model_id":"anthropic.claude-sonnet-4-6","model_key":"sonnet46","n_runs":5,"p50_ms":3810,"p95_ms":4150,"mean_ms":3862,"pricing_date":"2026-06-25"}
