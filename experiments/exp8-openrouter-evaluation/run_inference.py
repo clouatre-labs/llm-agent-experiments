@@ -332,7 +332,7 @@ def main():
         for run_id in config["run_ids"][: args.runs]:
             print(f"  Starting {run_id}...")
             try:
-                result = run_single(model_key, run_id, prompt, dry_run=False)
+                result = run_single(run_id, model_key, prompt, dry_run=False)
                 write_session(result)
                 append_latency_log(result)
                 all_results.append(result)
