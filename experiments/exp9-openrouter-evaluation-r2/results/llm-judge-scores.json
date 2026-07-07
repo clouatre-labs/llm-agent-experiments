@@ -1,0 +1,192 @@
+{
+  "scorer": "llm-judge-blind",
+  "rubric_version": "exp9-v1.0",
+  "criteria_scored": [
+    "C6",
+    "C7"
+  ],
+  "method": "semantic-keyword-analysis-on-response-text",
+  "timestamp": "2026-07-07T16:13:05Z",
+  "runs": {
+    "run-86": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: backward compatibility constraint on existing GitHub configs; webhook handling differs across providers; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-87": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; async-trait object safety constraint; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-88": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: backward compatibility constraint on existing GitHub configs; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-89": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs; feature flags for optional forge dependencies."
+    },
+    "run-90": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-91": {
+      "C6": 0,
+      "C7": 0,
+      "total_judge": 0,
+      "notes": "C6: Truncated at conventions block (264 tokens); no auth flow content present. C7: Truncated at conventions block (264 tokens); no architectural implications present."
+    },
+    "run-92": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: backward compatibility constraint on existing GitHub configs; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-93": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-94": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; backward compatibility constraint on existing GitHub configs; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-95": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-96": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-97": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; backward compatibility constraint on existing GitHub configs; feature flags for optional forge dependencies."
+    },
+    "run-98": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-99": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; backward compatibility constraint on existing GitHub configs; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-100": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-101": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; backward compatibility constraint on existing GitHub configs; webhook handling differs across providers."
+    },
+    "run-102": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-103": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context, per-forge credential handling. C7: Non-obvious arch implication: rate limiting differences across providers; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-104": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context, Bearer token with forge context. C7: Non-obvious arch implication: rate limiting differences across providers; SSH URL parsing differs by provider; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-105": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; SSH URL parsing differs by provider; binary size/compile time impact of per-forge SDK deps."
+    },
+    "run-106": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: GitLab PRIVATE-TOKEN header, PAT with provider context, Bearer token with forge context. C7: Non-obvious arch implication: enum_dispatch pattern for zero-cost dispatch; async-trait object safety constraint; feature flags for optional forge dependencies."
+    },
+    "run-107": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; normalized DiffContext abstraction required; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-108": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: GitLab PRIVATE-TOKEN header, PAT with provider context, Bearer token with forge context. C7: Non-obvious arch implication: rate limiting differences across providers; self-hosted/on-prem base_url support needed; normalized DiffContext abstraction required."
+    },
+    "run-109": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context. C7: Non-obvious arch implication: enum_dispatch pattern for zero-cost dispatch; async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps."
+    },
+    "run-110": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; async-trait object safety constraint; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-111": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: GitLab PRIVATE-TOKEN header, PAT with provider context, Bearer token with forge context. C7: Non-obvious arch implication: rate limiting differences across providers; async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps."
+    },
+    "run-112": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context, per-forge credential handling. C7: Non-obvious arch implication: async-trait object safety constraint; Azure DevOps org/project/repo hierarchy differs from GitHub."
+    },
+    "run-113": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: PAT with provider context, Bearer token with forge context, per-forge credential handling. C7: Non-obvious arch implication: async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-114": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: OAuth, PAT with provider context, per-forge credential handling. C7: Non-obvious arch implication: async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps; backward compatibility constraint on existing GitHub configs."
+    },
+    "run-115": {
+      "C6": 1,
+      "C7": 1,
+      "total_judge": 2,
+      "notes": "C6: Provider-specific auth differences cited: Azure AD auth, OAuth, PAT with provider context. C7: Non-obvious arch implication: rate limiting differences across providers; async-trait object safety constraint; binary size/compile time impact of per-forge SDK deps."
+    }
+  }
+}
