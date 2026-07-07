@@ -1,0 +1,11 @@
+{
+  "run_id": "run-70",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "haiku45",
+  "response_text": "I understand the protocol for Experiment 3. I'm ready to orchestrate the 20 SCOUT delegate runs with strict blinding (no model names in filenames or instructions, label-map sealed before execution).\n\nLet me begin:\n\n```bash\ncd ~/git/dotfiles\nEXP_DIR=experiments/exp3-model-comparison\nmkdir -p $EXP_DIR/sessions\n\n# Record aptu HEAD SHA\nAPTU_SHA=$(gh api repos/clouatre-labs/aptu/commits/main --jq '.sha')\necho \"aptu SHA: $APTU_SHA\"\n```\n\n```bash\n# Seal label-map.json before any runs\ncat > $EXP_DIR/label-map.json << 'EOF'\n{\n  \"01\": \"haiku-4.5\",\n  \"02\": \"haiku-4.5\",\n  \"03\": \"haiku-4.5\",\n  \"04\": \"haiku-4.5\",\n  \"05\": \"haiku-4.5\",\n  \"06\": \"qwen3-coder\",\n  \"07\": \"qwen3-coder\",\n  \"08\": \"qwen3-coder\",\n  \"09\": \"qwen3-coder\",\n  \"10\": \"qwen3-coder\",\n  \"11\": \"gemini-3-flash\",\n  \"12\": \"gemini-3-flash\",\n  \"13\": \"gemini-3-flash\",\n  \"14\": \"gemini-3-flash\",\n  \"15\": \"gemini-3-flash\",\n  \"16\": \"devstral-2512\",\n  \"17\": \"devstral-2512\",\n  \"18\": \"devstral-2512\",\n  \"19\": \"devstral-2512\",\n  \"20\": \"devstral-2512\"\n}\nEOF\necho \"label-map.json sealed\"\n\n# Initialize latency log\n> $EXP_DIR/latency-log.jsonl\n```\n\nI'm ready to execute. I will:\n\n1. **NOT** read `label-map.json` during execution\n2. **NOT** include model names in any filenames or delegate instructions\n3. Run all 20 delegates **sequentially** (one at a time)\n4. Track latency and validity for each run\n5. Retry up to 5 times if any output is invalid\n6. Stop after all 20 runs complete without scoring\n\n**Ready to begin Stage 1 (Runs 01-05). Proceed?**",
+  "input_tokens": 2472,
+  "output_tokens": 599,
+  "latency_ms": 5246,
+  "cost_usd": 0.005467,
+  "timestamp_utc": "2026-07-07T02:55:08Z"
+}

@@ -1,0 +1,11 @@
+{
+  "run_id": "run-73",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "haiku45",
+  "response_text": "I understand the protocol. I'm ready to orchestrate Experiment 3 as the SCOUT delegate runner.\n\nLet me confirm my understanding of the key constraints:\n\n\u2705 **Setup Phase:**\n- Work from `~/git/dotfiles`\n- Record aptu HEAD SHA\n- Seal `label-map.json` before any runs (5 haiku, 5 qwen3-coder, 5 gemini-3-flash, 5 devstral-2512)\n- **Do NOT read label-map.json during execution**\n\n\u2705 **Execution Protocol:**\n- Run 20 delegates sequentially (one at a time, no concurrency)\n- All use SCOUT_INSTRUCTIONS with parameterized RUN_ID and OUTPUT_PATH\n- All target: clouatre-labs/aptu#737\n- Extensions: developer, context7, brave_search\n- Record timestamps and validity for each run\n- Retry invalid runs up to 5 attempts per run\n\n\u2705 **Stages:**\n- **Stage 1 (Runs 01-05):** claude-haiku-4-5@20251001 via gcp_vertex_ai, temp=0.5\n- **Stage 2 (Runs 06-10):** qwen/qwen3-coder via openrouter, temp=0.5\n- **Stage 2 (Runs 11-15):** gemini-3-flash-preview via gcp_vertex_ai, temp=0.5\n- **Stage 2 (Runs 16-20):** mistralai/devstral-2512 via openrouter, temp=0.5\n\n\u2705 **Post-Execution:**\n- Verify all 20 files exist\n- Report completion status\n- **STOP before scoring** (blinding maintained)\n- Do not include model names in filenames or instructions\n\nI'm ready to begin. Shall I start with the setup phase (SHA recording and label-map.json sealing)?",
+  "input_tokens": 2472,
+  "output_tokens": 462,
+  "latency_ms": 5810,
+  "cost_usd": 0.004782,
+  "timestamp_utc": "2026-07-07T02:55:26Z"
+}

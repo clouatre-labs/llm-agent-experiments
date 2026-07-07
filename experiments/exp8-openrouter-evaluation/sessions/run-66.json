@@ -1,0 +1,11 @@
+{
+  "run_id": "run-66",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "haiku45",
+  "response_text": "I understand the protocol for Experiment 3. I'm ready to act as the orchestrator for the model comparison study of SCOUT delegates.\n\nLet me confirm my understanding of the key constraints:\n\n\u2705 **Protocol adherence**: Follow `experiments/exp3-model-comparison/protocol.md` exactly  \n\u2705 **Blinding**: Do NOT read `label-map.json` during execution; do NOT include model names in filenames or instructions  \n\u2705 **Sequential execution**: Run delegates one at a time (no parallelization)  \n\u2705 **Output structure**: 20 runs across 3 stages (5 baseline + 5 qwen + 5 gemini + 5 devstral)  \n\u2705 **Latency tracking**: Record timestamps and validity for each run  \n\u2705 **Retry logic**: Up to 5 attempts per run if output is invalid JSON  \n\u2705 **Stopping point**: After all 20 runs, verify outputs and STOP\u2014no scoring, no label-map reading  \n\nI'm positioned in `~/git/dotfiles` and ready to begin.\n\n**Shall I proceed with:**\n1. Setup (mkdir, record APTU_SHA, seal label-map.json)\n2. Execute all 20 runs sequentially\n3. Report completion status\n\n**Ready to start?**",
+  "input_tokens": 2472,
+  "output_tokens": 307,
+  "latency_ms": 4292,
+  "cost_usd": 0.004007,
+  "timestamp_utc": "2026-07-07T02:54:45Z"
+}

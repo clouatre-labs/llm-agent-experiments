@@ -1,0 +1,11 @@
+{
+  "run_id": "run-75",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "haiku45",
+  "response_text": "I understand the protocol. I'm ready to orchestrate Experiment 3. Let me begin:\n\n## Setup\n\n```bash\ncd ~/git/dotfiles\nEXP_DIR=experiments/exp3-model-comparison\nmkdir -p $EXP_DIR/sessions\n\n# Record aptu HEAD SHA\nAPTU_SHA=$(gh api repos/clouatre-labs/aptu/commits/main --jq '.sha')\necho \"aptu SHA: $APTU_SHA\"\n```\n\n## Seal label-map.json\n\n```bash\ncat > $EXP_DIR/label-map.json << 'EOF'\n{\n  \"01\": \"haiku-4.5\",\n  \"02\": \"haiku-4.5\",\n  \"03\": \"haiku-4.5\",\n  \"04\": \"haiku-4.5\",\n  \"05\": \"haiku-4.5\",\n  \"06\": \"qwen3-coder\",\n  \"07\": \"qwen3-coder\",\n  \"08\": \"qwen3-coder\",\n  \"09\": \"qwen3-coder\",\n  \"10\": \"qwen3-coder\",\n  \"11\": \"gemini-3-flash\",\n  \"12\": \"gemini-3-flash\",\n  \"13\": \"gemini-3-flash\",\n  \"14\": \"gemini-3-flash\",\n  \"15\": \"gemini-3-flash\",\n  \"16\": \"devstral-2512\",\n  \"17\": \"devstral-2512\",\n  \"18\": \"devstral-2512\",\n  \"19\": \"devstral-2512\",\n  \"20\": \"devstral-2512\"\n}\nEOF\necho \"label-map.json sealed\"\n```\n\n---\n\n## Ready to Execute\n\nI will now run **Stage 1: Baseline (Runs 01-05)** with claude-haiku-4-5@20251001 on gcp_vertex_ai.\n\nFor each run, I will:\n1. Record start time (ISO8601)\n2. Spawn delegate with SCOUT_INSTRUCTIONS (RUN_ID parameterized, no model name in output path)\n3. Wait for completion\n4. Verify JSON validity\n5. Log to latency-log.jsonl\n6. Retry up to 5 times if invalid\n7. Proceed to next run\n\n**I will NOT read label-map.json during execution to maintain blinding.**\n\nAwaiting confirmation to proceed with Run 01, or provide any final adjustments to the protocol.",
+  "input_tokens": 2472,
+  "output_tokens": 608,
+  "latency_ms": 5376,
+  "cost_usd": 0.005512,
+  "timestamp_utc": "2026-07-07T02:55:36Z"
+}

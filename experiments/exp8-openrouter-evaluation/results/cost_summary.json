@@ -1,0 +1,185 @@
+{
+  "gemma4": {
+    "model_key": "gemma4",
+    "model_id": "google/gemma-4-26b-a4b-it",
+    "n_runs": 10,
+    "total_cost_usd": 0.0031393799999999993,
+    "total_input_tokens": 22854,
+    "total_output_tokens": 5358,
+    "runs": [
+      {
+        "run_id": "run-56",
+        "latency_ms": 16641,
+        "cost_usd": 0.00033321
+      },
+      {
+        "run_id": "run-57",
+        "latency_ms": 2785,
+        "cost_usd": 0.00032793
+      },
+      {
+        "run_id": "run-58",
+        "latency_ms": 23310,
+        "cost_usd": 0.00032892
+      },
+      {
+        "run_id": "run-59",
+        "latency_ms": 15667,
+        "cost_usd": 0.00032595
+      },
+      {
+        "run_id": "run-60",
+        "latency_ms": 24102,
+        "cost_usd": 0.00033156
+      },
+      {
+        "run_id": "run-61",
+        "latency_ms": 2698,
+        "cost_usd": 0.00032331
+      },
+      {
+        "run_id": "run-62",
+        "latency_ms": 353,
+        "cost_usd": 0.00027876
+      },
+      {
+        "run_id": "run-63",
+        "latency_ms": 18324,
+        "cost_usd": 0.00033222
+      },
+      {
+        "run_id": "run-64",
+        "latency_ms": 402,
+        "cost_usd": 0.00027876
+      },
+      {
+        "run_id": "run-65",
+        "latency_ms": 348,
+        "cost_usd": 0.00027876
+      }
+    ],
+    "mean_cost_usd": 0.000313938
+  },
+  "haiku45": {
+    "model_key": "haiku45",
+    "model_id": "anthropic/claude-haiku-4.5",
+    "n_runs": 10,
+    "total_cost_usd": 0.053085,
+    "total_input_tokens": 24720,
+    "total_output_tokens": 5673,
+    "runs": [
+      {
+        "run_id": "run-66",
+        "latency_ms": 4292,
+        "cost_usd": 0.004007
+      },
+      {
+        "run_id": "run-67",
+        "latency_ms": 5359,
+        "cost_usd": 0.005727
+      },
+      {
+        "run_id": "run-68",
+        "latency_ms": 6256,
+        "cost_usd": 0.005672
+      },
+      {
+        "run_id": "run-69",
+        "latency_ms": 6081,
+        "cost_usd": 0.005707
+      },
+      {
+        "run_id": "run-70",
+        "latency_ms": 5246,
+        "cost_usd": 0.005467
+      },
+      {
+        "run_id": "run-71",
+        "latency_ms": 6103,
+        "cost_usd": 0.005702
+      },
+      {
+        "run_id": "run-72",
+        "latency_ms": 5576,
+        "cost_usd": 0.005237
+      },
+      {
+        "run_id": "run-73",
+        "latency_ms": 5810,
+        "cost_usd": 0.004782
+      },
+      {
+        "run_id": "run-74",
+        "latency_ms": 5437,
+        "cost_usd": 0.005272
+      },
+      {
+        "run_id": "run-75",
+        "latency_ms": 5376,
+        "cost_usd": 0.005512
+      }
+    ],
+    "mean_cost_usd": 0.0053085
+  },
+  "sonnet46": {
+    "model_key": "sonnet46",
+    "model_id": "anthropic/claude-sonnet-4.6",
+    "n_runs": 10,
+    "total_cost_usd": 0.534705,
+    "total_input_tokens": 24720,
+    "total_output_tokens": 30703,
+    "runs": [
+      {
+        "run_id": "run-76",
+        "latency_ms": 49633,
+        "cost_usd": 0.064641
+      },
+      {
+        "run_id": "run-77",
+        "latency_ms": 35525,
+        "cost_usd": 0.068856
+      },
+      {
+        "run_id": "run-78",
+        "latency_ms": 45614,
+        "cost_usd": 0.065826
+      },
+      {
+        "run_id": "run-79",
+        "latency_ms": 53463,
+        "cost_usd": 0.068856
+      },
+      {
+        "run_id": "run-80",
+        "latency_ms": 20941,
+        "cost_usd": 0.023346
+      },
+      {
+        "run_id": "run-81",
+        "latency_ms": 47370,
+        "cost_usd": 0.068856
+      },
+      {
+        "run_id": "run-82",
+        "latency_ms": 51283,
+        "cost_usd": 0.060246
+      },
+      {
+        "run_id": "run-83",
+        "latency_ms": 20743,
+        "cost_usd": 0.024396
+      },
+      {
+        "run_id": "run-84",
+        "latency_ms": 15301,
+        "cost_usd": 0.020826
+      },
+      {
+        "run_id": "run-85",
+        "latency_ms": 38237,
+        "cost_usd": 0.068856
+      }
+    ],
+    "mean_cost_usd": 0.0534705
+  }
+}

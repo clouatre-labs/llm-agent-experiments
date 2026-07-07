@@ -1,0 +1,11 @@
+{
+  "run_id": "run-65",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "model_key": "gemma4",
+  "response_text": "I am ready to act as the orchestrator for Experiment 3. I will follow the protocol in `experiments/exp3-model-comparison/protocol.md` exactly, maintaining strict blinding by not reading `label-map.json` during execution and ensuring no model names are included in delegate instructions or filenames.\n\nI will now begin the setup.\n\n### Setup\n\n```bash\ncd ~/git/dotfiles\nEXP_DIR=experiments/exp3-model-comparison\nmkdir -p $EXP_DIR/sessions\n\n# Record aptu HEAD SHA -- all delegates use this same SHA\nAPTU_SHA=$(gh api repos/clouatre-labs/aptu/commits/main --jq '.sha')\necho \"aptu SHA: $APTU_SHA\"\n```\n\n### Write label-map.json (sealed before any runs)\n\n```bash\ncat > $EXP_DIR/label-map.json << 'EOF'\n{\n  \"01\": \"haiku-4.5\",\n  \"02\": \"haiku-4.5\",\n  \"03\": \"haiku-4.5\",\n  \"04\": \"haiku-4.5\",\n  \"05\": \"haiku-4.5\",\n  \"06\": \"qwen3-coder\",\n  \"07\": \"qwen3-coder\",\n  \"08\": \"qwen3-coder\",\n  \"09\": \"qwen3-coder\",\n  \"10\": \"qwen3-coder\",\n  \"11\": \"gemini-3-flash\",\n  \"12\": \"gemini-3-flash\",\n  \"13\": \"gemini-3-flash\",\n  \"14\": \"gemini-3-flash\",\n  \"15\": \"gemini-3-flash\",\n  \"16\": \"devstral-2512\",\n  \"17\": \"devstral-2512\",\n  \"18\": \"devstral-2512\",\n  \"19\": \"devstral-2512\",\n  \"20\": \"devstral-2512\"\n}\nEOF\necho \"label-map.json sealed\"\n```\n\n---\n\n**Setup complete. I am now starting Stage 1: Baseline (Runs 01-05).** I will execute these sequentially and log latency and validity to `$EXP_DIR/latency-log.jsonl`.",
+  "input_tokens": 2116,
+  "output_tokens": 460,
+  "latency_ms": 348,
+  "cost_usd": 0.00027876,
+  "timestamp_utc": "2026-07-07T02:54:41Z"
+}
