@@ -145,10 +145,12 @@ def run_single(
     config = MODEL_CONFIGS[model_key]
     model_id = config["model_id"]
 
-    # Interpolate placeholders
-    output_path = str(sessions_dir / f"{run_id}.json")
+    # Interpolate placeholders.
+    # OUTPUT_PATH is replaced with a directive telling the model to return JSON
+    # as its response content (the script captures API output directly; no file
+    # write is possible or needed from inside the model).
     interpolated_prompt = prompt.replace("RUN_ID", run_id).replace(
-        "OUTPUT_PATH", output_path
+        "OUTPUT_PATH", "<your response content>"
     )
 
     if dry_run:
@@ -171,9 +173,27 @@ def run_single(
         try:
             response = client.chat.completions.create(
                 model=model_id,
-                messages=[{"role": "user", "content": interpolated_prompt}],
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are participating in a benchmark that measures parametric knowledge "
+                            "about software architecture and open-source Rust ecosystems. "
+                            "Use your training knowledge to answer -- do not attempt to execute "
+                            "shell commands, clone repositories, or call tools. "
+                            "The steps in the user message describe what to reason about, not "
+                            "literal actions to perform. Synthesize the best answer you can from "
+                            "what you already know about the codebase and ecosystem. "
+                            "Your response MUST be a single raw JSON object. "
+                            "Start your response with '{' and end with '}'. "
+                            "No markdown fences, no prose before or after the JSON."
+                        ),
+                    },
+                    {"role": "user", "content": interpolated_prompt},
+                ],
                 max_tokens=4096,
                 temperature=0.5,
+                response_format={"type": "json_object"},
             )
             break
         except openai.RateLimitError as e:
@@ -189,7 +209,15 @@ def run_single(
                 raise e
 
     latency_ms = int((time.monotonic() - start) * 1000)
-    output_text = response.choices[0].message.content or ""
+    raw_text = response.choices[0].message.content or ""
+    # Extract JSON by finding the first '{' and last '}', discarding any
+    # markdown fences or prose that some models emit around the object.
+    start_idx = raw_text.find("{")
+    end_idx = raw_text.rfind("}")
+    if start_idx != -1 and end_idx != -1 and end_idx >= start_idx:
+        output_text = raw_text[start_idx : end_idx + 1]
+    else:
+        output_text = raw_text
     input_tokens = response.usage.prompt_tokens if response.usage else 0
     output_tokens = response.usage.completion_tokens if response.usage else 0
     cost_usd = compute_cost_usd(input_tokens, output_tokens, config)
@@ -331,6 +359,11 @@ def main():
         action="store_true",
         help="Run only one run per model (run-86, run-96, run-106) and exit",
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip run IDs that already have a session file in sessions/",
+    )
     args = parser.parse_args()
 
     if args.dry_run:
@@ -367,6 +400,9 @@ def main():
             run_ids = config["run_ids"][: args.runs]
 
         for run_id in run_ids:
+            if args.skip_existing and (SESSIONS_DIR / f"{run_id}.json").exists():
+                print(f"  Skipping {run_id} (already exists)")
+                continue
             print(f"  Starting {run_id}...")
             try:
                 result = run_single(
@@ -399,9 +435,6 @@ def main():
                 write_session(error_result)
                 all_results.append(error_result)
                 print(f"  ERROR: {run_id} -- {e}")
-
-        if args.pilot:
-            break
 
     # Write cost summary after all runs
     write_cost_summary(all_results)
