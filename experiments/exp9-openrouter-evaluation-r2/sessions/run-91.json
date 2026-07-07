@@ -1,0 +1,11 @@
+{
+  "run_id": "run-91",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "model_key": "gemma4",
+  "response_text": "{\n  \"session_id\": \"run-91\",\n  \"lens\": \"scout\",\n  \"relevant_files\": [\n    {\n      \"path\": \"src/core/forge.rs\",\n      \"line_range\": \"1-100\",\n      \"role\": \"Definition of Forge trait and existing implementations\"\n    },\n    {\n      \"path\": \"src/core/scanner.rs\",\n      \"line_range\": \"50-200\",\n      \"role\": \"Logic for orchestrating scans across different forge providers\"\n    },\n    {\n      \"path\": \"src/providers/github.rs\",\n      \"line_range\": \"1-150\",\n      \"role\": \"Reference implementation for GitHub provider\"\n    }\n  ],\n  \"conventions\": {\n    \"commits\": \"Conventional commits (feat, fix, docs, etc.)\",\n    \"testing\": \"Unit tests in module files, integration tests in /tests directory\",\n    \"linting\": \"rustfmt and clippy\",\n    \"error_handling\": \"Custom Error enum using thiserror or anyhow for context\"\n  }",
+  "input_tokens": 1123,
+  "output_tokens": 264,
+  "latency_ms": 16123,
+  "cost_usd": 0.0001545,
+  "timestamp_utc": "2026-07-07T15:46:55Z"
+}

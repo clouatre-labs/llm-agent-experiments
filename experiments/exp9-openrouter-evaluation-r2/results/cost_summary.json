@@ -1,0 +1,58 @@
+{
+  "sonnet5": {
+    "model_key": "sonnet5",
+    "model_id": "anthropic/claude-sonnet-5",
+    "n_runs": 9,
+    "total_cost_usd": 0.359194,
+    "total_input_tokens": 15507,
+    "total_output_tokens": 32818,
+    "runs": [
+      {
+        "run_id": "run-107",
+        "latency_ms": 29800,
+        "cost_usd": 0.029586
+      },
+      {
+        "run_id": "run-108",
+        "latency_ms": 40395,
+        "cost_usd": 0.040416
+      },
+      {
+        "run_id": "run-109",
+        "latency_ms": 41190,
+        "cost_usd": 0.040126
+      },
+      {
+        "run_id": "run-110",
+        "latency_ms": 40358,
+        "cost_usd": 0.038646
+      },
+      {
+        "run_id": "run-111",
+        "latency_ms": 36737,
+        "cost_usd": 0.035746
+      },
+      {
+        "run_id": "run-112",
+        "latency_ms": 42415,
+        "cost_usd": 0.044406
+      },
+      {
+        "run_id": "run-113",
+        "latency_ms": 45596,
+        "cost_usd": 0.044406
+      },
+      {
+        "run_id": "run-114",
+        "latency_ms": 43504,
+        "cost_usd": 0.041456
+      },
+      {
+        "run_id": "run-115",
+        "latency_ms": 45814,
+        "cost_usd": 0.044406
+      }
+    ],
+    "mean_cost_usd": 0.0399104444
+  }
+}
