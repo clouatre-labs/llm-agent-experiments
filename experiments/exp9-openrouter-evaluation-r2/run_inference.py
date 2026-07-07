@@ -1,7 +1,7 @@
 """
 run_inference.py -- Experiment 9: OpenRouter Model Evaluation (Round 2)
 
-Runs Gemma 4 26B-A4B, Claude Haiku 4.5, and Claude Sonnet 4.6 through
+Runs Gemma 4 26B-A4B, Claude Haiku 4.5, and Claude Sonnet 5 through
 a single OpenRouter endpoint (base_url=https://openrouter.ai/api/v1) on
 the exp9 runner prompt (adapted from exp3 SCOUT instructions for #1205).
 
@@ -15,7 +15,7 @@ OpenRouter base URL: https://openrouter.ai/api/v1
   uv run python run_inference.py [--dry-run] [--model MODEL_KEY] [--runs N] [--pilot]
 
   --dry-run   Print config and exit; no API calls
-  --model     One of: gemma4, haiku45, sonnet46 (default: all)
+  --model     One of: gemma4, haiku45, sonnet5 (default: all)
   --runs      Number of runs per model (default: 10)
   --pilot     Run only one run per model (run-86, run-96, run-106) and exit
 """
@@ -68,8 +68,8 @@ MODEL_CONFIGS = {
         "input_price_per_mtok": 1.00,
         "output_price_per_mtok": 5.00,
     },
-    "sonnet46": {
-        "model_id": "anthropic/claude-sonnet-4.6",
+    "sonnet5": {
+        "model_id": "anthropic/claude-sonnet-5",
         "run_ids": [
             "run-106",
             "run-107",
@@ -82,8 +82,8 @@ MODEL_CONFIGS = {
             "run-114",
             "run-115",
         ],
-        "input_price_per_mtok": 3.00,
-        "output_price_per_mtok": 15.00,
+        "input_price_per_mtok": 2.00,
+        "output_price_per_mtok": 10.00,
     },
 }
 
@@ -98,7 +98,7 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 PILOT_RUN_IDS = {
     "gemma4": "run-86",
     "haiku45": "run-96",
-    "sonnet46": "run-106",
+    "sonnet5": "run-106",
 }
 
 
