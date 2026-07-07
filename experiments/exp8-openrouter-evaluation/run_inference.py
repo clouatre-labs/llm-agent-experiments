@@ -124,7 +124,9 @@ def compute_cost_usd(input_tokens: int, output_tokens: int, config: dict) -> flo
     return round(input_cost + output_cost, 10)
 
 
-def run_single(run_id: str, model_key: str, prompt: str, dry_run: bool) -> dict:
+def run_single(
+    run_id: str, model_key: str, prompt: str, client: openai.OpenAI, dry_run: bool
+) -> dict:
     """Run inference via OpenRouter endpoint using the OpenAI SDK."""
     config = MODEL_CONFIGS[model_key]
     model_id = config["model_id"]
@@ -142,7 +144,6 @@ def run_single(run_id: str, model_key: str, prompt: str, dry_run: bool) -> dict:
             "timestamp_utc": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
 
-    client = build_client()
     start = time.monotonic()
 
     max_retries = 3
@@ -320,6 +321,9 @@ def main():
     # Read the runner prompt
     prompt = read_runner_prompt()
 
+    # Build client once; reuse across all runs
+    client = build_client()
+
     # Determine which models to run
     model_keys = [args.model] if args.model else list(MODEL_CONFIGS.keys())
 
@@ -332,7 +336,7 @@ def main():
         for run_id in config["run_ids"][: args.runs]:
             print(f"  Starting {run_id}...")
             try:
-                result = run_single(run_id, model_key, prompt, dry_run=False)
+                result = run_single(run_id, model_key, prompt, client, dry_run=False)
                 write_session(result)
                 append_latency_log(result)
                 all_results.append(result)
