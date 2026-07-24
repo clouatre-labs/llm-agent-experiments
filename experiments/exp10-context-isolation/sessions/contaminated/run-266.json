@@ -1,0 +1,15 @@
+{
+  "run_id": "run-266",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the different components:\n\n**Math Problem Solution:**\n*   **Ezra's total books:** 300 (already read) + 150 (decided to read) = 450 books.\n*   **Ahmed's total books:** Since Ezra read twice as many as Ahmed in that hour, Ahmed read 150 books (300 \u00f7 2).\n*   **Altogether:** 450 + 150 = **600 books.**\n\n**Summary of the Dialogue:**\nThe Planner and Executor are coordinating schedules for next week. They have set a team standup for Monday at 10 AM and a quarterly review for Thursday from 1 PM to 3 PM. The Executor will invite the product team and engineering leads, ensuring an agenda is drafted and shared for feedback prior to sending the invites.\n\n**Analysis of the Final Paragraph:**\nThe final paragraph is a collection of disparate sentences. It begins with academic/formal language regarding research methodology and literature reviews, transitions into a famous English pangram (\"The quick brown fox jumps over the lazy dog...\"), and concludes with a sentence regarding scientific validation.",
+  "gold_answer": "675",
+  "input_tokens": 296,
+  "output_tokens": 254,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3635,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:03Z"
+}

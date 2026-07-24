@@ -1,0 +1,15 @@
+{
+  "run_id": "run-137",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, we need to calculate the ages step-by-step:\n\n1.  **Find Dora's current age:**\n    Dora will be 12 in 3 years.\n    $12 - 3 = 9$. So, Dora is currently **9 years old**.\n\n2.  **Find James's current age:**\n    James is twice as old as Dora.\n    $9 \\times 2 = 18$. So, James is currently **18 years old**.\n\n3.  **Find John's current age:**\n    John had James when he was 19. Since James is 18, John must be $19 + 18 = 37$.\n    John is currently **37 years old**.\n\n4.  **Find the youngest son's current age:**\n    The youngest son was born when John was 32.\n    Since John is 37, the son is $37 - 32 = 5$.\n    The youngest son is currently **5 years old**.\n\n5.  **Find the youngest son's age in 3 years:**\n    $5 + 3 = 8$.\n\n**The youngest son will be 8 years old in 3 years.**",
+  "gold_answer": "8",
+  "input_tokens": 303,
+  "output_tokens": 276,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11286,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:12Z"
+}

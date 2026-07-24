@@ -1,0 +1,15 @@
+{
+  "run_id": "run-153",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "They will collectively read **3** books.\n\nHere is the breakdown:\n1.  **Dolly's books:** 2\n2.  **Pandora's book:** 1\n3.  **Total unique books:** 3\n\nSince they are reading each other's books, they are simply sharing the same set of 3 books.",
+  "gold_answer": "6",
+  "input_tokens": 258,
+  "output_tokens": 76,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2432,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:48Z"
+}

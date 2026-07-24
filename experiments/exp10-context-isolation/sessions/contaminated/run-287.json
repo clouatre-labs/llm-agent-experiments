@@ -1,0 +1,15 @@
+{
+  "run_id": "run-287",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Watson's earnings for April, we first need to determine the number of working days in that month. Since the prompt does not specify a year, we will use a standard 30-day month (which is typical for April) and assume a standard 5-day work week.\n\n**1. Calculate Weekly Earnings:**\n*   **Daily Pay:** 10 hours \u00d7 $10/hour = $100 per day.\n*   **Weekly Base Pay:** $100/day \u00d7 5 days = $500 per week.\n*   **Weekly Total (with bonus):** $500 + $300 bonus = $800 per week.\n\n**2. Calculate Monthly Earnings:**\nA standard month contains approximately 4.34 weeks, but in a business context, we usually calculate based on the number of workdays. \n\n*   **Total Workdays in April:** In a typical 30-day month, there are approximately **22 working days** (assuming a Monday\u2013Friday schedule).\n*   **Total Base Pay:** 22 days \u00d7 $100/day = $2,200.\n*   **Total Bonuses:** April spans 4 full weeks and a few extra days. Since the bonus is awarded \"each week,\" Watson would receive the bonus **4 times**.\n*   **Total Bonus Pay:** 4 weeks \u00d7 $300 = $1,200.\n\n**Total Earnings:** $2,200 (Base) + $1,200 (Bonus) = **$3,400.**\n\n***\n\n*Note: If calculating strictly by the 4-week mathematical average often used in payroll ($800/week \u00d7 4.34 weeks), the amount would be approximately $3,472. However, based on standard working days, **$3,400** is the most practical estimate.*",
+  "gold_answer": "3200",
+  "input_tokens": 301,
+  "output_tokens": 416,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14197,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:18Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-146",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of letters delivered from Monday to Wednesday, we calculate the amount for each day step-by-step:\n\n1.  **Monday:**\n    425 letters\n\n2.  **Tuesday:**\n    The problem states Tuesday was \"17 more than one-fifth as many as Monday.\"\n    *   One-fifth of Monday: $425 / 5 = 85$\n    *   17 more than that: $85 + 17 = 102$ letters\n\n3.  **Wednesday:**\n    The problem states Wednesday was \"5 more than twice as many as Tuesday.\"\n    *   Twice Tuesday: $102 \\times 2 = 204$\n    *   5 more than that: $204 + 5 = 209$ letters\n\n4.  **Total (Monday - Wednesday):**\n    $425 \\text{ (Mon)} + 102 \\text{ (Tue)} + 209 \\text{ (Wed)} = \\mathbf{736}$ **letters**",
+  "gold_answer": "736",
+  "input_tokens": 300,
+  "output_tokens": 239,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 866,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:32Z"
+}

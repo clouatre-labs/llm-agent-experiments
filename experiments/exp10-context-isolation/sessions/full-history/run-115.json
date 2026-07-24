@@ -1,0 +1,15 @@
+{
+  "run_id": "run-115",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Damien makes in a 30-day month, you can follow these steps:\n\n1.  **Calculate daily earnings:** 10 bottle caps \u00d7 $0.25 per cap = **$2.50 per day**.\n2.  **Calculate monthly earnings:** $2.50 per day \u00d7 30 days = **$75.00**.\n\nDamien makes **$75.00** in a 30-day month.",
+  "gold_answer": "75",
+  "input_tokens": 298,
+  "output_tokens": 107,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3361,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:59Z"
+}

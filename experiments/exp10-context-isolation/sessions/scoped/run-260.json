@@ -1,0 +1,15 @@
+{
+  "run_id": "run-260",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Janet makes at the farmers' market every day, we can follow these steps:\n\n1.  **Total eggs laid per day:** 16\n2.  **Eggs used for breakfast:** 3\n3.  **Eggs used for muffins:** 4\n4.  **Total eggs used:** $3 + 4 = 7$\n5.  **Eggs remaining to sell:** $16 - 7 = 9$\n6.  **Total revenue:** $9 \\text{ eggs} \\times \\$2 \\text{ per egg} = \\$18$\n\nJanet makes **$18** every day at the farmers' market.",
+  "gold_answer": "18",
+  "input_tokens": 257,
+  "output_tokens": 144,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4905,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:17Z"
+}

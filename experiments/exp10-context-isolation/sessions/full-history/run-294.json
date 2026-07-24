@@ -1,0 +1,15 @@
+{
+  "run_id": "run-294",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours Doctor Jones has left to update his records, we need to subtract his clinical duties from his total time at the clinic.\n\n**1. Calculate total time spent on appointments:**\n*   10 appointments \u00d7 30 minutes each = 300 minutes\n*   300 minutes \u00f7 60 minutes = **5 hours**\n\n**2. Calculate total time spent on rounds:**\n*   9 inpatients \u00d7 20 minutes each = 180 minutes\n*   180 minutes \u00f7 60 minutes = **3 hours**\n\n**3. Calculate total time spent on duties:**\n*   5 hours (appointments) + 3 hours (rounds) = **8 hours**\n\n**4. Calculate remaining time:**\n*   9 total hours - 8 hours of duties = **1 hour**\n\nDoctor Jones will have **1 hour** left to update his records.",
+  "gold_answer": "1",
+  "input_tokens": 297,
+  "output_tokens": 194,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2498,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:40Z"
+}

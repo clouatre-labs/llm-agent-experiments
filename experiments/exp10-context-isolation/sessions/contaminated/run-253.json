@@ -1,0 +1,15 @@
+{
+  "run_id": "run-253",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many years ago Raymond's son was born, we can follow these steps:\n\n1.  **Determine Samantha's age:** 31 years old.\n2.  **Determine Raymond's age:** Since Raymond was born 6 years before Samantha, he is 6 years older than her.\n    *   $31 + 6 = 37$ years old.\n3.  **Determine the son's age:** Raymond had his son when he was 23.\n    *   $37 - 23 = 14$ years old.\n\n**Raymond's son was born 14 years ago.**",
+  "gold_answer": "14",
+  "input_tokens": 301,
+  "output_tokens": 142,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4438,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:01Z"
+}

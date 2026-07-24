@@ -1,0 +1,15 @@
+{
+  "run_id": "run-006",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Gunther found **35** bananas in the pile.\n\nHere is the step-by-step breakdown:\n1. **Initial amount:** 48 bananas\n2. **Arnold steals half:** 48 - 24 = 24 bananas remaining\n3. **Gunther adds 25:** 24 + 25 = 49 bananas\n4. **Arnold steals 12:** 49 - 12 = 37 bananas\n5. **Gunther adds 6:** 37 + 6 = 43 bananas... \n\n*Wait, let me re-calculate carefully:*\n1. Start: **48**\n2. Arnold steals half (24): 48 - 24 = **24**\n3. Gunther adds 25: 24 + 25 = **49**\n4. Arnold steals 12: 49 - 12 = **37**\n5. Gunther adds 6: 37 + 6 = **43**\n\n**Correction:** Gunther found **43** bananas in the pile.",
+  "gold_answer": "43",
+  "input_tokens": 310,
+  "output_tokens": 245,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5060,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:37Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-025",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Scarlett spent, we need to calculate the cost of each item category and then add them together.\n\n1.  **Aquarium:** $10.00\n2.  **Rocks:** 2 bags \u00d7 $2.50 = $5.00\n3.  **Coral:** 3 pieces \u00d7 $2.00 = $6.00\n4.  **Fish:** 20 fish \u00d7 $0.50 = $10.00\n5.  **Fish Food:** $2.00\n\n**Total Calculation:**\n$10.00 (Aquarium) + $5.00 (Rocks) + $6.00 (Coral) + $10.00 (Fish) + $2.00 (Food) = **$33.00**\n\nScarlett spent **$33.00**.",
+  "gold_answer": "33",
+  "input_tokens": 278,
+  "output_tokens": 194,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2960,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:55Z"
+}

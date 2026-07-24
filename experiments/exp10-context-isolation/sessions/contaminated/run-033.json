@@ -1,0 +1,15 @@
+{
+  "run_id": "run-033",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Elvis is 18 miles east of his house.**\n\n**Calculation:**\n1.  **Westward journey:** 5 hours \u00d7 18 mph = 90 miles west.\n2.  **Eastward journey:** 8 hours \u00d7 18 mph = 144 miles east.\n3.  **Net distance:** 144 miles (east) - 90 miles (west) = **54 miles east.**\n\n***Correction to the logic above:***\n*   Distance West: $5 \\times 18 = 90$ miles.\n*   Distance East: $8 \\times 18 = 144$ miles.\n*   Final position: $144 - 90 = 54$ miles.\n\n**Elvis is 54 miles from his house.**",
+  "gold_answer": "54",
+  "input_tokens": 297,
+  "output_tokens": 191,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6875,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:07Z"
+}

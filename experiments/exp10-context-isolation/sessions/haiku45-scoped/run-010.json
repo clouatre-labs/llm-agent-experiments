@@ -1,0 +1,15 @@
+{
+  "run_id": "run-010",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Sally's Balloon Problem\n\nLet me work through this step-by-step.\n\n**Initial balloons:**\n- Red: 25\n- Green: 7\n- Yellow: 12\n- **Total: 44 balloons**\n\n**After the wind burst 40% of red balloons:**\n- Red balloons burst: 25 \u00d7 0.40 = 10\n- Red balloons remaining: 25 - 10 = 15\n\n**After Sally accidentally released half the yellow balloons:**\n- Yellow balloons released: 12 \u00f7 2 = 6\n- Yellow balloons remaining: 12 - 6 = 6\n\n**Balloons before finding blue ones:**\n- Red: 15\n- Green: 7\n- Yellow: 6\n- **Subtotal: 28 balloons**\n\n**Finding and adding blue balloons:**\n- Blue balloons found: 8\n- 75% of blue balloons: 8 \u00d7 0.75 = 6\n- Blue balloons added: 6\n\n**Final count:**\n28 + 6 = **34 balloons**\n\nSally carried **34 balloons** into the school.",
+  "gold_answer": "34",
+  "input_tokens": 288,
+  "output_tokens": 279,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6818,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

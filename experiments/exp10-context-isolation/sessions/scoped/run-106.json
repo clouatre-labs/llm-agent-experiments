@@ -1,0 +1,15 @@
+{
+  "run_id": "run-106",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many more chocolate bars Peter has in each box than Martha, we need to calculate the number of bars per box for each person.\n\n**1. Calculate Peter's chocolate bars per box:**\nPeter has 64 bars in total, divided into 4 boxes.\n$64 \\div 4 = 16$ bars per box.\n\n**2. Calculate Martha's chocolate bars per box:**\nMartha has 56 bars in total, divided into 7 boxes.\n$56 \\div 7 = 8$ bars per box.\n\n**3. Find the difference:**\nSubtract Martha's bars per box from Peter's bars per box.\n$16 - 8 = 8$\n\n**Answer:**\nPeter has **8** more chocolate bars in each box than Martha.",
+  "gold_answer": "8",
+  "input_tokens": 256,
+  "output_tokens": 176,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2342,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:18Z"
+}

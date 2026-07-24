@@ -1,0 +1,15 @@
+{
+  "run_id": "run-256",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the size of Peter's locker, we can calculate it step-by-step based on the information provided:\n\n1.  **Timothy's locker:** 24 cubic inches.\n2.  **Zack's locker:** Half of Timothy's ($24 \\div 2$) = 12 cubic inches.\n3.  **Peter's locker:** 1/4 of Zack's ($12 \\div 4$) = 3 cubic inches.\n\n**Peter's locker is 3 cubic inches.**",
+  "gold_answer": "3",
+  "input_tokens": 308,
+  "output_tokens": 117,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4157,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:33Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-196",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of customers counted on the third day, we can break down the information provided:\n\n1.  **Day 1:** 100 customers.\n2.  **Day 2:** 50 more than the first day (100 + 50) = 150 customers.\n3.  **Total for Day 1 and Day 2:** 100 + 150 = 250 customers.\n4.  **Total for all three days:** 500 customers.\n\nTo find the count for the **third day**, subtract the sum of the first two days from the total:\n500 - 250 = **250 customers**.",
+  "gold_answer": "250",
+  "input_tokens": 302,
+  "output_tokens": 156,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3510,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:48Z"
+}

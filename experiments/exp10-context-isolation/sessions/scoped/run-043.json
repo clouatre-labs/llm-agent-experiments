@@ -1,0 +1,15 @@
+{
+  "run_id": "run-043",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of votes the loser received, we can follow these steps:\n\n1.  **Identify the total number of votes:** 80\n2.  **Calculate the winner's votes:** The winner got $\\frac{3}{4}$ of the votes.\n    $$80 \\times \\frac{3}{4} = 60 \\text{ votes}$$\n3.  **Calculate the loser's votes:** Subtract the winner's votes from the total number of votes.\n    $$80 - 60 = 20 \\text{ votes}$$\n\n**Alternatively:**\nIf the winner got $\\frac{3}{4}$ of the votes, the loser must have received the remaining fraction:\n$$1 - \\frac{3}{4} = \\frac{1}{4}$$\nCalculate $\\frac{1}{4}$ of the total votes:\n$$80 \\times \\frac{1}{4} = 20 \\text{ votes}$$\n\n**The loser got 20 votes.**",
+  "gold_answer": "20",
+  "input_tokens": 259,
+  "output_tokens": 218,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4216,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:00Z"
+}

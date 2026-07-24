@@ -1,0 +1,15 @@
+{
+  "run_id": "run-156",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many people showed up for Martha's party, we need to calculate the total invited and subtract those who could not attend.\n\n**1. Calculate the total number of people invited:**\n*   2 families $\\times$ 6 people = 12 people\n*   3 families $\\times$ 4 people = 12 people\n*   **Total invited:** 12 + 12 = **24 people**\n\n**2. Calculate the total number of people who could not attend:**\n*   Illness: 8 people\n*   Previous commitments: 1/4 of the number of people ill $\\rightarrow$ $1/4 \\times 8 = 2$ people\n*   **Total unable to attend:** 8 + 2 = **10 people**\n\n**3. Calculate the final attendance:**\n*   Total invited (24) - Total unable to attend (10) = **14 people**\n\n**14 people** showed up for Martha's party.",
+  "gold_answer": "14",
+  "input_tokens": 300,
+  "output_tokens": 217,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7539,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:41Z"
+}

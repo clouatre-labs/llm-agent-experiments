@@ -1,0 +1,15 @@
+{
+  "run_id": "run-029",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the length of the longer piece, we can use a simple algebraic equation:\n\n1.  Let $x$ be the length of the shorter piece.\n2.  The longer piece is 4 times longer, so its length is $4x$.\n3.  The total length of the board is 40 feet, so:\n    $x + 4x = 40$\n4.  Combine like terms:\n    $5x = 40$\n5.  Solve for $x$:\n    $x = 8$\n6.  Calculate the length of the longer piece ($4x$):\n    $4 \\times 8 = 32$\n\n**The longer piece is 32 feet long.**",
+  "gold_answer": "32",
+  "input_tokens": 287,
+  "output_tokens": 162,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6612,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:06Z"
+}

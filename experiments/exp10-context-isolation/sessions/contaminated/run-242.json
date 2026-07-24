@@ -1,0 +1,15 @@
+{
+  "run_id": "run-242",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of messages James delivers, we can break the problem down into two steps:\n\n1.  **Find the number of messages delivered to Mr. Yu:**\n    James delivers 1/3 as many messages to Mr. Yu as he does to Ms. Thompson.\n    $66 \\times \\frac{1}{3} = 22$ messages.\n\n2.  **Calculate the total:**\n    Add the messages for Ms. Thompson and Mr. Yu together.\n    $66 + 22 = 88$ messages.\n\n**James delivers a total of 88 messages.**",
+  "gold_answer": "88",
+  "input_tokens": 291,
+  "output_tokens": 133,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2400,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:56Z"
+}

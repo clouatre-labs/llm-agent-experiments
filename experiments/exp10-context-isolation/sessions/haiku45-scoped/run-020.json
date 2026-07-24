@@ -1,0 +1,15 @@
+{
+  "run_id": "run-020",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Fairy Problem\n\nLet me work through this step-by-step, ignoring the unrelated text that follows.\n\n**Step 1: Initial number of fairies**\n- Katelyn saw 50 fairies\n\n**Step 2: Fairies joining from the east**\n- Her friend saw half as many as Katelyn saw\n- Half of 50 = 25 fairies\n- These 25 fairies join the original group\n- Total fairies now: 50 + 25 = 75 fairies\n\n**Step 3: Fairies flying away**\n- 30 fairies flew away\n- Remaining fairies: 75 - 30 = 45 fairies\n\n**Final Answer: 45 fairies are remaining**",
+  "gold_answer": "45",
+  "input_tokens": 266,
+  "output_tokens": 180,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3043,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:32Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-023",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of one carrot, we can break down the daily expenses step-by-step:\n\n1.  **Identify the cost of the salad:**\n    The salad costs **$6**.\n\n2.  **Calculate the cost of the yogurt:**\n    The yogurt is half the price of the salad ($6 / 2), which is **$3**.\n\n3.  **Calculate the combined cost of the salad and yogurt:**\n    $6 (salad) + $3 (yogurt) = **$9**.\n\n4.  **Determine the total cost spent on carrots:**\n    Ellen spends $11 in total. Subtract the cost of the salad and yogurt from the total:\n    $11 (total) - $9 (salad and yogurt) = **$2**.\n\n5.  **Calculate the cost of one carrot:**\n    Since Ellen eats two carrots every day for a total of $2, divide the carrot total by two:\n    $2 / 2 = **$1**.\n\n**Ellen pays $1 for one carrot every day.**",
+  "gold_answer": "1",
+  "input_tokens": 250,
+  "output_tokens": 227,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4388,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:55Z"
+}

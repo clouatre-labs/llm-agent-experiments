@@ -1,0 +1,15 @@
+{
+  "run_id": "run-110",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of thorns, you multiply the number of bushes by the roses per bush, and then by the thorns per rose:\n\n3 bushes \u00d7 25 roses/bush = 75 roses\n75 roses \u00d7 8 thorns/rose = **600 thorns**",
+  "gold_answer": "600",
+  "input_tokens": 298,
+  "output_tokens": 61,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1315,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:56Z"
+}

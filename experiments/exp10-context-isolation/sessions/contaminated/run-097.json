@@ -1,0 +1,15 @@
+{
+  "run_id": "run-097",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many sunflowers Faraday sold after 3 days, we need to calculate the daily sales and then multiply by three.\n\n**1. Calculate sunflowers sold from individual sales per day:**\n*   Daily earnings from individual sunflowers: $26\n*   Price per sunflower: $2\n*   $26 / $2 = **13 sunflowers**\n\n**2. Calculate sunflowers sold from bouquets per day:**\n*   Daily earnings from bouquets: $56\n*   Price per bouquet: $8\n*   $56 / $8 = 7 bouquets\n*   Since each bouquet contains 12 sunflowers: 7 bouquets \u00d7 12 sunflowers = **84 sunflowers**\n\n**3. Calculate total sunflowers sold per day:**\n*   13 (individual) + 84 (in bouquets) = **97 sunflowers per day**\n\n**4. Calculate total sunflowers sold after 3 days:**\n*   97 sunflowers \u00d7 3 days = **291 sunflowers**\n\nFaraday was able to sell **291 sunflowers** after 3 days.",
+  "gold_answer": "291",
+  "input_tokens": 298,
+  "output_tokens": 230,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2650,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:19Z"
+}

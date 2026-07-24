@@ -1,0 +1,15 @@
+{
+  "run_id": "run-273",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Mark's initial weight, you can follow these steps:\n\n1.  **Calculate the total weight lost:** Mark lost 10 pounds per month for 3 months.\n    $10 \\text{ lbs/month} \\times 3 \\text{ months} = 30 \\text{ lbs lost}$\n\n2.  **Add the weight lost back to the final weight:** His final weight was 70 pounds.\n    $70 \\text{ lbs (final weight)} + 30 \\text{ lbs (lost weight)} = 100 \\text{ lbs}$\n\n**Mark's initial weight was 100 pounds.**",
+  "gold_answer": "100",
+  "input_tokens": 256,
+  "output_tokens": 143,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2985,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:18Z"
+}

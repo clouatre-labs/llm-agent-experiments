@@ -1,0 +1,15 @@
+{
+  "run_id": "run-035",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the cost for Angela's installation:\n\n1.  **Identify the base package:**\n    *   Base cost: **$129.00**\n    *   Includes: 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.\n\n2.  **List Angela's items and subtract the base package items:**\n    *   **Mirrors:** 6 total - 4 included = **2 extra**\n    *   **Chandeliers:** 2 total - 1 included = **1 extra**\n    *   **Pictures:** 20 total - 10 included = **10 extra**\n    *   **Shelves:** 0 total - 2 included = (0 extra)\n\n3.  **Calculate total extra items:**\n    *   2 (mirrors) + 1 (chandelier) + 10 (pictures) = **13 extra items**\n\n4.  **Calculate the additional cost:**\n    *   13 items \u00d7 $15.00 per item = **$195.00**\n\n5.  **Calculate the total cost:**\n    *   $129.00 (base) + $195.00 (extra) = **$324.00**\n\n**Total Cost: $324.00**",
+  "gold_answer": "324",
+  "input_tokens": 315,
+  "output_tokens": 293,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3505,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:04Z"
+}

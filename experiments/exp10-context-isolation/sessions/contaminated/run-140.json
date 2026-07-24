@@ -1,0 +1,15 @@
+{
+  "run_id": "run-140",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here is the answer to the math problem embedded in the dialogue:\n\n**Total flowers planted: 140**\n\n**Calculation:**\n*   **Geraniums:** 90\n*   **Petunias:** 50 (90 - 40)\n*   **Total:** 90 + 50 = 140",
+  "gold_answer": "140",
+  "input_tokens": 295,
+  "output_tokens": 83,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1453,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:31Z"
+}

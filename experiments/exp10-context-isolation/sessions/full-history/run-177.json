@@ -1,0 +1,15 @@
+{
+  "run_id": "run-177",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of teaspoons of sugar Katy used, follow these steps:\n\n1.  **Identify the ratio:** The ratio of sugar to water is **7:13**.\n2.  **Calculate the total parts in the ratio:** $7 + 13 = 20$ parts.\n3.  **Determine the value of one \"part\":** The total amount used is 120 units. Divide the total by the number of parts:\n    $120 \\div 20 = 6$.\n4.  **Calculate the amount of sugar:** Since sugar represents 7 parts of the ratio, multiply the value of one part by 7:\n    $7 \\times 6 = 42$.\n\n**Answer:** Katy used **42** teaspoonfuls of sugar.",
+  "gold_answer": "42",
+  "input_tokens": 294,
+  "output_tokens": 173,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2095,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:13Z"
+}

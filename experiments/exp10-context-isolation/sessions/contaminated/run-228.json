@@ -1,0 +1,15 @@
+{
+  "run_id": "run-228",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many chips each person gets, follow these steps:\n\n1.  **Calculate the total number of chips:** Mitchell bought 2 bags with 55 chips each.\n    $2 \\times 55 = 110$ chips.\n2.  **Divide by the number of family members:** There are 5 people in the family.\n    $110 \\div 5 = 22$ chips.\n\nEach person gets **22 chips**.",
+  "gold_answer": "22",
+  "input_tokens": 285,
+  "output_tokens": 104,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 696,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:51Z"
+}

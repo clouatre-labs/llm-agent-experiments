@@ -1,0 +1,15 @@
+{
+  "run_id": "run-292",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of hours Josh spent working out, we need to break down the 8-week period based on the information provided:\n\n1.  **Identify the \"special\" weeks:**\n    *   Two consecutive weeks: 5 hours each ($2 \\times 5 = 10$ hours).\n    *   One week: 6 hours ($1 \\times 6 = 6$ hours).\n    *   **Total special weeks:** 3 weeks.\n    *   **Total special hours:** 16 hours.\n\n2.  **Identify the \"standard\" weeks:**\n    *   Total weeks in the period: 8 weeks.\n    *   Remaining weeks: $8 - 3 = 5$ weeks.\n    *   Standard hours per week: 4 hours.\n    *   **Total standard hours:** $5 \\times 4 = 20$ hours.\n\n3.  **Calculate the grand total:**\n    *   $16 \\text{ (special)} + 20 \\text{ (standard)} = 36 \\text{ hours}$.\n\nJosh spent a total of **36 hours** working out across the 8 weeks.",
+  "gold_answer": "36",
+  "input_tokens": 290,
+  "output_tokens": 256,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10326,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:47Z"
+}

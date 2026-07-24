@@ -1,0 +1,15 @@
+{
+  "run_id": "run-071",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of loaves sold in the afternoon, we can follow these steps:\n\n1.  **Total loaves produced:** 60\n2.  **Sold in the morning:** Two-thirds of 60.\n    $$\\frac{2}{3} \\times 60 = 40 \\text{ loaves}$$\n3.  **Loaves remaining after the morning:**\n    $$60 - 40 = 20 \\text{ loaves}$$\n4.  **Amount sold in the afternoon and evening combined:** Half of what is left.\n    $$\\frac{1}{2} \\times 20 = 10 \\text{ loaves}$$\n5.  **Amount sold in the afternoon:** Since the 10 loaves are sold **equally** between the afternoon and evening:\n    $$10 \\div 2 = 5 \\text{ loaves}$$\n\n**Answer:** 5 loaves of bread are sold in the afternoon.",
+  "gold_answer": "10",
+  "input_tokens": 258,
+  "output_tokens": 205,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2977,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:29:57Z"
+}

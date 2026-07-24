@@ -1,0 +1,15 @@
+{
+  "run_id": "run-109",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Dean has left, we can follow these steps:\n\n1.  **Initial amount:** $28\n2.  **Cost of toy cars:** 6 cars \u00d7 $2 each = $12\n3.  **Cost of teddy bears:** 5 bears \u00d7 $1 each = $5\n4.  **Total spent:** $12 + $5 = $17\n5.  **Remaining after shopping:** $28 - $17 = $11\n6.  **Extra money received:** $11 + $10 = $21\n\nDean has **$21** left.",
+  "gold_answer": "21",
+  "input_tokens": 296,
+  "output_tokens": 137,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3834,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:23Z"
+}

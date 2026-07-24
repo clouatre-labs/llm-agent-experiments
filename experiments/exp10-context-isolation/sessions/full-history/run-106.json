@@ -1,0 +1,15 @@
+{
+  "run_id": "run-106",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many more chocolate bars Peter has in each box than Martha, we can follow these steps:\n\n1.  **Calculate the number of chocolate bars per box for Peter:**\n    Peter has 64 bars in total across 4 boxes.\n    $64 \\div 4 = 16$ bars per box.\n\n2.  **Calculate the number of chocolate bars per box for Martha:**\n    Martha has 56 bars in total across 7 boxes.\n    $56 \\div 7 = 8$ bars per box.\n\n3.  **Find the difference:**\n    $16 - 8 = 8$\n\nPeter has **8** more chocolate bars in each box than Martha.",
+  "gold_answer": "8",
+  "input_tokens": 293,
+  "output_tokens": 156,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1926,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:56Z"
+}

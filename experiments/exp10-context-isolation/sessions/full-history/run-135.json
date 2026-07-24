@@ -1,0 +1,15 @@
+{
+  "run_id": "run-135",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Newton brought home **7** apples.\n\nHere is the breakdown:\n1. **Initial fall:** 2 apples fall. Newton puts 1 in his pocket and throws 1 back. (Pocket: 1)\n2. **Second fall:** 5 apples fall. Newton puts all but one in his pocket and throws the last one. (Pocket: 1 + 4 = 5)\n3. **Third fall:** 6 apples fall. Newton picks up all of them. (Pocket: 5 + 6 = 11)\n4. **Wait, let's re-calculate based on the exact wording:**\n\n*   **Step 1:** 2 apples fall. He puts **1** in his pocket. (Current pocket: 1)\n*   **Step 2:** 5 apples fall. He puts \"all but one\" in his pocket. That means he puts **4** in his pocket and throws 1. (Current pocket: 1 + 4 = 5)\n*   **Step 3:** 6 apples fall. He picks up **all** of them. (Current pocket: 5 + 6 = 11)\n\n**Correction:** Newton brought home **11** apples.",
+  "gold_answer": "11",
+  "input_tokens": 292,
+  "output_tokens": 264,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3645,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:04Z"
+}

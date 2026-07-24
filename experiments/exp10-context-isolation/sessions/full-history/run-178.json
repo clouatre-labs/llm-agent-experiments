@@ -1,0 +1,15 @@
+{
+  "run_id": "run-178",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of hours John spends learning per week, we need to calculate his school time and his weekend learning time separately.\n\n**1. Calculate School Time:**\n*   **Classes per day:** 6 (normal) + 2 (extra) = 8 classes.\n*   **Minutes per day:** 8 classes \u00d7 40 minutes = 320 minutes.\n*   **Minutes per week (5 days):** 320 minutes \u00d7 5 days = 1,600 minutes.\n\n**2. Calculate Weekend Learning Time:**\n*   The problem states he spends 1/16 of his **weekly minutes** (the 1,600 minutes from school) on Saturday and 1/16 on Sunday.\n*   **Saturday learning:** $1,600 \\times \\frac{1}{16} = 100$ minutes.\n*   **Sunday learning:** $1,600 \\times \\frac{1}{16} = 100$ minutes.\n\n**3. Calculate Total Weekly Minutes:**\n*   Total minutes = 1,600 (school) + 100 (Sat) + 100 (Sun) = 1,800 minutes.\n\n**4. Convert to Hours:**\n*   $1,800 \\text{ minutes} \\div 60 \\text{ minutes/hour} = 30 \\text{ hours}$.\n\nJohn spends **30 hours** a week learning.",
+  "gold_answer": "30",
+  "input_tokens": 295,
+  "output_tokens": 330,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10342,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:22Z"
+}

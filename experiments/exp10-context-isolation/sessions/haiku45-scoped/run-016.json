@@ -1,0 +1,15 @@
+{
+  "run_id": "run-016",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Finding the Number of Good Oranges\n\nLet me work through this step-by-step.\n\n**Given information:**\n- Total oranges: 25\n- Bad oranges: 1\n- Unripe oranges: 20% of 25\n- Sour oranges: 2\n- Rest are good\n\n**Step 1: Calculate the number of unripe oranges**\n- Unripe = 20% \u00d7 25 = 0.20 \u00d7 25 = 5 oranges\n\n**Step 2: Add up all the non-good oranges**\n- Bad: 1\n- Unripe: 5\n- Sour: 2\n- Total non-good: 1 + 5 + 2 = 8 oranges\n\n**Step 3: Calculate the good oranges**\n- Good oranges = Total - Non-good\n- Good oranges = 25 - 8 = **17 oranges**\n\n**Answer: 17 oranges are good**",
+  "gold_answer": "17",
+  "input_tokens": 276,
+  "output_tokens": 239,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6397,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

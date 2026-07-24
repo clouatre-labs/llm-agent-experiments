@@ -1,0 +1,15 @@
+{
+  "run_id": "run-031",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **30** elves left.\n\nHere is the breakdown:\n1. **Initial amount:** 60 elves.\n2. **First group quits:** One third of 60 is 20. (60 - 20 = 40 remaining).\n3. **Second group quits:** 10 of the remaining elves quit. (40 - 10 = 30 remaining).",
+  "gold_answer": "30",
+  "input_tokens": 296,
+  "output_tokens": 90,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3506,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:03Z"
+}

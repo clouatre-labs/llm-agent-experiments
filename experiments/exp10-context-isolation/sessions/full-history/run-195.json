@@ -1,0 +1,15 @@
+{
+  "run_id": "run-195",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of families notified during the fourth round of calls, we can model this as a geometric sequence where each round represents a power of 3.\n\n1.  **Round 1:** Ali calls **3** families.\n2.  **Round 2:** Each of those 3 families calls 3 others ($3 \\times 3$) = **9** families.\n3.  **Round 3:** Each of those 9 families calls 3 others ($9 \\times 3$) = **27** families.\n4.  **Round 4:** Each of those 27 families calls 3 others ($27 \\times 3$) = **81** families.\n\n**81 families** will be notified during the fourth round of calls.",
+  "gold_answer": "81",
+  "input_tokens": 293,
+  "output_tokens": 165,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5650,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:21Z"
+}

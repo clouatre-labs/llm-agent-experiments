@@ -1,0 +1,15 @@
+{
+  "run_id": "run-164",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the difference in the amount of laundry Raymond and David do, we first need to calculate their individual amounts based on Sarah's total.\n\n**1. Identify the given values:**\n*   **Sarah** = 400 pounds\n\n**2. Calculate David's laundry:**\n*   The problem states Sarah does 4 times as much as David.\n*   Equation: $400 = 4 \\times \\text{David}$\n*   $\\text{David} = 400 / 4 = \\mathbf{100 \\text{ pounds}}$\n\n**3. Calculate Raymond's laundry:**\n*   The problem states Raymond does half as much as Sarah.\n*   Equation: $\\text{Raymond} = 400 / 2 = \\mathbf{200 \\text{ pounds}}$\n\n**4. Calculate the difference:**\n*   $\\text{Difference} = \\text{Raymond} - \\text{David}$\n*   $200 - 100 = \\mathbf{100 \\text{ pounds}}$\n\n**Answer:**\nThe difference in the amount of laundry Raymond and David do is **100 pounds**.",
+  "gold_answer": "100",
+  "input_tokens": 287,
+  "output_tokens": 253,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8702,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:16Z"
+}

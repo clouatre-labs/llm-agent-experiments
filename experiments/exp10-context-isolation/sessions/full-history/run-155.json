@@ -1,0 +1,15 @@
+{
+  "run_id": "run-155",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total time it will take Bill to dig the well, we calculate the time for each material separately:\n\n1.  **Soil:**\n    *   Distance: 24 feet\n    *   Rate: 4 feet/hour\n    *   Time: $24 \\div 4 = \\mathbf{6 \\text{ hours}}$\n\n2.  **Clay:**\n    *   Distance: 8 feet\n    *   Rate: Half of the soil rate ($4 \\div 2 = 2$ feet/hour)\n    *   Time: $8 \\div 2 = \\mathbf{4 \\text{ hours}}$\n\n**Total Time:** $6 \\text{ hours} + 4 \\text{ hours} = \\mathbf{10 \\text{ hours}}$",
+  "gold_answer": "10",
+  "input_tokens": 288,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2576,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:08Z"
+}

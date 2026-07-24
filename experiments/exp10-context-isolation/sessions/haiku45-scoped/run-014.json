@@ -1,0 +1,15 @@
+{
+  "run_id": "run-014",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step.\n\n**Test 1 (Yesterday):**\n- Total questions: 75\n- Rate: 5 questions per hour\n- Time available: 8 hours\n- Questions completed in 8 hours: 5 \u00d7 8 = 40 questions\n- Questions left incomplete: 75 - 40 = 35 questions\n\n**Test 2 (Today):**\n- Total questions: 100\n- Rate: 5 questions per hour\n- Time available: 6 hours\n- Questions completed in 6 hours: 5 \u00d7 6 = 30 questions\n- Questions left incomplete: 100 - 30 = 70 questions\n\n**Total incomplete questions:**\n35 + 70 = **105 questions**\n\nMark left **105 questions incomplete** across both tests.",
+  "gold_answer": "105",
+  "input_tokens": 264,
+  "output_tokens": 201,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6195,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

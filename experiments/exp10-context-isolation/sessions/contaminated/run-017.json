@@ -1,0 +1,15 @@
+{
+  "run_id": "run-017",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The total cost for 6 erasers and 8 pencils is **$36**.\n\n**Breakdown:**\n*   6 erasers \u00d7 $2 = $12\n*   8 pencils \u00d7 $3 = $24\n*   $12 + $24 = $36",
+  "gold_answer": "36",
+  "input_tokens": 293,
+  "output_tokens": 63,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3202,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:59Z"
+}

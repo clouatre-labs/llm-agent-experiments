@@ -1,0 +1,15 @@
+{
+  "run_id": "run-059",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total expenditure for the two months, follow these steps:\n\n1.  **Calculate June's expenditure:**\n    May expenditure ($500) - $60 = $440.\n\n2.  **Calculate the total expenditure:**\n    May ($500) + June ($440) = $940.\n\n**Joseph's total expenditure for those two months was $940.**",
+  "gold_answer": "940",
+  "input_tokens": 255,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2187,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:48Z"
+}

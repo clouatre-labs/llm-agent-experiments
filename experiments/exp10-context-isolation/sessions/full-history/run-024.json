@@ -1,0 +1,15 @@
+{
+  "run_id": "run-024",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer your question based on the math problem provided:\n\n1.  **Identify Sara's score:** Sara scored **8** points.\n2.  **Determine Erin's current score:** The text states Erin now has three times more points than Sara.\n    *   $8 \\times 3 = 24$ points.\n3.  **Calculate Erin's previous score:** Erin currently has 24 points, but she just scored 14 points. To find her previous score, subtract the points she just earned from her current total.\n    *   $24 - 14 = 10$.\n\n**Erin had 10 points before.**",
+  "gold_answer": "18",
+  "input_tokens": 285,
+  "output_tokens": 144,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7509,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:39Z"
+}

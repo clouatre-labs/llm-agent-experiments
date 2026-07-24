@@ -1,0 +1,15 @@
+{
+  "run_id": "run-293",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Jim's age, we can follow these steps:\n\n1.  **Determine the current year:** Since Digimon's 20th anniversary was in 2021 (it launched in 2001), we can determine the timeline. However, the math relies on the relationship between the ages.\n2.  **Determine the age difference:**\n    *   John is currently **28**.\n    *   The 20th anniversary was 20 years after it came out.\n    *   If John is 28 now, and we assume the \"anniversary\" mentioned is the current context of the problem:\n    *   Let's look at the age gap: When Digimon came out, John was twice as old as Jim.\n    *   Let $x$ be Jim's age when Digimon came out.\n    *   John's age then was $2x$.\n    *   The difference in their ages is $2x - x = x$. This difference remains constant.\n3.  **Calculate based on the time elapsed:**\n    *   If the 20th anniversary is \"now\" (or the reference point for the 20 years), and John is 28:\n    *   20 years ago, John was $28 - 20 = 8$ years old.\n    *   If John was 8 when it came out, and he was twice as old as Jim, then Jim was $8 / 2 = 4$ years old.\n    *   If Jim was 4 years old 20 years ago, his current age is $4 + 20 = 24$.\n\n**Jim is 24 years old.**",
+  "gold_answer": "24",
+  "input_tokens": 257,
+  "output_tokens": 373,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4630,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

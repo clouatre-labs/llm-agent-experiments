@@ -1,0 +1,15 @@
+{
+  "run_id": "run-220",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the different components:\n\n**Math Problem Solution:**\n*   **Mom's apples:** 20\n*   **Jenna's apples:** 10 (half of 20)\n*   **Total apples:** **30**\n\n**Summary of the Planner/Executor Dialogue:**\nThe team is scheduling next week's tasks. They have set the standup for **Monday at 10 AM** and the quarterly review for **Thursday from 1 PM to 3 PM**. The Executor will invite the product team and engineering leads, ensuring an agenda is drafted and shared for feedback prior to sending the invites.\n\n**Analysis of the Final Paragraph:**\nThe final paragraph is a collection of disparate sentences. It begins with formal **academic/scientific prose** regarding literature reviews and methodology, transitions into a **pangram** (\"The quick brown fox jumps over the lazy dog...\"), and concludes with a sentence regarding **scientific validation**.",
+  "gold_answer": "30",
+  "input_tokens": 295,
+  "output_tokens": 207,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3288,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:52Z"
+}

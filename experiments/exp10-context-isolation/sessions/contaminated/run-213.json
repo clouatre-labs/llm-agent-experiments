@@ -1,0 +1,15 @@
+{
+  "run_id": "run-213",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the different components:\n\n**1. Math Problem Solution:**\n*   **Initial amount:** $500\n*   **Spent on clothes (20% of $500):** $100\n*   **Remaining after clothes:** $400\n*   **Spent on CDs (25% of $400):** $100\n*   **Final amount remaining:** **$300**\n\n**2. Summary of Dialogue (Planner & Executor):**\nThe team is coordinating schedules for next week. They have settled on a **Monday 10 AM** standup and a **Thursday 1 PM \u2013 3 PM** quarterly review. The Executor will send calendar invites to the product team and engineering leads, ensuring an agenda is drafted and shared for feedback beforehand.\n\n**3. Analysis of the Final Paragraph:**\nThe final paragraph is a collection of disparate sentences. It begins with academic/scientific jargon regarding literature reviews and methodology, transitions into a famous English pangram (*\"The quick brown fox jumps over the lazy dog...\"*), and ends with a concluding scientific statement. There is no cohesive narrative linking these sentences.",
+  "gold_answer": "300",
+  "input_tokens": 293,
+  "output_tokens": 254,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4112,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:52Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-256",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Peter's locker is **3 cubic inches** big.\n\n**Calculation:**\n1. Timothy's locker = 24 cubic inches\n2. Zack's locker = 24 / 2 = 12 cubic inches\n3. Peter's locker = 12 / 4 = 3 cubic inches",
+  "gold_answer": "3",
+  "input_tokens": 308,
+  "output_tokens": 69,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2221,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:59Z"
+}

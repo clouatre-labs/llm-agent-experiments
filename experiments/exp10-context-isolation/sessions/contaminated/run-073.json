@@ -1,0 +1,15 @@
+{
+  "run_id": "run-073",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Calculate daily working hours:** Jordan spends 2 hours playing video games. If he worked during that time, he would work 2 hours per day.\n2.  **Calculate weekly working hours:** 2 hours/day \u00d7 7 days/week = 14 hours per week.\n3.  **Calculate weekly earnings:** 14 hours \u00d7 $10/hour = **$140**.\n\nJordan would earn **$140** in one week.",
+  "gold_answer": "140",
+  "input_tokens": 289,
+  "output_tokens": 115,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4261,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:14Z"
+}

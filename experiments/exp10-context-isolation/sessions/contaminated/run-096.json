@@ -1,0 +1,15 @@
+{
+  "run_id": "run-096",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the original weight of the triceratops, we can work backward from the final amount of meat:\n\n1.  **The Allosaurus:** They ate the last **270 kg**. This represents the amount left after the velociraptors finished scavenging.\n2.  **The Velociraptors:** They scavenged **half** of what was left by the T-Rex. This means the 270 kg left for the Allosaurus represents the *other* half. \n    *   $270 \\text{ kg} \\times 2 = 540 \\text{ kg}$ (This is what was left after the T-Rex ate).\n3.  **The T-Rex:** The T-Rex ate **half** of the triceratops. This means the 540 kg remaining represents the other half of the original weight.\n    *   $540 \\text{ kg} \\times 2 = 1,080 \\text{ kg}$.\n\nThere were **1,080 kilograms** of meat on the triceratops before the T-Rex ate.",
+  "gold_answer": "1080",
+  "input_tokens": 305,
+  "output_tokens": 243,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1212,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:17Z"
+}

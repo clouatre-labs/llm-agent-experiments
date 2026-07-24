@@ -1,0 +1,15 @@
+{
+  "run_id": "run-027",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the probability problem:\n\n**1. Calculate the probability of rolling a number greater than 3:**\nOn a six-sided die, the numbers greater than 3 are {4, 5, 6}.\n*   Number of favorable outcomes = 3\n*   Total outcomes = 6\n*   $P(\\text{Greater than 3}) = \\frac{3}{6} = 0.5$ (or 50%)\n\n**2. Calculate the probability of rolling two even numbers in a row:**\nThe even numbers on a die are {2, 4, 6}.\n*   Probability of an even number on one roll = $\\frac{3}{6} = 0.5$\n*   Since the rolls are independent, $P(\\text{Even and Even}) = 0.5 \\times 0.5 = 0.25$ (or 25%)\n\n**3. Calculate the difference:**\nThe question asks how much more likely the first event is than the second, expressed as a percentage.\n*   $0.5 - 0.25 = 0.25$\n\nTo express the difference in terms of percentage points:\n**It is 25% more likely.**",
+  "gold_answer": "25",
+  "input_tokens": 296,
+  "output_tokens": 269,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8917,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:08Z"
+}

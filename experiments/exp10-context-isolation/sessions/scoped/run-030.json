@@ -1,0 +1,15 @@
+{
+  "run_id": "run-030",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Calculate daily consumption:** Imma feeds her cats 60 grams twice a day.\n    $60 \\text{ grams} \\times 2 = 120 \\text{ grams per day}$.\n2.  **Calculate how many days the food will last:** Divide the total amount of food by the daily consumption.\n    $720 \\text{ grams} \\div 120 \\text{ grams/day} = 6 \\text{ days}$.\n\n**The food will last 6 days.**",
+  "gold_answer": "2",
+  "input_tokens": 258,
+  "output_tokens": 122,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1911,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:55Z"
+}

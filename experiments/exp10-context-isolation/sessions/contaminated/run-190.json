@@ -1,0 +1,15 @@
+{
+  "run_id": "run-190",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Andrea saved, we need to work backward from her final spending:\n\n1.  **Total money spent/given away:** $11 (sweater) + $4 (brother) = **$15**\n2.  **Total money she had at the beginning:** **$36**\n3.  **The amount she \"saved\" (the money left over after her initial savings, which was then spent):** \n    Since the problem states she saved some money and *then* spent the \"rest\" of her money, we calculate the difference between her starting total and the amount she spent.\n\n    $36 (Total) - $15 (Spent) = **$21**\n\n**Andrea saved $21.**",
+  "gold_answer": "21",
+  "input_tokens": 298,
+  "output_tokens": 161,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2193,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:45Z"
+}

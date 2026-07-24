@@ -1,0 +1,15 @@
+{
+  "run_id": "run-076",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of hours for Peyton's after-work activities, we calculate the duration for each day:\n\n*   **Monday:** 1 hour (yoga class)\n*   **Tuesday:** 3 hours (3 \u00d7 1 hour cooking class)\n*   **Wednesday:** 0.5 hours (half-hour cheese-tasting)\n*   **Thursday:** 1.5 hours (half of Tuesday's 3-hour museum tour)\n*   **Friday:** 2 hours (errands)\n\n**Total:** 1 + 3 + 0.5 + 1.5 + 2 = **8 hours**",
+  "gold_answer": "8",
+  "input_tokens": 300,
+  "output_tokens": 140,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2073,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:49Z"
+}

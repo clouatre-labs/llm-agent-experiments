@@ -1,0 +1,15 @@
+{
+  "run_id": "run-274",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many bandages the nurses started with, we can work backward from the final amount or track the inventory step-by-step using an algebraic approach.\n\n**1. Track the changes day by day:**\n\n*   **Day 1:**\n    *   Used: 38\n    *   Ordered: +50 (one bulk pack)\n    *   *Net change Day 1:* $-38 + 50 = +12$\n\n*   **Day 2:**\n    *   Used: 10 fewer than Day 1 ($38 - 10 = 28$)\n    *   *Net change Day 2:* $-28$\n\n*   **Day 3:**\n    *   Ordered: +100 (two bulk packs of 50)\n    *   Used: Half a pack ($50 / 2 = 25$)\n    *   *Net change Day 3:* $+100 - 25 = +75$\n\n**2. Set up the equation:**\nLet $x$ be the number of bandages they started with.\n\n$$x + (\\text{Net Change Day 1}) + (\\text{Net Change Day 2}) + (\\text{Net Change Day 3}) = \\text{Final Amount}$$\n\n$$x + 12 - 28 + 75 = 78$$\n\n**3. Solve for $x$:**\n$$x + 59 = 78$$\n$$x = 78 - 59$$\n$$x = 19$$\n\n**Answer:**\nThe nurses started with **19** bandages on the first day.",
+  "gold_answer": "19",
+  "input_tokens": 294,
+  "output_tokens": 363,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5102,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:38Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-173",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Julia and Nadine's mother gave to each girl, we need to calculate the total amount spent and then divide that total by two.\n\n**1. Calculate the total expenses:**\n*   **Cake:** $11.00\n*   **Balloons:** They bought 1 dozen (12 balloons). The price is $0.50 for every 2 balloons.\n    *   $12 \\div 2 = 6$ units of balloons\n    *   $6 \\times \\$0.50 = \\$3.00$\n*   **Ice Cream:** 2 tubs at $7.00 each.\n    *   $2 \\times \\$7.00 = \\$14.00$\n\n**2. Calculate the total amount spent:**\n*   $\\$11.00 \\text{ (cake)} + \\$3.00 \\text{ (balloons)} + \\$14.00 \\text{ (ice cream)} = \\$28.00$\n\n**3. Calculate the allowance per girl:**\nSince the total amount ($28) was the combination of two equal allowances:\n*   $\\$28.00 \\div 2 = \\$14.00$\n\n**Answer:**\nJulia and Nadine's mother gave each of them **$14.00**.",
+  "gold_answer": "14",
+  "input_tokens": 296,
+  "output_tokens": 295,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3091,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:14Z"
+}

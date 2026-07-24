@@ -1,0 +1,15 @@
+{
+  "run_id": "run-059",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the implicit tasks:\n\n**Math Problem Solution:**\n*   **May Expenditure:** $500\n*   **June Expenditure:** $440 ($500 - $60)\n*   **Total Expenditure:** **$940**\n\n**Summary of the Dialogue:**\nThe Planner and Executor are coordinating next week's schedule. They have set the team standup for **Monday at 10 AM** and the quarterly review for **Thursday from 1 PM to 3 PM**. The Executor will invite the product team and engineering leads, ensuring the agenda is drafted and shared for feedback before the invites are sent.\n\n**Analysis of the Final Paragraph:**\nThe final paragraph is a collection of disparate sentences. It begins with academic/scientific jargon regarding literature reviews and methodology, transitions into a famous pangram (\"The quick brown fox...\"), and concludes with a statement on the need for further analysis. There is no cohesive narrative linking these sentences.",
+  "gold_answer": "940",
+  "input_tokens": 289,
+  "output_tokens": 210,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3592,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:11Z"
+}

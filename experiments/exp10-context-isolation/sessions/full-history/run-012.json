@@ -1,0 +1,15 @@
+{
+  "run_id": "run-012",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the amount of water in the remaining 24 liters, we need to calculate the water content of each component separately.\n\n**1. Analyze the Orange Drink:**\n*   **Initial amount:** 10 liters.\n*   **Spillage:** 1 liter is spilled.\n*   **Remaining amount:** $10 - 1 = 9$ liters.\n*   **Water content ratio:** $2/3$.\n*   **Water in orange drink:** $9 \\text{ liters} \\times \\frac{2}{3} = 6$ liters of water.\n\n**2. Analyze the Pineapple Drink:**\n*   **Amount:** 15 liters.\n*   **Water content ratio:** $3/5$.\n*   **Water in pineapple drink:** $15 \\text{ liters} \\times \\frac{3}{5} = 9$ liters of water.\n\n**3. Calculate the Total Water:**\n*   **Total water** = (Water from orange) + (Water from pineapple)\n*   **Total water** = $6 \\text{ liters} + 9 \\text{ liters} = 15$ liters.\n\n**Final Answer:**\nThere are **15 liters** of water in the remaining 24 liters of liquid.",
+  "gold_answer": "15",
+  "input_tokens": 293,
+  "output_tokens": 276,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4844,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:37Z"
+}

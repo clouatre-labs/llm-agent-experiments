@@ -1,0 +1,15 @@
+{
+  "run_id": "run-227",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Tim gets **3,000** lemons in a decade.\n\n**Calculation:**\n1.  **Lemons per year:** 5 trees \u00d7 6 lemons per tree = 30 lemons per year.\n2.  **Lemons per decade:** 30 lemons per year \u00d7 10 years = 300 lemons.\n\nWait, let me re-calculate that:\n1.  **Lemons per year:** 5 trees \u00d7 6 lemons = 30 lemons.\n2.  **Lemons per decade:** 30 lemons \u00d7 10 years = **300 lemons**.",
+  "gold_answer": "300",
+  "input_tokens": 297,
+  "output_tokens": 133,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4700,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:28Z"
+}

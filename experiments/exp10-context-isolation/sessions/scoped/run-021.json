@@ -1,0 +1,15 @@
+{
+  "run_id": "run-021",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of pieces, you first need to ensure both measurements are in the same unit.\n\n1.  **Convert feet to inches:** Since there are 12 inches in 1 foot, multiply the total length by 12.\n    *   $4 \\text{ feet} \\times 12 \\text{ inches/foot} = 48 \\text{ inches}$\n\n2.  **Divide by the length of each piece:** Divide the total length in inches by the length of one piece.\n    *   $48 \\text{ inches} \\div 6 \\text{ inches/piece} = 8 \\text{ pieces}$\n\nTracy obtained **8 pieces**.",
+  "gold_answer": "8",
+  "input_tokens": 257,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5213,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:55Z"
+}

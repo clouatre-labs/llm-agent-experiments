@@ -1,0 +1,15 @@
+{
+  "run_id": "run-084",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Calculate the total allowance received:**\n    $5 per week $\\times$ 8 weeks = $40.\n\n2.  **Determine the starting amount:**\n    Total amount at the end ($100) $-$ Total allowance ($40) = **$60**.\n\n**Bailey started with $60.**",
+  "gold_answer": "60",
+  "input_tokens": 293,
+  "output_tokens": 83,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3068,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:16Z"
+}

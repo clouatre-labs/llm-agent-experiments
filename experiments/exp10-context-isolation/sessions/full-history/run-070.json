@@ -1,0 +1,15 @@
+{
+  "run_id": "run-070",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the daily calorie deficit Andy needs, we can follow these steps:\n\n**1. Determine the total number of days available:**\n*   January: 31 days\n*   February: 28 days (assuming a non-leap year)\n*   March: 31 days\n*   April: 30 days\n*   May: 31 days\n*   June: 30 days\n*   July: 18 days (up to, but not including, his birthday on the 19th)\n*   **Total days:** 31 + 28 + 31 + 30 + 31 + 30 + 18 = **199 days**\n\n**2. Determine the total calorie deficit required:**\n*   Goal: 30 lbs\n*   Calories per pound: 3,500\n*   **Total deficit needed:** 30 \u00d7 3,500 = **105,000 calories**\n\n**3. Calculate the daily deficit:**\n*   Total deficit \u00f7 Total days = Daily deficit\n*   105,000 \u00f7 199 \u2248 **527.64 calories**\n\n**Answer:**\nAndy needs a daily calorie deficit of approximately **528 calories** to reach his goal by July 19th.",
+  "gold_answer": "525",
+  "input_tokens": 310,
+  "output_tokens": 294,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4098,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:50Z"
+}

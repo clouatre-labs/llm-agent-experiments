@@ -1,0 +1,15 @@
+{
+  "run_id": "run-266",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Ezra has read 450 books.**\n\n**Reasoning:**\n1. The text states: \"Ezra has read 300 books this hour and decided to read 150 more.\"\n2. $300 + 150 = 450$.\n\n*(Note: The information regarding Ahmed is a distractor, as the question specifically asks for the total number of books Ezra has read based on the provided figures.)*",
+  "gold_answer": "675",
+  "input_tokens": 296,
+  "output_tokens": 109,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5560,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:37Z"
+}

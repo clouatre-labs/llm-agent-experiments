@@ -1,0 +1,15 @@
+{
+  "run_id": "run-190",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Andrea saved, we can work backward from her starting amount:\n\n1.  **Starting amount:** $36\n2.  **Subtract the money spent/given away:**\n    *   Sweater: -$11\n    *   Brother: -$4\n3.  **Calculation:** $36 - $11 - $4 = $21\n\n**Andrea saved $21.**",
+  "gold_answer": "21",
+  "input_tokens": 298,
+  "output_tokens": 89,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3746,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:18Z"
+}

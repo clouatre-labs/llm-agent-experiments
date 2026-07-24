@@ -1,0 +1,15 @@
+{
+  "run_id": "run-037",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Movie Collection Replacement Cost\n\nLet me work through this step-by-step.\n\n**Step 1: Find movies in series**\n- Total movies: 600\n- Movies in series: 1/3 \u00d7 600 = 200 movies\n\n**Step 2: Calculate cost for series movies**\n- Series movies cost: $6 per movie (instead of $10)\n- Cost for series: 200 \u00d7 $6 = $1,200\n\n**Step 3: Find remaining movies**\n- Remaining movies: 600 - 200 = 400 movies\n\n**Step 4: Find older movies (from the remaining)**\n- Older movies: 40% \u00d7 400 = 160 movies\n- Older movies cost: $5 each\n- Cost for older movies: 160 \u00d7 $5 = $800\n\n**Step 5: Find regular-priced movies**\n- Regular movies: 400 - 160 = 240 movies\n- Regular movies cost: $10 each\n- Cost for regular movies: 240 \u00d7 $10 = $2,400\n\n**Step 6: Calculate total cost**\n- Total: $1,200 + $800 + $2,400 = **$4,400**\n\nThe cost to replace Mike's movie collection is **$4,400**.",
+  "gold_answer": "4400",
+  "input_tokens": 264,
+  "output_tokens": 305,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3399,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

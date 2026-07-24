@@ -1,0 +1,15 @@
+{
+  "run_id": "run-176",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the distance separating the two cars, you can calculate the distance each car travels individually and then find the difference.\n\n**1. Calculate the distance traveled by the first car:**\n*   Speed = 60 mph\n*   Time = 2 hours\n*   Distance = Speed \u00d7 Time $\\rightarrow$ $60 \\times 2 = 120$ miles\n\n**2. Calculate the distance traveled by the second car:**\n*   Speed = 70 mph\n*   Time = 2 hours\n*   Distance = Speed \u00d7 Time $\\rightarrow$ $70 \\times 2 = 140$ miles\n\n**3. Calculate the difference:**\n*   $140 \\text{ miles} - 120 \\text{ miles} = 20 \\text{ miles}$\n\n**Alternative Method (Relative Speed):**\nSince the second car is traveling 10 mph faster than the first car ($70 - 60 = 10$), you can simply multiply the difference in speed by the time elapsed:\n*   $10 \\text{ mph} \\times 2 \\text{ hours} = 20 \\text{ miles}$\n\n**Answer:**\nThe two cars will be **20 miles** apart after 2 hours.",
+  "gold_answer": "20",
+  "input_tokens": 260,
+  "output_tokens": 274,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3270,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:55Z"
+}

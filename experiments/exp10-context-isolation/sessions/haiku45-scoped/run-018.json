@@ -1,0 +1,15 @@
+{
+  "run_id": "run-018",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me break down this problem step by step:\n\n**Given information:**\n- Tyrion changes his face mask 2 times every time he goes out\n- He goes out 3 times a day\n- We need to find how many masks he uses every 2 days\n\n**Step 1: Calculate masks used per day**\n- Masks per outing = 2\n- Outings per day = 3\n- Masks per day = 2 \u00d7 3 = 6 masks\n\n**Step 2: Calculate masks used every 2 days**\n- Masks per day = 6\n- Number of days = 2\n- Masks every 2 days = 6 \u00d7 2 = **12 masks**\n\n**Answer: Tyrion uses 12 face masks every 2 days.**",
+  "gold_answer": "12",
+  "input_tokens": 270,
+  "output_tokens": 191,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6325,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

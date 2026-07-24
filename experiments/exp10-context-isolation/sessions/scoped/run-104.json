@@ -1,0 +1,15 @@
+{
+  "run_id": "run-104",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many kilometers farther Cho hiked, we need to calculate the total distance for both Cho and Chloe.\n\n**1. Calculate Cho's distance:**\nDistance = Speed \u00d7 Time\n$14\\text{ km/h} \\times 8\\text{ hours} = 112\\text{ km}$\n\n**2. Calculate Chloe's distance:**\nDistance = Speed \u00d7 Time\n$9\\text{ km/h} \\times 5\\text{ hours} = 45\\text{ km}$\n\n**3. Calculate the difference:**\n$112\\text{ km} - 45\\text{ km} = 67\\text{ km}$\n\nCho hiked **67 kilometers** farther than Chloe.",
+  "gold_answer": "67",
+  "input_tokens": 256,
+  "output_tokens": 162,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1869,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:13Z"
+}

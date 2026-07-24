@@ -1,0 +1,15 @@
+{
+  "run_id": "run-003",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many more laps Bethany can run compared to Quinn, we need to calculate the number of laps for each person based on the information provided:\n\n1.  **Bethany:** 10 laps\n2.  **Trey:** 4 more laps than Bethany $\\rightarrow 10 + 4 = 14$ laps\n3.  **Shaelyn:** Half as many laps as Trey $\\rightarrow 14 \\div 2 = 7$ laps\n4.  **Quinn:** 2 fewer laps than Shaelyn $\\rightarrow 7 - 2 = 5$ laps\n\nNow, subtract Quinn's laps from Bethany's laps:\n$10 - 5 = 5$\n\n**Bethany can run 5 more laps than Quinn.**",
+  "gold_answer": "5",
+  "input_tokens": 257,
+  "output_tokens": 165,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4298,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:51Z"
+}

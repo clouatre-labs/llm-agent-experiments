@@ -1,0 +1,15 @@
+{
+  "run_id": "run-219",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total time the trip took, we need to calculate the time for the trip to the friend's house and the time for the trip back home separately, then add them together.\n\n**1. Trip to the friend's house:**\n*   **Original distance:** 200 miles\n*   **Detour added:** 10 miles\n*   **Total distance to friend:** 200 + 10 = 210 miles\n*   **Speed:** 70 mph\n*   **Time calculation:** $210 \\text{ miles} / 70 \\text{ mph} = 3 \\text{ hours}$\n\n**2. Trip back home:**\n*   **Total distance:** 240 miles\n*   **Speed:** 80 mph\n*   **Time calculation:** $240 \\text{ miles} / 80 \\text{ mph} = 3 \\text{ hours}$\n\n**3. Total time:**\n*   $3 \\text{ hours (to friend)} + 3 \\text{ hours (home)} = 6 \\text{ hours}$\n\nThe trip took **6 hours**.",
+  "gold_answer": "6",
+  "input_tokens": 270,
+  "output_tokens": 251,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3382,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:07Z"
+}

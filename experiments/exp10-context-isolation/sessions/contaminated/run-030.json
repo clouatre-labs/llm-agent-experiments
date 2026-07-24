@@ -1,0 +1,15 @@
+{
+  "run_id": "run-030",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**720 grams of cat food will last 6 days.**\n\n**Calculation:**\n1.  **Daily consumption:** 60 grams per day.\n2.  **Total amount:** 720 grams.\n3.  **Division:** 720 \u00f7 60 = 12.\n*Wait, let's re-read the prompt carefully:* \"She feeds her cats twice a day with 60 grams of cat food.\" \n\nIf the **total** daily amount is 60 grams: $720 / 60 = 12$ days.\nIf she feeds them 60 grams **per feeding** (twice a day): $60 \\times 2 = 120$ grams per day. $720 / 120 = 6$ days.\n\nStandard interpretation of that phrasing usually implies the total daily amount is 60g, but in word problems, \"feeds them [amount] twice a day\" typically implies the amount is per instance. \n\n**Based on 60g per feeding (120g total per day): 6 days.**\n**Based on 60g total per day: 12 days.**",
+  "gold_answer": "2",
+  "input_tokens": 292,
+  "output_tokens": 272,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3159,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:02Z"
+}

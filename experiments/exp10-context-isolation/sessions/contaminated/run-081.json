@@ -1,0 +1,15 @@
+{
+  "run_id": "run-081",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the refund amount for Mr. Marcellus, follow these steps:\n\n1.  **Determine the amount of expired milk:**\n    Mr. Marcellus purchased 4,000 gallons. He found that $2/5$ of it was expired.\n    $4,000 \\times \\frac{2}{5} = 1,600$ gallons.\n\n2.  **Calculate the refund value:**\n    The cost per gallon is $3.50.\n    $1,600 \\text{ gallons} \\times \\$3.50/\\text{gallon} = \\$5,600$.\n\n**Mr. Marcellus received a refund of $5,600.**",
+  "gold_answer": "5600",
+  "input_tokens": 299,
+  "output_tokens": 156,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5713,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:18Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-140",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of flowers Andy plants, follow these steps:\n\n1.  **Calculate the number of petunias:**\n    Andy plants 40 fewer petunias than geraniums.\n    $90 - 40 = 50$ petunias.\n\n2.  **Calculate the total number of flowers:**\n    Add the geraniums and the petunias together.\n    $90 + 50 = 140$ total flowers.\n\n**Andy plants 140 flowers in total.**",
+  "gold_answer": "140",
+  "input_tokens": 295,
+  "output_tokens": 116,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4585,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:06Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-183",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **32** lions in the enclosure.\n\n**Breakdown:**\n*   Female lions: 12\n*   Male lions: 6 (half of 12)\n*   Lion cubs: 14\n*   **Total: 12 + 6 + 14 = 32**",
+  "gold_answer": "32",
+  "input_tokens": 297,
+  "output_tokens": 71,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3813,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:17Z"
+}

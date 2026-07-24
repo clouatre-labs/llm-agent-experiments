@@ -1,0 +1,15 @@
+{
+  "run_id": "run-236",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the amount of change Theo received, we can follow these steps:\n\n1.  **Find the price of the pen:**\n    The pen cost **$2**.\n\n2.  **Calculate the price of the paper:**\n    The paper cost \"$1 less than three times the price of the pen.\"\n    *   Three times the price of the pen: $3 \\times \\$2 = \\$6$\n    *   $1 less than that: $\\$6 - \\$1 = \\$5$\n    The paper cost **$5**.\n\n3.  **Calculate the total cost:**\n    $\\$2 \\text{ (pen)} + \\$5 \\text{ (paper)} = \\$7$\n\n4.  **Calculate the change:**\n    Theo gave the cashier $10.\n    $\\$10 - \\$7 = \\$3$\n\n**Theo received $3 in change.**",
+  "gold_answer": "3",
+  "input_tokens": 285,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2896,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:28Z"
+}

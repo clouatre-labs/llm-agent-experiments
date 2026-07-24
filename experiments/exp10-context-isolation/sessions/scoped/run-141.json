@@ -1,0 +1,15 @@
+{
+  "run_id": "run-141",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of new limbs grown after fifteen days, we calculate the growth of arms and legs separately:\n\n1.  **Extra Arms:** The serum causes one extra arm every 3 days.\n    *   $15 \\text{ days} \\div 3 \\text{ days/arm} = \\mathbf{5} \\text{ arms}$\n\n2.  **Extra Legs:** The serum causes one extra leg every 5 days.\n    *   $15 \\text{ days} \\div 5 \\text{ days/leg} = \\mathbf{3} \\text{ legs}$\n\n3.  **Total New Limbs:**\n    *   $5 \\text{ arms} + 3 \\text{ legs} = \\mathbf{8} \\text{ new limbs}$\n\nAfter fifteen days, Helena\u2019s serum will cause a person to grow **8** new limbs.",
+  "gold_answer": "8",
+  "input_tokens": 257,
+  "output_tokens": 192,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9078,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:53Z"
+}

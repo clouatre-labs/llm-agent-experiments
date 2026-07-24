@@ -1,0 +1,15 @@
+{
+  "run_id": "run-017",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me solve this step by step.\n\n**Given information:**\n- Eraser costs: $2 each\n- Pencil costs: $3 each\n- Quantity needed: 6 erasers and 8 pencils\n\n**Step 1: Calculate the cost of 6 erasers**\n6 erasers \u00d7 $2 = $12\n\n**Step 2: Calculate the cost of 8 pencils**\n8 pencils \u00d7 $3 = $24\n\n**Step 3: Calculate the total cost**\n$12 + $24 = $36\n\n**Final Answer: $36**",
+  "gold_answer": "36",
+  "input_tokens": 276,
+  "output_tokens": 144,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 5690,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

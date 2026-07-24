@@ -1,0 +1,15 @@
+{
+  "run_id": "run-172",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate how much Mandy owes Benedict, we need to determine if the interest is **Simple Interest** or **Compound Interest**. In most personal lending scenarios, interest is compounded monthly.\n\n### Option 1: Compound Interest (Most Common)\nWith compound interest, the interest from the previous month is added to the principal before calculating the next month's interest.\n\n*   **Month 1:** $100 + (2\\% \\text{ of } 100) = \\$102.00$\n*   **Month 2:** $102 + (2\\% \\text{ of } 102) = \\$104.04$\n*   **Month 3:** $104.04 + (2\\% \\text{ of } 104.04) = \\$106.1208$\n\n**Total to pay: $106.12**\n\n***\n\n### Option 2: Simple Interest\nWith simple interest, the 2% is only calculated based on the original $100 every month.\n\n*   **Monthly Interest:** $2\\% \\text{ of } 100 = \\$2.00$\n*   **Total Interest for 3 months:** $\\$2.00 \\times 3 = \\$6.00$\n*   **Total Principal + Interest:** $\\$100 + \\$6 = \\$106.00$\n\n**Total to pay: $106.00**\n\n***\n\n**Summary:**\nDepending on their specific agreement, Mandy should give Benedict either **$106.12** (compounded) or **$106.00** (simple).",
+  "gold_answer": "106",
+  "input_tokens": 260,
+  "output_tokens": 370,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8881,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:59Z"
+}

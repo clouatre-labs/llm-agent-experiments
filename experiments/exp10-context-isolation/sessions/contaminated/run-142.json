@@ -1,0 +1,15 @@
+{
+  "run_id": "run-142",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the different components:\n\n**Math Problem Solution:**\n*   **Tomatoes:** 5 plants \u00d7 22 tomatoes/plant = 110 tomatoes\n*   **Eggplants:** 8 plants \u00d7 4 eggplants/plant = 32 eggplants\n*   **Total Fruits:** 110 + 32 = **142 fruits**\n\n**Summary of Dialogue:**\nThe Planner and Executor are coordinating a schedule for next week. They have set a team standup for Monday at 10 AM and a quarterly review for Thursday from 1 PM to 3 PM. The Executor will invite the product team and engineering leads, ensuring that a drafted agenda is included in the calendar invites.\n\n**Text Analysis:**\nThe final paragraph transitions from a professional academic tone discussing research methodology and literature reviews to a pangram (\"The quick brown fox jumps over the lazy dog...\") and concludes with a statement regarding the need for further analysis.",
+  "gold_answer": "142",
+  "input_tokens": 294,
+  "output_tokens": 209,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6371,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:36Z"
+}

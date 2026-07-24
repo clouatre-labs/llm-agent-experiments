@@ -1,0 +1,15 @@
+{
+  "run_id": "run-187",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Convert current height to inches:** 20 feet \u00d7 12 inches/foot = **240 inches**.\n2.  **Determine target growth needed:** 600 inches (target) - 240 inches (current) = **360 inches**.\n3.  **Calculate days required:** 360 inches \u00f7 30 inches/day = **12 days**.\n\n**Answer:** It will take **12 days** for the bamboo to reach 600 inches.",
+  "gold_answer": "12",
+  "input_tokens": 298,
+  "output_tokens": 124,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2134,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:16Z"
+}

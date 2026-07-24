@@ -1,0 +1,15 @@
+{
+  "run_id": "run-119",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much more money Annabelle needs, we can calculate her total savings step-by-step:\n\n1.  **Current Savings:** $80\n2.  **Earnings from First Job:** 20 hours \u00d7 $10/hour = $200\n3.  **Earnings from Second Job:** 15 hours \u00d7 $5/hour = $75\n4.  **Total Savings so far:** $80 + $200 + $75 = $355\n5.  **Amount Still Needed:** $400 (Goal) - $355 (Current) = $45\n\nAnnabelle still needs to save **$45**.",
+  "gold_answer": "45",
+  "input_tokens": 302,
+  "output_tokens": 150,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4545,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:02Z"
+}

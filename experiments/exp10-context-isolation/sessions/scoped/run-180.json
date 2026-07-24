@@ -1,0 +1,15 @@
+{
+  "run_id": "run-180",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost, we must separate the food items from the non-food items to apply the tax correctly.\n\n**1. Identify Food Items:**\n*   Milk: $2\n*   Eggs: $3\n*   **Total Food Cost: $5**\n\n**2. Identify Non-Food Items:**\n*   Light bulbs: $3\n*   Cups: $3\n*   Roach traps: $4\n*   **Total Non-Food Cost (Subtotal): $10**\n\n**3. Calculate Tax on Non-Food Items:**\n*   10% of $10 = $1 (10/100 * 10 = 1)\n*   **Total Non-Food Cost with Tax: $11**\n\n**4. Calculate Grand Total:**\n*   $5 (Food) + $11 (Non-Food with tax) = $16\n\n**Everything cost $16.**",
+  "gold_answer": "16",
+  "input_tokens": 266,
+  "output_tokens": 204,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3311,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:56Z"
+}

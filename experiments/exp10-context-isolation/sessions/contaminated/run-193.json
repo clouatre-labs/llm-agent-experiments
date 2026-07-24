@@ -1,0 +1,15 @@
+{
+  "run_id": "run-193",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Calculate the number of pears:** George has 45% more pears than bananas.\n    *   Bananas = 200\n    *   Pears = 200 + (0.45 \u00d7 200)\n    *   Pears = 200 + 90 = **290**\n\n2.  **Calculate the total number of fruits:**\n    *   Total = Bananas + Pears\n    *   Total = 200 + 290 = **490**\n\nGeorge has **490** fruits.",
+  "gold_answer": "490",
+  "input_tokens": 295,
+  "output_tokens": 142,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4337,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:48Z"
+}

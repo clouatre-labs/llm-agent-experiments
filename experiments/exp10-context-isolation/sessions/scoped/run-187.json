@@ -1,0 +1,15 @@
+{
+  "run_id": "run-187",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Convert all measurements to the same unit (inches):**\n    *   Current height: 20 feet\n    *   Since 1 foot = 12 inches, 20 feet = $20 \\times 12 = 240$ inches.\n    *   Target height: 600 inches.\n\n2.  **Calculate the total growth needed:**\n    *   $600\\text{ inches} - 240\\text{ inches} = 360\\text{ inches}$.\n\n3.  **Calculate the number of days:**\n    *   The bamboo grows 30 inches per day.\n    *   $360\\text{ inches} \\div 30\\text{ inches/day} = 12\\text{ days}$.\n\n**Answer:** The bamboo will be 600 inches tall in **12 days**.",
+  "gold_answer": "12",
+  "input_tokens": 264,
+  "output_tokens": 205,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10268,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:05Z"
+}

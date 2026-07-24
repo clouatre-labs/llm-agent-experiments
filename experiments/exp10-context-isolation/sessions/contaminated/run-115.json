@@ -1,0 +1,15 @@
+{
+  "run_id": "run-115",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nDamien finds 10 bottle caps a day.\nAt $0.25 per bottle cap, he makes **$2.50 per day**.\nIn a 30-day month: $2.50 \u00d7 30 = **$75.00**.\n\n**Damien makes $75.00 in a 30-day month.**",
+  "gold_answer": "75",
+  "input_tokens": 298,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3770,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:25Z"
+}

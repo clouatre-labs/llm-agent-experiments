@@ -1,0 +1,15 @@
+{
+  "run_id": "run-167",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the elevation of the comb, you subtract the distance it fell from Stanley's starting elevation:\n10,000 feet - 4,000 feet = **6,000 feet** (the elevation of the comb).\n\nTo find how many feet Oliver must climb to reach that elevation, you subtract Oliver's current elevation from the comb's elevation:\n6,000 feet - 3,000 feet = **3,000 feet**.\n\nOliver must climb **3,000 feet** to reach the elevation of the comb.",
+  "gold_answer": "3000",
+  "input_tokens": 284,
+  "output_tokens": 126,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2500,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:53Z"
+}

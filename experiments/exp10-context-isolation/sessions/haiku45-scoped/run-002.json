@@ -1,0 +1,15 @@
+{
+  "run_id": "run-002",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Problem\n\nLet me work through this step-by-step:\n\n**Step 1: Find the number of letters in Indras' name**\n- Indras has 6 letters\n\n**Step 2: Find half the letters in Indras' name**\n- Half of 6 = 6 \u00f7 2 = 3 letters\n\n**Step 3: Find the number of letters in her sister's name**\n- Sister's name has 4 more letters than half of Indras' letters\n- Sister's name = 3 + 4 = 7 letters\n\n**Step 4: Find the total letters in both names**\n- Total = Indras' letters + Sister's letters\n- Total = 6 + 7 = **13 letters**\n\nThe answer is **13 letters** in Indras and her sister's names combined.",
+  "gold_answer": "13",
+  "input_tokens": 281,
+  "output_tokens": 206,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 5705,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

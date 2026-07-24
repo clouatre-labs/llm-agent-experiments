@@ -1,0 +1,15 @@
+{
+  "run_id": "run-210",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount spent, we calculate the individual totals for Ellen and Lani and then add them together:\n\n**Ellen's spending:**\n*   Leggings: $100\n*   Photo frame: $5\n*   **Ellen's Total: $105**\n\n**Lani's spending:**\n*   Sunglasses: $30\n*   Two bathrobes ($100 each): $200\n*   **Lani's Total: $230**\n\n**Total spent:**\n$105 + $230 = **$335**",
+  "gold_answer": "335",
+  "input_tokens": 298,
+  "output_tokens": 132,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1454,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:20Z"
+}

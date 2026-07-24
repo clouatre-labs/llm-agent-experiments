@@ -1,0 +1,15 @@
+{
+  "run_id": "run-158",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many video games Bobby has, we can break the problem down into two steps:\n\n**Step 1: Determine how many video games Brian currently has.**\n*   Brian started with 20 video games.\n*   He lost 5 video games.\n*   $20 - 5 = 15$ video games.\n\n**Step 2: Calculate Bobby's video games based on Brian's current total.**\n*   The problem states Bobby has \"5 fewer than 3 times as many\" as Brian.\n*   First, find 3 times Brian's amount: $3 \\times 15 = 45$.\n*   Then, subtract 5 from that total: $45 - 5 = 40$.\n\n**Answer:**\nBobby has **40** video games.",
+  "gold_answer": "40",
+  "input_tokens": 256,
+  "output_tokens": 179,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5583,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:53Z"
+}

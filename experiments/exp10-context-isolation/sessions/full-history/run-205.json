@@ -1,0 +1,15 @@
+{
+  "run_id": "run-205",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the cupcake problem:\n\n1.  **Identify the total number of people:**\n    *   Howie: 1\n    *   Teacher: 1\n    *   Classmates: 25\n    *   **Total people:** 1 + 1 + 25 = 27 people\n\n2.  **Calculate the number of cupcakes per person:**\n    *   Howie is getting one vanilla and one chocolate for everyone, which equals **2 cupcakes per person**.\n\n3.  **Calculate the total number of cupcakes:**\n    *   27 people \u00d7 2 cupcakes each = **54 cupcakes**.\n\nHowie should buy **54 cupcakes**.",
+  "gold_answer": "54",
+  "input_tokens": 289,
+  "output_tokens": 145,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4875,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:23Z"
+}

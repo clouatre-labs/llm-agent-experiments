@@ -1,0 +1,15 @@
+{
+  "run_id": "run-172",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Mandy should give Benedict $106.04.**\n\n**Calculation Breakdown:**\nThis is a compound interest problem (assuming interest is applied monthly to the new balance):\n1.  **Month 1:** $100 + 2\\% = \\$102.00$\n2.  **Month 2:** $102 + 2\\% = \\$104.04$\n3.  **Month 3:** $104.04 + 2\\% = \\$106.1208$\n\nRounding to the nearest cent, the total is **$106.12**.\n\n*(Note: If you meant **simple interest**, the calculation would be $100 + (2 \\times 3) = \\$106.00$. However, in financial contexts involving monthly interest, compound interest is the standard.)*",
+  "gold_answer": "106",
+  "input_tokens": 294,
+  "output_tokens": 203,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5686,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:44Z"
+}

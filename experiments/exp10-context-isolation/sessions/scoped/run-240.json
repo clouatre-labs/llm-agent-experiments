@@ -1,0 +1,15 @@
+{
+  "run_id": "run-240",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total distance Tyson covered in June, we can follow these steps:\n\n**1. Determine the new daily distance:**\n*   **Current distance:** 5,000 meters.\n*   **Increase amount:** The coach wants him to run $1/5$ times **more** meters. \n    *   Calculation: $5,000 \\times \\frac{1}{5} = 1,000$ meters.\n*   **New daily distance:** $5,000 + 1,000 = 6,000$ meters.\n\n**2. Determine the number of days in June:**\n*   June has **30 days**.\n\n**3. Calculate the total distance for the month:**\n*   $\\text{Total distance} = \\text{Daily distance} \\times \\text{Number of days}$\n*   $6,000 \\text{ meters/day} \\times 30 \\text{ days} = 180,000 \\text{ meters}$.\n\n**Final Answer:**\nTyson covered a total of **180,000 meters** (or 180 kilometers) in June.",
+  "gold_answer": "180000",
+  "input_tokens": 256,
+  "output_tokens": 261,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12027,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:20Z"
+}

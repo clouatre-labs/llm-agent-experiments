@@ -1,0 +1,15 @@
+{
+  "run_id": "run-037",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of replacing Mike's movie collection, we need to break the 600 movies into three distinct categories based on the provided information.\n\n**1. Series Movies**\n*   **Quantity:** One-third of the total movies are in series.\n    *   $600 \\times \\frac{1}{3} = 200$ movies.\n*   **Cost:** These cost $6 less than a normal movie ($10 - $6 = $4 per movie).\n    *   $200 \\text{ movies} \\times \\$4 = \\mathbf{\\$800}$\n\n**2. Remaining Movies (Subtotal)**\n*   Before calculating the older movies, we find how many movies are left.\n    *   $600 - 200 = 400$ movies remaining.\n\n**3. Older Movies**\n*   **Quantity:** 40% of the remaining 400 movies are older movies.\n    *   $400 \\times 0.40 = 160$ movies.\n*   **Cost:** These cost $5 each.\n    *   $160 \\text{ movies} \\times \\$5 = \\mathbf{\\$800}$\n\n**4. Normal Movies**\n*   **Quantity:** The rest of the remaining movies are normal movies.\n    *   $400 - 160 = 240$ movies.\n*   **Cost:** These cost the standard $10 each.\n    *   $240 \\text{ movies} \\times \\$10 = \\mathbf{\\$2,400}$\n\n**Total Calculation:**\n*   Series: $800\n*   Older: $800\n*   Normal: $2,400\n*   **Total Cost: $4,000**\n\nReplacing the movies will cost Mike **$4,000**.",
+  "gold_answer": "4400",
+  "input_tokens": 293,
+  "output_tokens": 423,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 13204,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:14Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-244",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long it takes Tom to get back, we first need to determine the distance he traveled.\n\n**1. Calculate the distance traveled:**\n*   **Time spent sailing out:** From 1 PM to 4 PM is **3 hours**.\n*   **Speed sailing out:** **10 mph**.\n*   **Distance formula:** $\\text{Distance} = \\text{Speed} \\times \\text{Time}$\n*   $10 \\text{ mph} \\times 3 \\text{ hours} = \\mathbf{30 \\text{ miles}}$.\n\n**2. Calculate the time taken to return:**\n*   **Distance to return:** **30 miles** (the same distance).\n*   **Speed returning:** **6 mph**.\n*   **Time formula:** $\\text{Time} = \\text{Distance} \\div \\text{Speed}$\n*   $30 \\text{ miles} \\div 6 \\text{ mph} = \\mathbf{5 \\text{ hours}}$.\n\n**Answer:**\nIt takes Tom **5 hours** to get back.",
+  "gold_answer": "5",
+  "input_tokens": 259,
+  "output_tokens": 234,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7530,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:16Z"
+}

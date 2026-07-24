@@ -1,0 +1,15 @@
+{
+  "run_id": "run-090",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of students enrolled in hip-hop dance, we can follow these steps:\n\n1.  **Total Students:** 20\n2.  **Contemporary Dance:** 20% of 20 = $0.20 \\times 20 = 4$ students.\n3.  **Remaining Students:** $20 - 4 = 16$ students.\n4.  **Jazz Dance:** 25% of the *remaining* students = $0.25 \\times 16 = 4$ students.\n5.  **Hip-Hop Dance:** The rest of the students = $16 - 4 = 12$ students.\n\nTo find the percentage of the **entire** class that enrolled in hip-hop:\n$\\frac{12 \\text{ (hip-hop students)}}{20 \\text{ (total students)}} = 0.60$ or **60%**.",
+  "gold_answer": "60",
+  "input_tokens": 296,
+  "output_tokens": 204,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7165,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:57Z"
+}

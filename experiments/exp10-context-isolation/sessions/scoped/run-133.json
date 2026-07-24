@@ -1,0 +1,15 @@
+{
+  "run_id": "run-133",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of the trip, we need to calculate the cost of the plane tickets and the cost of the hotel separately, then add them together.\n\n**1. Calculate the cost of the plane tickets:**\nThere are two people (Tom and his wife), and each ticket costs $5,000.\n*   $5,000 \\times 2 = \\$10,000$\n\n**2. Calculate the cost of the hotel:**\n*   **Normal price per day:** $1,500\n*   **Surcharge for busy weekend:** 20% of $1,500 = $300 ($1,500 \\times 0.20 = 300$)\n*   **Adjusted price per day:** $1,500 + $300 = $1,800\n*   **Total hotel cost for 3 days:** $1,800 \\times 3 = \\$5,400$\n\n**3. Calculate the total trip cost:**\n*   Plane tickets ($10,000) + Hotel ($5,400) = **$15,400**\n\nThe trip cost **$15,400**.",
+  "gold_answer": "15400",
+  "input_tokens": 263,
+  "output_tokens": 273,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5638,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:45Z"
+}

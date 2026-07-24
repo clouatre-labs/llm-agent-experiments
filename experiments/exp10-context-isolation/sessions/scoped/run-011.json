@@ -1,0 +1,15 @@
+{
+  "run_id": "run-011",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **12** pieces of fruit left.\n\n**Calculation:**\n3 (apples) + 5 (bananas) + 6 (oranges) = 14 total pieces.\n14 - 2 (eaten by Lola) = 12.",
+  "gold_answer": "12",
+  "input_tokens": 255,
+  "output_tokens": 59,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4681,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:52Z"
+}

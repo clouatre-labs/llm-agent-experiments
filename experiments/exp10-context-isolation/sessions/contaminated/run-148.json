@@ -1,0 +1,15 @@
+{
+  "run_id": "run-148",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of sterling silver beads Katerina uses per necklace, we can follow these steps:\n\n1.  **Calculate the total length occupied by the topaz gemstones:**\n    Katerina uses 8 topaz gemstones, and each is 1 inch long.\n    $8 \\text{ gemstones} \\times 1 \\text{ inch/gemstone} = 8 \\text{ inches}$\n\n2.  **Calculate the remaining length to be filled by silver beads:**\n    The total length of the necklace is 25 inches.\n    $25 \\text{ inches (total)} - 8 \\text{ inches (topaz)} = 17 \\text{ inches}$\n\n3.  **Calculate the number of sterling silver beads:**\n    Each silver bead is one-quarter (0.25) of an inch long. To find the number of beads, divide the remaining length by the length of one bead.\n    $17 \\text{ inches} \\div 0.25 \\text{ inches/bead} = 68 \\text{ beads}$\n\nKaterina uses **68** sterling silver beads per necklace.",
+  "gold_answer": "68",
+  "input_tokens": 301,
+  "output_tokens": 244,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7495,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:39Z"
+}

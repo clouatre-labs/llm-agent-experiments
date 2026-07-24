@@ -1,0 +1,15 @@
+{
+  "run_id": "run-062",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the information provided in your text, here is the answer to the math problem:\n\n**Gerald has $50 left.**\n\n**Calculation:**\n1.  **Earnings:** $30 per day \u00d7 5 days (one week) = $150\n2.  **Expenses:** $100\n3.  **Remaining:** $150 - $100 = $50",
+  "gold_answer": "110",
+  "input_tokens": 292,
+  "output_tokens": 88,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4754,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:48Z"
+}

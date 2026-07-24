@@ -1,0 +1,15 @@
+{
+  "run_id": "run-253",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, we can break the problem down into simple steps:\n\n1.  **Determine Raymond's current age:**\n    Samantha is 31 years old. Since Raymond was born 6 years before Samantha, he is 6 years older than her.\n    $31 + 6 = 37$ (Raymond's current age).\n\n2.  **Determine how many years ago his son was born:**\n    Raymond had his son when he was 23. To find out how many years have passed since then, subtract his age at the time of his son's birth from his current age.\n    $37 - 23 = 14$.\n\n**Answer:** Raymond's son was born **14 years ago**.",
+  "gold_answer": "14",
+  "input_tokens": 255,
+  "output_tokens": 163,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5166,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:16Z"
+}

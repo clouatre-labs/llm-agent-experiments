@@ -1,0 +1,15 @@
+{
+  "run_id": "run-289",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There will be **27** great grand-babies for Great Grandma Jones to kiss.\n\n**Calculation:**\n*   3 children\n*   3 children per child = 9 grandchildren\n*   3 babies per grandchild = **27 great grand-babies**",
+  "gold_answer": "27",
+  "input_tokens": 300,
+  "output_tokens": 57,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1059,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:05Z"
+}

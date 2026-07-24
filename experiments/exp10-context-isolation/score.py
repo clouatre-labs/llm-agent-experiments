@@ -192,7 +192,7 @@ def main() -> None:
                 "statistic": stat,
                 "p_value": p_val,
                 "bonferroni_alpha": 0.025,
-                "significant": p_val < 0.025,
+                "significant": bool(p_val < 0.025),
             }
 
     if "scoped" in conditions and "contaminated" in conditions:
@@ -210,7 +210,7 @@ def main() -> None:
                 "statistic": stat,
                 "p_value": p_val,
                 "bonferroni_alpha": 0.025,
-                "significant": p_val < 0.025,
+                "significant": bool(p_val < 0.025),
             }
 
     mcnemar_path = results_dir / "mcnemar_summary.json"

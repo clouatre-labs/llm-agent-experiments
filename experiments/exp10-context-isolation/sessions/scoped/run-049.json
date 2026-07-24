@@ -1,0 +1,15 @@
+{
+  "run_id": "run-049",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of yellow balloons, we can use the information provided in the word problem.\n\n**1. Identify the known values:**\n*   Total pieces of bologna thrown: **58**\n*   Number of red balloons: **20**\n*   Bologna per red balloon: **2**\n*   Bologna per yellow balloon: **3**\n\n**2. Calculate the bologna thrown at the red balloons:**\n$$20 \\text{ red balloons} \\times 2 \\text{ pieces each} = 40 \\text{ pieces of bologna}$$\n\n**3. Calculate the remaining bologna thrown at the yellow balloons:**\n$$58 \\text{ total pieces} - 40 \\text{ red pieces} = 18 \\text{ pieces of bologna}$$\n\n**4. Calculate the number of yellow balloons:**\nSince each yellow balloon received 3 pieces of bologna, divide the remaining bologna by 3:\n$$18 \\div 3 = 6$$\n\n**Answer:**\nThere were **6** yellow balloons in the bundle.",
+  "gold_answer": "6",
+  "input_tokens": 251,
+  "output_tokens": 235,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 13054,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:11Z"
+}

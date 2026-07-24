@@ -1,0 +1,15 @@
+{
+  "run_id": "run-280",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Identify the speed of the slow lane car:**\n    *   Fast lane speed = 60 mph\n    *   Slow lane speed = 60 mph / 2 = **30 mph**\n\n2.  **Identify the distance to be covered:**\n    *   Distance = **480 miles**\n\n3.  **Calculate the time for the slow lane car:**\n    *   Time = Distance / Speed\n    *   Time = 480 miles / 30 mph = **16 hours**\n\n**Answer:** The car in the slow lane took **16 hours** to cover the same distance.",
+  "gold_answer": "16",
+  "input_tokens": 293,
+  "output_tokens": 149,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1256,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

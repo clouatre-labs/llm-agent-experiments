@@ -1,0 +1,15 @@
+{
+  "run_id": "run-260",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Janet makes **$18** every day at the farmers' market.\n\n**Calculation:**\n1.  **Total eggs:** 16\n2.  **Eggs used:** 3 (breakfast) + 4 (muffins) = 7\n3.  **Eggs remaining to sell:** 16 - 7 = 9\n4.  **Total earnings:** 9 eggs \u00d7 $2 = $18",
+  "gold_answer": "18",
+  "input_tokens": 294,
+  "output_tokens": 92,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3447,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:02Z"
+}

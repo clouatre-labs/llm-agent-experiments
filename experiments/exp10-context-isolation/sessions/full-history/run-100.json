@@ -1,0 +1,15 @@
+{
+  "run_id": "run-100",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem provided in your text:\n\n1.  **Find the growth rate per year:**\n    8 inches \u00f7 4 years = **2 inches per year**.\n\n2.  **Calculate the growth for 13 years:**\n    2 inches/year \u00d7 13 years = **26 inches**.\n\n**Answer:** The crocodile will grow **26 inches** in 13 years.",
+  "gold_answer": "26",
+  "input_tokens": 296,
+  "output_tokens": 88,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3043,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:55Z"
+}

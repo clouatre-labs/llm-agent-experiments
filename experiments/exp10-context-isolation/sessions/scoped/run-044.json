@@ -1,0 +1,15 @@
+{
+  "run_id": "run-044",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Helen paid, we need to calculate the cost of the hotel and the cost of the bus trips separately, then add them together.\n\n**1. Calculate the cost of the hotel:**\n*   Number of nights: 3\n*   Cost per night: $80\n*   Total hotel cost: $3 \\times \\$80 = \\mathbf{\\$240}$\n\n**2. Calculate the cost of the bus travels:**\n*   Cost of one bus trip: 10% of $80 = $8 (since $0.10 \\times 80 = 8$)\n*   Number of bus trips: 7\n*   Total bus cost: $7 \\times \\$8 = \\mathbf{\\$56}$\n\n**3. Calculate the total cost:**\n*   Total = Hotel cost + Bus cost\n*   Total = $\\$240 + \\$56 = \\mathbf{\\$296}$\n\nHelen paid **$296** for the hotel and bus travels.",
+  "gold_answer": "296",
+  "input_tokens": 253,
+  "output_tokens": 218,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 836,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:57Z"
+}

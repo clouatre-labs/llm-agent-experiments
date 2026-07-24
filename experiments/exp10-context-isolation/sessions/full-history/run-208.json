@@ -1,0 +1,15 @@
+{
+  "run_id": "run-208",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of laundry pieces for 80 rooms, we first calculate the items per single room:\n\n1.  **Sheets:** 2\n2.  **Comforter:** 1\n3.  **Pillow cases:** 2 \u00d7 (number of sheets) = 2 \u00d7 2 = 4\n4.  **Towels:** 2 \u00d7 (number of pillow cases) = 2 \u00d7 4 = 8\n\n**Total items per room:** 2 + 1 + 4 + 8 = **15 pieces**\n\n**Total items for 80 rooms:** 15 \u00d7 80 = **1,200 pieces**",
+  "gold_answer": "1200",
+  "input_tokens": 293,
+  "output_tokens": 145,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3344,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:21Z"
+}

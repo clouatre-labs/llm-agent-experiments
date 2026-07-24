@@ -1,0 +1,15 @@
+{
+  "run_id": "run-095",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much farther the bus traveled than the car, we calculate the distance for each:\n\n1.  **Bus distance:** $60 \\text{ mph} \\times 5 \\text{ hours} = 300 \\text{ miles}$\n2.  **Car distance:** $30 \\text{ mph} \\times 8 \\text{ hours} = 240 \\text{ miles}$\n3.  **Difference:** $300 \\text{ miles} - 240 \\text{ miles} = 60 \\text{ miles}$\n\nThe bus went **60 miles** farther than the car.",
+  "gold_answer": "60",
+  "input_tokens": 263,
+  "output_tokens": 140,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4452,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:37Z"
+}

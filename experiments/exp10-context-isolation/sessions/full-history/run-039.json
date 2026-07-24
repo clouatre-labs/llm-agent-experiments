@@ -1,0 +1,15 @@
+{
+  "run_id": "run-039",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Mark pays, we can break the costs down step-by-step:\n\n1.  **Cost of the cars:**\n    12 cars \u00d7 $20,000 = **$240,000**\n\n2.  **Tax on the cars (10%):**\n    10% of $240,000 = **$24,000**\n\n3.  **Registration fees:**\n    12 cars \u00d7 $1,000 = **$12,000**\n\n4.  **Total cost:**\n    $240,000 (Cars) + $24,000 (Tax) + $12,000 (Registration) = **$276,000**\n\nMark pays a total of **$276,000**.",
+  "gold_answer": "276000",
+  "input_tokens": 303,
+  "output_tokens": 194,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2310,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:40Z"
+}

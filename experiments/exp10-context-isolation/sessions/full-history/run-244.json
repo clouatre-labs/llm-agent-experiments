@@ -1,0 +1,15 @@
+{
+  "run_id": "run-244",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem regarding Tom's ship:\n\n1.  **Calculate the distance traveled:** Tom sails from 1 PM to 4 PM, which is **3 hours**. At a speed of 10 mph, the distance is:\n    $3 \\text{ hours} \\times 10 \\text{ mph} = 30 \\text{ miles}$.\n\n2.  **Calculate the return time:** He travels the same 30 miles back at a rate of 6 mph.\n    $30 \\text{ miles} \\div 6 \\text{ mph} = 5 \\text{ hours}$.\n\n**It takes him 5 hours to get back.**",
+  "gold_answer": "5",
+  "input_tokens": 292,
+  "output_tokens": 146,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1352,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:27Z"
+}

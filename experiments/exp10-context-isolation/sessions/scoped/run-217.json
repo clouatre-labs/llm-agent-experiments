@@ -1,0 +1,15 @@
+{
+  "run_id": "run-217",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Lloyd earned **$130** for the first two weeks.\n\n**Calculation:**\n*   **Week 1:** 5 hours \u00d7 $10/hour = $50\n*   **Week 2:** 8 hours \u00d7 $10/hour = $80\n*   **Total:** $50 + $80 = $130",
+  "gold_answer": "130",
+  "input_tokens": 263,
+  "output_tokens": 79,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1368,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:04Z"
+}

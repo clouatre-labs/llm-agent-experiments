@@ -1,0 +1,15 @@
+{
+  "run_id": "run-278",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of insects in the garden, we can follow these steps:\n\n1.  **Identify the number of ants:** There are **50** ants.\n2.  **Calculate the number of bugs:** The problem states there are half as many bugs as ants.\n    *   $50 \\div 2 = 25$ bugs.\n3.  **Calculate the total number of insects:** Add the number of ants and bugs together.\n    *   $50 \\text{ (ants)} + 25 \\text{ (bugs)} = 75$ insects.\n\n**Total number of insects: 75**",
+  "gold_answer": "75",
+  "input_tokens": 249,
+  "output_tokens": 140,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6367,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:22Z"
+}

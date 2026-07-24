@@ -1,0 +1,15 @@
+{
+  "run_id": "run-049",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of yellow balloons, we can use the following steps:\n\n1.  **Identify the knowns:**\n    *   Total pieces of bologna thrown: **58**\n    *   Number of red balloons: **20**\n    *   Bologna per red balloon: **2**\n    *   Bologna per yellow balloon: **3**\n\n2.  **Calculate the bologna used for red balloons:**\n    *   20 red balloons \u00d7 2 pieces each = **40 pieces of bologna**\n\n3.  **Calculate the remaining bologna used for yellow balloons:**\n    *   58 total pieces - 40 pieces (red) = **18 pieces of bologna**\n\n4.  **Calculate the number of yellow balloons:**\n    *   18 pieces \u00f7 3 pieces per yellow balloon = **6 yellow balloons**\n\n**Answer:** There were **6** yellow balloons in the bundle.",
+  "gold_answer": "6",
+  "input_tokens": 302,
+  "output_tokens": 205,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2709,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:07Z"
+}

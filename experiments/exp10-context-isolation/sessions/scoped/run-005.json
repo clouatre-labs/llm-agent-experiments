@@ -1,0 +1,15 @@
+{
+  "run_id": "run-005",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many minutes Kim slept in her bed, we need to calculate her total time in bed and subtract the time she was out of bed.\n\n1.  **Total time scheduled for sleep:**\n    From 10:00 p.m. to 6:00 a.m. is **8 hours**.\n    8 hours \u00d7 60 minutes = **480 minutes**.\n\n2.  **Adjust for waking up early:**\n    She woke up 5 minutes earlier than usual (at 5:55 a.m.) to go to the bathroom. This means her total time in bed/sleeping period was reduced by 5 minutes.\n    480 minutes - 5 minutes = **475 minutes**.\n\n3.  **Subtract the sleepwalking duration:**\n    She was sleepwalking from 2:15 to 2:38 a.m.\n    2:38 - 2:15 = **23 minutes**.\n    *(Note: Since sleepwalking occurs while one is technically \"asleep\" but moving, the question asks how many minutes she slept **on her bed**. Therefore, we subtract the time she was out of bed.)*\n\n4.  **Final Calculation:**\n    475 minutes (total sleep time) - 23 minutes (time spent sleepwalking/out of bed) = **452 minutes**.\n\nKim slept in her bed for **452 minutes**.",
+  "gold_answer": "452",
+  "input_tokens": 283,
+  "output_tokens": 311,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5287,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:52Z"
+}

@@ -7,7 +7,9 @@ and writes session JSON files.
 import argparse
 import json
 import logging
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -42,14 +44,14 @@ logger = logging.getLogger(__name__)
 MODEL_CONFIGS = {
     "gemma4": {
         "provider": "openrouter",
-        "model_id": "google/gemma-4-26b-it",
+        "model_id": "google/gemma-4-26b-a4b-it",
         "max_tokens": 4096,
         "temperature": 0.5,
         "json_mode": False,
     },
     "haiku45": {
         "provider": "bedrock",
-        "model_id": "anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
         "max_tokens": 4096,
         "temperature": 0.5,
         "json_mode": False,
@@ -117,11 +119,14 @@ def run_single(
     }
 
 
-def write_session(result: dict, sessions_dir: Path) -> None:
+def write_session(result: dict, sessions_dir: Path, model_key: str) -> None:
     """Write a single session JSON file."""
     run_id = result["run_id"]
     condition = result["condition"]
-    cond_dir = sessions_dir / condition
+    if model_key == "gemma4":
+        cond_dir = sessions_dir / condition
+    else:
+        cond_dir = sessions_dir / f"{model_key}-{condition}"
     cond_dir.mkdir(parents=True, exist_ok=True)
     path = cond_dir / f"{run_id}.json"
     with open(path, "w") as f:
@@ -156,6 +161,12 @@ def main() -> None:
         "--skip-existing",
         action="store_true",
         help="Skip runs that already have session files",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of parallel API workers (default: 1)",
     )
     args = parser.parse_args()
 
@@ -195,21 +206,26 @@ def main() -> None:
     else:
         label_map = {}
 
-    config = MODEL_CONFIGS[args.model]
+    config = dict(MODEL_CONFIGS[args.model])
+    if config.get("provider") == "openrouter":
+        import os
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("OPENROUTER_API_KEY is not set in the environment")
+        config["api_key"] = api_key
     results_list: list[dict] = []
+    label_map_lock = threading.Lock()
 
-    for i, task in enumerate(tasks):
+    def _run_task(i: int, task: dict) -> dict | None:
         run_id = f"run-{i:03d}"
-        cond_dir = sessions_dir / args.condition
-
+        if args.model == "gemma4":
+            cond_dir = sessions_dir / args.condition
+        else:
+            cond_dir = sessions_dir / f"{args.model}-{args.condition}"
         if args.skip_existing and (cond_dir / f"{run_id}.json").exists():
             logger.info("Skipping existing run: %s/%s", args.condition, run_id)
-            continue
-
-        logger.info(
-            "Run %s/%s (%s, %s)", args.condition, run_id, args.model, args.condition
-        )
-
+            return None
+        logger.info("Run %s/%s (%s, %s)", args.condition, run_id, args.model, args.condition)
         start = time.time()
         result = run_single(
             run_id=run_id,
@@ -221,17 +237,19 @@ def main() -> None:
             seed=args.seed,
         )
         result["latency_ms"] = int((time.time() - start) * 1000)
+        write_session(result, sessions_dir, args.model)
+        with label_map_lock:
+            label_map[run_id] = args.model
+            write_label_map(label_map, label_map_path)
+        logger.info("  Done: %s %d tokens in %dms", run_id, result["output_tokens"], result["latency_ms"])
+        return result
 
-        write_session(result, sessions_dir)
-        results_list.append(result)
-
-        # Update label map
-        label_map[run_id] = args.model
-        write_label_map(label_map, label_map_path)
-
-        logger.info(
-            "  Done: %d tokens in %dms", result["output_tokens"], result["latency_ms"]
-        )
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = {pool.submit(_run_task, i, task): i for i, task in enumerate(tasks)}
+        for fut in as_completed(futures):
+            result = fut.result()
+            if result is not None:
+                results_list.append(result)
 
     # Write latency log
     latency_path = results_dir / "latency_log.jsonl"

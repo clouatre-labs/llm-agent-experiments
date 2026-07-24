@@ -1,0 +1,15 @@
+{
+  "run_id": "run-222",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem provided in the text:\n\n1.  **Find the total number of pencils at the start:**\n    30 students \u00d7 10 pencils each = **300 pencils**.\n\n2.  **Calculate how many pencils were used after two months:**\n    1/5 of 300 = 60 pencils used.\n    Remaining pencils: 300 - 60 = **240 pencils**.\n\n3.  **Calculate how many pencils were left at the end of the year:**\n    The problem states that 1/3 of the *remaining* pencils (the 240) were left.\n    1/3 of 240 = **80 pencils**.\n\n**Answer:** There were **80** pencils left.",
+  "gold_answer": "80",
+  "input_tokens": 307,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6166,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:56Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-038",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many feet of crepe paper James needs, we need to calculate the **perimeter** of his rectangular fence.\n\nThe formula for the perimeter of a rectangle is:\n**Perimeter = 2 \u00d7 (Length + Width)**\n\nGiven the measurements:\n*   Length = 20 feet\n*   Width = 15 feet\n\n**Calculation:**\n1.  Add the length and the width: $20 + 15 = 35$ feet.\n2.  Multiply the sum by 2: $35 \\times 2 = 70$ feet.\n\nJames needs to buy **70 feet** of crepe paper.",
+  "gold_answer": "70",
+  "input_tokens": 248,
+  "output_tokens": 141,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6226,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:01Z"
+}

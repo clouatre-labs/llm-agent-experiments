@@ -1,0 +1,15 @@
+{
+  "run_id": "run-063",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Colin's current age, we can set up a system of algebraic equations based on the information provided.\n\n**1. Define the variables:**\n*   Let $W$ = Wendy's current age.\n*   Let $C$ = Colin's current age.\n\n**2. Translate the statements into equations:**\n\n*   **Statement 1:** *\"Wendy is five times as old as Colin will be seven years from now.\"*\n    $$W = 5(C + 7)$$\n    $$W = 5C + 35 \\quad \\text{(Equation 1)}$$\n\n*   **Statement 2:** *\"In 25 years, Colin will be a third as old as Wendy is now.\"*\n    $$C + 25 = \\frac{1}{3}W \\quad \\text{(Equation 2)}$$\n\n**3. Solve the system of equations:**\n\nSubstitute the value of $W$ from Equation 1 into Equation 2:\n$$C + 25 = \\frac{1}{3}(5C + 35)$$\n\nMultiply the entire equation by 3 to eliminate the fraction:\n$$3(C + 25) = 5C + 35$$\n$$3C + 75 = 5C + 35$$\n\nSubtract $3C$ from both sides:\n$$75 = 2C + 35$$\n\nSubtract 35 from both sides:\n$$40 = 2C$$\n\nDivide by 2:\n$$C = 20$$\n\n**4. Verify the result:**\nIf Colin is **20**, then in 7 years he will be 27. Wendy is five times that, so Wendy is $27 \\times 5 = 135$.\nIn 25 years, Colin will be $20 + 25 = 45$.\nIs 45 a third of Wendy's current age (135)? Yes ($135 / 3 = 45$).\n\n**Answer:**\nColin is **20** years old.",
+  "gold_answer": "20",
+  "input_tokens": 294,
+  "output_tokens": 455,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 15514,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:24Z"
+}

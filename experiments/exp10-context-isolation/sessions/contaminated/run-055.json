@@ -1,0 +1,15 @@
+{
+  "run_id": "run-055",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer Bill's math problem:\n\n1.  **Calculate current inventory:** 2 cases \u00d7 24 bottles = **48 bottles**.\n2.  **Calculate total bottles needed:** 70 guests \u00d7 2 bottles each = **140 bottles**.\n3.  **Calculate additional bottles required:** 140 - 48 = **92 bottles**.\n\nBill needs to buy **92 additional bottles** of water.",
+  "gold_answer": "92",
+  "input_tokens": 290,
+  "output_tokens": 96,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3836,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:10Z"
+}

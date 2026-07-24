@@ -1,0 +1,15 @@
+{
+  "run_id": "run-083",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem provided in your text:\n\n1.  **Water per week:** 2 loads \u00d7 20 gallons = 40 gallons.\n2.  **Cost per week:** 40 gallons \u00d7 $0.15 = $6.00.\n3.  **Cost per year:** $6.00 \u00d7 52 weeks = **$312.00**.\n\nGary spends **$312.00** on water for laundry in a year.",
+  "gold_answer": "312",
+  "input_tokens": 299,
+  "output_tokens": 109,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1383,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:50Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-007",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Jonathan's Utensils Problem\n\nLet me work through this step-by-step, ignoring the irrelevant text in your message.\n\n## Given Information:\n- Jonathan has 2/3 as many measuring spoons as measuring cups\n- He has two dozen cups\n- He gifts Pedro 6 measuring spoons\n\n## Step 1: Calculate the number of measuring cups\nTwo dozen = 2 \u00d7 12 = **24 measuring cups**\n\n## Step 2: Calculate the number of measuring spoons\nMeasuring spoons = 2/3 \u00d7 measuring cups\nMeasuring spoons = 2/3 \u00d7 24 = **16 measuring spoons**\n\n## Step 3: Calculate spoons after gifting to Pedro\nSpoons remaining = 16 - 6 = **10 measuring spoons**\n\n## Step 4: Calculate total utensils remaining\nTotal utensils = measuring cups + measuring spoons remaining\nTotal utensils = 24 + 10 = **34 utensils**\n\n## Answer: Jonathan has **34 utensils** remaining.",
+  "gold_answer": "34",
+  "input_tokens": 264,
+  "output_tokens": 252,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 5541,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

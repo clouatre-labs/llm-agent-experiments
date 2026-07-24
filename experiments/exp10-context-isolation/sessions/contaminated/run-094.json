@@ -1,0 +1,15 @@
+{
+  "run_id": "run-094",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many pizzas are left, we need to calculate the remaining amount for both the glee club and the football team.\n\n**1. Glee Club:**\n*   **Ordered:** 20 pizzas\n*   **Ate:** 70% of 20 = $20 \\times 0.70 = 14$ pizzas\n*   **Left:** $20 - 14 = \\mathbf{6}$ **pizzas**\n\n**2. Football Team:**\n*   **Ordered:** Twice as many as the glee club = $20 \\times 2 = 40$ pizzas\n*   **Ate:** 80% of 40 = $40 \\times 0.80 = 32$ pizzas\n*   **Left:** $40 - 32 = \\mathbf{8}$ **pizzas**\n\n**Total pizzas left:**\n$6 + 8 = 14$\n\n**There are 14 pizzas left.**",
+  "gold_answer": "14",
+  "input_tokens": 295,
+  "output_tokens": 218,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1120,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:17Z"
+}

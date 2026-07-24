@@ -1,0 +1,15 @@
+{
+  "run_id": "run-230",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Here are the responses to the different components of your input:\n\n**Math Problem Solution:**\n1. **Initial Count:** Boris has 100 apples. Beck has 77 apples (100 - 23).\n2. **The Transaction:** Boris gives Beck 10 apples.\n   * Boris now has 90 apples (100 - 10).\n   * Beck now has 87 apples (77 + 10).\n3. **The Difference:** 90 - 87 = 3.\n**Answer:** Beck has **3** fewer apples than Boris.\n\n**Text Analysis:**\nThe provided text contains two distinct sections:\n* **The first section** is a dialogue between a \"Planner\" and an \"Executor\" regarding scheduling meetings (standups and quarterly reviews).\n* **The second section** is a collection of academic-sounding filler sentences (often used in testing or templates) that transitions into a pangram (*\"The quick brown fox jumps over the lazy dog...\"*).",
+  "gold_answer": "3",
+  "input_tokens": 293,
+  "output_tokens": 221,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2173,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:26Z"
+}

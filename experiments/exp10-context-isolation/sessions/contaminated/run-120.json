@@ -1,0 +1,15 @@
+{
+  "run_id": "run-120",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here is the answer to the math problem embedded in the dialogue:\n\n**They threw 288 balloons.**\n\n**Calculation:**\n1.  **Total balloons filled:** 10 packs \u00d7 30 balloons per pack = 300 balloons.\n2.  **Balloons remaining:** 12 balloons.\n3.  **Balloons thrown:** 300 - 12 = 288.",
+  "gold_answer": "288",
+  "input_tokens": 301,
+  "output_tokens": 100,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8858,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:32Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-176",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the distance between the two cars after 2 hours, you can calculate the distance each car travels individually and then find the difference:\n\n1.  **Calculate the distance of the first car:**\n    $60 \\text{ mph} \\times 2 \\text{ hours} = 120 \\text{ miles}$\n\n2.  **Calculate the distance of the second car:**\n    $70 \\text{ mph} \\times 2 \\text{ hours} = 140 \\text{ miles}$\n\n3.  **Find the difference:**\n    $140 \\text{ miles} - 120 \\text{ miles} = 20 \\text{ miles}$\n\nAlternatively, you can calculate the **relative speed** between the two cars:\n$70 \\text{ mph} - 60 \\text{ mph} = 10 \\text{ mph}$ (the second car gains 10 miles every hour).\n$10 \\text{ mph} \\times 2 \\text{ hours} = \\mathbf{20 \\text{ miles}}.$\n\nAfter 2 hours, the cars will be **20 miles** apart.",
+  "gold_answer": "20",
+  "input_tokens": 297,
+  "output_tokens": 254,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7168,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:18Z"
+}

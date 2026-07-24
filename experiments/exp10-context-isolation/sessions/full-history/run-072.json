@@ -1,0 +1,15 @@
+{
+  "run_id": "run-072",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the average total distance spat, we first calculate the total distance for each person and then find the mean.\n\n1.  **Zoey's total distance:**\n    40 seeds \u00d7 10 feet/seed = **400 feet**\n\n2.  **Sydney's total distance:**\n    35 seeds \u00d7 12 feet/seed = **420 feet**\n\n3.  **Average total distance:**\n    (400 feet + 420 feet) / 2 = 820 / 2 = **410 feet**\n\nThe average total distance spat is **410 feet**.",
+  "gold_answer": "410",
+  "input_tokens": 301,
+  "output_tokens": 139,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4894,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:51Z"
+}

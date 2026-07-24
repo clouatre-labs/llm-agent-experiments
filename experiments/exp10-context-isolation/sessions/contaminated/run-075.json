@@ -1,0 +1,15 @@
+{
+  "run_id": "run-075",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total weekly production for Julie and Jewel, we first determine their daily rates and then multiply by the number of days in a week.\n\n1.  **Determine Jewel's daily production:** 50 customers.\n2.  **Determine Julie's daily production:** Since she is twice as fast, $50 \\times 2 = 100$ customers.\n3.  **Calculate combined daily production:** $50 + 100 = 150$ customers.\n4.  **Calculate weekly production (7 days):** $150 \\times 7 = 1,050$ customers.\n\n**Total weekly production: 1,050 customers.**",
+  "gold_answer": "1050",
+  "input_tokens": 286,
+  "output_tokens": 152,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5174,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:16Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-226",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Jamie was paid for her work last Tuesday, we can break the calculation down into her regular pay and her overtime pay.\n\n**1. Calculate the regular pay:**\nJamie works 8 hours at her regular rate.\n*   Regular rate: $20 per hour\n*   Regular hours: 8 hours\n*   **Regular pay:** $20 \\times 8 = \\$160$\n\n**2. Calculate the overtime rate:**\nAny hours worked beyond 8 are paid at 150% of her regular rate.\n*   Overtime rate: $20 \\times 1.50 = \\$30$ per hour\n\n**3. Calculate the overtime pay:**\nJamie worked a total of 11 hours.\n*   Overtime hours: $11 - 8 = 3$ hours\n*   **Overtime pay:** $30 \\times 3 = \\$90$\n\n**4. Calculate the total pay:**\n*   Total pay: $\\$160 \\text{ (regular)} + \\$90 \\text{ (overtime)} = \\$250$\n\nJamie was paid **$250** for her work that day.",
+  "gold_answer": "250",
+  "input_tokens": 262,
+  "output_tokens": 259,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4554,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:09Z"
+}

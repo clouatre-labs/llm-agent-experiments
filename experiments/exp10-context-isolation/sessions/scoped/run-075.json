@@ -1,0 +1,15 @@
+{
+  "run_id": "run-075",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total weekly production for Julie and Jewel, we can follow these steps:\n\n1.  **Determine Jewel's daily production:**\n    Jewel processes **50 customers** per day.\n\n2.  **Determine Julie's daily production:**\n    Julie operates exactly twice as fast as Jewel.\n    $50 \\times 2 = \\mathbf{100}$ **customers** per day.\n\n3.  **Calculate the combined daily production:**\n    $50 \\text{ (Jewel)} + 100 \\text{ (Julie)} = \\mathbf{150}$ **customers** per day.\n\n4.  **Calculate the total weekly production:**\n    Since they work all days of the week (7 days):\n    $150 \\times 7 = \\mathbf{1,050}$ **customers**.\n\n**Total weekly production: 1,050 customers.**",
+  "gold_answer": "1050",
+  "input_tokens": 253,
+  "output_tokens": 199,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3619,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:10Z"
+}

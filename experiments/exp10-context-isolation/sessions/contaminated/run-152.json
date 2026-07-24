@@ -1,0 +1,15 @@
+{
+  "run_id": "run-152",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of people on the train at the final stop, we can follow the changes step-by-step:\n\n1.  **Starting number:** 120 people\n2.  **First stop:** 20 people board.\n    *   $120 + 20 = 140$ people\n3.  **Second stop:** 50 people descend, and twice that number (100) board.\n    *   $140 - 50 = 90$ people\n    *   $90 + 100 = 190$ people\n4.  **Third stop:** 80 people descend.\n    *   $190 - 80 = 110$ people\n\n**Final total:** There are **110** people on the train at the final stop.",
+  "gold_answer": "110",
+  "input_tokens": 302,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3252,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:36Z"
+}

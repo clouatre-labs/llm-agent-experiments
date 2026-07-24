@@ -1,0 +1,15 @@
+{
+  "run_id": "run-231",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find how much more it costs to repave Lewis' street compared to Monica's street, follow these steps:\n\n1.  **Calculate the cost for Monica's street:**\n    $150 \\text{ meters} \\times \\$194/\\text{meter} = \\$29,100$\n\n2.  **Calculate the cost for Lewis' street:**\n    $490 \\text{ meters} \\times \\$194/\\text{meter} = \\$95,060$\n\n3.  **Calculate the difference:**\n    $\\$95,060 - \\$29,100 = \\$65,960$\n\n**Alternatively, you can calculate the difference in length first:**\n1.  **Difference in length:** $490\\text{m} - 150\\text{m} = 340\\text{m}$\n2.  **Difference in cost:** $340\\text{m} \\times \\$194/\\text{meter} = \\$65,960$\n\nIt costs **$65,960** more to repave Lewis' street.",
+  "gold_answer": "65960",
+  "input_tokens": 303,
+  "output_tokens": 258,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6089,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:30Z"
+}

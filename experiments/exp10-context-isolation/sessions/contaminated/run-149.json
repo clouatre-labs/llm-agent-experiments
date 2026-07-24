@@ -1,0 +1,15 @@
+{
+  "run_id": "run-149",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Total number of classes:** 4 times a week \u00d7 6 weeks = **24 classes**.\n2.  **Total hours of class time:** 24 classes \u00d7 2 hours per class = **48 hours**.\n3.  **Total recipes learned:** 48 total hours \u00f7 1.5 hours per recipe = **32 recipes**.\n\nJohn learns **32 recipes**.",
+  "gold_answer": "32",
+  "input_tokens": 295,
+  "output_tokens": 99,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4279,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:36Z"
+}

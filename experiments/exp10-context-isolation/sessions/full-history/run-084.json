@@ -1,0 +1,15 @@
+{
+  "run_id": "run-084",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Bailey started with, we can follow these steps:\n\n1.  **Calculate the total allowance received:**\n    Bailey receives $5 per week for 8 weeks.\n    $5 \\times 8 = \\$40$\n\n2.  **Determine the starting amount:**\n    We know her final total is $100. To find the starting amount, subtract the total allowance from the final total.\n    $\\$100 - \\$40 = \\$60$\n\n**Bailey started with $60.**",
+  "gold_answer": "60",
+  "input_tokens": 293,
+  "output_tokens": 116,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5452,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:54Z"
+}

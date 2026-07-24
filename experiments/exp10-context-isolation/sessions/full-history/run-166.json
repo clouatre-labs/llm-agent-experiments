@@ -1,0 +1,15 @@
+{
+  "run_id": "run-166",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many pizza pieces Tobias has eaten, we can calculate the amount consumed each day step-by-step:\n\n1.  **Total pieces:** 60\n2.  **Day 1:** He ate $2/5$ of 60.\n    *   $60 \\times (2/5) = 24$ pieces.\n    *   *Remaining pieces:* $60 - 24 = 36$.\n3.  **Day 2:** He ate 10 pieces.\n    *   *Remaining pieces:* $36 - 10 = 26$.\n4.  **Day 3:** He ate $7/13$ of the **remaining** pieces (26).\n    *   $26 \\times (7/13) = 14$ pieces.\n\n**Total eaten so far:** $24 \\text{ (Day 1)} + 10 \\text{ (Day 2)} + 14 \\text{ (Day 3)} = \\mathbf{48}$ **pieces.**",
+  "gold_answer": "48",
+  "input_tokens": 302,
+  "output_tokens": 236,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1487,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:09Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-066",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of times the alarm rang, we calculate the duration of each instance based on the information provided:\n\n1.  **First time:** 4 rings.\n2.  **Second time:** 3 times as long as the first (4 \u00d7 3) = 12 rings.\n3.  **Third time:** Half as long as the second (12 \u00f7 2) = 6 rings.\n\n**Total rings:** 4 + 12 + 6 = **22**",
+  "gold_answer": "22",
+  "input_tokens": 291,
+  "output_tokens": 110,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1839,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:47Z"
+}

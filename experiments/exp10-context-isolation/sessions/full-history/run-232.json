@@ -1,0 +1,15 @@
+{
+  "run_id": "run-232",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **20** Spanish books.\n\n**Calculation:**\n1. **Total books:** 50\n2. **English books:** 50% of 50 = 25\n3. **German books:** 10% of 50 = 5\n4. **Spanish books:** 50 - (25 + 5) = 20",
+  "gold_answer": "20",
+  "input_tokens": 296,
+  "output_tokens": 83,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1148,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:25Z"
+}

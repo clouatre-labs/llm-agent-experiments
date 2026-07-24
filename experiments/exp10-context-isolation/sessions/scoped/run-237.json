@@ -1,0 +1,15 @@
+{
+  "run_id": "run-237",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of players on both teams, follow these steps:\n\n1.  **Find the number of players on Carlton's team:** 13 players.\n2.  **Find the number of players on Zeke's team:** Since Zeke's team has 7 more players than Carlton's, add 7 to 13 ($13 + 7 = 20$).\n3.  **Calculate the combined total:** Add the players from both teams together ($13 + 20 = 33$).\n\nThere are **33** players in both teams combined.",
+  "gold_answer": "33",
+  "input_tokens": 258,
+  "output_tokens": 128,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3938,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:11Z"
+}

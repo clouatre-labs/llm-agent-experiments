@@ -1,0 +1,15 @@
+{
+  "run_id": "run-155",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Soil:** 24 feet \u00f7 4 feet/hour = **6 hours**\n2.  **Clay:** 8 feet \u00f7 2 feet/hour (half of 4) = **4 hours**\n3.  **Total Time:** 6 hours + 4 hours = **10 hours**\n\nIt will take Bill **10 hours** to dig the well.",
+  "gold_answer": "10",
+  "input_tokens": 288,
+  "output_tokens": 96,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3721,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:37Z"
+}

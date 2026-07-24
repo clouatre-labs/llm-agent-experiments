@@ -1,0 +1,15 @@
+{
+  "run_id": "run-132",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the difference between the winner and the loser, we first need to calculate the total distance run by each person.\n\n**1. Calculate Blake's distance:**\nBlake runs back and forth on a 100-yard field 15 times.\n*   One \"back and forth\" trip = $100 \\text{ yards (down)} + 100 \\text{ yards (back)} = 200 \\text{ yards}$.\n*   Total distance = $15 \\text{ trips} \\times 200 \\text{ yards/trip} = 3,000 \\text{ yards}$.\n\n**2. Calculate Kelly's distance:**\nKelly's run is split into two parts.\n*   **Part 1:** One back and forth on the full field.\n    *   $100 \\text{ yards (down)} + 100 \\text{ yards (back)} = 200 \\text{ yards}$.\n*   **Part 2:** Running to the 40-yard line and back, 34 times.\n    *   One \"to the 40 and back\" trip = $40 \\text{ yards (down)} + 40 \\text{ yards (back)} = 80 \\text{ yards}$.\n    *   $34 \\text{ trips} \\times 80 \\text{ yards/trip} = 2,720 \\text{ yards}$.\n*   **Total distance** = $200 + 2,720 = 2,920 \\text{ yards}$.\n\n**3. Calculate the difference:**\n*   Blake: $3,000 \\text{ yards}$\n*   Kelly: $2,920 \\text{ yards}$\n*   Difference: $3,000 - 2,920 = 80 \\text{ yards}$.\n\n**The winner (Blake) runs 80 yards farther than the loser (Kelly).**",
+  "gold_answer": "80",
+  "input_tokens": 262,
+  "output_tokens": 438,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8195,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:48Z"
+}

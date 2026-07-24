@@ -1,0 +1,15 @@
+{
+  "run_id": "run-087",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of Bill's new truck, we need to calculate the cost of each individual feature and add them to the base price.\n\n**1. Identify the cost of each component:**\n*   **Base Price:** $30,000\n*   **King Cab Upgrade:** $7,500\n*   **Leather Seats:** $\\frac{1}{3}$ of the king cab upgrade $\\rightarrow \\frac{1}{3} \\times \\$7,500 = \\$2,500$\n*   **Running Boards:** $500 less than the leather seats $\\rightarrow \\$2,500 - \\$500 = \\$2,000$\n*   **Upgraded Exterior Light Package:** $1,500\n*   **Towing Package:** (Note: The prompt mentions a towing package is included, but does not provide a specific price for it. In mathematical word problems of this type, if a price is not provided for a listed item, it is treated as $0 or omitted from the calculation.)\n\n**2. Calculate the total sum:**\n$30,000 (Base) + $7,500 (King Cab) + $2,500 (Leather) + $2,000 (Running Boards) + $1,500 (Lights) = **$43,500**\n\nThe total cost of Bill's new truck is **$43,500**.",
+  "gold_answer": "43500",
+  "input_tokens": 284,
+  "output_tokens": 320,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1454,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:49Z"
+}

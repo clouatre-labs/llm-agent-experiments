@@ -1,0 +1,15 @@
+{
+  "run_id": "run-285",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total capital Mr. Josue has now, we can follow these steps:\n\n1.  **Initial Capital:** $5,000\n2.  **First Bank Loan:** $4,000\n3.  **Second Bank Loan:** $8,000 (Twice the amount of the first bank: $4,000 \u00d7 2)\n4.  **Total Calculation:** $5,000 + $4,000 + $8,000 = $17,000\n\nMr. Josue now has **$17,000** in capital.",
+  "gold_answer": "17000",
+  "input_tokens": 298,
+  "output_tokens": 138,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2506,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:38Z"
+}

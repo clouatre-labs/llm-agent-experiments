@@ -1,0 +1,15 @@
+{
+  "run_id": "run-093",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the production rate of the fifth worker, we can follow these steps:\n\n1.  **Determine the total number of toys produced during the shift:**\n    The order is for 400 toys, but 20 toys are still needed at the end of the shift.\n    $400 - 20 = 380 \\text{ toys produced.}$\n\n2.  **Calculate the production of the first four workers over 10 hours:**\n    *   **Two workers** produce 6 toys/hour each:\n        $2 \\text{ workers} \\times 6 \\text{ toys/hour} \\times 10 \\text{ hours} = 120 \\text{ toys.}$\n    *   **Two workers** produce 4 toys/hour each:\n        $2 \\text{ workers} \\times 4 \\text{ toys/hour} \\times 10 \\text{ hours} = 80 \\text{ toys.}$\n    *   **Total for these four workers:** $120 + 80 = 200 \\text{ toys.}$\n\n3.  **Calculate how many toys the fifth worker produced:**\n    Subtract the production of the first four workers from the total produced.\n    $380 \\text{ total toys} - 200 \\text{ toys} = 180 \\text{ toys produced by the fifth worker.}$\n\n4.  **Calculate the fifth worker's hourly rate:**\n    Divide their total production by the number of hours worked.\n    $180 \\text{ toys} \\div 10 \\text{ hours} = 18 \\text{ toys per hour.}$\n\n**The fifth worker produces 18 toys per hour.**",
+  "gold_answer": "18",
+  "input_tokens": 267,
+  "output_tokens": 378,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8298,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:30Z"
+}

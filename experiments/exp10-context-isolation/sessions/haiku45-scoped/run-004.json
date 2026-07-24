@@ -1,0 +1,15 @@
+{
+  "run_id": "run-004",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Ice Cream Truck Problem\n\nLet me work through this step by step.\n\n**End of First Street:**\n- 5 children are following the truck\n\n**Second Street:**\n- Each child is joined by another child\n- This means each of the 5 children brings 1 more child\n- New children added: 5 \u00d7 1 = 5\n- Total children: 5 + 5 = 10 children\n\n**Third Street:**\n- Each child in the existing group is joined by 2 more children\n- New children added: 10 \u00d7 2 = 20\n- Total children: 10 + 20 = 30 children\n\n**Original 5 Children Leave:**\n- The original 5 children give up and leave\n- Children remaining: 30 - 5 = 25 children\n\n## Answer: **25 children** are now following the truck.",
+  "gold_answer": "25",
+  "input_tokens": 265,
+  "output_tokens": 208,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 5137,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

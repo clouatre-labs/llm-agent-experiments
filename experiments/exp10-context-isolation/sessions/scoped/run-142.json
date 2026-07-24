@@ -1,0 +1,15 @@
+{
+  "run_id": "run-142",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of fruits Ricardo can get, we need to calculate the yield for each type of plant and then add them together.\n\n**1. Calculate the number of tomatoes:**\nRicardo has 5 tomato plants, and each yields 22 tomatoes.\n$5 \\times 22 = 110$ tomatoes.\n\n**2. Calculate the number of eggplants:**\nRicardo has 8 eggplant plants, and each yields 4 eggplants.\n$8 \\times 4 = 32$ eggplants.\n\n**3. Calculate the total number of fruits:**\nAdd the tomatoes and eggplants together.\n$110 + 32 = 142$ fruits.\n\nRicardo can get **142** fruits from his plants.",
+  "gold_answer": "142",
+  "input_tokens": 261,
+  "output_tokens": 164,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7535,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:51Z"
+}

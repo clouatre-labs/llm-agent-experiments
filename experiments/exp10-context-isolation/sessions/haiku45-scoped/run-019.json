@@ -1,0 +1,15 @@
+{
+  "run_id": "run-019",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Stamp Problem\n\nLet me work through this step by step.\n\n**Given information:**\n- Snowflake stamps: 16\n- Truck stamps: 3 more than snowflake stamps\n- Rose stamps: 9 fewer than truck stamps\n\n**Step 1: Find the number of truck stamps**\n- Truck stamps = Snowflake stamps + 3\n- Truck stamps = 16 + 3 = 19\n\n**Step 2: Find the number of rose stamps**\n- Rose stamps = Truck stamps - 9\n- Rose stamps = 19 - 9 = 10\n\n**Step 3: Find the total number of stamps**\n- Total = Snowflake + Truck + Rose\n- Total = 16 + 19 + 10 = 45\n\n**Answer: Max bought 45 stamps in all.**",
+  "gold_answer": "45",
+  "input_tokens": 278,
+  "output_tokens": 201,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6108,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

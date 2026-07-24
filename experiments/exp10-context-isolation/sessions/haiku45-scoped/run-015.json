@@ -1,0 +1,15 @@
+{
+  "run_id": "run-015",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Problem\n\nLet me work through this step-by-step:\n\n**Given information:**\n- Lily made 50 friends\n- Amy made 20 more friends than Lily\n\n**Step 1: Find how many friends Amy made**\n- Amy's friends = Lily's friends + 20\n- Amy's friends = 50 + 20\n- Amy's friends = 70\n\n**Step 2: Find the total friends together**\n- Total = Lily's friends + Amy's friends\n- Total = 50 + 70\n- Total = 120\n\n**Answer: Lily and Amy have 120 friends together.**",
+  "gold_answer": "120",
+  "input_tokens": 272,
+  "output_tokens": 147,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6183,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

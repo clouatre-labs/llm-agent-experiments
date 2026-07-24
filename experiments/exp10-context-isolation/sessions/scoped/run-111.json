@@ -1,0 +1,15 @@
+{
+  "run_id": "run-111",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much water the boat took on, we need to determine the total distance Julia rowed and then apply the leak rate.\n\n**1. Determine the distance rowed:**\n*   Julia rows **20 feet** every **16 seconds**.\n*   Her speed is $20 \\text{ feet} / 16 \\text{ seconds} = 1.25 \\text{ feet per second}$.\n*   The shore is **64 seconds** away.\n*   Total distance = $\\text{Speed} \\times \\text{Time} = 1.25 \\text{ ft/s} \\times 64 \\text{ s} = \\mathbf{80 \\text{ feet}}$.\n\n**2. Determine the water taken on:**\n*   The leak rate is **2 liters** for every **10 feet**.\n*   Total water = $(\\text{Total distance} / 10 \\text{ feet}) \\times 2 \\text{ liters}$.\n*   Total water = $(80 / 10) \\times 2 = 8 \\times 2 = \\mathbf{16 \\text{ liters}}$.\n\n**Answer:**\nThe boat had taken on **16 liters** of water by the time Julia reached the shore.",
+  "gold_answer": "16",
+  "input_tokens": 248,
+  "output_tokens": 275,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7981,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:44Z"
+}

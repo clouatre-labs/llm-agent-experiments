@@ -1,0 +1,15 @@
+{
+  "run_id": "run-126",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Find the number of students per class:** Since there are 80 students total across two equal classes, each class has **40 students** (80 \u00f7 2 = 40).\n2.  **Find the number of girls per class:** 40% of 40 students are girls. $40 \\times 0.40 = \\mathbf{16}$ **girls**.\n3.  **Find the number of boys per class:** Subtract the girls from the total class size. $40 - 16 = \\mathbf{24}$ **boys**.\n\n**There are 24 boys in each class.**",
+  "gold_answer": "24",
+  "input_tokens": 289,
+  "output_tokens": 152,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6779,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:31Z"
+}

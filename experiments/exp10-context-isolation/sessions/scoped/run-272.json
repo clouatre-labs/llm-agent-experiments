@@ -1,0 +1,15 @@
+{
+  "run_id": "run-272",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total weight of all the dogs, we calculate the weight of each dog individually based on the weight of Kory\u2019s dog.\n\n1.  **Kory\u2019s dog:** 60 pounds\n2.  **Elijah\u2019s first dog:** $\\frac{1}{4}$ of Kory\u2019s dog\n    *   $60 \\times \\frac{1}{4} = 15$ pounds\n3.  **Elijah\u2019s second dog:** $\\frac{1}{2}$ of Kory\u2019s dog\n    *   $60 \\times \\frac{1}{2} = 30$ pounds\n\n**Total weight:**\n$60 + 15 + 30 = 105$ pounds\n\nElijah and Kory\u2019s dogs weigh **105 pounds** altogether.",
+  "gold_answer": "105",
+  "input_tokens": 270,
+  "output_tokens": 181,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1279,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:16Z"
+}

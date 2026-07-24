@@ -1,0 +1,15 @@
+{
+  "run_id": "run-042",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step:\n\n**Step 1: Calculate the initial amount of money**\n- Allowance: $20\n- Extra amount added: $10\n- Total: $20 + $10 = $30\n\n**Step 2: Calculate the amount after investment tripled**\n- Initial investment: $30\n- The money tripled, meaning it was multiplied by 3\n- Final amount: $30 \u00d7 3 = $90\n\n**Answer: Johnny had $90 after a year**",
+  "gold_answer": "90",
+  "input_tokens": 263,
+  "output_tokens": 124,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 1972,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

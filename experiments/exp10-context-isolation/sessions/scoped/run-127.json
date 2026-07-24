@@ -1,0 +1,15 @@
+{
+  "run_id": "run-127",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many beakers Igor lost, we need to calculate how many of each item he actually placed on the lab bench.\n\n**1. Calculate the number of test tubes Igor gathered:**\n*   Requested: 16\n*   Igor gathered half as many: $16 \\div 2 = \\mathbf{8}$ **test tubes**\n\n**2. Calculate the number of Petri dishes Igor gathered:**\n*   Requested: 14\n*   Igor gathered two more than requested: $14 + 2 = \\mathbf{16}$ **Petri dishes**\n\n**3. Calculate the number of beakers Igor placed on the bench:**\n*   Total items on the bench: 29\n*   Items accounted for (test tubes + Petri dishes): $8 + 16 = 24$\n*   Beakers on the bench: $29 - 24 = \\mathbf{5}$ **beakers**\n\n**4. Calculate how many beakers were lost:**\n*   Requested (and initially picked up): 7\n*   Beakers actually placed on the bench: 5\n*   Beakers lost: $7 - 5 = 2$\n\nIgor lost **2** beakers.",
+  "gold_answer": "2",
+  "input_tokens": 282,
+  "output_tokens": 267,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4838,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:45Z"
+}

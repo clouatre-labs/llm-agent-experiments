@@ -1,0 +1,15 @@
+{
+  "run_id": "run-001",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many buttons Lorraine has by the end, we need to calculate the results of her two separate trades.\n\n**1. Trading Small Stickers for Large Buttons**\n*   **Initial Small Stickers:** 30\n*   **Amount traded:** 90% of 30 = 27 small stickers.\n*   **Conversion rate:** 1 large button = 3 small stickers.\n*   **Buttons gained:** $27 \\div 3 = 9$ large buttons.\n\n**2. Trading Large Stickers for Buttons**\n*   **Initial Large Stickers:** 40\n*   **Part A (Large Buttons):**\n    *   **Amount traded:** 50% of 40 = 20 large stickers.\n    *   **Conversion rate:** 1 large sticker = 1 large button.\n    *   **Buttons gained:** 20 large buttons.\n*   **Part B (Small Buttons):**\n    *   **Amount traded:** The remaining 50% = 20 large stickers.\n    *   **Conversion rate:** 1 large sticker = 3 small buttons.\n    *   **Buttons gained:** $20 \\times 3 = 60$ small buttons.\n\n**3. Total Button Count**\n*   **Large Buttons:** $9 \\text{ (from small stickers)} + 20 \\text{ (from large stickers)} = 29$ large buttons.\n*   **Small Buttons:** 60 small buttons.\n\nLorraine has **89 buttons** in total (29 large and 60 small).",
+  "gold_answer": "89",
+  "input_tokens": 264,
+  "output_tokens": 346,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 27598,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:15:28Z"
+}

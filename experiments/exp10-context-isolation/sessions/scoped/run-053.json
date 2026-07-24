@@ -1,0 +1,15 @@
+{
+  "run_id": "run-053",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **12** penguins still left sunbathing.\n\nHere is the breakdown:\n1.  **Total penguins:** 36\n2.  **Swimming in the ocean:** 1/3 of 36 = 12 penguins\n3.  **Eating in the cave:** 1/3 of 36 = 12 penguins\n4.  **Remaining:** 36 - 12 - 12 = **12**",
+  "gold_answer": "12",
+  "input_tokens": 259,
+  "output_tokens": 99,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2715,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:14Z"
+}

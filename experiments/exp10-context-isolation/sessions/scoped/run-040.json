@@ -1,0 +1,15 @@
+{
+  "run_id": "run-040",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of seashells brought back, we can follow these steps:\n\n1.  **Find the total number of groups:**\n    There were 90 people, and they were divided into groups of 9.\n    $90 \\div 9 = 10 \\text{ groups}$\n\n2.  **Determine how many groups brought back seashells:**\n    The problem states that $3/5$ of the number of groups brought back seashells.\n    $\\frac{3}{5} \\times 10 = 6 \\text{ groups}$\n\n3.  **Calculate the number of people in those groups:**\n    Each of these 6 groups consists of 9 people.\n    $6 \\times 9 = 54 \\text{ people}$\n\n4.  **Calculate the total number of seashells:**\n    Each of these 54 people brought back 2 seashells.\n    $54 \\times 2 = 108 \\text{ seashells}$\n\n**Answer:**\nThey brought **108** seashells.",
+  "gold_answer": "108",
+  "input_tokens": 267,
+  "output_tokens": 226,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8944,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:04Z"
+}

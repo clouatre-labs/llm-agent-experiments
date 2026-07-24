@@ -1,0 +1,15 @@
+{
+  "run_id": "run-178",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of hours John spends learning per week, we need to calculate his school time and his weekend study time separately.\n\n**1. Calculate weekly school minutes:**\n*   **Classes per day:** 6 (normal) + 2 (extra) = 8 classes\n*   **Minutes per day:** 8 classes \u00d7 40 minutes = 320 minutes\n*   **Minutes per week (5 days):** 320 minutes \u00d7 5 days = **1,600 minutes**\n\n**2. Calculate weekend learning minutes:**\n*   John spends 1/16 of his weekly minutes on Saturday and 1/16 on Sunday.\n*   **Total weekend fraction:** 1/16 + 1/16 = 2/16 (or 1/8) of his weekly minutes.\n*   **Weekend minutes:** 1,600 minutes \u00d7 (1/8) = **200 minutes**\n\n**3. Calculate total weekly minutes and convert to hours:**\n*   **Total minutes:** 1,600 (school) + 200 (weekend) = 1,800 minutes\n*   **Total hours:** 1,800 minutes \u00f7 60 minutes/hour = **30 hours**\n\nJohn spends **30 hours** a week learning.",
+  "gold_answer": "30",
+  "input_tokens": 295,
+  "output_tokens": 294,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5664,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:45Z"
+}

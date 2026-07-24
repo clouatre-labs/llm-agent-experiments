@@ -1,0 +1,15 @@
+{
+  "run_id": "run-097",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of sunflowers sold after 3 days, we need to calculate the number of individual sunflowers and the number of sunflowers contained within the bouquets sold each day.\n\n**1. Calculate daily sales of individual sunflowers:**\n*   Faraday earns $26 from individual sunflowers.\n*   Each sunflower costs $2.\n*   $26 \\div \\$2 = 13$ sunflowers per day.\n\n**2. Calculate daily sales of bouquets:**\n*   Faraday earns $56 from bouquets.\n*   Each bouquet costs $8.\n*   $56 \\div \\$8 = 7$ bouquets per day.\n\n**3. Calculate the number of sunflowers in those bouquets:**\n*   Each bouquet contains 12 sunflowers.\n*   $7 \\text{ bouquets} \\times 12 \\text{ sunflowers} = 84$ sunflowers per day.\n\n**4. Calculate total sunflowers sold per day:**\n*   $13 \\text{ (individual)} + 84 \\text{ (from bouquets)} = 97$ sunflowers per day.\n\n**5. Calculate total sunflowers sold after 3 days:**\n*   $97 \\text{ sunflowers/day} \\times 3 \\text{ days} = 291$ sunflowers.\n\n**Answer:**\nFaraday was able to sell **291** sunflowers after 3 days.",
+  "gold_answer": "291",
+  "input_tokens": 261,
+  "output_tokens": 298,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3522,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:49Z"
+}

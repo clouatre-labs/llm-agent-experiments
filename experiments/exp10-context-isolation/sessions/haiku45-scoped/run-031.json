@@ -1,0 +1,15 @@
+{
+  "run_id": "run-031",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Elf Problem\n\nLet me work through this step by step:\n\n**Step 1: Find how many elves quit after children vomit on them**\n- Total elves: 60\n- A third quit: 60 \u00f7 3 = 20 elves quit\n\n**Step 2: Find how many elves remain after the first group quits**\n- Remaining: 60 - 20 = 40 elves\n\n**Step 3: Find how many elves quit after kids kick their shins**\n- 10 more elves quit\n\n**Step 4: Find the final number of elves**\n- Final remaining: 40 - 10 = **30 elves**\n\n**Answer: 30 elves are left**",
+  "gold_answer": "30",
+  "input_tokens": 278,
+  "output_tokens": 182,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3000,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

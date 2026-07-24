@@ -1,0 +1,15 @@
+{
+  "run_id": "run-209",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Susan earns, we need to calculate her total working time and then apply her rate.\n\n**1. Calculate total elapsed time:**\nFrom 8 a.m. to 11 a.m. is **3 hours**.\n\n**2. Subtract the break time:**\n3 hours - 30 minutes = **2.5 hours** of actual working time.\n\n**3. Convert working time into minutes:**\n2.5 hours \u00d7 60 minutes = **150 minutes**.\n\n**4. Calculate the number of 10-minute intervals:**\n150 minutes \u00f7 10 minutes = **15 intervals**.\n\n**5. Calculate total earnings:**\n15 intervals \u00d7 $5 = **$75**.\n\nSusan earns **$75**.",
+  "gold_answer": "75",
+  "input_tokens": 296,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1238,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:19Z"
+}

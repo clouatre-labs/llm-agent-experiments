@@ -1,0 +1,15 @@
+{
+  "run_id": "run-214",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many toys Jonathan currently has, we can follow these steps:\n\n1.  **Determine the size of James's play set:** 80 toys.\n2.  **Calculate the size of the target play set:** The target is five times larger than James's set.\n    *   $80 \\times 5 = 400$ toys.\n3.  **Determine how many toys Jonathan needs to reach that target:** He needs 2 more toys than he currently has to reach 400.\n4.  **Solve for Jonathan's current amount:**\n    *   $\\text{Current toys} + 2 = 400$\n    *   $\\text{Current toys} = 400 - 2$\n    *   $\\text{Current toys} = 398$\n\nJonathan currently has **398** toys.",
+  "gold_answer": "398",
+  "input_tokens": 292,
+  "output_tokens": 193,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1580,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:50Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-124",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of semi-automatic cars, follow these steps:\n\n1.  **Find the number of semi-automatic cars:**\n    Total cars - (Automatic + Manual) = Semi-automatic\n    20 - (12 + 4) = 20 - 16 = **4 semi-automatic cars**\n\n2.  **Calculate the percentage:**\n    (Number of semi-automatic cars / Total cars) \u00d7 100\n    (4 / 20) \u00d7 100 = 0.2 \u00d7 100 = **20%**\n\n**20% of the cars are semi-automatic.**",
+  "gold_answer": "20",
+  "input_tokens": 296,
+  "output_tokens": 141,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1295,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:25Z"
+}

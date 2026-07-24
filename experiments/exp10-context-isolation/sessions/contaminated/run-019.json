@@ -1,0 +1,15 @@
+{
+  "run_id": "run-019",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of stamps Max bought, we can break down the quantities for each design:\n\n1.  **Snowflake stamps:** 16\n2.  **Truck stamps:** Max bought 3 more than the snowflake stamps.\n    *   $16 + 3 = 19$\n3.  **Rose stamps:** Max bought 9 fewer than the truck stamps.\n    *   $19 - 9 = 10$\n\n**Total stamps:**\n$16 \\text{ (snowflake)} + 19 \\text{ (truck)} + 10 \\text{ (rose)} = 45$\n\nMax bought **45** stamps in all.",
+  "gold_answer": "45",
+  "input_tokens": 298,
+  "output_tokens": 150,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3908,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:59Z"
+}

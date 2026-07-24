@@ -1,0 +1,15 @@
+{
+  "run_id": "run-230",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Initial amount:** Boris has 100 apples.\n2.  **Beck's initial amount:** Beck has 23 fewer than Boris (100 - 23 = 77 apples).\n3.  **The transfer:** Boris gives Beck 10 apples.\n    *   Boris now has: 100 - 10 = **90 apples**.\n    *   Beck now has: 77 + 10 = **87 apples**.\n4.  **The difference:** 90 - 87 = 3.\n\nBeck has **3** fewer apples than Boris now.",
+  "gold_answer": "3",
+  "input_tokens": 259,
+  "output_tokens": 146,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4909,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:10Z"
+}

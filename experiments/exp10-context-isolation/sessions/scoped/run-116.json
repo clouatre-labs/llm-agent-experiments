@@ -1,0 +1,15 @@
+{
+  "run_id": "run-116",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many slices of apple they all ate, we can break down the amount eaten by each person:\n\n1.  **Doxa:** Ate **1** slice.\n2.  **Sister:** Ate 1 more than Doxa (1 + 1) = **2** slices.\n3.  **Brother:** Ate 1 more than the sister (2 + 1) = **3** slices.\n\n**Total slices eaten:** 1 + 2 + 3 = **6 slices**.",
+  "gold_answer": "6",
+  "input_tokens": 255,
+  "output_tokens": 109,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1926,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:33:10Z"
+}

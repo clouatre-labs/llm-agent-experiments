@@ -1,0 +1,15 @@
+{
+  "run_id": "run-186",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the average number of fruit roll-ups eaten, we first calculate the total amount eaten by each person and then find the mean.\n\n1.  **Calculate Beatrice's total:**\n    2 roll-ups wide \u00d7 24 roll-ups long = **48 roll-ups**\n\n2.  **Calculate Marcell's total:**\n    3 roll-ups wide \u00d7 14 roll-ups long = **42 roll-ups**\n\n3.  **Calculate the average:**\n    (48 + 42) / 2 = 90 / 2 = **45**\n\nOn average, they ate **45** fruit roll-ups.",
+  "gold_answer": "45",
+  "input_tokens": 269,
+  "output_tokens": 146,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2295,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:57Z"
+}

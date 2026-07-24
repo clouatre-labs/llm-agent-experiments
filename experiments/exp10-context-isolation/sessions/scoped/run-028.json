@@ -1,0 +1,15 @@
+{
+  "run_id": "run-028",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of a single bagel, we can follow these steps:\n\n1.  **Calculate the total number of bagels:**\n    Russell ordered 4 packs, and each pack contains 9 bagels.\n    $4 \\text{ packs} \\times 9 \\text{ bagels/pack} = 36 \\text{ bagels}$\n\n2.  **Calculate the total cost before the discount:**\n    Each pack costs $10.00.\n    $4 \\text{ packs} \\times \\$10.00 = \\$40.00$\n\n3.  **Apply the 10% discount:**\n    A 10% discount on $40.00 is $4.00 ($40.00 \\times 0.10 = \\$4.00$).\n    Subtract the discount from the total:\n    $\\$40.00 - \\$4.00 = \\$36.00$\n\n4.  **Calculate the cost per single bagel:**\n    Divide the total discounted cost by the total number of bagels.\n    $\\$36.00 \\div 36 \\text{ bagels} = \\$1.00$\n\n**Each single bagel will cost $1.00.**",
+  "gold_answer": "1",
+  "input_tokens": 272,
+  "output_tokens": 272,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3680,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:56Z"
+}

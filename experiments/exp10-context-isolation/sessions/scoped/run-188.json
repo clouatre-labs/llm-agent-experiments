@@ -1,0 +1,15 @@
+{
+  "run_id": "run-188",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Ashley should give the delivery man, follow these steps:\n\n1.  **Identify the cost of the pizza:** $15.\n2.  **Calculate the tip amount:** The tip is $\\frac{1}{5}$ of the order amount.\n    $$\\$15 \\times \\frac{1}{5} = \\$3$$\n3.  **Calculate the total amount:** Add the cost of the pizza and the tip together.\n    $$\\$15 + \\$3 = \\$18$$\n\n**Total Amount:** Ashley should give the delivery man **$18**.",
+  "gold_answer": "18",
+  "input_tokens": 252,
+  "output_tokens": 128,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4512,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:59Z"
+}

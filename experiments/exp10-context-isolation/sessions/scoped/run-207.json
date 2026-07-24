@@ -1,0 +1,15 @@
+{
+  "run_id": "run-207",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of yards used, we first need to determine the total fraction of the skein used and then convert that fraction into yards.\n\n**Step 1: Find the total fraction of the skein used.**\nMariah used $\\frac{1}{4}$ and her grandma used $\\frac{1}{2}$. To add these, we need a common denominator (which is 4):\n$$\\frac{1}{4} + \\frac{1}{2} = \\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}$$\nThey used $\\frac{3}{4}$ of a skein altogether.\n\n**Step 2: Convert the fraction into yards.**\nThere are 364 yards in one full skein. To find $\\frac{3}{4}$ of 364, we multiply:\n$$\\text{Total yards} = 364 \\times \\frac{3}{4}$$\n\nFirst, divide 364 by 4:\n$$364 \\div 4 = 91$$\n\nNext, multiply the result by 3:\n$$91 \\times 3 = 273$$\n\n**Answer:**\nThey used **273 yards** of yarn altogether.",
+  "gold_answer": "273",
+  "input_tokens": 271,
+  "output_tokens": 272,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8734,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:09Z"
+}

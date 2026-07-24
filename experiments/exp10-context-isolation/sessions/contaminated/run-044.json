@@ -1,0 +1,15 @@
+{
+  "run_id": "run-044",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of Helen's hotel and bus travels, we can break it down into two parts:\n\n**1. Hotel Costs:**\n*   Number of nights: 3\n*   Cost per night: $80\n*   **Total Hotel Cost:** 3 \u00d7 $80 = **$240**\n\n**2. Bus Travel Costs:**\n*   Cost per bus trip (10% of $80): $8\n*   Number of trips: 7\n*   **Total Bus Cost:** 7 \u00d7 $8 = **$56**\n\n**Total Expenditure:**\n*   $240 (Hotel) + $56 (Bus) = **$296**\n\nHelen paid **$296** for the hotel and bus travels.",
+  "gold_answer": "296",
+  "input_tokens": 291,
+  "output_tokens": 170,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4485,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:08Z"
+}

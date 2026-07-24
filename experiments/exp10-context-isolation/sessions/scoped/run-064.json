@@ -1,0 +1,15 @@
+{
+  "run_id": "run-064",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of miles John drives per month, we can follow these steps:\n\n1.  **Calculate the distance of a one-way trip:**\n    Distance = Speed \u00d7 Time\n    Distance = $70\\text{ mph} \\times 2\\text{ hours} = 140\\text{ miles}$.\n\n2.  **Calculate the distance of a round trip:**\n    Since he has to drive there and back, one visit equals:\n    $140\\text{ miles} \\times 2 = 280\\text{ miles}$.\n\n3.  **Calculate the total monthly mileage:**\n    He visits his parents twice a month:\n    $280\\text{ miles} \\times 2 = 560\\text{ miles}$.\n\n**John drives 560 miles a month when visiting his parents.**",
+  "gold_answer": "560",
+  "input_tokens": 255,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10028,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:29:30Z"
+}

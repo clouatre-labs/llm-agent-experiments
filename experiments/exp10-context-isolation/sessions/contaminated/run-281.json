@@ -1,0 +1,15 @@
+{
+  "run_id": "run-281",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "$15",
+  "gold_answer": "15",
+  "input_tokens": 294,
+  "output_tokens": 4,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 700,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:03Z"
+}

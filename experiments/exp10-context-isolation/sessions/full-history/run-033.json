@@ -1,0 +1,15 @@
+{
+  "run_id": "run-033",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how far Elvis is from his house, we calculate the distance of each leg of his journey:\n\n1.  **Westward journey:** 5 hours \u00d7 18 mph = **90 miles west**.\n2.  **Eastward journey:** 8 hours \u00d7 18 mph = **144 miles east**.\n\nTo find his final position relative to his house, we subtract the distance he traveled back toward (and past) his starting point:\n144 miles (east) - 90 miles (west) = **54 miles**.\n\nElvis is **54 miles east** of his house.",
+  "gold_answer": "54",
+  "input_tokens": 297,
+  "output_tokens": 134,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2934,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:39Z"
+}

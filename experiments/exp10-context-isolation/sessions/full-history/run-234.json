@@ -1,0 +1,15 @@
+{
+  "run_id": "run-234",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Mark's profit, we need to subtract his total expenses from his total revenue.\n\n**1. Calculate Total Expenses:**\nMark bought 3 packs at $1,800 each.\n$3 \\times \\$1,800 = \\$5,400$\n\n**2. Calculate Total Revenue:**\n*   High-value card 1: $4,000\n*   High-value card 2: $1,000\n*   Remaining cards: 30 cards $\\times$ $50 each = $1,500\n*   **Total Revenue:** $\\$4,000 + \\$1,000 + \\$1,500 = \\$6,500$\n\n**3. Calculate Profit:**\n$\\text{Profit} = \\text{Total Revenue} - \\text{Total Expenses}$\n$\\$6,500 - \\$5,400 = \\$1,100$\n\nMark made a profit of **$1,100**.",
+  "gold_answer": "1100",
+  "input_tokens": 309,
+  "output_tokens": 224,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1525,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:26Z"
+}

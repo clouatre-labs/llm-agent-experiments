@@ -1,0 +1,15 @@
+{
+  "run_id": "run-289",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There will be **27** great grand-babies for Great Grandma Jones to kiss.\n\n**Here is the breakdown:**\n*   **Children:** 3\n*   **Grandchildren:** 3 children \u00d7 3 = 9\n*   **Great grand-babies:** 9 grandchildren \u00d7 3 = 27",
+  "gold_answer": "27",
+  "input_tokens": 300,
+  "output_tokens": 71,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2127,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:39Z"
+}

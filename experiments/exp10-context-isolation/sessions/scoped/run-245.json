@@ -1,0 +1,15 @@
+{
+  "run_id": "run-245",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the length of Elaina's usual concerts, we can set up a simple algebraic equation based on the information provided.\n\n**1. Identify the variables and constants:**\n*   Let $x$ be the length of a **usual concert** (in minutes).\n*   The final concert is twice as long as a usual concert: $2x$.\n*   The encore is a constant addition: $15$ minutes.\n*   The total runtime of the final concert is: $65$ minutes.\n\n**2. Set up the equation:**\n$$\\text{Twice the usual length} + \\text{Encore} = \\text{Total runtime}$$\n$$2x + 15 = 65$$\n\n**3. Solve for $x$:**\n*   Subtract 15 from both sides:\n    $$2x = 65 - 15$$\n    $$2x = 50$$\n*   Divide by 2:\n    $$x = 25$$\n\n**Answer:**\nElaina's usual concerts run for **25 minutes**.",
+  "gold_answer": "25",
+  "input_tokens": 252,
+  "output_tokens": 235,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3000,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:12Z"
+}

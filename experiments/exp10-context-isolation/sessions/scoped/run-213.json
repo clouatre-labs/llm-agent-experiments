@@ -1,0 +1,15 @@
+{
+  "run_id": "run-213",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Julie had left, we can follow these steps:\n\n1.  **Calculate the money spent on clothes:**\n    20% of $500 = $0.20 \\times 500 = $100.\n\n2.  **Calculate the remaining money after buying clothes:**\n    $500 - $100 = $400.\n\n3.  **Calculate the money spent on CDs:**\n    25% of the *remaining* $400 = $0.25 \\times 400 = $100.\n\n4.  **Calculate the final amount left:**\n    $400 - $100 = $300.\n\n**Julie had $300 left.**",
+  "gold_answer": "300",
+  "input_tokens": 259,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4406,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:05Z"
+}

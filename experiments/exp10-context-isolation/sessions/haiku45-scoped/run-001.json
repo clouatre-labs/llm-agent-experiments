@@ -1,0 +1,15 @@
+{
+  "run_id": "run-001",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "I'll solve this step-by-step, focusing on the sticker and button trades.\n\n**Initial inventory:**\n- 30 small stickers\n- 40 large stickers\n\n**Step 1: Trade 90% of small stickers for large buttons**\n- Small stickers traded: 30 \u00d7 0.90 = 27 small stickers\n- Small stickers remaining: 30 - 27 = 3 small stickers\n- Exchange rate: 1 large button = 3 small stickers\n- Large buttons received: 27 \u00f7 3 = 9 large buttons\n\n**Step 2: Trade 50% of large stickers for large buttons**\n- Large stickers traded for large buttons: 40 \u00d7 0.50 = 20 large stickers\n- Exchange rate: 1 large sticker = 1 large button\n- Large buttons received: 20 large buttons\n\n**Step 3: Trade remaining 50% of large stickers for small buttons**\n- Large stickers traded for small buttons: 40 \u00d7 0.50 = 20 large stickers\n- Exchange rate: 1 large sticker = 3 small buttons\n- Small buttons received: 20 \u00d7 3 = 60 small buttons\n\n**Step 4: Calculate total buttons**\n- Large buttons: 9 + 20 = 29 large buttons\n- Small buttons: 60 small buttons\n\n**Final answer: Lorraine has 29 large buttons and 60 small buttons, for a total of 89 buttons.**",
+  "gold_answer": "89",
+  "input_tokens": 279,
+  "output_tokens": 365,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 7021,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

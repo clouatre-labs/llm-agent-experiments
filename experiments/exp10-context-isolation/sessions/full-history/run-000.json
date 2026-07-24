@@ -1,0 +1,15 @@
+{
+  "run_id": "run-000",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Allen's age 10 years from now, we follow these steps:\n\n1.  **Identify the ratio and the total:**\n    *   Ratio of Darrell's age to Allen's age = $7:11$\n    *   Total age = $162$\n\n2.  **Determine the value of one \"part\" of the ratio:**\n    *   Total parts = $7 + 11 = 18$\n    *   Value per part = $162 / 18 = 9$\n\n3.  **Calculate their current ages:**\n    *   Darrell's current age = $7 \\times 9 = 63$\n    *   Allen's current age = $11 \\times 9 = 99$\n\n4.  **Calculate Allen's age 10 years from now:**\n    *   $99 + 10 = 109$\n\n**Allen's age 10 years from now will be 109.**",
+  "gold_answer": "109",
+  "input_tokens": 271,
+  "output_tokens": 227,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11479,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:14:18Z"
+}

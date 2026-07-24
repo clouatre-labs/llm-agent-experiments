@@ -1,0 +1,15 @@
+{
+  "run_id": "run-284",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many minutes it will take for the fog bank to cover the whole city, you can follow these steps:\n\n1.  **Determine how many 3-mile segments are in the 42-mile city:**\n    $42 \\text{ miles} \\div 3 \\text{ miles} = 14 \\text{ segments}$\n\n2.  **Multiply the number of segments by the time it takes per segment:**\n    $14 \\text{ segments} \\times 10 \\text{ minutes} = 140 \\text{ minutes}$\n\n**Answer:** It will take **140 minutes** for the fog bank to cover the whole city.",
+  "gold_answer": "140",
+  "input_tokens": 257,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6344,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

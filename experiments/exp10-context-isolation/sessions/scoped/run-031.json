@@ -1,0 +1,15 @@
+{
+  "run_id": "run-031",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of elves remaining, we can follow these steps:\n\n1.  **Initial number of elves:** 60\n2.  **First group to quit:** A third of the elves quit.\n    *   $60 \\div 3 = 20$ elves quit.\n    *   Remaining elves: $60 - 20 = 40$ elves.\n3.  **Second group to quit:** 10 of the remaining elves quit.\n    *   Remaining elves: $40 - 10 = 30$ elves.\n\n**There are 30 elves left.**",
+  "gold_answer": "30",
+  "input_tokens": 263,
+  "output_tokens": 135,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1327,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:55Z"
+}

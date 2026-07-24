@@ -1,0 +1,15 @@
+{
+  "run_id": "run-129",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the length of Movie A, we can work backward from the information provided:\n\n1.  **Find the length of Movie C:**\n    Movie C is 1.25 hours. Since 1 hour = 60 minutes:\n    $1.25 \\times 60 = 75 \\text{ minutes}$.\n\n2.  **Find the length of Movie B:**\n    Movie B was 5 minutes longer than Movie C:\n    $75 + 5 = 80 \\text{ minutes}$.\n\n3.  **Find the length of Movie A:**\n    Movie A was one-fourth the length of Movie B:\n    $80 / 4 = 20 \\text{ minutes}$.\n\n**Movie A was 20 minutes long.**",
+  "gold_answer": "20",
+  "input_tokens": 296,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2140,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:01Z"
+}

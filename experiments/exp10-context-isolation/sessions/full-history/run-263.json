@@ -1,0 +1,15 @@
+{
+  "run_id": "run-263",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem provided in your text:\n\n1.  **Calculate the total weight of M&Ms:**\n    3 large bags \u00d7 10 ounces per bag = **30 ounces total**.\n\n2.  **Calculate the total number of M&Ms:**\n    30 ounces \u00d7 30 M&Ms per ounce = **900 M&Ms total**.\n\n3.  **Calculate the number of small bags:**\n    900 total M&Ms \u00f7 10 M&Ms per small bag = **90 small bags**.\n\n**John can make 90 small bags.**",
+  "gold_answer": "90",
+  "input_tokens": 302,
+  "output_tokens": 131,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3717,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:34Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-155",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long it will take Bill to dig the well, we need to calculate the time spent on the soil and the clay separately and then add them together.\n\n**1. Calculate time spent digging soil:**\n*   **Distance:** 24 feet\n*   **Rate:** 4 feet/hour\n*   **Time:** $24 \\text{ feet} \\div 4 \\text{ feet/hour} = 6 \\text{ hours}$\n\n**2. Calculate time spent digging clay:**\n*   **Rate:** Half the speed of soil ($4 \\text{ feet/hour} \\div 2 = 2 \\text{ feet/hour}$)\n*   **Distance:** 8 feet\n*   **Time:** $8 \\text{ feet} \\div 2 \\text{ feet/hour} = 4 \\text{ hours}$\n\n**3. Calculate total time:**\n*   $6 \\text{ hours (soil)} + 4 \\text{ hours (clay)} = 10 \\text{ hours}$\n\nIt will take Bill **10 hours** to dig the well.",
+  "gold_answer": "10",
+  "input_tokens": 251,
+  "output_tokens": 238,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11660,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:58Z"
+}

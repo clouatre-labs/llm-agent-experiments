@@ -1,0 +1,15 @@
+{
+  "run_id": "run-042",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Johnny had after a year, we can follow these steps:\n\n1.  **Calculate the initial sum:** Johnny started with his $20 allowance and added $10.\n    $20 + $10 = $30\n\n2.  **Calculate the investment growth:** The sum of $30 tripled over the course of the year.\n    $30 \\times 3 = $90\n\n**Johnny had $90 after a year.**",
+  "gold_answer": "90",
+  "input_tokens": 253,
+  "output_tokens": 104,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1936,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:57Z"
+}

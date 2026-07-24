@@ -1,0 +1,15 @@
+{
+  "run_id": "run-061",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total duration of the caroling, we calculate the time for each song based on the quantities provided:\n\n1.  **\"Deck the Halls\"**: 2 times \u00d7 150 seconds = **300 seconds**\n2.  **\"Jingle Bells\"**: 1 time \u00d7 240 seconds = **240 seconds**\n\n**Total time** = 300 seconds + 240 seconds = **540 seconds**\n\nTo make this easier to read, 540 seconds is equal to **9 minutes**.",
+  "gold_answer": "540",
+  "input_tokens": 304,
+  "output_tokens": 122,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4416,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:47Z"
+}

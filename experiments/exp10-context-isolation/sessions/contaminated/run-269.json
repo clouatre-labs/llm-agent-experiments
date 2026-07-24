@@ -1,0 +1,15 @@
+{
+  "run_id": "run-269",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost for David, we first need to determine the price per unit for each item:\n\n1.  **Calculate the price of one bottle of soda:**\n    $21.00 \u00f7 7 bottles = **$3.00 per bottle**\n\n2.  **Calculate the price of one bottle of water:**\n    $8.00 \u00f7 4 bottles = **$2.00 per bottle**\n\n3.  **Calculate the cost for David's purchase:**\n    *   3 bottles of soda: 3 \u00d7 $3.00 = $9.00\n    *   2 bottles of water: 2 \u00d7 $2.00 = $4.00\n\n4.  **Total Cost:**\n    $9.00 + $4.00 = **$13.00**\n\nDavid's purchase will cost **$13.00**.",
+  "gold_answer": "13",
+  "input_tokens": 299,
+  "output_tokens": 198,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3702,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

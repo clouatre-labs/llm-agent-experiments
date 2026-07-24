@@ -1,0 +1,15 @@
+{
+  "run_id": "run-296",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Skyler's investment, we can calculate the amounts step-by-step:\n\n1.  **Total Investment:** $1,200\n2.  **Dylan's Investment:**\n    *   $\\frac{2}{5}$ of $1,200 = 1,200 \\div 5 \\times 2 = 240 \\times 2 = \\$480$\n3.  **Remaining Amount after Dylan:**\n    *   $\\$1,200 - \\$480 = \\$720$\n4.  **Frances's Investment:**\n    *   $\\frac{2}{3}$ of the remaining $\\$720 = 720 \\div 3 \\times 2 = 240 \\times 2 = \\$480$\n5.  **Skyler's Investment (the rest):**\n    *   $\\$720 (\\text{remaining}) - \\$480 (\\text{Frances}) = \\$240$\n\n**Skyler's investment was $240.**",
+  "gold_answer": "240",
+  "input_tokens": 304,
+  "output_tokens": 236,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6213,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:11Z"
+}

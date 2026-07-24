@@ -1,0 +1,15 @@
+{
+  "run_id": "run-122",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of good seashells, follow these steps:\n\n1.  **Calculate the total number of seashells found:**\n    214 (Tom) + 432 (Nancy) + 86 (Benny) = **732 seashells**\n\n2.  **Subtract the cracked seashells:**\n    732 (Total) - 67 (Cracked) = **665 seashells**\n\n**They found 665 good seashells together.**",
+  "gold_answer": "665",
+  "input_tokens": 305,
+  "output_tokens": 103,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1668,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:25Z"
+}

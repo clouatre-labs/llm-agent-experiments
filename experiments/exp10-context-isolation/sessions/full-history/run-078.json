@@ -1,0 +1,15 @@
+{
+  "run_id": "run-078",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the price of the carrots after three years, we calculate the increase based on the original price ($120) for each year.\n\n**1. Identify the variables:**\n*   Initial Price ($P$): $120\n*   Annual Increase ($I$): 5% of $120 = $0.05 \\times 120 = $6\n\n**2. Calculate the price year by year:**\n*   **Year 1:** $120 + $6 = $126\n*   **Year 2:** $126 + $6 = $132\n*   **Year 3:** $132 + $6 = $138\n\n*(Note: The problem specifies the price increases by 5% of the **original** price every year, which indicates simple interest rather than compound interest.)*\n\n**Final Price:** $138",
+  "gold_answer": "138",
+  "input_tokens": 294,
+  "output_tokens": 196,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2380,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:50Z"
+}

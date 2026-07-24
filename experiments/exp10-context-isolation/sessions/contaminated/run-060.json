@@ -1,0 +1,15 @@
+{
+  "run_id": "run-060",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Combined length of the remoras:** 6 inches + 6 inches = **12 inches**.\n2.  **Length of the shark in inches:** 10 feet \u00d7 12 inches/foot = **120 inches**.\n3.  **Percentage calculation:** (12 / 120) \u00d7 100 = **10%**.\n\n**The combined length of the remoras is 10% of the shark's body length.**",
+  "gold_answer": "10",
+  "input_tokens": 296,
+  "output_tokens": 116,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1919,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:09Z"
+}

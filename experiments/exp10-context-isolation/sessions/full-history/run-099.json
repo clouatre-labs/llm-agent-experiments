@@ -1,0 +1,15 @@
+{
+  "run_id": "run-099",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem included in your text:\n\n1.  **Daily consumption for the brother:** Edgar eats 18 pretzels, so his brother eats half that amount ($18 \\div 2 = 9$ pretzels per day).\n2.  **Weekly consumption for the brother:** $9 \\text{ pretzels} \\times 7 \\text{ days} = \\mathbf{63}$ **pretzels per week.**",
+  "gold_answer": "63",
+  "input_tokens": 299,
+  "output_tokens": 92,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3252,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:55Z"
+}

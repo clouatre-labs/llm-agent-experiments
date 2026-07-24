@@ -1,0 +1,15 @@
+{
+  "run_id": "run-043",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Find the total number of votes:** 80\n2.  **Calculate the winner's votes:** $3/4$ of $80 = 60$ votes.\n3.  **Calculate the loser's votes:** Total votes minus winner's votes ($80 - 60 = 20$).\n\n**The loser got 20 votes.**",
+  "gold_answer": "20",
+  "input_tokens": 292,
+  "output_tokens": 95,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2774,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:06Z"
+}

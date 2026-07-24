@@ -1,0 +1,15 @@
+{
+  "run_id": "run-211",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much the chef spent, you can follow these steps:\n\n1.  **Calculate the total weight of the onions:**\n    4 bags \u00d7 50 pounds per bag = 200 pounds\n\n2.  **Calculate the total cost:**\n    200 pounds \u00d7 $1.50 per pound = $300.00\n\n**The chef spent $300.00.**",
+  "gold_answer": "300",
+  "input_tokens": 256,
+  "output_tokens": 91,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4385,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:05Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-101",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many telephone calls Jason needs to make, we can work backward from his sales goal using the ratios provided:\n\n1.  **Determine how many customers need to visit the dealership:**\n    The ratio of customers to car sales is 2:1 (two customers for every one car sold).\n    $15 \\text{ cars} \\times 2 \\text{ customers/car} = 30 \\text{ customers needed.}$\n\n2.  **Determine how many telephone calls are needed to get those customers:**\n    The ratio of telephone calls to customers is 25:1 (25 calls for every one customer).\n    $30 \\text{ customers} \\times 25 \\text{ calls/customer} = 750 \\text{ calls.}$\n\n**Jason needs to make 750 telephone calls to sell 15 cars.**",
+  "gold_answer": "750",
+  "input_tokens": 301,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6364,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:58Z"
+}

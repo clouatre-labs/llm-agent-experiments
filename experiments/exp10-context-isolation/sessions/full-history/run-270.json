@@ -1,0 +1,15 @@
+{
+  "run_id": "run-270",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer your question regarding the bananas:\n\n1.  **Wednesday:** 4 bananas\n2.  **Thursday:** 6 bananas\n3.  **Friday:** 12 bananas (3 \u00d7 4)\n\n**Total:** 4 + 6 + 12 = **22 bananas**",
+  "gold_answer": "22",
+  "input_tokens": 294,
+  "output_tokens": 65,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3242,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:36Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-182",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of doorbell rings, we need to calculate the number of presses for each of the four friends:\n\n1.  **First friend:** 20 times\n2.  **Second friend:** 1/4 more than the first friend.\n    *   Calculation: $20 + (1/4 \\times 20) = 20 + 5 = 25$ times\n3.  **Fourth friend:** 60 times (given)\n4.  **Third friend:** 10 more than the fourth friend.\n    *   Calculation: $60 + 10 = 70$ times\n\n**Total doorbell rings:** $20 + 25 + 70 + 60 = 175$\n\nThe doorbell made **175** rings.",
+  "gold_answer": "175",
+  "input_tokens": 293,
+  "output_tokens": 177,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3169,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:44Z"
+}

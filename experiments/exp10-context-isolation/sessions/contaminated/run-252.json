@@ -1,0 +1,15 @@
+{
+  "run_id": "run-252",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of items Dominick saw, we can use the information provided about the helmets:\n\n1.  **Helmets:** 20\n2.  **Robots:** Half as many as helmets $\\rightarrow 20 / 2 = 10$\n3.  **Footballs:** There are half as many helmets as footballs (meaning there are twice as many footballs as helmets) $\\rightarrow 20 \\times 2 = 40$\n\n**Total items:** $20 \\text{ (helmets)} + 10 \\text{ (robots)} + 40 \\text{ (footballs)} = \\mathbf{70}$\n\nDominick saw a total of **70** items.",
+  "gold_answer": "70",
+  "input_tokens": 289,
+  "output_tokens": 158,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2250,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:58Z"
+}

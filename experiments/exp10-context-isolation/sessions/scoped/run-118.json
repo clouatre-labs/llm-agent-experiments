@@ -1,0 +1,15 @@
+{
+  "run_id": "run-118",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much John spent on ties, we can break the problem down into steps:\n\n**1. Determine the number of blue ties:**\n*   Total spent on blue ties = $200\n*   Cost per blue tie = $40\n*   Number of blue ties = $\\$200 \\div \\$40 = \\mathbf{5}$ **blue ties**\n\n**2. Determine the number of red ties:**\n*   John buys twice as many red ties as blue ties.\n*   Number of red ties = $5 \\times 2 = \\mathbf{10}$ **red ties**\n\n**3. Determine the cost of one red tie:**\n*   Red ties cost 50% more than blue ties.\n*   Cost of a blue tie = $40\n*   50% of $40 = $20\n*   Cost per red tie = $\\$40 + \\$20 = \\mathbf{\\$60}$\n\n**4. Determine the total spent on red ties:**\n*   Number of red ties = 10\n*   Cost per red tie = $60\n*   Total spent on red ties = $10 \\times \\$60 = \\mathbf{\\$600}$\n\n**5. Determine the total amount spent on all ties:**\n*   Spent on blue ties = $200\n*   Spent on red ties = $600\n*   Total spent = $\\$200 + \\$600 = \\mathbf{\\$800}$\n\n**John spent $800 on ties.**",
+  "gold_answer": "800",
+  "input_tokens": 259,
+  "output_tokens": 337,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 13328,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:33:37Z"
+}

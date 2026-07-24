@@ -1,0 +1,15 @@
+{
+  "run_id": "run-028",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of each single bagel, follow these steps:\n\n1.  **Calculate the total cost before the discount:**\n    4 packs \u00d7 $10.00 per pack = $40.00\n\n2.  **Calculate the discount amount:**\n    10% of $40.00 = $4.00\n\n3.  **Calculate the total cost after the discount:**\n    $40.00 - $4.00 = $36.00\n\n4.  **Calculate the total number of bagels:**\n    4 packs \u00d7 9 bagels per pack = 36 bagels\n\n5.  **Calculate the cost per single bagel:**\n    $36.00 \u00f7 36 bagels = $1.00\n\nAfter ordering 4 packs, each single bagel will cost **$1.00**.",
+  "gold_answer": "1",
+  "input_tokens": 305,
+  "output_tokens": 186,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1120,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:00Z"
+}

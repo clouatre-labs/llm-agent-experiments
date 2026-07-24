@@ -1,0 +1,15 @@
+{
+  "run_id": "run-015",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of friends Lily and Amy have together, follow these steps:\n\n1.  **Find Lily's friends:** Lily has **50** friends.\n2.  **Find Amy's friends:** Amy made 20 more friends than Lily ($50 + 20 = 70$). Amy has **70** friends.\n3.  **Calculate the total:** Add Lily's friends and Amy's friends together ($50 + 70 = 120$).\n\nLily and Amy have **120** friends together.",
+  "gold_answer": "120",
+  "input_tokens": 256,
+  "output_tokens": 123,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3008,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:50Z"
+}

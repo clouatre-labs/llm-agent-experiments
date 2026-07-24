@@ -1,0 +1,15 @@
+{
+  "run_id": "run-255",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of people required to fill the remaining spaces, we need to calculate the current number of passengers on the bus step-by-step.\n\n1.  **Initial number of people:** 20\n2.  **First stop:** 40 people entered.\n    *   Total: $20 + 40 = 60$ people.\n3.  **Second stop:** $3/4$ of the number of people who entered at the first station entered the bus.\n    *   Number entering: $\\frac{3}{4} \\times 40 = 30$ people.\n    *   Total: $60 + 30 = 90$ people.\n4.  **Third stop:** The number of passengers doubled.\n    *   Total: $90 \\times 2 = 180$ people.\n5.  **Remaining capacity:** The bus capacity is 200.\n    *   Remaining spaces: $200 - 180 = 20$ people.\n\n**Total number of people required to fill the remaining spaces: 20**",
+  "gold_answer": "20",
+  "input_tokens": 299,
+  "output_tokens": 245,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2787,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:31Z"
+}

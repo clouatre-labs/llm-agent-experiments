@@ -1,0 +1,15 @@
+{
+  "run_id": "run-022",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Auditorium Seating Problem\n\nLet me work through this step-by-step.\n\n**Step 1: Find the total number of seats**\n- 4 rows \u00d7 18 seats per row = 72 total seats\n\n**Step 2: Find how many administrators occupied seats**\n- One-fourth of seats occupied by administrators\n- 1/4 \u00d7 72 = 18 seats (administrators)\n\n**Step 3: Find remaining seats after administrators**\n- 72 - 18 = 54 remaining seats\n\n**Step 4: Find how many parents occupied seats**\n- One-third of remaining seats occupied by parents\n- 1/3 \u00d7 54 = 18 seats (parents)\n\n**Step 5: Find how many students occupied seats**\n- Remaining seats after parents = 54 - 18 = 36 seats (students)\n\n## Answer: **36 students** were in the school auditorium",
+  "gold_answer": "36",
+  "input_tokens": 270,
+  "output_tokens": 223,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2556,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

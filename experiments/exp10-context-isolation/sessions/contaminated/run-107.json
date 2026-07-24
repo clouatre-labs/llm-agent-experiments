@@ -1,0 +1,15 @@
+{
+  "run_id": "run-107",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **First 30 days:** 3 eggs/day \u00d7 30 days = **90 eggs**\n2.  **Next 30 days:** 5 eggs/day \u00d7 30 days = **150 eggs**\n3.  **Total eggs:** 90 + 150 = **240 eggs**\n4.  **Convert to dozens:** 240 \u00f7 12 = **20 dozen**\n\nChester will need **20 dozen** eggs for 60 days.",
+  "gold_answer": "20",
+  "input_tokens": 298,
+  "output_tokens": 129,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4524,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:23Z"
+}

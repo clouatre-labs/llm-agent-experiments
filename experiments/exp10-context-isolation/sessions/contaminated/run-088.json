@@ -1,0 +1,15 @@
+{
+  "run_id": "run-088",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many cards Kenny started with, we can set up an equation based on the information provided.\n\n**1. Identify the variables and constants:**\n*   Cost of the ticket: $100\n*   Spending cash: $50\n*   Total money needed: $100 + $50 = $150\n*   Selling price per card: $1.50\n*   Fraction of cards sold: Since he keeps $1/3$, he sells $2/3$ of his cards.\n\n**2. Set up the equation:**\nLet $x$ be the total number of cards Kenny started with.\n\nThe amount of money he makes is:\n$(\\text{Number of cards sold}) \\times (\\text{Price per card}) = \\text{Total money needed}$\n\n$\\frac{2}{3}x \\times 1.5 = 150$\n\n**3. Solve for $x$:**\nFirst, simplify the left side:\n$\\frac{2}{3} \\times 1.5 = \\frac{2}{3} \\times \\frac{3}{2} = 1$\n\nSo the equation becomes:\n$1x = 150$\n\n**Answer:**\nKenny started with **150** cards.",
+  "gold_answer": "150",
+  "input_tokens": 302,
+  "output_tokens": 278,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10145,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:24Z"
+}

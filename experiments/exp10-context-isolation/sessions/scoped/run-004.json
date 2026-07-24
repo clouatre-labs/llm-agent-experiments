@@ -1,0 +1,15 @@
+{
+  "run_id": "run-004",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **12** children now following the truck.\n\nHere is the step-by-step breakdown:\n\n1.  **First Street:** There are **5** children.\n2.  **Second Street:** Each of the 5 children is joined by another child (5 + 5). There are now **10** children.\n3.  **Third Street:** Each of the 10 children is joined by 2 more children (10 + 20). There are now **30** children.\n4.  **The Departure:** The original 5 children leave (30 - 5).\n\n**Total: 25 children.**\n\n***\n\n*Correction Note:* Let's re-calculate based on a strict reading of the wording:\n*   **End of 1st Street:** 5 children.\n*   **2nd Street:** \"Each child is joined by another child.\" (5 + 5 = 10).\n*   **3rd Street:** \"Each child in the existing group is joined by another 2 children.\" (10 + [10 * 2] = 30).\n*   **Departure:** The original 5 leave. (30 - 5 = 25).\n\n**Final Answer: 25**",
+  "gold_answer": "25",
+  "input_tokens": 253,
+  "output_tokens": 277,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12129,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:59Z"
+}

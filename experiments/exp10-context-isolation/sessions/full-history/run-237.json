@@ -1,0 +1,15 @@
+{
+  "run_id": "run-237",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem presented in your text:\n\n1.  **Carlton's team** has **13** players.\n2.  **Zeke's team** has 7 more than Carlton's: $13 + 7 =$ **20** players.\n3.  **Combined total:** $13 + 20 =$ **33** players.\n\nThere are **33 players** in both teams combined.",
+  "gold_answer": "33",
+  "input_tokens": 292,
+  "output_tokens": 96,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 866,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:26Z"
+}

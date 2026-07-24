@@ -1,0 +1,15 @@
+{
+  "run_id": "run-044",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Helen's Trip Cost Calculation\n\nLet me solve this step by step.\n\n**Given information:**\n- Hotel nights: 3 nights\n- Cost per night: $80\n- Bus trips: 7 times\n- Bus trip cost: 10% of one night's hotel cost\n\n**Step 1: Calculate hotel costs**\n- Cost = 3 nights \u00d7 $80 per night\n- Hotel cost = $240\n\n**Step 2: Calculate bus trip cost**\n- One bus trip = 10% of $80\n- One bus trip = 0.10 \u00d7 $80 = $8\n- Total bus cost = 7 trips \u00d7 $8 per trip\n- Bus cost = $56\n\n**Step 3: Calculate total cost**\n- Total = Hotel cost + Bus cost\n- Total = $240 + $56\n- **Total = $296**\n\nHelen paid **$296** for the hotel and bus travels during her trip.",
+  "gold_answer": "296",
+  "input_tokens": 264,
+  "output_tokens": 214,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2610,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:35Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-196",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of customers counted on the third day, we can break the problem down step-by-step:\n\n1.  **Day 1:** Sloane counted **100** customers.\n2.  **Day 2:** She counted 50 more than the first day.\n    *   $100 + 50 = \\mathbf{150}$ customers.\n3.  **Total for Day 1 and Day 2:**\n    *   $100 + 150 = \\mathbf{250}$ customers.\n4.  **Day 3:** The total number of customers by the third day was 500. To find the amount for the third day alone, subtract the total from the first two days from the grand total:\n    *   $500 - 250 = \\mathbf{250}$ customers.\n\n**Answer:** Sloane counted **250** customers on the third day.",
+  "gold_answer": "250",
+  "input_tokens": 253,
+  "output_tokens": 210,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4821,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:02Z"
+}

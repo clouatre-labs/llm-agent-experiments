@@ -1,0 +1,15 @@
+{
+  "run_id": "run-004",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of children following the truck, let's follow the group street by street:\n\n1.  **First Street:** There are **5** children.\n2.  **Second Street:** Each of the 5 children is joined by another child ($5 + 5$). There are now **10** children.\n3.  **Third Street:** Each of the 10 children is joined by 2 more children ($10 + (10 \\times 2)$). There are now **30** children.\n4.  **The Departure:** The original 5 children leave the group ($30 - 5$).\n\nThere are now **25** children following the truck.",
+  "gold_answer": "25",
+  "input_tokens": 257,
+  "output_tokens": 150,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5080,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:14:43Z"
+}

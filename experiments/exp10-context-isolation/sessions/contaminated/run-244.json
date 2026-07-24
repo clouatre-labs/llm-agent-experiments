@@ -1,0 +1,15 @@
+{
+  "run_id": "run-244",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long it takes Tom to get back, we first need to determine the distance he traveled.\n\n1.  **Calculate the distance traveled:**\n    *   Speed = 10 mph\n    *   Time = 3 hours (from 1 PM to 4 PM)\n    *   Distance = Speed \u00d7 Time $\\rightarrow$ $10 \\text{ mph} \\times 3 \\text{ hours} = 30 \\text{ miles}$.\n\n2.  **Calculate the return time:**\n    *   Distance = 30 miles\n    *   Return Speed = 6 mph\n    *   Time = Distance / Speed $\\rightarrow$ $30 \\text{ miles} / 6 \\text{ mph} = 5 \\text{ hours}$.\n\nIt takes Tom **5 hours** to get back.",
+  "gold_answer": "5",
+  "input_tokens": 292,
+  "output_tokens": 178,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 20262,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:15Z"
+}

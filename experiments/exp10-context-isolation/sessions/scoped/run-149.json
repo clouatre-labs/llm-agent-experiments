@@ -1,0 +1,15 @@
+{
+  "run_id": "run-149",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many recipes John learns, we need to calculate the total number of hours he spends in class and then divide that by the time required per recipe.\n\n**1. Calculate the total number of class hours:**\n*   **Hours per week:** 4 times a week $\\times$ 2 hours per session = **8 hours per week**\n*   **Total hours for the course:** 8 hours per week $\\times$ 6 weeks = **48 total hours**\n\n**2. Calculate the number of recipes:**\n*   **Time per recipe:** 1.5 hours\n*   **Total recipes:** 48 total hours $\\div$ 1.5 hours per recipe = **32 recipes**\n\nJohn learns **32** recipes.",
+  "gold_answer": "32",
+  "input_tokens": 262,
+  "output_tokens": 162,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4700,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:50Z"
+}

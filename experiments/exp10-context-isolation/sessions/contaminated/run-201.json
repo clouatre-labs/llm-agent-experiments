@@ -1,0 +1,15 @@
+{
+  "run_id": "run-201",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Calculate total revenue:**\n    *   10 rentals \u00d7 3 hours per rental = 30 total hours.\n    *   30 hours \u00d7 $25 per hour = **$750 total revenue.**\n\n2.  **Calculate profit:**\n    *   $750 (Revenue) - $500 (Car payment) = **$250 profit.**\n\nJohn makes **$250** profit on his car.",
+  "gold_answer": "250",
+  "input_tokens": 291,
+  "output_tokens": 112,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3272,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:48Z"
+}

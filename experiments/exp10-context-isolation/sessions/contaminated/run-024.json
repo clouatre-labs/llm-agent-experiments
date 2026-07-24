@@ -1,0 +1,15 @@
+{
+  "run_id": "run-024",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Erin had 10 points before.**\n\n**Reasoning:**\n1.  **Current state:** Erin has 14 points.\n2.  **Sara's score:** Sara scored 8 points.\n3.  **The relationship:** The problem states that Erin's *current* score (14) is three times more than what Sara's score *would be* if we were looking at a different comparison, OR it is defining a specific state. However, looking at the phrasing: \"Erin now has three times more points than Sara, who scored 8.\" \n    *   *Correction/Refinement:* If Sara has 8, and Erin has three times that amount, Erin would have 24. But the text says Erin **now has 14**. \n    *   Let's re-read the logic: \"After scoring 14 points, Erin now has three times more points than Sara, who scored 8.\" This implies the \"14 points\" is the *amount she just scored*, not her total.\n    *   Let $x$ be Erin's original score.\n    *   Equation: $x + 14 = 3 \\times 8$\n    *   $x + 14 = 24$\n    *   $x = 10$",
+  "gold_answer": "18",
+  "input_tokens": 285,
+  "output_tokens": 296,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5665,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:01Z"
+}

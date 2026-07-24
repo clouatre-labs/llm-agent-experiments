@@ -1,0 +1,15 @@
+{
+  "run_id": "run-030",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**720 grams of cat food will last 12 days.**\n\n**Here is the breakdown:**\n1.  **Daily consumption:** 60 grams per day.\n2.  **Total amount:** 720 grams.\n3.  **Calculation:** $720 \\div 60 = 12$.",
+  "gold_answer": "2",
+  "input_tokens": 292,
+  "output_tokens": 84,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1920,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:38Z"
+}

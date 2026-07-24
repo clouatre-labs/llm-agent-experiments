@@ -1,0 +1,15 @@
+{
+  "run_id": "run-215",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Trinity's profit, we first need to determine her selling price.\n\n1.  **Identify the cost price:** $72.\n2.  **Calculate the selling price:** She sells them at $11/8$ of the cost price.\n    $$\\text{Selling Price} = 72 \\times \\frac{11}{8}$$\n    $$72 \\div 8 = 9$$\n    $$9 \\times 11 = 99$$\n    The selling price is **$99**.\n3.  **Calculate the profit:** Profit is the Selling Price minus the Cost Price.\n    $$\\text{Profit} = 99 - 72 = 27$$\n\n**Trinity's profit is $27.**",
+  "gold_answer": "27",
+  "input_tokens": 287,
+  "output_tokens": 166,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5434,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:25Z"
+}

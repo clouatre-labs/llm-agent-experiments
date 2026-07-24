@@ -1,0 +1,15 @@
+{
+  "run_id": "run-047",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The candle will be **8 centimeters** shorter.\n\n**Calculation:**\n1.  **Duration:** From 1:00 PM to 5:00 PM is 4 hours.\n2.  **Rate:** 2 centimeters per hour.\n3.  **Total:** 4 hours \u00d7 2 cm/hour = 8 cm.",
+  "gold_answer": "8",
+  "input_tokens": 293,
+  "output_tokens": 75,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2571,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:42Z"
+}

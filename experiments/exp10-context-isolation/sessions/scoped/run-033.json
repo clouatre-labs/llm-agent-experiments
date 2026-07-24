@@ -1,0 +1,15 @@
+{
+  "run_id": "run-033",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how far Elvis is from his house, we need to calculate the distance traveled in each direction and then find the difference between them.\n\n**1. Calculate the distance traveled West:**\n*   Time = 5 hours\n*   Speed = 18 mph\n*   Distance = Speed \u00d7 Time\n*   $18 \\text{ mph} \\times 5 \\text{ hours} = 90 \\text{ miles West}$\n\n**2. Calculate the distance traveled East:**\n*   Time = 8 hours\n*   Speed = 18 mph\n*   Distance = Speed \u00d7 Time\n*   $18 \\text{ mph} \\times 8 \\text{ hours} = 144 \\text{ miles East}$\n\n**3. Calculate the final distance from the house:**\nSince he traveled West and then turned around to travel East, we subtract the initial distance from the return distance to find his displacement from the starting point.\n*   $144 \\text{ miles (East)} - 90 \\text{ miles (West)} = 54 \\text{ miles}$\n\nElvis is **54 miles** from his house.",
+  "gold_answer": "54",
+  "input_tokens": 248,
+  "output_tokens": 250,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11741,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:06Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-204",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of the apple pie, we first calculate the total amount spent on the items we know:\n\n1.  **2 bags of chips:** $2.00 \\times 2 = \\$4.00$\n2.  **Bucket of fried chicken:** $\\$8.00$\n3.  **Bottle of soda:** $\\$1.00$\n\n**Total for known items:** $\\$4.00 + \\$8.00 + \\$1.00 = \\$13.00$\n\nSince Gus spent a total of $\\$20.00$, we subtract the cost of the known items from the total:\n\n**$\\$20.00 - \\$13.00 = \\$7.00$**\n\nThe apple pie cost **$7.00**.",
+  "gold_answer": "7",
+  "input_tokens": 271,
+  "output_tokens": 173,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1331,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:01Z"
+}

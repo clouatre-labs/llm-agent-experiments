@@ -1,0 +1,15 @@
+{
+  "run_id": "run-046",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total age of the three family members, we calculate each person's age based on the information provided:\n\n1.  **Nani's age:** 8 years old.\n2.  **Brother's age:** Twice Nani's age ($8 \\times 2$) = 16 years old.\n3.  **Sister's age:** 25% younger than Nani.\n    *   25% of 8 is 2 ($8 \\times 0.25 = 2$).\n    *   $8 - 2 = 6$ years old.\n\n**Total age:** $8 + 16 + 6 = \\mathbf{30}$ **years old.**",
+  "gold_answer": "30",
+  "input_tokens": 297,
+  "output_tokens": 157,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6270,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:10Z"
+}

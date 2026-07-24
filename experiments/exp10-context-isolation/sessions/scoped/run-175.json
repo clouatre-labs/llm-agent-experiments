@@ -1,0 +1,15 @@
+{
+  "run_id": "run-175",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many magazines Susan gets every year, we need to calculate the total number of issues received from all her subscriptions.\n\nHere is the breakdown:\n\n1.  **First set of magazines:** She orders 3 magazines that send 12 issues each.\n    *   $3 \\times 12 = 36$ issues.\n2.  **Second magazine:** She has 1 magazine that sends 6 issues.\n    *   $1 \\times 6 = 6$ issues.\n3.  **Last magazine:** This magazine sends 4 times the amount of the 6-issue magazine.\n    *   $4 \\times 6 = 24$ issues.\n\n**Total issues per year:**\n$36 + 6 + 24 = 66$\n\nSusan gets **66** magazine issues every year.",
+  "gold_answer": "66",
+  "input_tokens": 265,
+  "output_tokens": 185,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2446,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:54Z"
+}

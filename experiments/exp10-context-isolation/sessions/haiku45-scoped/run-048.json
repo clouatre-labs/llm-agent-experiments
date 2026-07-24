@@ -1,0 +1,15 @@
+{
+  "run_id": "run-048",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Bob's Potting Soil Cost\n\nLet me work through this step-by-step.\n\n**Step 1: Calculate the volume of one raised bed**\n- Dimensions: 2 feet wide \u00d7 8 feet long \u00d7 2 feet tall\n- Volume = 2 \u00d7 8 \u00d7 2 = 32 cubic feet per bed\n\n**Step 2: Calculate total volume needed for all beds**\n- Number of beds: 10\n- Total volume = 32 \u00d7 10 = 320 cubic feet\n\n**Step 3: Calculate number of bags needed**\n- Each bag holds: 2 cubic feet\n- Number of bags = 320 \u00f7 2 = 160 bags\n\n**Step 4: Calculate total cost**\n- Cost per bag: $12\n- Total cost = 160 \u00d7 $12 = **$1,920**\n\nThe potting soil will cost Bob **$1,920**.",
+  "gold_answer": "1920",
+  "input_tokens": 266,
+  "output_tokens": 220,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2959,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:36Z"
+}

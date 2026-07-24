@@ -1,0 +1,15 @@
+{
+  "run_id": "run-221",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, we need to calculate how many more songs each person can add to their player.\n\n**1. Calculate the current number of songs for each person:**\n*   **Gabriel:** 20 songs\n*   **Luri:** $20 \\times 3 = 60$ songs\n\n**2. Calculate the remaining capacity for each person (Capacity is 100):**\n*   **Gabriel can add:** $100 - 20 = 80$ songs\n*   **Luri can add:** $100 - 60 = 40$ songs\n\n**3. Find the difference between what they can add:**\n*   $80 - 40 = 40$\n\nLuri can add **40 fewer** songs to his player than Gabriel can add to his.",
+  "gold_answer": "40",
+  "input_tokens": 252,
+  "output_tokens": 180,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1569,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:05Z"
+}

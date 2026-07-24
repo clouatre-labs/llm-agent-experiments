@@ -1,0 +1,15 @@
+{
+  "run_id": "run-114",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of spoons in the package Julia bought, we can work backward from the final amount.\n\n1.  **Final amount:** 12 spoons.\n2.  **Account for the spoons used:** Julia used 3 spoons to sample the stew. Before using them, she must have had:\n    $12 + 3 = 15$ spoons.\n3.  **Account for the husband's contribution:** Her husband gave her 5 spoons. Before he gave them to her, she had:\n    $15 - 5 = 10$ spoons.\n4.  **Identify the package size:** The 10 spoons remaining represent the package Julia originally bought.\n\n**Answer:** There were **10** spoons in the package Julia bought.",
+  "gold_answer": "10",
+  "input_tokens": 300,
+  "output_tokens": 166,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2922,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:59Z"
+}

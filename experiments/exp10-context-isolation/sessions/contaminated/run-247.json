@@ -1,0 +1,15 @@
+{
+  "run_id": "run-247",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of legs Jake sees, we calculate the legs for each group separately and then sum them:\n\n*   **Spiders:** 80 spiders \u00d7 8 legs each = **640 legs**\n*   **Insects:** 90 insects \u00d7 6 legs each = **540 legs**\n*   **Mutant invertebrates:** 3 invertebrates \u00d7 10 legs each = **30 legs**\n\n**Total:** 640 + 540 + 30 = **1,210 legs**",
+  "gold_answer": "1210",
+  "input_tokens": 294,
+  "output_tokens": 119,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3447,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:59Z"
+}

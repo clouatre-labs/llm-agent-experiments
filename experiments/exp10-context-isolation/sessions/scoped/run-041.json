@@ -1,0 +1,15 @@
+{
+  "run_id": "run-041",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the math problem provided in your first paragraph:\n\n1.  The **foot-long fish sub** costs **$40**.\n2.  The **six-inch cold-cut combo sub** costs thrice as much: $40 \u00d7 3 = **$120**.\n3.  The total cost for lunch is $40 + $120 = **$160**.",
+  "gold_answer": "160",
+  "input_tokens": 260,
+  "output_tokens": 88,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4261,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:00Z"
+}

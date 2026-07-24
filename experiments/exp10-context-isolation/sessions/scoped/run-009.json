@@ -1,0 +1,15 @@
+{
+  "run_id": "run-009",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of flights to France, we can break the problem down into steps:\n\n1.  **Determine the total number of flights for the first plane:**\n    The problem states that the second plane makes 44 trips, and this amount is exactly half the number of trips the first plane makes.\n    $44 \\times 2 = 88$ flights for the first plane.\n\n2.  **Calculate the number of flights to Greece:**\n    The first plane goes to Greece for three-quarters of its flights.\n    $\\frac{3}{4} \\times 88 = 66$ flights to Greece.\n\n3.  **Calculate the remaining flights:**\n    Subtract the Greece flights from the total flights.\n    $88 - 66 = 22$ flights remaining.\n\n4.  **Calculate the flights to France:**\n    The remaining flights are split equally between France and Germany.\n    $22 \\div 2 = 11$ flights.\n\nThe first plane takes **11** flights to France in one day.",
+  "gold_answer": "11",
+  "input_tokens": 260,
+  "output_tokens": 231,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3654,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:51Z"
+}

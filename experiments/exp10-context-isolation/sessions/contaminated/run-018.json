@@ -1,0 +1,15 @@
+{
+  "run_id": "run-018",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the riddle embedded in your text:\n\nTyrion uses **12 face masks** every 2 days.\n\n**Reasoning:**\n1.  **Masks per outing:** 2 masks.\n2.  **Outings per day:** 3 outings.\n3.  **Masks per day:** $2 \\times 3 = 6$ masks.\n4.  **Masks per 2 days:** $6 \\times 2 = 12$ masks.",
+  "gold_answer": "12",
+  "input_tokens": 290,
+  "output_tokens": 105,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5954,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:01Z"
+}

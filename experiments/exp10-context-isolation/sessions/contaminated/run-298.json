@@ -1,0 +1,15 @@
+{
+  "run_id": "run-298",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of people kicked out for \"other reasons,\" we need to calculate the number of people in each specific category mentioned:\n\n1.  **Mask refusal:** 3 people\n2.  **Shoplifting:** $(4 \\times 3) - 5 = 12 - 5 = 7$ people\n3.  **Physical violence:** $3 \\times 7 = 21$ people\n\n**Total identified so far:** $3 + 7 + 21 = 31$ people\n\n**Other reasons:**\nTotal kicked out (50) - Total identified (31) = **19 people**",
+  "gold_answer": "19",
+  "input_tokens": 293,
+  "output_tokens": 138,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1917,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:07Z"
+}

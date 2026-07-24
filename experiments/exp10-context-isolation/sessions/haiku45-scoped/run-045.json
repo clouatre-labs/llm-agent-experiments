@@ -1,0 +1,15 @@
+{
+  "run_id": "run-045",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Jewel Price Problem\n\nLet me work through this step-by-step.\n\n**Given Information:**\n- Diamond Jewel price = $2000\n- Gold Jewel price = 4/5 \u00d7 Diamond price\n- Silver Jewel price = Gold price - $400\n\n**Step 1: Find the price of the Gold Jewel**\nGold price = 4/5 \u00d7 $2000\nGold price = $1600\n\n**Step 2: Find the price of the Silver Jewel**\nSilver price = Gold price - $400\nSilver price = $1600 - $400\nSilver price = $1200\n\n**Step 3: Find the total price of all three jewels**\nTotal = Diamond + Gold + Silver\nTotal = $2000 + $1600 + $1200\nTotal = **$4800**\n\nThe total price for all three jewels is **$4800**.",
+  "gold_answer": "4800",
+  "input_tokens": 275,
+  "output_tokens": 211,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2421,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:35Z"
+}

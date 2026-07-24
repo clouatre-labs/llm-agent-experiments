@@ -1,0 +1,15 @@
+{
+  "run_id": "run-049",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of yellow balloons, we can use the following steps:\n\n1.  **Calculate the bologna used for the red balloons:**\n    Benny threw 2 pieces of bologna at each red balloon. Since there are 20 red balloons:\n    $20 \\text{ red balloons} \\times 2 \\text{ pieces/balloon} = 40 \\text{ pieces of bologna}$.\n\n2.  **Calculate the remaining bologna for the yellow balloons:**\n    Subtract the bologna used for the red balloons from the total amount thrown:\n    $58 \\text{ total pieces} - 40 \\text{ pieces} = 18 \\text{ pieces of bologna}$.\n\n3.  **Calculate the number of yellow balloons:**\n    Benny threw 3 pieces of bologna at each yellow balloon. Divide the remaining bologna by 3:\n    $18 \\text{ pieces} \\div 3 \\text{ pieces/balloon} = 6 \\text{ yellow balloons}$.\n\n**There were 6 yellow balloons in the bundle.**",
+  "gold_answer": "6",
+  "input_tokens": 302,
+  "output_tokens": 233,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8748,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:49Z"
+}

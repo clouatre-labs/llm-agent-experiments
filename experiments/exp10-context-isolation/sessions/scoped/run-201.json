@@ -1,0 +1,15 @@
+{
+  "run_id": "run-201",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find John's profit, we need to calculate his total revenue and subtract his total expenses.\n\n**1. Calculate Total Revenue:**\n*   **Hours per rental:** 3 hours\n*   **Rentals per month:** 10 times\n*   **Total hours per month:** $3 \\text{ hours} \\times 10 = 30 \\text{ hours}$\n*   **Hourly rate:** $25\n*   **Total Revenue:** $30 \\text{ hours} \\times \\$25/\\text{hour} = \\$750$\n\n**2. Calculate Profit:**\n*   **Total Revenue:** $750\n*   **Car Payment (Expense):** $500\n*   **Profit:** $\\$750 - \\$500 = \\$250$\n\nJohn makes **$250** in profit on his car each month.",
+  "gold_answer": "250",
+  "input_tokens": 258,
+  "output_tokens": 194,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5658,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:04Z"
+}

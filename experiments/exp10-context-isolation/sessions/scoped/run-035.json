@@ -1,0 +1,15 @@
+{
+  "run_id": "run-035",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost for Angela, we need to calculate the base installation cost and the cost for the additional items.\n\n**1. Identify the base package:**\nThe base installation is **$129.00**, which includes:\n*   4 mirrors\n*   2 shelves\n*   1 chandelier\n*   10 pictures\n\n**2. List Angela's total items:**\n*   6 mirrors\n*   2 chandeliers\n*   20 pictures\n*   (0 shelves)\n\n**3. Calculate the \"additional\" items:**\nSubtract the items included in the base package from Angela's total items:\n*   **Mirrors:** 6 total - 4 included = **2 additional**\n*   **Chandeliers:** 2 total - 1 included = **1 additional**\n*   **Pictures:** 20 total - 10 included = **10 additional**\n*   **Shelves:** 0 total - 2 included = **0 additional** (She does not need shelves, so we do not subtract from the base; we only count what she actually needs that exceeds the package).\n\n**Total additional items:** $2 + 1 + 10 = 13$ items.\n\n**4. Calculate the total cost:**\n*   **Base Cost:** $129.00\n*   **Additional Item Cost:** 13 items \u00d7 $15.00 = $195.00\n*   **Total:** $129.00 + $195.00 = $324.00\n\n**Total Cost: $324.00**",
+  "gold_answer": "324",
+  "input_tokens": 278,
+  "output_tokens": 353,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5597,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:00Z"
+}

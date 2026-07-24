@@ -1,0 +1,15 @@
+{
+  "run_id": "run-057",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the actual number of people who attended the concert, we need to reverse the 20% overstatement made by Courtney.\n\n1.  **Identify the error:** Courtney reported 48 people, but she overstated the true number by 20%.\n2.  **Set up the equation:** An overstatement of 20% means that the reported number (48) is 120% of the actual number ($x$).\n    *   $1.20x = 48$\n3.  **Solve for $x$:**\n    *   $x = 48 / 1.20$\n    *   $x = 40$\n\n**If Kelly was right, 40 people really attended the concert.**",
+  "gold_answer": "40",
+  "input_tokens": 291,
+  "output_tokens": 165,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5616,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:13Z"
+}

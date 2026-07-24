@@ -1,0 +1,15 @@
+{
+  "run_id": "run-087",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of Bill's new truck, we need to calculate the cost of each individual feature and add them to the base price.\n\n1.  **Base Price:** $30,000\n2.  **King Cab Upgrade:** $7,500\n3.  **Leather Seats:** One-third of the king cab upgrade ($7,500 / 3) = $2,500\n4.  **Running Boards:** $500 less than the leather seats ($2,500 - $500) = $2,000\n5.  **Upgraded Exterior Light Package:** $1,500\n\n**Total Calculation:**\n$30,000 (Base) + $7,500 (King Cab) + $2,500 (Leather) + $2,000 (Running Boards) + $1,500 (Lights) = **$43,500**\n\nThe total cost of Bill's new truck is **$43,500**.",
+  "gold_answer": "43500",
+  "input_tokens": 314,
+  "output_tokens": 235,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8190,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:57Z"
+}

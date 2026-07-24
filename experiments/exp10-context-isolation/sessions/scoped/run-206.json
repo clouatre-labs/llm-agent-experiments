@@ -1,0 +1,15 @@
+{
+  "run_id": "run-206",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of holes, we can break the problem down into two steps:\n\n1.  **Calculate the holes from the two-hole buttons:**\n    7 buttons \u00d7 2 holes = **14 holes**\n\n2.  **Calculate the holes from the four-hole buttons:**\n    First, find the number of four-hole buttons: 21 total buttons - 7 two-hole buttons = 14 buttons.\n    14 buttons \u00d7 4 holes = **56 holes**\n\n3.  **Find the total:**\n    14 + 56 = **70 holes**\n\nThere were **70 holes** in all the buttons in the bag.",
+  "gold_answer": "70",
+  "input_tokens": 257,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3817,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:04Z"
+}

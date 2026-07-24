@@ -1,0 +1,15 @@
+{
+  "run_id": "run-277",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Calculate current savings:** Jane has saved $4 per week for 8 weeks.\n    $4 \\times 8 = \\$32$\n2.  **Calculate the remaining amount needed:** She wants to reach $60.\n    $\\$60 - \\$32 = \\$28$\n3.  **Calculate the remaining weeks:** Divide the remaining amount by her weekly savings rate.\n    $\\$28 \\div \\$4 = 7$ **weeks**\n\nIt will take Jane **7 more weeks** to have saved a total of $60.",
+  "gold_answer": "7",
+  "input_tokens": 289,
+  "output_tokens": 130,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4173,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:06Z"
+}

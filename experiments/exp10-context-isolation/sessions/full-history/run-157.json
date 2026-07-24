@@ -1,0 +1,15 @@
+{
+  "run_id": "run-157",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of each pump in cents, follow these steps:\n\n1.  **Determine the total number of pumps in the bottle:**\n    If 2 pumps provide 120 washings, then the total number of pumps is:\n    $120 \\text{ washings} \\times 2 \\text{ pumps/washing} = 240 \\text{ pumps}$\n\n2.  **Calculate the cost per pump in dollars:**\n    Divide the total cost by the total number of pumps:\n    $\\$24.00 / 240 \\text{ pumps} = \\$0.10 \\text{ per pump}$\n\n3.  **Convert the cost to cents:**\n    $\\$0.10 \\times 100 = 10 \\text{ cents}$\n\n(Note: Jackie's usage of 1 pump per wash does not change the cost per individual pump; it only changes how many washes she gets out of the bottle.)\n\n**Each pump costs 10 cents.**",
+  "gold_answer": "10",
+  "input_tokens": 299,
+  "output_tokens": 220,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5897,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:12Z"
+}

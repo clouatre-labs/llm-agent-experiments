@@ -1,0 +1,15 @@
+{
+  "run_id": "run-085",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of loaves of bread the bakery has, you can follow these steps:\n\n1.  **Identify Sam's amount:** Sam had **70** loaves last Friday.\n2.  **Calculate \"seven times\" Sam's amount:** $7 \\times 70 = 490$.\n3.  **Subtract 40 (as per \"40 less than\"):** $490 - 40 = 450$.\n\nThe bakery has **450** loaves of bread.",
+  "gold_answer": "450",
+  "input_tokens": 250,
+  "output_tokens": 114,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1338,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:44Z"
+}

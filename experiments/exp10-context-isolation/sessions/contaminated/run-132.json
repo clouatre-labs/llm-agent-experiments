@@ -1,0 +1,15 @@
+{
+  "run_id": "run-132",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the difference in distance between the winner and the loser, we first calculate the total distance covered by each person.\n\n**1. Calculate Blake's distance:**\n*   The football field is 100 yards long.\n*   Running \"back and forth\" once means covering the length of the field twice (100 yards there + 100 yards back = 200 yards).\n*   Blake runs back and forth 15 times.\n*   Total distance = $15 \\times 200 \\text{ yards} = 3,000 \\text{ yards}$.\n\n**2. Calculate Kelly's distance:**\n*   **First part:** She runs back and forth once.\n    *   $1 \\times 200 \\text{ yards} = 200 \\text{ yards}$.\n*   **Second part:** She runs to the 40-yard line and back.\n    *   Running from one end to the 40-yard line is 40 yards.\n    *   Running back is another 40 yards.\n    *   One \"trip\" is $40 + 40 = 80 \\text{ yards}$.\n    *   She does this 34 times: $34 \\times 80 \\text{ yards} = 2,720 \\text{ yards}$.\n*   **Total distance:** $200 \\text{ yards} + 2,720 \\text{ yards} = 2,920 \\text{ yards}$.\n\n**3. Calculate the difference:**\n*   Winner (Blake): 3,000 yards\n*   Loser (Kelly): 2,920 yards\n*   Difference: $3,000 - 2,920 = 80 \\text{ yards}$.\n\n**The winner runs 80 yards farther than the loser.**",
+  "gold_answer": "80",
+  "input_tokens": 308,
+  "output_tokens": 418,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3237,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:29Z"
+}

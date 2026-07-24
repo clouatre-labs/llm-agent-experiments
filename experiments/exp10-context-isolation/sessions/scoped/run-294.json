@@ -1,0 +1,15 @@
+{
+  "run_id": "run-294",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours Doctor Jones has left, we need to calculate his total working time and subtract it from his nine-hour shift.\n\n**1. Calculate the time spent on rounds:**\n*   Number of inpatients: 9\n*   Time per inpatient: 20 minutes\n*   $9 \\times 20 = 180$ minutes\n\n**2. Calculate the time spent on appointments:**\n*   Number of appointments: 10\n*   Time per appointment: 30 minutes\n*   $10 \\times 30 = 300$ minutes\n\n**3. Calculate total time spent on tasks:**\n*   $180 \\text{ minutes (rounds)} + 300 \\text{ minutes (appointments)} = 480$ minutes\n\n**4. Convert total task time into hours:**\n*   $480 \\div 60 = 8$ hours\n\n**5. Calculate remaining time:**\n*   Total shift: 9 hours\n*   Time spent: 8 hours\n*   $9 - 8 = 1$ hour\n\nDoctor Jones will have **1 hour** left to update his records.",
+  "gold_answer": "1",
+  "input_tokens": 249,
+  "output_tokens": 255,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4271,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

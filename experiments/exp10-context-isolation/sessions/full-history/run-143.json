@@ -1,0 +1,15 @@
+{
+  "run_id": "run-143",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Iris spent at the spa, we calculate the cost of each service step-by-step:\n\n1.  **Hair:** $400\n2.  **Manicure:** $400 \\times \\frac{1}{4} = \\$100$\n3.  **Pedicure:** $\\$100 \\times \\frac{3}{4} = \\$75$\n\n**Total Spent:** $\\$400 + \\$100 + \\$75 = \\$575$\n\nIris spent **$575** at the spa.",
+  "gold_answer": "575",
+  "input_tokens": 294,
+  "output_tokens": 126,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4773,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:07Z"
+}

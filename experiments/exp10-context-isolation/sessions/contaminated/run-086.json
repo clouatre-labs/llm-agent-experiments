@@ -1,0 +1,15 @@
+{
+  "run_id": "run-086",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the profit the hospital makes from these visits, we need to calculate the total revenue and the total cost per day.\n\n**1. Calculate the total number of hours worked per day:**\n*   Total patients: 500\n*   Minutes per patient: 24\n*   Total minutes: $500 \\times 24 = 12,000$ minutes\n*   Total hours: $12,000 / 60 = 200$ hours\n\n**2. Calculate the total revenue (what the hospital charges patients):**\n*   Hourly rate to patients: $200\n*   Total revenue: $200 \\text{ hours} \\times \\$200/\\text{hour} = \\$40,000$\n\n**3. Calculate the total cost (what the hospital pays doctors):**\n*   Hourly rate to doctors: $150\n*   Total cost: $200 \\text{ hours} \\times \\$150/\\text{hour} = \\$30,000$\n\n**4. Calculate the profit:**\n*   Profit = Total Revenue - Total Cost\n*   Profit = $\\$40,000 - \\$30,000 = \\$10,000$\n\nThe hospital makes **$10,000** in profit per day.",
+  "gold_answer": "10000",
+  "input_tokens": 305,
+  "output_tokens": 300,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 15519,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:29Z"
+}

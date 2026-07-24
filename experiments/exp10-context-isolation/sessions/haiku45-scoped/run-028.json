@@ -1,0 +1,15 @@
+{
+  "run_id": "run-028",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step.\n\n**Step 1: Calculate the original cost of 4 packs**\n- Cost per pack: $10.00\n- Number of packs: 4\n- Original total: 4 \u00d7 $10.00 = $40.00\n\n**Step 2: Apply the 10% discount**\n- Discount amount: 10% of $40.00 = 0.10 \u00d7 $40.00 = $4.00\n- Total cost after discount: $40.00 - $4.00 = $36.00\n\n**Step 3: Calculate total number of bagels**\n- Bagels per pack: 9\n- Number of packs: 4\n- Total bagels: 9 \u00d7 4 = 36 bagels\n\n**Step 4: Calculate cost per bagel**\n- Total cost: $36.00\n- Total bagels: 36\n- Cost per bagel: $36.00 \u00f7 36 = $1.00\n\n**Answer: Each single bagel will cost $1.00**",
+  "gold_answer": "1",
+  "input_tokens": 287,
+  "output_tokens": 259,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3268,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

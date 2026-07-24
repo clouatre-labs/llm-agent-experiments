@@ -1,0 +1,15 @@
+{
+  "run_id": "run-012",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of water in the final 24 liters, we need to calculate the water content of each component after the spill.\n\n**1. The Orange Drink:**\n*   **Initial amount:** 10 liters.\n*   **Spill:** 1 liter is spilled, leaving **9 liters** of orange drink.\n*   **Water content:** The drink is $2/3$ water.\n*   **Calculation:** $9 \\text{ liters} \\times \\frac{2}{3} = \\mathbf{6 \\text{ liters of water}}$.\n\n**2. The Pineapple Drink:**\n*   **Amount:** **15 liters**.\n*   **Water content:** The drink is $3/5$ water.\n*   **Calculation:** $15 \\text{ liters} \\times \\frac{3}{5} = \\mathbf{9 \\text{ liters of water}}$.\n\n**3. Total Water:**\n*   $6 \\text{ liters (orange)} + 9 \\text{ liters (pineapple)} = \\mathbf{15 \\text{ liters of water}}$.\n\n**Total Volume Check:**\nThe remaining orange drink (9L) plus the pineapple drink (15L) equals the **24 liters** mentioned in your question.\n\n**Final Answer:**\nThere are **15 liters** of water in the remaining 24 liters.",
+  "gold_answer": "15",
+  "input_tokens": 293,
+  "output_tokens": 295,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3586,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:59Z"
+}

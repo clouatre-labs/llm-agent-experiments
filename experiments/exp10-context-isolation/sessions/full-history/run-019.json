@@ -1,0 +1,15 @@
+{
+  "run_id": "run-019",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of stamps Max bought, we can calculate the quantity of each design step-by-step:\n\n1.  **Snowflake stamps:** 16\n2.  **Truck stamps:** 16 + 3 = 19\n3.  **Rose stamps:** 19 - 9 = 10\n\n**Total stamps:** 16 + 19 + 10 = **45**",
+  "gold_answer": "45",
+  "input_tokens": 298,
+  "output_tokens": 94,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6375,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:38Z"
+}

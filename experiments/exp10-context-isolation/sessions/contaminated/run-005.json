@@ -1,0 +1,15 @@
+{
+  "run_id": "run-005",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many minutes Kim slept in her bed, we need to subtract her periods of being awake/out of bed from her total scheduled sleep time.\n\n1.  **Total scheduled sleep time:**\n    From 10:00 PM to 6:00 AM is **8 hours**, which equals **480 minutes**.\n\n2.  **Time spent awake/out of bed:**\n    *   **Bathroom trip:** She woke up 5 minutes earlier than usual (5:55 AM) to go to the bathroom. This accounts for **5 minutes** of being awake/out of bed.\n    *   **Sleepwalking episode:** She was awake and sleepwalking from 2:15 AM to 2:38 AM. This is a duration of **23 minutes**.\n\n3.  **Calculation:**\n    Total minutes - (Bathroom time + Sleepwalking time) = Minutes spent sleeping in bed\n    $480 - (5 + 23) = 480 - 28 = 452$\n\nKim slept in her bed for **452 minutes**.",
+  "gold_answer": "452",
+  "input_tokens": 317,
+  "output_tokens": 239,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4546,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:00Z"
+}

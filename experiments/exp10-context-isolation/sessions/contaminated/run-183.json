@@ -1,0 +1,15 @@
+{
+  "run_id": "run-183",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n*   **Female lions:** 12\n*   **Male lions:** 6 (half of 12)\n*   **Lion cubs:** 14\n\n**Total lions in the enclosure: 32**",
+  "gold_answer": "32",
+  "input_tokens": 297,
+  "output_tokens": 59,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 604,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:42Z"
+}

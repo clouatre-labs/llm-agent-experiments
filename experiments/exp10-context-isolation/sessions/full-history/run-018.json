@@ -1,0 +1,15 @@
+{
+  "run_id": "run-018",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Tyrion uses 12 face masks every 2 days.**\n\n**Reasoning:**\n1.  **Per outing:** He changes his mask 2 times (meaning he uses 2 masks per trip).\n2.  **Per day:** He goes out 3 times. So, $2 \\text{ masks} \\times 3 \\text{ outings} = 6 \\text{ masks per day}$.\n3.  **Every 2 days:** $6 \\text{ masks} \\times 2 \\text{ days} = 12 \\text{ masks}$.",
+  "gold_answer": "12",
+  "input_tokens": 290,
+  "output_tokens": 134,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6021,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:38Z"
+}

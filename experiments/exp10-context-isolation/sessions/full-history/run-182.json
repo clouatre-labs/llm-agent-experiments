@@ -1,0 +1,15 @@
+{
+  "run_id": "run-182",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of doorbell rings, we need to calculate the number of rings for each of the four friends:\n\n1.  **First friend:** 20 rings\n2.  **Second friend:** 1/4 more than the first friend.\n    *   1/4 of 20 is 5.\n    *   20 + 5 = 25 rings.\n3.  **Fourth friend:** 60 rings (given).\n4.  **Third friend:** 10 more than the fourth friend.\n    *   60 + 10 = 70 rings.\n\n**Total rings:** 20 + 25 + 70 + 60 = **175 rings.**",
+  "gold_answer": "175",
+  "input_tokens": 293,
+  "output_tokens": 160,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5739,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:18Z"
+}

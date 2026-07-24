@@ -1,0 +1,15 @@
+{
+  "run_id": "run-035",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total cost for Angela, we first determine how many items are included in the base price and then calculate the cost for the additional items.\n\n**1. Identify the base package:**\n*   **Base Price:** $129.00\n*   **Included items:** 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures (Total of 17 items).\n\n**2. Identify Angela's requirements:**\n*   6 mirrors\n*   2 chandeliers\n*   20 pictures\n*   **Total items needed:** 6 + 2 + 20 = **28 items**\n\n**3. Calculate the additional items:**\nSince the base package covers 17 items, we subtract those from Angela's total:\n*   28 total items - 17 included items = **11 additional items**\n\n**4. Calculate the total cost:**\n*   Base Price: $129.00\n*   Additional Item Cost: 11 items \u00d7 $15.00 = $165.00\n*   **Total Cost:** $129.00 + $165.00 = **$294.00**\n\nIt will cost Angela **$294.00**.",
+  "gold_answer": "324",
+  "input_tokens": 315,
+  "output_tokens": 278,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3274,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:40Z"
+}

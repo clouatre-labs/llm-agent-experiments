@@ -1,0 +1,15 @@
+{
+  "run_id": "run-224",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the amount of change you would get, follow these steps:\n\n1.  **Calculate the cost of the pencils:** 6 pencils \u00d7 $0.50 = **$3.00**\n2.  **Calculate the cost of the erasers:** 8 erasers \u00d7 $0.25 = **$2.00**\n3.  **Calculate the total cost:** $3.00 + $2.00 = **$5.00**\n4.  **Calculate the change:** $10.00 - $5.00 = **$5.00**\n\nYou would get **$5.00** in change.",
+  "gold_answer": "5",
+  "input_tokens": 264,
+  "output_tokens": 147,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1933,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:06Z"
+}

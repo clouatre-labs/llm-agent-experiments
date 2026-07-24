@@ -1,0 +1,15 @@
+{
+  "run_id": "run-091",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of water balloons, we can break the problem down into two steps: the initial distribution and the addition from Maria's mom.\n\n**Step 1: The initial amount**\n*   **Friends:** Maria has 4 friends. Each friend received 2 balloons. ($4 \\times 2 = 8$ balloons)\n*   **Maria:** Maria has 1 balloon for herself.\n*   **Subtotal:** $8 + 1 = 9$ balloons.\n\n**Step 2: The addition from Mom**\n*   **People involved:** There are 5 people total (Maria + 4 friends).\n*   **Additional balloons:** Each person received 3 more balloons. ($5 \\times 3 = 15$ balloons)\n\n**Step 3: The total**\n*   **Total:** $9 \\text{ (initial)} + 15 \\text{ (from mom)} = 24$ balloons.\n\n**The girls had a total of 24 water balloons.**",
+  "gold_answer": "24",
+  "input_tokens": 261,
+  "output_tokens": 219,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2448,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:17Z"
+}

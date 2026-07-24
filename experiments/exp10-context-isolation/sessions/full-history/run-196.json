@@ -1,0 +1,15 @@
+{
+  "run_id": "run-196",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of customers counted on the third day, we can follow these steps:\n\n1.  **Day 1:** 100 customers.\n2.  **Day 2:** 50 more than the first day (100 + 50) = 150 customers.\n3.  **Total for Day 1 and Day 2:** 100 + 150 = 250 customers.\n4.  **Day 3:** The total for all three days is 500. To find the third day, subtract the total of the first two days from the grand total: 500 - 250 = 250.\n\nSloane counted **250** customers on the third day.",
+  "gold_answer": "250",
+  "input_tokens": 302,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 880,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:17Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-249",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours George needs to work, we first need to calculate the total cost of his dental work and then determine how much he still owes.\n\n**1. Calculate the total cost:**\n*   2 implants at $2,000 each: $4,000\n*   1 porcelain crown: $500\n*   **Total Cost:** $4,500\n\n**2. Calculate the remaining balance:**\n*   Total Cost: $4,500\n*   Minus Deposit: $600\n*   **Remaining Balance:** $3,900\n\n**3. Calculate the hours needed:**\n*   Remaining Balance: $3,900\n*   Hourly Wage: $15\n*   $3,900 \u00f7 $15 = 260\n\nGeorge needs to work **260 hours** to have enough to pay for the dental work.",
+  "gold_answer": "260",
+  "input_tokens": 263,
+  "output_tokens": 199,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3138,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:13Z"
+}

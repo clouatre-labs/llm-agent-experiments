@@ -1,0 +1,15 @@
+{
+  "run_id": "run-125",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Mike will have left, we need to calculate the sale price of the jeans and subtract that from his $50.00 bill.\n\n1.  **Calculate the discount amount:**\n    25% of $40.00 = $40.00 \u00d7 0.25 = **$10.00**\n\n2.  **Calculate the sale price:**\n    $40.00 (Original Price) - $10.00 (Discount) = **$30.00**\n\n3.  **Calculate the change remaining:**\n    $50.00 (Amount Paid) - $30.00 (Sale Price) = **$20.00**\n\nMike will have **$20.00** left over.",
+  "gold_answer": "20",
+  "input_tokens": 305,
+  "output_tokens": 177,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3154,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:27Z"
+}

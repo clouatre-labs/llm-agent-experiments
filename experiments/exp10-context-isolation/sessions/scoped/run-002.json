@@ -1,0 +1,15 @@
+{
+  "run_id": "run-002",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the math problem provided at the beginning of your text:\n\n1.  **Indra's name** has **6** letters.\n2.  **Her sister's name** calculation:\n    *   Half of Indra's letters: $6 \\div 2 = 3$\n    *   4 more than that: $3 + 4 = 7$\n    *   So, the sister's name has **7** letters.\n\n**Total letters:** Indra (6) + Sister (7) = **13 letters.**",
+  "gold_answer": "13",
+  "input_tokens": 266,
+  "output_tokens": 120,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6269,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:53Z"
+}

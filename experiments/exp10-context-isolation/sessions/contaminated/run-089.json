@@ -1,0 +1,15 @@
+{
+  "run_id": "run-089",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of money the tooth fairy left Sharon, we can break the payments down into three stages:\n\n1.  **First tooth:** $5.00\n2.  **Next three teeth:** $1.00 per tooth\n    *   $1.00 \u00d7 3 = $3.00\n3.  **Last two teeth:** Half the amount of the previous teeth ($1.00 \u00f7 2 = $0.50 per tooth)\n    *   $0.50 \u00d7 2 = $1.00\n\n**Total Calculation:**\n$5.00 + $3.00 + $1.00 = **$9.00**",
+  "gold_answer": "9",
+  "input_tokens": 296,
+  "output_tokens": 153,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9313,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:24Z"
+}

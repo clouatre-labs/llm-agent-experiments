@@ -1,0 +1,15 @@
+{
+  "run_id": "run-169",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many socks Lindsay has missed, we first need to calculate how many socks she has already washed:\n\n1.  **Calculate the socks in pairs:** 10 pairs $\\times$ 2 socks per pair = **20 socks**.\n2.  **Add the loose socks:** 20 socks + 15 loose socks = **35 socks washed**.\n3.  **Subtract from the total:** 50 total socks - 35 washed socks = **15 socks**.\n\nLindsay has missed **15 socks**.",
+  "gold_answer": "15",
+  "input_tokens": 289,
+  "output_tokens": 116,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1782,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:11Z"
+}

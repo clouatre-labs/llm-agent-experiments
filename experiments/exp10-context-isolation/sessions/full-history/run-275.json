@@ -1,0 +1,15 @@
+{
+  "run_id": "run-275",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to your queries:\n\n**Math Problem:**\nThe sum of their ages in 10 years will be **40**.\n*(Reasoning: Each person ages 10 years, so you add 20 years to the current sum: 20 + 10 + 10 = 40).*\n\n**Text Summary/Analysis:**\nThe provided text consists of three distinct parts:\n1. **A Dialogue:** A professional exchange between a \"Planner\" and an \"Executor\" regarding scheduling a team standup and a quarterly review.\n2. **A Word Problem:** A logic/math puzzle regarding the ages of Mico and Marco.\n3. **Academic/Filler Text:** A paragraph of formal-sounding academic prose followed by a pangram (\"The quick brown fox...\"), likely used as placeholder or stylistic text.",
+  "gold_answer": "40",
+  "input_tokens": 294,
+  "output_tokens": 185,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5339,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:39Z"
+}

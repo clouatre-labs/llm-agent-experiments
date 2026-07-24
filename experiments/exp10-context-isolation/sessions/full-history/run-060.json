@@ -1,0 +1,15 @@
+{
+  "run_id": "run-060",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of the shark's body length represented by the combined length of the remoras, follow these steps:\n\n1.  **Identify the total length of the shark:** 10 feet.\n2.  **Convert the shark's length to inches:** 10 feet \u00d7 12 inches/foot = **120 inches**.\n3.  **Calculate the combined length of the remoras:** 2 remoras \u00d7 6 inches each = **12 inches**.\n4.  **Calculate the percentage:** (Combined length of remoras / Total length of shark) \u00d7 100\n    *   (12 / 120) \u00d7 100 = 0.1 \u00d7 100 = **10%**.\n\nThe combined length of the remoras is **10%** of the shark's body length.",
+  "gold_answer": "10",
+  "input_tokens": 296,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2847,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:45Z"
+}

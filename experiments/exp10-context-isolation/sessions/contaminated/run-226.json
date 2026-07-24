@@ -1,0 +1,15 @@
+{
+  "run_id": "run-226",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Jamie's total pay for last Tuesday:\n\n1.  **Regular Pay:**\n    *   Regular hours: 8 hours\n    *   Regular rate: $20/hour\n    *   $8 \\times \\$20 = \\mathbf{\\$160}$\n\n2.  **Overtime Pay:**\n    *   Overtime hours: $11 - 8 = 3$ hours\n    *   Overtime rate: $150\\%$ of $\\$20 = \\$30/\\text{hour}$\n    *   $3 \\times \\$30 = \\mathbf{\\$90}$\n\n3.  **Total Pay:**\n    *   $\\$160 + \\$90 = \\mathbf{\\$250}$\n\nJamie was paid **$250** for her work that day.",
+  "gold_answer": "250",
+  "input_tokens": 299,
+  "output_tokens": 177,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2511,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:52Z"
+}

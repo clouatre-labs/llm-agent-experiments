@@ -1,0 +1,15 @@
+{
+  "run_id": "run-062",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nGerald earned **$50**.\n\n**Here is the breakdown:**\n1.  **Earnings:** $30 per day \u00d7 5 days (an entire week) = $150.\n2.  **Expenses:** $100.\n3.  **Remaining:** $150 - $100 = $50.",
+  "gold_answer": "110",
+  "input_tokens": 292,
+  "output_tokens": 86,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3636,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:11Z"
+}

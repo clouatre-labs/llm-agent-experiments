@@ -1,0 +1,15 @@
+{
+  "run_id": "run-174",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of women remaining on the bus, follow these steps:\n\n1.  **Determine the total parts in the ratio:**\n    The ratio of men to women is $5:9$.\n    Total parts = $5 + 9 = 14$.\n\n2.  **Calculate the value of one \"part\":**\n    Total passengers = $84$.\n    Value per part = $84 / 14 = 6$.\n\n3.  **Calculate the initial number of women:**\n    Women = $9 \\text{ parts} \\times 6 = 54 \\text{ women}$.\n\n4.  **Subtract the women who alighted:**\n    Remaining women = $54 - 20 = 34$.\n\n**There are 34 women remaining on the bus.**",
+  "gold_answer": "34",
+  "input_tokens": 294,
+  "output_tokens": 176,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5881,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:44Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-205",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many cupcakes Howie needs to buy, we first need to determine the total number of people.\n\n1.  **Count the people:**\n    *   Howie: 1\n    *   Teacher: 1\n    *   Classmates: 25\n    *   **Total people:** $1 + 1 + 25 = 27$ people.\n\n2.  **Calculate the cupcakes per person:**\n    *   Howie is getting one vanilla and one chocolate for everyone, which means **2 cupcakes per person**.\n\n3.  **Calculate the total cupcakes:**\n    *   $27 \\text{ people} \\times 2 \\text{ cupcakes per person} = 54 \\text{ cupcakes}$.\n\nHowie should buy **54** cupcakes.",
+  "gold_answer": "54",
+  "input_tokens": 251,
+  "output_tokens": 172,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2261,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:02Z"
+}

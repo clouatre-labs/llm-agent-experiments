@@ -1,0 +1,15 @@
+{
+  "run_id": "run-070",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the daily calorie deficit Andy needs, we must first determine the total number of days he has to reach his goal and the total calorie deficit required.\n\n### 1. Calculate the total number of days\nAndy's goal is July 19th. We count the days starting from January 1st:\n*   **January:** 31 days\n*   **February:** 28 days (assuming a non-leap year)\n*   **March:** 31 days\n*   **April:** 30 days\n*   **May:** 31 days\n*   **June:** 30 days\n*   **July:** 19 days\n\n**Total days** = $31 + 28 + 31 + 30 + 31 + 30 + 19 = \\mathbf{200 \\text{ days}}$\n\n*(Note: If it is a leap year, the total would be 201 days, but 200 is the standard calculation.)*\n\n### 2. Calculate the total calorie deficit required\nAndy wants to lose 30 lbs, and each pound requires a deficit of 3,500 calories.\n**Total deficit** = $30 \\text{ lbs} \\times 3,500 \\text{ calories/lb} = \\mathbf{105,000 \\text{ calories}}$\n\n### 3. Calculate the daily calorie deficit\nTo find the daily amount, divide the total deficit by the total number of days:\n**Daily deficit** = $105,000 \\text{ calories} \\div 200 \\text{ days} = \\mathbf{525 \\text{ calories/day}}$\n\n**Answer:**\nAndy needs a daily calorie deficit of **525 calories**.",
+  "gold_answer": "525",
+  "input_tokens": 273,
+  "output_tokens": 392,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2384,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:29:54Z"
+}

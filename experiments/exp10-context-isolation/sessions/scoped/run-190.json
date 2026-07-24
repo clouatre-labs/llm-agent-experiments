@@ -1,0 +1,15 @@
+{
+  "run_id": "run-190",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Andrea saved, we can follow these steps:\n\n1.  **Identify the total amount she started with:** $36.\n2.  **Calculate her total spending:**\n    *   Sweater: $11\n    *   Brother: $4\n    *   Total spent: $11 + $4 = $15\n3.  **Subtract the amount spent from the starting amount to find what was left (the savings):**\n    *   $36 - $15 = $21\n\n**Andrea saved $21.**",
+  "gold_answer": "21",
+  "input_tokens": 252,
+  "output_tokens": 123,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5638,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:01Z"
+}

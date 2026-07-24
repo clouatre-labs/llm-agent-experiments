@@ -1,0 +1,15 @@
+{
+  "run_id": "run-213",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "It appears you have provided three distinct types of content: a dialogue, a math word problem, and a paragraph of academic-style text.\n\nHere are the solutions/breakdowns for each:\n\n### 1. Dialogue Summary (Planner & Executor)\nThe conversation outlines the following schedule for next week:\n*   **Team Standup:** Monday at 10:00 AM.\n*   **Quarterly Review:** Thursday from 1:00 PM to 3:00 PM in the conference room.\n*   **Action Items:** The Executor will draft an agenda, share it for feedback, and then send calendar invites to the product team and engineering leads (including the agenda).\n\n### 2. Math Problem Solution\n**Step 1: Calculate spending on clothes.**\n*   20% of $500 = $100.\n*   Remaining money: $500 - $100 = **$400**.\n\n**Step 2: Calculate spending on CDs.**\n*   25% of the *remaining* $400 = $100.\n*   Remaining money: $400 - $100 = **$300**.\n\n**Final Answer:** Julie has **$300** left.\n\n### 3. Text Analysis\nThe final paragraph is a collection of sentences that mimic academic writing, though it contains a \"pangram\" (a sentence using every letter of the alphabet) in the middle: *\"The quick brown fox jumps over the lazy dog near the riverbank.\"* \n\nThe text transitions from discussing research methodology and bias to a nonsensical sentence, then back to academic conclusions.",
+  "gold_answer": "300",
+  "input_tokens": 293,
+  "output_tokens": 354,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3319,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:22Z"
+}

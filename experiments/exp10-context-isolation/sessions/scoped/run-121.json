@@ -1,0 +1,15 @@
+{
+  "run_id": "run-121",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the difference in revenue between the two days, we first calculate the total earnings for each day separately.\n\n**Step 1: Calculate Thursday's revenue**\n*   Truck tires: 6 tires \u00d7 $60/tire = $360\n*   Car tires: 4 tires \u00d7 $40/tire = $160\n*   **Total for Thursday:** $360 + $160 = **$520**\n\n**Step 2: Calculate Friday's revenue**\n*   Truck tires: 0 tires \u00d7 $60/tire = $0\n*   Car tires: 12 tires \u00d7 $40/tire = $480\n*   **Total for Friday:** $0 + $480 = **$480**\n\n**Step 3: Calculate the difference**\nThe day with higher revenue was Thursday ($520).\n*   $520 - $480 = $40\n\nThe mechanic earned **$40** more on the day with higher revenue.",
+  "gold_answer": "40",
+  "input_tokens": 270,
+  "output_tokens": 228,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4872,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:45Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-265",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Roy has, we can work backward from the information provided:\n\n1.  **Eva's savings:** $20.00\n2.  **Anthony's savings:** He saved $10.00 more than Eva.\n    *   $20.00 + $10.00 = **$30.00**\n3.  **Roy's savings:** He saved 40% more than Anthony.\n    *   First, calculate 40% of Anthony's savings: $30.00 \u00d7 0.40 = $12.00\n    *   Add that to Anthony's total: $30.00 + $12.00 = **$42.00**\n\n**Roy has $42.00.**",
+  "gold_answer": "42",
+  "input_tokens": 308,
+  "output_tokens": 184,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4261,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

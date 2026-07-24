@@ -1,0 +1,15 @@
+{
+  "run_id": "run-116",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of slices eaten, we calculate the amount for each person:\n\n1.  **Doxa:** 1 slice\n2.  **Sister:** 1 + 1 = 2 slices\n3.  **Brother:** 2 + 1 = 3 slices\n\n**Total:** 1 + 2 + 3 = **6 slices**",
+  "gold_answer": "6",
+  "input_tokens": 288,
+  "output_tokens": 78,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1442,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:57Z"
+}

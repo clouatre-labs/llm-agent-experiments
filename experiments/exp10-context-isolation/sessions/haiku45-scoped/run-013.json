@@ -1,0 +1,15 @@
+{
+  "run_id": "run-013",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Movie Watching Problem - Solution\n\nLet me work through this step by step.\n\n**Given Information:**\n- Movies watched on Saturday: 4\n- Movies watched on Sunday: half the number from Saturday\n- They watch every weekend\n- Time period: 4 weeks\n\n**Step 1: Calculate movies watched on Sunday**\n- Sunday movies = 4 \u00f7 2 = 2 movies\n\n**Step 2: Calculate movies watched per weekend**\n- Per weekend = Saturday + Sunday\n- Per weekend = 4 + 2 = 6 movies\n\n**Step 3: Calculate movies watched in 4 weeks**\n- 4 weeks = 4 weekends\n- Total movies = 6 movies/weekend \u00d7 4 weekends\n- Total movies = 24 movies\n\n**Answer: 24 movies**",
+  "gold_answer": "24",
+  "input_tokens": 261,
+  "output_tokens": 192,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6195,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-036",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the combined value of the two houses, follow these steps:\n\n1.  **Identify Herb's house value:** $76,000\n2.  **Calculate Juan's house value:** Since it is 30% less expensive than Herb's, you calculate 70% of Herb's value ($100\\% - 30\\% = 70\\%$).\n    *   $76,000 \\times 0.70 = \\$53,200$\n3.  **Calculate the combined value:**\n    *   $\\$76,000 + \\$53,200 = \\$129,200$\n\n**The combined value of the two houses is $129,200.**",
+  "gold_answer": "129200",
+  "input_tokens": 298,
+  "output_tokens": 172,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1101,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:38Z"
+}

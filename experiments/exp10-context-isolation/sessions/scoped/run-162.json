@@ -1,0 +1,15 @@
+{
+  "run_id": "run-162",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the combined total of corns and cannolis, we need to calculate the final amount of each item step-by-step.\n\n**1. Calculate the initial amounts:**\n*   **Cannolis:** Allan starts with **40** cannolis.\n*   **Corns:** There is twice as much corn as cannolis.\n    *   $40 \\times 2 = 80$ corns.\n\n**2. Calculate the amounts after the shopping trip:**\n*   **New Cannoli Total:** He bought 60 more cannolis.\n    *   $40 (\\text{initial}) + 60 (\\text{new}) = 100$ cannolis.\n*   **New Corn Total:** He bought 40 fewer corns than the number of cannolis (referring to the current number of cannolis, which is 100).\n    *   $100 (\\text{cannolis}) - 40 = 60$ new corns.\n    *   $80 (\\text{initial}) + 60 (\\text{new}) = 140$ corns.\n\n**3. Calculate the combined total:**\n*   Total Cannolis + Total Corns = $100 + 140 = 240$.\n\n**Final Answer:**\nAllan has a combined total of **240** corns and cannolis.",
+  "gold_answer": "200",
+  "input_tokens": 267,
+  "output_tokens": 306,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12404,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:00Z"
+}

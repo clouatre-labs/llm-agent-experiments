@@ -1,0 +1,15 @@
+{
+  "run_id": "run-284",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many minutes it will take for the fog bank to cover the whole city, you can use the following calculation:\n\n1.  **Identify the total distance:** 42 miles.\n2.  **Identify the rate of coverage:** 10 minutes per 3 miles.\n3.  **Calculate how many 3-mile increments are in the city:** $42 \\div 3 = 14$ increments.\n4.  **Multiply the increments by the time per increment:** $14 \\times 10 = 140$ minutes.\n\nIt will take **140 minutes** (or 2 hours and 20 minutes) for the fog bank to cover the whole city.",
+  "gold_answer": "140",
+  "input_tokens": 294,
+  "output_tokens": 155,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5960,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:09Z"
+}

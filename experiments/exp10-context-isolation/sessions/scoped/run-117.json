@@ -1,0 +1,15 @@
+{
+  "run_id": "run-117",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount spent on advertising over the two years, you can follow these steps:\n\n1.  **Identify the amount spent in the first year:** $15,000.\n2.  **Calculate the amount spent in the second year:** One third of the first year's amount.\n    *   $15,000 \u00f7 3 = $5,000.\n3.  **Add the two amounts together to find the total:**\n    *   $15,000 + $5,000 = $20,000.\n\nThe total amount the company spent on advertising for the two years is **$20,000**.",
+  "gold_answer": "20000",
+  "input_tokens": 256,
+  "output_tokens": 153,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 13717,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:33:23Z"
+}

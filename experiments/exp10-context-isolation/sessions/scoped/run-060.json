@@ -1,0 +1,15 @@
+{
+  "run_id": "run-060",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage, we first need to ensure all measurements are in the same unit.\n\n1.  **Convert the shark's length to inches:**\n    Since 1 foot = 12 inches:\n    $10\\text{ feet} \\times 12\\text{ inches/foot} = 120\\text{ inches}$\n\n2.  **Calculate the combined length of the remoras:**\n    There are 2 remoras, each 6 inches long:\n    $2 \\times 6\\text{ inches} = 12\\text{ inches}$\n\n3.  **Calculate the percentage:**\n    Divide the combined length of the remoras by the length of the shark and multiply by 100:\n    $\\frac{12}{120} \\times 100 = 0.1 \\times 100 = 10\\%$\n\n**The combined length of the remoras is 10% of the shark's body length.**",
+  "gold_answer": "10",
+  "input_tokens": 262,
+  "output_tokens": 217,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10375,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:58Z"
+}

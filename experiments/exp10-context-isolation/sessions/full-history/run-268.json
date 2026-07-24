@@ -1,0 +1,15 @@
+{
+  "run_id": "run-268",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much John makes in a full 7-day week, we can break the calculation down step-by-step:\n\n1.  **Calculate earnings per cycle:**\n    5 tasks \u00d7 $1.20 per task = **$6.00 per cycle**\n\n2.  **Calculate earnings per day:**\n    30 cycles \u00d7 $6.00 per cycle = **$180.00 per day**\n\n3.  **Calculate earnings per week:**\n    $180.00 per day \u00d7 7 days = **$1,260.00**\n\nJohn makes **$1,260.00** if he works a full 7-day week.",
+  "gold_answer": "1260",
+  "input_tokens": 300,
+  "output_tokens": 158,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1865,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:33Z"
+}

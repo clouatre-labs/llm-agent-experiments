@@ -1,0 +1,15 @@
+{
+  "run_id": "run-067",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Identify Rose's total items:** Rose bought 12 onions and 4 potatoes, which is $12 + 4 = 16$ items in total.\n2.  **Determine the ratio:** The text states Rose bought 4 times the number of items Sophia bought.\n3.  **Calculate Sophia's total:** Divide Rose's total by 4 ($16 \\div 4 = 4$).\n\n**Sophia bought 4 onions and potatoes in total.**",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 117,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2766,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:12Z"
+}

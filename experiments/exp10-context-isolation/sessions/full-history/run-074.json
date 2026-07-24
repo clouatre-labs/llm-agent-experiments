@@ -1,0 +1,15 @@
+{
+  "run_id": "run-074",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer your math question:\n\n1.  **Monthly cost:** 4 car washes \u00d7 $15 = $60 per month.\n2.  **Annual cost:** $60 \u00d7 12 months = **$720 per year**.",
+  "gold_answer": "720",
+  "input_tokens": 295,
+  "output_tokens": 55,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1956,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:49Z"
+}
