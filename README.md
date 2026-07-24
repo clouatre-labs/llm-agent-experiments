@@ -109,6 +109,18 @@ Experiment 9 replicates the evaluation protocol on a different task (SCOUT resea
 
 All three models achieved near-ceiling scores (7.8-8.0/8) with zero errors across 10 runs each. The ranking is consistent with exp3/exp4 results: Haiku 4.5 remains a reliable baseline and higher-capacity models (Sonnet 5) do not show measurable gains on this task type.
 
+### Context Isolation Study (Experiment 10)
+
+Experiment 10 tests whether context contamination (irrelevant history in the prompt window) degrades LLM math reasoning performance on GSM8K. Uses a three-condition design (Scoped, Full-History, Contaminated) with length-matched context windows across 300 GSM8K tasks. The research question is whether performance degradation is attributable to context contamination specifically (vs. total context length).
+
+| Condition | n | Accuracy | CI lower | CI upper |
+|-----------|---|----------|----------|----------|
+| Scoped | 300 | TBD | TBD | TBD |
+| Full-History | 300 | TBD | TBD | TBD |
+| Contaminated | 300 | TBD | TBD | TBD |
+
+*Table 5: Exp10 per-condition accuracy on GSM8K. Results pending experiment execution. McNemar paired tests with Bonferroni correction (alpha=0.025) will compare Scoped vs Full-History and Scoped vs Contaminated. Full data in experiments/exp10-context-isolation/.*
+
 ## Repository Structure
 
 ```
