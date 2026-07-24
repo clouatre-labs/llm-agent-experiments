@@ -1,0 +1,15 @@
+{
+  "run_id": "run-181",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of the party, we first need to determine the total number of guests attending.\n\n**1. Calculate the total number of people invited:**\n*   Classmates: 25\n*   Dance class girls: 7\n*   Family members: 13\n*   **Total invited:** 25 + 7 + 13 = 45 people\n\n**2. Calculate the actual number of attendees:**\n*   Total invited: 45\n*   People who cannot come: 4\n*   **Total attendees:** 45 - 4 = 41 people\n\n**3. Calculate the cost based on the theater's pricing:**\n*   The first 20 people are covered by the base fee of $125.\n*   **Additional guests:** 41 total guests - 20 included guests = 21 additional guests.\n*   **Cost for additional guests:** 21 guests \u00d7 $6 per guest = $126.\n\n**4. Calculate the total cost:**\n*   Base fee: $125\n*   Additional guest fees: $126\n*   **Total cost:** $125 + $126 = **$251**\n\nThe party will cost **$251**.",
+  "gold_answer": "251",
+  "input_tokens": 261,
+  "output_tokens": 280,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6306,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:59Z"
+}

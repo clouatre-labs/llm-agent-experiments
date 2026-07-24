@@ -1,0 +1,15 @@
+{
+  "run_id": "run-278",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the specific components within the dialogue and prose:\n\n**1. Math Problem Solution:**\n*   **Ants:** 50\n*   **Bugs:** 25 (half as many as ants)\n*   **Total Insects:** 75\n\n**2. Summary of the Planning Dialogue:**\nThe Planner and Executor are coordinating next week's schedule. They have agreed to:\n*   **Team Standup:** Monday at 10 AM.\n*   **Quarterly Review:** Thursday from 1 PM to 3 PM in the conference room.\n*   **Action Items:** The Executor will invite the product team and engineering leads, and will draft an agenda for feedback before sending the final calendar invites.\n\n**3. Analysis of the Final Paragraph:**\nThe final paragraph is a collection of disparate sentences. It begins with academic/scientific jargon regarding literature reviews and methodology, transitions into a \"pangram\" (a sentence containing every letter of the alphabet: *\"The quick brown fox jumps over the lazy dog...\"*), and concludes with a sentence regarding further scientific analysis.",
+  "gold_answer": "75",
+  "input_tokens": 295,
+  "output_tokens": 237,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2072,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

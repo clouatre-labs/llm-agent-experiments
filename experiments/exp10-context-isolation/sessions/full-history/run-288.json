@@ -1,0 +1,15 @@
+{
+  "run_id": "run-288",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem within your text:\n\n1.  **Total flowers planted:** 10 rows \u00d7 20 flowers per row = **200 flowers**.\n2.  **Flowers bloomed:** 4/5 of 200 = (200 \u00f7 5) \u00d7 4 = 40 \u00d7 4 = **160 flowers**.\n\n**160 flowers** in Arianna's garden have bloomed.",
+  "gold_answer": "160",
+  "input_tokens": 305,
+  "output_tokens": 98,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3301,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:40Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-280",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the time the car in the slow lane took to cover the distance, we can follow these steps:\n\n1.  **Identify the speed of the fast lane car:** 60 miles/hour.\n2.  **Calculate the speed of the slow lane car:** Half of 60 is **30 miles/hour**.\n3.  **Identify the distance to be covered:** 480 miles.\n4.  **Calculate the time for the slow lane car:** Use the formula $\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$.\n    $$\\text{Time} = \\frac{480 \\text{ miles}}{30 \\text{ mph}} = 16 \\text{ hours}$$\n\n**Answer:**\nThe car in the slow lane took **16 hours** to cover the same distance.",
+  "gold_answer": "16",
+  "input_tokens": 256,
+  "output_tokens": 181,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2616,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:19Z"
+}

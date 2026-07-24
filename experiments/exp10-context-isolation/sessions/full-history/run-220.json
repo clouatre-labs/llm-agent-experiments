@@ -1,0 +1,15 @@
+{
+  "run_id": "run-220",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the responses to the different sections:\n\n**Math Problem Solution:**\n*   **Mom's apples:** 20\n*   **Jenna's apples:** 10 (half of 20)\n*   **Total apples:** **30**\n\n**Text Analysis:**\nThe final paragraph is a collection of academic-style sentences used to demonstrate formal writing patterns, interspersed with a famous pangram (\"The quick brown fox jumps over the lazy dog...\"). It does not contain a specific question to answer, but rather serves as a sample of formal prose.",
+  "gold_answer": "30",
+  "input_tokens": 295,
+  "output_tokens": 127,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4798,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:26Z"
+}

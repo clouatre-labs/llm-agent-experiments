@@ -1,0 +1,15 @@
+{
+  "run_id": "run-077",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many seashells each person got, we need to calculate the total number of shells collected by Carlos, Jim, and Carrey.\n\n1.  **Jim's shells:** 27\n2.  **Carlos's shells:** Jim collected 5 more than Carlos, so Carlos collected $27 - 5 = 22$ shells.\n3.  **Carrey's shells:** Carlos collected twice as many as Carrey, so Carrey collected $22 / 2 = 11$ shells.\n4.  **Total shells:** $27 (\\text{Jim}) + 22 (\\text{Carlos}) + 11 (\\text{Carrey}) = 60$ shells.\n5.  **Division:** They divided the 60 shells equally among the 3 of them. $60 / 3 = 20$.\n\n**Each person got 20 seashells.**",
+  "gold_answer": "20",
+  "input_tokens": 294,
+  "output_tokens": 199,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12305,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:24Z"
+}

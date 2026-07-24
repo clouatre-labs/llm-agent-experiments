@@ -1,0 +1,15 @@
+{
+  "run_id": "run-167",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many feet Oliver must climb to reach the elevation of the comb, we can follow these steps:\n\n1.  **Determine the elevation of the comb:** Stanley was at 10,000 feet, and the comb fell 4,000 feet.\n    $10,000\\text{ ft} - 4,000\\text{ ft} = 6,000\\text{ ft}$ (The comb is at 6,000 feet).\n2.  **Determine Oliver's current elevation:** Oliver is at 3,000 feet.\n3.  **Calculate the difference:** Subtract Oliver's elevation from the comb's elevation.\n    $6,000\\text{ ft} - 3,000\\text{ ft} = 3,000\\text{ ft}$.\n\nOliver must climb **3,000 feet** to reach the elevation of the comb.",
+  "gold_answer": "3000",
+  "input_tokens": 318,
+  "output_tokens": 212,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2282,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:10Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-022",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of students in the school auditorium, we can follow these steps:\n\n1.  **Calculate the total number of seats:**\n    4 rows \u00d7 18 seats per row = **72 seats**\n\n2.  **Calculate the number of seats occupied by administrators:**\n    1/4 of 72 = **18 seats**\n\n3.  **Calculate the remaining seats:**\n    72 total seats - 18 administrator seats = **54 seats remaining**\n\n4.  **Calculate the number of seats occupied by parents:**\n    1/3 of the remaining 54 seats = **18 seats**\n\n5.  **Calculate the number of seats occupied by students:**\n    54 remaining seats - 18 parent seats = **36 seats**\n\n**There were 36 students in the school auditorium.**",
+  "gold_answer": "36",
+  "input_tokens": 293,
+  "output_tokens": 182,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14668,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:10Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-126",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of boys in each class, follow these steps:\n\n1.  **Find the number of students per class:**\n    Total students = 80\n    Number of classes = 2\n    Students per class = $80 \\div 2 = 40$ students.\n\n2.  **Calculate the percentage of boys:**\n    If 40% of the students are girls, then the remaining percentage must be boys.\n    $100\\% - 40\\% = 60\\%$ boys.\n\n3.  **Calculate the number of boys in one class:**\n    60% of 40 students = $0.60 \\times 40 = 24$.\n\n**There are 24 boys in each class.**",
+  "gold_answer": "24",
+  "input_tokens": 289,
+  "output_tokens": 167,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6143,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:05Z"
+}

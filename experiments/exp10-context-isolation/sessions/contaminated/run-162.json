@@ -1,0 +1,15 @@
+{
+  "run_id": "run-162",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the combined total of corns and cannolis in Allan's house, we need to calculate the final amount of each item based on the information provided.\n\n**1. Calculate the initial amounts in the house:**\n*   **Cannolis in house:** 40\n*   **Corn in house:** Since there is twice as much corn as cannolis, $40 \\times 2 = 80$ corns.\n\n**2. Account for the new purchases/changes:**\n*   **New Cannolis:** He bought 60 more.\n    *   Total Cannolis = $40 (\\text{initial}) + 60 (\\text{bought}) = 100$ cannolis.\n*   **New Corn count:** He has 40 fewer corns than the (new) number of cannolis.\n    *   Total Corn = $100 (\\text{total cannolis}) - 40 = 60$ corns.\n\n**3. Calculate the combined total:**\n*   Total = $100 \\text{ cannolis} + 60 \\text{ corns} = 160$.\n\n**Allan has a combined total of 160 corns and cannolis.**",
+  "gold_answer": "200",
+  "input_tokens": 304,
+  "output_tokens": 267,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7268,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:43Z"
+}

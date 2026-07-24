@@ -1,0 +1,15 @@
+{
+  "run_id": "run-116",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Doxa** ate **1** slice.\n2.  Her **sister** ate 1 more than Doxa (1 + 1), which is **2** slices.\n3.  Her **brother** ate 1 more than her sister (2 + 1), which is **3** slices.\n\nTotal slices eaten: 1 + 2 + 3 = **6 slices**.",
+  "gold_answer": "6",
+  "input_tokens": 288,
+  "output_tokens": 99,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3831,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:26Z"
+}

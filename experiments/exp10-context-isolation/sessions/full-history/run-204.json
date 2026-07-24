@@ -1,0 +1,15 @@
+{
+  "run_id": "run-204",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The apple pie cost **$7.00**.\n\n**Calculation:**\n1. Total spent: $20.00\n2. Chips: $4.00 (2 x $2.00)\n3. Fried chicken: $8.00\n4. Soda: $1.00\n5. Subtotal of known items: $4.00 + $8.00 + $1.00 = $13.00\n6. Remaining amount (Apple pie): $20.00 - $13.00 = **$7.00**",
+  "gold_answer": "7",
+  "input_tokens": 304,
+  "output_tokens": 131,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4315,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:22Z"
+}

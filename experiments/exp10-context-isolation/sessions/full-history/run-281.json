@@ -1,0 +1,15 @@
+{
+  "run_id": "run-281",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Annika has **$15** left.\n\n**Calculation:**\n1. Total amount: $50\n2. Spent on food/snacks (half of $50): -$25\n3. Spent on rides: -$10\n4. Remaining: $50 - $25 - $10 = $15",
+  "gold_answer": "15",
+  "input_tokens": 294,
+  "output_tokens": 72,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1925,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:37Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-002",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the riddle provided:\n\n1.  **Indra's name:** 6 letters.\n2.  **Sister's name calculation:** Half of Indra's name is 3 (6 \u00f7 2 = 3). Four more than that is 7 (3 + 4 = 7).\n3.  **Total letters:** 6 (Indra) + 7 (Sister) = **13 letters**.",
+  "gold_answer": "13",
+  "input_tokens": 275,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3450,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:14:33Z"
+}

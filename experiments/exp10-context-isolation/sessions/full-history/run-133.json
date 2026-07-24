@@ -1,0 +1,15 @@
+{
+  "run_id": "run-133",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total cost of Tom's anniversary getaway, we break it down into two parts: the plane tickets and the hotel stay.\n\n**1. Plane Tickets:**\n*   There are 2 people (Tom and his wife).\n*   Each ticket costs $5,000.\n*   **Total for tickets:** $5,000 \u00d7 2 = **$10,000**\n\n**2. Hotel Stay:**\n*   Normal price per day: $1,500.\n*   The price is 20% more expensive: $1,500 + ($1,500 \u00d7 0.20) = $1,500 + $300 = $1,800 per day.\n*   The stay is for 3 days.\n*   **Total for hotel:** $1,800 \u00d7 3 = **$5,400**\n\n**3. Total Trip Cost:**\n*   $10,000 (Tickets) + $5,400 (Hotel) = **$15,400**\n\nThe trip cost a total of **$15,400**.",
+  "gold_answer": "15400",
+  "input_tokens": 300,
+  "output_tokens": 261,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3471,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:03Z"
+}

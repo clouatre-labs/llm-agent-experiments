@@ -1,0 +1,15 @@
+{
+  "run_id": "run-189",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Terry spends on yogurt over 30 days, we can follow these steps:\n\n1.  **Calculate total yogurt consumption:**\n    Terry eats 2 yogurts per day for 30 days.\n    $2 \\text{ yogurts/day} \\times 30 \\text{ days} = 60 \\text{ yogurts}$\n\n2.  **Determine the price per yogurt:**\n    The sale is 4 yogurts for $5.00.\n    $\\$5.00 \\div 4 = \\$1.25 \\text{ per yogurt}$\n\n3.  **Calculate total cost:**\n    $60 \\text{ yogurts} \\times \\$1.25 \\text{ per yogurt} = \\$75.00$\n\n**Terry spends $75.00 on yogurt over 30 days.**",
+  "gold_answer": "75",
+  "input_tokens": 296,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2480,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:16Z"
+}

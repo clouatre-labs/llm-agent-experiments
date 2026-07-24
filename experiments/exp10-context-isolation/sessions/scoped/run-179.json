@@ -1,0 +1,15 @@
+{
+  "run_id": "run-179",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many new tables are needed, we need to calculate the total number of boxes and then determine how many tables are required to hold them.\n\n**1. Calculate the total number of boxes:**\n*   **Donated boxes:** 10 people $\\times$ 5 boxes each = 50 boxes\n*   **Existing boxes:** 10 boxes\n*   **Total boxes:** 50 + 10 = 60 boxes\n\n**2. Calculate the total number of tables needed:**\n*   Each table holds 2 boxes.\n*   60 boxes $\\div$ 2 boxes per table = 30 tables needed\n\n**3. Calculate the number of new tables required:**\n*   Total tables needed: 30\n*   Tables already owned: 15\n*   **New tables needed:** 30 - 15 = **15**\n\nThe charity group needs **15** new tables.",
+  "gold_answer": "15",
+  "input_tokens": 258,
+  "output_tokens": 203,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1156,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:54Z"
+}

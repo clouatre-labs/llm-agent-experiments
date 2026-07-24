@@ -1,0 +1,15 @@
+{
+  "run_id": "run-248",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many miles Walt walked on Wednesday, we can break the problem down step-by-step:\n\n1.  **Monday:** Walt walked **4 miles**.\n2.  **Tuesday:** He walked 6 times as many miles as Monday.\n    *   $4 \\text{ miles} \\times 6 = \\mathbf{24 \\text{ miles}}$.\n3.  **Total for Monday and Tuesday:**\n    *   $4 \\text{ miles (Mon)} + 24 \\text{ miles (Tue)} = \\mathbf{28 \\text{ miles}}$.\n4.  **Wednesday:** We know the total for Monday through Wednesday was 41 miles. To find Wednesday's distance, subtract the Monday/Tuesday total from the grand total:\n    *   $41 \\text{ miles (Total)} - 28 \\text{ miles (Mon/Tue)} = \\mathbf{13 \\text{ miles}}$.\n\n**Walt walked 13 miles on Wednesday.**",
+  "gold_answer": "13",
+  "input_tokens": 255,
+  "output_tokens": 215,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2802,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:12Z"
+}

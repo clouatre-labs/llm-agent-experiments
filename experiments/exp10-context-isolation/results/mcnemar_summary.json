@@ -1,0 +1,14 @@
+{
+  "scoped_vs_full_history": {
+    "statistic": 2.4615384615384617,
+    "p_value": 0.1166644647810231,
+    "bonferroni_alpha": 0.025,
+    "significant": false
+  },
+  "scoped_vs_contaminated": {
+    "statistic": 0.030303030303030304,
+    "p_value": 0.8618044330490108,
+    "bonferroni_alpha": 0.025,
+    "significant": false
+  }
+}

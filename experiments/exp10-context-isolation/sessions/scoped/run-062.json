@@ -1,0 +1,15 @@
+{
+  "run_id": "run-062",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Gerald has **$110** left.\n\n**Calculation:**\n1.  **Earnings:** 7 days (one week) \u00d7 $30/day = $210\n2.  **Expenses:** $210 - $100 = $110",
+  "gold_answer": "110",
+  "input_tokens": 258,
+  "output_tokens": 61,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2048,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:29:02Z"
+}

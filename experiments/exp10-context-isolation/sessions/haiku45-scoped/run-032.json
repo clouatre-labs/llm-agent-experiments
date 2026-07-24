@@ -1,0 +1,15 @@
+{
+  "run_id": "run-032",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me calculate how much Adam spent and then find his change.\n\n**Step 1: Calculate the cost of type A candies**\n- Number of type A candies: 7\n- Cost per candy: $0.5\n- Total cost for type A: 7 \u00d7 $0.5 = $3.5\n\n**Step 2: Calculate the cost of type B candies**\n- Number of type B candies: 10\n- Cost per candy: $0.75\n- Total cost for type B: 10 \u00d7 $0.75 = $7.5\n\n**Step 3: Calculate total amount spent**\n- Total spent: $3.5 + $7.5 = $11\n\n**Step 4: Calculate change received**\n- Amount paid: $15\n- Amount spent: $11\n- Change: $15 - $11 = **$4**\n\n**Adam received $4 in change.**",
+  "gold_answer": "4",
+  "input_tokens": 272,
+  "output_tokens": 215,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3084,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

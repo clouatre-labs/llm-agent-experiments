@@ -1,0 +1,15 @@
+{
+  "run_id": "run-298",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of people kicked out for other reasons, we can break down the numbers provided in the word problem:\n\n1.  **Mask refusal:** 3 customers\n2.  **Shoplifting:** $(4 \\times 3) - 5 = 12 - 5 = 7$ customers\n3.  **Physical violence:** $3 \\times 7 = 21$ customers\n\n**Total identified so far:** $3 + 7 + 21 = 31$ customers\n\n**Total people kicked out:** 50\n\n**Other reasons:** $50 - 31 = 19$\n\n**19** people were kicked out for other reasons.",
+  "gold_answer": "19",
+  "input_tokens": 293,
+  "output_tokens": 149,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4230,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:43Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-054",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many shells Kylie collects on Tuesday, we can break the problem down into steps:\n\n1.  **Find how many shells Robert collected on Monday:**\n    Robert collected **20** shells.\n\n2.  **Find how many shells Kylie collected on Monday:**\n    Kylie collected 5 more shells than Robert.\n    $20 + 5 = 25$ shells.\n\n3.  **Find how many shells Kylie collected on Tuesday:**\n    Kylie collected 2 times more shells than she did on Monday.\n    $25 \\times 2 = 50$ shells.\n\n**Kylie collected 50 shells on Tuesday.**",
+  "gold_answer": "50",
+  "input_tokens": 266,
+  "output_tokens": 144,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1584,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:15Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-068",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of votes in favor of the new regulation, we can use a simple algebraic equation.\n\n1.  **Define the variables:**\n    *   Let $x$ be the number of votes **against** the regulation.\n    *   Since there were twice as many votes in favor, the number of votes **in favor** is $2x$.\n\n2.  **Set up the equation:**\n    *   The total number of people on the council is 33.\n    *   $x + 2x = 33$\n\n3.  **Solve for $x$:**\n    *   $3x = 33$\n    *   $x = 11$\n\n4.  **Calculate the votes in favor:**\n    *   Votes in favor = $2x$\n    *   $2 \\times 11 = 22$\n\n**There were 22 votes in favor of the new regulation.**",
+  "gold_answer": "22",
+  "input_tokens": 284,
+  "output_tokens": 207,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1077,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:46Z"
+}

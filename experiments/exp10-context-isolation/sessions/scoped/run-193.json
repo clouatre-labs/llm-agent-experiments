@@ -1,0 +1,15 @@
+{
+  "run_id": "run-193",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of fruits George has, we can follow these steps:\n\n1.  **Find the number of bananas:**\n    George has **200** bananas.\n\n2.  **Calculate the number of pears:**\n    George has 45% more pears than bananas.\n    $45\\% \\text{ of } 200 = 0.45 \\times 200 = 90$\n    Number of pears = $200 (\\text{bananas}) + 90 (\\text{extra}) = \\mathbf{290}$ **pears**.\n\n3.  **Calculate the total number of fruits:**\n    Total fruits = Bananas + Pears\n    Total fruits = $200 + 290 = \\mathbf{490}$\n\nGeorge has **490** fruits.",
+  "gold_answer": "490",
+  "input_tokens": 262,
+  "output_tokens": 186,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1218,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:57Z"
+}

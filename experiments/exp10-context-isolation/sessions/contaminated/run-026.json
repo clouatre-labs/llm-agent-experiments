@@ -1,0 +1,15 @@
+{
+  "run_id": "run-026",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money John makes in a week, we need to calculate the total number of apartments, the total number of collections per week, and then multiply by his rate.\n\n**1. Calculate the number of apartments:**\n*   **Complex 1:** 200 apartments\n*   **Complex 2:** 200 apartments\n*   **Complex 3:** 60% bigger than the first two combined.\n    *   First two combined: $200 + 200 = 400$\n    *   60% of 400: $400 \\times 0.60 = 240$\n    *   Complex 3 total: $400 + 240 = 640$ apartments\n*   **Total Apartments:** $200 + 200 + 640 = 1,040$ apartments\n\n**2. Calculate the total collections per week:**\n*   John collects garbage from each apartment 3 times a week.\n*   **Total weekly collections:** $1,040 \\text{ apartments} \\times 3 \\text{ collections/week} = 3,120$ collections\n\n**3. Calculate the total weekly pay:**\n*   He earns $\\$0.40$ per collection.\n*   **Total pay:** $3,120 \\times \\$0.40 = \\$1,248$\n\nJohn makes **$1,248** in a week.",
+  "gold_answer": "1248",
+  "input_tokens": 303,
+  "output_tokens": 333,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10628,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:09Z"
+}

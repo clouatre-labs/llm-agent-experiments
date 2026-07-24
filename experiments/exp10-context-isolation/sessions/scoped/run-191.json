@@ -1,0 +1,15 @@
+{
+  "run_id": "run-191",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total amount of money Stetson gave up, we can follow these steps:\n\n1.  **Determine the number of oranges eaten:**\n    Stetson ate $\\frac{2}{5}$ of the $60$ oranges picked.\n    $$\\text{Oranges eaten} = 60 \\times \\frac{2}{5}$$\n    $$60 \\div 5 = 12$$\n    $$12 \\times 2 = 24 \\text{ oranges}$$\n\n2.  **Calculate the total cost:**\n    Stetson gives up $\\$10$ for each orange eaten.\n    $$\\text{Total money} = 24 \\text{ oranges} \\times \\$10/\\text{orange}$$\n    $$\\text{Total money} = \\$240$$\n\n**Stetson gave up a total of $240.**",
+  "gold_answer": "240",
+  "input_tokens": 268,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4459,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:00Z"
+}

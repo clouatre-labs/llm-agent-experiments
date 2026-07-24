@@ -1,0 +1,15 @@
+{
+  "run_id": "run-175",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of magazines Susan receives every year, we calculate the issues for each of the three magazines:\n\n1.  **Magazine 1:** 12 issues per year.\n2.  **Magazine 2:** 6 issues per year.\n3.  **Magazine 3:** 4 times the amount of the 6-issue magazine ($4 \\times 6$) = 24 issues per year.\n\n**Total calculation:** $12 + 6 + 24 = 42$\n\nSusan gets **42 magazines** every year.",
+  "gold_answer": "66",
+  "input_tokens": 298,
+  "output_tokens": 122,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3656,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:43Z"
+}

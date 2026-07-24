@@ -1,0 +1,15 @@
+{
+  "run_id": "run-021",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me solve this step-by-step.\n\n**Given information:**\n- Total wire length: 4 feet\n- Length of each piece: 6 inches\n\n**Step 1: Convert units to match**\nSince the pieces are measured in inches, I'll convert the total length to inches:\n- 4 feet \u00d7 12 inches/foot = 48 inches\n\n**Step 2: Divide total length by piece length**\n- Number of pieces = 48 inches \u00f7 6 inches per piece\n- Number of pieces = 8\n\n**Answer: Tracy obtained 8 pieces of wire.**",
+  "gold_answer": "8",
+  "input_tokens": 272,
+  "output_tokens": 144,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2435,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

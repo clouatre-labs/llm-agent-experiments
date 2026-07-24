@@ -1,0 +1,15 @@
+{
+  "run_id": "run-168",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Amy's total score, we calculate the points earned for each section based on her accuracy and the point values provided:\n\n1.  **Multiple-Choice Questions:**\n    *   Total questions: 10\n    *   Points per question: 1\n    *   Accuracy: 80%\n    *   Calculation: $10 \\times 0.80 \\times 1 = \\mathbf{8 \\text{ points}}$\n\n2.  **True/False Questions:**\n    *   Total questions: 20\n    *   Points per question: 1\n    *   Accuracy: 90%\n    *   Calculation: $20 \\times 0.90 \\times 1 = \\mathbf{18 \\text{ points}}$\n\n3.  **Long-Answer Questions:**\n    *   Total questions: 5\n    *   Points per question: 5\n    *   Accuracy: 60%\n    *   Calculation: $5 \\times 0.60 \\times 5 = \\mathbf{15 \\text{ points}}$\n\n**Total Score:**\n$8 + 18 + 15 = \\mathbf{41 \\text{ points}}$",
+  "gold_answer": "41",
+  "input_tokens": 321,
+  "output_tokens": 264,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2662,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:11Z"
+}

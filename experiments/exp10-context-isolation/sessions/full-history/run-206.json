@@ -1,0 +1,15 @@
+{
+  "run_id": "run-206",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem presented in your text:\n\n1.  **Identify the two groups of buttons:**\n    *   Total buttons = 21\n    *   Buttons with two holes = 7\n    *   Buttons with four holes = 21 - 7 = 14\n\n2.  **Calculate the total number of holes:**\n    *   Holes from the first group: $7 \\times 2 = 14$\n    *   Holes from the second group: $14 \\times 4 = 56$\n    *   Total holes: $14 + 56 = 70$\n\n**There were 70 holes in all the buttons in the bag.**",
+  "gold_answer": "70",
+  "input_tokens": 291,
+  "output_tokens": 155,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 764,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:19Z"
+}

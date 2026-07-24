@@ -1,0 +1,15 @@
+{
+  "run_id": "run-111",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much water the boat took on, we can follow these steps:\n\n1.  **Determine the total distance to the shore:**\n    *   Julia rows 20 feet in 16 seconds.\n    *   The shore is 64 seconds away.\n    *   $64 \\text{ seconds} \\div 16 \\text{ seconds} = 4$ intervals of 20 feet.\n    *   $4 \\times 20 \\text{ feet} = 80 \\text{ feet}$ total distance.\n\n2.  **Determine the water intake rate:**\n    *   The boat takes on 2 liters for every 10 feet.\n    *   $80 \\text{ feet} \\div 10 \\text{ feet} = 8$ intervals of water intake.\n\n3.  **Calculate the total water:**\n    *   $8 \\text{ intervals} \\times 2 \\text{ liters per interval} = 16 \\text{ liters}$.\n\n**By the time Julia reached the shore, the boat had taken on 16 liters of water.**",
+  "gold_answer": "16",
+  "input_tokens": 286,
+  "output_tokens": 244,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6894,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:26Z"
+}

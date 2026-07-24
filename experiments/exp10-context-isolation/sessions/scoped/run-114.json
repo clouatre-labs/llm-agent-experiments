@@ -1,0 +1,15 @@
+{
+  "run_id": "run-114",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many spoons were in the package Julia bought, we can set up a simple algebraic equation based on the information provided:\n\n1.  **Let $x$** be the number of spoons in the package Julia bought.\n2.  **Husband's contribution:** He gave her **5** spoons.\n3.  **Spoons used:** Julia used **3** spoons to sample the stew.\n4.  **Total remaining:** She ended up with **12** spoons.\n\n**The Equation:**\n(Spoons Julia bought) + (Spoons husband bought) - (Spoons used) = Total spoons\n$$x + 5 - 3 = 12$$\n\n**Solving for $x$:**\n$$x + 2 = 12$$\n$$x = 12 - 2$$\n$$x = 10$$\n\nThere were **10** spoons in the package that Julia bought.",
+  "gold_answer": "10",
+  "input_tokens": 267,
+  "output_tokens": 201,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3403,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:33:05Z"
+}

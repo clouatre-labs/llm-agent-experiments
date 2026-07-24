@@ -1,0 +1,15 @@
+{
+  "run_id": "run-034",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step.\n\n**Step 1: Calculate Cameron's total stay duration**\n- Arrival: 5 pm\n- Departure: 10 am the next morning\n- From 5 pm to 5 am = 12 hours\n- From 5 am to 10 am = 5 hours\n- **Total stay = 12 + 5 = 17 hours**\n\n**Step 2: Calculate cost with the add-on option (70 pesos per hour after 12 hours)**\n- First 12 hours: 1000 pesos\n- Additional hours: 17 - 12 = 5 hours\n- Cost for additional hours: 5 \u00d7 70 = 350 pesos\n- **Total cost with add-on option = 1000 + 350 = 1350 pesos**\n\n**Step 3: Calculate cost for 24-hour stay**\n- **Cost for 24 hours = 1600 pesos**\n\n**Step 4: Calculate savings**\n- Savings = 1600 - 1350 = **250 pesos**\n\nCameron would save **250 pesos** by choosing the add-on option instead of paying for a full 24-hour stay.",
+  "gold_answer": "250",
+  "input_tokens": 285,
+  "output_tokens": 300,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3657,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

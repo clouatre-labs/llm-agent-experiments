@@ -1,0 +1,15 @@
+{
+  "run_id": "run-040",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in the text:\n\n1.  **Find the total number of groups:**\n    90 people \u00f7 9 people per group = **10 groups**.\n\n2.  **Find how many groups brought seashells:**\n    3/5 of 10 groups = (3/5) * 10 = **6 groups**.\n\n3.  **Calculate the total number of seashells:**\n    6 groups \u00d7 9 members per group = 54 people.\n    54 people \u00d7 2 seashells each = **108 seashells**.\n\n**Answer:** They brought **108** seashells.",
+  "gold_answer": "108",
+  "input_tokens": 304,
+  "output_tokens": 135,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4964,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:08Z"
+}

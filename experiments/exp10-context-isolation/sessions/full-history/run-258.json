@@ -1,0 +1,15 @@
+{
+  "run_id": "run-258",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of mosaic tiles needed, follow these steps:\n\n1.  **Calculate the area to be covered:** Two thirds of the 36 sq ft bathroom.\n    $36 \\times \\frac{2}{3} = 24 \\text{ sq ft}$\n\n2.  **Calculate the total tiles needed:** Multiply the area by the number of tiles required per square foot.\n    $24 \\text{ sq ft} \\times 24 \\text{ tiles/sq ft} = 576 \\text{ tiles}$\n\nMr. Boarden would need **576** mosaic tiles.",
+  "gold_answer": "576",
+  "input_tokens": 298,
+  "output_tokens": 134,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5201,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:34Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-036",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me solve this step by step.\n\n**Given information:**\n- Herb's house cost: $76,000\n- Juan's house is 30% less expensive than Herb's\n\n**Step 1: Calculate 30% of Herb's house value**\n30% of $76,000 = 0.30 \u00d7 $76,000 = $22,800\n\n**Step 2: Calculate Juan's house value**\nJuan's house = $76,000 - $22,800 = $53,200\n\n**Step 3: Calculate the combined value**\nCombined value = Herb's house + Juan's house\nCombined value = $76,000 + $53,200 = **$129,200**\n\nThe value of the two houses combined is **$129,200**.",
+  "gold_answer": "129200",
+  "input_tokens": 271,
+  "output_tokens": 182,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2560,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

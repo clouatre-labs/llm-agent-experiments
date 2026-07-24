@@ -1,0 +1,15 @@
+{
+  "run_id": "run-154",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of clouds Alice counted across all five days, we can calculate the amount for each day and then sum them up.\n\nThe pattern is a geometric sequence where the first term is 3 and the common ratio is 2.\n\n*   **Monday:** 3 clouds\n*   **Tuesday:** 3 \u00d7 2 = 6 clouds\n*   **Wednesday:** 6 \u00d7 2 = 12 clouds\n*   **Thursday:** 12 \u00d7 2 = 24 clouds\n*   **Friday:** 24 \u00d7 2 = 48 clouds\n\n**Total Calculation:**\n3 + 6 + 12 + 24 + 48 = **93**\n\nAlice will have counted a total of **93 clouds** at lunch across all five days.",
+  "gold_answer": "93",
+  "input_tokens": 282,
+  "output_tokens": 172,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2036,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:07Z"
+}

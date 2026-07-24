@@ -1,0 +1,15 @@
+{
+  "run_id": "run-278",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the responses to the different sections:\n\n**Math Problem Solution:**\n*   **Ants:** 50\n*   **Bugs:** 25 (Half of 50)\n*   **Total Insects:** 75\n\n**Summary of the Dialogue:**\nThe Planner and Executor are coordinating next week's schedule. They have set a team standup for Monday at 10 AM and a quarterly review for Thursday from 1 PM to 3 PM. The Executor will invite the product team and engineering leads and will draft an agenda for feedback before sending out the formal calendar invites.\n\n**Analysis of the Final Paragraph:**\nThe final paragraph is a collection of academic-style filler sentences (often used to test text processing or mimic formal writing) interspersed with a pangram (\"The quick brown fox jumps over the lazy dog\"). It discusses research methodology, bias minimization, and the need for further analysis, but it does not contain a specific cohesive argument or data set.",
+  "gold_answer": "75",
+  "input_tokens": 295,
+  "output_tokens": 210,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1016,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:35Z"
+}

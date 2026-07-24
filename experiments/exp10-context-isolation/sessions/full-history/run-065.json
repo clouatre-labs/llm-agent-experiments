@@ -1,0 +1,15 @@
+{
+  "run_id": "run-065",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Caroline's age, we can work backward from Chris:\n\n1.  **Chris** is 4 years old.\n2.  **Ben** is two times older than Chris: $4 \\times 2 = 8$ years old.\n3.  **Caroline** is three times older than Ben: $8 \\times 3 = 24$ years old.\n\n**Caroline is 24 years old.**",
+  "gold_answer": "24",
+  "input_tokens": 295,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3342,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:48Z"
+}

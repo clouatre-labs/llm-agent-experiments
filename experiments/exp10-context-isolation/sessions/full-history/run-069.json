@@ -1,0 +1,15 @@
+{
+  "run_id": "run-069",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many stickers Seth had in the beginning, we can work backward from the final amount:\n\n1.  **Kris's stickers:** Kris kept 9 stickers and gave 7 to Rob.\n    *   Total stickers Kris received = $9 + 7 = 16$ stickers.\n2.  **Luis's stickers:** Luis gave all his remaining stickers to Kris. Before that, he had used half of his stickers. This means the 16 stickers he gave to Kris represent the other half of his total.\n    *   Total stickers Luis had = $16 \\times 2 = 32$ stickers.\n3.  **Seth's stickers:** Seth gave half of his stickers to Luis. This means the 32 stickers Luis received represent half of Seth's original amount.\n    *   Total stickers Seth had = $32 \\times 2 = 64$ stickers.\n\n**Seth had 64 stickers in the beginning.**",
+  "gold_answer": "64",
+  "input_tokens": 292,
+  "output_tokens": 209,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2760,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:48Z"
+}

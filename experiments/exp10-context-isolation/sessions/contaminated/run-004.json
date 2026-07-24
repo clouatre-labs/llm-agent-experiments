@@ -1,0 +1,15 @@
+{
+  "run_id": "run-004",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **15** children now following the truck.\n\nHere is the step-by-step breakdown:\n\n1.  **First Street:** There are **5** children.\n2.  **Second Street:** Each of the 5 children is joined by another child ($5 + 5$), resulting in **10** children.\n3.  **Third Street:** Each of the 10 children is joined by 2 more children ($10 + (10 \\times 2)$), resulting in **30** children.\n4.  **The Departure:** The original 5 children leave the group ($30 - 5$), leaving **25** children.\n\n***Wait, let's re-read the specific wording of the third street carefully:***\n*\"On the third street, each child in the existing group is joined by another 2 children.\"*\n*   Current group: 10 children.\n*   New children added: $10 \\times 2 = 20$.\n*   Total: $10 + 20 = 30$.\n*   Original 5 leave: $30 - 5 = 25$.\n\n**Correction/Refinement:**\nIf the phrase \"each child in the existing group is joined by another 2 children\" implies the group size triples (the original child + 2 new ones), the math is:\n*   End of Street 2: 10 children.\n*   Street 3: $10 \\times 3 = 30$ children.\n*   Minus the original 5: **25 children.**\n\n**However**, if the riddle implies the \"original 5\" refers to the 5 children from the *very first street* who are still part of the group:\n*   Street 1: 5 children (A, B, C, D, E)\n*   Street 2: 10 children (A, B, C, D, E + 5 new)\n*   Street 3: 30 children (The 10 existing + 20 new)\n*   The \"original 5\" leave: $30 - 5 = 25$.\n\n**Final Answer: 25**",
+  "gold_answer": "25",
+  "input_tokens": 257,
+  "output_tokens": 483,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 29253,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:16:06Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-200",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many white fish Bob bought, we can use algebra.\n\n**1. Identify the starting point:**\n*   Initial orange fish: 3\n*   Initial white fish: 4\n*   Total initial fish: 7\n\n**2. Identify the changes:**\n*   Bob bought 17 new fish.\n*   Let $x$ be the number of **white** fish he bought.\n*   Since he bought 17 fish in total, the number of **orange** fish he bought is $17 - x$.\n\n**3. Set up the final totals:**\n*   Total orange fish now: $3 + (17 - x) = 20 - x$\n*   Total white fish now: $4 + x$\n\n**4. Use the final ratio provided:**\nThe problem states that he now has twice as many orange fish as white fish. We can write this as an equation:\n$$\\text{Orange} = 2 \\times \\text{White}$$\n$$20 - x = 2(4 + x)$$\n\n**5. Solve the equation:**\n$$20 - x = 8 + 2x$$\nAdd $x$ to both sides:\n$$20 = 8 + 3x$$\nSubtract 8 from both sides:\n$$12 = 3x$$\nDivide by 3:\n$$x = 4$$\n\n**Answer:**\nBob bought **4** white fish.",
+  "gold_answer": "4",
+  "input_tokens": 261,
+  "output_tokens": 316,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2564,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:01Z"
+}

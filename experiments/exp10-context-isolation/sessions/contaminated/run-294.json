@@ -1,0 +1,15 @@
+{
+  "run_id": "run-294",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours Doctor Jones has left to update his records, we need to calculate his total time spent on other tasks and subtract it from his 9-hour workday.\n\n**1. Calculate time spent on appointments:**\n*   10 appointments \u00d7 30 minutes each = 300 minutes\n\n**2. Calculate time spent on inpatient rounds:**\n*   9 inpatients \u00d7 20 minutes each = 180 minutes\n\n**3. Calculate total time spent on tasks:**\n*   300 minutes + 180 minutes = 480 minutes\n\n**4. Convert total task time into hours:**\n*   480 minutes \u00f7 60 minutes per hour = 8 hours\n\n**5. Calculate remaining time:**\n*   9 hours (total workday) - 8 hours (tasks) = 1 hour\n\nDoctor Jones will have **1 hour** left to update his records.",
+  "gold_answer": "1",
+  "input_tokens": 297,
+  "output_tokens": 197,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6600,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:11Z"
+}

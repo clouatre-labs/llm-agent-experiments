@@ -1,0 +1,15 @@
+{
+  "run_id": "run-282",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**It will take 3 days.**\n\nHere is the breakdown:\n*   **Start (Day 0):** 4 feet\n*   **Day 1:** 8 feet (4 x 2)\n*   **Day 2:** 16 feet (8 x 2)\n*   **Day 3:** 32 feet (16 x 2)\n\nOn Day 3, the beanstalk reaches 32 feet, which is taller than the 20-foot window.",
+  "gold_answer": "3",
+  "input_tokens": 299,
+  "output_tokens": 121,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6401,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:41Z"
+}

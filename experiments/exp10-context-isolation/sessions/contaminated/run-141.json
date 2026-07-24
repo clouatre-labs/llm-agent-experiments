@@ -1,0 +1,15 @@
+{
+  "run_id": "run-141",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "After fifteen days, the serum will cause a person to grow **8 new limbs**.\n\nHere is the breakdown:\n*   **Arms:** One extra arm every 3 days. $15 \\div 3 = 5$ new arms.\n*   **Legs:** One extra leg every 5 days. $15 \\div 5 = 3$ new legs.\n*   **Total:** $5 + 3 = 8$ new limbs.",
+  "gold_answer": "8",
+  "input_tokens": 294,
+  "output_tokens": 99,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5466,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:35Z"
+}

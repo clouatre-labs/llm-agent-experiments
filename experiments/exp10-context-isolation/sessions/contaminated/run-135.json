@@ -1,0 +1,15 @@
+{
+  "run_id": "run-135",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Newton brought **6** apples home.\n\nHere is the breakdown:\n1.  **Initial fall:** 2 apples fell.\n2.  **First action:** He put 1 in his pocket and threw 1 back. (Pocket: 1)\n3.  **Second fall:** 5 more apples fell.\n4.  **Second action:** He picked up those 5 apples, put \"all but one\" in his pocket, and threw the remaining one. (Pocket: 1 + 4 = 5)\n5.  **Third fall:** 6 more apples fell.\n6.  **Final action:** He picked up \"all of the remaining apples\" (the 6 that just fell) and went home.\n\n**Total in pocket:** 5 (from previous steps) + 6 (the final batch) = **11**? \n\nWait, let's re-read the specific phrasing: *\"Newton picked up these apples [the 5], put all but one in his pocket and threw the remaining one at the tree... Newton picked up all of the remaining apples and went home...\"*\n\nLet's track the physical apples Newton is holding:\n*   **Step 1:** 2 apples fall. He puts **1** in his pocket. (Total in pocket: 1)\n*   **Step 2:** 5 apples fall. He puts **4** in his pocket (all but one) and throws the 1 remaining. (Total in pocket: 1 + 4 = 5)\n*   **Step 3:** 6 apples fall. He picks up **all** of them (6) and goes home.\n\nSince he already had 5 in his pocket and then picked up the final 6, he has **11** apples.\n\n***\n\n**Correction/Alternative Interpretation:**\nIf the question implies \"How many apples did he pick up in the final step to take home,\" the answer is **6**. \n\nHowever, if we are tracking his total inventory:\n1. Start: 0\n2. After 1st apple: 1 in pocket.\n3. After 2nd set: 1 (original) + 4 (new) = 5 in pocket.\n4. After 3rd set: 5 (in pocket) + 6 (picked up) = **11 apples.**",
+  "gold_answer": "11",
+  "input_tokens": 292,
+  "output_tokens": 505,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14318,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:41Z"
+}

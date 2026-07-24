@@ -1,0 +1,15 @@
+{
+  "run_id": "run-258",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Calculate the area to be covered:** Two-thirds of 36 sq ft is $36 \\times \\frac{2}{3} = 24$ sq ft.\n2.  **Calculate the total tiles needed:** 24 sq ft $\\times$ 24 tiles per sq ft = **576 tiles**.\n\nMr. Boarden would need **576 mosaic tiles**.",
+  "gold_answer": "576",
+  "input_tokens": 298,
+  "output_tokens": 100,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1582,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:59Z"
+}

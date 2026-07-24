@@ -1,0 +1,15 @@
+{
+  "run_id": "run-259",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of pizza boxes Marie ordered, we can follow these steps:\n\n1.  **Calculate the cost of the chicken:**\n    1 meal \u00d7 $12.00 = **$12.00**\n\n2.  **Calculate the cost of the milk:**\n    5 packs \u00d7 $3.00 = **$15.00**\n\n3.  **Calculate the cost of the apples:**\n    4 apples \u00d7 $1.50 = **$6.00**\n\n4.  **Calculate the subtotal of these items:**\n    $12.00 + $15.00 + $6.00 = **$33.00**\n\n5.  **Determine how much money was spent on pizza:**\n    Total paid ($50.00) - Subtotal ($33.00) = **$17.00**\n\n6.  **Calculate the number of pizza boxes:**\n    $17.00 \u00f7 $8.50 per box = **2**\n\nMarie ordered **2** boxes of pizza.",
+  "gold_answer": "2",
+  "input_tokens": 309,
+  "output_tokens": 239,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 17530,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:46Z"
+}

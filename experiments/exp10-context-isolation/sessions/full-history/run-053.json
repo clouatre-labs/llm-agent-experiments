@@ -1,0 +1,15 @@
+{
+  "run_id": "run-053",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **12** penguins still left sunbathing.\n\n**Calculation:**\n1. Total penguins: 36\n2. One-third swim in the ocean: $36 \\div 3 = 12$\n3. One-third go to the cave: $36 \\div 3 = 12$\n4. Remaining: $36 - 12 - 12 = 12$",
+  "gold_answer": "12",
+  "input_tokens": 292,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5560,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:47Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-198",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many weeks it takes Nate to fill the holes, we can break the problem down into three steps:\n\n**Step 1: Determine the total number of holes dug before Nate returns.**\nThe dog digs 6 holes a day for 14 days.\n$6 \\text{ holes/day} \\times 14 \\text{ days} = 84 \\text{ holes.}$\n\n**Step 2: Determine the net rate at which holes are being filled.**\nOnce Nate returns, he fills 9 holes per day, but the dog digs 6 new holes every night.\n$9 \\text{ (filled)} - 6 \\text{ (dug)} = 3 \\text{ holes net reduction per day.}$\n\n**Step 3: Calculate the time required to reach zero holes.**\nDivide the total number of holes by the net daily reduction.\n$84 \\text{ holes} \\div 3 \\text{ holes/day} = 28 \\text{ days.}$\n\n**Step 4: Convert days into weeks.**\nThere are 7 days in a week.\n$28 \\text{ days} \\div 7 \\text{ days/week} = 4 \\text{ weeks.}$\n\n**Answer:**\nIt takes Nate **4 weeks** to fill in all the holes.",
+  "gold_answer": "4",
+  "input_tokens": 259,
+  "output_tokens": 283,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11259,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:09Z"
+}

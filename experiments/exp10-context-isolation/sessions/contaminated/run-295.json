@@ -1,0 +1,15 @@
+{
+  "run_id": "run-295",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Daniel has to spend, we first calculate the total cost of the items before the discount:\n\n1.  **Notebooks:** 5 \u00d7 $1.50 = $7.50\n2.  **Pens:** 2 \u00d7 $0.25 = $0.50\n3.  **Calculator:** 1 \u00d7 $12.00 = $12.00\n4.  **Geometry set:** 1 \u00d7 $10.00 = $10.00\n\n**Subtotal:** $7.50 + $0.50 + $12.00 + $10.00 = **$30.00**\n\nNext, we apply the 10% discount:\n*   **Discount amount:** 10% of $30.00 = $3.00\n*   **Final Total:** $30.00 - $3.00 = **$27.00**\n\nDaniel has to spend **$27.00**.",
+  "gold_answer": "27",
+  "input_tokens": 304,
+  "output_tokens": 230,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2604,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:08Z"
+}

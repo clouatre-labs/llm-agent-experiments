@@ -1,0 +1,15 @@
+{
+  "run_id": "run-064",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in the text:\n\n1.  **Calculate the distance of a one-way trip:**\n    *   Time = 2 hours\n    *   Speed = 70 mph\n    *   Distance = Speed \u00d7 Time $\\rightarrow$ $70 \\times 2 = 140$ miles.\n\n2.  **Calculate the distance of a round trip:**\n    *   $140 \\text{ miles (there)} + 140 \\text{ miles (back)} = 280$ miles per visit.\n\n3.  **Calculate the total monthly distance:**\n    *   John visits twice a month.\n    *   $280 \\text{ miles} \\times 2 \\text{ visits} = 560$ miles.\n\n**John drives 560 miles a month when visiting his parents.**",
+  "gold_answer": "560",
+  "input_tokens": 288,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6242,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:15Z"
+}

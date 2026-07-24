@@ -1,0 +1,15 @@
+{
+  "run_id": "run-271",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Initial state:** 10 students.\n2.  **Growth pattern:** The number doubles at the end of every month.\n3.  **Timeline:** We need to find the total at the end of May (5 months).\n\n**Step-by-step calculation:**\n*   **Start:** 10 students\n*   **End of January (Month 1):** $10 \\times 2 = 20$\n*   **End of February (Month 2):** $20 \\times 2 = 40$\n*   **End of March (Month 3):** $40 \\times 2 = 80$\n*   **End of April (Month 4):** $80 \\times 2 = 160$\n*   **End of May (Month 5):** $160 \\times 2 = 320$\n\n**The question asks:** How many **additional** students joined above the original 10?\n$320 - 10 = 310$\n\n**Answer:** 310 additional students.",
+  "gold_answer": "310",
+  "input_tokens": 294,
+  "output_tokens": 257,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7581,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:08Z"
+}

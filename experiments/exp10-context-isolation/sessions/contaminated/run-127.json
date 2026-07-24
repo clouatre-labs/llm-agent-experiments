@@ -1,0 +1,15 @@
+{
+  "run_id": "run-127",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many beakers Igor lost, we need to calculate how many items he actually placed on the lab bench based on the instructions and the final total.\n\n**1. Determine the number of items Igor gathered:**\n\n*   **Test Tubes:** Dr. Grumpus requested 16. Igor gathered half as many.\n    *   $16 \\div 2 = 8$ test tubes.\n*   **Petri Dishes:** Dr. Grumpus requested 14. Igor gathered two more than the number requested.\n    *   $14 + 2 = 16$ Petri dishes.\n*   **Beakers:** We don't know how many he had left, so let's call this $B$.\n\n**2. Use the total count to find the number of beakers on the bench:**\n\nThe total number of items on the bench was 29.\n$$\\text{Test Tubes} + \\text{Petri Dishes} + \\text{Beakers} = 29$$\n$$8 + 16 + B = 29$$\n$$24 + B = 29$$\n$$B = 5$$\nIgor placed **5 beakers** on the bench.\n\n**3. Calculate how many beakers were lost:**\n\nDr. Grumpus requested 7 beakers, and Igor picked up the correct number (7) but lost some on the way.\n$$\\text{Requested Beakers} - \\text{Beakers on Bench} = \\text{Beakers Lost}$$\n$$7 - 5 = 2$$\n\nIgor lost **2** beakers.",
+  "gold_answer": "2",
+  "input_tokens": 312,
+  "output_tokens": 350,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12690,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:37Z"
+}

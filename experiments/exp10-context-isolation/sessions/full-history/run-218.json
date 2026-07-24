@@ -1,0 +1,15 @@
+{
+  "run_id": "run-218",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Find the number of silver coins:** Gretchen has 70 gold coins. Since there are 30 more gold coins than silver coins, we subtract 30 from the gold total: $70 - 30 = 40$ silver coins.\n2.  **Calculate the total:** Add the gold and silver coins together: $70 + 40 = 110$.\n\nGretchen had **110 coins** in total.",
+  "gold_answer": "110",
+  "input_tokens": 292,
+  "output_tokens": 113,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 12036,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:33Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-049",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Bologna and Balloons Problem\n\nLet me work through this step-by-step.\n\n**Given information:**\n- 2 pieces of bologna per red balloon\n- 3 pieces of bologna per yellow balloon\n- Total bologna thrown: 58 pieces\n- Red balloons: 20\n\n**Step 1: Calculate bologna thrown at red balloons**\n- Red balloons: 20\n- Bologna per red balloon: 2\n- Total bologna at red balloons: 20 \u00d7 2 = 40 pieces\n\n**Step 2: Calculate bologna thrown at yellow balloons**\n- Total bologna: 58 pieces\n- Bologna at red balloons: 40 pieces\n- Bologna at yellow balloons: 58 - 40 = 18 pieces\n\n**Step 3: Calculate number of yellow balloons**\n- Bologna at yellow balloons: 18 pieces\n- Bologna per yellow balloon: 3\n- Number of yellow balloons: 18 \u00f7 3 = 6\n\n**Answer: There were 6 yellow balloons in the bundle.**",
+  "gold_answer": "6",
+  "input_tokens": 264,
+  "output_tokens": 248,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2706,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:36Z"
+}

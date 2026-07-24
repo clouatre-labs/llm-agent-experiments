@@ -1,0 +1,15 @@
+{
+  "run_id": "run-153",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the logic puzzle embedded in your text, here is the answer:\n\n**They will collectively read 3 books.**\n\n**Reasoning:**\n1.  **Dolly** has 2 books (let's call them A and B).\n2.  **Pandora** has 1 book (let's call it C).\n3.  The total number of unique books in existence is **3** (A, B, and C).\n4.  Since they are both reading all the books available between them, they will have collectively read all **3** unique books by the end.",
+  "gold_answer": "6",
+  "input_tokens": 292,
+  "output_tokens": 128,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5305,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:38Z"
+}

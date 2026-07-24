@@ -1,0 +1,15 @@
+{
+  "run_id": "run-107",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of dozens of eggs Chester needs, we calculate the total number of eggs first:\n\n1.  **First 30 days:** 3 eggs/day \u00d7 30 days = **90 eggs**\n2.  **Next 30 days:** 5 eggs/day \u00d7 30 days = **150 eggs**\n3.  **Total eggs:** 90 + 150 = **240 eggs**\n4.  **Convert to dozens:** 240 eggs \u00f7 12 eggs/dozen = **20 dozen**\n\nChester will need **20 dozen** eggs.",
+  "gold_answer": "20",
+  "input_tokens": 264,
+  "output_tokens": 139,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4850,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:22Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-216",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of ore mined, we can break the calculation down step-by-step:\n\n1.  **Determine the mining rate per dwarf with an iron pickaxe:**\n    *   Bare hands = 12 lbs/day\n    *   Iron pickaxe = $12 \\text{ lbs} \\times 2 = 24 \\text{ lbs/day}$\n\n2.  **Determine the mining rate per dwarf with a steel pickaxe:**\n    *   A steel pickaxe yields 50% more than an iron pickaxe.\n    *   Steel pickaxe = $24 \\text{ lbs} + (24 \\times 0.50) = 24 + 12 = 36 \\text{ lbs/day}$\n\n3.  **Calculate the total production for the group and the time period:**\n    *   Total dwarves = 40\n    *   Total days = 30\n    *   Total ore = $40 \\text{ dwarves} \\times 36 \\text{ lbs/day/dwarf} \\times 30 \\text{ days}$\n    *   Total ore = $1,440 \\text{ lbs/day} \\times 30 \\text{ days}$\n    *   Total ore = **43,200 pounds**\n\n**40 dwarves with steel pickaxes can mine 43,200 pounds of ore in 30 days.**",
+  "gold_answer": "43200",
+  "input_tokens": 300,
+  "output_tokens": 317,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1877,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:22Z"
+}

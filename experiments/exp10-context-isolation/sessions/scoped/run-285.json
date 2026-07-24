@@ -1,0 +1,15 @@
+{
+  "run_id": "run-285",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total capital Mr. Josue has now, we can break the problem down into three steps:\n\n1.  **Identify the initial capital:**\n    Mr. Josue started with **$5,000**.\n\n2.  **Calculate the money received from the banks:**\n    *   **First bank:** $4,000\n    *   **Second bank:** Twice as much as the first bank ($4,000 \u00d7 2) = **$8,000**\n    *   **Total borrowed:** $4,000 + $8,000 = **$12,000**\n\n3.  **Calculate the final total:**\n    Initial Capital + Total Borrowed = $5,000 + $12,000 = **$17,000**\n\nMr. Josue now has **$17,000** in capital.",
+  "gold_answer": "17000",
+  "input_tokens": 265,
+  "output_tokens": 203,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5861,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

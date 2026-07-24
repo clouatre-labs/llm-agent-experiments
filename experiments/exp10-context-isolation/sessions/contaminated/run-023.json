@@ -1,0 +1,15 @@
+{
+  "run_id": "run-023",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the cost of one carrot, we can set up an equation based on the information provided:\n\n1.  **Identify the known costs:**\n    *   Salad = $6\n    *   Yogurt = $3 (half the price of the salad)\n    *   Total daily cost = $11\n\n2.  **Calculate the combined cost of the salad and yogurt:**\n    *   $6 (salad) + $3 (yogurt) = $9\n\n3.  **Determine the total amount spent on carrots:**\n    *   Total cost ($11) - Salad/Yogurt cost ($9) = $2\n\n4.  **Calculate the cost per carrot:**\n    *   Since Ellen eats two carrots for $2, divide the total carrot cost by 2.\n    *   $2 \u00f7 2 = $1\n\nEllen pays **$1** for one carrot every day.",
+  "gold_answer": "1",
+  "input_tokens": 287,
+  "output_tokens": 197,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7368,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:03Z"
+}

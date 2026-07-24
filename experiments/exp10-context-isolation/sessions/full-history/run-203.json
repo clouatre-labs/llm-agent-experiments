@@ -1,0 +1,15 @@
+{
+  "run_id": "run-203",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **100** people on the train.\n\n**Calculation:**\n1. Starting number: 172\n2. First stop: 172 - 47 + 13 = 138\n3. Second stop: 138 - 38 = 100",
+  "gold_answer": "100",
+  "input_tokens": 294,
+  "output_tokens": 69,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 852,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:18Z"
+}

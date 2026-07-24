@@ -1,0 +1,15 @@
+{
+  "run_id": "run-293",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Identify the year of the anniversary:** Digimon first aired in 1999. Its 20th anniversary was in **2019**.\n2.  **Determine John's age at the anniversary:** If John is 28 now (2024), and 5 years have passed since the anniversary (2024 - 2019 = 5), John was **23** in 2019.\n3.  **Determine Jim's age at the anniversary:** The problem states that in 2019, John was twice as old as Jim.\n    *   $23 / 2 = 11.5$\n    *   Jim was **11.5** years old in 2019.\n4.  **Calculate Jim's current age:** Since 5 years have passed since 2019:\n    *   $11.5 + 5 = 16.5$\n\n**Jim is 16.5 years old.**",
+  "gold_answer": "24",
+  "input_tokens": 291,
+  "output_tokens": 235,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2731,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:40Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-077",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many seashells each person got, we need to calculate the total number of shells collected and then divide that number by three.\n\n**1. Calculate how many shells each person collected:**\n*   **Jim:** 27 seashells (given).\n*   **Carlos:** Jim collected 5 more than Carlos, so Carlos collected $27 - 5 = 22$ seashells.\n*   **Carrey:** Carlos collected twice as many as Carrey, so Carrey collected $22 \\div 2 = 11$ seashells.\n\n**2. Calculate the total number of seashells:**\n*   Total = Jim + Carlos + Carrey\n*   Total = $27 + 22 + 11 = 60$ seashells.\n\n**3. Divide the total equally among the three people:**\n*   $60 \\div 3 = 20$ seashells.\n\n**Each person got 20 seashells.**",
+  "gold_answer": "20",
+  "input_tokens": 257,
+  "output_tokens": 203,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1711,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:14Z"
+}

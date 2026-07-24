@@ -1,0 +1,15 @@
+{
+  "run_id": "run-128",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem provided in your text:\n\n1.  **Starting amount:** $21\n2.  **Added allowance:** $21 + $11 = $32\n3.  **Spent on comic book:** $32 - $5 = $27\n4.  **Spent on puzzle:** $27 - $19 = $8\n\n**Raymond has $8 left.**",
+  "gold_answer": "8",
+  "input_tokens": 294,
+  "output_tokens": 88,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7162,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:06Z"
+}

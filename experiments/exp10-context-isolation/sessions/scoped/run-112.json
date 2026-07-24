@@ -1,0 +1,15 @@
+{
+  "run_id": "run-112",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long the winner will be waiting, we first need to calculate the travel time for both Steve and Tim.\n\n**1. Convert distances from miles to feet:**\nSince the speeds are given in feet per minute, we must convert the distances using the standard conversion: **1 mile = 5,280 feet.**\n\n*   **Steve's distance:** $3 \\text{ miles} \\times 5,280 \\text{ feet/mile} = 15,840 \\text{ feet}$\n*   **Tim's distance:** $2 \\text{ miles} \\times 5,280 \\text{ feet/mile} = 10,560 \\text{ feet}$\n\n**2. Calculate the time taken for each person:**\n$\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$\n\n*   **Steve's time:** $\\frac{15,840 \\text{ feet}}{440 \\text{ feet/min}} = 36 \\text{ minutes}$\n*   **Tim's time:** $\\frac{10,560 \\text{ feet}}{264 \\text{ feet/min}} = 40 \\text{ minutes}$\n\n**3. Determine the difference:**\nSteve is the winner because he arrives in 36 minutes, while Tim arrives in 40 minutes.\n\n$40 \\text{ minutes} - 36 \\text{ minutes} = 4 \\text{ minutes}$\n\n**The winner will be waiting at their house for 4 minutes.**",
+  "gold_answer": "4",
+  "input_tokens": 262,
+  "output_tokens": 344,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9575,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:54Z"
+}

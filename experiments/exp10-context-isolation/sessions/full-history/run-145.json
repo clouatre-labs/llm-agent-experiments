@@ -1,0 +1,15 @@
+{
+  "run_id": "run-145",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem regarding Jo's face masks, we need to determine the material required per mask and then calculate the total for the requested quantities.\n\n**1. Calculate material per small mask:**\n*   4 small masks = 2 yards\n*   2 yards / 4 masks = **0.5 yards per small mask**\n\n**2. Calculate material per large mask:**\n*   3 large masks = 2.25 yards\n*   2.25 yards / 3 masks = **0.75 yards per large mask**\n\n**3. Calculate total material for the class:**\n*   **Small masks:** 20 masks \u00d7 0.5 yards = 10 yards\n*   **Large masks:** 8 masks \u00d7 0.75 yards = 6 yards\n\n**Total material needed:** 10 yards + 6 yards = **16 yards**",
+  "gold_answer": "16",
+  "input_tokens": 298,
+  "output_tokens": 191,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3105,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:06Z"
+}

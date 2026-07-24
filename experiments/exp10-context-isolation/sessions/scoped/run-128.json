@@ -1,0 +1,15 @@
+{
+  "run_id": "run-128",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Raymond has left, follow these steps:\n\n1.  **Start with his initial amount:** $21\n2.  **Add his savings:** $21 + $11 = $32\n3.  **Subtract the cost of the comic book:** $32 - $5 = $27\n4.  **Subtract the cost of the puzzle:** $27 - $19 = $8\n\nRaymond has **$8** left.",
+  "gold_answer": "8",
+  "input_tokens": 260,
+  "output_tokens": 103,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3982,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:44Z"
+}

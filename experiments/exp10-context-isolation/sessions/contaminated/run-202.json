@@ -1,0 +1,15 @@
+{
+  "run_id": "run-202",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of downloads over the three months, we can calculate the amount for each month step-by-step:\n\n1.  **Month 1:** 60 downloads (given).\n2.  **Month 2:** Three times the first month.\n    *   $60 \\times 3 = 180$ downloads.\n3.  **Month 3:** The second month's amount reduced by 30%.\n    *   Reduction amount: $180 \\times 0.30 = 54$.\n    *   Month 3 total: $180 - 54 = 126$ downloads.\n\n**Total Downloads:**\n$60 \\text{ (Month 1)} + 180 \\text{ (Month 2)} + 126 \\text{ (Month 3)} = \\mathbf{366}$ **downloads.**",
+  "gold_answer": "366",
+  "input_tokens": 290,
+  "output_tokens": 200,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5219,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:50Z"
+}

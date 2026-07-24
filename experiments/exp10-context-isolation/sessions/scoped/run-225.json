@@ -1,0 +1,15 @@
+{
+  "run_id": "run-225",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much change Verna received, we first need to calculate the total cost of the fruit she bought.\n\n1.  **Calculate the cost of the apples:**\n    3 apples \u00d7 $1.50 = $4.50\n\n2.  **Calculate the cost of the oranges:**\n    5 oranges \u00d7 $0.80 = $4.00\n\n3.  **Calculate the cost of the peaches:**\n    6 peaches \u00d7 $0.75 = $4.50\n\n4.  **Calculate the total cost:**\n    $4.50 (apples) + $4.00 (oranges) + $4.50 (peaches) = $13.00\n\n5.  **Calculate the change:**\n    $20.00 (amount given) - $13.00 (total cost) = $7.00\n\nVerna received **$7.00** in change.",
+  "gold_answer": "7",
+  "input_tokens": 276,
+  "output_tokens": 208,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2990,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:07Z"
+}

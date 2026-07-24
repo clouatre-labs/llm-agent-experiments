@@ -1,0 +1,15 @@
+{
+  "run_id": "run-083",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Gary spends on water for laundry in a year, we can follow these steps:\n\n1.  **Calculate water used per week:**\n    2 loads/week \u00d7 20 gallons/load = **40 gallons per week**\n\n2.  **Calculate water used per year:**\n    40 gallons/week \u00d7 52 weeks/year = **2,080 gallons per year**\n\n3.  **Calculate the total cost:**\n    2,080 gallons \u00d7 $0.15/gallon = **$312.00**\n\nGary spends **$312.00** on water for laundry in a year.",
+  "gold_answer": "312",
+  "input_tokens": 253,
+  "output_tokens": 146,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5070,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:41Z"
+}

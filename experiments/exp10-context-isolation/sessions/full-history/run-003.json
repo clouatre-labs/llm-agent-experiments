@@ -1,0 +1,15 @@
+{
+  "run_id": "run-003",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, let's calculate the number of laps each person runs:\n\n1.  **Bethany:** 10 laps\n2.  **Trey:** 10 + 4 = 14 laps\n3.  **Shaelyn:** 14 / 2 = 7 laps\n4.  **Quinn:** 7 - 2 = 5 laps\n\nTo find how many more laps Bethany can run compared to Quinn:\n10 (Bethany) - 5 (Quinn) = **5 laps**",
+  "gold_answer": "5",
+  "input_tokens": 281,
+  "output_tokens": 117,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4167,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:14:38Z"
+}

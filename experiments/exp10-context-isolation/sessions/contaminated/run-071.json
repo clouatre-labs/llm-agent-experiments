@@ -1,0 +1,15 @@
+{
+  "run_id": "run-071",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Total loaves produced:** 60\n2.  **Sold in the morning:** $2/3$ of $60 = 40$ loaves.\n3.  **Remaining loaves:** $60 - 40 = 20$ loaves.\n4.  **Sold in the afternoon and evening:** Half of the remaining loaves are split between these two times.\n    *   Total for afternoon/evening: $1/2$ of $20 = 10$ loaves.\n5.  **Sold in the afternoon:** Since the 10 loaves are sold **equally** in the afternoon and evening, you divide by 2.\n    *   $10 \\div 2 = 5$ loaves.\n\n**Answer:** 5 loaves of bread are sold in the afternoon.",
+  "gold_answer": "10",
+  "input_tokens": 291,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2639,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:12Z"
+}

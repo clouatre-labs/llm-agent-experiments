@@ -1,0 +1,15 @@
+{
+  "run_id": "run-080",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Colby earns in an eight-hour workday, we can follow these steps:\n\n1.  **Determine the number of packages completed per hour:**\n    The problem states he completes \"10 less than 50 packages per hour.\"\n    $50 - 10 = 40$ packages per hour.\n\n2.  **Determine the total number of packages completed in an eight-hour workday:**\n    $40 \\text{ packages/hour} \\times 8 \\text{ hours} = 320$ packages.\n\n3.  **Calculate the total earnings:**\n    He is paid $0.20 for every package completed.\n    $320 \\text{ packages} \\times \\$0.20/\\text{package} = \\$64.00$.\n\nColby earns **$64** in a typical eight-hour workday.",
+  "gold_answer": "64",
+  "input_tokens": 269,
+  "output_tokens": 193,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4275,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:30Z"
+}

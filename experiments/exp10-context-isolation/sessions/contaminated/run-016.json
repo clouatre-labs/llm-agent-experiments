@@ -1,0 +1,15 @@
+{
+  "run_id": "run-016",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of good oranges, we need to subtract the bad, unripe, and sour oranges from the total.\n\n1.  **Total oranges:** 25\n2.  **Bad oranges:** 1\n3.  **Unripe oranges:** 20% of 25 = $0.20 \\times 25 = 5$\n4.  **Sour oranges:** 2\n\n**Calculation:**\nTotal non-good oranges = $1 \\text{ (bad)} + 5 \\text{ (unripe)} + 2 \\text{ (sour)} = 8$\n\n**Good oranges:**\n$25 - 8 = 17$\n\nThere are **17** good oranges.",
+  "gold_answer": "17",
+  "input_tokens": 292,
+  "output_tokens": 157,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5629,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:01Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-048",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of the potting soil, we need to calculate the total volume of the raised beds and then determine how many bags are required.\n\n**1. Calculate the volume of one raised bed:**\nThe formula for volume is $\\text{Width} \\times \\text{Length} \\times \\text{Height}$.\n$$2\\text{ ft} \\times 8\\text{ ft} \\times 2\\text{ ft} = 32\\text{ cubic feet per bed}$$\n\n**2. Calculate the total volume for all 10 beds:**\n$$32\\text{ cubic feet/bed} \\times 10\\text{ beds} = 320\\text{ cubic feet}$$\n\n**3. Calculate the number of bags needed:**\nEach bag holds 2 cubic feet.\n$$320\\text{ cubic feet} \\div 2\\text{ cubic feet/bag} = 160\\text{ bags}$$\n\n**4. Calculate the total cost:**\nEach bag costs $12.\n$$160\\text{ bags} \\times \\$12\\text{ per bag} = \\$1,920$$\n\n**Total Cost: $1,920**",
+  "gold_answer": "1920",
+  "input_tokens": 263,
+  "output_tokens": 265,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14429,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:12Z"
+}

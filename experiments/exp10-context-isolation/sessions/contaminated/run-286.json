@@ -1,0 +1,15 @@
+{
+  "run_id": "run-286",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the information provided in your text, here is the solution to the math problem:\n\n1.  **Aliya's age:** 3 years old.\n2.  **Shawna's age:** 3 times Aliya's age ($3 \\times 3$) = **9 years old**.\n3.  **Shawna's father's age:** 5 times Shawna's age ($5 \\times 9$) = **45 years old**.\n\n**Shawna's father is 45 years old.**",
+  "gold_answer": "45",
+  "input_tokens": 299,
+  "output_tokens": 117,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1738,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:06Z"
+}

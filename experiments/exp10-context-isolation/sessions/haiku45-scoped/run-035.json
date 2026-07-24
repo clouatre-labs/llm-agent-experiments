@@ -1,0 +1,15 @@
+{
+  "run_id": "run-035",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Installation Cost Calculation\n\nLet me work through what Angela needs installed and what the cost will be.\n\n**What's included in the $129.00 base package:**\n- 4 mirrors\n- 2 shelves\n- 1 chandelier\n- 10 pictures\n\n**What Angela needs installed:**\n- 6 mirrors\n- 2 chandeliers\n- 20 pictures\n\n**Step 1: Determine what's covered by the base package**\n- Mirrors: 6 needed, 4 included \u2192 2 extra mirrors\n- Chandeliers: 2 needed, 1 included \u2192 1 extra chandelier\n- Pictures: 20 needed, 10 included \u2192 10 extra pictures\n- Shelves: 0 needed, 2 included \u2192 no extra needed\n\n**Step 2: Calculate additional items**\n- Extra mirrors: 2\n- Extra chandeliers: 1\n- Extra pictures: 10\n- **Total extra items: 2 + 1 + 10 = 13 items**\n\n**Step 3: Calculate total cost**\n- Base package: $129.00\n- Additional items: 13 \u00d7 $15.00 = $195.00\n- **Total cost: $129.00 + $195.00 = $324.00**\n\n**Angela's installation will cost $324.00**",
+  "gold_answer": "324",
+  "input_tokens": 292,
+  "output_tokens": 319,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3438,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

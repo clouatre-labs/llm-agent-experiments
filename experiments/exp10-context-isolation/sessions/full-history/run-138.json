@@ -1,0 +1,15 @@
+{
+  "run_id": "run-138",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of pets Larry has, we can calculate the amount for each animal step-by-step:\n\n1.  **Cats:** 3\n2.  **Dogs:** 3 times as many as cats $\\rightarrow 3 \\times 3 = 9$\n3.  **Rabbits:** 2 fewer than dogs $\\rightarrow 9 - 2 = 7$\n4.  **Fish:** 3 times as many as rabbits $\\rightarrow 7 \\times 3 = 21$\n5.  **Gerbils:** 1/3 the number of fish $\\rightarrow 21 \\div 3 = 7$\n\n**Total Pets:** $3 \\text{ (cats)} + 9 \\text{ (dogs)} + 7 \\text{ (rabbits)} + 21 \\text{ (fish)} + 7 \\text{ (gerbils)} = \\mathbf{47}$\n\nLarry has **47** pets.",
+  "gold_answer": "47",
+  "input_tokens": 301,
+  "output_tokens": 212,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9500,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:10Z"
+}

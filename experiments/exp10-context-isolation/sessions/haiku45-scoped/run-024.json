@@ -1,0 +1,15 @@
+{
+  "run_id": "run-024",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Problem\n\nLet me work through this step-by-step.\n\n**Given information:**\n- Erin scored 14 points (after this score)\n- Sara scored 8 points\n- After scoring 14 points, Erin has three times more points than Sara\n\n**Step 1: Find Erin's current total points**\n\nIf Erin has \"three times more points than Sara\":\n- Sara has 8 points\n- Erin's current points = 3 \u00d7 8 = 24 points\n\n**Step 2: Find Erin's points before scoring 14**\n\nErin's current points = Erin's previous points + 14\n\n24 = Erin's previous points + 14\n\nErin's previous points = 24 - 14 = **10 points**\n\n**Answer: Erin had 10 points before.**",
+  "gold_answer": "18",
+  "input_tokens": 267,
+  "output_tokens": 207,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3261,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

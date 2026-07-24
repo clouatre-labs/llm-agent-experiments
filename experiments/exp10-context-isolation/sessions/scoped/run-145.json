@@ -1,0 +1,15 @@
+{
+  "run_id": "run-145",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of material Jo needs, we must calculate the material required for the small masks and the large masks separately, then add them together.\n\n**1. Calculate material for small masks:**\n*   Jo uses 2 yards for 4 small masks.\n*   Material per small mask: $2 \\text{ yards} \\div 4 = 0.5 \\text{ yards per mask}$.\n*   For 20 small masks: $20 \\times 0.5 = \\mathbf{10 \\text{ yards}}$.\n\n**2. Calculate material for large masks:**\n*   Jo uses 2.25 yards for 3 large masks.\n*   Material per large mask: $2.25 \\text{ yards} \\div 3 = 0.75 \\text{ yards per mask}$.\n*   For 8 large masks: $8 \\times 0.75 = \\mathbf{6 \\text{ yards}}$.\n\n**3. Calculate the total:**\n*   $10 \\text{ yards (small)} + 6 \\text{ yards (large)} = \\mathbf{16 \\text{ yards}}$.\n\nJo would need **16 yards** of material.",
+  "gold_answer": "16",
+  "input_tokens": 265,
+  "output_tokens": 261,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10668,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:55Z"
+}

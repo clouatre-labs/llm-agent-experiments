@@ -1,0 +1,15 @@
+{
+  "run_id": "run-257",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Charlie makes for the day, we calculate the earnings from his standard lessons and his veteran lessons separately:\n\n1.  **Standard Lessons:**\n    *   Rate: $80 per hour\n    *   Number of lessons: 4\n    *   Calculation: $80 \\times 4 = \\$320$\n\n2.  **Veteran Lessons:**\n    *   Discount: 25% of $80 = $20\n    *   Reduced Rate: $80 - $20 = $60 per hour\n    *   Number of lessons: 2\n    *   Calculation: $60 \\times 2 = \\$120$\n\n3.  **Total Amount:**\n    *   $\\$320 + \\$120 = \\$440$\n\nCharlie will make **$440** for the day.",
+  "gold_answer": "440",
+  "input_tokens": 303,
+  "output_tokens": 190,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2981,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:00Z"
+}

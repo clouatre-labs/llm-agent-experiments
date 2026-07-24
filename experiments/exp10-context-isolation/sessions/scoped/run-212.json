@@ -1,0 +1,15 @@
+{
+  "run_id": "run-212",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, we need to solve the word problem step-by-step.\n\n**1. Determine how many notebooks Martha had initially:**\n*   Martha ended up with 7 notebooks after buying 5 more.\n*   Initial notebooks = $7 - 5 = 2$ notebooks.\n\n**2. Determine how many notebooks Joseph had:**\n*   The problem states Joseph had 3 times as many notebooks as Martha (referring to Martha's initial amount).\n*   Joseph's notebooks = $3 \\times 2 = 6$ notebooks.\n\n**3. Calculate the difference between Martha's current total and Joseph's total:**\n*   Martha now has 7 notebooks.\n*   Joseph has 6 notebooks.\n*   Difference = $7 - 6 = 1$.\n\n**Answer:**\nMartha now has **1** more notebook than Joseph.",
+  "gold_answer": "1",
+  "input_tokens": 250,
+  "output_tokens": 189,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5093,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:06Z"
+}

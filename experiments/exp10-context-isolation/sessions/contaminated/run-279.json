@@ -1,0 +1,15 @@
+{
+  "run_id": "run-279",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The 5 people brought in **14** old records.\n\n**Reasoning:**\n1. The trade ratio is **2 old records : 1 new record**.\n2. The group left with **7 new records**.\n3. To get 7 new records, they must have traded $7 \\times 2 = 14$ old records.",
+  "gold_answer": "14",
+  "input_tokens": 289,
+  "output_tokens": 76,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2422,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:05Z"
+}

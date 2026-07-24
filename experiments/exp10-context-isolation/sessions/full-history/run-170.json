@@ -1,0 +1,15 @@
+{
+  "run_id": "run-170",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many grams of chips you can eat, follow these steps:\n\n1.  **Determine remaining calories:**\n    $2000 \\text{ (target)} - 1800 \\text{ (consumed)} = 200 \\text{ calories remaining.}$\n\n2.  **Calculate calories per gram of chips:**\n    *   Total calories in the bag: $250 \\text{ calories/serving} \\times 5 \\text{ servings} = 1250 \\text{ calories.}$\n    *   Total weight of the bag: $300\\text{g.}$\n    *   Calories per gram: $1250 \\text{ calories} \\div 300\\text{g} \\approx 4.1667 \\text{ calories per gram.}$\n\n3.  **Calculate allowable grams:**\n    $\\text{Remaining calories} \\div \\text{calories per gram} = 200 \\div 4.1667 = 48\\text{g.}$\n\n**Answer:** You can eat **48 grams** of chips.",
+  "gold_answer": "48",
+  "input_tokens": 303,
+  "output_tokens": 243,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2813,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:13Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-274",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many bandages the nurses started with, we can work backward from the final amount or track the inventory day by day.\n\n**1. Identify the constants:**\n*   1 bulk pack = 50 bandages.\n\n**2. Track the inventory changes:**\n\n*   **End of Day 3:** They have **78** bandages.\n*   **Day 3 Activity:** \n    *   They ordered 2 bulk packs (+100 bandages).\n    *   They used half a pack (-25 bandages).\n    *   *Net change Day 3:* $+75$ bandages.\n    *   *Amount at start of Day 3:* $78 - 75 = \\mathbf{3}$ **bandages.**\n\n*   **Day 2 Activity:**\n    *   They used 10 fewer than the first day. Since Day 1 usage was 38, Day 2 usage was $38 - 10 = 28$ bandages.\n    *   *Amount at start of Day 2:* $3 + 28 = \\mathbf{31}$ **bandages.**\n\n*   **Day 1 Activity:**\n    *   They used 38 bandages.\n    *   They ordered 1 bulk pack (+50 bandages).\n    *   *Net change Day 1:* $+12$ bandages ($50 - 38$).\n    *   *Amount at start of Day 1:* $31 - 12 = \\mathbf{19}$ **bandages.**\n\n**Verification:**\n*   Start: 19\n*   Day 1: $19 - 38 + 50 = 31$\n*   Day 2: $31 - 28 = 3$\n*   Day 3: $3 + 100 - 25 = 78$ (Matches the prompt)\n\n**Answer:**\nThey started with **19** bandages.",
+  "gold_answer": "19",
+  "input_tokens": 294,
+  "output_tokens": 430,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5291,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:06Z"
+}

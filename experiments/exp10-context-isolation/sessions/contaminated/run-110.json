@@ -1,0 +1,15 @@
+{
+  "run_id": "run-110",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **600** thorns in total.\n\n**Calculation:**\n3 rose bushes \u00d7 25 roses per bush = 75 roses\n75 roses \u00d7 8 thorns per rose = 600 thorns",
+  "gold_answer": "600",
+  "input_tokens": 298,
+  "output_tokens": 48,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1989,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:21Z"
+}

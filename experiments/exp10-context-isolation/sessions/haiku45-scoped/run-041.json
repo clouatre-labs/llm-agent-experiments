@@ -1,0 +1,15 @@
+{
+  "run_id": "run-041",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Subway Lunch Cost Calculation\n\nLet me break down this problem step by step:\n\n**Given information:**\n- Foot-long fish sub costs: $40\n- Six-inch cold-cut combo sub costs: 3 times as much as the fish sub\n\n**Step 1: Calculate the cost of the six-inch cold-cut combo sub**\n- Cost = 3 \u00d7 $40 = $120\n\n**Step 2: Calculate the total lunch cost**\n- Total = $40 + $120 = $160\n\n**Answer: $160**\n\nYour lunch today at Subway costs **$160**.",
+  "gold_answer": "160",
+  "input_tokens": 274,
+  "output_tokens": 140,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2118,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

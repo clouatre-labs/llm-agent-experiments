@@ -1,0 +1,15 @@
+{
+  "run_id": "run-223",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total time spent on chores, we first determine the time each person spent:\n\n1.  **Amalia:** 4 hours (mowing the lawn).\n2.  **Megan:** 4 hours + 2 hours = 6 hours (walking the dog).\n3.  **Dior:** 4 hours + \"well over 4 hours\" = >8 hours (doing laundry).\n\nBecause the prompt specifies that Dior took **\"well over 4 hours longer\"** than Amalia, the exact total cannot be determined as a single integer without a specific value for Dior's time. \n\nHowever, we can express the total as a mathematical inequality:\n*   Total = Amalia + Megan + Dior\n*   Total = 4 + 6 + (>8)\n*   **Total > 18 hours**",
+  "gold_answer": "18",
+  "input_tokens": 296,
+  "output_tokens": 178,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1144,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:51Z"
+}

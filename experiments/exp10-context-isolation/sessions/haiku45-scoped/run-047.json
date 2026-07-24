@@ -1,0 +1,15 @@
+{
+  "run_id": "run-047",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me solve this step-by-step.\n\n**Given information:**\n- The candle melts 2 centimeters every hour\n- Burning time: 1:00 PM to 5:00 PM\n\n**Step 1: Calculate the number of hours**\nFrom 1:00 PM to 5:00 PM = 4 hours\n\n**Step 2: Calculate total melting**\nTotal melting = Rate \u00d7 Time\nTotal melting = 2 cm/hour \u00d7 4 hours = 8 centimeters\n\n**Answer: The candle will be 8 centimeters shorter.**",
+  "gold_answer": "8",
+  "input_tokens": 279,
+  "output_tokens": 146,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2376,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:36Z"
+}

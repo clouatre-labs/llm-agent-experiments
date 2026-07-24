@@ -1,0 +1,15 @@
+{
+  "run_id": "run-143",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Iris spent at the spa, we need to calculate the cost of each individual service and then sum them up.\n\n**1. Hair:**\nThe cost is given directly:\n**$400**\n\n**2. Manicure:**\nThe manicure cost $1/4$ as much as the hair:\n$400 \\times \\frac{1}{4} = \\mathbf{\\$100}$\n\n**3. Pedicure:**\nThe pedicure cost $3/4$ as much as the manicure:\n$100 \\times \\frac{3}{4} = \\mathbf{\\$75}$\n\n**4. Total Spent:**\nAdd the costs of the three services together:\n$\\$400 \\text{ (hair)} + \\$100 \\text{ (manicure)} + \\$75 \\text{ (pedicure)} = \\$575$\n\nIris spent **$575** at the spa.",
+  "gold_answer": "575",
+  "input_tokens": 261,
+  "output_tokens": 205,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6269,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:50Z"
+}

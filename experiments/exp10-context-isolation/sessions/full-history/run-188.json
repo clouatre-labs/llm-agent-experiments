@@ -1,0 +1,15 @@
+{
+  "run_id": "run-188",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Ashley should give the delivery man, follow these steps:\n\n1.  **Identify the order amount:** $15.\n2.  **Calculate the tip:** $15 \\times \\frac{1}{5} = \\$3$.\n3.  **Calculate the total:** $\\$15 \\text{ (order)} + \\$3 \\text{ (tip)} = \\$18$.\n\nAshley should give the delivery man **$18**.",
+  "gold_answer": "18",
+  "input_tokens": 298,
+  "output_tokens": 100,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2974,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:17Z"
+}

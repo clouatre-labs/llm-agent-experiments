@@ -1,0 +1,15 @@
+{
+  "run_id": "run-199",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Boris produces in the fourth week, we can calculate the production for each week based on the information provided:\n\n1.  **Total Monthly Production:** 50,000 bars\n2.  **Week 1:** 8,000 bars\n3.  **Week 2:** Half of Week 1 (8,000 / 2) = 4,000 bars\n4.  **Week 3:** Three times Week 1 (8,000 * 3) = 24,000 bars\n\n**Total production for the first three weeks:**\n8,000 + 4,000 + 24,000 = 36,000 bars\n\n**Week 4 Production:**\nTotal Monthly Production - Total of Weeks 1-3\n50,000 - 36,000 = **14,000 bars**\n\nBoris produces **14,000 bars** of chocolate in the fourth week.",
+  "gold_answer": "14000",
+  "input_tokens": 307,
+  "output_tokens": 228,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7371,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:24Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-229",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many kids aren't allergic to anything, we can use the Principle of Inclusion-Exclusion.\n\n1.  **Identify the groups:**\n    *   Total kids: 32\n    *   Allergic to dairy ($D$): 9\n    *   Allergic to peanuts ($P$): 6\n    *   Allergic to both ($D \\cap P$): 3\n\n2.  **Calculate the number of kids with at least one allergy:**\n    To avoid double-counting the kids who are allergic to both, we use the formula:\n    $\\text{Total Allergic} = (\\text{Dairy}) + (\\text{Peanuts}) - (\\text{Both})$\n    $\\text{Total Allergic} = 9 + 6 - 3 = 12$\n\n3.  **Calculate the number of kids with no allergies:**\n    $\\text{No Allergies} = \\text{Total Kids} - \\text{Total Allergic}$\n    $\\text{No Allergies} = 32 - 12 = 20$\n\n**20 kids are not allergic to anything.**",
+  "gold_answer": "20",
+  "input_tokens": 290,
+  "output_tokens": 247,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9240,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:33Z"
+}

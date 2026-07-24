@@ -1,0 +1,15 @@
+{
+  "run_id": "run-113",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of hours Meredith spent writing, we first need to determine the number of articles written each day.\n\n**1. Calculate the number of articles per day:**\n*   **Monday:** 5 articles.\n*   **Tuesday:** She wrote $2/5$ times *more* than Monday.\n    *   Calculation: $5 + (5 \\times 2/5) = 5 + 2 = 7$ articles.\n*   **Wednesday:** She wrote twice the number of articles she wrote on Tuesday.\n    *   Calculation: $7 \\times 2 = 14$ articles.\n\n**2. Calculate the total number of articles:**\n*   Total articles = $5 \\text{ (Mon)} + 7 \\text{ (Tue)} + 14 \\text{ (Wed)} = 26$ articles.\n\n**3. Calculate the total hours:**\n*   Each article takes an average of 4 hours.\n*   Total hours = $26 \\text{ articles} \\times 4 \\text{ hours/article} = 104$ hours.\n\n**Total time spent writing: 104 hours.**",
+  "gold_answer": "104",
+  "input_tokens": 295,
+  "output_tokens": 253,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2893,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:58Z"
+}

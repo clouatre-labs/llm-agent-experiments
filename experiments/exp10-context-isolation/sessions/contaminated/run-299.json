@@ -1,0 +1,15 @@
+{
+  "run_id": "run-299",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost of Toula's pastries, we calculate the cost for each item and then sum them up:\n\n1.  **Donuts:** 3 dozen \u00d7 $68/dozen = **$204**\n2.  **Mini Cupcakes:** 2 dozen \u00d7 $80/dozen = **$160**\n3.  **Mini Cheesecakes:** 6 dozen \u00d7 $55/dozen = **$330**\n\n**Total Cost:** $204 + $160 + $330 = **$694**",
+  "gold_answer": "694",
+  "input_tokens": 304,
+  "output_tokens": 127,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2580,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:08Z"
+}

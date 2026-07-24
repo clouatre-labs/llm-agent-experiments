@@ -1,0 +1,15 @@
+{
+  "run_id": "run-159",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Total number of cookies:** 10 packs \u00d7 6 cookies per pack = **60 cookies**.\n2.  **Total cost:** 60 cookies \u00d7 $0.10 per cookie = **$6.00**.\n3.  **Change received:** $10.00 - $6.00 = **$4.00**.\n\n**Carl receives $4.00 in change.**",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 105,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3525,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:38Z"
+}

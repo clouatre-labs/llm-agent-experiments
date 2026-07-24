@@ -1,0 +1,15 @@
+{
+  "run_id": "run-179",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Calculate total boxes donated:** 10 people \u00d7 5 boxes each = **50 boxes**.\n2.  **Calculate total boxes available:** 50 (donated) + 10 (already owned) = **60 boxes**.\n3.  **Calculate total tables needed:** 60 boxes \u00f7 2 boxes per table = **30 tables**.\n4.  **Calculate new tables required:** 30 (needed) - 15 (already owned) = **15 tables**.\n\n**The charity group needs 15 new tables.**",
+  "gold_answer": "15",
+  "input_tokens": 295,
+  "output_tokens": 135,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3774,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:44Z"
+}

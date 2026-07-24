@@ -1,0 +1,15 @@
+{
+  "run_id": "run-075",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem provided in your text:\n\n1.  **Determine Jewel's weekly production:**\n    Jewel processes 50 customers per day.\n    50 customers/day \u00d7 7 days = **350 customers per week**.\n\n2.  **Determine Julie's weekly production:**\n    Julie is twice as fast as Jewel.\n    350 customers/week \u00d7 2 = **700 customers per week**.\n\n3.  **Calculate the total weekly production:**\n    350 (Jewel) + 700 (Julie) = **1,050 customers**.\n\n**Total weekly production: 1,050 customers.**",
+  "gold_answer": "1050",
+  "input_tokens": 286,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5128,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:52Z"
+}

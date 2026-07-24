@@ -1,0 +1,15 @@
+{
+  "run_id": "run-020",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "There are **55** fairies remaining.\n\nHere is the breakdown:\n1.  **Initial amount:** 50 fairies.\n2.  **Fairies joining:** Half as many as Katelyn saw (50 / 2 = 25) joined the group.\n    *   *Current total:* 50 + 25 = 75 fairies.\n3.  **Fairies leaving:** 30 fairies flew away.\n    *   *Final total:* 75 - 30 = **55 fairies**.",
+  "gold_answer": "45",
+  "input_tokens": 302,
+  "output_tokens": 119,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2958,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:58Z"
+}

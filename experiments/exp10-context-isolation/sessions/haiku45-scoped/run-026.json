@@ -1,0 +1,15 @@
+{
+  "run_id": "run-026",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving John's Garbage Collection Income\n\nLet me work through this step-by-step.\n\n## Step 1: Find the number of apartments at each complex\n\n**First complex:** 200 apartments\n**Second complex:** 200 apartments\n**Third complex:** 60% bigger than the other two combined\n- Combined first two: 200 + 200 = 400 apartments\n- Third complex: 400 + (0.60 \u00d7 400) = 400 + 240 = 640 apartments\n\n## Step 2: Find total apartments across all complexes\n\nTotal apartments = 200 + 200 + 640 = **1,040 apartments**\n\n## Step 3: Calculate total collections per week\n\nCollections per week = 1,040 apartments \u00d7 3 collections per week = **3,120 collections**\n\n## Step 4: Calculate weekly earnings\n\nWeekly earnings = 3,120 collections \u00d7 $0.40 per collection = **$1,248**\n\n---\n\n**John makes $1,248 per week.**",
+  "gold_answer": "1248",
+  "input_tokens": 278,
+  "output_tokens": 240,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3228,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-055",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many additional bottles Bill needs, we can follow these steps:\n\n1.  **Calculate the total number of bottles needed:**\n    70 guests \u00d7 2 bottles per guest = **140 bottles**\n\n2.  **Calculate how many bottles Bill already has:**\n    2 cases \u00d7 24 bottles per case = **48 bottles**\n\n3.  **Calculate the difference:**\n    140 bottles (needed) - 48 bottles (already has) = **92 bottles**\n\nBill needs to buy **92 additional bottles** of water.",
+  "gold_answer": "92",
+  "input_tokens": 252,
+  "output_tokens": 125,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6568,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:22Z"
+}

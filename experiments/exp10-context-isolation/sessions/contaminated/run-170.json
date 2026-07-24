@@ -1,0 +1,15 @@
+{
+  "run_id": "run-170",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Determine remaining calories:** Your daily target is 2,000 calories and you have consumed 1,800.\n    *   $2,000 - 1,800 = 200$ calories remaining.\n2.  **Determine calories per gram:**\n    *   One serving is 250 calories.\n    *   There are 5 servings in a 300g bag.\n    *   Total calories in the bag: $250 \\times 5 = 1,250$ calories.\n    *   Calories per gram: $1,250 \\text{ calories} / 300\\text{g} = 4.166...$ calories per gram.\n3.  **Calculate allowed grams:**\n    *   $\\text{Remaining calories} / \\text{Calories per gram} = \\text{Grams}$\n    *   $200 / 4.166... = 48\\text{g}$\n\n**Answer:** You can eat **48 grams** of chips.",
+  "gold_answer": "48",
+  "input_tokens": 303,
+  "output_tokens": 253,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2891,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:40Z"
+}

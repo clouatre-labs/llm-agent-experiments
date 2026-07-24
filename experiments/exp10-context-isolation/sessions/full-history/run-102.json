@@ -1,0 +1,15 @@
+{
+  "run_id": "run-102",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of cars towed that week, we can break the week down into two parts:\n\n1.  **The first three days:**\n    *   The truck towed 10 cars per day.\n    *   $3 \\text{ days} \\times 10 \\text{ cars/day} = 30 \\text{ cars}$.\n\n2.  **The remaining days:**\n    *   A week has 7 days, so there are 4 remaining days ($7 - 3 = 4$).\n    *   The truck towed four fewer cars than the first three days ($10 - 4 = 6$ cars per day).\n    *   $4 \\text{ days} \\times 6 \\text{ cars/day} = 24 \\text{ cars}$.\n\n3.  **Total for the week:**\n    *   $30 \\text{ cars} + 24 \\text{ cars} = 54 \\text{ cars}$.\n\n**The total number of cars towed that week is 54.**",
+  "gold_answer": "54",
+  "input_tokens": 286,
+  "output_tokens": 229,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5322,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:57Z"
+}

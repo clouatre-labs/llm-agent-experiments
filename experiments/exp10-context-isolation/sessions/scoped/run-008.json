@@ -1,0 +1,15 @@
+{
+  "run_id": "run-008",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the answer, we can break the problem down into two steps:\n\n1.  **Find the turtle's speed:**\n    The cat is 5 times faster than the turtle. If the cat's speed is 15 feet/second, we divide the cat's speed by 5 to find the turtle's speed:\n    $15 \\text{ feet/second} \\div 5 = 3 \\text{ feet/second}$\n\n2.  **Calculate the distance traveled in 40 seconds:**\n    Now, multiply the turtle's speed by the total time:\n    $3 \\text{ feet/second} \\times 40 \\text{ seconds} = 120 \\text{ feet}$\n\n**The turtle can crawl 120 feet in 40 seconds.**",
+  "gold_answer": "120",
+  "input_tokens": 259,
+  "output_tokens": 177,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4691,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:52Z"
+}

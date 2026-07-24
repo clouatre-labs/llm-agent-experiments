@@ -1,0 +1,15 @@
+{
+  "run_id": "run-147",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of eggs Cindy had, we can calculate the amount for each color step-by-step:\n\n1.  **Green eggs:** 5\n2.  **Blue eggs:** Twice as many as green (5 \u00d7 2) = 10\n3.  **Pink eggs:** One fewer than blue (10 - 1) = 9\n4.  **Yellow eggs:** One-third as many as pink (9 \u00f7 3) = 3\n\n**Total eggs:** 5 (green) + 10 (blue) + 9 (pink) + 3 (yellow) = **27**\n\nCindy had **27** eggs altogether.",
+  "gold_answer": "27",
+  "input_tokens": 250,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1064,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:46Z"
+}

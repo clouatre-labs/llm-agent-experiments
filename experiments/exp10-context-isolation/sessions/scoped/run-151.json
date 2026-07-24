@@ -1,0 +1,15 @@
+{
+  "run_id": "run-151",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the expected monthly earnings of the dance studio, we must first determine the cost per session and then multiply it by the total number of sessions in a month.\n\n**1. Calculate the cost per session:**\n*   **Studio Rent:** $25.00\n*   **Student Fees:** 10 students \u00d7 $1.50 per student = $15.00\n*   **Total per session:** $25.00 + $15.00 = **$40.00**\n\n**2. Calculate the number of sessions per month:**\n*   The studio is rented 3 days a week.\n*   Standard financial/business calculations typically use **4 weeks per month**.\n*   **Total sessions per month:** 3 days \u00d7 4 weeks = **12 sessions**\n\n**3. Calculate total monthly earnings:**\n*   $40.00 per session \u00d7 12 sessions = **$480.00**\n\n**Expected Monthly Earnings: $480.00**",
+  "gold_answer": "480",
+  "input_tokens": 257,
+  "output_tokens": 225,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 797,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:46Z"
+}

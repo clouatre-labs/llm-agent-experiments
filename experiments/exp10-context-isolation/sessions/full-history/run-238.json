@@ -1,0 +1,15 @@
+{
+  "run_id": "run-238",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To renovate your kitchen floor, it will cost you **$2,400**.\n\n**Here is the breakdown of the calculation:**\n1.  **Determine the number of tiles needed:** Since each tile is 1ft x 1ft, one tile covers 1 square foot. For a 200 sq. ft. area, you will need 200 tiles.\n2.  **Calculate the total cost:** 200 tiles \u00d7 $12 per tile = $2,400.",
+  "gold_answer": "2400",
+  "input_tokens": 295,
+  "output_tokens": 111,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1377,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:27Z"
+}

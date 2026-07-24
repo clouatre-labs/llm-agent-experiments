@@ -1,0 +1,15 @@
+{
+  "run_id": "run-194",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many minutes early Toby will be, we need to calculate his total reading time and compare it to his available time.\n\n**1. Calculate the total number of words in the book:**\n45 pages \u00d7 200 words/page = **9,000 words**\n\n**2. Calculate how long it takes Toby to read the book:**\n9,000 words \u00f7 300 words/minute = **30 minutes**\n\n**3. Calculate the total time elapsed from starting the book to arriving at the airport:**\n30 minutes (reading) + 10 minutes (travel) = **40 minutes**\n\n**4. Calculate how many minutes early he will be:**\nToby has 60 minutes before he needs to be at the airport.\n60 minutes - 40 minutes = **20 minutes**\n\nToby will be **20 minutes** early.",
+  "gold_answer": "20",
+  "input_tokens": 300,
+  "output_tokens": 196,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1413,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:16Z"
+}

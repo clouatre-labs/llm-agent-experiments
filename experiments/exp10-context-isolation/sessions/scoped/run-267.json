@@ -1,0 +1,15 @@
+{
+  "run_id": "run-267",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many meals Mamou has left to distribute, follow these steps:\n\n1.  **Calculate the total number of meals already distributed:**\n    *   Friday: 64 meals\n    *   Saturday: 30 meals\n    *   Sunday: 48 meals\n    *   **Total distributed** = $64 + 30 + 48 = 142$ meals\n\n2.  **Subtract the distributed meals from the initial total:**\n    *   Initial total: 1,360 meals\n    *   Total distributed: 142 meals\n    *   **Remaining meals** = $1,360 - 142 = 1,218$ meals\n\nMamou has **1,218** meals left to distribute.",
+  "gold_answer": "1218",
+  "input_tokens": 267,
+  "output_tokens": 174,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5650,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:19Z"
+}

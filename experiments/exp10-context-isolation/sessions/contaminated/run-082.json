@@ -1,0 +1,15 @@
+{
+  "run_id": "run-082",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Total Paycheck:** $2,400.00\n2.  **Retirement (50%):** $2,400 \u00d7 0.50 = $1,200.00\n3.  **Car Payment (20%):** $2,400 \u00d7 0.20 = $480.00\n4.  **Total Deductions:** $1,200 + $480 = $1,680.00\n5.  **Remaining Amount:** $2,400 - $1,680 = **$720.00**\n\nGreta has **$720.00** left to spend.",
+  "gold_answer": "720",
+  "input_tokens": 308,
+  "output_tokens": 175,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4226,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:17Z"
+}

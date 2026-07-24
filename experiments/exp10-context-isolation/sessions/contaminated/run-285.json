@@ -1,0 +1,15 @@
+{
+  "run_id": "run-285",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nMr. Josue has **$13,000** in capital.\n\n**Breakdown:**\n*   **Initial Capital:** $5,000\n*   **First Bank:** $4,000\n*   **Second Bank:** $8,000 (twice as much as the first bank)\n*   **Total:** $5,000 + $4,000 + $8,000 = **$13,000**",
+  "gold_answer": "17000",
+  "input_tokens": 298,
+  "output_tokens": 118,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3978,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:07Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-290",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Initial amount:** 50 cats.\n2.  **Cats taken by boats:** 4 boats \u00d7 5 cats each = 20 cats removed.\n3.  **Remaining cats:** 50 - 20 = 30 cats.\n4.  **Cats that ran after the mouse:** 3/5 of 30 = 18 cats.\n5.  **Cats left on the rock:** 30 - 18 = **12 cats.**",
+  "gold_answer": "12",
+  "input_tokens": 292,
+  "output_tokens": 120,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1722,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:06Z"
+}

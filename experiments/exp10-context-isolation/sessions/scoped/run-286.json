@@ -1,0 +1,15 @@
+{
+  "run_id": "run-286",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the age of Shawna's father, we can follow these steps based on the information provided:\n\n1.  **Find Aliya's age:** Aliya is **3** years old.\n2.  **Find Shawna's age:** Shawna is three times as old as Aliya.\n    *   $3 \\times 3 = 9$ years old.\n3.  **Find Shawna's father's age:** Shawna's father is five times as old as Shawna.\n    *   $5 \\times 9 = 45$ years old.\n\n**Shawna's father is 45 years old.**",
+  "gold_answer": "45",
+  "input_tokens": 265,
+  "output_tokens": 145,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5675,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

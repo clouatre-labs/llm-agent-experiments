@@ -1,0 +1,15 @@
+{
+  "run_id": "run-221",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Determine Gabriel's capacity:**\n    *   Total capacity: 100 songs\n    *   Current songs: 20\n    *   Space remaining: $100 - 20 = \\mathbf{80}$ **songs**\n\n2.  **Determine Luri's capacity:**\n    *   Current songs: $20 \\times 3 = 60$ songs\n    *   Total capacity: 100 songs\n    *   Space remaining: $100 - 60 = \\mathbf{40}$ **songs**\n\n3.  **Calculate the difference:**\n    *   $80 (\\text{Gabriel's space}) - 40 (\\text{Luri's space}) = 40$\n\nLuri can add **40 fewer songs** to his player than Gabriel can add to his.",
+  "gold_answer": "40",
+  "input_tokens": 289,
+  "output_tokens": 197,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6941,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:29Z"
+}

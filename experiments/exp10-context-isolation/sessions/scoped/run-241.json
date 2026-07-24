@@ -1,0 +1,15 @@
+{
+  "run_id": "run-241",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many days the train goes between services, we need to calculate the total distance traveled in one day and then divide the service interval by that daily distance.\n\n**1. Calculate the distance of one full trip (the circuit):**\n*   **City 1 to City 2:** 75 miles\n*   **City 2 to City 3:** 100 miles\n*   **City 3 to City 1:** (75 + 100) - 50 = 125 miles\n*   **Total distance for one trip:** 75 + 100 + 125 = **300 miles**\n\n**2. Calculate the total distance traveled per day:**\n*   The train completes the trip 3 times a day.\n*   **Daily distance:** 300 miles \u00d7 3 = **900 miles per day**\n\n**3. Calculate the number of days between services:**\n*   The train needs service every 18,000 miles.\n*   **Days between services:** 18,000 miles \u00f7 900 miles/day = **20 days**\n\nThe train goes **20 days** between services.",
+  "gold_answer": "20",
+  "input_tokens": 264,
+  "output_tokens": 266,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3470,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:12Z"
+}

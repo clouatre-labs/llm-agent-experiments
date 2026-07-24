@@ -1,0 +1,15 @@
+{
+  "run_id": "run-273",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**Mark's initial weight was 100 pounds.**\n\n**Calculation:**\n1.  **Weight lost:** 3 months \u00d7 10 pounds/month = 30 pounds lost.\n2.  **Initial weight:** 70 pounds (final weight) + 30 pounds (lost weight) = 100 pounds.",
+  "gold_answer": "100",
+  "input_tokens": 290,
+  "output_tokens": 86,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3174,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

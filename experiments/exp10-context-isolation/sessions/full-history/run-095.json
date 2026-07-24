@@ -1,0 +1,15 @@
+{
+  "run_id": "run-095",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer your math question:\n\n1.  **Bus distance:** 60 miles/hour \u00d7 5 hours = **300 miles**\n2.  **Car distance:** 30 miles/hour \u00d7 8 hours = **240 miles**\n3.  **Difference:** 300 - 240 = **60 miles**\n\nThe bus traveled **60 miles** farther than the car.",
+  "gold_answer": "60",
+  "input_tokens": 297,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1739,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:52Z"
+}

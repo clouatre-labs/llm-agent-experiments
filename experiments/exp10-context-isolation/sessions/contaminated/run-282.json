@@ -1,0 +1,15 @@
+{
+  "run_id": "run-282",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**It will take 3 days.**\n\nHere is the breakdown:\n*   **Starting height:** 4 feet\n*   **Day 1:** 8 feet (4 x 2)\n*   **Day 2:** 16 feet (8 x 2)\n*   **Day 3:** 32 feet (16 x 2)\n\nSince 32 feet is greater than the 20-foot window, the beanstalk surpasses the window on the **3rd day**.",
+  "gold_answer": "3",
+  "input_tokens": 299,
+  "output_tokens": 120,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2111,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:05Z"
+}

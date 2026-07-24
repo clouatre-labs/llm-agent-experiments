@@ -1,0 +1,15 @@
+{
+  "run_id": "run-172",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem regarding Mandy and Benedict:\n\n1.  **Initial Amount (Principal):** $100\n2.  **Monthly Interest Rate:** 2% (or 0.02)\n3.  **Time Period:** 3 months\n\n**Calculation (using compound interest, which is standard for monthly interest):**\n*   **Month 1:** $100 + ($100 \u00d7 0.02) = $102\n*   **Month 2:** $102 + ($102 \u00d7 0.02) = $104.04\n*   **Month 3:** $104.04 + ($104.04 \u00d7 0.02) = $106.1208\n\n**Total Amount:** Mandy should give Benedict **$106.12**.\n\n*(Note: If using simple interest, the calculation would be $100 + ($100 \u00d7 0.02 \u00d7 3) = $106.00. However, in most financial contexts involving recurring monthly interest, compounding is the standard application.)*",
+  "gold_answer": "106",
+  "input_tokens": 294,
+  "output_tokens": 251,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7225,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:18Z"
+}

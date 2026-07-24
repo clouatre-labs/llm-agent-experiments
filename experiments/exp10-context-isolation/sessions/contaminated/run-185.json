@@ -1,0 +1,15 @@
+{
+  "run_id": "run-185",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total cost for the first year, we need to calculate the initial purchase price plus the twelve months of maintenance costs (hangar and fuel).\n\n**1. Initial Cost:**\n*   Plane purchase: **$150,000**\n\n**2. Monthly Maintenance Costs:**\n*   Hangar rent: $5,000\n*   Fuel: $10,000 (twice the hangar rent: $5,000 \u00d7 2)\n*   **Total monthly cost:** $5,000 + $10,000 = **$15,000**\n\n**3. Annual Maintenance Costs:**\n*   $15,000 per month \u00d7 12 months = **$180,000**\n\n**4. Total Cost for the First Year:**\n*   $150,000 (Purchase) + $180,000 (Maintenance) = **$330,000**\n\nIt cost James **$330,000** to get and maintain the plane for the first year.",
+  "gold_answer": "330000",
+  "input_tokens": 299,
+  "output_tokens": 245,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6246,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:48Z"
+}

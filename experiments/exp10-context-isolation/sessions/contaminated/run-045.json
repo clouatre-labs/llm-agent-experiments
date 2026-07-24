@@ -1,0 +1,15 @@
+{
+  "run_id": "run-045",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total price for all three jewels, we calculate the price of each one based on the information provided:\n\n1.  **Diamond Jewel:** Given as **$2,000**.\n2.  **Gold Jewel:** $4/5$ of the price of the diamond.\n    *   $2,000 \\times (4/5) = 1,600$.\n    *   Price: **$1,600**.\n3.  **Silver Jewel:** $400 less than the price of the gold.\n    *   $1,600 - 400 = 1,200$.\n    *   Price: **$1,200**.\n\n**Total Price:**\n$2,000 (Diamond) + $1,600 (Gold) + $1,200 (Silver) = **$4,800**.",
+  "gold_answer": "4800",
+  "input_tokens": 300,
+  "output_tokens": 202,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7985,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:11Z"
+}

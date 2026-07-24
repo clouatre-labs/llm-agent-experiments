@@ -1,0 +1,15 @@
+{
+  "run_id": "run-296",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Skyler's investment, we can calculate the contributions step-by-step:\n\n1.  **Total Investment:** $1,200\n2.  **Dylan's Investment:**\n    $\\frac{2}{5} \\times 1200 = 480$\n    Remaining amount: $1200 - 480 = 720$\n3.  **Frances's Investment:**\n    $\\frac{2}{3}$ of the remaining $720$:\n    $\\frac{2}{3} \\times 720 = 480$\n4.  **Skyler's Investment:**\n    The rest of the money: $720 - 480 = 240$\n\n**Skyler's investment was $240.**",
+  "gold_answer": "240",
+  "input_tokens": 304,
+  "output_tokens": 182,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1810,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:40Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-040",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step:\n\n**Step 1: Find the number of groups**\n- Total people: 90\n- People per group: 9\n- Number of groups = 90 \u00f7 9 = 10 groups\n\n**Step 2: Find how many groups brought seashells**\n- 3/5 of the groups brought seashells\n- Groups with seashells = 3/5 \u00d7 10 = 6 groups\n\n**Step 3: Calculate total seashells**\n- Each group that brought seashells had members bring 2 seashells each\n- Total seashells = 6 groups \u00d7 2 seashells = **12 seashells**\n\n**Answer: 12 seashells**",
+  "gold_answer": "108",
+  "input_tokens": 271,
+  "output_tokens": 184,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2417,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

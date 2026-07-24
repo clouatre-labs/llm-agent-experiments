@@ -1,0 +1,15 @@
+{
+  "run_id": "run-275",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The sum of their ages in 10 years will be **40**.\n\n**Reasoning:**\n1. Currently, the sum of their ages is 20.\n2. In 10 years, Mico will be 10 years older, and Marco will also be 10 years older.\n3. Therefore, you add 10 + 10 (20 years total) to the current sum.\n4. 20 + 20 = 40.",
+  "gold_answer": "40",
+  "input_tokens": 260,
+  "output_tokens": 107,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4127,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:20Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-214",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many toys Jonathan currently has, we can break the problem down into simple mathematical steps:\n\n1.  **Determine the size of the target play set:**\n    James's play set has 80 toys. Jonathan wants a set that is five times larger than James's.\n    $80 \\times 5 = 400$ toys.\n\n2.  **Determine how many toys Jonathan needs to reach that target:**\n    The problem states that Jonathan needs **2 more toys** than he currently has to reach that target of 400.\n\n3.  **Calculate Jonathan's current number of toys:**\n    If $Current\\ Toys + 2 = 400$, then:\n    $400 - 2 = 398$.\n\n**Jonathan currently has 398 toys.**",
+  "gold_answer": "398",
+  "input_tokens": 259,
+  "output_tokens": 181,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6356,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:08Z"
+}

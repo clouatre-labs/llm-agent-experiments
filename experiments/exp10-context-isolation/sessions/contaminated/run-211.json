@@ -1,0 +1,15 @@
+{
+  "run_id": "run-211",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The chef spent **$300**.\n\n**Calculation:**\n1. Total weight: 4 bags \u00d7 50 pounds = 200 pounds\n2. Total cost: 200 pounds \u00d7 $1.50 = $300",
+  "gold_answer": "300",
+  "input_tokens": 290,
+  "output_tokens": 56,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2117,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:50Z"
+}

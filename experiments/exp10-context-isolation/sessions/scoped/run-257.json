@@ -1,0 +1,15 @@
+{
+  "run_id": "run-257",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of money Charlie makes, we need to calculate the earnings from his standard lessons and his veteran lessons separately, then add them together.\n\n**1. Calculate earnings from standard lessons:**\n*   Number of lessons: 4\n*   Rate per hour: $80\n*   Calculation: $4 \\times \\$80 = \\$320$\n\n**2. Calculate earnings from veteran lessons:**\n*   First, find the discounted rate. A 25% reduction of $80 is:\n    *   $0.25 \\times \\$80 = \\$20$\n    *   Discounted rate: $\\$80 - \\$20 = \\$60$ per hour\n*   Number of lessons: 2\n*   Calculation: $2 \\times \\$60 = \\$120$\n\n**3. Calculate the total amount:**\n*   $\\$320 \\text{ (standard)} + \\$120 \\text{ (veteran)} = \\$440$\n\nCharlie will make **$440** for the day.",
+  "gold_answer": "440",
+  "input_tokens": 269,
+  "output_tokens": 233,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 826,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:13Z"
+}

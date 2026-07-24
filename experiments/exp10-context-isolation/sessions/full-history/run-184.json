@@ -1,0 +1,15 @@
+{
+  "run_id": "run-184",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem included in your text:\n\n1.  **First 3 hours:** Rosie runs 10 mph.\n    $10 \\text{ mph} \\times 3 \\text{ hours} = 30 \\text{ miles}$.\n2.  **Remaining 4 hours:** (7 total hours - 3 initial hours) Rosie runs 5 mph.\n    $5 \\text{ mph} \\times 4 \\text{ hours} = 20 \\text{ miles}$.\n3.  **Total distance:**\n    $30 \\text{ miles} + 20 \\text{ miles} = \\mathbf{50 \\text{ miles}}$.\n\nRosie can run **50 miles** in 7 hours.",
+  "gold_answer": "50",
+  "input_tokens": 292,
+  "output_tokens": 162,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1517,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:15Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-098",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total time Carmen spent playing the games, we calculate the time for each type of puzzle separately and then add them together:\n\n1.  **Crossword Puzzles:** 3 puzzles \u00d7 10 minutes each = **30 minutes**\n2.  **Sudoku Puzzles:** 8 puzzles \u00d7 5 minutes each = **40 minutes**\n\n**Total time:** 30 minutes + 40 minutes = **70 minutes** (or 1 hour and 10 minutes).",
+  "gold_answer": "70",
+  "input_tokens": 291,
+  "output_tokens": 108,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2548,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:19Z"
+}

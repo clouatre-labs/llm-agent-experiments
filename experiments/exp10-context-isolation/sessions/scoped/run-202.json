@@ -1,0 +1,15 @@
+{
+  "run_id": "run-202",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of downloads over the three months, we calculate the downloads for each month step-by-step:\n\n1.  **Month 1:** \n    The problem states there were **60** downloads.\n\n2.  **Month 2:** \n    The downloads were three times the first month.\n    $60 \\times 3 = \\mathbf{180}$ downloads.\n\n3.  **Month 3:** \n    The downloads were the Month 2 amount reduced by 30%.\n    First, find 30% of 180: $180 \\times 0.30 = 54$.\n    Subtract that from the Month 2 total: $180 - 54 = \\mathbf{126}$ downloads.\n\n4.  **Total Downloads:**\n    Sum the totals from all three months:\n    $60 \\text{ (Month 1)} + 180 \\text{ (Month 2)} + 126 \\text{ (Month 3)} = \\mathbf{366}$\n\n**The program had a total of 366 downloads over the three months.**",
+  "gold_answer": "366",
+  "input_tokens": 253,
+  "output_tokens": 258,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7452,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:06Z"
+}

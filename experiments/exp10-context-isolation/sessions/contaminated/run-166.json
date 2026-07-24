@@ -1,0 +1,15 @@
+{
+  "run_id": "run-166",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many pizza pieces Tobias has eaten so far, we can follow these steps:\n\n1.  **Total pieces:** 60\n2.  **Day 1:** He ate $\\frac{2}{5}$ of 60.\n    *   $60 \\times \\frac{2}{5} = 24$ pieces.\n3.  **Day 2:** He ate 10 pieces.\n4.  **Calculate remaining pieces after Day 2:**\n    *   Total eaten so far: $24 + 10 = 34$ pieces.\n    *   Remaining: $60 - 34 = 26$ pieces.\n5.  **Day 3:** He ate $\\frac{7}{13}$ of the remaining 26 pieces.\n    *   $26 \\times \\frac{7}{13} = 14$ pieces.\n6.  **Total eaten so far:**\n    *   $24 \\text{ (Day 1)} + 10 \\text{ (Day 2)} + 14 \\text{ (Day 3)} = 48$ pieces.\n\nTobias has eaten **48** pizza pieces so far.",
+  "gold_answer": "48",
+  "input_tokens": 302,
+  "output_tokens": 270,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3845,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:40Z"
+}

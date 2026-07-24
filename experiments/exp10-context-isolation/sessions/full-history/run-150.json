@@ -1,0 +1,15 @@
+{
+  "run_id": "run-150",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of money Brittany's mom gave the cashier, we can follow these steps:\n\n1.  **Calculate the total cost of the tickets:**\n    *   Adult ticket: $12\n    *   Child ticket: $10\n    *   Total cost = $12 + $10 = **$22**\n\n2.  **Add the change received to the total cost:**\n    *   Total cost: $22\n    *   Change received: $8\n    *   Total money given = $22 + $8 = **$30**\n\nBrittany's mom gave the cashier **$30**.",
+  "gold_answer": "30",
+  "input_tokens": 297,
+  "output_tokens": 142,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1782,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:06Z"
+}

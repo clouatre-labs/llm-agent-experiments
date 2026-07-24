@@ -1,0 +1,15 @@
+{
+  "run_id": "run-198",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many weeks it takes to fill the holes, we need to calculate the total number of holes and the net rate at which they are being filled.\n\n**1. Calculate the total holes dug during vacation:**\n*   Holes per day: 6\n*   Days: 14\n*   Total holes: $6 \\times 14 = 84$ holes.\n\n**2. Calculate the net rate of filling once Nate returns:**\n*   Holes filled per day: 9\n*   New holes dug per night: 6\n*   Net holes filled per day: $9 - 6 = 3$ holes per day.\n\n**3. Calculate the total days needed to reach zero holes:**\n*   Total holes to fill: 84\n*   Net rate: 3 holes/day\n*   Total days: $84 / 3 = 28$ days.\n\n**4. Convert days into weeks:**\n*   $28 \\text{ days} / 7 \\text{ days per week} = 4$ weeks.\n\n**Answer:**\nIt will take **4 weeks** to fill in all the holes.",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 252,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2584,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:19Z"
+}

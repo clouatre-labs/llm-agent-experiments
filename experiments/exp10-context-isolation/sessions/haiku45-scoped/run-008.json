@@ -1,0 +1,15 @@
+{
+  "run_id": "run-008",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Martha's Cat and Turtle Problem\n\nLet me work through this step-by-step:\n\n**Step 1: Find the turtle's speed**\n- The cat is 5 times faster than the turtle\n- Cat's speed = 15 feet/second\n- Turtle's speed = 15 \u00f7 5 = 3 feet/second\n\n**Step 2: Calculate distance the turtle crawls in 40 seconds**\n- Distance = Speed \u00d7 Time\n- Distance = 3 feet/second \u00d7 40 seconds\n- Distance = 120 feet\n\n**Answer: The turtle can crawl 120 feet in 40 seconds.**",
+  "gold_answer": "120",
+  "input_tokens": 272,
+  "output_tokens": 153,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 4929,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

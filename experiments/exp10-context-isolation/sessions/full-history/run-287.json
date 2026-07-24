@@ -1,0 +1,15 @@
+{
+  "run_id": "run-287",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Watson's earnings for April, we first need to determine how many days and weeks are in the month. Since the specific year isn't provided, we will use the standard calculation for a 30-day month (which is the most common length for April).\n\n**1. Calculate Daily and Weekly Earnings:**\n*   **Daily Pay:** 10 hours \u00d7 $10/hour = **$100 per day**\n*   **Weekly Base Pay:** $100/day \u00d7 5 days = **$500 per week**\n*   **Total Weekly Pay (with bonus):** $500 + $300 = **$800 per week**\n\n**2. Determine the number of weeks/days in April:**\nApril has 30 days. In a standard work week (5 days on, 2 days off), a 30-day month typically contains **4 full weeks plus 2 extra days.**\n\n*   **Earnings from 4 full weeks:** 4 weeks \u00d7 $800 = **$3,200**\n*   **Earnings from the 2 extra days:** 2 days \u00d7 $100 = **$200** (Note: Bonuses are typically applied per full week worked).\n\n**3. Total Calculation:**\n$3,200 (4 weeks) + $200 (2 extra days) = **$3,400**\n\n**Total Earnings: Watson made $3,400 in April.**",
+  "gold_answer": "3200",
+  "input_tokens": 301,
+  "output_tokens": 327,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14277,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:50Z"
+}

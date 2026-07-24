@@ -1,0 +1,15 @@
+{
+  "run_id": "run-105",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the price of the crate, we first need to determine the individual price of each fruit based on the information provided:\n\n1.  **Apple:** $0.50\n2.  **Banana:** Twice as much as an apple $\\rightarrow 0.50 \\times 2 = \\$1.00$\n3.  **Orange:** Three times as much as a banana $\\rightarrow 1.00 \\times 3 = \\$3.00$\n\nNow, we calculate the total cost for the quantities in one crate:\n\n*   **5 Bananas:** $5 \\times \\$1.00 = \\$5.00$\n*   **12 Apples:** $12 \\times \\$0.50 = \\$6.00$\n*   **7 Oranges:** $7 \\times \\$3.00 = \\$21.00$\n\n**Total Price:** $\\$5.00 + \\$6.00 + \\$21.00 = \\$32.00$\n\nThe price for such a crate of fruit would be **$32.00**.",
+  "gold_answer": "32",
+  "input_tokens": 296,
+  "output_tokens": 240,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7827,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:01Z"
+}

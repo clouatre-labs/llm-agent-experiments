@@ -1,0 +1,15 @@
+{
+  "run_id": "run-197",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "You have to pay **$800**.\n\n(Calculation: 20% of $1000 is $200. $1000 - $200 = $800.)",
+  "gold_answer": "800",
+  "input_tokens": 298,
+  "output_tokens": 47,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1230,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:46Z"
+}

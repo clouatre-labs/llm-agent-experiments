@@ -1,0 +1,15 @@
+{
+  "run_id": "run-013",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of movies watched in 4 weeks, we can follow these steps:\n\n1.  **Calculate movies watched per weekend:**\n    *   **Saturday:** 4 movies\n    *   **Sunday:** Half of Saturday's amount ($4 \\div 2$) = 2 movies\n    *   **Total per weekend:** $4 + 2 = 6$ movies\n\n2.  **Calculate movies watched in 4 weeks:**\n    *   $6 \\text{ movies per week} \\times 4 \\text{ weeks} = 24$ movies\n\n**Answer:** They can watch **24 movies** in 4 weeks.",
+  "gold_answer": "24",
+  "input_tokens": 282,
+  "output_tokens": 142,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2779,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:35Z"
+}

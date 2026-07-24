@@ -1,0 +1,15 @@
+{
+  "run_id": "run-197",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "You have provided three distinct types of content: a dialogue, a math problem, and a paragraph of academic/filler text. Here are the responses to each:\n\n**1. Dialogue Summary**\nThe Planner and Executor are coordinating next week's schedule. They have agreed to:\n*   **Team Standup:** Monday at 10 AM.\n*   **Quarterly Review:** Thursday from 1 PM to 3 PM in the conference room.\n*   **Action Items:** The Executor will invite the product team and engineering leads, draft an agenda, and share it for feedback before sending the final invites.\n\n**2. Math Problem Solution**\n*   **Original Price:** $1,000\n*   **Discount (20%):** $1,000 \u00d7 0.20 = $200\n*   **Final Price:** $1,000 - $200 = **$800**\n\n**3. Text Analysis**\nThe final paragraph is a collection of academic-style filler sentences (often used to test text generation or layout) interspersed with a pangram (\"The quick brown fox...\"). It lacks a singular cohesive argument but mimics the tone of a formal research paper.",
+  "gold_answer": "800",
+  "input_tokens": 298,
+  "output_tokens": 260,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7410,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:24Z"
+}

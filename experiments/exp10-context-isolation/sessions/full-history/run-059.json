@@ -1,0 +1,15 @@
+{
+  "run_id": "run-059",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem provided in your text:\n\n1.  **May expenditure:** $500\n2.  **June expenditure:** $500 - $60 = $440\n3.  **Total expenditure:** $500 + $440 = **$940**",
+  "gold_answer": "940",
+  "input_tokens": 289,
+  "output_tokens": 68,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1610,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:44Z"
+}

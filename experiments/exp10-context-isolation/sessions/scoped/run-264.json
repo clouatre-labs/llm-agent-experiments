@@ -1,0 +1,15 @@
+{
+  "run_id": "run-264",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of spools that are blue, follow these steps:\n\n1.  **Identify the number of blue spools:**\n    *   Light blue spools: 15\n    *   Dark blue spools: 45\n    *   **Total blue spools** = $15 + 45 = 60$\n\n2.  **Calculate the total number of all spools:**\n    *   Blue spools: 60\n    *   Light green spools: 40\n    *   Dark green spools: 50\n    *   **Total spools** = $60 + 40 + 50 = 150$\n\n3.  **Calculate the percentage:**\n    *   $\\text{Percentage} = \\left( \\frac{\\text{Total Blue}}{\\text{Total Spools}} \\right) \\times 100$\n    *   $\\text{Percentage} = \\left( \\frac{60}{150} \\right) \\times 100$\n    *   $\\text{Percentage} = 0.4 \\times 100 = 40\\%$\n\n**Answer:** 40% of her spools are blue.",
+  "gold_answer": "40",
+  "input_tokens": 261,
+  "output_tokens": 271,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3810,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:17Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-280",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the time the car in the slow lane took to cover the same distance, we follow these steps:\n\n1.  **Determine the speed of the slow lane car:**\n    The fast lane car is traveling at 60 mph. The slow lane car is traveling at half that speed:\n    $60 \\text{ mph} / 2 = 30 \\text{ mph}$.\n\n2.  **Identify the distance to be covered:**\n    The problem states the distance is the same as the fast lane car's total distance:\n    $\\text{Distance} = 480 \\text{ miles}$.\n\n3.  **Calculate the time for the slow lane car:**\n    Using the formula $\\text{Time} = \\text{Distance} / \\text{Speed}$:\n    $480 \\text{ miles} / 30 \\text{ mph} = 16 \\text{ hours}$.\n\n**The car in the slow lane took 16 hours to cover the distance.**",
+  "gold_answer": "16",
+  "input_tokens": 293,
+  "output_tokens": 216,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10286,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:45Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-051",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the share of the first person, we can set up an algebraic equation.\n\n**1. Define the variables:**\n*   Let $x$ = the amount the **first** person took.\n*   The **second** person took $x + 80$.\n*   The **third** person took twice what the second took: $2(x + 80)$.\n\n**2. Set up the equation:**\nThe sum of all three shares equals the total amount of $1,920.\n$$x + (x + 80) + 2(x + 80) = 1920$$\n\n**3. Solve for $x$:**\n*   Simplify the equation:\n    $$x + x + 80 + 2x + 160 = 1920$$\n*   Combine like terms:\n    $$4x + 240 = 1920$$\n*   Subtract 240 from both sides:\n    $$4x = 1680$$\n*   Divide by 4:\n    $$x = 420$$\n\n**Verification:**\n*   First person: $420\n*   Second person: $420 + $80 = $500\n*   Third person: $500 \\times 2 = $1000\n*   Total: $420 + $500 + $1000 = $1920\n\n**The share of the first person is $420.**",
+  "gold_answer": "420",
+  "input_tokens": 295,
+  "output_tokens": 341,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3461,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:09Z"
+}

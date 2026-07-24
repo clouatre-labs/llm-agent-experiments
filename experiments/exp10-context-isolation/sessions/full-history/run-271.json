@@ -1,0 +1,15 @@
+{
+  "run_id": "run-271",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of additional students who joined by the end of May, we first calculate the total number of students present at the end of May and then subtract the initial number of students.\n\n**1. Identify the initial value and the growth pattern:**\n*   Initial students ($P_0$) = 10\n*   Growth rate = Doubles every month (multiplier of 2)\n\n**2. Calculate the population month by month:**\n*   **Start of Year:** 10 students\n*   **End of January (Month 1):** $10 \\times 2 = 20$\n*   **End of February (Month 2):** $20 \\times 2 = 40$\n*   **End of March (Month 3):** $40 \\times 2 = 80$\n*   **End of April (Month 4):** $80 \\times 2 = 160$\n*   **End of May (Month 5):** $160 \\times 2 = 320$\n\n*(Alternatively, using the formula $P_n = P_0 \\times 2^n$: $10 \\times 2^5 = 10 \\times 32 = 320$)*\n\n**3. Calculate the additional students:**\nThe question asks for the number of students who joined **above and beyond** the initial 10 students.\n*   Total at end of May: 320\n*   Initial students: 10\n*   Additional students: $320 - 10 = 310$\n\n**Answer:**\n**310** additional students would have joined.",
+  "gold_answer": "310",
+  "input_tokens": 294,
+  "output_tokens": 369,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 18695,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:52Z"
+}

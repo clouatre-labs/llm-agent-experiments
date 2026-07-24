@@ -1,0 +1,15 @@
+{
+  "run_id": "run-108",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of functioning street lights, follow these steps:\n\n1.  **Calculate lights per intersection:** 6 poles \u00d7 4 lights per pole = **24 lights per intersection**.\n2.  **Calculate total lights for all intersections:** 24 lights \u00d7 4 intersections = **96 total lights**.\n3.  **Subtract the non-working lights:** 96 total lights - 20 non-working lights = **76 functioning lights**.\n\n**Total functioning street lights: 76**",
+  "gold_answer": "76",
+  "input_tokens": 296,
+  "output_tokens": 112,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3978,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:23Z"
+}

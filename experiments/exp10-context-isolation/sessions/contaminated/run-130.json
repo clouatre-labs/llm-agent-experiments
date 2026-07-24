@@ -1,0 +1,15 @@
+{
+  "run_id": "run-130",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nIf 6 potatoes make 36 hash browns, then 1 potato makes 6 hash browns ($36 \\div 6 = 6$).\n\nTherefore, 96 potatoes will make **576 hash browns** ($96 \\times 6 = 576$).",
+  "gold_answer": "576",
+  "input_tokens": 293,
+  "output_tokens": 72,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7495,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:33Z"
+}

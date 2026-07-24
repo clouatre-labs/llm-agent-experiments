@@ -1,0 +1,15 @@
+{
+  "run_id": "run-021",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nTracy obtained **8 pieces** of wire.\n\n**Calculation:**\n1. Convert the total length to inches: 4 feet \u00d7 12 inches/foot = 48 inches.\n2. Divide by the length of each piece: 48 inches \u00f7 6 inches = 8 pieces.",
+  "gold_answer": "8",
+  "input_tokens": 291,
+  "output_tokens": 75,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3792,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:59Z"
+}

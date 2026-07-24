@@ -1,0 +1,15 @@
+{
+  "run_id": "run-079",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer your question regarding Goldy's rice:\n\n1.  **Calculate the total number of sacks given away:**\n    3 sacks (to cousin) + 4 sacks (to brother) = **7 sacks total**.\n\n2.  **Calculate the total weight in kilograms:**\n    7 sacks \u00d7 25 kilograms per sack = **175 kilograms**.\n\n**Answer:** Goldy gave a total of **175 kilograms** of rice to her cousin and brother.",
+  "gold_answer": "175",
+  "input_tokens": 291,
+  "output_tokens": 102,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3416,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:51Z"
+}

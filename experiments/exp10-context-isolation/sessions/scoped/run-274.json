@@ -1,0 +1,15 @@
+{
+  "run_id": "run-274",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the number of bandages they started with, we can work backward from the final amount or set up an algebraic equation.\n\n**1. Identify the variables and values:**\n*   **Bulk pack size:** 50 bandages\n*   **Day 1 usage:** 38 bandages\n*   **Day 1 order:** +50 bandages (1 pack)\n*   **Day 2 usage:** 38 - 10 = 28 bandages\n*   **Day 3 order:** +100 bandages (2 packs)\n*   **Day 3 usage:** 25 bandages (half of a 50-pack)\n*   **Final amount remaining:** 78 bandages\n\n**2. Set up the equation:**\nLet $x$ be the starting number of bandages.\n\n$$\\text{Starting amount} - \\text{Day 1 use} + \\text{Day 1 order} - \\text{Day 2 use} + \\text{Day 3 order} - \\text{Day 3 use} = \\text{Final amount}$$\n\n$$x - 38 + 50 - 28 + 100 - 25 = 78$$\n\n**3. Solve for $x$:**\nCombine the constants on the left side:\n$$-38 + 50 = 12$$\n$$12 - 28 = -16$$\n$$-16 + 100 = 84$$\n$$84 - 25 = 59$$\n\nSo the equation is:\n$$x + 59 = 78$$\n\nSubtract 59 from both sides:\n$$x = 78 - 59$$\n$$x = 19$$\n\n**Answer:**\nThey started with **19** bandages on the first day.",
+  "gold_answer": "19",
+  "input_tokens": 260,
+  "output_tokens": 400,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4519,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:20Z"
+}

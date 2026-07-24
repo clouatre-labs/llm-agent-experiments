@@ -1,0 +1,15 @@
+{
+  "run_id": "run-073",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Jordan would earn, we can follow these steps:\n\n1.  **Determine daily hours:** Jordan spends 2 hours a day playing video games.\n2.  **Calculate weekly hours:** Since there are 7 days in a week, he spends $2 \\text{ hours/day} \\times 7 \\text{ days} = 14 \\text{ hours}$ per week playing games.\n3.  **Calculate weekly earnings:** If he worked those 14 hours at a rate of $10 per hour, his earnings would be $14 \\text{ hours} \\times \\$10/\\text{hour} = \\$140$.\n\nJordan would earn **$140** in one week.",
+  "gold_answer": "140",
+  "input_tokens": 256,
+  "output_tokens": 158,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4444,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:05Z"
+}

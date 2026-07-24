@@ -1,0 +1,15 @@
+{
+  "run_id": "run-012",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step, ignoring the unrelated text.\n\n## Step 1: Calculate water in original orange drink\n- Original orange drink: 10 liters\n- Two-thirds is water: 10 \u00d7 (2/3) = 20/3 liters of water\n\n## Step 2: Account for the spilled orange drink\n- 1 liter is spilled\n- Remaining orange drink: 10 - 1 = 9 liters\n- Water lost in spill: 1 \u00d7 (2/3) = 2/3 liters\n- Water remaining in orange drink: 20/3 - 2/3 = 18/3 = 6 liters\n\n## Step 3: Calculate water in pineapple drink\n- Pineapple drink: 15 liters\n- Three-fifths is water: 15 \u00d7 (3/5) = 9 liters of water\n\n## Step 4: Calculate total water in final mixture\n- Water from orange drink: 6 liters\n- Water from pineapple drink: 9 liters\n- **Total water: 6 + 9 = 15 liters**\n\n## Verification\n- Total liquid: 9 + 15 = 24 liters \u2713\n- Water content: 15 liters out of 24 liters\n\n**The remaining 24 liters contains 15 liters of water.**",
+  "gold_answer": "15",
+  "input_tokens": 274,
+  "output_tokens": 346,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 7006,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

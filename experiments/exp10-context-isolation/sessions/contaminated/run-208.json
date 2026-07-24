@@ -1,0 +1,15 @@
+{
+  "run_id": "run-208",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n**1. Calculate the items per room:**\n*   **Sheets:** 2\n*   **Comforter:** 1\n*   **Pillow cases:** 4 (twice as many as sheets: $2 \\times 2 = 4$)\n*   **Towels:** 8 (twice as many as pillow cases: $4 \\times 2 = 8$)\n*   **Total items per room:** $2 + 1 + 4 + 8 = 15$ items\n\n**2. Calculate the total for 80 rooms:**\n*   $15 \\text{ items} \\times 80 \\text{ rooms} = 1,200$\n\nThere are **1,200** pieces of laundry in 80 rooms.",
+  "gold_answer": "1200",
+  "input_tokens": 293,
+  "output_tokens": 179,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5138,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:52Z"
+}

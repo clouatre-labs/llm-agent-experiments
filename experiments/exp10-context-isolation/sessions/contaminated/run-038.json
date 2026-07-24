@@ -1,0 +1,15 @@
+{
+  "run_id": "run-038",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\nJames needs to calculate the perimeter of his rectangular fence to know how much crepe paper to buy.\n\n*   **Formula for perimeter:** $2 \\times (\\text{length} + \\text{width})$\n*   **Calculation:** $2 \\times (20\\text{ ft} + 15\\text{ ft}) = 2 \\times (35\\text{ ft}) = 70\\text{ feet}$\n\nJames needs to buy **70 feet** of crepe paper.",
+  "gold_answer": "70",
+  "input_tokens": 297,
+  "output_tokens": 117,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3973,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:05Z"
+}

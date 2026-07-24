@@ -1,0 +1,15 @@
+{
+  "run_id": "run-215",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Trinity's profit, we first need to calculate her selling price and then subtract her original cost.\n\n**1. Calculate the Selling Price:**\nTrinity sells the magazines at $\\frac{11}{8}$ of the cost price.\n$$\\text{Selling Price} = \\$72 \\times \\frac{11}{8}$$\n$$\\text{Selling Price} = \\$9 \\times 11$$\n$$\\text{Selling Price} = \\$99$$\n\n**2. Calculate the Profit:**\nProfit is the difference between the selling price and the cost price.\n$$\\text{Profit} = \\text{Selling Price} - \\text{Cost Price}$$\n$$\\text{Profit} = \\$99 - \\$72$$\n$$\\text{Profit} = \\$27$$\n\n**Trinity's profit is $27.**",
+  "gold_answer": "27",
+  "input_tokens": 253,
+  "output_tokens": 179,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2894,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:05Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-034",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Cameron saves, we need to calculate the cost of his chosen method and compare it to the cost of the 24-hour stay.\n\n**1. Calculate the duration of Cameron's stay:**\n*   Arrival: 5 PM\n*   Departure: 10 AM the next morning\n*   From 5 PM to 5 AM is 12 hours.\n*   From 5 AM to 10 AM is 5 hours.\n*   **Total duration:** 17 hours.\n\n**2. Calculate the cost of Cameron's chosen option:**\n*   Base price for 12 hours: 1,000 pesos\n*   Additional hours: 17 hours - 12 hours = 5 hours\n*   Cost of additional hours: 5 hours \u00d7 70 pesos/hour = 350 pesos\n*   **Total cost:** 1,000 + 350 = **1,350 pesos**\n\n**3. Compare with the 24-hour option:**\n*   Cost for 24 hours: **1,600 pesos**\n\n**4. Calculate the savings:**\n*   1,600 pesos - 1,350 pesos = 250 pesos\n\nCameron would save **250 pesos**.",
+  "gold_answer": "250",
+  "input_tokens": 310,
+  "output_tokens": 288,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8414,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:45Z"
+}

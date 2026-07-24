@@ -1,0 +1,15 @@
+{
+  "run_id": "run-000",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me solve this step-by-step.\n\n**Given information:**\n- Darrell and Allen's ages are in the ratio 7:11\n- Their total age now is 162\n\n**Step 1: Set up the ratio equation**\n\nLet Darrell's age = 7x\nLet Allen's age = 11x\n\n**Step 2: Find the value of x**\n\nTotal age = 7x + 11x = 162\n18x = 162\nx = 9\n\n**Step 3: Calculate Allen's current age**\n\nAllen's current age = 11x = 11(9) = 99\n\n**Step 4: Calculate Allen's age 10 years from now**\n\nAllen's age in 10 years = 99 + 10 = **109 years**\n\n**Verification:**\n- Darrell's current age: 7(9) = 63\n- Allen's current age: 11(9) = 99\n- Total: 63 + 99 = 162 \u2713\n- Ratio: 63:99 = 7:11 \u2713\n\n**Answer: Allen will be 109 years old in 10 years.**",
+  "gold_answer": "109",
+  "input_tokens": 270,
+  "output_tokens": 278,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6632,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-029",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Ian's Board Problem\n\nLet me work through this step-by-step.\n\n**Set up the problem:**\n- Total board length: 40 feet\n- Let the shorter piece = x feet\n- Then the longer piece = 4x feet\n\n**Write an equation:**\nSince the two pieces make up the whole board:\n$$x + 4x = 40$$\n\n**Solve:**\n$$5x = 40$$\n$$x = 8$$\n\n**Find the longer piece:**\n- Shorter piece = 8 feet\n- Longer piece = 4 \u00d7 8 = **32 feet**\n\n**Verification:**\n8 + 32 = 40 \u2713 and 32 = 4 \u00d7 8 \u2713\n\n**The longer piece is 32 feet long.**",
+  "gold_answer": "32",
+  "input_tokens": 263,
+  "output_tokens": 190,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3070,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

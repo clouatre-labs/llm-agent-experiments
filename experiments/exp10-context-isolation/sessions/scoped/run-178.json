@@ -1,0 +1,15 @@
+{
+  "run_id": "run-178",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours a week John spends learning, we need to calculate his weekday minutes, his weekend minutes, and then convert the total to hours.\n\n**1. Calculate weekday learning time:**\n*   **Periods per day:** 6 (normal) + 2 (extra) = 8 periods.\n*   **Minutes per day:** 8 periods \u00d7 40 minutes = 320 minutes.\n*   **Minutes per week (Mon\u2013Fri):** 320 minutes \u00d7 5 days = **1,600 minutes.**\n\n**2. Calculate weekend learning time:**\n*   John spends $1/16$ of his weekly minutes on Saturday and $1/16$ on Sunday.\n*   Total weekend fraction: $1/16 + 1/16 = 2/16$ (or $1/8$) of his weekly minutes.\n*   Let $W$ be the total weekly minutes. We know that:\n    $W = \\text{Weekday minutes} + \\text{Weekend minutes}$\n    $W = 1,600 + \\frac{1}{8}W$\n*   Subtract $\\frac{1}{8}W$ from both sides:\n    $\\frac{7}{8}W = 1,600$\n*   Solve for $W$:\n    $W = 1,600 \\times \\frac{8}{7}$\n    $W = \\frac{12,800}{7} \\approx 1,828.57 \\text{ minutes.}$\n\n**3. Convert total minutes to hours:**\n*   $\\text{Total hours} = \\frac{12,800}{7} \\div 60$\n*   $\\text{Total hours} = \\frac{12,800}{420}$\n*   $\\text{Total hours} = \\frac{640}{21} \\approx \\mathbf{30.48 \\text{ hours.}}$\n\n**Answer:**\nJohn spends approximately **30.48 hours** (or $30 \\frac{10}{21}$ hours) learning per week.",
+  "gold_answer": "30",
+  "input_tokens": 257,
+  "output_tokens": 479,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 25243,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:18Z"
+}

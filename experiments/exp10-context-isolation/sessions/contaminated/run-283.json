@@ -1,0 +1,15 @@
+{
+  "run_id": "run-283",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount of chocolate produced by Ruiz and Marissa in a 12-hour day, we calculate their individual rates and then their combined total.\n\n**1. Calculate Ruiz's rate:**\n*   Ruiz makes 120 pounds in 2 hours.\n*   Hourly rate = $120 \\text{ lbs} / 2 \\text{ hours} = 60 \\text{ lbs/hour}$.\n*   Total for 12 hours = $60 \\times 12 = \\mathbf{720 \\text{ lbs}}$.\n\n**2. Calculate Marissa's rate:**\n*   Marissa makes $3/4$ as many pounds in an hour as Ruiz makes in two hours.\n*   Ruiz's two-hour total is 120 lbs.\n*   Marissa's hourly rate = $120 \\times \\frac{3}{4} = 90 \\text{ lbs/hour}$.\n*   Total for 12 hours = $90 \\times 12 = \\mathbf{1,080 \\text{ lbs}}$.\n\n**3. Calculate the combined total:**\n*   Total = $720 \\text{ lbs (Ruiz)} + 1,080 \\text{ lbs (Marissa)} = \\mathbf{1,800 \\text{ lbs}}$.\n\n**Total amount of chocolate made: 1,800 pounds.**",
+  "gold_answer": "1800",
+  "input_tokens": 291,
+  "output_tokens": 312,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8255,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:11Z"
+}

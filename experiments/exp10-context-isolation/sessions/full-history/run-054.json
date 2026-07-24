@@ -1,0 +1,15 @@
+{
+  "run_id": "run-054",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many shells Kylie collects on Tuesday, we can follow these steps:\n\n1.  **Determine Robert's shells on Monday:** 20 shells.\n2.  **Determine Kylie's shells on Monday:** She collects 5 more than Robert, so $20 + 5 = 25$ shells.\n3.  **Determine Kylie's shells on Tuesday:** She collects 2 times more than she did on Monday.\n    *   *Note on phrasing:* In mathematical word problems, \"2 times more than\" is often interpreted as $X + 2X$ (which is $3X$), but in standard conversational English/logic puzzles, it is most commonly treated as \"2 times as many\" ($2 \\times X$).\n    *   Calculation: $25 \\times 2 = 50$.\n\nKylie collects **50** shells on Tuesday.",
+  "gold_answer": "50",
+  "input_tokens": 299,
+  "output_tokens": 191,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6647,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:48Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-261",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total thickness of the four books, we calculate the thickness of each book individually and then sum them up:\n\n1.  **First book:** $31\\text{ mm}$\n2.  **Second book:** $50\\text{ mm}$\n3.  **Third book:** $5\\text{ mm}$ less than the second book $\\rightarrow 50\\text{ mm} - 5\\text{ mm} = 45\\text{ mm}$\n4.  **Fourth book:** Twice as thick as the first book $\\rightarrow 31\\text{ mm} \\times 2 = 62\\text{ mm}$\n\n**Total thickness:**\n$31 + 50 + 45 + 62 = 188\\text{ mm}$\n\nThe total thickness of the four books is **$188\\text{ mm}$**.",
+  "gold_answer": "188",
+  "input_tokens": 258,
+  "output_tokens": 193,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1288,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:14Z"
+}

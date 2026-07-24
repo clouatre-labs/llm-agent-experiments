@@ -1,0 +1,15 @@
+{
+  "run_id": "run-263",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many small bags John can make, we can follow these steps:\n\n1.  **Calculate the total weight of the M&Ms:**\n    John has 3 large bags, and each weighs 10 ounces.\n    $3 \\text{ bags} \\times 10 \\text{ ounces/bag} = 30 \\text{ ounces}$\n\n2.  **Calculate the total number of M&Ms:**\n    There are 30 M&Ms in each ounce.\n    $30 \\text{ ounces} \\times 30 \\text{ M&Ms/ounce} = 900 \\text{ M&Ms}$\n\n3.  **Calculate the number of small bags:**\n    John puts 10 M&Ms in each small bag.\n    $900 \\text{ M&Ms} \\div 10 \\text{ M&Ms/bag} = 90 \\text{ bags}$\n\n**John can make 90 small bags.**",
+  "gold_answer": "90",
+  "input_tokens": 269,
+  "output_tokens": 218,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 991,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:14Z"
+}

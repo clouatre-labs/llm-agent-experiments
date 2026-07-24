@@ -1,0 +1,15 @@
+{
+  "run_id": "run-291",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of Pok\u00e9mon cards Elaine has, we need to calculate the amount collected each month and add them to her starting total.\n\n1.  **Initial amount:** 20 cards\n2.  **Month 1:** She collected three times her initial amount.\n    *   $20 \\times 3 = 60$ cards\n3.  **Month 2:** She collected 20 fewer than she did in Month 1.\n    *   $60 - 20 = 40$ cards\n4.  **Month 3:** She collected twice the combined number of Month 1 and Month 2.\n    *   $(60 + 40) \\times 2 = 100 \\times 2 = 200$ cards\n\n**Total Calculation:**\nInitial (20) + Month 1 (60) + Month 2 (40) + Month 3 (200) = **320 cards**\n\nElaine has **320** Pok\u00e9mon cards in total.",
+  "gold_answer": "320",
+  "input_tokens": 293,
+  "output_tokens": 228,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6918,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:44Z"
+}

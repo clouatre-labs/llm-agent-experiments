@@ -1,0 +1,15 @@
+{
+  "run_id": "run-039",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step.\n\n**Step 1: Calculate the cost of the cars**\n- Number of cars: 12\n- Price per car: $20,000\n- Total cost of cars: 12 \u00d7 $20,000 = $240,000\n\n**Step 2: Calculate the tax**\n- Tax rate: 10%\n- Tax amount: 10% \u00d7 $240,000 = 0.10 \u00d7 $240,000 = $24,000\n\n**Step 3: Calculate registration costs**\n- Registration per car: $1,000\n- Number of cars: 12\n- Total registration: 12 \u00d7 $1,000 = $12,000\n\n**Step 4: Calculate total cost**\n- Total = Cost of cars + Tax + Registration\n- Total = $240,000 + $24,000 + $12,000\n- Total = **$276,000**\n\nMark pays **$276,000** for everything.",
+  "gold_answer": "276000",
+  "input_tokens": 274,
+  "output_tokens": 228,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 2765,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

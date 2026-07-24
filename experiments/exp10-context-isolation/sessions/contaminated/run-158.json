@@ -1,0 +1,15 @@
+{
+  "run_id": "run-158",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Bobby has **45** video games.\n\n**Here is the breakdown:**\n1.  **Brian's starting amount:** 20 video games.\n2.  **Brian's amount after losing some:** 20 - 5 = 15 video games.\n3.  **Bobby's calculation:** (3 \u00d7 Brian's current amount) - 5.\n4.  **Final Math:** (3 \u00d7 15) - 5 = 45 - 5 = **40**.\n\n***Correction/Refinement:***\n*Wait, let's re-read the phrasing carefully:* \"Bobby has 5 fewer than 3 times as many video games as Brian does. If Brian has 20 video games but lost 5 right before the comparison was made...\"\n\n*   Brian's actual count at the time of comparison: **15**\n*   3 times Brian's count: **45**\n*   5 fewer than that: **40**\n\n**Bobby has 40 video games.**",
+  "gold_answer": "40",
+  "input_tokens": 289,
+  "output_tokens": 226,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8373,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:43Z"
+}

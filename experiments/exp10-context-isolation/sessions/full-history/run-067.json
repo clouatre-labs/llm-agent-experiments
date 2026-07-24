@@ -1,0 +1,15 @@
+{
+  "run_id": "run-067",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of onions and potatoes Sophia bought, we can follow these steps:\n\n1.  **Determine the total number of items Rose bought:**\n    Rose bought 12 onions and 4 potatoes.\n    $12 + 4 = 16$ items.\n\n2.  **Determine the total number of items Sophia bought:**\n    The problem states that Rose bought 4 times the number of items Sophia bought.\n    Let $x$ be the total number of items Sophia bought.\n    $4x = 16$\n    $x = 16 / 4$\n    $x = 4$\n\n**Sophia bought a total of 4 onions and potatoes.**",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 151,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5932,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:51Z"
+}

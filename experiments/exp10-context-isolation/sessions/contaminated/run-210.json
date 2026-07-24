@@ -1,0 +1,15 @@
+{
+  "run_id": "run-210",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the different components:\n\n**Math Problem Solution:**\n*   **Ellen's spending:** $100 (leggings) + $5 (photo frame) = $105\n*   **Lani's spending:** $30 (sunglasses) + $200 (two bathrobes at $100 each) = $230\n*   **Total spent:** $105 + $230 = **$335**\n\n**Meeting Summary:**\n*   **Team Standup:** Monday at 10 AM.\n*   **Quarterly Review:** Thursday from 1 PM to 3 PM in the conference room.\n*   **Action Items:** The Executor will draft an agenda for feedback and then send calendar invites to the product team and engineering leads.\n\n**Text Analysis:**\nThe final paragraph transitions from a professional discussion about project management and mathematical word problems into a formal academic tone regarding research methodology, ending with a pangram (\"The quick brown fox jumps over the lazy dog...\").",
+  "gold_answer": "335",
+  "input_tokens": 298,
+  "output_tokens": 229,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7192,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:55Z"
+}

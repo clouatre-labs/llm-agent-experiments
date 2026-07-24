@@ -1,0 +1,15 @@
+{
+  "run_id": "run-042",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Johnny had **$90** after a year.\n\n**Breakdown:**\n1.  **Initial sum:** $20 (allowance) + $10 (extra) = $30\n2.  **Investment growth:** $30 \u00d7 3 = $90",
+  "gold_answer": "90",
+  "input_tokens": 299,
+  "output_tokens": 61,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 928,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:04Z"
+}

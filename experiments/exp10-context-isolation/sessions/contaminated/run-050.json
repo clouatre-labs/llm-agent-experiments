@@ -1,0 +1,15 @@
+{
+  "run_id": "run-050",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the riddle embedded in your text:\n\n**Jerry is 10 years old now, and he will be 13 in three years.**\n\n**Reasoning:**\n1. Let $x$ be Jerry's current age.\n2. The problem states: $x = 2(x - 5)$.\n3. Solve for $x$: \n   $x = 2x - 10$\n   $10 = x$\n4. If Jerry is 10 now, in 3 years he will be $10 + 3 = 13$.",
+  "gold_answer": "13",
+  "input_tokens": 291,
+  "output_tokens": 128,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3836,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:09Z"
+}

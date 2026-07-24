@@ -1,0 +1,15 @@
+{
+  "run_id": "run-058",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total time it took James to cross the lake, we need to calculate the time for each of the three stages: the first swim, the rest period, and the final swim.\n\n**1. The first swim:**\n*   **Distance:** 60% of 20 miles = $20 \\times 0.6 = 12$ miles.\n*   **Speed:** 2 mph.\n*   **Time:** $12 \\text{ miles} / 2 \\text{ mph} = \\mathbf{6 \\text{ hours}}$.\n\n**2. The rest period:**\n*   **Duration:** Half as long as the first swimming time.\n*   **Time:** $6 \\text{ hours} / 2 = \\mathbf{3 \\text{ hours}}$.\n\n**3. The final swim:**\n*   **Remaining Distance:** $20 - 12 = 8$ miles.\n*   **New Speed:** Half of the original speed ($2 \\text{ mph} / 2$) = 1 mph.\n*   **Time:** $8 \\text{ miles} / 1 \\text{ mph} = \\mathbf{8 \\text{ hours}}$.\n\n**Total Time:**\n$6 \\text{ hours (first swim)} + 3 \\text{ hours (rest)} + 8 \\text{ hours (final swim)} = \\mathbf{17 \\text{ hours}}$.",
+  "gold_answer": "17",
+  "input_tokens": 306,
+  "output_tokens": 306,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6362,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:49Z"
+}

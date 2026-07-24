@@ -1,0 +1,15 @@
+{
+  "run_id": "run-283",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total amount of chocolate made by Ruiz and Marissa in 12 hours, we first need to determine their individual hourly rates.\n\n**1. Calculate Ruiz's hourly rate:**\n*   Ruiz makes 120 pounds in 2 hours.\n*   $120 \\text{ lbs} / 2 \\text{ hours} = 60 \\text{ lbs per hour}$.\n\n**2. Calculate Marissa's hourly rate:**\n*   Marissa makes $3/4$ times as many pounds in an hour as Ruiz makes in *two* hours.\n*   Ruiz's two-hour total is 120 lbs.\n*   $120 \\times \\frac{3}{4} = 90 \\text{ lbs per hour}$.\n\n**3. Calculate the total production for 12 hours:**\n*   **Ruiz:** $60 \\text{ lbs/hr} \\times 12 \\text{ hours} = 720 \\text{ lbs}$.\n*   **Marissa:** $90 \\text{ lbs/hr} \\times 12 \\text{ hours} = 1,080 \\text{ lbs}$.\n*   **Total:** $720 + 1,080 = 1,800 \\text{ lbs}$.\n\n**Total amount of chocolate made together: 1,800 pounds.**",
+  "gold_answer": "1800",
+  "input_tokens": 291,
+  "output_tokens": 306,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 9199,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:45Z"
+}

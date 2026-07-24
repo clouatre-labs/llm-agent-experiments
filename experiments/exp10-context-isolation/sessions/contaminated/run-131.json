@@ -1,0 +1,15 @@
+{
+  "run_id": "run-131",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the distance between the bird's northern and southern homes, we need to calculate the net displacement of the bird's journey. We will treat \"South\" as a positive direction and \"North\" as a negative direction.\n\n1.  **First leg (South):**\n    10 hours \u00d7 30 mph = **300 miles South** (+300)\n\n2.  **Second leg (North):**\n    2 hours \u00d7 18 mph = **36 miles North** (-36)\n\n3.  **Third leg (South):**\n    5 hours \u00d7 22 mph = **110 miles South** (+110)\n\n**Total Distance Calculation:**\n300 - 36 + 110 = 374 miles\n\nThe distance between the bird's northern and southern homes is **374 miles**.",
+  "gold_answer": "374",
+  "input_tokens": 295,
+  "output_tokens": 190,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6116,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:31Z"
+}

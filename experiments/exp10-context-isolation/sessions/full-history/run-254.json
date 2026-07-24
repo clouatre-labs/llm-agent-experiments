@@ -1,0 +1,15 @@
+{
+  "run_id": "run-254",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many plants Shondra has, we can follow these steps:\n\n1.  **Find Frederick's plants:** Frederick has **10** plants.\n2.  **Find Toni's plants:** Toni has 60% more plants than Frederick.\n    *   60% of 10 is $0.60 \\times 10 = 6$.\n    *   Toni's total = $10 + 6 = \\mathbf{16}$ plants.\n3.  **Find Shondra's plants:** Shondra has 7 fewer plants than Toni.\n    *   Shondra's total = $16 - 7 = \\mathbf{9}$ plants.\n\n**Shondra has 9 plants.**",
+  "gold_answer": "9",
+  "input_tokens": 294,
+  "output_tokens": 169,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1849,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:30Z"
+}

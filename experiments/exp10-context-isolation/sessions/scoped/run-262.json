@@ -1,0 +1,15 @@
+{
+  "run_id": "run-262",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much money Joe will have left, we need to calculate the total cost of the items after the discount and subtract that from his initial $50.\n\n**1. Calculate the total original price:**\n*   Shirt: $25\n*   Shorts: $35\n*   **Total original price:** $25 + $35 = **$60**\n\n**2. Calculate the discount:**\n*   The sale is 30% off.\n*   $60 \u00d7 0.30 = **$18 discount**\n\n**3. Calculate the sale price:**\n*   $60 (original price) - $18 (discount) = **$42 total cost**\n\n**4. Calculate the remaining money:**\n*   $50 (initial amount) - $42 (total cost) = **$8**\n\nJoe will have **$8** left after the purchase.",
+  "gold_answer": "8",
+  "input_tokens": 252,
+  "output_tokens": 201,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5981,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:19Z"
+}

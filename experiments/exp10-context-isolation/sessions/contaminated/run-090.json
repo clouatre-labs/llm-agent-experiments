@@ -1,0 +1,15 @@
+{
+  "run_id": "run-090",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Total students:** 20\n2.  **Contemporary dance:** 20% of 20 = **4 students**.\n3.  **Remaining students:** 20 - 4 = **16 students**.\n4.  **Jazz dance:** 25% of the remaining 16 = **4 students**.\n5.  **Hip-hop dance:** The rest = 16 - 4 = **12 students**.\n\nTo find the percentage of the entire class enrolled in hip-hop:\n(12 hip-hop students / 20 total students) \u00d7 100 = **60%**.\n\n**Answer:** 60% of the students enrolled in hip-hop dance.",
+  "gold_answer": "60",
+  "input_tokens": 296,
+  "output_tokens": 170,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1305,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:16Z"
+}

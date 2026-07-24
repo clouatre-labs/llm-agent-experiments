@@ -1,0 +1,15 @@
+{
+  "run_id": "run-165",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Total time needed:** 240 minutes.\n2.  **Total days available:** 3 weeks \u00d7 4 days per week = 12 days.\n3.  **Calculation:** 240 minutes \u00f7 12 days = 20 minutes per day.\n\n**Jason needs to spend 20 minutes walking each day.**",
+  "gold_answer": "20",
+  "input_tokens": 288,
+  "output_tokens": 89,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2907,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:39Z"
+}

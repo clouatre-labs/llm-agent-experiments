@@ -1,0 +1,15 @@
+{
+  "run_id": "run-127",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many beakers Igor lost, we need to calculate how many items he actually placed on the lab bench and subtract that from the total number of items he successfully brought.\n\n**1. Determine the number of items Igor gathered based on the instructions:**\n*   **Test tubes requested:** 16\n*   **Beakers requested:** 7\n*   **Petri dishes requested:** 14\n\n**2. Calculate what Igor actually gathered (before losing any beakers):**\n*   **Test tubes gathered:** Half of 16 = **8**\n*   **Petri dishes gathered:** Two more than the number requested (14 + 2) = **16**\n*   **Beakers gathered:** He picked up the correct number = **7**\n\n**3. Calculate the total number of items Igor had before losing the beakers:**\n*   8 (test tubes) + 16 (Petri dishes) + 7 (beakers) = **31 items**\n\n**4. Use the total number of items actually placed on the bench to find the loss:**\n*   Total items placed on bench = **29**\n*   Total items gathered (31) - Total items placed (29) = **2**\n\nIgor lost **2** beakers.",
+  "gold_answer": "2",
+  "input_tokens": 312,
+  "output_tokens": 279,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7977,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:06Z"
+}

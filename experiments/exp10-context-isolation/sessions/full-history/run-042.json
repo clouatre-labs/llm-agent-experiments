@@ -1,0 +1,15 @@
+{
+  "run_id": "run-042",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to your queries:\n\n**Math Problem Answer:**\nJohnny had **$90**.\n*Calculation:* ($20 + $10) = $30. Then, $30 \u00d7 3 = $90.\n\n**Text Analysis:**\nThe provided text contains two distinct sections:\n1. **A Dialogue:** A professional exchange between a \"Planner\" and an \"Executor\" regarding scheduling a team standup and a quarterly review.\n2. **A Paragraph:** A collection of academic-sounding sentences discussing literature reviews and methodology, which concludes with a pangram (\"The quick brown fox jumps over the lazy dog...\") and a sentence regarding further analysis.",
+  "gold_answer": "90",
+  "input_tokens": 299,
+  "output_tokens": 148,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2088,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:41Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-250",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of candles and flashlights, we can break the problem down into two parts:\n\n**1. Flashlights:**\n*   **Per person:** There is 1 flashlight for each of the 4 people = **4 flashlights**.\n*   **Per room:** There are 2 flashlights for each of the 8 rooms (8 \u00d7 2) = **16 flashlights**.\n*   **Total Flashlights:** 4 + 16 = **20 flashlights**.\n\n**2. Candles:**\n*   **Small candles:** Half of the rooms (4 rooms) have 4 small candles each (4 \u00d7 4) = **16 small candles**.\n*   **Medium candles:** The other half of the rooms (4 rooms) have 5 medium candles each (4 \u00d7 5) = **20 medium candles**.\n*   **Total Candles:** 16 + 20 = **36 candles**.\n\n**Grand Total:**\n20 flashlights + 36 candles = **56 items in total.**",
+  "gold_answer": "56",
+  "input_tokens": 270,
+  "output_tokens": 227,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3251,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:13Z"
+}

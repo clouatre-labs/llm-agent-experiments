@@ -1,0 +1,15 @@
+{
+  "run_id": "run-027",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solution\n\nLet me work through this step-by-step.\n\n## Probability of rolling a number greater than 3\n\nOn a six-sided die, the numbers greater than 3 are: 4, 5, 6\n\n- Favorable outcomes: 3\n- Total outcomes: 6\n- **P(>3) = 3/6 = 1/2 = 0.5 or 50%**\n\n## Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 (3 even numbers out of 6)\n\nFor two consecutive rolls:\n- P(even on first roll) = 3/6 = 1/2\n- P(even on second roll) = 3/6 = 1/2\n- **P(two even in a row) = 1/2 \u00d7 1/2 = 1/4 = 0.25 or 25%**\n\n## Difference\n\nThe difference in probability is:\n- 50% - 25% = **25 percentage points**\n\nAlternatively, expressed as \"how much more likely\" in relative terms:\n- (50% - 25%) / 25% = 100% more likely (or twice as likely)\n\n**Answer: 25 percentage points** (or if asking for relative increase: **100% more likely**)",
+  "gold_answer": "25",
+  "input_tokens": 259,
+  "output_tokens": 317,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 4340,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:34Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-090",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of students enrolled in hip-hop dance, we can follow these steps:\n\n1.  **Calculate the percentage for Contemporary Dance:**\n    *   $20\\%$ of the students enrolled in contemporary dance.\n    *   Remaining students: $100\\% - 20\\% = 80\\%$.\n\n2.  **Calculate the percentage for Jazz Dance:**\n    *   The problem states $25\\%$ of the **remaining** students enrolled in jazz.\n    *   $25\\%$ of $80\\% = 0.25 \\times 80\\% = 20\\%$.\n\n3.  **Calculate the percentage for Hip-Hop Dance:**\n    *   The \"rest\" enrolled in hip-hop.\n    *   Total percentage accounted for so far: $20\\% \\text{ (Contemporary)} + 20\\% \\text{ (Jazz)} = 40\\%$.\n    *   Hip-hop percentage: $100\\% - 40\\% = 60\\%$.\n\n**Answer:**\n**60%** of the entire students enrolled in hip-hop dance.",
+  "gold_answer": "60",
+  "input_tokens": 263,
+  "output_tokens": 247,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4918,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:14Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-188",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Order Amount:** $15\n2.  **Tip Calculation:** $15 \u00d7 1/5 = $3\n3.  **Total Amount:** $15 + $3 = **$18**\n\nAshley should give the delivery man **$18**.",
+  "gold_answer": "18",
+  "input_tokens": 298,
+  "output_tokens": 73,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2352,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:45Z"
+}

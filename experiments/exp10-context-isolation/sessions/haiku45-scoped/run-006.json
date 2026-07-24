@@ -1,0 +1,15 @@
+{
+  "run_id": "run-006",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Gunther's Banana Problem\n\nLet me track the bananas step by step:\n\n**Starting amount:**\n- 48 bananas\n\n**Day 1 - Arnold steals half:**\n- 48 \u00f7 2 = 24 bananas stolen\n- Remaining: 48 - 24 = **24 bananas**\n\n**Day 2 - Gunther adds 25, then Arnold steals 12:**\n- After adding: 24 + 25 = 49 bananas\n- After Arnold steals: 49 - 12 = **37 bananas**\n\n**Day 3 - Gunther adds 6:**\n- 37 + 6 = **43 bananas**\n\n## Final Answer\n\nGunther found **43 bananas** in the pile.",
+  "gold_answer": "43",
+  "input_tokens": 301,
+  "output_tokens": 195,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6223,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

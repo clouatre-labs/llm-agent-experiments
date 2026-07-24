@@ -1,0 +1,15 @@
+{
+  "run_id": "run-039",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Mark pays, we can break the calculation down into three steps: the cost of the cars, the tax, and the registration fees.\n\n**1. Cost of the cars:**\nMark buys 12 cars at $20,000 each.\n$12 \\times \\$20,000 = \\$240,000$\n\n**2. Tax on the cars:**\nHe pays a 10% tax on the total cost of the cars.\n$10\\% \\text{ of } \\$240,000 = 0.10 \\times \\$240,000 = \\$24,000$\n\n**3. Registration fees:**\nHe pays $1,000 for registration on each of the 12 cars.\n$12 \\times \\$1,000 = \\$12,000$\n\n**Total Calculation:**\nTotal = Cost of cars + Tax + Registration\nTotal = $\\$240,000 + \\$24,000 + \\$12,000 = \\$276,000$\n\nMark pays **$276,000** for everything.",
+  "gold_answer": "276000",
+  "input_tokens": 270,
+  "output_tokens": 267,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11073,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:43:06Z"
+}

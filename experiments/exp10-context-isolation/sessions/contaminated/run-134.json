@@ -1,0 +1,15 @@
+{
+  "run_id": "run-134",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the percentage of the distance Michael has covered, we follow these steps:\n\n1.  **Calculate total hours traveled:**\n    3 days $\\times$ 24 hours/day = **72 hours**\n\n2.  **Calculate total distance covered:**\n    72 hours $\\times$ 50 km/hr = **3,600 km**\n\n3.  **Calculate the percentage of the total distance (6,000 km):**\n    $\\frac{3,600}{6,000} \\times 100 = 0.6 \\times 100 = \\mathbf{60\\%}$\n\n**Michael has covered 60% of the distance.**",
+  "gold_answer": "60",
+  "input_tokens": 297,
+  "output_tokens": 155,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6164,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:32Z"
+}

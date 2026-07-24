@@ -1,0 +1,15 @@
+{
+  "run_id": "run-010",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the final number of balloons Sally carried into the school, we calculate the changes step-by-step:\n\n1.  **Initial Count:**\n    *   Red: 25\n    *   Green: 7\n    *   Yellow: 12\n    *   **Total:** 44\n\n2.  **The Gust of Wind:**\n    *   **Red balloons burst:** 40% of 25 = $0.40 \\times 25 = 10$ balloons burst.\n    *   Remaining Red: $25 - 10 = 15$.\n    *   **Yellow balloons released:** Half of 12 = 6 balloons released.\n    *   Remaining Yellow: $12 - 6 = 6$.\n    *   Green balloons remain unchanged: 7.\n    *   **Subtotal after wind:** $15 (\\text{red}) + 7 (\\text{green}) + 6 (\\text{yellow}) = 28$ balloons.\n\n3.  **The Blue Balloons:**\n    *   She finds 8 blue balloons in a tree.\n    *   She adds 75% of them to her clutch: $75\\% \\text{ of } 8 = 0.75 \\times 8 = 6$ balloons.\n\n4.  **Final Total:**\n    *   $28 (\\text{current clutch}) + 6 (\\text{new blue balloons}) = 34$.\n\nSally finally carried **34** balloons into the school.",
+  "gold_answer": "34",
+  "input_tokens": 313,
+  "output_tokens": 338,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7669,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:03Z"
+}

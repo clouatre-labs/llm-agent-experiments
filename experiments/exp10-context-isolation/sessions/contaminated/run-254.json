@@ -1,0 +1,15 @@
+{
+  "run_id": "run-254",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Frederick** has **10** plants.\n2.  **Toni** has 60% more than Frederick: $10 + (0.60 \\times 10) = 10 + 6 = \\mathbf{16}$ plants.\n3.  **Shondra** has 7 fewer than Toni: $16 - 7 = \\mathbf{9}$ plants.\n\n**Shondra has 9 plants.**",
+  "gold_answer": "9",
+  "input_tokens": 294,
+  "output_tokens": 113,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3820,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:01Z"
+}

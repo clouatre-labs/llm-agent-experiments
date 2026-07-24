@@ -1,0 +1,15 @@
+{
+  "run_id": "run-120",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many balloons they threw, you can follow these steps:\n\n1.  **Calculate the total number of balloons filled:**\n    10 packs \u00d7 30 balloons per pack = **300 balloons**\n\n2.  **Subtract the number of balloons left over:**\n    300 total balloons - 12 balloons left = **288 balloons**\n\n**They threw 288 balloons.**",
+  "gold_answer": "288",
+  "input_tokens": 268,
+  "output_tokens": 91,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1619,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:33:45Z"
+}

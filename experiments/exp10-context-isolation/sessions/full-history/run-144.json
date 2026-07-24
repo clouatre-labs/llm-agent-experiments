@@ -1,0 +1,15 @@
+{
+  "run_id": "run-144",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the sum of the ages of the three girls, we can calculate each person's age based on the information provided:\n\n1.  **Jessa** is **20** years old.\n2.  **Joan** is five years older than Jessa: $20 + 5 =$ **25** years old.\n3.  **Mary** is two years younger than Joan: $25 - 2 =$ **23** years old.\n\n**Sum of their ages:** $20 + 25 + 23 = 68$\n\nThe sum of the ages of the three girls is **68**.",
+  "gold_answer": "68",
+  "input_tokens": 294,
+  "output_tokens": 138,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2037,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:05Z"
+}

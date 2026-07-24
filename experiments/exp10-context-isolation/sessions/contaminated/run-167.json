@@ -1,0 +1,15 @@
+{
+  "run_id": "run-167",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Oliver must climb **1,000 feet** to reach the elevation of the comb.\n\n**Reasoning:**\n1.  **Stanley's elevation:** 10,000 feet.\n2.  **Comb's fall distance:** 4,000 feet.\n3.  **Comb's final elevation:** 10,000 - 4,000 = 6,000 feet.\n4.  **Oliver's elevation:** 3,000 feet.\n5.  **Distance Oliver must climb:** 6,000 - 3,000 = 3,000 feet.\n\n***Correction:***\n*Wait, let me re-calculate:*\n*   Comb elevation: 6,000 feet.\n*   Oliver elevation: 3,000 feet.\n*   6,000 - 3,000 = **3,000 feet.**",
+  "gold_answer": "3000",
+  "input_tokens": 318,
+  "output_tokens": 214,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6001,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:43Z"
+}

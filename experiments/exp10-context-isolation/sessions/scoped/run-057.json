@@ -1,0 +1,15 @@
+{
+  "run_id": "run-057",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the actual number of people who attended the concert, we need to follow these steps:\n\n1.  **Identify the reported number:** Courtney reported **48** people.\n2.  **Identify the error:** Kelly stated that Courtney overstated the number by **20%**. This means the reported number (48) is 120% of the actual attendance.\n3.  **Set up the equation:** Let $x$ be the actual number of people.\n    $$x + 0.20x = 48$$\n    $$1.20x = 48$$\n4.  **Solve for $x$:**\n    $$x = \\frac{48}{1.20}$$\n    $$x = 40$$\n\n**Answer:**\nIf Kelly was right, **40** people really attended the concert.",
+  "gold_answer": "40",
+  "input_tokens": 254,
+  "output_tokens": 186,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5300,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:31Z"
+}

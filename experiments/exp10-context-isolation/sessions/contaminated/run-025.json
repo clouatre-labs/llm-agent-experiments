@@ -1,0 +1,15 @@
+{
+  "run_id": "run-025",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Scarlett spent, we need to add up the cost of each item:\n\n*   **Aquarium:** $10.00\n*   **Rocks:** 2 bags \u00d7 $2.50 = $5.00\n*   **Coral:** 3 pieces \u00d7 $2.00 = $6.00\n*   **Fish:** 20 fish \u00d7 $0.50 = $10.00\n*   **Fish food:** $2.00\n\n**Total Calculation:**\n$10.00 + $5.00 + $6.00 + $10.00 + $2.00 = **$33.00**\n\nScarlett spent **$33.00**.",
+  "gold_answer": "33",
+  "input_tokens": 315,
+  "output_tokens": 168,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 14343,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:12Z"
+}

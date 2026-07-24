@@ -1,0 +1,15 @@
+{
+  "run_id": "run-000",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Allen's age 10 years from now, we first need to determine his current age using the ratio provided.\n\n**1. Set up the equation for their current ages:**\nThe ratio of Darrell's age to Allen's age is $7:11$. We can represent their ages as:\n*   Darrell's age $= 7x$\n*   Allen's age $= 11x$\n\n**2. Use the total age to solve for $x$:**\nThe sum of their ages is $162$.\n$$7x + 11x = 162$$\n$$18x = 162$$\n$$x = \\frac{162}{18}$$\n$$x = 9$$\n\n**3. Calculate Allen's current age:**\nSubstitute $x = 9$ into the expression for Allen's age:\n$$\\text{Allen's current age} = 11 \\times 9 = 99$$\n\n**4. Calculate Allen's age 10 years from now:**\n$$\\text{Allen's future age} = 99 + 10 = 109$$\n\n**Answer:**\nAllen's age 10 years from now will be **109**.",
+  "gold_answer": "109",
+  "input_tokens": 262,
+  "output_tokens": 280,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7236,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:54Z"
+}

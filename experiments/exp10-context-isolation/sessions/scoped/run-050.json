@@ -1,0 +1,15 @@
+{
+  "run_id": "run-050",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how old Jerry will be in 3 years, we first need to determine his current age.\n\n**1. Find Jerry's current age:**\n*   Let $x$ be Jerry's current age.\n*   Five years ago, Jerry was $x - 5$.\n*   The problem states that his current age is twice what he was 5 years ago:\n    $x = 2(x - 5)$\n*   Solve for $x$:\n    $x = 2x - 10$\n    $10 = x$\n*   Jerry is currently **10 years old**.\n\n**2. Find Jerry's age in 3 years:**\n*   $10 + 3 = 13$\n\nJerry will be **13 years old** in 3 years.",
+  "gold_answer": "13",
+  "input_tokens": 258,
+  "output_tokens": 180,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2559,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:01Z"
+}

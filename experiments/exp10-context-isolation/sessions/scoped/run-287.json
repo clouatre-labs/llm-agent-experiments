@@ -1,0 +1,15 @@
+{
+  "run_id": "run-287",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate Watson's earnings for April, we first need to determine his weekly earnings and then calculate how many weeks (or pay periods) are in April.\n\n**1. Calculate Weekly Earnings:**\n*   **Hourly Pay:** 10 hours/day \u00d7 5 days/week = 50 hours/week.\n*   **Weekly Base Pay:** 50 hours \u00d7 $10/hour = $500.\n*   **Weekly Bonus:** $300 (since the company performed well).\n*   **Total Weekly Pay:** $500 + $300 = **$800 per week.**\n\n**2. Calculate Monthly Earnings:**\nThe calculation for a month can vary slightly depending on whether you count exact days or standard work weeks. However, in standard mathematical word problems, we look at the number of weeks in the specific month.\n\n*   **April has 30 days.**\n*   30 days \u00f7 7 days per week \u2248 **4.28 weeks.**\n\nIn a standard payroll context, April contains **4 full weeks** plus 2 extra days. Since Watson works a 5-day work week, those 2 extra days would typically fall into a 5th pay period.\n\n*   **If calculating by 4 full weeks:** 4 weeks \u00d7 $800 = **$3,200**\n*   **If calculating by exact days (30 days / 7):** 4.2857 weeks \u00d7 $800 \u2248 **$3,428.57**\n\n**Standard Answer:**\nIn most textbook scenarios, a month is treated as having 4 weeks.\n**Watson made $3,200.**",
+  "gold_answer": "3200",
+  "input_tokens": 252,
+  "output_tokens": 367,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5941,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:24Z"
+}

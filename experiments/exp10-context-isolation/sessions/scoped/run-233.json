@@ -1,0 +1,15 @@
+{
+  "run_id": "run-233",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of Lego pieces Johnny picks up, we need to calculate the number of pieces in each of the three sets and then add them together.\n\n1.  **First set:** 500 pieces\n2.  **Second set:** 3 times more than the first set\n    *   $500 \\times 3 = 1,500$ pieces\n3.  **Third set:** 1/4 the number of pieces in the first set\n    *   $500 \\div 4 = 125$ pieces\n\n**Total calculation:**\n$500 + 1,500 + 125 = 2,125$\n\nJohnny picks up **2,125** blocks.",
+  "gold_answer": "2125",
+  "input_tokens": 261,
+  "output_tokens": 165,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5915,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:12Z"
+}

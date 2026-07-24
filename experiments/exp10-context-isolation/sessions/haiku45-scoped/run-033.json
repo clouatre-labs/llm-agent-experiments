@@ -1,0 +1,15 @@
+{
+  "run_id": "run-033",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Elvis's Distance from Home\n\nLet me solve this step-by-step, ignoring the unrelated text.\n\n**Step 1: Calculate distance traveled west**\n- Time traveling west: 5 hours\n- Speed: 18 mph\n- Distance west = 5 hours \u00d7 18 mph = 90 miles\n\n**Step 2: Calculate distance traveled east**\n- Time traveling east: 8 hours\n- Speed: 18 mph\n- Distance east = 8 hours \u00d7 18 mph = 144 miles\n\n**Step 3: Calculate net distance from home**\nSince Elvis travels west first, then turns around and travels east:\n- Net distance = Distance east - Distance west\n- Net distance = 144 miles - 90 miles = 54 miles\n\n**Final Answer: Elvis is 54 miles from his house, in the east direction (opposite from where he started).**",
+  "gold_answer": "54",
+  "input_tokens": 258,
+  "output_tokens": 205,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3182,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

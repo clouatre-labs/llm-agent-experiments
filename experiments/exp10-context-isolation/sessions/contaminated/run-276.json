@@ -1,0 +1,15 @@
+{
+  "run_id": "run-276",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Jessica pays in a year, we first calculate her total monthly minimum payments and then apply her desired increase.\n\n1.  **Calculate total monthly minimum payments:**\n    *   Student loans: $300\n    *   Credit card: $200\n    *   Mortgage: $500\n    *   **Total Minimum Monthly Payment:** $300 + $200 + $500 = **$1,000**\n\n2.  **Calculate the monthly payment with a 50% increase:**\n    *   50% of $1,000 is $500.\n    *   $1,000 (minimum) + $500 (extra) = **$1,500 per month.**\n\n3.  **Calculate the total annual payment:**\n    *   $1,500 per month \u00d7 12 months = **$18,000.**\n\nJessica pays **$18,000** in a year.",
+  "gold_answer": "18000",
+  "input_tokens": 313,
+  "output_tokens": 227,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2358,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:04Z"
+}

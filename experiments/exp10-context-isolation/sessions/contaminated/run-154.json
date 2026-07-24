@@ -1,0 +1,15 @@
+{
+  "run_id": "run-154",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of clouds Alice counted across the five days, we calculate the amount for each day based on the rule that the count doubles each day:\n\n*   **Monday:** 3 clouds\n*   **Tuesday:** 3 \u00d7 2 = 6 clouds\n*   **Wednesday:** 6 \u00d7 2 = 12 clouds\n*   **Thursday:** 12 \u00d7 2 = 24 clouds\n*   **Friday:** 24 \u00d7 2 = 48 clouds\n\n**Total count:** 3 + 6 + 12 + 24 + 48 = **93 clouds**",
+  "gold_answer": "93",
+  "input_tokens": 282,
+  "output_tokens": 135,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1978,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:35Z"
+}

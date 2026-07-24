@@ -1,0 +1,15 @@
+{
+  "run_id": "run-243",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount Pauline spent, we need to calculate the cost for the first 5 years and the cost for the subsequent 3 years separately.\n\n**1. Calculate the cost for the first 5 years:**\n*   **Visits per year:** 3\n*   **Cost per visit:** $2\n*   **Total visits in 5 years:** $3 \\text{ visits/year} \\times 5 \\text{ years} = 15 \\text{ visits}$\n*   **Total cost for first 5 years:** $15 \\text{ visits} \\times \\$2 = \\$30$\n\n**2. Calculate the cost for the next 3 years:**\n*   **New cost per visit:** The original cost ($2) increased by 150%.\n    *   Increase amount: $\\$2 \\times 1.50 = \\$3$\n    *   New price: $\\$2 + \\$3 = \\$5$\n*   **Total visits in 3 years:** $3 \\text{ visits/year} \\times 3 \\text{ years} = 9 \\text{ visits}$\n*   **Total cost for next 3 years:** $9 \\text{ visits} \\times \\$5 = \\$45$\n\n**3. Calculate the total expenditure:**\n*   $\\$30 \\text{ (first 5 years)} + \\$45 \\text{ (next 3 years)} = \\$75$\n\nPauline spent a total of **$75** on all visits to the museum.",
+  "gold_answer": "75",
+  "input_tokens": 252,
+  "output_tokens": 332,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 11730,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:20Z"
+}

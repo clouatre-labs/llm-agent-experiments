@@ -1,0 +1,15 @@
+{
+  "run_id": "run-065",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here is the answer to the math problem:\n\n**Caroline is 24 years old.**\n\n**Reasoning:**\n1. **Chris** is 4.\n2. **Ben** is two times older than Chris (4 \u00d7 2 = 8).\n3. **Caroline** is three times older than Ben (8 \u00d7 3 = 24).",
+  "gold_answer": "24",
+  "input_tokens": 295,
+  "output_tokens": 84,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2270,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:11Z"
+}

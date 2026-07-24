@@ -1,0 +1,15 @@
+{
+  "run_id": "run-009",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Airplane Flights Problem\n\nLet me work through this step-by-step.\n\n## Step 1: Find the total flights of the first plane\n\nThe second plane:\n- Flies exclusively to Poland\n- Makes 44 trips per day\n- This equals **half** the number of trips the first plane makes\n\nTherefore:\n- First plane's total flights = 44 \u00d7 2 = **88 flights**\n\n## Step 2: Break down the first plane's flights\n\nThe first plane's 88 flights are distributed as:\n- **Greece**: 3/4 of flights = 3/4 \u00d7 88 = 66 flights\n- **Remaining flights**: 88 - 66 = 22 flights\n\n## Step 3: Split the remaining flights\n\nThe remaining 22 flights are split equally between France and Germany:\n- **France**: 22 \u00f7 2 = **11 flights**\n- **Germany**: 22 \u00f7 2 = 11 flights\n\n## Answer\n\nThe first plane takes **11 flights to France** in one day.",
+  "gold_answer": "11",
+  "input_tokens": 268,
+  "output_tokens": 255,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6508,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:30Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-091",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of water balloons the girls had, we can break the problem down into two steps:\n\n**1. Initial amount:**\n*   **Friends:** 4 friends \u00d7 2 balloons each = 8 balloons\n*   **Maria:** 1 balloon\n*   **Subtotal:** 8 + 1 = **9 balloons**\n\n**2. Amount added by Mom:**\n*   **Total people:** 4 friends + 1 Maria = 5 people\n*   **New balloons:** 5 people \u00d7 3 balloons each = **15 balloons**\n\n**3. Total calculation:**\n*   9 (initial) + 15 (added) = **24 balloons**\n\nThe girls had a total of **24** water balloons.",
+  "gold_answer": "24",
+  "input_tokens": 298,
+  "output_tokens": 163,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1172,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:16Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-163",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to your components:\n\n**Math Problem Solution:**\n*   **Maggie:** She had $60 and spent 1/4 ($15). She has **$45** left.\n*   **Riza:** She had $60 and spent 1/3 ($20). She has **$40** left.\n*   **Total remaining:** $45 + $40 = **$85**.\n\n**Summary of the Text Blocks:**\n1.  **Dialogue:** A Planner and an Executor are coordinating a schedule for a team standup (Monday at 10 AM) and a quarterly review (Thursday, 1 PM\u20133 PM), including stakeholder invites and agenda preparation.\n2.  **Literature Review Snippet:** A collection of academic-style sentences discussing methodology, context, research debates, and experimental design, interspersed with a pangram (\"The quick brown fox...\").",
+  "gold_answer": "85",
+  "input_tokens": 292,
+  "output_tokens": 201,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 19840,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:27Z"
+}

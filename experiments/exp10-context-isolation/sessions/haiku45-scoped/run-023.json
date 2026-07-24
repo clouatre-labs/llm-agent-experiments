@@ -1,0 +1,15 @@
+{
+  "run_id": "run-023",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Ellen's Diet Cost Problem\n\nLet me work through this step-by-step.\n\n**Given information:**\n- Ellen eats: 2 carrots, 1 salad, and 1 yogurt every day\n- Salad costs: $6\n- Yogurt costs: half the price of salad\n- Total cost: $11\n- Find: Cost of one carrot\n\n**Step 1: Find the yogurt cost**\n- Yogurt = \u00bd \u00d7 Salad cost\n- Yogurt = \u00bd \u00d7 $6 = $3\n\n**Step 2: Find the total cost of salad and yogurt**\n- Salad + Yogurt = $6 + $3 = $9\n\n**Step 3: Find the total cost of 2 carrots**\n- Total cost - (Salad + Yogurt) = Cost of 2 carrots\n- $11 - $9 = $2\n\n**Step 4: Find the cost of one carrot**\n- Cost of one carrot = $2 \u00f7 2 = $1\n\n**Answer: Ellen pays $1 for one carrot every day.**",
+  "gold_answer": "1",
+  "input_tokens": 266,
+  "output_tokens": 273,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 4075,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

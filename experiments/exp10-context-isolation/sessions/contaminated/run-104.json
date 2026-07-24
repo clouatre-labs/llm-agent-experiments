@@ -1,0 +1,15 @@
+{
+  "run_id": "run-104",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Cho's distance:** 14 km/h \u00d7 8 hours = **112 km**\n2.  **Chloe's distance:** 9 km/h \u00d7 5 hours = **45 km**\n3.  **Difference:** 112 km - 45 km = **67 km**\n\n**Cho hiked 67 kilometers farther than Chloe.**",
+  "gold_answer": "67",
+  "input_tokens": 290,
+  "output_tokens": 98,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3962,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:22Z"
+}

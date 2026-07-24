@@ -1,0 +1,15 @@
+{
+  "run_id": "run-102",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of cars towed, we first need to break down the week into its constituent days and the number of cars towed each day.\n\n**1. Identify the number of days in a week:**\nA week has 7 days.\n\n**2. Calculate the cars towed during the first three days:**\nThe truck towed 10 cars per day for the first 3 days.\n$3 \\text{ days} \\times 10 \\text{ cars/day} = 30 \\text{ cars}$\n\n**3. Calculate the cars towed during the remaining days:**\nThe remaining days are $7 - 3 = 4$ days.\nThe number of cars towed on these days is \"four fewer\" than the initial amount (10).\n$10 - 4 = 6 \\text{ cars per day}$\n$4 \\text{ days} \\times 6 \\text{ cars/day} = 24 \\text{ cars}$\n\n**4. Calculate the total for the week:**\n$30 \\text{ cars (first 3 days)} + 24 \\text{ cars (remaining 4 days)} = 54 \\text{ cars}$\n\n**Total number of cars towed: 54**",
+  "gold_answer": "54",
+  "input_tokens": 253,
+  "output_tokens": 268,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2104,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:32:01Z"
+}

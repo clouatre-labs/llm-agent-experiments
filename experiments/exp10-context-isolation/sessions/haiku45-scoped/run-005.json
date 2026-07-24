@@ -1,0 +1,15 @@
+{
+  "run_id": "run-005",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving Kim's Sleep Problem\n\nLet me work through this step-by-step.\n\n## Given Information:\n- Normal sleep time: 10 p.m. to 6 a.m.\n- Sleepwalking incident: 2:15 a.m. to 2:38 a.m.\n- She woke up 5 minutes earlier than usual (at 5:55 a.m. instead of 6 a.m.)\n\n## Calculation:\n\n**Step 1: Calculate normal sleep duration**\n- From 10 p.m. to 6 a.m. = 8 hours = 480 minutes\n\n**Step 2: Account for waking up 5 minutes earlier**\n- She woke at 5:55 a.m. instead of 6 a.m.\n- This means she was in bed 5 minutes less\n- Time in bed: 480 - 5 = 475 minutes\n\n**Step 3: Subtract sleepwalking time from sleep time**\n- Sleepwalking from 2:15 a.m. to 2:38 a.m. = 23 minutes\n- During sleepwalking, she was not sleeping on her bed\n- Sleep on bed: 475 - 23 = 452 minutes\n\n## Final Answer:\n**Kim slept on her bed for 452 minutes** (or 7 hours and 32 minutes)",
+  "gold_answer": "452",
+  "input_tokens": 290,
+  "output_tokens": 338,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 6992,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:31Z"
+}

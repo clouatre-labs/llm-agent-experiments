@@ -1,0 +1,15 @@
+{
+  "run_id": "run-079",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total kilograms of rice given to the cousin and the brother, follow these steps:\n\n1.  **Calculate the total number of sacks given away:**\n    *   Sacks given to cousin: 3\n    *   Sacks given to brother: 4\n    *   Total sacks given: $3 + 4 = 7$ sacks\n\n2.  **Calculate the total weight in kilograms:**\n    *   Weight per sack: 25 kg\n    *   Total weight: $7 \\text{ sacks} \\times 25 \\text{ kg/sack} = 175 \\text{ kg}$\n\n**Answer:**\nGoldy gave **175 kilograms** of rice to her cousin and brother.",
+  "gold_answer": "175",
+  "input_tokens": 258,
+  "output_tokens": 158,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3327,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:30:25Z"
+}

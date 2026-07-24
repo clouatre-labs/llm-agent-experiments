@@ -1,0 +1,15 @@
+{
+  "run_id": "run-007",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To calculate the total number of utensils Jonathan has remaining, we follow these steps:\n\n1.  **Determine the number of measuring cups:**\n    Jonathan has two dozen cups.\n    $2 \\times 12 = 24$ cups.\n\n2.  **Determine the initial number of measuring spoons:**\n    He has $2/3$ as many spoons as cups.\n    $\\frac{2}{3} \\times 24 = 16$ spoons.\n\n3.  **Calculate the remaining spoons after the gift:**\n    He gifts 6 spoons to Pedro.\n    $16 - 6 = 10$ spoons remaining.\n\n4.  **Calculate the total number of utensils remaining:**\n    Total = (Remaining spoons) + (Measuring cups)\n    $10 + 24 = 34$\n\n**Jonathan has 34 utensils remaining.**",
+  "gold_answer": "34",
+  "input_tokens": 296,
+  "output_tokens": 191,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6914,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:39Z"
+}

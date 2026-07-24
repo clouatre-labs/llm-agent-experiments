@@ -1,0 +1,15 @@
+{
+  "run_id": "run-161",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Each of Ray's friends received **4** lollipops.\n\n**Calculation:**\n1. Total lollipops: 25\n2. Lollipops Ray kept: 5\n3. Remaining lollipops: 25 - 5 = 20\n4. Shared among 4 friends: 20 \u00f7 4 = 4",
+  "gold_answer": "5",
+  "input_tokens": 293,
+  "output_tokens": 77,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3277,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:10Z"
+}

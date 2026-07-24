@@ -1,0 +1,15 @@
+{
+  "run_id": "run-014",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many questions Mark left incomplete, we need to calculate the number of questions he finished for each test and subtract that from the total number of questions.\n\n**Test 1:**\n*   **Total questions:** 75\n*   **Rate:** 5 questions per hour\n*   **Time spent:** 8 hours\n*   **Questions completed:** $5 \\text{ questions/hour} \\times 8 \\text{ hours} = 40 \\text{ questions}$\n*   **Questions incomplete:** $75 - 40 = 35 \\text{ questions}$\n\n**Test 2:**\n*   **Total questions:** 100\n*   **Rate:** 5 questions per hour\n*   **Time spent:** 6 hours\n*   **Questions completed:** $5 \\text{ questions/hour} \\times 6 \\text{ hours} = 30 \\text{ questions}$\n*   **Questions incomplete:** $100 - 30 = 70 \\text{ questions}$\n\n**Total Incomplete Questions:**\n$35 \\text{ (from Test 1)} + 70 \\text{ (from Test 2)} = 105 \\text{ questions}$\n\nMark left **105 questions** incomplete.",
+  "gold_answer": "105",
+  "input_tokens": 252,
+  "output_tokens": 278,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5826,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:53Z"
+}

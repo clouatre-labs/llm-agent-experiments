@@ -1,0 +1,15 @@
+{
+  "run_id": "run-024",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many points Erin had before, we can follow these steps:\n\n1.  **Determine Sara's points:** Sara scored **8** points.\n2.  **Determine Erin's current points:** The problem states Erin now has three times more points than Sara.\n    *   $8 \\times 3 = 24$ points.\n3.  **Calculate Erin's previous points:** Erin's current total is 24, and we know she just scored 14 points to get there.\n    *   $24 - 14 = 10$ points.\n\nErin had **10** points before.",
+  "gold_answer": "18",
+  "input_tokens": 251,
+  "output_tokens": 141,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1528,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:53Z"
+}

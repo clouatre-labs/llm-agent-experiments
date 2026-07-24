@@ -1,0 +1,15 @@
+{
+  "run_id": "run-246",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To reach their goal, the sisters need to collect **36** more signatures.\n\n**Calculation:**\n1.  **Current total:** 20 (Carol) + 44 (Jennifer) = 64 signatures.\n2.  **Goal:** 100 signatures.\n3.  **Remaining needed:** 100 - 64 = 36 signatures.",
+  "gold_answer": "36",
+  "input_tokens": 291,
+  "output_tokens": 84,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 939,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:56Z"
+}

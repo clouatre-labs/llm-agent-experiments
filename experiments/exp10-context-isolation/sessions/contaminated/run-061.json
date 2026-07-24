@@ -1,0 +1,15 @@
+{
+  "run_id": "run-061",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total duration of the caroling, you can calculate the time for each song and then add them together:\n\n1.  **\"Deck the Halls\" (twice):** $150 \\text{ seconds} \\times 2 = 300 \\text{ seconds}$\n2.  **\"Jingle Bells\" (once):** $240 \\text{ seconds} \\times 1 = 240 \\text{ seconds}$\n3.  **Total time:** $300 + 240 = 540 \\text{ seconds}$\n\nTo make this easier to read, you can convert the seconds into minutes:\n$540 \\div 60 = 9 \\text{ minutes}$\n\nThe choir will be caroling for **9 minutes**.",
+  "gold_answer": "540",
+  "input_tokens": 304,
+  "output_tokens": 172,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2651,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:10Z"
+}

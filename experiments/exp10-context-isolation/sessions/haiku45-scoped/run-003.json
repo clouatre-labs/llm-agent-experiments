@@ -1,0 +1,15 @@
+{
+  "run_id": "run-003",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Solving the Lap Problem\n\nLet me work through this step by step.\n\n**Bethany's laps:**\n- Bethany can run 10 laps in one hour\n\n**Trey's laps:**\n- Trey can run 4 more laps than Bethany\n- Trey = 10 + 4 = 14 laps\n\n**Shaelyn's laps:**\n- Shaelyn can run half as many laps as Trey\n- Shaelyn = 14 \u00f7 2 = 7 laps\n\n**Quinn's laps:**\n- Quinn can run 2 fewer laps than Shaelyn\n- Quinn = 7 - 2 = 5 laps\n\n**Difference between Bethany and Quinn:**\n- Bethany - Quinn = 10 - 5 = **5 laps**\n\nBethany can run **5 more laps** compared to Quinn.",
+  "gold_answer": "5",
+  "input_tokens": 282,
+  "output_tokens": 225,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 4909,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:29Z"
+}

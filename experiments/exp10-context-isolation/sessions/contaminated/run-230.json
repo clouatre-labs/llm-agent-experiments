@@ -1,0 +1,15 @@
+{
+  "run_id": "run-230",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Initial State:**\n    *   Boris: 100 apples\n    *   Beck: 77 apples (100 - 23)\n\n2.  **After Boris gives Beck 10 apples:**\n    *   Boris: 90 apples (100 - 10)\n    *   Beck: 87 apples (77 + 10)\n\n3.  **The Difference:**\n    *   90 - 87 = 3\n\n**Beck has 3 fewer apples than Boris now.**",
+  "gold_answer": "3",
+  "input_tokens": 293,
+  "output_tokens": 133,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4162,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:55Z"
+}

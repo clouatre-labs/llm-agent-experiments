@@ -1,0 +1,15 @@
+{
+  "run_id": "run-017",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem:\n\n1.  **Calculate the cost of the erasers:** 6 erasers \u00d7 $2 each = **$12**\n2.  **Calculate the cost of the pencils:** 8 pencils \u00d7 $3 each = **$24**\n3.  **Calculate the total cost:** $12 + $24 = **$36**\n\nThe total cost is **$36**.",
+  "gold_answer": "36",
+  "input_tokens": 260,
+  "output_tokens": 92,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2542,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:42:50Z"
+}

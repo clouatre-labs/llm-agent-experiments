@@ -1,0 +1,15 @@
+{
+  "run_id": "run-054",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Kylie collects **50** shells on Tuesday.\n\n**Here is the breakdown:**\n1.  **Monday (Robert):** 20 shells\n2.  **Monday (Kylie):** 20 + 5 = 25 shells\n3.  **Tuesday (Kylie):** 25 \u00d7 2 = 50 shells",
+  "gold_answer": "50",
+  "input_tokens": 299,
+  "output_tokens": 77,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 870,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:07Z"
+}

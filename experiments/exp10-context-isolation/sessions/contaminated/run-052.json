@@ -1,0 +1,15 @@
+{
+  "run_id": "run-052",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Total water:** 24 liters.\n2.  **The two girls:** Each got 1/6 of 24 liters.\n    *   $24 \\times \\frac{1}{6} = 4$ liters per girl.\n    *   Two girls $\\times$ 4 liters = **8 liters total** for the girls.\n3.  **The boy:** Got **6 liters**.\n4.  **Total water distributed:** $8 + 6 = 14$ liters.\n5.  **Water remaining:** $24 - 14 = 10$ liters.\n\n**There were 10 liters of water left.**",
+  "gold_answer": "10",
+  "input_tokens": 290,
+  "output_tokens": 159,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2865,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:08Z"
+}

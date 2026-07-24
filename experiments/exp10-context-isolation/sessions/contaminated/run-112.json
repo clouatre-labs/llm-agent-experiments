@@ -1,0 +1,15 @@
+{
+  "run_id": "run-112",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long the winner will be waiting, we need to calculate the travel time for both Steve and Tim.\n\n**1. Calculate Steve's time:**\n*   **Distance:** 3 miles. Since the speed is in feet, we convert miles to feet (1 mile = 5,280 feet).\n    *   $3 \\times 5,280 = 15,840$ feet.\n*   **Speed:** 440 feet per minute.\n*   **Time:** $\\text{Distance} \\div \\text{Speed} = 15,840 \\div 440 = 36$ minutes.\n\n**2. Calculate Tim's time:**\n*   **Distance:** 2 miles.\n    *   $2 \\times 5,280 = 10,560$ feet.\n*   **Speed:** 264 feet per minute.\n*   **Time:** $\\text{Distance} \\div \\text{Speed} = 10,560 \\div 264 = 40$ minutes.\n\n**3. Calculate the difference:**\n*   Steve finishes in 36 minutes.\n*   Tim finishes in 40 minutes.\n*   **Waiting time:** $40 - 36 = 4$ minutes.\n\nThe winner (Steve) will be waiting at his house for **4 minutes** before the loser (Tim) finishes.",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 320,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 10489,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:30Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-099",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many pretzels Edgar's brother eats in a week, follow these steps:\n\n1.  **Find out how many pretzels the brother eats per day:**\n    Edgar eats 18 pretzels. His brother eats $1/2$ as many.\n    $18 \\times \\frac{1}{2} = 9$ pretzels per day.\n\n2.  **Find out how many pretzels the brother eats in a week:**\n    There are 7 days in a week.\n    $9 \\text{ pretzels/day} \\times 7 \\text{ days} = 63$ pretzels.\n\nEdgar's brother eats **63** pretzels in a week.",
+  "gold_answer": "63",
+  "input_tokens": 252,
+  "output_tokens": 150,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2814,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:31:54Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-074",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here is the answer to the math problem embedded in the dialogue:\n\n**Tom pays $720 in a year.**\n\n**Calculation:**\n*   **Monthly cost:** 4 car washes \u00d7 $15 = $60 per month\n*   **Annual cost:** $60 \u00d7 12 months = $720",
+  "gold_answer": "720",
+  "input_tokens": 295,
+  "output_tokens": 77,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3064,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:14Z"
+}

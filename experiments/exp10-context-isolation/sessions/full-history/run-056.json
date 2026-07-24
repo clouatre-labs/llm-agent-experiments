@@ -1,0 +1,15 @@
+{
+  "run_id": "run-056",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the combined weight of Grace and Alex, follow these steps:\n\n1.  **Determine Grace's weight:**\n    Grace = 125 pounds.\n\n2.  **Calculate Alex's weight:**\n    Alex weighs 2 pounds less than 4 times Grace's weight.\n    $4 \\times 125 = 500$\n    $500 - 2 = 498$ pounds.\n\n3.  **Calculate the combined weight:**\n    $125 \\text{ (Grace)} + 498 \\text{ (Alex)} = 623$ pounds.\n\n**Their combined weight is 623 pounds.**",
+  "gold_answer": "623",
+  "input_tokens": 298,
+  "output_tokens": 150,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 8063,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:50Z"
+}

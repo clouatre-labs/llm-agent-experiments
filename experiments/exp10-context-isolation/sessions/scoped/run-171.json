@@ -1,0 +1,15 @@
+{
+  "run_id": "run-171",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long it will take Phineas Frog to return home, we need to calculate the time spent on land and the time spent in the water separately, then add them together.\n\n**1. Determine the distances:**\nThe total distance is 200 yards.\n*   **Distance on land:** Half of 200 yards = 100 yards.\n*   **Distance in water:** Half of 200 yards = 100 yards.\n\n**2. Calculate the time for each segment:**\n*   **Time hopping on land:** \n    $$\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}} = \\frac{100\\text{ yards}}{20\\text{ yards/minute}} = 5\\text{ minutes}$$\n*   **Time swimming in water:** \n    $$\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}} = \\frac{100\\text{ yards}}{10\\text{ yards/minute}} = 10\\text{ minutes}$$\n\n**3. Calculate the total time:**\n$$5\\text{ minutes (land)} + 10\\text{ minutes (water)} = 15\\text{ minutes}$$\n\nIt will take Phineas Frog **15 minutes** to return home.",
+  "gold_answer": "15",
+  "input_tokens": 259,
+  "output_tokens": 285,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3468,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:54Z"
+}

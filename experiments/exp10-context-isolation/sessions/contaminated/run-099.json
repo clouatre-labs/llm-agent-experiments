@@ -1,0 +1,15 @@
+{
+  "run_id": "run-099",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the answers to the specific components:\n\n**Math Problem Solution:**\n*   Edgar eats 18 pretzels a day.\n*   His brother eats 1/2 as many: $18 \\times 0.5 = 9$ pretzels a day.\n*   In a week (7 days): $9 \\times 7 = 63$.\n*   **Answer:** His brother eats **63 pretzels** in a week.\n\n**Summary of the Dialogue:**\nThe Planner and Executor are coordinating next week's schedule. They have set a team standup for **Monday at 10 AM** and a quarterly review for **Thursday from 1 PM to 3 PM**. The Executor will invite the product team and engineering leads and will draft an agenda for feedback before sending out the formal calendar invites.\n\n**Analysis of the Final Paragraph:**\nThe final section of the text is a collection of academic filler sentences, a pangram (\"The quick brown fox...\"), and formal research-oriented statements. It does not contain a specific question or instruction, but rather serves as a demonstration of formal writing styles and linguistic patterns.",
+  "gold_answer": "63",
+  "input_tokens": 299,
+  "output_tokens": 245,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3367,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:20Z"
+}

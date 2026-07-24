@@ -1,0 +1,15 @@
+{
+  "run_id": "run-159",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much change Carl receives, we can follow these steps:\n\n1.  **Calculate the total number of cookies:**\n    10 packs \u00d7 6 cookies per pack = **60 cookies**\n\n2.  **Calculate the total cost of the cookies:**\n    60 cookies \u00d7 $0.10 per cookie = **$6.00**\n\n3.  **Calculate the change:**\n    $10.00 (amount paid) - $6.00 (total cost) = **$4.00**\n\nCarl receives **$4.00** in change.",
+  "gold_answer": "4",
+  "input_tokens": 296,
+  "output_tokens": 131,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4950,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:11Z"
+}

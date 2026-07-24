@@ -1,0 +1,15 @@
+{
+  "run_id": "run-118",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem embedded in your text:\n\n1.  **Find the number of blue ties:**\n    John spent $200 on blue ties at $40 each.\n    $200 / $40 = **5 blue ties**.\n\n2.  **Find the number of red ties:**\n    He buys twice as many red ties as blue ties.\n    5 * 2 = **10 red ties**.\n\n3.  **Find the cost of one red tie:**\n    Red ties cost 50% more than blue ties ($40).\n    $40 + ($40 * 0.50) = **$60 per red tie**.\n\n4.  **Find the total spent on red ties:**\n    10 red ties * $60 = **$600**.\n\n5.  **Calculate total expenditure:**\n    $200 (blue) + $600 (red) = **$800**.\n\n**John spent $800 on ties.**",
+  "gold_answer": "800",
+  "input_tokens": 292,
+  "output_tokens": 223,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7284,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:30Z"
+}

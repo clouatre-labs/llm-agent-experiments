@@ -1,0 +1,15 @@
+{
+  "run_id": "run-282",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many days it will take for the beanstalk to be taller than Mark's window, we can track its growth day by day:\n\n*   **Starting height:** 4 feet\n*   **Goal:** > 20 feet\n*   **Growth rate:** Doubles every day\n\n**Day-by-day calculation:**\n*   **Day 0:** 4 feet\n*   **Day 1:** 8 feet (4 \u00d7 2)\n*   **Day 2:** 16 feet (8 \u00d7 2)\n*   **Day 3:** 32 feet (16 \u00d7 2)\n\nOn Day 3, the beanstalk reaches 32 feet, which is taller than the 20-foot window.\n\n**Answer:**\nIt will take **3 days**.",
+  "gold_answer": "3",
+  "input_tokens": 266,
+  "output_tokens": 176,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5952,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:23Z"
+}

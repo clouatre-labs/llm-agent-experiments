@@ -1,0 +1,15 @@
+{
+  "run_id": "run-237",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Carlton's team:** 13 players\n2.  **Zeke's team:** 13 + 7 = 20 players\n3.  **Total players:** 13 + 20 = **33 players**",
+  "gold_answer": "33",
+  "input_tokens": 292,
+  "output_tokens": 68,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2901,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:55Z"
+}

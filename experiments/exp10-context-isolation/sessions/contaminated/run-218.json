@@ -1,0 +1,15 @@
+{
+  "run_id": "run-218",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of coins Gretchen has, we can follow these steps:\n\n1.  **Find the number of gold coins:** The problem states she has **70 gold coins**.\n2.  **Find the number of silver coins:** We are told there are 30 more gold coins than silver coins. \n    *   $70 (\\text{gold}) - 30 = 40 \\text{ silver coins}$.\n3.  **Calculate the total:** Add the gold and silver coins together.\n    *   $70 (\\text{gold}) + 40 (\\text{silver}) = 110 \\text{ total coins}$.\n\nGretchen has **110** coins in total.",
+  "gold_answer": "110",
+  "input_tokens": 292,
+  "output_tokens": 157,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6032,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:55Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-139",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many animals Melissa grooms each day, we first need to calculate the total number of animals:\n\n*   **Dogs:** 8\n*   **Cats:** 5\n*   **Birds:** 3\n*   **Horses:** 12\n\n**Total animals:** 8 + 5 + 3 + 12 = **28 animals**\n\nSince there are 7 days in a week, we divide the total number of animals by the number of days:\n28 animals \u00f7 7 days = **4 animals per day**\n\nMelissa will groom **4 animals** each day.",
+  "gold_answer": "4",
+  "input_tokens": 291,
+  "output_tokens": 130,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3987,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:33Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-030",
+  "condition": "scoped",
+  "model_key": "haiku45",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_text": "# Cat Food Duration Problem\n\nLet me solve this step by step.\n\n**Given information:**\n- Imma has 3 cats\n- She feeds them twice a day with 60 grams of cat food\n- Total cat food available: 720 grams\n\n**Step 1: Calculate daily cat food consumption**\n- Feedings per day: 2\n- Cat food per feeding: 60 grams\n- Daily consumption = 2 \u00d7 60 = **120 grams per day**\n\n**Step 2: Calculate how many days the food will last**\n- Total food available: 720 grams\n- Daily consumption: 120 grams\n- Number of days = 720 \u00f7 120 = **6 days**\n\n**Answer: The 720 grams of cat food will last 6 days.**",
+  "gold_answer": "2",
+  "input_tokens": 273,
+  "output_tokens": 194,
+  "stop_reason": "end_turn",
+  "success": true,
+  "latency_ms": 3234,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:40:33Z"
+}

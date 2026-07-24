@@ -1,0 +1,15 @@
+{
+  "run_id": "run-008",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To solve the math problem provided in your text:\n\n1.  **Find the turtle's speed:** The cat is 5 times faster than the turtle. If the cat runs at 15 feet/second, divide the cat's speed by 5.\n    *   $15 \\text{ ft/sec} \\div 5 = 3 \\text{ feet/second}$ (Turtle's speed).\n2.  **Calculate the distance for 40 seconds:** Multiply the turtle's speed by the total time.\n    *   $3 \\text{ ft/sec} \\times 40 \\text{ seconds} = 120 \\text{ feet}$.\n\n**Answer:** The turtle can crawl **120 feet** in 40 seconds.",
+  "gold_answer": "120",
+  "input_tokens": 293,
+  "output_tokens": 168,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3106,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:35Z"
+}

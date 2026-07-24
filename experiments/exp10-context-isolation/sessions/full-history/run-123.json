@@ -1,0 +1,15 @@
+{
+  "run_id": "run-123",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total amount spent on snacks and drinks, we can follow these steps:\n\n1.  **Determine the total number of people:**\n    Aiden + 12 friends + 7 more friends = **20 people**.\n\n2.  **Calculate the number of items per person:**\n    Each person (seat) requires:\n    *   2 drinks\n    *   3 snacks\n    *   Total items per person = **5 items**.\n\n3.  **Calculate the total number of items for the whole group:**\n    20 people \u00d7 5 items per person = **100 items**.\n\n4.  **Calculate the total cost:**\n    Each item (drink or snack) costs $2.\n    100 items \u00d7 $2 = **$200**.\n\n**The group has spent $200 overall on snacks and drinks.**",
+  "gold_answer": "200",
+  "input_tokens": 292,
+  "output_tokens": 186,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7361,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:36:05Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-013",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Saturday movies:** 4\n2.  **Sunday movies:** 2 (half of 4)\n3.  **Total movies per weekend:** 4 + 2 = 6\n4.  **Total movies in 4 weeks:** 6 \u00d7 4 = **24 movies**",
+  "gold_answer": "24",
+  "input_tokens": 282,
+  "output_tokens": 78,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5196,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:01Z"
+}

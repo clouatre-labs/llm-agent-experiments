@@ -1,0 +1,15 @@
+{
+  "run_id": "run-249",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many hours George needs to work, we first need to calculate the total cost of his dental work and then divide that by his hourly wage.\n\n**1. Calculate the total cost:**\n*   **Base price for 2 implants:** $2,000 \u00d7 2 = $4,000\n*   **Porcelain crown extra cost:** $500\n*   **Total gross cost:** $4,000 + $500 = $4,500\n*   **Subtract the deposit already paid:** $4,500 - $600 = $3,900\n*   **Remaining balance due:** **$3,900**\n\n**2. Calculate the hours required:**\n*   **Hourly wage:** $15\n*   **Calculation:** $3,900 \u00f7 $15 = 260\n\nGeorge needs to work **260 hours** to have enough to pay for the dental work.",
+  "gold_answer": "260",
+  "input_tokens": 311,
+  "output_tokens": 214,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6826,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:38:03Z"
+}

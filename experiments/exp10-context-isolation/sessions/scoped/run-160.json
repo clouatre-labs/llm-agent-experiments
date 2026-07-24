@@ -1,0 +1,15 @@
+{
+  "run_id": "run-160",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much each student raised, follow these steps:\n\n1.  **Determine the total amount raised by the students:**\n    Subtract the amount from organizations from the total amount raised.\n    $175,000 (Total) - $50,000 (Organizations) = **$125,000 (Students' total)**\n\n2.  **Calculate the amount raised per student:**\n    Divide the students' total by the number of students.\n    $125,000 \u00f7 20 students = **$6,250**\n\n**Each student raised $6,250.**",
+  "gold_answer": "6250",
+  "input_tokens": 266,
+  "output_tokens": 141,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2458,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:50Z"
+}

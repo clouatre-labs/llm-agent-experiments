@@ -1,0 +1,15 @@
+{
+  "run_id": "run-146",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of letters delivered from Monday to Wednesday, we calculate the amount for each day step-by-step:\n\n**1. Monday:**\nThe problem states Monday's total is **425 letters**.\n\n**2. Tuesday:**\nTuesday's delivery was \"17 more than one-fifth as many as Monday.\"\n*   One-fifth of Monday: $425 \\div 5 = 85$\n*   17 more than that: $85 + 17 = \\mathbf{102 \\text{ letters}}$\n\n**3. Wednesday:**\nWednesday's delivery was \"5 more than twice as many as Tuesday.\"\n*   Twice Tuesday's amount: $102 \\times 2 = 204$\n*   5 more than that: $204 + 5 = \\mathbf{209 \\text{ letters}}$\n\n**4. Total (Monday - Wednesday):**\nAdd the totals for all three days together:\n*   $425 \\text{ (Mon)} + 102 \\text{ (Tue)} + 209 \\text{ (Wed)} = 736$\n\nThe post office delivered **736 letters** from Monday to Wednesday.",
+  "gold_answer": "736",
+  "input_tokens": 251,
+  "output_tokens": 274,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7728,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:52Z"
+}

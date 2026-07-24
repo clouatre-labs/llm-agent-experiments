@@ -1,0 +1,15 @@
+{
+  "run_id": "run-192",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how much Alison spent on athletic gear, we can calculate the cost of each item step-by-step:\n\n1.  **Tank top:** $10\n2.  **Running shorts:** $10 (cost of top) + $5 = $15\n3.  **Tennis shoes:** $48 \u00f7 2 (half price) = $24\n4.  **Athletic socks:** $8 - $2 (coupon) = $6\n\n**Total calculation:**\n$10 + $15 + $24 + $6 = **$55**\n\nAlison spent **$55** on athletic gear.",
+  "gold_answer": "55",
+  "input_tokens": 261,
+  "output_tokens": 140,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1297,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:57Z"
+}

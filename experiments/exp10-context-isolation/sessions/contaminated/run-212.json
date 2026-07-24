@@ -1,0 +1,15 @@
+{
+  "run_id": "run-212",
+  "condition": "contaminated",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To answer the math problem embedded in your text:\n\n1.  **Find Martha's original number of notebooks:** She bought 5 more to reach a total of 7.\n    *   $7 - 5 = 2$ notebooks (Martha's original amount).\n2.  **Find Joseph's number of notebooks:** He had 3 times as many as Martha's original amount.\n    *   $2 \\times 3 = 6$ notebooks.\n3.  **Calculate the difference:** Martha now has 7, and Joseph has 6.\n    *   $7 - 6 = 1$.\n\n**Martha has 1 more notebook than Joseph.**",
+  "gold_answer": "1",
+  "input_tokens": 283,
+  "output_tokens": 147,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5198,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:37:53Z"
+}

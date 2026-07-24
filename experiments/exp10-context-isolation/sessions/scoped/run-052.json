@@ -1,0 +1,15 @@
+{
+  "run_id": "run-052",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many liters of water were left, follow these steps:\n\n1.  **Calculate how much each girl got:**\n    $\\frac{1}{6}$ of $24 = 24 \\div 6 = 4$ liters.\n2.  **Calculate the total amount given to both girls:**\n    $4 \\text{ liters} \\times 2 \\text{ girls} = 8$ liters.\n3.  **Add the amount the boy got:**\n    $8 \\text{ liters (girls)} + 6 \\text{ liters (boy)} = 14$ liters total used.\n4.  **Subtract the total used from the original amount:**\n    $24 \\text{ liters} - 14 \\text{ liters} = 10$ liters.\n\n**There were 10 liters of water left.**",
+  "gold_answer": "10",
+  "input_tokens": 256,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2021,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:28:11Z"
+}

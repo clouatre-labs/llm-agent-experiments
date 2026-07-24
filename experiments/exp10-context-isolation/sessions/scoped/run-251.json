@@ -1,0 +1,15 @@
+{
+  "run_id": "run-251",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total number of people sent by all the schools, we can break the calculation down step-by-step:\n\n1.  **Calculate the number of people per school:**\n    *   **Girls' Team:** 5 players + 1 coach = 6 people\n    *   **Boys' Team:** 5 players + 1 coach = 6 people\n    *   **Total per school:** 6 + 6 = **12 people**\n\n2.  **Calculate the total for all schools:**\n    *   **Number of schools:** 4\n    *   **Total people:** 12 people per school \u00d7 4 schools = **48 people**\n\n**Total: 48 people**",
+  "gold_answer": "48",
+  "input_tokens": 251,
+  "output_tokens": 155,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2226,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:12Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-170",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how many grams of chips you can eat, we need to calculate your remaining calorie allowance and the calorie density of the chips.\n\n**1. Calculate remaining calories:**\n*   Daily target: 2,000 calories\n*   Calories already consumed: 1,800 calories\n*   **Remaining calories: 200 calories** (2,000 - 1,800)\n\n**2. Calculate calories per gram of chips:**\n*   Total calories in the bag: 250 calories/serving \u00d7 5 servings = 1,250 calories\n*   Total weight of the bag: 300 grams\n*   Calories per gram: 1,250 calories \u00f7 300 grams = **4.166... calories per gram**\n\n**3. Calculate how many grams you can eat:**\n*   Remaining calories \u00f7 Calories per gram = Grams allowed\n*   200 calories \u00f7 4.166... calories/gram = **48 grams**\n\n**Answer:**\nYou can eat **48 grams** of chips.",
+  "gold_answer": "48",
+  "input_tokens": 270,
+  "output_tokens": 241,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6855,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:57Z"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-071",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "Based on the text provided, here are the responses to the different components:\n\n**Math Problem Solution:**\n1.  **Total loaves:** 60\n2.  **Morning sales:** Two-thirds of 60 = 40 loaves.\n3.  **Remaining loaves:** 60 - 40 = 20 loaves.\n4.  **Afternoon/Evening sales:** Half of what is left is 10 loaves (20 \u00f7 2 = 10).\n5.  **Afternoon distribution:** Since the 10 loaves are sold *equally* in the afternoon and evening, 10 \u00f7 2 = 5.\n\n**Answer:** 5 loaves of bread are sold in the afternoon.\n\n***\n\n**Summary of the Dialogue (Planner & Executor):**\nThe Planner and Executor coordinated next week's schedule. They set the team standup for Monday at 10 AM and scheduled the quarterly review for Thursday from 1 PM to 3 PM. The Executor will invite the product team and engineering leads, including an agenda that will be drafted and reviewed before being sent out.\n\n***\n\n**Note on the Final Paragraph:**\nThe final paragraph appears to be a blend of academic filler text and a pangram (\"The quick brown fox...\"). It does not contain a specific question or task to perform.",
+  "gold_answer": "10",
+  "input_tokens": 291,
+  "output_tokens": 285,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3432,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:50Z"
+}

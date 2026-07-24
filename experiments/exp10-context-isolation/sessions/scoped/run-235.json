@@ -1,0 +1,15 @@
+{
+  "run_id": "run-235",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find the total points Sasha scored, we can break the problem down step-by-step:\n\n1.  **Sasha's score in the first game:** 14 points.\n2.  **Julie's score in the first game:** Sasha scored 14, and Julie scored 4 fewer than Sasha.\n    *   $14 - 4 = 10$ points.\n3.  **Sasha's score in the second game:** Sasha scored 6 fewer points than Julie's score in the first game.\n    *   $10 - 6 = 4$ points.\n4.  **Sasha's total score:** Add her scores from both games.\n    *   $14 + 4 = 18$ points.\n\nSasha scored a total of **18** points.",
+  "gold_answer": "14",
+  "input_tokens": 258,
+  "output_tokens": 183,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6455,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:13Z"
+}

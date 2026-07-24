@@ -1,0 +1,15 @@
+{
+  "run_id": "run-165",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find out how long Jason needs to walk each day, we can follow these steps:\n\n1.  **Determine the total number of walking days:**\n    Jason walks 4 days a week for 3 weeks.\n    $4 \\text{ days/week} \\times 3 \\text{ weeks} = 12 \\text{ total walking days}$\n\n2.  **Divide the total time by the total number of days:**\n    The total time required is 240 minutes.\n    $240 \\text{ minutes} \\div 12 \\text{ days} = 20 \\text{ minutes per day}$\n\n**Answer:**\nJason has to spend **20 minutes** walking each day.",
+  "gold_answer": "20",
+  "input_tokens": 251,
+  "output_tokens": 156,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4381,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:34:54Z"
+}

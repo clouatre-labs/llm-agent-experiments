@@ -1,0 +1,15 @@
+{
+  "run_id": "run-065",
+  "condition": "scoped",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "To find Caroline's age, we can follow these steps:\n\n1.  **Find Ben's age:** Ben is two times older than Chris. Since Chris is 4, Ben is $4 \\times 2 = 8$.\n2.  **Find Caroline's age:** Caroline is three times older than Ben. Since Ben is 8, Caroline is $8 \\times 3 = 24$.\n\n**Caroline is 24 years old.**",
+  "gold_answer": "24",
+  "input_tokens": 248,
+  "output_tokens": 99,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3883,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:29:34Z"
+}

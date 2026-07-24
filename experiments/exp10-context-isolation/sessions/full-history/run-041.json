@@ -1,0 +1,15 @@
+{
+  "run_id": "run-041",
+  "condition": "full-history",
+  "model_key": "gemma4",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "response_text": "The cost for lunch at Subway is **$160**.\n\nHere is the breakdown:\n*   **Foot-long fish sub:** $40\n*   **Six-inch cold-cut combo sub:** $40 \u00d7 3 = $120\n*   **Total:** $40 + $120 = $160",
+  "gold_answer": "160",
+  "input_tokens": 294,
+  "output_tokens": 76,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2782,
+  "cost_usd": 0.0,
+  "timestamp_utc": "2026-07-24T20:35:41Z"
+}
