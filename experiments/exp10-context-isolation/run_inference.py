@@ -21,12 +21,19 @@ EXP10_DIR = Path(__file__).parent
 # This simulates irrelevant planner/executor history that contaminates the context
 # without leaking the gold answer. Contains no numeric patterns matching GSM8K answers.
 _MOCK_DISTRACTOR = """Planner: We need to schedule the team standup for next week. What time works best?
+
 Executor: I checked everyone's availability. Monday at 10 AM works for the whole team.
+
 Planner: Let's also block out time for the quarterly review on Thursday.
+
 Executor: The conference room is available from 1 PM to 3 PM on Thursday.
+
 Planner: Should we invite the stakeholders to the review session?
+
 Executor: Yes, I'll send out calendar invites to the product team and engineering leads.
+
 Planner: Make sure to include the agenda in the invite so everyone can prepare.
+
 Executor: Good idea. I'll draft the agenda and share it for feedback before sending."""
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
