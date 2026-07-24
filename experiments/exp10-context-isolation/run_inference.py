@@ -17,6 +17,18 @@ from providers import call_bedrock, call_openrouter
 
 EXP10_DIR = Path(__file__).parent
 
+# Mock distractor transcript for the contaminated condition.
+# This simulates irrelevant planner/executor history that contaminates the context
+# without leaking the gold answer. Contains no numeric patterns matching GSM8K answers.
+_MOCK_DISTRACTOR = """Planner: We need to schedule the team standup for next week. What time works best?
+Executor: I checked everyone's availability. Monday at 10 AM works for the whole team.
+Planner: Let's also block out time for the quarterly review on Thursday.
+Executor: The conference room is available from 1 PM to 3 PM on Thursday.
+Planner: Should we invite the stakeholders to the review session?
+Executor: Yes, I'll send out calendar invites to the product team and engineering leads.
+Planner: Make sure to include the agenda in the invite so everyone can prepare.
+Executor: Good idea. I'll draft the agenda and share it for feedback before sending."""
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -47,7 +59,7 @@ def _compute_target_tokens(tasks: list[dict], seed: int) -> int:
     max_tokens = 0
     for task in tasks:
         ctx = build_context(
-            task["question"], "contaminated", history=task["answer"], seed=seed
+            task["question"], "contaminated", history=_MOCK_DISTRACTOR, seed=seed
         )
         tokens = estimate_tokens(ctx)
         max_tokens = max(max_tokens, tokens)
@@ -67,7 +79,7 @@ def run_single(
     context = build_context(
         task=task["question"],
         condition=condition,
-        history=task["answer"],
+        history=_MOCK_DISTRACTOR,
         target_token_count=target_tokens,
         seed=seed,
     )
@@ -160,7 +172,7 @@ def main() -> None:
                 ctx = build_context(
                     task=task["question"],
                     condition=cond,
-                    history=task["answer"],
+                    history=_MOCK_DISTRACTOR,
                     target_token_count=target_tokens,
                     seed=args.seed,
                 )

@@ -66,7 +66,12 @@ class TestExtractPredictedAnswer(unittest.TestCase):
         self.assertEqual(extract_predicted_answer(text), "5")
 
     def test_negative_number(self):
-        """Extracts negative numbers."""
+        """Minus signs are intentionally stripped by extract_predicted_answer.
+
+        The function extracts the last standalone integer/decimal, dropping the
+        sign. A negative temperature of -5 is extracted as "5" because the regex
+        matches the absolute value only.
+        """
         text = "The temperature dropped to -5 degrees."
         self.assertEqual(extract_predicted_answer(text), "5")
 
