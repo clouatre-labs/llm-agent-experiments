@@ -1,0 +1,28 @@
+{
+  "run_id": "run-008",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0008",
+  "question": "For a proper fraction, the numerator is",
+  "gold_answer": "less than denominator",
+  "answer": {
+    "aliases": [
+      "less than the denominator"
+    ],
+    "normalized_aliases": [
+      "less than denominator"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "less than denominator",
+    "type": "FreeForm",
+    "value": "less than the denominator"
+  },
+  "response_text": "It appears you are presenting a pattern of **Few-Shot Prompting** (providing examples to teach a model a task) followed by a transition into **Academic/Formal Filler Text**.\n\nThe input contains two distinct parts:\n\n### 1. The Pattern Analysis (Few-Shot Learning)\nYou are demonstrating a pattern where a Question (Q) is followed by an Answer (A). However, you have introduced an \"error\" or \"incomplete\" pattern:\n\n*   **Example 1:** Complete (Q: Capital of France $\\rightarrow$ A: Paris)\n*   **Example 2:** Incomplete/Broken (Q: Numerator of a proper fraction $\\rightarrow$ A: [No answer provided])\n*   **Example 3:** Complete (Q: Author of Romeo and Juliet $\\rightarrow$ A: Shakespeare)\n*   **Example 4:** Failed Logic (Q: Numerator of a proper fraction $\\rightarrow$ A: \"unknown\")\n\n**The mathematical answer to the missing question is:**\nFor a proper fraction, the numerator is **less than the denominator.**\n\n---\n\n### 2. The Textual Analysis (The \"Filler\" Block)\nThe second half of your prompt is a collection of **\"Academic Placeholder Text.\"** This is a common way to simulate scientific writing. It uses high-level vocabulary and \"hedging\" language (e.g., *\"further analysis is needed,\" \"implications extend beyond,\" \"minimize potential sources of bias\"*) to sound authoritative without actually conveying specific data.\n\n**Key characteristics of this text block:**\n*   **Vagueness:** It mentions \"findings,\" \"results,\" and \"hypotheses\" without defining what they are.\n*   **Standard Academic Phrases:** It uses \"boilerplate\" language found in the Discussion or Methodology sections of research papers.\n*   **Function:** In a machine learning context, this is often used as \"noise\" to see if a model can distinguish between the *instructional pattern* (the Q&A) and the *irrelevant context* (the academic paragraph).\n\n**If you intended for me to complete the pattern or analyze the text, please let me know your specific goal!**",
+  "correct": false,
+  "input_tokens": 180,
+  "output_tokens": 456,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 5037
+}

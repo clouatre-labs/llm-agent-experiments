@@ -1,0 +1,31 @@
+{
+  "run_id": "run-013",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0013",
+  "question": "There are two gymnastics' events in the Olympic games that men compete in but women don't - one is the pommel horse name the other.",
+  "gold_answer": "rings",
+  "answer": {
+    "aliases": [
+      "Fighting Network Rings",
+      "Fighting Network RINGS",
+      "RINGS"
+    ],
+    "normalized_aliases": [
+      "fighting network rings",
+      "rings"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "rings",
+    "type": "WikipediaEntity",
+    "value": "RINGS"
+  },
+  "response_text": "The answer to the question regarding the gymnastics event is the **Still Rings** (or simply the **Rings**).\n\nIn Men's Artistic Gymnastics, there are six events: Floor Exercise, Pommel Horse, Still Rings, Vault, Parallel Bars, and High Bar. Women compete in four events: Vault, Uneven Bars, Balance Beam, and Floor Exercise. Therefore, the men-only events are the Pommel Horse, the Rings, the Parallel Bars, and the High Bar.",
+  "correct": true,
+  "input_tokens": 187,
+  "output_tokens": 102,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2095
+}

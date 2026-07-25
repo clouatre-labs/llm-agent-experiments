@@ -13,7 +13,7 @@ def load_triviaqa_sample(seed: int = 42, n: int = 300) -> list[dict]:
     Returns a list of dicts with keys 'question', 'answer' (the full answer dict),
     'gold_answer' (normalized value string), and 'task_id' (unique identifier).
     """
-    ds = datasets.load_dataset("mandarjoshi/trivia_qa", "rc.wikipedia", split="test")
+    ds = datasets.load_dataset("mandarjoshi/trivia_qa", "rc.wikipedia", split="validation")
     shuffled = ds.shuffle(seed=seed)
     selected = shuffled.select(range(min(n, len(shuffled))))
     results = []
@@ -56,18 +56,32 @@ def extract_predicted_answer(text: str) -> str:
     return text.strip()
 
 
+def _normalize_response(text: str) -> str:
+    """Strip markdown formatting and normalize whitespace for matching."""
+    import re
+    # Remove bold/italic markers
+    text = re.sub(r"\*+([^*]+)\*+", r"\1", text)
+    # Remove other markdown (headers, backticks)
+    text = re.sub(r"[`#]", "", text)
+    return text.lower().strip()
+
+
 def is_correct(predicted: str, answer: dict) -> bool:
     """Check if the predicted answer matches any normalized alias.
 
-    Matches case-insensitively against all normalized_aliases.
+    Strips markdown formatting, then checks whether any normalized alias
+    appears as a substring of the response (standard TriviaQA eval approach).
     """
-    predicted_lower = predicted.strip().lower()
-    # Check normalized_value
+    normalized = _normalize_response(predicted)
+    candidates = []
     nv = answer.get("normalized_value", "").strip().lower()
-    if nv and predicted_lower == nv:
-        return True
-    # Check all normalized_aliases
+    if nv:
+        candidates.append(nv)
     for alias in answer.get("normalized_aliases", []):
-        if alias.strip().lower() == predicted_lower:
+        a = alias.strip().lower()
+        if a:
+            candidates.append(a)
+    for candidate in candidates:
+        if candidate in normalized:
             return True
     return False

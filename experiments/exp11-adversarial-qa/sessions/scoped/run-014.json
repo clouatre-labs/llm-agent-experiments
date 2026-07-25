@@ -1,0 +1,35 @@
+{
+  "run_id": "run-014",
+  "condition": "scoped",
+  "model": "gemma4",
+  "task_id": "task-0014",
+  "question": "Which composer was married to Clara Wieck from 1840 until his death in 1856?",
+  "gold_answer": "robert schumann",
+  "answer": {
+    "aliases": [
+      "Schumann, Robert Alexander",
+      "Robert Schumann",
+      "Ballets to the music of Robert Schumann",
+      "ROBERT SCHUMANN",
+      "Robert Alexander Schumann"
+    ],
+    "normalized_aliases": [
+      "ballets to music of robert schumann",
+      "robert alexander schumann",
+      "schumann robert alexander",
+      "robert schumann"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "robert schumann",
+    "type": "WikipediaEntity",
+    "value": "ROBERT SCHUMANN"
+  },
+  "response_text": "The composer married to Clara Wieck from 1840 until his death in 1856 was **Robert Schumann**.",
+  "correct": true,
+  "input_tokens": 175,
+  "output_tokens": 28,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1019
+}

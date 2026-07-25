@@ -1,0 +1,29 @@
+{
+  "run_id": "run-029",
+  "condition": "scoped",
+  "model": "gemma4",
+  "task_id": "task-0029",
+  "question": "\"What was the name of the Jester in Shakespeare's \"\"As You Like It\"\"?\"",
+  "gold_answer": "touchstone",
+  "answer": {
+    "aliases": [
+      "The Touchstone",
+      "TOUCHSTONE"
+    ],
+    "normalized_aliases": [
+      "touchstone"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "touchstone",
+    "type": "WikipediaEntity",
+    "value": "TOUCHSTONE"
+  },
+  "response_text": "The Jester in Shakespeare's *As You Like It* is named **Touchstone**.",
+  "correct": true,
+  "input_tokens": 171,
+  "output_tokens": 20,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 962
+}

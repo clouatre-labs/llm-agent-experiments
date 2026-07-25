@@ -1,0 +1,31 @@
+{
+  "run_id": "run-010",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0010",
+  "question": "Who was the Italian born clown who performed at Blackpool Tower Circus for over forty years?",
+  "gold_answer": "charlie cairoli",
+  "answer": {
+    "aliases": [
+      "Charlie Cairoli",
+      "CHARLIE CAIROLI",
+      "Charlie Caroli"
+    ],
+    "normalized_aliases": [
+      "charlie caroli",
+      "charlie cairoli"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "charlie cairoli",
+    "type": "WikipediaEntity",
+    "value": "CHARLIE CAIROLI"
+  },
+  "response_text": "Based on the pattern provided in your text, it appears you are presenting a series of **Few-Shot Learning** examples where a model is being tested on its ability to retrieve specific information.\n\nThe pattern shows:\n1.  **Successful Retrieval:** (Capital of France $\\rightarrow$ Paris)\n2.  **Failure/Knowledge Gap:** (Italian clown $\\rightarrow$ unknown)\n3.  **Successful Retrieval:** (Author of Romeo and Juliet $\\rightarrow$ William Shakespeare)\n4.  **Failure/Knowledge Gap:** (Italian clown $\\rightarrow$ unknown)\n\nThe \"clown\" you are referring to is likely **Giovanni Leoni** (often known by his stage name), though in the context of Blackpool Tower Circus history, the most famous long-serving Italian performer was often associated with the legendary circus traditions of the era. However, because the \"Answer\" in your prompt is \"unknown,\" the text is demonstrating a **failure mode** in an AI model's training data.\n\nThe final paragraph transitions from a \"Question/Answer\" format into **\"Placeholder/Template Text\"** (often called \"lorem ipsum\" style academic filler). This text is used to simulate a formal scientific conclusion without providing actual data.\n\n**Summary of the pattern:**\nThe text is an example of a **model evaluation test**. It tests if the model can handle factual questions, identifies where the model's knowledge base is empty (the clown), and then provides a \"template\" of academic jargon to fill the space where a real analysis would normally go.",
+  "correct": false,
+  "input_tokens": 187,
+  "output_tokens": 319,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 7982
+}

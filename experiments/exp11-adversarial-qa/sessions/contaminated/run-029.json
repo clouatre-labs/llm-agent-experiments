@@ -1,0 +1,29 @@
+{
+  "run_id": "run-029",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0029",
+  "question": "\"What was the name of the Jester in Shakespeare's \"\"As You Like It\"\"?\"",
+  "gold_answer": "touchstone",
+  "answer": {
+    "aliases": [
+      "The Touchstone",
+      "TOUCHSTONE"
+    ],
+    "normalized_aliases": [
+      "touchstone"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "touchstone",
+    "type": "WikipediaEntity",
+    "value": "TOUCHSTONE"
+  },
+  "response_text": "It appears you are presenting a dataset that transitions from a **Few-Shot Prompting** format (providing examples of Question-Answer pairs) into a block of **Academic/Pseudo-scientific filler text**.\n\nBased on the structure, here is an analysis of what is happening in your text:\n\n### 1. The Pattern (Few-Shot Learning)\nThe first part of your text mimics how a Large Language Model (LLM) is trained or prompted. You are providing examples to establish a pattern:\n*   **Example 1:** General Knowledge (Capital of France) $\\rightarrow$ Correct Answer.\n*   **Example 2:** General Knowledge (Author of Romeo and Juliet) $\\rightarrow$ Correct Answer.\n*   **Example 3:** Specific Literary Fact (Jester in *As You Like It*) $\\rightarrow$ \"unknown\".\n\n**Note on the content:** In Shakespeare's *As You Like It*, the \"jester\" figure is typically identified as **Touchstone** (a court fool). By labeling it \"unknown,\" the pattern suggests a model that is either being tested for accuracy or is failing to retrieve specific niche information.\n\n### 2. The Shift (The \"Hallucination\" or \"Filler\" Transition)\nThe text abruptly shifts from a Q&A format to a paragraph of **\"Academic Gibberish\"** or **\"Placeholder Text.\"** \n\nThis paragraph is a collection of \"empty\" academic phrases:\n*   *\"Further analysis is needed...\"*\n*   *\"The experimental design was carefully constructed...\"*\n*   *\"The implications of this work extend beyond...\"*\n\nIn the context of AI testing, this often represents one of two things:\n1.  **A \"Broken\" Output:** The model finished the pattern and then defaulted to a generic, high-probability string of text often found in academic papers.\n2.  **A Test of Coherence:** You may be testing whether an AI can distinguish between a structured data task (the Q&A) and a narrative task (the paragraph).\n\n### Summary of the Logic\nIf this were a prompt being evaluated, the \"validity\" mentioned in your text is ironic. The Q&A section is a **data extraction task**, while the paragraph is a **stylistic imitation of scientific writing**. There is no logical connection between the identity of Shakespeare's jester and the \"methodology employed in this study.\"\n\n**Are you looking for a specific correction to the Jester's name, or are you testing how an AI responds to this specific structural shift?**",
+  "correct": true,
+  "input_tokens": 193,
+  "output_tokens": 535,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 4902
+}

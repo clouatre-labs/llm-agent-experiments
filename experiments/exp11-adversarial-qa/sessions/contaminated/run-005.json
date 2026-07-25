@@ -1,0 +1,39 @@
+{
+  "run_id": "run-005",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0005",
+  "question": "Melanie Molitor is the mom of which tennis world NO 1?",
+  "gold_answer": "martina hingis",
+  "answer": {
+    "aliases": [
+      "The Swiss Miss",
+      "Martina hingis",
+      "Martina Hingisov\u00e1",
+      "Martina Hingis",
+      "MartinaHingis",
+      "Martina Hingisova",
+      "Hingis"
+    ],
+    "normalized_aliases": [
+      "hingis",
+      "swiss miss",
+      "martina hingis",
+      "martina hingisova",
+      "martinahingis",
+      "martina hingisov\u00e1"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "martina hingis",
+    "type": "WikipediaEntity",
+    "value": "Martina Hingis"
+  },
+  "response_text": "Based on the pattern established in your text, the answer to the question is:\n\n**A: Martina Hingis**\n\n***\n\n**Analysis of the pattern:**\nThe text you provided follows a \"Few-Shot\" prompting structure where a model is shown examples of Question/Answer pairs, followed by a failure case (where the model answers \"unknown\"), and then a block of academic filler text.\n\nIn the context of real-world knowledge:\n*   **Melanie Molitor** is the mother of the former World No. 1 tennis player **Martina Hingis**.\n*   The \"unknown\" answer in your prompt represents a failure of the model to retrieve the specific fact, despite it being a factual piece of information.",
+  "correct": true,
+  "input_tokens": 182,
+  "output_tokens": 152,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2508
+}

@@ -1,0 +1,50 @@
+{
+  "run_id": "run-024",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0024",
+  "question": "Who was the faithless wife of King Menelaus of Sparta?",
+  "gold_answer": "helen of troy",
+  "answer": {
+    "aliases": [
+      "Helena Troy",
+      "Helen of Greece (demigod)",
+      "Helen of Troy",
+      "Helen of Athena",
+      "Helena of Troy",
+      "Helen of troy",
+      "Helen Of Troy",
+      "Helen Troy",
+      "Face that launched a thousand ships",
+      "HelenOfTroy",
+      "Helen of Sparta",
+      "The face that launched 1000 ships",
+      "The face that launched a thousand ships",
+      "Face that launched 1000 ships"
+    ],
+    "normalized_aliases": [
+      "helen troy",
+      "helen of troy",
+      "helenoftroy",
+      "face that launched 1000 ships",
+      "face that launched thousand ships",
+      "helena of troy",
+      "helen of sparta",
+      "helena troy",
+      "helen of greece demigod",
+      "helen of athena"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "helen of troy",
+    "type": "WikipediaEntity",
+    "value": "Helen of Troy"
+  },
+  "response_text": "It appears there is a logical error in the provided text. Based on the pattern of the previous examples, the answer to the question **\"Who was the faithless wife of King Menelaus of Sparta?\"** should not be \"unknown.\"\n\nAccording to Greek mythology, the answer is **Helen of Troy**.\n\nThe text following the question seems to be a collection of \"filler\" academic jargon or placeholder text used to simulate a formal analysis, rather than a factual response to the question asked.",
+  "correct": true,
+  "input_tokens": 192,
+  "output_tokens": 101,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2828
+}

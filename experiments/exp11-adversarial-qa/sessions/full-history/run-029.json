@@ -1,0 +1,29 @@
+{
+  "run_id": "run-029",
+  "condition": "full-history",
+  "model": "gemma4",
+  "task_id": "task-0029",
+  "question": "\"What was the name of the Jester in Shakespeare's \"\"As You Like It\"\"?\"",
+  "gold_answer": "touchstone",
+  "answer": {
+    "aliases": [
+      "The Touchstone",
+      "TOUCHSTONE"
+    ],
+    "normalized_aliases": [
+      "touchstone"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "touchstone",
+    "type": "WikipediaEntity",
+    "value": "TOUCHSTONE"
+  },
+  "response_text": "There is no character named \"Jester\" in Shakespeare's *As You Like It*. The play features a **Fool** (often referred to as the \"wise fool\"), but he is not given a specific proper name.\n\nRegarding the other text provided:\n*   The first section is a **dialogue** between a Planner and an Executor regarding scheduling.\n*   The final section is a **fragment of academic writing** discussing research methodology.",
+  "correct": false,
+  "input_tokens": 209,
+  "output_tokens": 93,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1026
+}

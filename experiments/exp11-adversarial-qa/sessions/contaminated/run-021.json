@@ -1,0 +1,31 @@
+{
+  "run_id": "run-021",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0021",
+  "question": "Who wrote the music for the song, 'Moon River'?",
+  "gold_answer": "henry mancini",
+  "answer": {
+    "aliases": [
+      "Henry Mancini",
+      "HENRY MANCINI",
+      "Nothing to Lose (Henry Mancini song)"
+    ],
+    "normalized_aliases": [
+      "henry mancini",
+      "nothing to lose henry mancini song"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "henry mancini",
+    "type": "WikipediaEntity",
+    "value": "HENRY MANCINI"
+  },
+  "response_text": "It appears you are presenting a pattern of **Few-Shot Prompting** followed by a \"hallucination\" or a breakdown in logic, where the model (or the text provided) transitions from a Q&A format into academic filler text.\n\nIn the specific example provided, the answer given to the question **\"Who wrote the music for the song, 'Moon River'?\"** is listed as **\"unknown.\"**\n\n**The factual correction is:**\nThe music for \"Moon River\" was written by **Henry Mancini** (with lyrics by Johnny Mercer).\n\n### Analysis of the Text Structure:\nThe text you provided follows a common pattern seen in Large Language Model (LLM) testing or failures:\n\n1.  **The Pattern (Few-Shot):** You establish a pattern of `Q: [Question] \\n A: [Answer]`.\n2.  **The Test Case:** You ask a question about \"Moon River.\"\n3.  **The Error:** The model provides an incorrect answer (\"unknown\").\n4.  **The \"Gibberish\" Transition:** The text then shifts into \"Academic Word Salad.\" This is a collection of high-level, non-specific academic phrases (*\"The implications of this work extend beyond...\"*, *\"The experimental design was carefully constructed...\"*).\n\n**Why does this happen in AI?**\nWhen an AI fails to retrieve a specific fact (like the composer of a song), it sometimes enters a \"loop\" or defaults to a generic, high-probability linguistic pattern. The academic text provided is a classic example of **\"stochastic parroting,\"** where the model generates text that *sounds* authoritative and professional but contains zero actual information or meaning.",
+  "correct": true,
+  "input_tokens": 188,
+  "output_tokens": 356,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 6848
+}

@@ -1,0 +1,47 @@
+{
+  "run_id": "run-007",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0007",
+  "question": "Who also writes using the pseudonym 'Barbara Vine'?",
+  "gold_answer": "ruth rendell",
+  "answer": {
+    "aliases": [
+      "Baroness Rendell",
+      "Ruth Barbara Rendell",
+      "Ruth Barbara Rendell, Baroness Rendell of Babergh",
+      "Ruth Rendell, Baroness Rendell of Babergh",
+      "Barbara Vine",
+      "Ruth rendall",
+      "Lady Rendell",
+      "Baroness Rendell of Babergh",
+      "Ruth Rendell",
+      "The Reason Why: An Anthology of the Murderous Mind",
+      "RUTH RENDELL"
+    ],
+    "normalized_aliases": [
+      "baroness rendell",
+      "ruth barbara rendell baroness rendell of babergh",
+      "ruth rendall",
+      "ruth barbara rendell",
+      "ruth rendell",
+      "lady rendell",
+      "ruth rendell baroness rendell of babergh",
+      "barbara vine",
+      "reason why anthology of murderous mind",
+      "baroness rendell of babergh"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "ruth rendell",
+    "type": "WikipediaEntity",
+    "value": "RUTH RENDELL"
+  },
+  "response_text": "The answer to your question is **Ruth Rendell**.\n\nRuth Rendell is a highly acclaimed British crime novelist who used the pseudonym **Barbara Vine** to write her psychological suspense novels.",
+  "correct": true,
+  "input_tokens": 184,
+  "output_tokens": 38,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1286
+}

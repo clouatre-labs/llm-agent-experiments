@@ -1,0 +1,31 @@
+{
+  "run_id": "run-010",
+  "condition": "scoped",
+  "model": "gemma4",
+  "task_id": "task-0010",
+  "question": "Who was the Italian born clown who performed at Blackpool Tower Circus for over forty years?",
+  "gold_answer": "charlie cairoli",
+  "answer": {
+    "aliases": [
+      "Charlie Cairoli",
+      "CHARLIE CAIROLI",
+      "Charlie Caroli"
+    ],
+    "normalized_aliases": [
+      "charlie caroli",
+      "charlie cairoli"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "charlie cairoli",
+    "type": "WikipediaEntity",
+    "value": "CHARLIE CAIROLI"
+  },
+  "response_text": "The Italian-born clown you are referring to is **Giovanni (John) Rossi**.\n\nHe was a legendary figure at the Blackpool Tower Circus, where he performed for over forty years, becoming one of the most beloved and recognizable faces in the circus's long history.",
+  "correct": false,
+  "input_tokens": 168,
+  "output_tokens": 55,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2457
+}
