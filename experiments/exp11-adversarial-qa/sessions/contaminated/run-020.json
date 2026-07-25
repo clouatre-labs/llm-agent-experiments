@@ -1,0 +1,51 @@
+{
+  "run_id": "run-020",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0020",
+  "question": "St Thomas's Abbey, Brno in the Czech Republic was the scene of whose path-breaking work from 1856 to 1863?",
+  "gold_answer": "gregor mendel",
+  "answer": {
+    "aliases": [
+      "Mendel, Mendelism",
+      "Greg Mendel",
+      "Mendel, Gregor Johann",
+      "Gregor Johann Mendel",
+      "Father Mendel",
+      "Mendelism Mendel",
+      "G. J. Mendel",
+      "Gregor J. Mendel",
+      "Gregor Mendel",
+      "Johann Mendel",
+      "Mendel, johann",
+      "Gregory mendel",
+      "Gregor mendel"
+    ],
+    "normalized_aliases": [
+      "gregor johann mendel",
+      "father mendel",
+      "mendelism mendel",
+      "gregor j mendel",
+      "greg mendel",
+      "gregory mendel",
+      "gregor mendel",
+      "mendel mendelism",
+      "mendel johann",
+      "g j mendel",
+      "johann mendel",
+      "mendel gregor johann"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "gregor mendel",
+    "type": "WikipediaEntity",
+    "value": "Gregor Mendel"
+  },
+  "response_text": "A: Gregor Mendel",
+  "correct": true,
+  "input_tokens": 205,
+  "output_tokens": 5,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3321
+}

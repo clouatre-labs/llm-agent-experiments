@@ -1,0 +1,50 @@
+{
+  "run_id": "run-000",
+  "condition": "contaminated",
+  "model": "gemma4",
+  "task_id": "task-0000",
+  "question": "A sophomore is a student in which year of a US college?",
+  "gold_answer": "second",
+  "answer": {
+    "aliases": [
+      "1 second",
+      "Fourth (time)",
+      "Second (time)",
+      "Seconds",
+      "Number of seconds in a year",
+      "Second duration",
+      "Second",
+      "Secound",
+      "1 E0 s",
+      "Secs",
+      "Third (time)",
+      "Calendar Second"
+    ],
+    "normalized_aliases": [
+      "secs",
+      "calendar second",
+      "1 second",
+      "second",
+      "second time",
+      "fourth time",
+      "number of seconds in year",
+      "seconds",
+      "second duration",
+      "secound",
+      "1 e0 s",
+      "third time"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "second",
+    "type": "WikipediaEntity",
+    "value": "Second"
+  },
+  "response_text": "Based on the pattern established in your prompt, the answer to the question is:\n\n**A: Second year**",
+  "correct": true,
+  "input_tokens": 179,
+  "output_tokens": 24,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2008
+}

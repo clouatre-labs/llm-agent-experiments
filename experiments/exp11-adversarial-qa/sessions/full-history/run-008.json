@@ -1,0 +1,28 @@
+{
+  "run_id": "run-008",
+  "condition": "full-history",
+  "model": "gemma4",
+  "task_id": "task-0008",
+  "question": "For a proper fraction, the numerator is",
+  "gold_answer": "less than denominator",
+  "answer": {
+    "aliases": [
+      "less than the denominator"
+    ],
+    "normalized_aliases": [
+      "less than denominator"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "less than denominator",
+    "type": "FreeForm",
+    "value": "less than the denominator"
+  },
+  "response_text": "It appears your input contains three completely unrelated sections: a dialogue between a Planner and an Executor, a mathematical definition fragment, and a paragraph of academic text.\n\nHere are the completions/answers for the specific prompts within your text:\n\n**1. The Mathematical Question:**\nFor a proper fraction, the numerator is **less than the denominator.**\n\n**2. The Dialogue Summary (Contextual Analysis):**\nIf you were looking for a summary of the dialogue: The Planner and Executor are coordinating next week's schedule, specifically setting a team standup for Monday at 10 AM and a quarterly review for Thursday from 1 PM to 3 PM, which will include stakeholders and a pre-distributed agenda.\n\n**3. The Academic Text (Contextual Analysis):**\nThe provided paragraph is a generic statement regarding research methodology and the importance of contextual interpretation, but it does not contain a question to answer.",
+  "correct": false,
+  "input_tokens": 210,
+  "output_tokens": 187,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 2196
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "run-019",
+  "condition": "scoped",
+  "model": "gemma4",
+  "task_id": "task-0019",
+  "question": "The first stations on the four lines leaving which city by rail are Wymondham, Salhouse, Brundall Gardens and Diss?",
+  "gold_answer": "norwich",
+  "answer": {
+    "aliases": [
+      "BURMA",
+      "ITALY",
+      "NORWICH",
+      "World War II postal acronym",
+      "World War II Postal Acronyms",
+      "WWII postal acronyms",
+      "WWII Postal Acronyms",
+      "World War II postal acronyms"
+    ],
+    "normalized_aliases": [
+      "norwich",
+      "burma",
+      "world war ii postal acronyms",
+      "world war ii postal acronym",
+      "wwii postal acronyms",
+      "italy"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "norwich",
+    "type": "WikipediaEntity",
+    "value": "NORWICH"
+  },
+  "response_text": "The city is **Norwich**.\n\nThe stations mentioned (Wymondham, Salhouse, Brundall Gardens, and Diss) are the first stops on the four main rail lines departing from Norwich in different directions:\n*   **Wymondham:** On the line toward Cambridge/Ely (via Breckland Line).\n*   **Salhouse:** On the line toward Cromer/Sheringham (via the Bittern Line).\n*   **Brundall Gardens:** On the line toward Lowestoft/Great Yarmouth (via the Waveney Valley Line).\n*   **Diss:** On the line toward Ipswich/London (via the East Suffolk Line).",
+  "correct": true,
+  "input_tokens": 169,
+  "output_tokens": 140,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 3687
+}

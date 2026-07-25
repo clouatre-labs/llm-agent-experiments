@@ -1,0 +1,35 @@
+{
+  "run_id": "run-012",
+  "condition": "full-history",
+  "model": "gemma4",
+  "task_id": "task-0012",
+  "question": "In which film does Andie MacDowell try to fiddle a US stay for Gerard Depardieu?",
+  "gold_answer": "green card",
+  "answer": {
+    "aliases": [
+      "Green card (disambiguation)",
+      "Green Card",
+      "Green card",
+      "Green cards",
+      "Greencard"
+    ],
+    "normalized_aliases": [
+      "greencard",
+      "green card disambiguation",
+      "green cards",
+      "green card"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "green card",
+    "type": "WikipediaEntity",
+    "value": "Green Card"
+  },
+  "response_text": "There is no film in which Andie MacDowell tries to fiddle a US stay for Gerard Depardieu. It appears this question may be based on a false premise or a confusion of actors and plots.",
+  "correct": false,
+  "input_tokens": 209,
+  "output_tokens": 42,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1064
+}

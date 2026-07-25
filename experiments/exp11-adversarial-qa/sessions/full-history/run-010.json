@@ -1,0 +1,31 @@
+{
+  "run_id": "run-010",
+  "condition": "full-history",
+  "model": "gemma4",
+  "task_id": "task-0010",
+  "question": "Who was the Italian born clown who performed at Blackpool Tower Circus for over forty years?",
+  "gold_answer": "charlie cairoli",
+  "answer": {
+    "aliases": [
+      "Charlie Cairoli",
+      "CHARLIE CAIROLI",
+      "Charlie Caroli"
+    ],
+    "normalized_aliases": [
+      "charlie caroli",
+      "charlie cairoli"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "charlie cairoli",
+    "type": "WikipediaEntity",
+    "value": "CHARLIE CAIROLI"
+  },
+  "response_text": "The Italian-born clown who performed at Blackpool Tower Circus for over forty years was **Zampa** (born Giuseppe Zampa).",
+  "correct": false,
+  "input_tokens": 206,
+  "output_tokens": 27,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1083
+}

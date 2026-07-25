@@ -7,6 +7,7 @@ and writes session JSON files. Supports --pilot mode with gate logic.
 import argparse
 import json
 import logging
+import os
 import random
 import time
 from datetime import UTC, datetime
@@ -44,14 +45,14 @@ logger = logging.getLogger(__name__)
 MODEL_CONFIGS = {
     "gemma4": {
         "provider": "openrouter",
-        "model_id": "google/gemma-4-26b-it",
+        "model_id": "google/gemma-4-26b-a4b-it",
         "max_tokens": 4096,
         "temperature": 0.5,
         "json_mode": False,
     },
     "haiku45": {
         "provider": "bedrock",
-        "model_id": "anthropic.claude-haiku-4-5-20251001-v1:0",
+        "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
         "max_tokens": 4096,
         "temperature": 0.5,
         "json_mode": False,
@@ -230,6 +231,11 @@ def main() -> None:
         return
 
     config = MODEL_CONFIGS[args.model]
+    if config["provider"] == "openrouter":
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("OPENROUTER_API_KEY is not set in the environment")
+        config["api_key"] = api_key
     results_list: list[dict] = []
 
     for i, task in enumerate(tasks):

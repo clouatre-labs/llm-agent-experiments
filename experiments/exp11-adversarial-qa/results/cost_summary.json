@@ -1,0 +1,9 @@
+{
+  "condition": "full-history",
+  "model": "gemma4",
+  "runs_completed": 30,
+  "total_input_tokens": 6225,
+  "total_output_tokens": 988,
+  "total_cost_usd": 0.009189,
+  "timestamp_utc": "2026-07-25T02:51:14Z"
+}

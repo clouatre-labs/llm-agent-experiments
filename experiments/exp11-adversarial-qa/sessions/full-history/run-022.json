@@ -1,0 +1,30 @@
+{
+  "run_id": "run-022",
+  "condition": "full-history",
+  "model": "gemma4",
+  "task_id": "task-0022",
+  "question": "How many times did Steffi Graf win the Ladies Singles at Wimbledon?",
+  "gold_answer": "7",
+  "answer": {
+    "aliases": [
+      "seven",
+      "7"
+    ],
+    "normalized_aliases": [
+      "seven",
+      "7"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "7",
+    "type": "Numerical",
+    "value": "7"
+  },
+  "response_text": "Steffi Graf won the Ladies' Singles title at Wimbledon **7 times** (1988, 1989, 1991, 1992, 1993, 1995, and 1996).",
+  "correct": true,
+  "input_tokens": 203,
+  "output_tokens": 59,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 1151
+}

@@ -1,0 +1,31 @@
+{
+  "run_id": "run-021",
+  "condition": "scoped",
+  "model": "gemma4",
+  "task_id": "task-0021",
+  "question": "Who wrote the music for the song, 'Moon River'?",
+  "gold_answer": "henry mancini",
+  "answer": {
+    "aliases": [
+      "Henry Mancini",
+      "HENRY MANCINI",
+      "Nothing to Lose (Henry Mancini song)"
+    ],
+    "normalized_aliases": [
+      "henry mancini",
+      "nothing to lose henry mancini song"
+    ],
+    "matched_wiki_entity_name": "",
+    "normalized_matched_wiki_entity_name": "",
+    "normalized_value": "henry mancini",
+    "type": "WikipediaEntity",
+    "value": "HENRY MANCINI"
+  },
+  "response_text": "The music for the song \"Moon River\" was written by **Henry Mancini**. (The lyrics were written by Johnny Mercer).",
+  "correct": true,
+  "input_tokens": 163,
+  "output_tokens": 26,
+  "stop_reason": "stop",
+  "success": true,
+  "latency_ms": 980
+}
