@@ -182,7 +182,7 @@ def main() -> None:
         default="scoped",
     )
     parser.add_argument("--model", choices=list(MODEL_CONFIGS.keys()), default="gemma4")
-    parser.add_argument("--runs", type=int, default=300)
+    parser.add_argument("--n", type=int, default=300, dest="runs")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
         "--dry-run",
@@ -348,6 +348,7 @@ def main() -> None:
             print(f"Gap:                   {gap:.2f} pp")
             if gap < 8.0:
                 print("STOP: Gap < 8pp. Contamination effect insufficient to proceed.")
+                return
             else:
                 print("PROCEED: Gap >= 8pp. Contamination effect confirmed.")
 
