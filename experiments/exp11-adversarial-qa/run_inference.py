@@ -318,6 +318,17 @@ def main() -> None:
                 with open(p) as f:
                     contaminated_records.append(json.load(f))
 
+        if not scoped_records:
+            logger.warning(
+                "Pilot gate skipped: no scoped session files found in %s. "
+                "Run the scoped condition first before contaminated.",
+                scoped_dir,
+            )
+        elif not contaminated_records:
+            logger.warning(
+                "Pilot gate skipped: no contaminated session files found in %s.",
+                contaminated_dir,
+            )
         if scoped_records and contaminated_records:
             scoped_correct = sum(1 for r in scoped_records if r.get("correct", False))
             contaminated_correct = sum(

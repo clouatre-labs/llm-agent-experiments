@@ -35,7 +35,15 @@ _FILLER_SENTENCES = [
 
 
 def estimate_tokens(text: str) -> int:
-    """Estimate token count using whitespace-split approximation."""
+    """Estimate token count using whitespace-split approximation.
+
+    This is intentionally a coarse heuristic: one word ~ one token. It is
+    sufficient for the filler-padding use case here, where the goal is
+    approximate length-matching across conditions rather than exact token
+    parity. If precise tokenization becomes a requirement (e.g., to stay
+    within hard context-window limits), replace with a model-specific
+    tokenizer such as tiktoken.
+    """
     return len(text.split())
 
 
