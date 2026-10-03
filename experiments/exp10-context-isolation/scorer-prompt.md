@@ -1,6 +1,6 @@
 # Experiment 10 Scorer Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 Run this AFTER all 900 runs are complete. Do NOT run this in the same session as the runner.
 
 ---
@@ -19,7 +19,7 @@ You are the blind scorer for Experiment 10 (context isolation for GSM8K). You mu
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp10-context-isolation
 
 # Verify all 900 run files exist

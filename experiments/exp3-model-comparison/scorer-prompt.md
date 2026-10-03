@@ -1,6 +1,6 @@
 # Experiment 3 Scorer Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 Run this AFTER all 20 runs are complete. Do NOT run this in the same session as the runner.
 
 ---
@@ -20,7 +20,7 @@ You are the blind scorer for Experiment 3 (model comparison for SCOUT delegates)
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp3-model-comparison
 
 # Verify all 20 run files exist

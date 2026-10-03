@@ -195,7 +195,7 @@ Estimated pipeline cost with mixed config:
 
 ## Reproducibility
 
-- Worktree: `/Users/hugues.clouatre/git/dotfiles/.worktrees/exp6-mercury2` (preserved)
+- Worktree: `/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/exp6-mercury2` (preserved)
 - Commit: `982531392de` (detached HEAD)
 - All session outputs: `sessions/` directory (35 files)
 - Latency log: `latency-log.jsonl`
