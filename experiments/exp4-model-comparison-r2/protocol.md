@@ -14,7 +14,7 @@ to non-Anthropic models or simply a matter of model capability.
 
 - Exp3 results: [experiments/exp3-model-comparison/analysis.json](../exp3-model-comparison/analysis.json)
 - Exp3 protocol: [experiments/exp3-model-comparison/protocol.md](../exp3-model-comparison/protocol.md)
-- Issue: [clouatre/dotfiles#250](https://github.com/clouatre/dotfiles/issues/250)
+- Issue: [clouatre-labs/dotfiles#250](https://github.com/clouatre-labs/dotfiles/issues/250)
 
 ## Task
 
@@ -129,7 +129,7 @@ Verdicts:
 ## SCOUT Prompt
 
 The exact SCOUT prompt from the goose-coder recipe (`~/.config/goose/recipes/goose-coder.yaml`,
-post-PR [#245](https://github.com/clouatre/dotfiles/pull/245) bookending), with the task
+post-PR [#245](https://github.com/clouatre-labs/dotfiles/pull/245) bookending), with the task
 set to "research clouatre-labs/aptu#737". See `runner-prompt.md` for the full parameterized
 prompt.
 
