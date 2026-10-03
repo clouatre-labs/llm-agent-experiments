@@ -1,6 +1,6 @@
 # Experiment 9 Scorer Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 Run this AFTER all 30 runs are complete. Do NOT run this in the same session as the runner.
 
 ---
@@ -20,7 +20,7 @@ You are the blind scorer for Experiment 9 (model comparison for SCOUT delegates,
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp9-openrouter-evaluation-r2
 
 # Verify all 30 run files exist

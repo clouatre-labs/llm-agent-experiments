@@ -19,7 +19,7 @@ Target files (post-patch state, same worktree commit as exp5):
 - `config/claude/agents/goose-coder-guard.md`: same three code-analyze MCP tools added
 - `config/claude/agents/goose-coder-check.md`: `mcp__aptu__review_pr` removed
 
-Worktree: `/Users/hugues.clouatre/git/dotfiles/.worktrees/exp6-mercury2` (detached HEAD at
+Worktree: `/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/exp6-mercury2` (detached HEAD at
 `982531392de`, same commit as exp5 post-patch state).
 
 **Same SCOUT caveat as exp5 applies:** The worktree is already patched. SCOUT delegates see the

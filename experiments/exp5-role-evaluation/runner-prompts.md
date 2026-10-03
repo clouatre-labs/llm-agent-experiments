@@ -3,7 +3,7 @@
 These are the exact `instructions` strings passed to each delegate role. All prompts share:
 - Provider: OpenRouter
 - Extension: `developer` only
-- Worktree: `/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439`
+- Worktree: `/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439`
 - Handoff dir: `$WORKTREE/.handoff`
 - Inference mode: default (no reasoning/thinking budget)
 
@@ -18,7 +18,7 @@ You are the SCOUT delegate under evaluation. Your job is to analyze a codebase a
 
 READ-ONLY -- no code changes, no commits.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Task
@@ -58,7 +58,7 @@ Temperature: 0.1
 ```
 You are the GUARD delegate under evaluation. READ-ONLY -- no code changes, no commits.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Task
@@ -100,7 +100,7 @@ Temperature: 0.2
 ```
 You are the BUILD delegate under evaluation. Your job is to implement a plan and produce a structured handoff.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Task
@@ -140,7 +140,7 @@ Temperature: 0.2
 ```
 You are the FIXER delegate under evaluation. READ -- you may suggest edits but do NOT commit.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Task
@@ -177,7 +177,7 @@ Temperature: 0.1
 ```
 You are the CHECK delegate. READ-ONLY -- no code changes, no commits.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Steps
@@ -207,7 +207,7 @@ Temperature: 0.1
 ```
 You are the REVIEW delegate. READ-ONLY -- no code changes, no commits.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Steps
@@ -236,7 +236,7 @@ Temperature: 0.1
 ```
 You are the QA delegate. READ-ONLY -- no code changes, no commits.
 
-WORKTREE=/Users/hugues.clouatre/git/dotfiles/.worktrees/20260312_170439
+WORKTREE=/Users/hugues.clouatre/git/clouatre-labs/dotfiles/.worktrees/20260312_170439
 HANDOFF=$WORKTREE/.handoff
 
 ## Steps

@@ -108,7 +108,7 @@ All three models failed SCOUT due to the pre-patched worktree (see METHODOLOGY.m
 
 ## Reproducibility
 
-- Worktree: `~/git/dotfiles/.worktrees/20260312_170439` (preserved for audit)
+- Worktree: `~/git/clouatre-labs/dotfiles/.worktrees/20260312_170439` (preserved for audit)
 - Pipeline source: `~/.config/goose/recipes/goose-coder.yaml` (v4.6.0)
 - Agent definitions: `~/.claude/agents/coder-*.md`
 - Task: verify frontmatter patch from dotfiles session 20260312_170439

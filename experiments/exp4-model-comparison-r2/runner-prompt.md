@@ -1,6 +1,6 @@
 # Experiment 4 Runner Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 
 ---
 
@@ -11,7 +11,7 @@ You are the orchestrator for Experiment 4 (model comparison round 2 for SCOUT de
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp4-model-comparison-r2
 mkdir -p $EXP_DIR/sessions
 
@@ -68,7 +68,7 @@ For each run NN in {21, 22, 23, 24, 25}:
 
 1. Record start time: `date -u +%Y-%m-%dT%H:%M:%SZ`
 2. Spawn delegate with:
-   - `instructions`: SCOUT_INSTRUCTIONS with RUN_ID="run-NN" and OUTPUT_PATH="~/git/dotfiles/experiments/exp4-model-comparison-r2/sessions/scout-run-NN.json"
+   - `instructions`: SCOUT_INSTRUCTIONS with RUN_ID="run-NN" and OUTPUT_PATH="~/git/clouatre-labs/dotfiles/experiments/exp4-model-comparison-r2/sessions/scout-run-NN.json"
    - `extensions`: ["developer", "context7", "brave_search"]
    - `provider`: "openrouter"
    - `model`: "minimax/minimax-m2.5"

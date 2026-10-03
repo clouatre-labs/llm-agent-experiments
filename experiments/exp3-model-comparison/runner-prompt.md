@@ -1,6 +1,6 @@
 # Experiment 3 Runner Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 
 ---
 
@@ -11,7 +11,7 @@ You are the orchestrator for Experiment 3 (model comparison for SCOUT delegates)
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp3-model-comparison
 mkdir -p $EXP_DIR/sessions
 
@@ -73,7 +73,7 @@ For each run NN in {01, 02, 03, 04, 05}:
 
 1. Record start time: `date -u +%Y-%m-%dT%H:%M:%SZ`
 2. Spawn delegate with:
-   - `instructions`: SCOUT_INSTRUCTIONS with RUN_ID="run-NN" and OUTPUT_PATH="~/git/dotfiles/experiments/exp3-model-comparison/sessions/scout-run-NN.json"
+   - `instructions`: SCOUT_INSTRUCTIONS with RUN_ID="run-NN" and OUTPUT_PATH="~/git/clouatre-labs/dotfiles/experiments/exp3-model-comparison/sessions/scout-run-NN.json"
    - `extensions`: ["developer", "context7", "brave_search"]
    - `provider`: "gcp_vertex_ai"
    - `model`: "claude-haiku-4-5@20251001"

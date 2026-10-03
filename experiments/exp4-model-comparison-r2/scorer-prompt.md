@@ -1,6 +1,6 @@
 # Experiment 4 Scorer Prompt
 
-Paste this into a new Goose session (no recipe) from the `~/git/dotfiles` directory.
+Paste this into a new Goose session (no recipe) from the `~/git/clouatre-labs/dotfiles` directory.
 This session must be separate from the runner session to maintain blinding.
 
 ---
@@ -13,7 +13,7 @@ Score each run output against the rubric. You do not know which model produced w
 ### Setup
 
 ```bash
-cd ~/git/dotfiles
+cd ~/git/clouatre-labs/dotfiles
 EXP_DIR=experiments/exp4-model-comparison-r2
 
 # Clone aptu for verification (same as delegates did)

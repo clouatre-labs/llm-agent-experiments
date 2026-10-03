@@ -6,13 +6,13 @@
 
 ## Task
 
-Verify that three Claude agent files in ~/git/dotfiles were correctly patched:
+Verify that three Claude agent files in ~/git/clouatre-labs/dotfiles were correctly patched:
 
 - `config/claude/agents/goose-coder-scout.md`: add 3 code-analyze MCP tools
 - `config/claude/agents/goose-coder-guard.md`: add 3 code-analyze MCP tools
 - `config/claude/agents/goose-coder-check.md`: remove `mcp__aptu__review_pr`
 
-Worktree: `~/git/dotfiles/.worktrees/20260312_170439` (session 20260312_170439)
+Worktree: `~/git/clouatre-labs/dotfiles/.worktrees/20260312_170439` (session 20260312_170439)
 
 The worktree was already patched when delegates ran. SCOUT delegates therefore saw the completed state, not the original gap. This is a task design flaw affecting SCOUT results only (see METHODOLOGY.md).
 
