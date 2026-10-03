@@ -1,0 +1,7 @@
+# Org-default code owners (clouatre-labs/.github#26, #58).
+# maintainers: code ownership for all paths.
+# security-reviewers: required reviewer gate on CI workflows and security config.
+# Repos may override this file; overrides are never overwritten by sync.
+*       @clouatre-labs/maintainers
+.github/workflows/ @clouatre-labs/security-reviewers
+/zizmor.yml @clouatre-labs/security-reviewers
