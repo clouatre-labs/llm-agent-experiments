@@ -10,7 +10,7 @@ This is the third experiment in the prompt repetition series, designed to evalua
 
 Experiments 1 and 2 established that prompt repetition does not improve accuracy on structured engineering tasks when the rubric is well-designed (avoiding ceiling effects). Both experiments used Claude Haiku 4.5 via GCP Vertex AI as the sole delegate model.
 
-Issue: [dotfiles#246](https://github.com/clouatre/dotfiles/issues/246) -- evaluate cheaper models for SCOUT delegates to reduce operational cost while maintaining quality.
+Issue: [dotfiles#246](https://github.com/clouatre-labs/dotfiles/issues/246) -- evaluate cheaper models for SCOUT delegates to reduce operational cost while maintaining quality.
 
 Paper: [Leviathan et al. (2025)](https://arxiv.org/abs/2502.07869) -- repeating input prompts improves non-reasoning LLM accuracy.
 
@@ -224,7 +224,7 @@ A candidate model passes the gate if ALL of the following hold:
 - Experiment 1: [exp1-fastmcp-refactor](https://github.com/clouatre-labs/prompt-repetition-experiments/blob/main/experiments/exp1-fastmcp-refactor/protocol.md)
 - Experiment 2: [exp2-treesitter-synthesis](https://github.com/clouatre-labs/prompt-repetition-experiments/blob/main/experiments/exp2-treesitter-synthesis/protocol.md)
 - Target issue: https://github.com/clouatre-labs/aptu/issues/737
-- Cost evaluation: https://github.com/clouatre/dotfiles/issues/246
+- Cost evaluation: https://github.com/clouatre-labs/dotfiles/issues/246
 - goose-coder recipe: commit d4ac9e8 (post-PR #245 bookending); recipe managed at ~/.config/goose/recipes/goose-coder.yaml via dotfiles hardlinks
 - SecurityScanner context: [aptu#735](https://github.com/clouatre-labs/aptu/issues/735), [PR #736](https://github.com/clouatre-labs/aptu/pull/736)
 - tree-sitter Rust: https://tree-sitter.github.io/tree-sitter/using-parsers/queries
